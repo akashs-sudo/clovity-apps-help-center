@@ -18,7 +18,6 @@ export default function Navbar() {
               height={35}
               src="/images/global/svg/Clovity-logo.svg"
               alt="Clovity"
-              className="rounded-md"
             />
           </Link>
 

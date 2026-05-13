@@ -19,7 +19,7 @@ export default function DocSidebar({ docs, appSlug, activeArticleSlug }) {
 
   return (
     <aside className="hidden lg:flex flex-col w-64 flex-shrink-0">
-      <div className="sticky top-[57px] h-[calc(100vh-57px)] overflow-y-auto pr-2 pb-8">
+      <div className="sticky top-[80px] h-[calc(100vh-136px)] overflow-y-auto pr-2 pb-8">
         <nav className="py-4 space-y-0.5">
           {docs.categories.map((cat) => {
             const isOpen = openCategories[cat.id];

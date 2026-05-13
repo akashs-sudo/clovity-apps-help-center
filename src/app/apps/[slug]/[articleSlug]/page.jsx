@@ -59,7 +59,7 @@ export default async function ArticlePage({ params }) {
     <div className="min-h-screen bg-white">
       {/* App header */}
       <div className="border-b border-gray-200 bg-white sticky top-0 z-30">
-        <div className="max-w-screen-xl mx-auto px-4 sm:px-6 h-14 flex items-center gap-3">
+        <div className="max-w-[1920px] mx-auto px-4 sm:px-6 h-14 flex items-center gap-3">
           {app && (
             <div className="w-6 h-6 rounded overflow-hidden flex-shrink-0">
               <Image src={app.icon} alt={app.shortName} width={24} height={24} unoptimized className="w-full h-full object-cover" />
@@ -77,12 +77,12 @@ export default async function ArticlePage({ params }) {
         </div>
       </div>
 
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-6">
         <div className="flex gap-8">
           <DocSidebar docs={docs} appSlug={slug} activeArticleSlug={articleSlug} />
 
           {/* Main content */}
-          <div className="flex-1 min-w-0 py-8 max-w-3xl">
+          <div className="flex-1 min-w-0 py-6">
             <div className="mb-2">
               <span className="text-xs font-medium text-blue-600 uppercase tracking-wider">
                 {category.title}

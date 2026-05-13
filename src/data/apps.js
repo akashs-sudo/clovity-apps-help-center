@@ -7,7 +7,7 @@ export const apps = [
     badge: "Rising Star",
     rating: 4,
     installs: 189,
-    icon: "https://marketplace.atlassian.com/product-listing/files/374585d2-5cb5-40f9-a493-0c53127f6db7?width=125&height=116",
+    icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/Custom_Charts_and_Dashboards_for_Jira_1edfecba57.png",
     description:
       "#1 Jira dashboard app – build charts & issue lists from projects, saved filters, or JQL with live preview.",
     marketplaceUrl:
@@ -53,7 +53,7 @@ export const apps = [
     badge: null,
     rating: 4,
     installs: 149,
-    icon: "https://marketplace.atlassian.com/product-listing/files/5a1597af-3cff-411f-8f82-193610c787a8?width=125&height=115",
+    icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/Timesheets_Capacity_Planner_Prioritization_and_PPM_Suite_0851421e4d.png",
     description:
       "#1 Time Tracking & PPM Solution – plan resources, track timesheets, prioritize portfolios in Jira.",
     marketplaceUrl:
@@ -99,7 +99,7 @@ export const apps = [
     badge: null,
     rating: null,
     installs: 10,
-    icon: "https://marketplace.atlassian.com/product-listing/files/e5bbb908-8ec0-4648-92d6-fe2212a11f53?width=144&height=144",
+    icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/Asset_26vhjv_c71944fea3.png",
     description:
       "AI copilot for Jira with chat, dashboards, org health, anomaly detection, and smart alerts.",
     marketplaceUrl:
@@ -145,7 +145,7 @@ export const apps = [
     badge: null,
     rating: null,
     installs: 9,
-    icon: "https://marketplace.atlassian.com/product-listing/files/1a334d62-0c4c-4779-8f42-db545d443404?width=126&height=116",
+    icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/Backlog_Auditor_and_Export_70f358fa4c.png",
     description:
       "Keep your Jira backlog clean, consistent, and exportable — effortlessly.",
     marketplaceUrl:
@@ -185,11 +185,10 @@ export const apps = [
     badge: null,
     rating: null,
     installs: 27,
-    icon: "https://marketplace.atlassian.com/product-listing/files/abb506e7-8d22-4e6d-9a5f-bb46e6812bd9?width=126&height=115",
+    icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/JQL_AI_5c9387a3f4.png",
     description:
       "Effortlessly transform natural language into precise JQL queries with AI-powered query conversion.",
-    marketplaceUrl:
-      "https://marketplace.atlassian.com/apps/1237395/jql-ai",
+    marketplaceUrl: "https://marketplace.atlassian.com/apps/1237395/jql-ai",
     sections: [
       {
         id: "overview",
@@ -225,7 +224,7 @@ export const apps = [
     badge: null,
     rating: 4,
     installs: 169,
-    icon: "https://marketplace.atlassian.com/product-listing/files/240f8ce0-ce1e-4f09-b32b-54962e14fd34?width=125&height=116",
+    icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/Content_Formatting_Navigation_and_Visibility_for_Confluence_08a87c7128.png",
     description:
       "Create tabbed hubs, tailor sections by audience, and bulk manage attachments in Confluence Cloud.",
     marketplaceUrl:
@@ -271,7 +270,7 @@ export const apps = [
     badge: null,
     rating: 4,
     installs: 88,
-    icon: "https://marketplace.atlassian.com/product-listing/files/b931e2e7-3cb2-4f23-8d59-9b159b28cf7c?width=125&height=116",
+    icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/Custom_Reports_for_Confluence_3e8b2955ff.png",
     description:
       "Create live Confluence reports from CQL — with exports to Excel, PDF and more.",
     marketplaceUrl:
@@ -317,7 +316,7 @@ export const apps = [
     badge: null,
     rating: 4,
     installs: 74,
-    icon: "https://marketplace.atlassian.com/product-listing/files/b46abfed-3651-450c-9163-cec40b5f0216?width=126&height=116",
+    icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/Latex_Math_And_UML_Diagrams_For_Confluence_2dd7288878.png",
     description:
       "Embed LaTeX equations and UML diagrams directly into Confluence for clearer technical documentation.",
     marketplaceUrl:

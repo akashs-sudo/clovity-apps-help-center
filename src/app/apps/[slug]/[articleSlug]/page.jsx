@@ -1,5 +1,9 @@
 import { apps } from "@/data/apps";
-import { timeTrackingDocs, findArticle, getAllArticles } from "@/data/time-tracking-docs";
+import {
+  timeTrackingDocs,
+  findArticle,
+  getAllArticles,
+} from "@/data/time-tracking-docs";
 import { dashboardChartsDocs } from "@/data/dashboard-charts-docs";
 import { reportsChartsConfluenceDocs } from "@/data/reports-charts-confluence-docs";
 import { latexDiagramsConfluenceDocs } from "@/data/latex-diagrams-confluence-docs";
@@ -53,42 +57,68 @@ export default async function ArticlePage({ params }) {
   const allArticles = getAllArticles(docs);
   const currentIndex = allArticles.findIndex((a) => a.slug === articleSlug);
   const prevArticle = currentIndex > 0 ? allArticles[currentIndex - 1] : null;
-  const nextArticle = currentIndex < allArticles.length - 1 ? allArticles[currentIndex + 1] : null;
+  const nextArticle =
+    currentIndex < allArticles.length - 1
+      ? allArticles[currentIndex + 1]
+      : null;
 
   return (
     <div className="min-h-screen bg-white">
       {/* App header */}
-      <div className="border-b border-gray-200 bg-white sticky top-0 z-30">
+      <div className="top-[80.8px] border-b border-gray-200 bg-white sticky top-0 z-30">
         <div className="max-w-[1920px] mx-auto px-4 sm:px-6 h-14 flex items-center gap-3">
           {app && (
             <div className="w-6 h-6 rounded overflow-hidden flex-shrink-0">
-              <Image src={app.icon} alt={app.shortName} width={24} height={24} unoptimized className="w-full h-full object-cover" />
+              <Image
+                src={app.icon}
+                alt={app.shortName}
+                width={24}
+                height={24}
+                unoptimized
+                className="w-full h-full object-cover"
+              />
             </div>
           )}
           <nav className="flex items-center gap-1.5 text-sm text-gray-500 min-w-0">
-            <Link href="/" className="hover:text-gray-800 transition-colors shrink-0">Help Center</Link>
+            <Link
+              href="/"
+              className="hover:text-gray-800 transition-colors shrink-0"
+            >
+              Help Center
+            </Link>
             <span className="text-gray-300">/</span>
-            <Link href={`/apps/${slug}`} className="hover:text-gray-800 transition-colors shrink-0 hidden sm:block truncate max-w-[140px]">
+            <Link
+              href={`/apps/${slug}`}
+              className="hover:text-gray-800 transition-colors shrink-0 hidden sm:block truncate max-w-[140px]"
+            >
               {app?.shortName || slug}
             </Link>
             <span className="text-gray-300 hidden sm:block">/</span>
-            <span className="text-gray-800 font-medium truncate">{article.title}</span>
+            <span className="text-gray-800 font-medium truncate">
+              {article.title}
+            </span>
           </nav>
         </div>
       </div>
 
       <div className="max-w-[1920px] mx-auto px-4 sm:px-6">
         <div className="flex gap-8">
-          <DocSidebar docs={docs} appSlug={slug} activeArticleSlug={articleSlug} />
+          <DocSidebar
+            docs={docs}
+            appSlug={slug}
+            activeArticleSlug={articleSlug}
+          />
 
           {/* Main content */}
-          <div className="flex-1 min-w-0 py-6">
+          <div className="flex-1 min-w-0 py-6 pb-12">
             <div className="mb-2">
               <span className="text-xs font-medium text-blue-600 uppercase tracking-wider">
                 {category.title}
               </span>
             </div>
-            <h1 className="text-2xl font-bold text-gray-900 mb-6">{article.title}</h1>
+            <h1 className="text-2xl font-bold text-gray-900 mb-6">
+              {article.title}
+            </h1>
 
             <ArticleContent content={article.content} />
 
@@ -99,15 +129,29 @@ export default async function ArticlePage({ params }) {
                   href={`/apps/${slug}/${prevArticle.slug}`}
                   className="group flex items-center gap-2 text-sm text-gray-500 hover:text-blue-700 transition-colors"
                 >
-                  <svg className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  <svg
+                    className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 19l-7-7 7-7"
+                    />
                   </svg>
                   <div>
                     <div className="text-xs text-gray-400">Previous</div>
-                    <div className="font-medium text-gray-700 group-hover:text-blue-700">{prevArticle.title}</div>
+                    <div className="font-medium text-gray-700 group-hover:text-blue-700">
+                      {prevArticle.title}
+                    </div>
                   </div>
                 </Link>
-              ) : <div />}
+              ) : (
+                <div />
+              )}
 
               {nextArticle ? (
                 <Link
@@ -116,13 +160,27 @@ export default async function ArticlePage({ params }) {
                 >
                   <div>
                     <div className="text-xs text-gray-400">Next</div>
-                    <div className="font-medium text-gray-700 group-hover:text-blue-700">{nextArticle.title}</div>
+                    <div className="font-medium text-gray-700 group-hover:text-blue-700">
+                      {nextArticle.title}
+                    </div>
                   </div>
-                  <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <svg
+                    className="w-4 h-4 group-hover:translate-x-0.5 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </Link>
-              ) : <div />}
+              ) : (
+                <div />
+              )}
             </div>
           </div>
         </div>

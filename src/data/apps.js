@@ -137,85 +137,85 @@ export const apps = [
       },
     ],
   },
-  {
-    slug: "backlog-auditor-jira",
-    name: "Backlog Auditor & Export",
-    shortName: "Backlog Auditor",
-    platform: "Jira Cloud",
-    badge: null,
-    rating: null,
-    installs: 9,
-    icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/Backlog_Auditor_and_Export_70f358fa4c.png",
-    description:
-      "Keep your Jira backlog clean, consistent, and exportable — effortlessly.",
-    marketplaceUrl:
-      "https://marketplace.atlassian.com/apps/2421185342/backlog-auditor-export",
-    sections: [
-      {
-        id: "overview",
-        title: "Overview",
-        content:
-          "Backlog Auditor & Export helps Jira teams maintain a clean, well-structured backlog. Automatically detect issues missing estimates, descriptions, or labels. Export your entire backlog to Excel with one click.",
-      },
-      {
-        id: "audit-rules",
-        title: "Audit Rules",
-        content:
-          "Configure audit rules for your project: required fields (story points, description, labels, assignee), naming conventions, and age limits for open issues. Issues that violate rules are flagged in the Audit Dashboard.",
-      },
-      {
-        id: "export",
-        title: "Exporting the Backlog",
-        content:
-          "Click the Export button from the Backlog Auditor panel to download your full backlog as an Excel file. The export includes all standard and custom fields.",
-      },
-      {
-        id: "faq",
-        title: "FAQ",
-        content:
-          "Q: Does it work with all project types? A: Yes, Scrum, Kanban, and next-gen projects are supported. Q: Can I schedule exports? A: Scheduled exports are on the roadmap.",
-      },
-    ],
-  },
-  {
-    slug: "jql-ai-jira",
-    name: "JQL AI",
-    shortName: "JQL AI",
-    platform: "Jira Cloud",
-    badge: null,
-    rating: null,
-    installs: 27,
-    icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/JQL_AI_5c9387a3f4.png",
-    description:
-      "Effortlessly transform natural language into precise JQL queries with AI-powered query conversion.",
-    marketplaceUrl: "https://marketplace.atlassian.com/apps/1237395/jql-ai",
-    sections: [
-      {
-        id: "overview",
-        title: "Overview",
-        content:
-          "JQL AI converts plain English into Jira Query Language instantly. No more memorizing JQL syntax — just describe what you want to find, and the AI writes the perfect query for you.",
-      },
-      {
-        id: "usage",
-        title: "How to Use",
-        content:
-          'In Jira Issue Navigator, click the "AI" button added by JQL AI. Type your question in plain English and the app generates the correct JQL and applies it automatically.',
-      },
-      {
-        id: "examples",
-        title: "Query Examples",
-        content:
-          'Natural: "Bugs reported last sprint not yet fixed" → JQL: issuetype = Bug AND sprint in closedSprints() AND status != Done. Natural: "Stories with no story points" → JQL: issuetype = Story AND "Story Points" is EMPTY.',
-      },
-      {
-        id: "faq",
-        title: "FAQ",
-        content:
-          "Q: Do I need JQL knowledge? A: No, that is the whole point. Q: Does it learn my custom fields? A: Yes, it auto-discovers your project custom fields and includes them in suggestions.",
-      },
-    ],
-  },
+  // {
+  //   slug: "backlog-auditor-jira",
+  //   name: "Backlog Auditor & Export",
+  //   shortName: "Backlog Auditor",
+  //   platform: "Jira Cloud",
+  //   badge: null,
+  //   rating: null,
+  //   installs: 9,
+  //   icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/Backlog_Auditor_and_Export_70f358fa4c.png",
+  //   description:
+  //     "Keep your Jira backlog clean, consistent, and exportable — effortlessly.",
+  //   marketplaceUrl:
+  //     "https://marketplace.atlassian.com/apps/2421185342/backlog-auditor-export",
+  //   sections: [
+  //     {
+  //       id: "overview",
+  //       title: "Overview",
+  //       content:
+  //         "Backlog Auditor & Export helps Jira teams maintain a clean, well-structured backlog. Automatically detect issues missing estimates, descriptions, or labels. Export your entire backlog to Excel with one click.",
+  //     },
+  //     {
+  //       id: "audit-rules",
+  //       title: "Audit Rules",
+  //       content:
+  //         "Configure audit rules for your project: required fields (story points, description, labels, assignee), naming conventions, and age limits for open issues. Issues that violate rules are flagged in the Audit Dashboard.",
+  //     },
+  //     {
+  //       id: "export",
+  //       title: "Exporting the Backlog",
+  //       content:
+  //         "Click the Export button from the Backlog Auditor panel to download your full backlog as an Excel file. The export includes all standard and custom fields.",
+  //     },
+  //     {
+  //       id: "faq",
+  //       title: "FAQ",
+  //       content:
+  //         "Q: Does it work with all project types? A: Yes, Scrum, Kanban, and next-gen projects are supported. Q: Can I schedule exports? A: Scheduled exports are on the roadmap.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   slug: "jql-ai-jira",
+  //   name: "JQL AI",
+  //   shortName: "JQL AI",
+  //   platform: "Jira Cloud",
+  //   badge: null,
+  //   rating: null,
+  //   installs: 27,
+  //   icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/JQL_AI_5c9387a3f4.png",
+  //   description:
+  //     "Effortlessly transform natural language into precise JQL queries with AI-powered query conversion.",
+  //   marketplaceUrl: "https://marketplace.atlassian.com/apps/1237395/jql-ai",
+  //   sections: [
+  //     {
+  //       id: "overview",
+  //       title: "Overview",
+  //       content:
+  //         "JQL AI converts plain English into Jira Query Language instantly. No more memorizing JQL syntax — just describe what you want to find, and the AI writes the perfect query for you.",
+  //     },
+  //     {
+  //       id: "usage",
+  //       title: "How to Use",
+  //       content:
+  //         'In Jira Issue Navigator, click the "AI" button added by JQL AI. Type your question in plain English and the app generates the correct JQL and applies it automatically.',
+  //     },
+  //     {
+  //       id: "examples",
+  //       title: "Query Examples",
+  //       content:
+  //         'Natural: "Bugs reported last sprint not yet fixed" → JQL: issuetype = Bug AND sprint in closedSprints() AND status != Done. Natural: "Stories with no story points" → JQL: issuetype = Story AND "Story Points" is EMPTY.',
+  //     },
+  //     {
+  //       id: "faq",
+  //       title: "FAQ",
+  //       content:
+  //         "Q: Do I need JQL knowledge? A: No, that is the whole point. Q: Does it learn my custom fields? A: Yes, it auto-discovers your project custom fields and includes them in suggestions.",
+  //     },
+  //   ],
+  // },
   {
     slug: "content-formatting-confluence",
     name: "Content Formatting Macros: Tabs Navigation Visibility CSS",

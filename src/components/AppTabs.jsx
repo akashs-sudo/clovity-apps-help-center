@@ -16,8 +16,8 @@ export default function AppTabs({ apps }) {
     active === "all"
       ? apps
       : active === "jira"
-      ? apps.filter((a) => a.platform.includes("Jira"))
-      : apps.filter((a) => a.platform.includes("Confluence"));
+        ? apps.filter((a) => a.platform.includes("Jira"))
+        : apps.filter((a) => a.platform.includes("Confluence"));
 
   const counts = {
     all: apps.length,
@@ -56,7 +56,7 @@ export default function AppTabs({ apps }) {
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-5">
         {filtered.map((app) => (
           <AppCard key={app.slug} app={app} />
         ))}

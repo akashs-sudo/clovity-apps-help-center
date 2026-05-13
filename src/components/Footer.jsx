@@ -87,7 +87,6 @@ export default function Footer() {
                   developers@clovity.com
                 </a>
               </li>
-              <li>(925) 264-6360</li>
               <li className="leading-relaxed">
                 11501 Dublin Blvd, Suite 200
                 <br />

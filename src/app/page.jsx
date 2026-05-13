@@ -28,7 +28,7 @@ export default function HomePage() {
       {/* Apps section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
         <div className="mb-6">
-          <h2 className="text-xl font-bold text-gray-900">Our Apps</h2>
+          <h2 className="text-2xl font-bold text-gray-900">Our Apps</h2>
           <p className="text-sm text-gray-500 mt-1">
             Select an app to browse its documentation and guides.
           </p>

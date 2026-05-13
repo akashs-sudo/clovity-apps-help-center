@@ -84,7 +84,7 @@ export default async function ArticlePage({ params }) {
               href="/"
               className="hover:text-gray-800 transition-colors shrink-0"
             >
-              Help Center
+              Home
             </Link>
             <span className="text-gray-300">/</span>
             <Link

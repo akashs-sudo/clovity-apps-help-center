@@ -5,10 +5,13 @@
   --color-clovity-blue: #1E3A5F;
   --color-clovity-accent: #0052CC;
   --color-clovity-light: #F8FAFC;
+  --font-sans: var(--font-poppins), sans-serif;
 }
 
-html {
+html,
+body {
   scroll-behavior: smooth;
+  font-family: var(--font-poppins), sans-serif;
 }
 
 ::-webkit-scrollbar {

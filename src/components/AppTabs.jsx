@@ -29,14 +29,14 @@ export default function AppTabs({ apps }) {
     <div>
       {/* Tab Bar */}
       <div className="border-b border-gray-200 mb-8">
-        <div className="flex gap-1">
+        <div className="flex gap-8 flex-wrap">
           {TABS.map((tab) => {
             const isActive = active === tab.id;
             return (
               <button
                 key={tab.id}
                 onClick={() => setActive(tab.id)}
-                className={`relative flex items-center gap-2 px-5 py-3 text-sm font-medium transition-colors cursor-pointer focus:outline-none whitespace-nowrap
+                className={`relative flex items-center gap-2 py-3 text-sm font-medium transition-colors cursor-pointer focus:outline-none whitespace-nowrap
                   ${isActive ? "text-blue-700" : "text-gray-500 hover:text-gray-800"}`}
               >
                 {tab.label}

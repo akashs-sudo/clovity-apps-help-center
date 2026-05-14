@@ -54,15 +54,6 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://clovity.com/contact"
-                  target="_blank"
-                  className="text-blue-200/90 hover:text-blue-100 transition-colors"
-                >
-                  Contact Support
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="https://marketplace.atlassian.com/vendors/398573336/clovity"
                   target="_blank"
                   className="text-blue-200/90 hover:text-blue-100 transition-colors"
@@ -81,16 +72,20 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-blue-200/90">
               <li>
                 <a
-                  href="mailto:developers@clovity.com"
+                  href="mailto:info-global@clovity.com"
                   className="hover:text-blue-100 transition-colors"
                 >
-                  developers@clovity.com
+                  info-global@clovity.com
                 </a>
               </li>
-              <li className="leading-relaxed">
-                11501 Dublin Blvd, Suite 200
-                <br />
-                Dublin, CA 94568, USA
+                <li>
+                <Link
+                  href="https://clovity.com/contact"
+                  target="_blank"
+                  className="text-blue-200/90 hover:text-blue-100 transition-colors"
+                >
+                  Our Location
+                </Link>
               </li>
             </ul>
           </div>

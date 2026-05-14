@@ -7,12 +7,63 @@ import Sidebar from "@/components/Sidebar";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import {
+  LayoutDashboard,
+  Rocket,
+  BarChart2,
+  Clock,
+  Briefcase,
+  ListOrdered,
+  Users,
+  Shield,
+  Settings,
+  LifeBuoy,
+  FileText,
+  PieChart,
+  List,
+  Filter,
+  Settings2,
+  Table,
+  BarChart,
+  Sparkles,
+  BookOpen,
+  Gift,
+  Zap,
+  Code,
+} from "lucide-react";
 
 const docsMap = {
   "time-tracking-jira": timeTrackingDocs,
   "dashboard-charts-jira": dashboardChartsDocs,
   "reports-charts-confluence": reportsChartsConfluenceDocs,
   "latex-diagrams-confluence": latexDiagramsConfluenceDocs,
+};
+
+const CATEGORY_META = {
+  "Overview":                       { icon: LayoutDashboard, summary: "Bird's-eye view of all features and capabilities." },
+  "Getting Started":                { icon: Rocket,          summary: "Set up the app quickly with step-by-step guides." },
+  "Get Started":                    { icon: Rocket,          summary: "Install and configure the app in just a few steps." },
+  "Capacity Planner & Insight":     { icon: BarChart2,       summary: "Plan team capacity and gain actionable workload insights." },
+  "Time Tracking and Reporting":    { icon: Clock,           summary: "Log work hours and generate detailed time reports." },
+  "Project Portfolio Management":   { icon: Briefcase,       summary: "Manage multiple projects and track cross-portfolio progress." },
+  "Backlog Prioritization":         { icon: ListOrdered,     summary: "Prioritize backlog items to keep the team focused." },
+  "Teams management":               { icon: Users,           summary: "Organize team members, roles, and responsibilities." },
+  "Permissions & RBAC":             { icon: Shield,          summary: "Control access with fine-grained role-based permissions." },
+  "Global Setting":                 { icon: Settings,        summary: "Configure app-wide preferences and default settings." },
+  "Help & Support":                 { icon: LifeBuoy,        summary: "Raise tickets or browse resources to get quick help." },
+  "End User License Agreement (Eula)": { icon: FileText,     summary: "Review the terms and conditions for using this app." },
+  "End User License Agreement":     { icon: FileText,        summary: "Review the licensing terms before using this app." },
+  "Custom Charts Gadget":           { icon: PieChart,        summary: "Build custom chart gadgets to visualize Jira data your way." },
+  "Issue List Gadget":              { icon: List,            summary: "Display filtered Jira issue lists as interactive gadgets." },
+  "Dynamic Filter Controller":      { icon: Filter,          summary: "Control multiple gadgets dynamically with a single filter." },
+  "Admin Settings":                 { icon: Settings2,       summary: "Manage global configurations and admin-level preferences." },
+  "Custom Tabular Report":          { icon: Table,           summary: "Create structured tabular reports from Jira data in Confluence." },
+  "Custom Charts Report":           { icon: BarChart,        summary: "Visualize Jira metrics with customizable chart reports." },
+  "Features":                       { icon: Sparkles,        summary: "Explore all features available in this app." },
+  "Guidelines":                     { icon: BookOpen,        summary: "Best practices and usage guidelines for effective reporting." },
+  "What You Get":                   { icon: Gift,            summary: "Discover what this app brings to your Confluence pages." },
+  "Quick Start":                    { icon: Zap,             summary: "Start rendering LaTeX diagrams in Confluence within minutes." },
+  "Macro Reference":                { icon: Code,            summary: "Full reference for all macro options and syntax." },
 };
 
 const ACCENT_COLORS = [
@@ -147,79 +198,51 @@ export default async function AppPage({ params }) {
 
           {/* Documentation categories grid */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
-            <div className="flex items-center justify-between mb-7">
-              <h2 className="text-xl font-bold text-gray-900">Documentation</h2>
-            </div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">
+              Documentation
+            </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {docs.categories.map((cat, idx) => {
                 const color = ACCENT_COLORS[idx % ACCENT_COLORS.length];
+                const meta = CATEGORY_META[cat.title];
+                const IconComponent = meta?.icon ?? FileText;
+                const summary = meta?.summary ?? `${cat.articles.length} ${cat.articles.length === 1 ? "article" : "articles"}`;
                 return (
                   <Link
                     key={cat.id}
                     href={`/apps/${slug}/${cat.articles[0].slug}`}
-                    className="group block rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-200 bg-white overflow-hidden"
+                    className="group relative flex flex-col rounded-xl border border-gray-200 bg-white overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
                   >
-                    <div className="p-5">
+                    <div className="flex flex-col flex-1 p-5">
                       {/* Icon */}
                       <div
-                        className="inline-flex items-center justify-center w-10 h-10 rounded-lg mb-4"
+                        className="w-10 h-10 rounded-lg flex items-center justify-center mb-4 shrink-0"
                         style={{ backgroundColor: color.iconBg }}
                       >
-                        <svg
-                          className="w-5 h-5"
-                          fill="none"
+                        <IconComponent
+                          size={20}
                           stroke={color.bar}
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={1.5}
-                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                          />
-                        </svg>
+                          strokeWidth={1.5}
+                        />
                       </div>
 
-                      <h3 className="font-semibold text-gray-900 text-sm group-hover:text-blue-700 transition-colors mb-1 leading-snug">
+                      {/* Heading */}
+                      <h3 className="font-semibold text-gray-900 text-[15px] leading-snug mb-1.5 group-hover:opacity-80 transition-opacity">
                         {cat.title}
                       </h3>
-                      <p
-                        className="text-xs font-medium mb-3"
-                        style={{ color: color.bar }}
-                      >
-                        {cat.articles.length}{" "}
-                        {cat.articles.length === 1 ? "article" : "articles"}
+
+                      {/* Short summary */}
+                      <p className="text-sm text-gray-400 flex-1">
+                        {summary}
                       </p>
 
-                      <ul className="space-y-1.5">
-                        {cat.articles.slice(0, 3).map((article) => (
-                          <li
-                            key={article.slug}
-                            className="text-xs text-gray-500 flex items-center gap-2 leading-snug"
-                          >
-                            <span
-                              className="w-1 h-1 rounded-full shrink-0"
-                              style={{ backgroundColor: color.bar }}
-                            />
-                            {article.title}
-                          </li>
-                        ))}
-                        {cat.articles.length > 3 && (
-                          <li
-                            className="text-xs pl-3"
-                            style={{ color: color.bar }}
-                          >
-                            +{cat.articles.length - 3} more
-                          </li>
-                        )}
-                      </ul>
-
+                      {/* CTA */}
                       <div
-                        className="mt-4 flex items-center gap-1 text-xs font-medium group-hover:gap-2 transition-all"
+                        className="mt-5 flex items-center gap-1.5 text-xs font-semibold group-hover:gap-3 transition-all duration-150"
                         style={{ color: color.bar }}
                       >
-                        View all
+                        Read docs
                         <svg
                           className="w-3.5 h-3.5"
                           fill="none"
@@ -241,7 +264,7 @@ export default async function AppPage({ params }) {
             </div>
 
             {/* Support footer */}
-            <div className="mt-12 p-6 rounded-2xl border border-gray-200 bg-linear-to-r from-slate-50 to-blue-50/40 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="mt-12 p-6 rounded-2xl border border-gray-200 bg-gradient-to-r from-slate-50 to-blue-50/40 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
                 <p className="font-semibold text-gray-900 text-sm">
                   Still need help?

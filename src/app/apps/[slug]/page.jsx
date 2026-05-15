@@ -3,6 +3,7 @@ import { timeTrackingDocs } from "@/data/time-tracking-docs";
 import { dashboardChartsDocs } from "@/data/dashboard-charts-docs";
 import { reportsChartsConfluenceDocs } from "@/data/reports-charts-confluence-docs";
 import { latexDiagramsConfluenceDocs } from "@/data/latex-diagrams-confluence-docs";
+import { contentFormattingConfluenceDocs } from "@/data/content-formatting-confluence-docs";
 import Sidebar from "@/components/Sidebar";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -37,6 +38,7 @@ const docsMap = {
   "dashboard-charts-jira": dashboardChartsDocs,
   "reports-charts-confluence": reportsChartsConfluenceDocs,
   "latex-diagrams-confluence": latexDiagramsConfluenceDocs,
+  "content-formatting-confluence": contentFormattingConfluenceDocs,
 };
 
 const CATEGORY_META = {
@@ -64,6 +66,13 @@ const CATEGORY_META = {
   "What You Get":                   { icon: Gift,            summary: "Discover what this app brings to your Confluence pages." },
   "Quick Start":                    { icon: Zap,             summary: "Start rendering LaTeX diagrams in Confluence within minutes." },
   "Macro Reference":                { icon: Code,            summary: "Full reference for all macro options and syntax." },
+  "User Guide":                     { icon: BookOpen,        summary: "Navigate the app with feature breakdowns, tutorials, and best practices." },
+  "Admin Settings":                 { icon: Settings2,       summary: "Configure global settings, roles, permissions, and data security." },
+  "Release Notes":                  { icon: Sparkles,        summary: "Latest updates, changelog, and upcoming features on the roadmap." },
+  "Integrations & Migration":       { icon: Zap,             summary: "Connect third-party tools and migrate data to or from the app." },
+  "Use Cases":                      { icon: Briefcase,       summary: "Real-world examples, industry scenarios, and ready-to-use templates." },
+  "Help Center":                    { icon: LifeBuoy,        summary: "FAQs, troubleshooting guides, and support contact options." },
+  "Additional Resources":           { icon: FileText,        summary: "Privacy policy, EULA, trust center, and API documentation." },
 };
 
 const ACCENT_COLORS = [

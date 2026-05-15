@@ -1,6 +1,7 @@
 "use client";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 export default function ArticleContent({ content }) {
   return (
@@ -21,7 +22,25 @@ export default function ArticleContent({ content }) {
     ">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw]}
         components={{
+          iframe: ({ src, title }) => {
+            const isPlaylist = src?.includes("videoseries") || src?.includes("list=");
+            return (
+              <div
+                className="my-6 rounded-xl overflow-hidden shadow-lg border border-gray-200 bg-black"
+                style={{ position: "relative", paddingTop: isPlaylist ? "62%" : "56.25%" }}
+              >
+                <iframe
+                  src={src}
+                  title={title || "Video"}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
+                />
+              </div>
+            );
+          },
           table: ({ children }) => (
             <div className="overflow-x-auto my-4 rounded-lg border border-gray-200">
               <table className="min-w-full divide-y divide-gray-200">{children}</table>

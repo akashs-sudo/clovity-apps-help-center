@@ -7,6 +7,7 @@ import {
 import { dashboardChartsDocs } from "@/data/dashboard-charts-docs";
 import { reportsChartsConfluenceDocs } from "@/data/reports-charts-confluence-docs";
 import { latexDiagramsConfluenceDocs } from "@/data/latex-diagrams-confluence-docs";
+import { contentFormattingConfluenceDocs } from "@/data/content-formatting-confluence-docs";
 import DocSidebar from "@/components/DocSidebar";
 import ArticleContent from "@/components/ArticleContent";
 import { notFound } from "next/navigation";
@@ -18,6 +19,7 @@ const docsMap = {
   "dashboard-charts-jira": dashboardChartsDocs,
   "reports-charts-confluence": reportsChartsConfluenceDocs,
   "latex-diagrams-confluence": latexDiagramsConfluenceDocs,
+  "content-formatting-confluence": contentFormattingConfluenceDocs,
 };
 
 export async function generateStaticParams() {

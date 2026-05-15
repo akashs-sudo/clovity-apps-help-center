@@ -10,6 +10,10 @@ export const timeTrackingDocs = {
         {
           slug: "what-is-time-tracking",
           title: "What is Time Tracking & PPM?",
+          sideVideo: {
+            src: "https://www.youtube.com/embed/H0dyqJKeAG8",
+            title: "Time Tracking, Resource Planning & Project Management — Product Introduction",
+          },
           content: `# What is Time Tracking, Resource Planning & Project Management?
 
 Time Tracking, Resource Planning & Project Management is a Jira Cloud app that gives your team full visibility into workload, delivery health, and priorities — all inside Jira.
@@ -22,6 +26,8 @@ Time Tracking, Resource Planning & Project Management is a Jira Cloud app that g
 - **Monitor portfolio health** across all your active projects and initiatives with 6 visualization modes including Gantt
 
 All of this runs natively inside Jira Cloud, using your existing projects, issues, and Jira user management — no external tools, no data exports, no setup overhead.
+
+<!--VIDEO_BREAK-->
 
 ## Four Integrated Modules
 
@@ -67,50 +73,26 @@ Jira Cloud only. Built on Atlassian Forge — no external servers, no data expor
         },
         {
           slug: "demo-video",
-          title: "Demo Video & Walkthrough",
-          content: `# Demo Video & Walkthrough
-
-## Product Introduction Video
-
-Watch the full product introduction to see Time Tracking, Resource Planning & Project Management in action:
-
-<iframe src="https://www.youtube.com/embed/H0dyqJKeAG8" title="Time Tracking Resource Planning & Project Management — Product Introduction"></iframe>
-
-The intro video covers:
-- Overview of all four modules (Time Tracking, Capacity, Backlog, Portfolio)
-- Live walkthrough of logging time and running a capacity check
-- How to set up a prioritization plan
-- Portfolio Gantt chart and view types
-
----
-
-## Tutorial Video Playlist
-
-Browse and play all 12 tutorial videos directly below — click any thumbnail to start watching:
-
-<iframe src="https://www.youtube.com/embed/videoseries?list=PLACoCS_WiVwR45unjH2D5MwcBjMFFflCL" title="Time Tracking Resource Planning & Project Management — Full Tutorial Playlist"></iframe>
-
-The playlist includes tutorials on:
-- Welcome to the Suite — App Overview
-- Creating Your First Capacity Plan
-- Analytics — Team Allocation Tab
-- Analytics — Assignee Capacity, Deadlines & Status Aging
-- Saved Plans, Reports & Team Management
-- And more feature walkthroughs
-
-[View full playlist on YouTube →](https://www.youtube.com/watch?v=7z8NjUmLtOs&list=PLACoCS_WiVwR45unjH2D5MwcBjMFFflCL)
-
----
-
-## What to Watch First
-
-If you are new to the app, we recommend this order:
-
-1. **Intro video** — get the full picture (10–15 min)
-2. **Time Tracking tutorial** — log your first time entry
-3. **Capacity tutorial** — run your first capacity check
-4. **Backlog Prioritization tutorial** — score your first backlog
-5. **Portfolio tutorial** — create your first Gantt roadmap`,
+          title: "Demo Videos & Walkthroughs",
+          content: `12 step-by-step tutorials covering every module — click any video to start watching, or use the arrows to go through them in order. New to the app? Start with the [Product Introduction](/apps/time-tracking-jira/what-is-time-tracking) first.`,
+          videoGallery: {
+            playlistUrl:
+              "https://www.youtube.com/watch?v=7z8NjUmLtOs&list=PLACoCS_WiVwR45unjH2D5MwcBjMFFflCL",
+            videos: [
+              { id: "7z8NjUmLtOs", title: "Welcome to the Suite — App Overview" },
+              { id: "5SYYnnFm1AM", title: "Creating Your First Capacity Plan" },
+              { id: "Q1BAH-t9v8w", title: "Analytics — Team Allocation Tab" },
+              { id: "2-3ixqxDUSc", title: "Analytics — Assignee Capacity, Deadlines & Status Aging" },
+              { id: "uOhItP5bAyE", title: "Saved Plans, Reports & Team Management" },
+              { id: "kxVBTmIYXGk", title: "Calendar View, Accounts & Settings" },
+              { id: "7vW46pVpNYE", title: "Logging Time — Timesheet & Reports" },
+              { id: "GYRiEwDA-yI", title: "Scoring Your Backlog — RICE, ICE & WSJF" },
+              { id: "c-9IhCJMjxI", title: "Custom Templates, Priority Matrix & Saved Reports" },
+              { id: "PyFomw9i06g", title: "Building a Portfolio Roadmap" },
+              { id: "2CpKGScxWpg", title: "Gantt Chart and Saved Portfolios" },
+              { id: "nRDKQcaISgQ", title: "Permissions, Roles & App Settings" },
+            ],
+          },
         },
         {
           slug: "installation-setup",

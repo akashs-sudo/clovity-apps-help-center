@@ -10,6 +10,7 @@ import { latexDiagramsConfluenceDocs } from "@/data/latex-diagrams-confluence-do
 import { contentFormattingConfluenceDocs } from "@/data/content-formatting-confluence-docs";
 import DocSidebar from "@/components/DocSidebar";
 import ArticleContent from "@/components/ArticleContent";
+import VideoGallery from "@/components/VideoGallery";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -122,7 +123,42 @@ export default async function ArticlePage({ params }) {
               {article.title}
             </h1>
 
-            <ArticleContent content={article.content} />
+            {article.sideVideo ? (() => {
+              const BREAK = "<!--VIDEO_BREAK-->";
+              const parts = article.content.split(BREAK);
+              const contentTop = parts[0] ?? article.content;
+              const contentBottom = parts[1] ?? "";
+              return (
+                <>
+                  <ArticleContent content={contentTop} />
+                  <div className="my-8 rounded-2xl overflow-hidden shadow-xl border border-gray-200 bg-black aspect-video max-w-3xl">
+                    <iframe
+                      src={article.sideVideo.src}
+                      title={article.sideVideo.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      className="w-full h-full border-0"
+                    />
+                  </div>
+                  <p className="mb-8 -mt-6 text-xs text-gray-400 text-center">
+                    Product Introduction Video
+                  </p>
+                  {contentBottom && <ArticleContent content={contentBottom} />}
+                </>
+              );
+            })() : (
+              <>
+                <ArticleContent content={article.content} />
+                {article.videoGallery && (
+                  <div className="mt-6">
+                    <VideoGallery
+                      videos={article.videoGallery.videos}
+                      playlistUrl={article.videoGallery.playlistUrl}
+                    />
+                  </div>
+                )}
+              </>
+            )}
 
             {/* Prev / Next navigation */}
             <div className="mt-12 pt-6 border-t border-gray-200 flex items-center justify-between gap-4">

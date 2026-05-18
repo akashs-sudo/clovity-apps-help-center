@@ -19,7 +19,7 @@ export default function DocSidebar({ docs, appSlug, activeArticleSlug }) {
 
   return (
     <aside className="hidden lg:block w-56 xl:w-60 shrink-0">
-      <div className="sticky top-[137.6px] h-[calc(100vh-137.6px)] overflow-y-auto py-8 pr-5 pb-12 border-r border-gray-200/90">
+      <div className="sticky top-[138px] h-[calc(100vh-138px)] overflow-y-auto py-8 pr-5 pb-12 border-r border-gray-200/90">
         
           <nav className="flex flex-col gap-5">
             {docs.categories.map((cat) => {

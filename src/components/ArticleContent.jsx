@@ -3,6 +3,22 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 
+function slugify(text) {
+  return String(text)
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .trim();
+}
+
+function nodeText(node) {
+  if (typeof node === "string") return node;
+  if (Array.isArray(node)) return node.map(nodeText).join("");
+  if (node?.props?.children) return nodeText(node.props.children);
+  return "";
+}
+
 export default function ArticleContent({ content }) {
   return (
     <div className="prose prose-sm max-w-none
@@ -58,13 +74,13 @@ export default function ArticleContent({ content }) {
           ),
           tr: ({ children }) => <tr className="hover:bg-gray-50 transition-colors">{children}</tr>,
           h2: ({ children }) => (
-            <h2 className="text-lg font-bold text-gray-900 mt-8 mb-3 pb-2 border-b border-gray-100">{children}</h2>
+            <h2 id={slugify(nodeText(children))} className="text-lg font-bold text-gray-900 mt-8 mb-3 pb-2 border-b border-gray-100">{children}</h2>
           ),
           h3: ({ children }) => (
-            <h3 className="text-base font-bold text-gray-900 mt-6 mb-2">{children}</h3>
+            <h3 id={slugify(nodeText(children))} className="text-base font-bold text-gray-900 mt-6 mb-2">{children}</h3>
           ),
           h4: ({ children }) => (
-            <h4 className="text-sm font-semibold text-gray-800 mt-4 mb-1">{children}</h4>
+            <h4 id={slugify(nodeText(children))} className="text-sm font-semibold text-gray-800 mt-4 mb-1">{children}</h4>
           ),
           ul: ({ children }) => (
             <ul className="list-disc list-outside ml-5 space-y-1 my-3">{children}</ul>

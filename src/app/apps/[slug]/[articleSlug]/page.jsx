@@ -11,6 +11,7 @@ import { contentFormattingConfluenceDocs } from "@/data/content-formatting-confl
 import DocSidebar from "@/components/DocSidebar";
 import ArticleContent from "@/components/ArticleContent";
 import VideoGallery from "@/components/VideoGallery";
+import TableOfContents from "@/components/TableOfContents";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -68,7 +69,7 @@ export default async function ArticlePage({ params }) {
   return (
     <div className="min-h-screen bg-white">
       {/* App header */}
-      <div className="top-[80.8px] border-b border-gray-200 bg-white sticky top-0 z-30">
+      <div className="border-b border-gray-200 bg-white sticky top-[81px] z-30">
         <div className="max-w-[1920px] mx-auto px-4 sm:px-6 h-14 flex items-center gap-3">
           {app && (
             <div className="w-6 h-6 rounded overflow-hidden flex-shrink-0">
@@ -221,6 +222,8 @@ export default async function ArticlePage({ params }) {
               )}
             </div>
           </div>
+
+          <TableOfContents content={article.content} />
         </div>
       </div>
     </div>

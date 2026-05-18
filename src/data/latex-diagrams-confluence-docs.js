@@ -2,8 +2,8 @@ export const latexDiagramsConfluenceDocs = {
   appSlug: "latex-diagrams-confluence",
   categories: [
     {
-      id: "what-you-get",
-      title: "What You Get",
+      id: "getting-started",
+      title: "Getting Started",
       articles: [
         {
           slug: "what-you-get",
@@ -78,12 +78,6 @@ This app adds macros that let you create technical visuals and formulas in Confl
 * Hover edit icon to reopen editor
 * Inline error highlighting if a specific formula fails`,
         },
-      ],
-    },
-    {
-      id: "quick-start",
-      title: "Quick Start",
-      articles: [
         {
           slug: "quick-start-intro",
           title: "Quick Start",
@@ -104,100 +98,11 @@ This app adds macros that let you create technical visuals and formulas in Confl
 * Admin setup: **Install & Permissions**
 * Editing later: **Edit Existing Content**`,
         },
-        {
-          slug: "install-permissions",
-          title: "Install & Permissions (Admins)",
-          content: `## Install the app
-
-1. Go to **Confluence → Apps → Find new apps** (Marketplace).
-2. Search for **Clovity Diagrams & Math**.
-3. Select **Install**.
-4. Review requested permissions during installation.
-
-## Who should install
-
-A Confluence **site admin** should install the app.
-
-## After install: confirm macros exist
-
-Open any page in edit mode and type \`/\`:
-
-* Search "Diagrams"
-* Search "LaTeX Block Equations"
-* Search "LaTeX Inline Equations"
-
-If you see these macros, installation is complete.
-
-## Permissions overview (what admins should know)
-
-* The app needs access to render macros and store macro content so it can be loaded later.
-* Editing and viewing remain governed by Confluence permissions (page-level access).`,
-        },
-        {
-          slug: "edit-existing-content",
-          title: "Edit Existing Content",
-          content: `## Edit Clovity Diagrams and LaTeX Block
-
-1. Hover over the rendered macro on the page
-2. Click **Edit** (pencil icon)
-3. Update source text in the modal editor
-4. Save/Publish to refresh the page view
-
-## Edit Clovity LaTeX Inline
-
-1. Hover over the inline content
-2. Click the **Edit icon**
-3. Update the paragraph and formulas
-4. Save changes
-
-## Pro tip: safe editing workflow
-
-When making a large change:
-
-1. Copy your current source into a temporary note
-2. Make edits incrementally
-3. Save and verify rendering each step`,
-        },
-        {
-          slug: "contact-support",
-          title: "Contact Support",
-          content: `Need help with LaTeX Formulas & Diagrams for Confluence? Here's how to get assistance.
-
-## Before Contacting Support
-
-Check these resources first — most issues can be resolved quickly:
-
-1. **What You Get** — overview of all macros and their features
-2. **Diagrams Macro** — troubleshooting for Mermaid/UML diagrams
-3. **LaTeX Block Equations** — checklist for successful rendering
-4. **LaTeX Inline Equations** — rules for inline and block math syntax
-
-## How to Submit a Support Request
-
-If you cannot resolve the issue using the documentation, submit a request via the Atlassian Marketplace support page for LaTeX Formulas & Diagrams.
-
-### Include in Your Request
-
-* Description of the issue — what are you trying to do, and what's happening instead?
-* Steps to reproduce — how can we replicate the issue?
-* The macro type — Diagrams, LaTeX Block, or LaTeX Inline
-* Screenshot or screen recording of the issue (including any error messages)
-* Confluence version and app version
-
-## Community & Resources
-
-* Atlassian Community — search for LaTeX Formulas & Diagrams discussions or post a question
-* Atlassian Marketplace listing — reviews, version history, and documentation links
-
-## Contact Us
-
-You can also reach our support team directly at [support@clovity.com](mailto:support@clovity.com)`,
-        },
       ],
     },
     {
-      id: "macro-reference",
-      title: "Macro Reference",
+      id: "user-guide",
+      title: "User Guide",
       articles: [
         {
           slug: "macro-reference-intro",
@@ -591,11 +496,145 @@ We define accuracy as $Acc=\\frac{TP+TN}{TP+TN+FP+FN}$.
 * Avoid line breaks inside \`$...$\`
 * Ensure every opening \`$\` has a closing \`$\``,
         },
+        {
+          slug: "edit-existing-content",
+          title: "Edit Existing Content",
+          content: `## Edit Clovity Diagrams and LaTeX Block
+
+1. Hover over the rendered macro on the page
+2. Click **Edit** (pencil icon)
+3. Update source text in the modal editor
+4. Save/Publish to refresh the page view
+
+## Edit Clovity LaTeX Inline
+
+1. Hover over the inline content
+2. Click the **Edit icon**
+3. Update the paragraph and formulas
+4. Save changes
+
+## Pro tip: safe editing workflow
+
+When making a large change:
+
+1. Copy your current source into a temporary note
+2. Make edits incrementally
+3. Save and verify rendering each step`,
+        },
       ],
     },
     {
-      id: "eula",
-      title: "End User License Agreement",
+      id: "admin-settings",
+      title: "Admin Settings",
+      articles: [
+        {
+          slug: "install-permissions",
+          title: "Install & Permissions (Admins)",
+          content: `## Install the app
+
+1. Go to **Confluence → Apps → Find new apps** (Marketplace).
+2. Search for **Clovity Diagrams & Math**.
+3. Select **Install**.
+4. Review requested permissions during installation.
+
+## Who should install
+
+A Confluence **site admin** should install the app.
+
+## After install: confirm macros exist
+
+Open any page in edit mode and type \`/\`:
+
+* Search "Diagrams"
+* Search "LaTeX Block Equations"
+* Search "LaTeX Inline Equations"
+
+If you see these macros, installation is complete.
+
+## Permissions overview (what admins should know)
+
+* The app needs access to render macros and store macro content so it can be loaded later.
+* Editing and viewing remain governed by Confluence permissions (page-level access).`,
+        },
+      ],
+    },
+    {
+      id: "release-notes",
+      title: "Release Notes",
+      articles: [
+        {
+          slug: "release-notes",
+          title: "Release Notes",
+          content: `# Release Notes\n\nFor the latest release notes and version history for LaTeX Formulas & Diagrams for Confluence, please refer to the [Atlassian Marketplace listing](https://marketplace.atlassian.com).\n\n## Recent Updates\n\nThe app is actively maintained with regular updates for new Mermaid diagram types, KaTeX version upgrades, and performance improvements.\n\n## Staying Updated\n\nThe app updates automatically through Atlassian Marketplace. No manual action is required.`,
+        },
+      ],
+    },
+    {
+      id: "integrations-migration",
+      title: "Integrations & Migration",
+      articles: [
+        {
+          slug: "integrations-migration",
+          title: "Integrations & Migration",
+          content: `# Integrations & Migration\n\n## Confluence Cloud Integration\n\nLaTeX Formulas & Diagrams for Confluence is built natively for Confluence Cloud using the Atlassian Forge platform.\n\n## Compatibility\n\n| Platform | Support |\n|---|---|\n| Confluence Cloud | Fully supported |\n| Confluence Data Center | Not supported |\n| Confluence Server | Not supported |\n\n## Migration Notes\n\nIf migrating from another diagramming or LaTeX tool to Clovity Diagrams & Math, content must be re-entered using the macro editor as there is no automated migration path from other tools.\n\n## Contact\n\nFor migration assistance: [support@clovity.com](mailto:support@clovity.com)`,
+        },
+      ],
+    },
+    {
+      id: "use-cases",
+      title: "Use Cases",
+      articles: [
+        {
+          slug: "use-cases",
+          title: "Use Cases",
+          content: `# Use Cases\n\n## Common Ways Teams Use LaTeX Formulas & Diagrams for Confluence\n\n### Technical Documentation\nSoftware architects use Mermaid diagrams to document system architecture, data flows, and API sequences directly in Confluence — keeping diagrams in sync with documentation.\n\n### Academic and Research Teams\nResearch teams write mathematical proofs, statistical formulas, and scientific notation using LaTeX Block and Inline macros. Content stays in Confluence without needing external LaTeX editors.\n\n### Engineering Runbooks\nOperations teams embed sequence diagrams and flowcharts in runbooks. When processes change, diagrams are updated in-place without exporting and re-uploading images.\n\n### Data Science Documentation\nData scientists document model formulas, loss functions, and metric definitions inline with explanatory text using the LaTeX Inline macro.\n\n### API and System Design\nBackend teams document REST APIs, authentication flows, and database schemas using ER diagrams and sequence diagrams rendered directly in Confluence pages.`,
+        },
+      ],
+    },
+    {
+      id: "help-center",
+      title: "Help Center",
+      articles: [
+        {
+          slug: "contact-support",
+          title: "Contact Support",
+          content: `Need help with LaTeX Formulas & Diagrams for Confluence? Here's how to get assistance.
+
+## Before Contacting Support
+
+Check these resources first — most issues can be resolved quickly:
+
+1. **What You Get** — overview of all macros and their features
+2. **Diagrams Macro** — troubleshooting for Mermaid/UML diagrams
+3. **LaTeX Block Equations** — checklist for successful rendering
+4. **LaTeX Inline Equations** — rules for inline and block math syntax
+
+## How to Submit a Support Request
+
+If you cannot resolve the issue using the documentation, submit a request via the Atlassian Marketplace support page for LaTeX Formulas & Diagrams.
+
+### Include in Your Request
+
+* Description of the issue — what are you trying to do, and what's happening instead?
+* Steps to reproduce — how can we replicate the issue?
+* The macro type — Diagrams, LaTeX Block, or LaTeX Inline
+* Screenshot or screen recording of the issue (including any error messages)
+* Confluence version and app version
+
+## Community & Resources
+
+* Atlassian Community — search for LaTeX Formulas & Diagrams discussions or post a question
+* Atlassian Marketplace listing — reviews, version history, and documentation links
+
+## Contact Us
+
+You can also reach our support team directly at [support@clovity.com](mailto:support@clovity.com)`,
+        },
+      ],
+    },
+    {
+      id: "additional-resources",
+      title: "Additional Resources",
       articles: [
         {
           slug: "eula",

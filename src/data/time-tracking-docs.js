@@ -646,6 +646,8 @@ Table → Gantt Chart → Graph View → Treemap → Pie Chart → Board View
 4. Check the **Member** checkbox
 5. Click **Save** - takes effect immediately
 
+![RBAC](/time-tracking-imgs/portfolio/rbac.png)
+
 ---
 
 ### How to Create a Team
@@ -654,7 +656,9 @@ Table → Gantt Chart → Graph View → Treemap → Pie Chart → Board View
 2. Click **Teams** in the sidebar
 3. Click **Create Team**
 4. Enter Team Name and select Source (Manual or Jira Group)
-5. Add members and click **Save**`,
+5. Add members and click **Save**
+
+![RBAC](/time-tracking-imgs/portfolio/teams.png)`,
         },
         {
           slug: "working-with-modules",
@@ -952,6 +956,8 @@ Adds portfolio metrics to any Jira dashboard.
 - No data: verify portfolio scope still returns issues and you have read access
 - Blank after setup: remove and re-add the gadget with fresh configuration
 
+![Gadget](/time-tracking-imgs/portfolio/gadget.png)
+
 ### Portfolio Settings
 
 Access: Portfolio → Settings gear icon → Portfolio Settings tab, or global Settings → Portfolio tab
@@ -964,6 +970,7 @@ Access: Portfolio → Settings gear icon → Portfolio Settings tab, or global S
 | Hours per day | Converts story points/day estimates to hours |
 | Working days | Days counted as working days in capacity calculations |
 
+![Setting](/time-tracking-imgs/portfolio/setting.png)
 ---
 
 ## Module 5 - Teams Management

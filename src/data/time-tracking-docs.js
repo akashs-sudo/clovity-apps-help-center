@@ -12,7 +12,8 @@ export const timeTrackingDocs = {
           title: "What is Time Tracking & PPM?",
           sideVideo: {
             src: "https://www.youtube.com/embed/H0dyqJKeAG8",
-            title: "Time Tracking, Resource Planning & Project Management - Product Introduction",
+            title:
+              "Time Tracking, Resource Planning & Project Management - Product Introduction",
           },
           content: `# What is Time Tracking, Resource Planning & Project Management?
 
@@ -79,15 +80,37 @@ Jira Cloud only. Built on Atlassian Forge - no external servers, no data exports
             playlistUrl:
               "https://www.youtube.com/watch?v=7z8NjUmLtOs&list=PLACoCS_WiVwR45unjH2D5MwcBjMFFflCL",
             videos: [
-              { id: "7z8NjUmLtOs", title: "Welcome to the Suite - App Overview" },
+              {
+                id: "7z8NjUmLtOs",
+                title: "Welcome to the Suite - App Overview",
+              },
               { id: "5SYYnnFm1AM", title: "Creating Your First Capacity Plan" },
               { id: "Q1BAH-t9v8w", title: "Analytics - Team Allocation Tab" },
-              { id: "2-3ixqxDUSc", title: "Analytics - Assignee Capacity, Deadlines & Status Aging" },
-              { id: "uOhItP5bAyE", title: "Saved Plans, Reports & Team Management" },
-              { id: "kxVBTmIYXGk", title: "Calendar View, Accounts & Settings" },
-              { id: "7vW46pVpNYE", title: "Logging Time - Timesheet & Reports" },
-              { id: "GYRiEwDA-yI", title: "Scoring Your Backlog - RICE, ICE & WSJF" },
-              { id: "c-9IhCJMjxI", title: "Custom Templates, Priority Matrix & Saved Reports" },
+              {
+                id: "2-3ixqxDUSc",
+                title:
+                  "Analytics - Assignee Capacity, Deadlines & Status Aging",
+              },
+              {
+                id: "uOhItP5bAyE",
+                title: "Saved Plans, Reports & Team Management",
+              },
+              {
+                id: "kxVBTmIYXGk",
+                title: "Calendar View, Accounts & Settings",
+              },
+              {
+                id: "7vW46pVpNYE",
+                title: "Logging Time - Timesheet & Reports",
+              },
+              {
+                id: "GYRiEwDA-yI",
+                title: "Scoring Your Backlog - RICE, ICE & WSJF",
+              },
+              {
+                id: "c-9IhCJMjxI",
+                title: "Custom Templates, Priority Matrix & Saved Reports",
+              },
               { id: "PyFomw9i06g", title: "Building a Portfolio Roadmap" },
               { id: "2CpKGScxWpg", title: "Gantt Chart and Saved Portfolios" },
               { id: "nRDKQcaISgQ", title: "Permissions, Roles & App Settings" },
@@ -580,11 +603,16 @@ Available in all Time Tracking views. Click **Log Time** to open a quick-log for
 ### How to Create a Portfolio
 
 1. Go to **Portfolio (PPM)** in the module switcher
-2. Click **New Portfolio** and give it a name
-3. Click **Filter** → choose Manual Filter or JQL
-4. Set your scope (projects, issue types, date range)
-5. Click **Apply** to preview matching issues
-6. Click **Save**
+![Step 1](/time-tracking-imgs/portfolio/step1.png)
+
+2. Click **Filter** → choose Manual Filter or Saved Filter or JQL
+![Step 2](/time-tracking-imgs/portfolio/step2.png)
+3. Set your scope (projects, issue types, date range)
+![Step 3](/time-tracking-imgs/portfolio/step3.png)
+4. Click **Apply** to preview matching issues
+![Step 4](/time-tracking-imgs/portfolio/step4.png)
+
+5. Click **Save**
 
 ---
 
@@ -593,6 +621,7 @@ Available in all Time Tracking views. Click **Log Time** to open a quick-log for
 With a portfolio open, use the **view mode selector** (top-right) to switch between:
 Table → Gantt Chart → Graph View → Treemap → Pie Chart → Board View
 
+![Views](/time-tracking-imgs/portfolio/views.png)
 ---
 
 ### How to Edit Dates in the Gantt Chart
@@ -602,6 +631,7 @@ Table → Gantt Chart → Graph View → Treemap → Pie Chart → Board View
 3. Drag the **right edge** to change the due date
 4. Changes save directly to the Jira issue's Start Date and Due Date fields
 
+![Gantt1](/time-tracking-imgs/portfolio/gantt1.png)
 ---
 
 ### How to Create a Gantt Dependency
@@ -611,6 +641,7 @@ Table → Gantt Chart → Graph View → Treemap → Pie Chart → Board View
 3. Drag to the start of the dependent task
 4. Dependency types: Finish-to-Start (FS), Start-to-Start (SS), Finish-to-Finish (FF), Start-to-Finish (SF)
 
+![Gantt2](/time-tracking-imgs/portfolio/gantt2.png)
 ---
 
 ## Admin Tasks
@@ -4329,7 +4360,11 @@ If you need programmatic access to app-specific data (scoring templates, portfol
 
 export function getAllArticles(docs) {
   return docs.categories.flatMap((cat) =>
-    cat.articles.map((article) => ({ ...article, categoryId: cat.id, categoryTitle: cat.title }))
+    cat.articles.map((article) => ({
+      ...article,
+      categoryId: cat.id,
+      categoryTitle: cat.title,
+    })),
   );
 }
 

@@ -1,4 +1,5 @@
 "use client";
+import { useMemo } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
@@ -20,6 +21,31 @@ function nodeText(node) {
 }
 
 export default function ArticleContent({ content }) {
+  // Pre-compute unique IDs keyed by 1-indexed line number (matches hast node.position.start.line).
+  // This avoids mutable state during render, which breaks SSR/hydration parity in Strict Mode.
+  const headingIdsByLine = useMemo(() => {
+    const seenIds = new Map();
+    const result = new Map();
+    const lines = content.split("\n");
+    for (let i = 0; i < lines.length; i++) {
+      const match = lines[i].match(/^(#{1,4})\s+(.+)/);
+      if (match) {
+        const text = match[2].trim();
+        const base = slugify(text);
+        const count = (seenIds.get(base) ?? 0) + 1;
+        seenIds.set(base, count);
+        const id = count === 1 ? base : `${base}-${count}`;
+        result.set(i + 1, id);
+      }
+    }
+    return result;
+  }, [content]);
+
+  function headingId(children, node) {
+    const line = node?.position?.start?.line;
+    return (line && headingIdsByLine.get(line)) ?? slugify(nodeText(children));
+  }
+
   return (
     <div className="prose prose-sm max-w-none
       prose-headings:font-bold prose-headings:text-gray-900
@@ -73,14 +99,14 @@ export default function ArticleContent({ content }) {
             <td className="px-4 py-2.5 text-sm text-gray-600 align-top">{children}</td>
           ),
           tr: ({ children }) => <tr className="hover:bg-gray-50 transition-colors">{children}</tr>,
-          h2: ({ children }) => (
-            <h2 id={slugify(nodeText(children))} className="text-lg font-bold text-gray-900 mt-8 mb-3 pb-2 border-b border-gray-100">{children}</h2>
+          h2: ({ children, node }) => (
+            <h2 id={headingId(children, node)} className="text-lg font-bold text-gray-900 mt-8 mb-3 pb-2 border-b border-gray-100">{children}</h2>
           ),
-          h3: ({ children }) => (
-            <h3 id={slugify(nodeText(children))} className="text-base font-bold text-gray-900 mt-6 mb-2">{children}</h3>
+          h3: ({ children, node }) => (
+            <h3 id={headingId(children, node)} className="text-base font-bold text-gray-900 mt-6 mb-2">{children}</h3>
           ),
-          h4: ({ children }) => (
-            <h4 id={slugify(nodeText(children))} className="text-sm font-semibold text-gray-800 mt-4 mb-1">{children}</h4>
+          h4: ({ children, node }) => (
+            <h4 id={headingId(children, node)} className="text-sm font-semibold text-gray-800 mt-4 mb-1">{children}</h4>
           ),
           ul: ({ children }) => (
             <ul className="list-disc list-outside ml-5 space-y-1 my-3">{children}</ul>

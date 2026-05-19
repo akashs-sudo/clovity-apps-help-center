@@ -42,7 +42,7 @@ export async function generateMetadata({ params }) {
   if (!result) return {};
   const app = apps.find((a) => a.slug === slug);
   return {
-    title: `${result.article.title} — ${app?.shortName || slug} Documentation`,
+    title: `${result.article.title} - ${app?.shortName || slug} Documentation`,
     description: `${result.article.title} documentation for ${app?.shortName || slug}`,
   };
 }

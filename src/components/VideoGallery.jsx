@@ -94,7 +94,7 @@ export default function VideoGallery({ videos, playlistUrl }) {
         <span className="text-xs text-gray-400">{videos.length} videos</span>
       </div>
 
-      {/* Thumbnail grid — first 5 only */}
+      {/* Thumbnail grid - first 5 only */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 max-w-5xl mx-auto">
         {videos.slice(0, 5).map((video, index) => {
           const isActive = video.id === activeId;

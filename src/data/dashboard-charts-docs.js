@@ -17,8 +17,7 @@ export const dashboardChartsDocs = {
             title:
               "Dashboard Templates, Charts, Graphs & Reports for Jira - Product Overview",
           },
-          content: `# Dashboard Templates, Charts, Graphs & Reports for Jira
-
+          content: `
 Custom Charts for Jira is a reporting app that helps you **see your Jira data in a clear, visual way**.
 
 ## Core Value Proposition
@@ -103,8 +102,7 @@ Jira Cloud only. Built on Atlassian Forge - no external servers, no data exports
         {
           slug: "installation-setup",
           title: "Installation & Setup",
-          content: `# Installation & Setup
-
+          content: `
 ## Prerequisites
 
 Before installing, confirm:
@@ -165,8 +163,7 @@ To uninstall: Jira Settings → Apps → Manage apps → find the app → click 
         {
           slug: "quick-start",
           title: "Quick Start Guide",
-          content: `# Quick Start Guide
-
+          content: `
 Get up and running with your first Jira dashboard chart in under 5 minutes.
 
 ## Step 1 - Open or Create a Dashboard
@@ -230,8 +227,7 @@ To make your dashboard interactive:
         {
           slug: "system-requirements",
           title: "System Requirements",
-          content: `# System Requirements
-
+          content: `
 ## Platform Requirements
 
 | Requirement | Details |
@@ -290,8 +286,7 @@ No special network configuration is required beyond standard access to \`*.atlas
         {
           slug: "permissions-access",
           title: "Permissions & Access",
-          content: `# Permissions & Access
-
+          content: `
 ## How Access Works
 
 Custom Charts & Dashboards does not have its own user role system. Access is governed entirely by **Jira's existing permissions**:
@@ -665,8 +660,7 @@ Click the color swatch to open the color picker.
         {
           slug: "group-by-segments-2d",
           title: "Group By Segments 2D",
-          content: `# Group By (2D Charts)
-
+          content: `
 Add a second dimension to your charts with the "Group By" feature, available for Grouped Bar, Stacked Bar, 2D Line, and 2D Table charts.
 
 ## What is "Group By"?
@@ -751,8 +745,7 @@ Group By = Columns/Series (multiple bars/lines)
         {
           slug: "calculations-lines",
           title: "Calculations Lines",
-          content: `# Calculations & Reference Lines
-
+          content: `
 Configure what values your chart displays and add goal, trend, and average lines for context.
 
 ## Calculation Types
@@ -846,8 +839,7 @@ Helpful for comparing individuals to team average.
         {
           slug: "display-options",
           title: "Display Options",
-          content: `# Display Options for Custom Charts
-
+          content: `
 Control how your Custom Chart looks: formatting, tooltips, labels, layout, and export behavior.
 
 ## Where to find it
@@ -1018,8 +1010,7 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
         {
           slug: "templates",
           title: "Templates",
-          content: `# Templates for Custom Charts
-
+          content: `
 Use Templates to start a Custom Chart faster with a ready-made chart setup. Templates are useful for common reporting views such as Issues by Status, Priority, Issue Type, Assignee, Project, and comparison-style charts.
 
 ## Where to find it
@@ -1074,8 +1065,7 @@ Use Templates to start a Custom Chart faster with a ready-made chart setup. Temp
         {
           slug: "date-range-custom-charts",
           title: "Date Range for Custom Charts",
-          content: `# Date Range for Custom Charts
-
+          content: `
 Use date fields to group Jira issues into clear time periods, build trend charts, and control how dates appear in labels and tooltips.
 
 ## Where to find it
@@ -1279,8 +1269,7 @@ Quick Filters add clickable buttons above the table for instant filtering.
         {
           slug: "templates-issue-list",
           title: "Templates For Issue List",
-          content: `# Issue List Templates for the Issue List gadget
-
+          content: `
 Start with a ready-made table layout instead of building the Issue List from scratch. Templates set up the most useful columns, default sorting, and quick filters so you can reach a working view faster.
 
 ## Where to find it
@@ -1470,8 +1459,7 @@ When viewing the dashboard, users can:
         {
           slug: "templates-dynamic-filter-controller",
           title: "Templates For Dynamic Filter Controller",
-          content: `# Templates for Dynamic Filter Controller
-
+          content: `
 Use Templates to add a ready-made set of filter fields and quick filters to the active tab of your Dynamic Filter Controller gadget. Templates help you start faster and then fine-tune the tab for your team.
 
 ## Where to find it
@@ -1535,8 +1523,7 @@ Use Templates to add a ready-made set of filter fields and quick filters to the 
         {
           slug: "admin-settings",
           title: "Admin Settings",
-          content: `# Admin Settings for Custom Charts & Dashboards
-
+          content: `
 Control global app behavior for Custom Charts, Issue List, and Dynamic Filter Controller. Use Admin Settings to manage defaults, feature availability, allowed data sources, and support links for all users in your Jira site.
 
 ## Where to find it
@@ -1643,8 +1630,7 @@ Control global app behavior for Custom Charts, Issue List, and Dynamic Filter Co
         {
           slug: "overview-dashboard",
           title: "Overview & Dashboard",
-          content: `# Overview & Dashboard
-
+          content: `
 Welcome to the **Dashboard Templates, Charts, Graphs & Reports for Jira** user guide. This page explains the app layout, gadget types, and the core UI patterns you will use every day.
 
 ## App Layout at a Glance
@@ -1766,8 +1752,7 @@ When you open a gadget in edit mode, the three-panel layout activates:
         {
           slug: "how-to-guides",
           title: "How-To Guides",
-          content: `# How-To Guides
-
+          content: `
 Step-by-step instructions for the most common tasks in **Dashboard Templates, Charts, Graphs & Reports for Jira**.
 
 ---
@@ -1951,8 +1936,7 @@ Tabs let users switch between preset filter views with a single click:
         {
           slug: "demo-dashboard-guide",
           title: "Demo Dashboard Guide: Executive Delivery Command Center",
-          content: `# Demo Dashboard Guide: Executive Delivery Command Center
-
+          content: `
 ## Overview
 
 The **Executive Delivery Command Center** is a pre-built demo dashboard that showcases how the three gadgets — Custom Charts, Issue List, and Dynamic Filter Controller — work together to create a high-impact, fully interactive executive-level Jira dashboard.
@@ -2118,8 +2102,7 @@ A tabular view showing individual issue details not visible in charts.
         {
           slug: "latest-release",
           title: "Latest Release",
-          content: `# Latest Release
-
+          content: `
 Stay up to date with the newest features, improvements, and fixes in **Dashboard Templates, Charts, Graphs & Reports for Jira**.
 
 > **Marketplace Listing:** [Dashboard Templates, Charts, Graphs & Reports for Jira](https://marketplace.atlassian.com/apps/359777765/dashboard-templates-charts-graphs-reports-for-jira)
@@ -2186,8 +2169,7 @@ All existing gadget configurations are **fully compatible** with this release. N
         {
           slug: "version-history",
           title: "Version History",
-          content: `# Version History
-
+          content: `
 A complete changelog for **Dashboard Templates, Charts, Graphs & Reports for Jira**.
 
 > **Marketplace Listing:** [Dashboard Templates, Charts, Graphs & Reports for Jira](https://marketplace.atlassian.com/apps/359777765/dashboard-templates-charts-graphs-reports-for-jira)
@@ -2328,8 +2310,7 @@ A complete changelog for **Dashboard Templates, Charts, Graphs & Reports for Jir
         {
           slug: "supported-integrations",
           title: "Supported Integrations",
-          content: `# Supported Integrations
-
+          content: `
 **Dashboard Templates, Charts, Graphs & Reports for Jira** is a native Jira Cloud app built on Atlassian Forge. It integrates deeply with Jira's own data model and dashboard system - no external services, no third-party connectors, and no data leaving your Atlassian environment.
 
 ---
@@ -2443,8 +2424,7 @@ The current version does not natively integrate with:
         {
           slug: "data-migration",
           title: "Data Migration",
-          content: `# Data Migration
-
+          content: `
 This guide explains how to export and import gadget configurations, move setups between dashboards, back up your configurations, and understand what can and cannot be migrated.
 
 ---
@@ -2606,8 +2586,7 @@ If you plan to uninstall and reinstall the app:
         {
           slug: "common-use-cases",
           title: "Common Use Cases",
-          content: `# Common Use Cases
-
+          content: `
 Real-world examples of how teams use **Dashboard Templates, Charts, Graphs & Reports for Jira** to visualize their work, track progress, and make faster decisions.
 
 ---
@@ -2765,8 +2744,7 @@ High-level metrics without noise - the numbers that matter to leadership, presen
         {
           slug: "use-case-templates",
           title: "Use Case Templates",
-          content: `# Use Case Templates
-
+          content: `
 Ready-to-use dashboard templates with recommended gadget combinations, JQL, and configuration tips. Copy the JQL and gadget setups directly into your dashboard.
 
 ---
@@ -3001,8 +2979,7 @@ fixVersion = "v2.0" AND project = YOUR_PROJECT
         {
           slug: "faq",
           title: "FAQ",
-          content: `# Frequently Asked Questions
-
+          content: `
 ## General
 
 ### What is Dashboard Templates, Charts, Graphs & Reports for Jira?
@@ -3291,59 +3268,6 @@ We love hearing your ideas! To submit a feature request:
 **Company:** Clovity
 
 **Support Email:** [support@clovity.com](mailto:support@clovity.com)
-`,
-        },
-      ],
-    },
-
-    // ═══════════════════════════════════════════════════════════════
-    // 7. EULA
-    // ═══════════════════════════════════════════════════════════════
-    {
-      id: "additional-resources",
-      title: "Additional Resources",
-      articles: [
-        {
-          slug: "eula",
-          title: "End User License Agreement (Eula)",
-          content: `**End User License Agreement (EULA)**
-
-This End User License Agreement ("Agreement") is a legal agreement between you ("User" or "You") and Clovity, Inc. ("Company" or "We"), governing your use of the **Dashboard Templates, Charts, Graphs & Reports for Jira** application ("Software") available on the Atlassian Marketplace.
-
-By installing, accessing, or using this Software, you agree to be bound by the terms of this Agreement. If you do not agree to these terms, do not install or use the Software.
-
-## 1. LICENSE GRANT
-
-Clovity, Inc. grants you a non-exclusive, non-transferable, revocable, and limited license to use the Software within your Atlassian Jira environment in accordance with this Agreement.
-
-## 2. RESTRICTIONS
-
-You shall not:
-
-* Copy, modify, distribute, or create derivative works of the Software.
-* Reverse engineer, decompile, or attempt to extract the source code.
-* Use the Software for unlawful or unauthorized purposes.
-* Rent, lease, sublicense, or transfer the Software to third parties.
-
-## 3. DATA PRIVACY & SECURITY
-
-The Software may process Jira-related data but does not store, share, or transmit personal or confidential data outside of your Jira environment.
-
-Your use of the Software must comply with applicable data protection laws and Atlassian's policies.
-
-## 4. SUPPORT & UPDATES
-
-Clovity, Inc. may provide updates, patches, or improvements to the Software at its discretion.
-
-Support services are available as per the Atlassian Marketplace listing.
-
-## 5. DISCLAIMER OF WARRANTIES
-
-The Software is provided "AS IS" without any express or implied warranties, including but not limited to merchantability, fitness for a particular purpose, or non-infringement. Clovity, Inc. does not warrant that the Software will be error-free or operate without interruptions.
-
-## 6. LIMITATION OF LIABILITY
-
-To the fullest extent permitted by law, Clovity, Inc. shall not be liable for any damages arising out of or related to the use or inability to use the Software, including but not limited to loss of profits, data, or other intangible losses, even if Clovity, Inc. has been advised of the possibility of such damages.
 `,
         },
       ],

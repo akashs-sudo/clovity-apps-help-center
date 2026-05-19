@@ -20,8 +20,7 @@ export const contentFormattingConfluenceDocs = {
             title:
               "Content Formatting Macros: Tabs, Navigation, Visibility & CSS - Product Overview",
           },
-          content: `# What is Content Formatting Macros?
-
+          content: `
 Content Formatting Macros is a Confluence Cloud app that gives teams four powerful capabilities in one install.
 
 <!--VIDEO_BREAK-->
@@ -165,8 +164,7 @@ The app is actively updated. Check the Atlassian Marketplace listing for the lat
         {
           slug: "installation-setup",
           title: "Installation & Setup",
-          content: `# Installation & Setup
-
+          content: `
 ## Prerequisites
 
 Before installing, confirm:
@@ -229,8 +227,7 @@ To uninstall: **Confluence Settings** → **Manage apps** → find Content Forma
         {
           slug: "quick-start",
           title: "Quick Start Guide",
-          content: `# Get Started with Content Formatting Macros
-
+          content: `
 ## Who This App Is For
 
 - **Confluence Space Admins** who want to improve page structure and navigation across their space
@@ -268,8 +265,7 @@ Add Alert macros for warnings, Buttons for CTAs, Background for section separati
         {
           slug: "system-requirements",
           title: "System Requirements",
-          content: `# System Requirements
-
+          content: `
 ## Platform Requirements
 
 | Requirement | Details |
@@ -317,8 +313,7 @@ The Attachment Management Center requires:
         {
           slug: "permissions-access",
           title: "Permissions & Access",
-          content: `# Permissions & Access
-
+          content: `
 ## Who Can Do What
 
 | Role | Can Do |
@@ -370,8 +365,7 @@ Users with page-read permission can still access all content via the Confluence 
         {
           slug: "tab-navigation",
           title: "Tab Navigation Overview",
-          content: `# Advanced Content Navigation
-
+          content: `
 ## What Are Tab Macros?
 
 Tab macros let you display multiple sections of content inside a single Confluence page using a familiar tabbed interface. Readers click a tab label to switch views - no page navigation required.
@@ -412,8 +406,7 @@ Insert **Tab Navigation** without a mapper, and add **Custom Tab** containers in
         {
           slug: "tab-parent-mapper",
           title: "Tab Parent Content Mapper",
-          content: `# Tab Parent Content Mapper Guide
-
+          content: `
 ## What It Does
 
 The Tab Parent Content Mapper automatically creates one tab for each **child page** of a specified Confluence parent page. When child pages are added, renamed, or removed, the tabs update automatically - no manual editing required.
@@ -451,8 +444,7 @@ The Tab Parent Content Mapper automatically creates one tab for each **child pag
         {
           slug: "tab-label-mapper",
           title: "Tab Label Content Mapper",
-          content: `# Tab Label Content Mapper Guide
-
+          content: `
 ## What It Does
 
 The Tab Label Content Mapper creates tabs based on **Confluence page labels**. Each unique label value (or a set of label values you configure) becomes a tab, and all pages with that label appear as the tab's content.
@@ -499,8 +491,7 @@ Example CQL: \`space = "TEAM" AND label in ("release") ORDER BY created DESC\`
         {
           slug: "tab-page-mapper",
           title: "Tab Confluence Page Mapper",
-          content: `# Tab Confluence Page Mapper Guide
-
+          content: `
 ## What It Does
 
 The Tab Page Mapper lets you **hand-pick specific pages** from anywhere in the Confluence space to appear as tabs. Unlike the Parent or Label mappers, this one does not auto-update - you control exactly which pages are included and in what order.
@@ -546,8 +537,7 @@ If a page in the list is deleted, the tab for that page disappears silently. Che
         {
           slug: "create-custom-tabs",
           title: "Create Custom Tabs",
-          content: `# Create Custom Tabs Guide
-
+          content: `
 ## What Are Custom Tabs?
 
 Custom Tabs let you write content **directly inside each tab** instead of pulling from other pages. Use this when the content you want to tab doesn't exist as separate Confluence pages, or when you want full control over tab content without creating child pages.
@@ -598,8 +588,7 @@ Use the Confluence "Include Page" macro inside a tab to pull in another page's c
         {
           slug: "dynamic-visibility",
           title: "Dynamic Visibility Overview",
-          content: `# Dynamic Visibility
-
+          content: `
 ## What Is Conditional Visibility?
 
 Conditional visibility macros let you show or hide sections of content based on **who is viewing the page**. A single page can display different content to different audiences - admins see internal notes, guests see the public version, and managers see the compensation table.
@@ -640,8 +629,7 @@ Conditional visibility macros let you show or hide sections of content based on 
         {
           slug: "conditional-hide",
           title: "Conditional Hide Guide",
-          content: `# Conditional Hide Guide
-
+          content: `
 ## What It Does
 
 The Conditional Hide macro wraps content that should be **visible to most users but hidden from a specific group or condition**. Think of it as "hide this from X."
@@ -681,8 +669,7 @@ You can stack multiple Conditional Hide macros to hide content from multiple gro
         {
           slug: "conditional-show",
           title: "Conditional Show Guide",
-          content: `# Conditional Show Guide
-
+          content: `
 ## What It Does
 
 The Conditional Show macro wraps content that should be **hidden by default and shown only to a specific group or condition**. Think of it as "show this only to X."
@@ -731,8 +718,7 @@ Conditional Show can wrap any content, including other Content Formatting macros
         {
           slug: "rich-content-formatting",
           title: "Rich Content Formatting Overview",
-          content: `# Rich Content Formatting
-
+          content: `
 ## Overview
 
 Content Formatting Macros includes 18 macros for enhancing the visual quality, interactivity, and clarity of Confluence pages. These macros require no custom CSS or developer skills - everything is configured through the macro's settings panel in the Confluence editor.
@@ -768,8 +754,7 @@ Content Formatting Macros includes 18 macros for enhancing the visual quality, i
         {
           slug: "buttons-macro",
           title: "Buttons Macro",
-          content: `# Buttons Macro
-
+          content: `
 ## What It Does
 The Buttons macro creates styled call-to-action buttons on any Confluence page. Buttons can link to internal Confluence pages, external URLs, email addresses, or anchors on the same page.
 
@@ -805,8 +790,7 @@ Insert multiple Button macros side by side. They will flow inline with automatic
         {
           slug: "background-macro",
           title: "Background Macro",
-          content: `# Background Macro
-
+          content: `
 ## What It Does
 The Background macro applies a background color, gradient, or image to any section of a Confluence page. Use it to visually separate content zones, highlight important sections, or create a branded look.
 
@@ -840,8 +824,7 @@ The Background macro applies a background color, gradient, or image to any secti
         {
           slug: "alert-macro",
           title: "Alert Macro",
-          content: `# Alert Macro
-
+          content: `
 ## What It Does
 The Alert macro creates a styled banner for informational messages, warnings, errors, or success confirmations. Alerts have a colored left border and icon that immediately signals the message type to the reader.
 
@@ -879,8 +862,7 @@ The Alert macro creates a styled banner for informational messages, warnings, er
         {
           slug: "tooltip-macro",
           title: "Tooltip Macro",
-          content: `# Tooltip Macro
-
+          content: `
 ## What It Does
 The Tooltip macro wraps a word or phrase with a hover tooltip that reveals additional context - a definition, explanation, or note. The tooltip appears on mouse hover and disappears when the cursor moves away.
 
@@ -912,8 +894,7 @@ Use tooltips sparingly. If the definition is important enough that most readers 
         {
           slug: "progressbar-macro",
           title: "Progress Bar Macro",
-          content: `# Progress Bar Macro
-
+          content: `
 ## What It Does
 The Progress Bar macro renders a visual, percentage-based progress indicator. Use it to show task completion, project health, survey results, or any value on a 0–100% scale.
 
@@ -944,8 +925,7 @@ Insert multiple Progress Bar macros in sequence (or inside a table) to create a 
         {
           slug: "footnotes-macro",
           title: "Footnotes Macro",
-          content: `# Footnotes Macro
-
+          content: `
 ## What It Does
 The Footnotes macro inserts superscript reference numbers inline with text, and collects the corresponding footnote definitions at the bottom of the section (or page). Think of it as academic citation style for Confluence pages.
 
@@ -978,8 +958,7 @@ Insert **Footnote List** macro at the bottom of the section or page. This render
         {
           slug: "popup-dialog-macro",
           title: "Pop-up Dialog Macro",
-          content: `# Pop-up Dialog Macro
-
+          content: `
 ## What It Does
 The Pop-up Dialog macro creates a modal overlay that opens when a reader clicks a trigger (a link, button, or image on the page). The dialog can contain any rich content - text, images, tables, other macros.
 
@@ -1015,8 +994,7 @@ Pop-up dialogs do not work well as navigation - avoid using them for primary con
         {
           slug: "advanced-expand-macro",
           title: "Advanced Expand Macro",
-          content: `# Advanced Expand Macro
-
+          content: `
 ## What It Does
 The Advanced Expand macro creates a collapsible content section with a styled header. Unlike the standard Confluence Expand macro, Advanced Expand offers styling options for the header (color, icon, size) and supports rich content inside the body.
 
@@ -1051,8 +1029,7 @@ The Advanced Expand macro creates a collapsible content section with a styled he
         {
           slug: "advanced-card-macro",
           title: "Advanced Cards Macro",
-          content: `# Advanced Cards Macro
-
+          content: `
 ## What It Does
 The Advanced Cards macro creates structured content cards - rectangular panels with optional header, body text, image, and link. Cards can be arranged in grid layouts to create visual hub pages.
 
@@ -1090,8 +1067,7 @@ The Advanced Cards macro creates structured content cards - rectangular panels w
         {
           slug: "interactive-banner-macro",
           title: "Interactive Banner Macro",
-          content: `# Interactive Banner Macro
-
+          content: `
 ## What It Does
 The Interactive Banner macro creates a full-width announcement or hero banner at the top (or anywhere) of a Confluence page. Banners support background images or colors, a headline, subtitle, and call-to-action buttons.
 
@@ -1126,8 +1102,7 @@ On mobile, the banner height is automatically reduced and text size adjusts. Bac
         {
           slug: "numbered-headings-macro",
           title: "Numbered Headings Macro",
-          content: `# Numbered Headings Macro
-
+          content: `
 ## What It Does
 The Numbered Headings macro automatically adds hierarchical numbers to all headings on a page (1, 1.1, 1.1.1, etc.) without manually typing them. If you add or remove a heading, numbering updates automatically on next page view.
 
@@ -1162,8 +1137,7 @@ The Numbered Headings macro automatically adds hierarchical numbers to all headi
         {
           slug: "divider-macro",
           title: "Divider Macro",
-          content: `# Divider Macro
-
+          content: `
 ## What It Does
 The Divider macro inserts a styled horizontal separator between page sections. It goes beyond the standard Confluence horizontal rule with multiple visual styles and spacing options.
 
@@ -1199,8 +1173,7 @@ A line that fades from a color to transparent at both ends. Configurable color a
         {
           slug: "countdown-macro",
           title: "Countdown Timer Macro",
-          content: `# Countdown Timer Macro
-
+          content: `
 ## What It Does
 The Countdown Timer macro displays a live countdown to a specific date and time. The timer updates in real time as the page is viewed.
 
@@ -1239,8 +1212,7 @@ The timer displays the countdown based on the **viewer's local timezone** relati
         {
           slug: "user-profile-macro",
           title: "User Profile Macro",
-          content: `# User Profile Macro
-
+          content: `
 ## What It Does
 The User Profile macro displays a Confluence user's profile information - name, avatar, title, department, and contact links - as a styled card. Use it to display team members, point-of-contact information, or page owners.
 
@@ -1281,8 +1253,7 @@ The User Profile macro displays a Confluence user's profile information - name, 
         {
           slug: "status-macro",
           title: "Status Macro",
-          content: `# Status Macro
-
+          content: `
 ## What It Does
 The Status macro creates a color-coded badge that communicates a state, phase, or classification at a glance. Unlike the standard Confluence Status lozenge, this macro offers 13 preset status sets covering common workflows, plus a custom color mode.
 
@@ -1324,8 +1295,7 @@ The Status macro creates a color-coded badge that communicates a state, phase, o
         {
           slug: "json-viewer-macro",
           title: "JSON Viewer Macro",
-          content: `# JSON Viewer Macro
-
+          content: `
 ## What It Does
 The JSON Viewer macro renders a block of JSON data in a formatted, syntax-highlighted, collapsible tree view. Use it to display API responses, configuration examples, or data samples without requiring readers to parse raw JSON.
 
@@ -1379,8 +1349,7 @@ The JSON Viewer macro renders a block of JSON data in a formatted, syntax-highli
         {
           slug: "attachment-management",
           title: "Attachment Management & Audit",
-          content: `# Attachment Management & Audit
-
+          content: `
 ## What Is the Attachment Management Center?
 
 The Attachment Management Center is a dedicated panel built into Content Formatting Macros that gives Confluence space admins a single place to:
@@ -1441,8 +1410,7 @@ Deletions via the Attachment Center are permanent. Confluence does not have a re
         {
           slug: "attachment-center-dashboard",
           title: "Attachment Center Dashboard",
-          content: `# Attachment Center Dashboard
-
+          content: `
 ## What You See on the Dashboard
 
 The Attachment Center Dashboard is the main overview screen that gives Confluence space administrators an at-a-glance picture of their space's attachment health.
@@ -1493,8 +1461,7 @@ The activity chart plots attachment uploads over the selected time period (7 day
         {
           slug: "attachment-bulk-actions",
           title: "Bulk Actions",
-          content: `# Bulk Actions
-
+          content: `
 ## What Are Bulk Actions?
 
 Bulk Actions let you select multiple attachments and apply an operation to all of them at once — saving time compared to performing the same action individually on each file.
@@ -1552,8 +1519,7 @@ To work with attachments across multiple pages of results:
         {
           slug: "attachment-filters-sorting",
           title: "Filters & Sorting",
-          content: `# Filters & Sorting
-
+          content: `
 ## Overview
 
 The Filters & Sorting panel lets you narrow the attachment list to exactly the files you are looking for. You can filter by file type, upload date, uploader, file size, page, and link status — and combine any number of these filters together.
@@ -1614,8 +1580,7 @@ Saved presets appear in the **Presets** dropdown at the top of the filter panel.
         {
           slug: "attachment-audit-logs",
           title: "Audit Logs",
-          content: `# Audit Logs
-
+          content: `
 ## What Are Audit Logs?
 
 The Audit Logs section records all attachment-related actions performed via the Attachment Management Center. Use it to track who deleted files, when labels were applied, and which bulk operations have been run — and by whom.
@@ -1691,8 +1656,7 @@ Audit log entries are retained for **90 days** by default. Entries older than 90
         {
           slug: "page-templates",
           title: "Page Templates",
-          content: `# Page Templates
-
+          content: `
 ## What Templates Are Included?
 
 Content Formatting Macros includes two ready-to-use Confluence page templates that demonstrate the app's capabilities in realistic, production-ready page designs.
@@ -1783,8 +1747,7 @@ A team home page with announcements, key links, member directory, and rotating s
         {
           slug: "privacy-access",
           title: "Privacy & Access Notes",
-          content: `# Privacy & Access Notes
-
+          content: `
 ## How Content Formatting Macros Handles Data
 
 ### Principle 1 - Content Stays in Confluence
@@ -1835,8 +1798,7 @@ For questions about how Clovity processes data as the app vendor, contact **supp
         {
           slug: "overview-dashboard",
           title: "Overview & Dashboard",
-          content: `# Overview & Dashboard
-
+          content: `
 ## App Layout in Confluence
 
 Content Formatting Macros integrates directly into the standard Confluence Cloud editor. There is no separate admin dashboard or standalone UI - everything is accessed from within the Confluence page editing experience.
@@ -1948,8 +1910,7 @@ Tab Navigation macros **cannot** be nested inside another Tab Navigation macro (
         {
           slug: "how-to-guides",
           title: "How-To Guides",
-          content: `# How-To Guides
-
+          content: `
 Step-by-step instructions for the most common tasks with Content Formatting Macros.
 
 ---
@@ -2091,8 +2052,7 @@ Step-by-step instructions for the most common tasks with Content Formatting Macr
         {
           slug: "latest-release",
           title: "Latest Release",
-          content: `# Latest Release
-
+          content: `
 ## What's New in Content Formatting Macros
 
 Stay up to date with the latest improvements, new macros, and performance enhancements. For the full changelog and to install the latest version, visit the app on the [Atlassian Marketplace](https://marketplace.atlassian.com/apps/3890258352/content-formatting-macros-tabs-navigation-visibility-css).
@@ -2161,8 +2121,7 @@ App updates are delivered automatically to your Confluence Cloud instance - no m
         {
           slug: "version-history",
           title: "Version History",
-          content: `# Version History
-
+          content: `
 A summary of major changes by version. For the complete per-build changelog, see the app's [Atlassian Marketplace listing](https://marketplace.atlassian.com/apps/3890258352/content-formatting-macros-tabs-navigation-visibility-css).
 
 ---
@@ -2219,8 +2178,7 @@ Confluence Cloud apps update automatically. If you are still on v1.x, no action 
         {
           slug: "supported-integrations",
           title: "Supported Integrations",
-          content: `# Supported Integrations
-
+          content: `
 ## Native Confluence Integration
 
 Content Formatting Macros is built as a native Confluence Cloud app and integrates deeply with Confluence's built-in data model. It does not require any external service connections, API keys, or third-party accounts.
@@ -2350,8 +2308,7 @@ Content Formatting Macros fully respects Confluence's permission model at every 
         {
           slug: "data-migration",
           title: "Data Migration",
-          content: `# Data Migration
-
+          content: `
 ## Migrating from Other Tab or Formatting Apps to Content Formatting Macros
 
 If your Confluence space currently uses another tab or formatting app (e.g., Comala, Scroll Viewport, Brikit Theme Press, or other tab macro apps), this guide covers what to expect when switching to Content Formatting Macros.
@@ -2480,8 +2437,7 @@ Include the number of pages involved, the app you are migrating from, and your t
         {
           slug: "common-use-cases",
           title: "Common Use Cases",
-          content: `# Common Use Cases
-
+          content: `
 Real-world scenarios where Content Formatting Macros transforms how teams use Confluence.
 
 ---
@@ -2613,8 +2569,7 @@ Interactive Banner, Buttons, Countdown Timer, Tab Navigation, Custom Tabs, Backg
         {
           slug: "use-case-templates",
           title: "Use Case Templates",
-          content: `# Use Case Templates
-
+          content: `
 Ready-to-use page templates demonstrating best-practice layouts with Content Formatting Macros. Each template includes a suggested macro layout, section structure, and guidance notes.
 
 ---
@@ -2812,8 +2767,7 @@ Interactive Banner, Buttons, Background, Status Macro, Progress Bar, Countdown T
         {
           slug: "help-support",
           title: "Help & Support",
-          content: `# Help & Support
-
+          content: `
 ## Before Contacting Support
 
 Work through this checklist first - most issues are resolved without opening a ticket:
@@ -2852,8 +2806,7 @@ Submit feature requests via the Atlassian Marketplace listing or email support@c
         {
           slug: "faq",
           title: "FAQ",
-          content: `# Frequently Asked Questions
-
+          content: `
 ## Tab Macros
 
 **Q: Can I link directly to a specific tab via URL?**
@@ -2913,8 +2866,7 @@ A: Yes. A 30-day free trial is available via the Atlassian Marketplace. No credi
         {
           slug: "contact-support",
           title: "Contact Support",
-          content: `# Contact Support
-
+          content: `
 ## Get Help from the Clovity Team
 
 Our Atlassian-certified support team is here to help with any questions about Content Formatting Macros.
@@ -2962,8 +2914,7 @@ All feature requests are reviewed by the product team. You'll receive confirmati
         {
           slug: "eula",
           title: "End User License Agreement",
-          content: `# End User License Agreement (EULA)
-
+          content: `
 **Content Formatting Macros: Tabs Navigation Visibility CSS**
 Developed and maintained by Clovity
 

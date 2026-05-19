@@ -18,8 +18,7 @@ export const latexDiagramsConfluenceDocs = {
             title:
               "LaTeX Formulas & Diagrams for Confluence - Product Overview",
           },
-          content: `# What is LaTeX Formulas & Diagrams?
-
+          content: `
 LaTeX Formulas & Diagrams (Gantt Charts, ERDs & Flowcharts) is a Confluence Cloud app that lets your team embed technical visuals and mathematical formulas directly on Confluence pages - no external tools, no image uploads, no copy-paste workarounds.
 
 ## Core Value Proposition
@@ -128,8 +127,7 @@ All of this runs natively inside Confluence Cloud using macros - no external ser
         {
           slug: "installation-setup",
           title: "Installation & Setup",
-          content: `# Installation & Setup
-
+          content: `
 ## Prerequisites
 
 Before installing, confirm:
@@ -186,8 +184,7 @@ To uninstall: Confluence Settings → Apps → Manage apps → find the app → 
         {
           slug: "quick-start",
           title: "Quick Start Guide",
-          content: `# Quick Start Guide
-
+          content: `
 Get up and running with your first diagram or equation in under 5 minutes.
 
 ## Who This Guide Is For
@@ -283,8 +280,7 @@ When making large changes:
         {
           slug: "system-requirements",
           title: "System Requirements",
-          content: `# System Requirements
-
+          content: `
 ## Platform Requirements
 
 | Requirement | Details |
@@ -358,8 +354,7 @@ Internet Explorer is not supported.
         {
           slug: "permissions-access",
           title: "Permissions & Access",
-          content: `# Permissions & Access
-
+          content: `
 ## How Access Works
 
 LaTeX Formulas & Diagrams does not introduce its own user roles or permission system. It relies entirely on standard Confluence permissions:
@@ -473,8 +468,7 @@ All three macros share the same split-view editor pattern:
         {
           slug: "diagrams-macro",
           title: "Diagrams Macro",
-          content: `## What it is
-
+          content: `
 Clovity UML renders **Mermaid** diagrams in Confluence.
 
 ## Best for
@@ -693,8 +687,7 @@ Workaround:
         {
           slug: "latex-block-equations",
           title: "LaTeX Block Equations (Display Math)",
-          content: `## What it is
-
+          content: `
 Clovity LaTeX Block renders **display math** (centered equations).
 
 ## Best for
@@ -786,8 +779,7 @@ Copies raw LaTeX to clipboard (useful for reuse across docs).`,
         {
           slug: "latex-inline-equations",
           title: "LaTeX Inline Equations",
-          content: `## What it is
-
+          content: `
 Clovity LaTeX Inline renders math inside normal text.
 
 ## Best for
@@ -848,8 +840,7 @@ We define accuracy as $Acc=\\frac{TP+TN}{TP+TN+FP+FN}$.
         {
           slug: "examples-library",
           title: "Examples Library",
-          content: `# Examples Library
-
+          content: `
 Ready-to-use code examples for LaTeX formulas and Mermaid diagrams. Copy any example into the macro editor and customize it for your use case.
 
 ---
@@ -1080,8 +1071,7 @@ gantt
         {
           slug: "formula-library-reference",
           title: "Formula Library Reference",
-          content: `# Formula Library Reference
-
+          content: `
 ## Overview
 
 The Formula Library is a curated collection of ready-to-use LaTeX formulas organized into 11 subject categories. Use it as a quick reference when writing technical documentation — copy any formula into the LaTeX Block or LaTeX Inline macro and customize as needed.
@@ -1344,8 +1334,7 @@ f(x) = \\begin{cases}
         {
           slug: "diagram-types-reference",
           title: "Diagram Types Reference",
-          content: `# Diagram Types Reference
-
+          content: `
 ## Overview
 
 The Clovity Diagrams macro supports **12 Mermaid diagram types**. This reference covers the syntax header, best use cases, and a minimal working example for each type — so you can choose the right diagram for your documentation and start writing immediately.
@@ -1634,8 +1623,7 @@ quadrantChart
         {
           slug: "engineering-use-cases",
           title: "Engineering Use Cases",
-          content: `# Engineering Use Cases
-
+          content: `
 ## Overview
 
 This page shows real-world documentation scenarios where LaTeX Formulas & Diagrams adds the most value for engineering and technical teams. Each use case includes the relevant diagram or formula type, the scenario context, and a ready-to-use example.
@@ -1838,8 +1826,7 @@ gantt
         {
           slug: "overview-dashboard",
           title: "Overview & Dashboard",
-          content: `# Overview & Dashboard
-
+          content: `
 ## The Split-View Editor Layout
 
 Every macro in LaTeX Formulas & Diagrams opens the same split-view editor. The layout is consistent across all three macros:
@@ -1934,8 +1921,7 @@ If your Mermaid or LaTeX contains a syntax error, the Preview panel shows a red 
         {
           slug: "how-to-guides",
           title: "How-To Guides",
-          content: `# How-To Guides
-
+          content: `
 Step-by-step instructions for the most common tasks in LaTeX Formulas & Diagrams.
 
 ---
@@ -2131,8 +2117,7 @@ sequenceDiagram
         {
           slug: "latest-release",
           title: "Latest Release",
-          content: `# Latest Release
-
+          content: `
 Stay up to date with the newest features, improvements, and fixes in LaTeX Formulas & Diagrams for Confluence Cloud.
 
 ## Recent Highlights
@@ -2196,8 +2181,7 @@ The Marketplace listing includes:
         {
           slug: "version-history",
           title: "Version History",
-          content: `# Version History
-
+          content: `
 A record of key changes across releases of LaTeX Formulas & Diagrams for Confluence Cloud.
 
 ## Version Table
@@ -2290,8 +2274,7 @@ View the Marketplace listing for the latest version information: [Atlassian Mark
         {
           slug: "supported-integrations",
           title: "Supported Integrations",
-          content: `# Supported Integrations
-
+          content: `
 LaTeX Formulas & Diagrams integrates natively with Confluence Cloud and leverages two open-source rendering libraries. This article describes what the app integrates with and - importantly - what it does not access.
 
 ---
@@ -2392,8 +2375,7 @@ All rendering is performed locally in the user's browser. No macro content, user
         {
           slug: "data-migration",
           title: "Data Migration",
-          content: `# Data Migration
-
+          content: `
 This article covers how to move macro content between pages, export diagrams and equations as images, what happens when the app is uninstalled, and how to migrate from other diagram tools.
 
 ---
@@ -2505,8 +2487,7 @@ PlantUML and Mermaid are different diagramming languages. Direct syntax conversi
         {
           slug: "common-use-cases",
           title: "Common Use Cases",
-          content: `# Common Use Cases
-
+          content: `
 Real-world scenarios where teams use LaTeX Formulas & Diagrams in Confluence. Each scenario includes who it's for, when to use it, which macro to use, and an example.
 
 ---
@@ -2703,8 +2684,7 @@ sequenceDiagram
         {
           slug: "use-case-templates",
           title: "Use Case Templates",
-          content: `# Use Case Templates
-
+          content: `
 Ready-to-use Confluence page templates for common technical documentation scenarios. Each template includes the recommended page structure, which macros to use, and example content to get started.
 
 ---

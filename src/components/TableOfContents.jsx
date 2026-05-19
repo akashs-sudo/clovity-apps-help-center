@@ -14,12 +14,17 @@ function slugify(text) {
 
 function extractHeadings(content) {
   const headings = [];
+  const seenIds = new Map();
   for (const line of content.split("\n")) {
     const match = line.match(/^(#{2,4})\s+(.+)/);
     if (match) {
       const level = match[1].length;
       const text = match[2].trim();
-      headings.push({ level, text, id: slugify(text) });
+      const base = slugify(text);
+      const count = (seenIds.get(base) ?? 0) + 1;
+      seenIds.set(base, count);
+      const id = count === 1 ? base : `${base}-${count}`;
+      headings.push({ level, text, id });
     }
   }
   return headings;
@@ -62,8 +67,8 @@ export default function TableOfContents({ content }) {
   if (headings.length < 2) return null;
 
   return (
-    <aside className="hidden xl:block w-48 xl:w-56 shrink-0 self-start sticky top-[138px] max-h-[calc(100vh-138px)] overflow-y-auto py-8 pl-5 border-l border-gray-200/90">
-      <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider mb-3">
+    <aside className="hidden xl:block w-48 xl:w-56 shrink-0 self-start sticky top-34.5 max-h-[calc(100vh-138px)] overflow-y-auto py-8 pl-5 border-l border-gray-200/90">
+      <p className="text-[11px] font-semibold text-gray-600 uppercase tracking-wider mb-3">
         On this page
       </p>
       <nav className="flex flex-col gap-0.5">
@@ -81,7 +86,7 @@ export default function TableOfContents({ content }) {
             } ${
               activeId === heading.id
                 ? "text-blue-600 font-medium"
-                : "text-gray-500 hover:text-gray-800"
+                : "text-gray-700 hover:text-gray-900"
             }`}
           >
             {heading.text}

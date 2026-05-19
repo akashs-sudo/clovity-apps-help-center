@@ -1,25 +1,53 @@
 export const latexDiagramsConfluenceDocs = {
   appSlug: "latex-diagrams-confluence",
   categories: [
+    // ═══════════════════════════════════════════════════════════════
+    // 1. GETTING STARTED
+    // ═══════════════════════════════════════════════════════════════
     {
-      id: "what-you-get",
-      title: "What You Get",
+      id: "getting-started",
+      title: "Getting Started",
       articles: [
         {
-          slug: "what-you-get",
-          title: "What You Get",
-          content: `## Overview
+          slug: "what-is-latex-diagrams",
+          title: "What is LaTeX Formulas & Diagrams?",
+          sideVideo: {
+            src: "https://www.youtube.com/embed/K7oRMlvbnJ0",
+            title: "LaTeX Formulas & Diagrams for Confluence — Product Overview",
+          },
+          content: `# What is LaTeX Formulas & Diagrams?
 
-This app adds macros that let you create technical visuals and formulas in Confluence Cloud with an editor that includes:
+LaTeX Formulas & Diagrams (Gantt Charts, ERDs & Flowcharts) is a Confluence Cloud app that lets your team embed technical visuals and mathematical formulas directly on Confluence pages — no external tools, no image uploads, no copy-paste workarounds.
 
-* Split view editing: Source (left) + Preview (right)
-* Save and render: content renders directly on the page
-* Hover actions (UML + LaTeX Block): edit, copy, zoom, pan, reset, fullscreen
-* Inline math support: write text with embedded formulas (Inline macro)
+## Core Value Proposition
+
+- **Render Mermaid diagrams** including flowcharts, sequence diagrams, ERDs, Gantt charts, mindmaps, and more
+- **Display beautiful LaTeX math** for equations, matrices, aligned derivations, and technical formulas
+- **Embed inline math** inside normal paragraph text without breaking the reading flow
+- **Edit in a live split-view editor** — source on the left, rendered preview on the right
+
+All of this runs natively inside Confluence Cloud using macros — no external servers, no data exports, no infrastructure to maintain.
+
+<!--VIDEO_BREAK-->
+
+## Three Macros, One App
+
+| Macro | Best For | Rendering Engine |
+|---|---|---|
+| **Clovity Diagrams** | Flowcharts, sequences, ERDs, Gantt, mindmaps | Mermaid |
+| **Clovity LaTeX Block** | Display equations, matrices, multi-line aligned math | KaTeX |
+| **Clovity LaTeX Inline** | Math embedded inside paragraph text | KaTeX |
+
+## Who Is It For?
+
+- **Engineers and architects** who need diagrams in their technical specs and ADRs
+- **Data scientists and analysts** who document models, metrics, and formulas
+- **Product and project managers** who track timelines with Gantt charts
+- **Technical writers** who need math-rich documentation alongside prose
 
 ## Macro Summary
 
-### Diagrams
+### Diagrams Macro
 
 **Best for:** architecture, workflows, sequences, ER diagrams, timelines.
 
@@ -78,123 +106,324 @@ This app adds macros that let you create technical visuals and formulas in Confl
 * Hover edit icon to reopen editor
 * Inline error highlighting if a specific formula fails`,
         },
-      ],
-    },
-    {
-      id: "quick-start",
-      title: "Quick Start",
-      articles: [
         {
-          slug: "quick-start-intro",
-          title: "Quick Start",
-          content: `## Who this section is for
-
-* **Admins:** install and validate the app
-* **All users:** insert macros, write content, edit later
-
-## Quick checklist
-
-1. Install app (admin)
-2. Edit page → type \`/\` → insert macro
-3. Editor auto-opens the first time
-4. Write/paste content → preview → **Save/Publish**
-
-## Common paths
-
-* Admin setup: **Install & Permissions**
-* Editing later: **Edit Existing Content**`,
+          slug: "demo-video",
+          title: "Demo Videos & Walkthroughs",
+          content: `2 step-by-step tutorials covering LaTeX equations and UML diagrams — click any video to start watching. New to the app? Start with [What is LaTeX Formulas & Diagrams?](/apps/latex-diagrams-confluence/what-is-latex-diagrams) first.`,
+          videoGallery: {
+            playlistUrl: "https://www.youtube.com/watch?v=B-GmmX_FqXc&list=PLACoCS_WiVwR83iIlxm8mX8XwxNjNCjUK",
+            videos: [
+              { id: "B-GmmX_FqXc", title: "Write Perfect LaTeX Equations Easily" },
+              { id: "55dSYhCHEBQ", title: "Create UML Diagrams Fast and Easy" },
+            ],
+          },
         },
         {
-          slug: "install-permissions",
-          title: "Install & Permissions (Admins)",
-          content: `## Install the app
+          slug: "installation-setup",
+          title: "Installation & Setup",
+          content: `# Installation & Setup
 
-1. Go to **Confluence → Apps → Find new apps** (Marketplace).
-2. Search for **Clovity Diagrams & Math**.
-3. Select **Install**.
-4. Review requested permissions during installation.
+## Prerequisites
 
-## Who should install
+Before installing, confirm:
 
-A Confluence **site admin** should install the app.
+1. You are a **Confluence Cloud space admin or site administrator** (required to install Marketplace apps)
+2. Your instance is **Confluence Cloud** — this app does not support Confluence Server or Data Center
+3. You have access to the **Atlassian Marketplace** from within Confluence
 
-## After install: confirm macros exist
+## Installation Steps
 
-Open any page in edit mode and type \`/\`:
+| Step | Action |
+|---|---|
+| 1 | Log in to your Confluence Cloud site as an administrator |
+| 2 | Click the **gear icon** (Settings) → select **Apps** |
+| 3 | Click **Find new apps** in the left sidebar |
+| 4 | Search for **"Clovity Diagrams Math LaTeX"** |
+| 5 | Click the app in the search results |
+| 6 | Click **Try it free** (30-day trial) or **Buy now** |
+| 7 | Review the requested permissions |
+| 8 | Click **Accept** — the app installs immediately, no restart required |
 
-* Search "Diagrams"
-* Search "LaTeX Block Equations"
-* Search "LaTeX Inline Equations"
+## Verify Installation
 
-If you see these macros, installation is complete.
+After installation, open any Confluence page in edit mode:
 
-## Permissions overview (what admins should know)
+1. Click inside the page body and type \`/\`
+2. In the macro search, type **Diagrams** — you should see **Clovity Diagrams**
+3. Search **LaTeX Block** — you should see **Clovity LaTeX Block Equations**
+4. Search **LaTeX Inline** — you should see **Clovity LaTeX Inline Equations**
 
-* The app needs access to render macros and store macro content so it can be loaded later.
-* Editing and viewing remain governed by Confluence permissions (page-level access).`,
+If all three macros appear, installation is complete and working.
+
+## Permissions Requested During Install
+
+| Permission | Why It's Needed |
+|---|---|
+| Read Confluence pages and spaces | Render macros when pages are viewed |
+| Store macro body content | Persist your Mermaid/LaTeX source between edits |
+| Read user information | Associate macros with page authors |
+| Access Confluence storage format | Read and write macro markup within page content |
+
+## First Steps After Install
+
+Once installed, share the following with your team:
+
+1. Point editors to the **Quick Start Guide** for first-use instructions
+2. Confirm page editors can see the macros via the \`/\` menu
+3. Insert a test diagram or equation to confirm rendering works end-to-end
+
+## Uninstalling
+
+To uninstall: Confluence Settings → Apps → Manage apps → find the app → click **Uninstall**. Macro content already saved on pages will no longer render after uninstallation.`,
         },
         {
-          slug: "edit-existing-content",
-          title: "Edit Existing Content",
-          content: `## Edit Clovity Diagrams and LaTeX Block
+          slug: "quick-start",
+          title: "Quick Start Guide",
+          content: `# Quick Start Guide
 
-1. Hover over the rendered macro on the page
-2. Click **Edit** (pencil icon)
-3. Update source text in the modal editor
-4. Save/Publish to refresh the page view
+Get up and running with your first diagram or equation in under 5 minutes.
 
-## Edit Clovity LaTeX Inline
+## Who This Guide Is For
 
-1. Hover over the inline content
+* **Admins:** install and validate the app — see [Installation & Setup](/apps/latex-diagrams-confluence/installation-setup)
+* **All page editors:** insert macros, write content, edit later
+
+## Quick Checklist
+
+| Step | Action |
+|---|---|
+| 1 | Admin installs the app from the Atlassian Marketplace |
+| 2 | Open a Confluence page in edit mode |
+| 3 | Type \`/\` and search for the macro you want |
+| 4 | Click the macro — the editor opens automatically |
+| 5 | Write or paste your content in the Source panel |
+| 6 | Check the Preview panel to confirm rendering |
+| 7 | Click **Save** in the editor, then **Publish** the page |
+
+## Inserting Your First Diagram
+
+1. Edit a Confluence page and type \`/Diagrams\`
+2. Click **Clovity Diagrams** in the macro list
+3. The split-view editor opens — the Source panel is on the left
+4. Paste a sample diagram or type your own Mermaid code, for example:
+
+\`\`\`
+flowchart TD
+    A[Start] --> B{Decision}
+    B -->|Yes| C[Do it]
+    B -->|No| D[Skip it]
+    C --> E[End]
+    D --> E
+\`\`\`
+
+5. The Preview panel on the right renders the diagram live
+6. Click **Save** — the diagram appears on the page
+
+## Inserting Your First Equation
+
+1. Edit a page and type \`/LaTeX Block\`
+2. Click **Clovity LaTeX Block Equations**
+3. In the Source panel, type raw LaTeX — for example: \`\\frac{a}{b}\`
+4. Preview renders the equation on the right
+5. Click **Save** — the display equation appears on the page
+
+**Important:** Do not wrap LaTeX with \`$$...$$\`. Enter raw LaTeX only.
+
+## Inserting Inline Math
+
+1. Edit a page and type \`/LaTeX Inline\`
+2. Click **Clovity LaTeX Inline Equations**
+3. In the Source panel, write normal text and embed math with \`$...$\`, for example:
+
+\`The area of a circle is $A = \\pi r^2$ where $r$ is the radius.\`
+
+4. Click **Save** — the paragraph renders with embedded math
+
+## Editing Existing Content
+
+### Edit a Diagram or LaTeX Block
+
+1. View the published page
+2. Hover over the rendered macro
+3. Click the **Edit** (pencil) icon in the hover toolbar
+4. The modal editor reopens with your saved source
+5. Update the content and click **Save/Publish**
+
+### Edit Inline Equations
+
+1. Hover over the inline content block
 2. Click the **Edit icon**
 3. Update the paragraph and formulas
-4. Save changes
+4. Click **Save changes**
 
-## Pro tip: safe editing workflow
+## Pro Tip: Safe Editing Workflow
 
-When making a large change:
+When making large changes:
 
-1. Copy your current source into a temporary note
+1. Copy your current source into a temporary note before editing
 2. Make edits incrementally
-3. Save and verify rendering each step`,
+3. Save and verify rendering at each step
+4. If something breaks, paste back from your note
+
+## Common Paths
+
+* **Admin setup** → [Installation & Setup](/apps/latex-diagrams-confluence/installation-setup)
+* **Diagram reference** → [Diagrams Macro](/apps/latex-diagrams-confluence/diagrams-macro)
+* **LaTeX reference** → [LaTeX Block Equations](/apps/latex-diagrams-confluence/latex-block-equations)
+* **Inline math** → [LaTeX Inline Equations](/apps/latex-diagrams-confluence/latex-inline-equations)
+* **Code examples** → [Examples Library](/apps/latex-diagrams-confluence/examples-library)`,
         },
         {
-          slug: "contact-support",
-          title: "Contact Support",
-          content: `Need help with LaTeX Formulas & Diagrams for Confluence? Here's how to get assistance.
+          slug: "system-requirements",
+          title: "System Requirements",
+          content: `# System Requirements
 
-## Before Contacting Support
+## Platform Requirements
 
-Check these resources first — most issues can be resolved quickly:
+| Requirement | Details |
+|---|---|
+| **Confluence Edition** | Confluence Cloud only |
+| **Confluence Server** | Not supported |
+| **Confluence Data Center** | Not supported |
+| **Atlassian Platform** | Confluence Cloud Forge / Connect app |
 
-1. **What You Get** — overview of all macros and their features
-2. **Diagrams Macro** — troubleshooting for Mermaid/UML diagrams
-3. **LaTeX Block Equations** — checklist for successful rendering
-4. **LaTeX Inline Equations** — rules for inline and block math syntax
+This app is exclusively designed for Confluence Cloud. There is no Server or Data Center version.
 
-## How to Submit a Support Request
+## Rendering Engine Versions
 
-If you cannot resolve the issue using the documentation, submit a request via the Atlassian Marketplace support page for LaTeX Formulas & Diagrams.
+| Engine | Purpose | Notes |
+|---|---|---|
+| **KaTeX** | LaTeX Block and Inline math rendering | Supports the majority of standard LaTeX math commands; a small subset of advanced TeX macros may not be supported |
+| **Mermaid** | Diagram rendering for the Diagrams macro | Supports flowcharts, sequence, class, ER, Gantt, pie, mindmap, and more |
 
-### Include in Your Request
+### KaTeX Coverage
 
-* Description of the issue — what are you trying to do, and what's happening instead?
-* Steps to reproduce — how can we replicate the issue?
-* The macro type — Diagrams, LaTeX Block, or LaTeX Inline
-* Screenshot or screen recording of the issue (including any error messages)
-* Confluence version and app version
+KaTeX renders LaTeX extremely fast in the browser. Supported environments include:
 
-## Community & Resources
+* Fractions, roots, exponents, subscripts
+* Greek letters and math operators
+* \`aligned\`, \`matrix\`, \`cases\`, \`array\` environments
+* \`\\text{}\`, \`\\frac{}\`, \`\\sum\`, \`\\int\`, \`\\prod\`
 
-* Atlassian Community — search for LaTeX Formulas & Diagrams discussions or post a question
-* Atlassian Marketplace listing — reviews, version history, and documentation links
+Unsupported: some advanced PGF/TikZ commands, custom LaTeX packages, and obscure TeX primitives.
 
-## Contact Us
+### Mermaid Coverage
 
-You can also reach our support team directly at [support@clovity.com](mailto:support@clovity.com)`,
+Supported diagram types include:
+
+| Type | Header |
+|---|---|
+| Flowchart | \`flowchart TD\` / \`graph TD\` |
+| Sequence | \`sequenceDiagram\` |
+| Class | \`classDiagram\` |
+| Entity Relationship | \`erDiagram\` |
+| Gantt | \`gantt\` |
+| Pie | \`pie\` |
+| Mindmap | \`mindmap\` |
+| State | \`stateDiagram-v2\` |
+
+## Browser Requirements
+
+All modern browsers are supported:
+
+| Browser | Support |
+|---|---|
+| Google Chrome | Latest 2 versions |
+| Mozilla Firefox | Latest 2 versions |
+| Microsoft Edge | Latest 2 versions |
+| Apple Safari | Latest 2 versions |
+
+Internet Explorer is not supported.
+
+## Network & Infrastructure
+
+* **No external servers:** all rendering happens client-side in the browser using KaTeX and Mermaid libraries
+* **No data exports:** macro source content stays within your Confluence environment
+* **No special network configuration** beyond standard access to \`*.atlassian.net\` and \`*.atlassian.com\`
+
+## Known Limitations
+
+- **Cloud only** — no Server or Data Center support
+- **KaTeX subset** — advanced custom LaTeX packages not available
+- **No real-time collaboration** — simultaneous edits use last-save-wins storage
+- **No bulk import** — content must be entered via the macro editor`,
+        },
+        {
+          slug: "permissions-access",
+          title: "Permissions & Access",
+          content: `# Permissions & Access
+
+## How Access Works
+
+LaTeX Formulas & Diagrams does not introduce its own user roles or permission system. It relies entirely on standard Confluence permissions:
+
+| Role | How It's Determined | What They Can Do |
+|---|---|---|
+| **Space Admin / Site Admin** | Confluence space or site administrator | Install and manage the app from the Marketplace |
+| **Page Editor** | Any Confluence user with Edit permission on a page | Insert, edit, and save macros on that page |
+| **Page Viewer** | Any Confluence user with View permission on a page | View rendered diagrams and equations |
+
+There are no special per-user roles to configure inside the app.
+
+## Installing the App (Admins Only)
+
+Only a **Confluence site administrator** (or a user with Confluence administrator privileges) can install apps from the Atlassian Marketplace. Regular page editors cannot install the app.
+
+Steps:
+1. Log in as a site administrator
+2. Go to **Settings → Apps → Find new apps**
+3. Search for and install **Clovity Diagrams Math LaTeX**
+4. Accept the requested permissions
+
+Once installed, the macros are immediately available to all page editors across the entire Confluence site.
+
+## Using Macros (Page Editors)
+
+Any Confluence user who has **Edit** permission on a page can:
+
+* Insert the Diagrams, LaTeX Block, or LaTeX Inline macro via the \`/\` macro menu
+* Open the split-view editor and write or paste content
+* Save and publish the macro to the page
+
+No additional setup, role assignment, or approval is required for editors.
+
+## Viewing Rendered Content (All Users)
+
+Any Confluence user who has **View** permission on a page can see:
+
+* Rendered Mermaid diagrams
+* Rendered LaTeX equations
+* Rendered inline math within paragraphs
+
+Viewers do not need any special permissions beyond standard page access.
+
+## Space-Level Considerations
+
+| Scenario | What Happens |
+|---|---|
+| User has Edit on the page | Can insert and edit macros |
+| User has View only | Can see rendered content but cannot edit macros |
+| User has no page access | Cannot see macros or rendered content |
+| Admin restricts a space | App macros respect Confluence space restrictions |
+
+## Checking App Permissions
+
+To review what permissions the app has requested:
+
+1. Go to **Confluence Settings → Apps → Manage apps**
+2. Find **LaTeX Formulas & Diagrams**
+3. Click **Details** to see the permission list
+
+## Requesting Access to Edit Pages
+
+If you cannot insert macros, the issue is likely a Confluence page permission rather than an app setting. Contact your **Confluence Space Admin** to request Edit access to the relevant space or page.`,
         },
       ],
     },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 2. MACRO REFERENCE
+    // ═══════════════════════════════════════════════════════════════
     {
       id: "macro-reference",
       title: "Macro Reference",
@@ -210,11 +439,29 @@ You can also reach our support team directly at [support@clovity.com](mailto:sup
 * Examples library
 * Troubleshooting guides
 
-## Choose the right macro
+## Choose the Right Macro
 
-* **Clovity UML:** diagrams from Mermaid syntax
-* **Clovity LaTeX Block:** complex display math
-* **Clovity LaTeX Inline:** text-centric content with math embedded`,
+| Macro | Use When |
+|---|---|
+| **Clovity Diagrams** | You need a visual diagram — flowchart, sequence, ERD, Gantt, mindmap |
+| **Clovity LaTeX Block** | You need a standalone display equation centered on its own line |
+| **Clovity LaTeX Inline** | You need math embedded inside a paragraph of normal text |
+
+## Editor Overview (All Macros)
+
+All three macros share the same split-view editor pattern:
+
+* **Source panel (left):** type or paste your content here
+* **Preview panel (right):** live rendering updates as you type
+* **Samples dropdown:** pre-built examples to get started quickly
+* **Save button:** saves and closes the editor; renders on the page
+
+## Article Index
+
+* [Diagrams Macro](/apps/latex-diagrams-confluence/diagrams-macro) — Mermaid diagram types, editor guide, viewer controls, troubleshooting
+* [LaTeX Block Equations](/apps/latex-diagrams-confluence/latex-block-equations) — display math, formatting best practices, viewer controls
+* [LaTeX Inline Equations](/apps/latex-diagrams-confluence/latex-inline-equations) — inline and block math rules, editor guide
+* [Examples Library](/apps/latex-diagrams-confluence/examples-library) — ready-to-use code examples for formulas and diagrams`,
         },
         {
           slug: "diagrams-macro",
@@ -591,8 +838,1346 @@ We define accuracy as $Acc=\\frac{TP+TN}{TP+TN+FP+FN}$.
 * Avoid line breaks inside \`$...$\`
 * Ensure every opening \`$\` has a closing \`$\``,
         },
+        {
+          slug: "examples-library",
+          title: "Examples Library",
+          content: `# Examples Library
+
+Ready-to-use code examples for LaTeX formulas and Mermaid diagrams. Copy any example into the macro editor and customize it for your use case.
+
+---
+
+## LaTeX Formula Examples
+
+### 1. Quadratic Formula
+
+The solution to $ax^2 + bx + c = 0$:
+
+**LaTeX source (paste into LaTeX Block macro):**
+
+\`\`\`
+x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}
+\`\`\`
+
+**Result:** renders the quadratic formula centered on the page.
+
+---
+
+### 2. Definite Integral
+
+A common calculus example — the integral of x from 0 to 1:
+
+**LaTeX source:**
+
+\`\`\`
+\\int_0^1 x^2 \\, dx = \\left[ \\frac{x^3}{3} \\right]_0^1 = \\frac{1}{3}
+\`\`\`
+
+**Tips:**
+* Use \`\\,\` for thin space before \`dx\`
+* Use \`\\left[\` and \`\\right]\` for auto-sized brackets
+
+---
+
+### 3. Matrix
+
+A 3×3 identity matrix:
+
+**LaTeX source:**
+
+\`\`\`
+\\begin{pmatrix}
+1 & 0 & 0 \\\\
+0 & 1 & 0 \\\\
+0 & 0 & 1
+\\end{pmatrix}
+\`\`\`
+
+**Variants:**
+* \`\\begin{pmatrix}\` — parentheses
+* \`\\begin{bmatrix}\` — square brackets
+* \`\\begin{vmatrix}\` — vertical bars (determinant)
+
+---
+
+### 4. Multi-line Aligned Derivation
+
+Show step-by-step algebra with aligned equals signs:
+
+**LaTeX source:**
+
+\`\`\`
+\\begin{aligned}
+(a + b)^2 &= (a + b)(a + b) \\\\
+          &= a^2 + ab + ba + b^2 \\\\
+          &= a^2 + 2ab + b^2
+\\end{aligned}
+\`\`\`
+
+**Tips:**
+* Use \`&=\` to align at the equals sign
+* Use \`\\\\\\\\\` for line breaks inside \`aligned\`
+
+---
+
+### 5. Machine Learning — Precision & Recall
+
+Document ML metrics with labeled equations:
+
+**LaTeX source:**
+
+\`\`\`
+\\begin{aligned}
+\\text{Precision} &= \\frac{TP}{TP + FP} \\\\[6pt]
+\\text{Recall}    &= \\frac{TP}{TP + FN} \\\\[6pt]
+F_1               &= 2 \\cdot \\frac{\\text{Precision} \\cdot \\text{Recall}}{\\text{Precision} + \\text{Recall}}
+\\end{aligned}
+\`\`\`
+
+**Tip:** \`\\\\[6pt]\` adds extra vertical space between lines.
+
+---
+
+## Mermaid Diagram Examples
+
+### 6. Flowchart — Decision Process
+
+A simple decision flowchart with styled nodes:
+
+**Mermaid source (paste into Diagrams macro):**
+
+\`\`\`
+flowchart TD
+    Start([Start]) --> Input[/Receive Request/]
+    Input --> Valid{Valid Input?}
+    Valid -->|Yes| Process[Process Request]
+    Valid -->|No| Reject[Return Error]
+    Process --> DB[(Save to DB)]
+    DB --> Respond[/Send Response/]
+    Reject --> Respond
+    Respond --> End([End])
+
+    style Start fill:#E3FCEF,stroke:#00875A
+    style End fill:#E3FCEF,stroke:#00875A
+    style Reject fill:#FFEBE6,stroke:#DE350B
+\`\`\`
+
+---
+
+### 7. Sequence Diagram — API Authentication
+
+Show a login flow across frontend, API, and database:
+
+**Mermaid source:**
+
+\`\`\`
+sequenceDiagram
+    participant U as User
+    participant F as Frontend
+    participant A as API
+    participant D as Database
+
+    U->>F: Submit credentials
+    F->>A: POST /auth/login
+    activate A
+    A->>D: SELECT user WHERE email=?
+    activate D
+    D-->>A: User record
+    deactivate D
+    A->>A: Verify password hash
+    A-->>F: JWT token
+    deactivate A
+    F->>U: Redirect to dashboard
+
+    Note over U,D: Full authentication flow
+\`\`\`
+
+---
+
+### 8. Entity Relationship Diagram
+
+Model a simple order management schema:
+
+**Mermaid source:**
+
+\`\`\`
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ ORDER_ITEM : contains
+    PRODUCT ||--o{ ORDER_ITEM : "included in"
+
+    CUSTOMER {
+        int id PK
+        string name
+        string email
+    }
+    ORDER {
+        int id PK
+        int customer_id FK
+        date order_date
+        string status
+    }
+    ORDER_ITEM {
+        int id PK
+        int order_id FK
+        int product_id FK
+        int quantity
+        float unit_price
+    }
+    PRODUCT {
+        int id PK
+        string name
+        float price
+        int stock
+    }
+\`\`\`
+
+---
+
+### 9. Gantt Chart — Project Timeline
+
+Track phases and milestones across a project:
+
+**Mermaid source:**
+
+\`\`\`
+gantt
+    title Q1 Product Launch Timeline
+    dateFormat YYYY-MM-DD
+    section Discovery
+    Requirements       :done, req, 2024-01-01, 2024-01-10
+    Design Review      :done, design, 2024-01-10, 2024-01-20
+    section Development
+    Backend API        :active, api, 2024-01-20, 2024-02-15
+    Frontend UI        :ui, 2024-01-28, 2024-02-20
+    section QA
+    Testing            :test, 2024-02-15, 2024-03-01
+    Bug Fixes          :fix, 2024-03-01, 2024-03-10
+    section Launch
+    Staging Deploy     :staging, 2024-03-10, 2024-03-15
+    Production Release :milestone, prod, 2024-03-15, 1d
+\`\`\`
+
+---
+
+## Tips for Using Examples
+
+| Tip | Detail |
+|---|---|
+| Start with a sample | Use the Samples dropdown in the editor to load a base example |
+| Copy from this library | Paste any source above into the editor Source panel |
+| Customize incrementally | Change one thing at a time and save to verify rendering |
+| Use the error panel | If something breaks, the red error panel shows what failed |
+| Fullscreen for large diagrams | Use the fullscreen viewer control for complex Mermaid charts |`,
+        },
       ],
     },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 3. USER GUIDE
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "user-guide",
+      title: "User Guide",
+      articles: [
+        {
+          slug: "overview-dashboard",
+          title: "Overview & Dashboard",
+          content: `# Overview & Dashboard
+
+## The Split-View Editor Layout
+
+Every macro in LaTeX Formulas & Diagrams opens the same split-view editor. The layout is consistent across all three macros:
+
+| Panel | Location | Purpose |
+|---|---|---|
+| **Source panel** | Left side | Write or paste your Mermaid code or LaTeX here |
+| **Preview panel** | Right side | Live-rendered output updates as you type |
+| **Samples dropdown** | Top of editor | Pre-built examples to load instantly |
+| **Save button** | Bottom of editor | Saves your content and closes the editor |
+
+## Samples Dropdown
+
+The Samples dropdown provides ready-to-use examples for each macro type:
+
+- **Diagrams macro:** flowchart, sequence diagram, ERD, Gantt chart, mindmap, and more
+- **LaTeX Block macro:** quadratic formula, integral, matrix, aligned derivation
+- **LaTeX Inline macro:** paragraph with inline and block math
+
+**How to use it:**
+1. Open the macro editor
+2. Click the **Samples** dropdown at the top of the editor
+3. Select an example — it loads into the Source panel immediately
+4. The Preview panel renders it live
+5. Customize the loaded example to fit your content
+
+## How to Save and Publish
+
+| Step | Action |
+|---|---|
+| 1 | Finish writing your content in the Source panel |
+| 2 | Confirm the Preview panel shows the expected output |
+| 3 | Click **Save** in the macro editor — this stores your content and closes the editor |
+| 4 | The macro renders on the Confluence page in edit mode |
+| 5 | Click **Publish** (or **Update**) in Confluence to make the page live |
+
+> **Important:** Clicking Save in the macro editor only saves the macro content — you still need to publish the Confluence page to make changes visible to other users.
+
+## Hover Toolbar on Rendered Macros
+
+When viewing a published Confluence page, hover over any rendered macro to reveal the hover toolbar. The toolbar appears at the top of the macro:
+
+| Control | Action |
+|---|---|
+| **Edit (pencil icon)** | Opens the macro editor with your saved source loaded |
+| **Copy Source** | Copies the raw Mermaid or LaTeX source to your clipboard |
+| **Zoom In / Zoom Out** | Increases or decreases the zoom level of the rendered output |
+| **Reset Zoom** | Returns to the default zoom level |
+| **Pan** | Click and drag to pan around large diagrams or equations |
+| **Fullscreen** | Opens the macro in a fullscreen overlay for easier reading |
+
+> **Note:** The hover toolbar is available for the Diagrams macro and LaTeX Block macro. The LaTeX Inline macro uses a simpler hover edit icon.
+
+## Macro Differences: Inline vs Block vs Diagram
+
+| Macro | Rendering | Best For | How Content Is Entered |
+|---|---|---|---|
+| **Clovity Diagrams** | Mermaid diagram | Flowcharts, sequences, ERDs, Gantt charts, mindmaps | Write Mermaid code in the Source panel |
+| **Clovity LaTeX Block** | KaTeX display math | Standalone centered equations, matrices, multi-line derivations | Write raw LaTeX (no \`$$\` wrappers) in the Source panel |
+| **Clovity LaTeX Inline** | KaTeX inline math | Math embedded inside paragraph text | Write normal text with \`$...$\` for inline math |
+
+## Common Workflow: Insert → Write → Preview → Save → Publish
+
+This is the standard workflow for all three macros:
+
+1. **Insert** — Edit a Confluence page, type \`/\`, search for the macro name, and click to insert it
+2. **Write** — Type or paste your Mermaid code or LaTeX source in the Source panel
+3. **Preview** — Watch the Preview panel on the right render your content live; fix any errors shown in the red error panel
+4. **Save** — Click the Save button in the macro editor to store the content
+5. **Publish** — Click Publish (or Update) in Confluence to make the page visible to your team
+
+## Editing Existing Macros
+
+To edit a macro you already saved:
+
+1. View the published page
+2. Hover over the rendered macro to reveal the hover toolbar
+3. Click the **Edit** icon
+4. The macro editor opens with your saved source loaded
+5. Make your changes, then click **Save**
+6. Publish the page to apply the changes
+
+## Error Handling
+
+If your Mermaid or LaTeX contains a syntax error, the Preview panel shows a red error panel with details about what failed. Common causes:
+
+- Missing diagram type header in Mermaid (e.g., forgot \`flowchart TD\`)
+- Unbalanced braces \`{}\` in LaTeX
+- Typos in Mermaid keywords or arrow syntax
+- Using \`$$...$$\` wrappers in the LaTeX Block macro (not needed — enter raw LaTeX only)`,
+        },
+        {
+          slug: "how-to-guides",
+          title: "How-To Guides",
+          content: `# How-To Guides
+
+Step-by-step instructions for the most common tasks in LaTeX Formulas & Diagrams.
+
+---
+
+## 1. Insert the Diagrams Macro
+
+1. Open a Confluence page in **edit mode**
+2. Click inside the page body where you want the diagram
+3. Type \`/\` to open the macro menu
+4. Type **Diagrams** in the search box
+5. Click **Clovity Diagrams** in the results
+6. The split-view editor opens automatically
+
+---
+
+## 2. Write Your First Flowchart in Mermaid
+
+1. Insert the Diagrams macro (see task 1 above)
+2. In the Source panel, type or paste:
+
+\`\`\`
+flowchart TD
+    A[Start] --> B{Is data valid?}
+    B -->|Yes| C[Process data]
+    B -->|No| D[Show error]
+    C --> E[End]
+    D --> E
+\`\`\`
+
+3. The Preview panel renders the diagram live
+4. Click **Save** — the diagram appears on the page
+5. Click **Publish** to make it visible to your team
+
+---
+
+## 3. Insert the LaTeX Block Equation Macro
+
+1. Open a Confluence page in **edit mode**
+2. Click inside the page body where you want the equation
+3. Type \`/\` to open the macro menu
+4. Type **LaTeX Block** in the search box
+5. Click **Clovity LaTeX Block Equations** in the results
+6. The split-view editor opens automatically
+
+---
+
+## 4. Write the Quadratic Formula
+
+1. Insert the LaTeX Block macro (see task 3 above)
+2. In the Source panel, type:
+
+\`\`\`
+x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}
+\`\`\`
+
+3. The Preview panel renders the formula centered
+4. Click **Save** — the display equation appears on the page
+
+> **Reminder:** Do not wrap with \`$$...$$\` — the LaTeX Block macro expects raw LaTeX only.
+
+---
+
+## 5. Insert the LaTeX Inline Macro
+
+1. Open a Confluence page in **edit mode**
+2. Click inside the page body
+3. Type \`/\` to open the macro menu
+4. Type **LaTeX Inline** in the search box
+5. Click **Clovity LaTeX Inline Equations** in the results
+6. The split-view editor opens
+
+---
+
+## 6. Write Inline Math in a Paragraph
+
+1. Insert the LaTeX Inline macro (see task 5 above)
+2. In the Source panel, write normal text with math embedded using \`$...$\`:
+
+\`\`\`
+The area of a circle is $A = \\pi r^2$ where $r$ is the radius and $\\pi \\approx 3.14159$.
+\`\`\`
+
+3. The Preview panel renders the paragraph with inline formulas
+4. Click **Save changes** — the paragraph with embedded math appears on the page
+
+---
+
+## 7. Use the Samples Dropdown
+
+1. Open any macro editor (Diagrams, LaTeX Block, or LaTeX Inline)
+2. Click the **Samples** dropdown at the top of the editor
+3. Browse the list of pre-built examples
+4. Click one to load it into the Source panel
+5. The Preview panel renders it immediately
+6. Customize the loaded example or click Save to use it as-is
+
+---
+
+## 8. Zoom Into a Diagram
+
+After a diagram is published on a Confluence page:
+
+1. View the page (do not enter edit mode)
+2. Hover over the rendered diagram to reveal the hover toolbar
+3. Click the **Zoom In (+)** button to enlarge the diagram
+4. Click **Zoom Out (−)** to reduce
+5. Click **Reset** to return to the default zoom level
+6. Click and drag on the diagram to **pan** around large charts
+
+---
+
+## 9. Copy Macro Source
+
+To reuse the source from an existing macro:
+
+1. View the published page
+2. Hover over the rendered macro to reveal the hover toolbar
+3. Click **Copy Source** — the raw Mermaid or LaTeX is copied to your clipboard
+4. Open another page in edit mode, insert the appropriate macro, and paste the source into the Source panel
+
+---
+
+## 10. Edit an Existing Equation or Diagram
+
+1. View the published page
+2. Hover over the rendered macro
+3. Click the **Edit (pencil)** icon in the hover toolbar
+4. The macro editor opens with the saved source loaded
+5. Make your changes in the Source panel
+6. Confirm the Preview panel looks correct
+7. Click **Save**, then **Publish** the page
+
+---
+
+## 11. Render a Gantt Chart
+
+1. Insert the Diagrams macro
+2. In the Source panel, paste:
+
+\`\`\`
+gantt
+    title Project Timeline
+    dateFormat YYYY-MM-DD
+    section Planning
+    Requirements    :done, req, 2024-01-01, 2024-01-15
+    Design          :done, design, 2024-01-16, 2024-02-01
+    section Development
+    Backend         :active, backend, 2024-02-01, 2024-03-15
+    Frontend        :frontend, 2024-02-15, 2024-03-30
+    section Launch
+    Deployment      :deploy, 2024-04-01, 2024-04-10
+\`\`\`
+
+3. Preview renders the Gantt chart with colored bars and timeline
+4. Click **Save**, then **Publish**
+
+---
+
+## 12. Render a Sequence Diagram
+
+1. Insert the Diagrams macro
+2. In the Source panel, paste:
+
+\`\`\`
+sequenceDiagram
+    participant Client
+    participant API
+    participant Database
+
+    Client->>API: GET /users/123
+    activate API
+    API->>Database: SELECT * FROM users WHERE id=123
+    activate Database
+    Database-->>API: User record
+    deactivate Database
+    API-->>Client: 200 OK { user }
+    deactivate API
+\`\`\`
+
+3. Preview renders the sequence diagram with arrows and activation bars
+4. Click **Save**, then **Publish**`,
+        },
+      ],
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 4. RELEASE NOTES
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "release-notes",
+      title: "Release Notes",
+      articles: [
+        {
+          slug: "latest-release",
+          title: "Latest Release",
+          content: `# Latest Release
+
+Stay up to date with the newest features, improvements, and fixes in LaTeX Formulas & Diagrams for Confluence Cloud.
+
+## Recent Highlights
+
+### New Diagram Types Supported
+
+The Diagrams macro now supports an expanded set of Mermaid diagram types, giving your team more ways to visualize systems and workflows directly in Confluence:
+
+| Diagram Type | Mermaid Header | New / Updated |
+|---|---|---|
+| Flowchart | \`flowchart TD\` / \`graph TD\` | Stable |
+| Sequence | \`sequenceDiagram\` | Stable |
+| Class | \`classDiagram\` | Stable |
+| Entity Relationship | \`erDiagram\` | Stable |
+| Gantt | \`gantt\` | Stable |
+| Pie Chart | \`pie\` | Stable |
+| Mindmap | \`mindmap\` | Updated |
+| State Machine | \`stateDiagram-v2\` | Updated |
+| Timeline | \`timeline\` | New |
+| Block Diagram | \`block-beta\` | New |
+
+### KaTeX Version Update
+
+The LaTeX rendering engine (KaTeX) has been updated to the latest stable release. Key improvements include:
+
+- Faster rendering for complex multi-line equations
+- Improved support for \`aligned\`, \`cases\`, and \`array\` environments
+- Better error messages when unsupported commands are used
+- Expanded operator and symbol coverage
+
+### Performance Improvements
+
+- **Faster preview rendering** — the split-view editor Preview panel now updates with lower latency as you type
+- **Reduced memory usage** for pages with multiple macros
+- **Smoother zoom and pan** in the diagram viewer
+- **Fullscreen mode** loads faster on large diagrams
+
+### New Samples Added
+
+The Samples dropdown in the macro editor now includes additional examples:
+
+| Macro | New Samples Added |
+|---|---|
+| Diagrams | Timeline diagram, Block diagram, expanded ERD example |
+| LaTeX Block | Probability distributions, Taylor series, Fourier transform |
+| LaTeX Inline | Physics formulas paragraph, Statistics notation paragraph |
+
+## Marketplace Listing
+
+View the full app details, reviews, and version history on the Atlassian Marketplace:
+
+[LaTeX Formulas & Diagrams — Atlassian Marketplace](https://marketplace.atlassian.com/apps/138412229/latex-formulas-diagrams-gantt-charts-erds-flowcharts)
+
+The Marketplace listing includes:
+- Current version number
+- Compatibility with Confluence Cloud
+- User reviews and ratings
+- Pricing and licensing information
+- Full version history and changelogs`,
+        },
+        {
+          slug: "version-history",
+          title: "Version History",
+          content: `# Version History
+
+A record of key changes across releases of LaTeX Formulas & Diagrams for Confluence Cloud.
+
+## Version Table
+
+| Version | Release Date | Key Changes |
+|---|---|---|
+| **Latest** | 2025 | New Mermaid diagram types (timeline, block-beta); KaTeX engine update; performance improvements; new samples added |
+| **3.x** | 2024 | Fullscreen viewer mode; zoom and pan controls; Copy Source button in hover toolbar; improved error panel |
+| **2.x** | 2023 | LaTeX Inline macro introduced; split-view editor redesign; Samples dropdown added to all macros |
+| **1.x** | 2022 | Initial release; Diagrams macro (Mermaid) and LaTeX Block macro (KaTeX); basic editor |
+
+## Detailed Change Log
+
+### Latest Release
+
+**New Features**
+- Timeline diagram support added to Diagrams macro (\`timeline\` header)
+- Block diagram support added to Diagrams macro (\`block-beta\` header)
+- Additional samples in all three macro editors
+- KaTeX updated to latest stable version
+
+**Improvements**
+- Preview panel rendering latency reduced
+- Zoom and pan performance improved for complex diagrams
+- Fullscreen mode loading speed increased
+
+**Bug Fixes**
+- Fixed an edge case where Copy Source occasionally returned empty string on Safari
+- Fixed State diagram (\`stateDiagram-v2\`) not rendering transition labels in some configurations
+- Fixed inline math rendering inside table cells in the LaTeX Inline macro
+
+---
+
+### Version 3.x
+
+**New Features**
+- **Fullscreen mode** — click the fullscreen button in the hover toolbar to view diagrams and equations in a fullscreen overlay
+- **Zoom In / Zoom Out / Reset** controls on all macros
+- **Pan** by click-and-drag on rendered diagrams
+- **Copy Source** button added to hover toolbar for all macros
+
+**Improvements**
+- Error panel redesigned with clearer messages and line references
+- Editor modal now resizable
+
+---
+
+### Version 2.x
+
+**New Features**
+- **LaTeX Inline macro** introduced — embed math inside paragraph text
+- Split-view editor redesigned with responsive layout
+- **Samples dropdown** added to all three macro editors
+
+**Improvements**
+- LaTeX Block macro now validates that raw LaTeX is entered (warns if \`$$\` wrappers are detected)
+- Mermaid updated to support \`mindmap\` and \`timeline\` types
+
+---
+
+### Version 1.x
+
+**Initial Release**
+- **Clovity Diagrams macro** — Mermaid-based diagram rendering in Confluence Cloud
+- **Clovity LaTeX Block Equations macro** — KaTeX display math rendering
+- Basic split-view editor
+- Support for flowchart, sequence, class, ERD, and Gantt diagram types
+
+## Staying Up to Date
+
+App updates are applied automatically through the Atlassian Marketplace. You do not need to manually update the app — Confluence Cloud applies Marketplace app updates automatically.
+
+To check the currently installed version:
+1. Go to **Confluence Settings → Apps → Manage apps**
+2. Find **LaTeX Formulas & Diagrams**
+3. The current version number is shown in the app details
+
+View the Marketplace listing for the latest version information: [Atlassian Marketplace](https://marketplace.atlassian.com/apps/138412229/latex-formulas-diagrams-gantt-charts-erds-flowcharts)`,
+        },
+      ],
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 5. INTEGRATIONS & MIGRATION
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "integrations-migration",
+      title: "Integrations & Migration",
+      articles: [
+        {
+          slug: "supported-integrations",
+          title: "Supported Integrations",
+          content: `# Supported Integrations
+
+LaTeX Formulas & Diagrams integrates natively with Confluence Cloud and leverages two open-source rendering libraries. This article describes what the app integrates with and — importantly — what it does not access.
+
+---
+
+## Native Confluence Integration
+
+The app is built as a native Confluence Cloud macro. This means:
+
+### Macros Stored in Confluence Page Content
+
+- Your Mermaid code and LaTeX source are stored directly in the **Confluence page content** (Confluence storage format)
+- There is no separate database or external storage — the macro body is part of the page
+- This means your content travels with the page: copy a page and the macro content copies with it
+
+### Fully Versioned with Page History
+
+| Feature | Detail |
+|---|---|
+| **Page version history** | Every time you publish a page, Confluence saves a new version — including your macro source |
+| **Restore previous versions** | You can restore any previous version of a page via Confluence's built-in page history, which also restores the macro source from that version |
+| **Version comparison** | Confluence's page diff view shows changes to macro source between versions |
+
+### Accessible via Confluence API
+
+Because macro content is stored in the Confluence page storage format, it is accessible via the standard Confluence REST API:
+
+- **GET /wiki/rest/api/content/{id}?expand=body.storage** returns the full page content including macro bodies
+- Macro source (Mermaid code or LaTeX) appears inside the \`<ac:plain-text-body>\` element of the macro markup
+- This allows programmatic extraction, migration, or backup of macro content using standard Confluence API tooling
+
+---
+
+## KaTeX Rendering
+
+The LaTeX Block and LaTeX Inline macros render math using **KaTeX**, a fast, browser-side LaTeX rendering library.
+
+### Supported LaTeX Commands and Environments
+
+| Category | Supported Examples |
+|---|---|
+| **Fractions** | \`\\frac{a}{b}\`, \`\\dfrac{a}{b}\` |
+| **Roots** | \`\\sqrt{x}\`, \`\\sqrt[n]{x}\` |
+| **Exponents & Subscripts** | \`x^2\`, \`x_i\`, \`x_i^2\` |
+| **Greek Letters** | \`\\alpha\`, \`\\beta\`, \`\\gamma\`, \`\\pi\`, \`\\Sigma\` |
+| **Operators** | \`\\sum\`, \`\\prod\`, \`\\int\`, \`\\lim\`, \`\\max\`, \`\\min\` |
+| **Delimiters** | \`\\left(\`, \`\\right)\`, \`\\left[\`, \`\\right]\`, \`\\left\\{\`, \`\\right\\}\` |
+| **Text** | \`\\text{label}\`, \`\\mathrm{text}\` |
+| **Spacing** | \`\\,\`, \`\\;\`, \`\\quad\`, \`\\qquad\` |
+| **Aligned equations** | \`\\begin{aligned} ... \\end{aligned}\` |
+| **Matrices** | \`\\begin{pmatrix}\`, \`\\begin{bmatrix}\`, \`\\begin{vmatrix}\` |
+| **Cases** | \`\\begin{cases} ... \\end{cases}\` |
+| **Arrays** | \`\\begin{array}{cols} ... \\end{array}\` |
+| **Arrows** | \`\\to\`, \`\\Rightarrow\`, \`\\Leftrightarrow\`, \`\\mapsto\` |
+| **Accents** | \`\\hat{x}\`, \`\\bar{x}\`, \`\\vec{x}\`, \`\\tilde{x}\` |
+
+For a complete list, see the [KaTeX supported functions documentation](https://katex.org/docs/supported.html).
+
+**Not supported:** custom LaTeX packages, TikZ/PGF graphics, BibTeX citations, and advanced TeX primitives outside the KaTeX subset.
+
+---
+
+## Mermaid Rendering
+
+The Diagrams macro renders visual diagrams using **Mermaid**, a JavaScript-based diagramming library.
+
+### Supported Diagram Types
+
+| Diagram Type | Mermaid Header | Use Case |
+|---|---|---|
+| Flowchart | \`flowchart TD\` / \`graph TD\` | Process flows, decision trees |
+| Sequence | \`sequenceDiagram\` | API flows, system interactions |
+| Class | \`classDiagram\` | Object-oriented design |
+| Entity Relationship | \`erDiagram\` | Database schemas |
+| Gantt | \`gantt\` | Project timelines |
+| Pie Chart | \`pie\` | Proportional data |
+| Mindmap | \`mindmap\` | Topic hierarchies |
+| State Machine | \`stateDiagram-v2\` | State transitions |
+| Timeline | \`timeline\` | Chronological events |
+| Block Diagram | \`block-beta\` | System architecture blocks |
+
+---
+
+## What Data the App Does NOT Access
+
+It is important to understand the scope of data access:
+
+| Data Source | Accessed? | Notes |
+|---|---|---|
+| **Jira issues or projects** | No | The app has no Jira integration and does not read or write Jira data |
+| **External APIs or services** | No | All rendering (KaTeX and Mermaid) runs entirely client-side in the browser |
+| **Other Confluence spaces** | No | The app only processes content on the page being viewed or edited |
+| **User data beyond page authorship** | No | The app does not read user profiles, email addresses, or account data |
+| **Confluence analytics or audit logs** | No | The app does not access Confluence analytics or site-level logs |
+| **External storage or databases** | No | Macro content is stored in Confluence page storage only |
+
+All rendering is performed locally in the user's browser. No macro content, user data, or page content is transmitted to external servers.`,
+        },
+        {
+          slug: "data-migration",
+          title: "Data Migration",
+          content: `# Data Migration
+
+This article covers how to move macro content between pages, export diagrams and equations as images, what happens when the app is uninstalled, and how to migrate from other diagram tools.
+
+---
+
+## Copying Macro Content Between Pages
+
+### Using the Copy Source Button
+
+The easiest way to reuse macro content on another page:
+
+1. View the published page containing the macro you want to copy
+2. Hover over the rendered macro to reveal the hover toolbar
+3. Click **Copy Source** — the raw Mermaid code or LaTeX is copied to your clipboard
+4. Navigate to the destination page and open it in edit mode
+5. Insert the appropriate macro type (Diagrams, LaTeX Block, or LaTeX Inline)
+6. Paste the copied source into the Source panel
+7. Confirm it renders correctly in the Preview panel
+8. Click **Save**, then **Publish** the page
+
+### Copying an Entire Page
+
+Because macro content is stored in the Confluence page storage format:
+
+- Using Confluence's **Copy page** feature copies all macros and their content along with the page
+- The copied page will have the same diagrams and equations as the original
+- Each macro can then be independently edited on the copied page
+
+---
+
+## Exporting Diagrams as PNG or SVG
+
+### From the Fullscreen Viewer
+
+1. View the published page
+2. Hover over a Diagrams macro and click **Fullscreen**
+3. In the fullscreen overlay, right-click on the rendered diagram
+4. Select **Save image as...** (PNG) or **Copy image** to use it elsewhere
+
+### For LaTeX Equations
+
+1. View the published page
+2. Hover over a LaTeX Block macro and click **Fullscreen**
+3. Right-click the rendered equation and save as image
+
+> **Tip:** For higher-quality exports, zoom in before capturing the image. The rendered output is vector-based (SVG internally) so it scales cleanly.
+
+---
+
+## What Happens When the App Is Uninstalled
+
+When a Confluence administrator uninstalls LaTeX Formulas & Diagrams:
+
+| Scenario | What Happens |
+|---|---|
+| **Macro content on pages** | The raw Mermaid/LaTeX source remains in the page storage format — it is not deleted |
+| **Rendering** | Macros will no longer render — the macro body will appear as an unrecognized macro placeholder |
+| **Re-installing the app** | If the app is reinstalled, all macros resume rendering from the saved source content |
+| **Content recovery** | The source can be recovered via Confluence's page history or via the Confluence REST API |
+
+**Key point:** Uninstalling the app does not destroy your content. Your Mermaid and LaTeX source remains in the page. Reinstalling the app restores full rendering.
+
+---
+
+## Migrating from Other Diagram Tools
+
+### Migrating from PlantUML
+
+PlantUML and Mermaid are different diagramming languages. Direct syntax conversion is not automatic.
+
+| PlantUML Diagram | Mermaid Equivalent | Migration Notes |
+|---|---|---|
+| \`@startuml ... @enduml\` sequence | \`sequenceDiagram\` | Arrow syntax differs: \`->\` vs \`->>\`; participant declaration is optional in Mermaid |
+| \`@startuml ... @enduml\` class | \`classDiagram\` | Attribute and method syntax differs |
+| \`@startuml ... @enduml\` activity | \`flowchart TD\` | PlantUML activity maps to Mermaid flowchart with decision nodes |
+| \`@startuml ... @enduml\` component | \`block-beta\` or \`flowchart\` | No direct equivalent — use flowchart nodes for components |
+
+**Migration approach for PlantUML:**
+1. Export or copy the PlantUML source from your existing tool
+2. Identify the diagram type
+3. Rewrite using the equivalent Mermaid syntax (use the Samples dropdown for starting templates)
+4. Test in the Diagrams macro editor Preview panel before saving
+
+### Comparison with draw.io (diagrams.net)
+
+| Feature | LaTeX Formulas & Diagrams | draw.io for Confluence |
+|---|---|---|
+| **Diagram input method** | Code-based (Mermaid text) | GUI drag-and-drop |
+| **Math/formula support** | Native (KaTeX) | Limited (via text boxes) |
+| **Version history** | Via Confluence page history | Via Confluence page history |
+| **Export** | PNG via browser save | PNG, SVG, PDF |
+| **Best for** | Code-defined precise diagrams, math-heavy docs | Visual freeform diagrams |
+
+**When to choose LaTeX Formulas & Diagrams over draw.io:**
+- Your team is comfortable writing Mermaid or LaTeX
+- You need exact, reproducible diagrams from code (version-controlled source)
+- You need mathematical formulas alongside diagrams
+- You prefer text-based authoring that can be diffed in page history`,
+        },
+      ],
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 6. USE CASES
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "use-cases",
+      title: "Use Cases",
+      articles: [
+        {
+          slug: "common-use-cases",
+          title: "Common Use Cases",
+          content: `# Common Use Cases
+
+Real-world scenarios where teams use LaTeX Formulas & Diagrams in Confluence. Each scenario includes who it's for, when to use it, which macro to use, and an example.
+
+---
+
+## 1. Architecture Decision Record (ADR) with System Diagram
+
+**Who:** Software engineers, architects, tech leads
+
+**When:** Documenting a new system design decision that requires a visual of how components interact
+
+**Macro to use:** Clovity Diagrams — sequence or component diagram
+
+**Why it works:** ADRs need precise, readable diagrams that can be version-controlled alongside the decision text. Mermaid code is stored in page history, so the diagram evolves with the decision.
+
+**Example — Sequence Diagram for a Microservice Call:**
+
+\`\`\`
+sequenceDiagram
+    participant Client as API Client
+    participant Gateway as API Gateway
+    participant Auth as Auth Service
+    participant Orders as Orders Service
+    participant DB as Orders DB
+
+    Client->>Gateway: POST /orders { items, userId }
+    Gateway->>Auth: Validate JWT token
+    activate Auth
+    Auth-->>Gateway: 200 OK { userId, roles }
+    deactivate Auth
+    Gateway->>Orders: Create order { items, userId }
+    activate Orders
+    Orders->>DB: INSERT INTO orders ...
+    activate DB
+    DB-->>Orders: order_id = 4821
+    deactivate DB
+    Orders-->>Gateway: 201 Created { orderId: 4821 }
+    deactivate Orders
+    Gateway-->>Client: 201 Created { orderId: 4821 }
+\`\`\`
+
+---
+
+## 2. Data Science Documentation with Formulas
+
+**Who:** Data scientists, ML engineers, analysts
+
+**When:** Documenting a model's loss function, evaluation metrics, or mathematical derivation in a team wiki or model card
+
+**Macro to use:** Clovity LaTeX Block Equations for standalone formulas; Clovity LaTeX Inline Equations for formulas embedded in explanatory text
+
+**Why it works:** LaTeX is the standard notation for mathematical publishing. KaTeX renders the same notation natively in Confluence, so data science docs look as precise as academic papers.
+
+**Example — Model Evaluation Metrics (LaTeX Block):**
+
+\`\`\`
+\\begin{aligned}
+\\text{Precision} &= \\frac{TP}{TP + FP} \\\\[6pt]
+\\text{Recall}    &= \\frac{TP}{TP + FN} \\\\[6pt]
+F_1               &= 2 \\cdot \\frac{\\text{Precision} \\cdot \\text{Recall}}{\\text{Precision} + \\text{Recall}} \\\\[6pt]
+\\text{RMSE}      &= \\sqrt{\\frac{1}{n}\\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2}
+\\end{aligned}
+\`\`\`
+
+**Example — Inline math in a paragraph (LaTeX Inline):**
+
+\`\`\`
+The model minimizes the cross-entropy loss $L = -\\sum_{i} y_i \\log(\\hat{y}_i)$ over the training set, where $y_i$ is the true label and $\\hat{y}_i$ is the predicted probability.
+\`\`\`
+
+---
+
+## 3. Project Timeline with Gantt Chart
+
+**Who:** Project managers, engineering managers, program managers
+
+**When:** Planning a sprint, quarter, or release cycle and sharing the timeline with the team in Confluence
+
+**Macro to use:** Clovity Diagrams — Gantt chart
+
+**Why it works:** Gantt charts defined in Mermaid are easy to update (just change dates in text), live in Confluence page history, and require no external tools or image uploads.
+
+**Example — Q2 Release Timeline:**
+
+\`\`\`
+gantt
+    title Q2 2024 Release Timeline
+    dateFormat YYYY-MM-DD
+    section Discovery
+    Requirements Gathering    :done, req, 2024-04-01, 2024-04-10
+    Stakeholder Review        :done, review, 2024-04-10, 2024-04-15
+    section Development
+    Backend API               :active, api, 2024-04-15, 2024-05-15
+    Frontend UI               :ui, 2024-04-22, 2024-05-20
+    section QA & Testing
+    Integration Testing       :test, 2024-05-15, 2024-06-01
+    UAT                       :uat, 2024-06-01, 2024-06-10
+    section Release
+    Staging Deployment        :staging, 2024-06-10, 2024-06-12
+    Production Release        :milestone, prod, 2024-06-14, 1d
+\`\`\`
+
+---
+
+## 4. Database Schema Documentation
+
+**Who:** Backend engineers, database administrators, data engineers
+
+**When:** Documenting a database schema for a new feature, onboarding new engineers, or as part of a system design review
+
+**Macro to use:** Clovity Diagrams — ERD (Entity Relationship Diagram)
+
+**Why it works:** ERDs defined in Mermaid are concise, readable, and version-controlled. They update easily when the schema changes — no need to redraw a diagram.
+
+**Example — E-Commerce Schema:**
+
+\`\`\`
+erDiagram
+    USER ||--o{ ORDER : places
+    ORDER ||--|{ ORDER_ITEM : contains
+    PRODUCT ||--o{ ORDER_ITEM : "included in"
+    CATEGORY ||--o{ PRODUCT : categorizes
+
+    USER {
+        int id PK
+        string email UK
+        string name
+        timestamp created_at
+    }
+    ORDER {
+        int id PK
+        int user_id FK
+        string status
+        decimal total_amount
+        timestamp placed_at
+    }
+    ORDER_ITEM {
+        int id PK
+        int order_id FK
+        int product_id FK
+        int quantity
+        decimal unit_price
+    }
+    PRODUCT {
+        int id PK
+        int category_id FK
+        string name
+        decimal price
+        int stock_count
+    }
+    CATEGORY {
+        int id PK
+        string name
+        string slug
+    }
+\`\`\`
+
+---
+
+## 5. API Documentation with Sequence Diagrams
+
+**Who:** API designers, backend engineers, developer experience teams
+
+**When:** Documenting an API's authentication flow, request lifecycle, or integration pattern for internal or external developers
+
+**Macro to use:** Clovity Diagrams — sequence diagram
+
+**Why it works:** Sequence diagrams precisely show the order of calls, activations, and responses between systems. They are far more readable than prose descriptions of multi-step API flows.
+
+**Example — OAuth 2.0 Authorization Code Flow:**
+
+\`\`\`
+sequenceDiagram
+    participant User as User (Browser)
+    participant App as Client Application
+    participant Auth as Authorization Server
+    participant API as Resource API
+
+    User->>App: Click "Sign in with Provider"
+    App->>Auth: GET /authorize?client_id=...&redirect_uri=...
+    Auth->>User: Show login & consent screen
+    User->>Auth: Enter credentials, grant consent
+    Auth-->>App: Redirect to redirect_uri?code=AUTH_CODE
+    App->>Auth: POST /token { code, client_id, client_secret }
+    activate Auth
+    Auth-->>App: { access_token, refresh_token, expires_in }
+    deactivate Auth
+    App->>API: GET /resource Authorization: Bearer access_token
+    activate API
+    API-->>App: 200 OK { resource data }
+    deactivate API
+    App->>User: Display resource data
+\`\`\``,
+        },
+        {
+          slug: "use-case-templates",
+          title: "Use Case Templates",
+          content: `# Use Case Templates
+
+Ready-to-use Confluence page templates for common technical documentation scenarios. Each template includes the recommended page structure, which macros to use, and example content to get started.
+
+---
+
+## Template 1: Technical Spec Page
+
+**Purpose:** Document a new feature or system component with context, design, and implementation details.
+
+**Suggested page structure:**
+
+| Section | Content | Macro |
+|---|---|---|
+| Overview | What and why — 2–3 sentences | None (text) |
+| System Diagram | How it fits into the broader system | Clovity Diagrams (flowchart or sequence) |
+| Data Model | Entities and relationships | Clovity Diagrams (ERD) |
+| Key Formulas / Calculations | Any math required | Clovity LaTeX Block Equations |
+| API Endpoints | Request/response flows | Clovity Diagrams (sequence) |
+| Open Questions | Unresolved items | None (text or table) |
+
+**Example — System Diagram for a Technical Spec:**
+
+\`\`\`
+flowchart TD
+    Client[/API Client/] --> Gateway[API Gateway]
+    Gateway --> AuthService[Auth Service]
+    Gateway --> FeatureService[New Feature Service]
+    FeatureService --> Cache[(Redis Cache)]
+    FeatureService --> DB[(PostgreSQL)]
+    FeatureService --> Queue[/Message Queue/]
+    Queue --> Worker[Background Worker]
+    Worker --> DB
+
+    style FeatureService fill:#DEEBFF,stroke:#0052CC
+    style DB fill:#E3FCEF,stroke:#00875A
+\`\`\`
+
+**Example — Key Formula (LaTeX Block):**
+
+\`\`\`
+\\text{Score} = w_1 \\cdot \\text{Relevance} + w_2 \\cdot \\text{Recency} + w_3 \\cdot \\text{Popularity}
+\`\`\`
+
+---
+
+## Template 2: ML Model Documentation Page
+
+**Purpose:** Document a machine learning model for team review, handoff, or audit — including architecture, training setup, and evaluation results.
+
+**Suggested page structure:**
+
+| Section | Content | Macro |
+|---|---|---|
+| Model Overview | Type, task, input/output | None (text) |
+| Architecture | Layer structure or pipeline | Clovity Diagrams (flowchart) |
+| Loss Function | Mathematical definition | Clovity LaTeX Block Equations |
+| Evaluation Metrics | Metric definitions | Clovity LaTeX Block Equations |
+| Results Summary | Table of metric values | None (Confluence table) |
+| Inference Flow | How the model is called at runtime | Clovity Diagrams (sequence) |
+
+**Example — Training Pipeline Diagram:**
+
+\`\`\`
+flowchart LR
+    RawData[/Raw Data/] --> Preprocess[Preprocessing]
+    Preprocess --> FeatureEng[Feature Engineering]
+    FeatureEng --> Split{Train / Val Split}
+    Split -->|80%| Train[Model Training]
+    Split -->|20%| Validate[Validation]
+    Train --> Evaluate[Evaluate on Val Set]
+    Evaluate --> Threshold{Metrics Pass?}
+    Threshold -->|Yes| Register[Register Model]
+    Threshold -->|No| Tune[Hyperparameter Tuning]
+    Tune --> Train
+    Register --> Deploy[/Deploy to Production/]
+\`\`\`
+
+**Example — Loss Function (LaTeX Block):**
+
+\`\`\`
+\\mathcal{L} = -\\frac{1}{N} \\sum_{i=1}^{N} \\left[ y_i \\log(\\hat{y}_i) + (1 - y_i) \\log(1 - \\hat{y}_i) \\right]
+\`\`\`
+
+**Example — Metrics (LaTeX Block):**
+
+\`\`\`
+\\begin{aligned}
+\\text{AUC-ROC} &= \\int_0^1 \\text{TPR}(\\text{FPR}^{-1}(t))\\, dt \\\\[6pt]
+\\text{Log Loss} &= -\\frac{1}{N}\\sum_{i=1}^{N}\\left[y_i \\log(p_i) + (1-y_i)\\log(1-p_i)\\right]
+\\end{aligned}
+\`\`\`
+
+---
+
+## Template 3: System Architecture Page
+
+**Purpose:** Provide a high-level overview of a system's components, data flows, and integrations for engineering onboarding and architecture review.
+
+**Suggested page structure:**
+
+| Section | Content | Macro |
+|---|---|---|
+| System Overview | What the system does | None (text) |
+| Component Diagram | High-level architecture | Clovity Diagrams (flowchart) |
+| Request Flow | End-to-end request lifecycle | Clovity Diagrams (sequence) |
+| Data Schema | Core entities | Clovity Diagrams (ERD) |
+| SLA / Performance Targets | Numeric targets with formulas if needed | Clovity LaTeX Inline Equations |
+| Deployment Timeline | When components go live | Clovity Diagrams (Gantt) |
+
+**Example — High-Level Architecture Diagram:**
+
+\`\`\`
+flowchart TB
+    subgraph Frontend
+        Web[Web App]
+        Mobile[Mobile App]
+    end
+
+    subgraph Backend
+        GW[API Gateway]
+        Auth[Auth Service]
+        UserSvc[User Service]
+        NotifSvc[Notification Service]
+    end
+
+    subgraph Data
+        PG[(PostgreSQL)]
+        Redis[(Redis Cache)]
+        S3[(S3 Storage)]
+    end
+
+    subgraph Infra
+        CDN[CDN]
+        LB[Load Balancer]
+    end
+
+    Web --> CDN --> LB --> GW
+    Mobile --> CDN
+    GW --> Auth
+    GW --> UserSvc
+    GW --> NotifSvc
+    UserSvc --> PG
+    UserSvc --> Redis
+    NotifSvc --> PG
+    UserSvc --> S3
+
+    style Frontend fill:#DEEBFF
+    style Backend fill:#E3FCEF
+    style Data fill:#FFF0B3
+    style Infra fill:#FFEBE6
+\`\`\`
+
+**Example — SLA targets in inline math (LaTeX Inline):**
+
+\`\`\`
+The API must maintain $p_{99} \\leq 200\\text{ ms}$ latency and $\\text{Availability} \\geq 99.9\\%$ measured over a rolling 30-day window.
+\`\`\`
+
+**Example — Deployment Timeline (Diagrams macro):**
+
+\`\`\`
+gantt
+    title System Rollout Timeline
+    dateFormat YYYY-MM-DD
+    section Infrastructure
+    Provision Cloud Resources    :done, infra, 2024-05-01, 2024-05-07
+    section Backend Services
+    Deploy Auth Service          :done, auth, 2024-05-07, 2024-05-10
+    Deploy User Service          :active, user, 2024-05-10, 2024-05-17
+    Deploy Notification Service  :notif, 2024-05-17, 2024-05-22
+    section Frontend
+    Deploy Web App               :web, 2024-05-20, 2024-05-24
+    Deploy Mobile Release        :mobile, 2024-05-24, 2024-05-28
+    section Go Live
+    Production Cutover           :milestone, golive, 2024-05-28, 1d
+\`\`\``,
+        },
+      ],
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 7. HELP & SUPPORT
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "help-support",
+      title: "Help & Support",
+      articles: [
+        {
+          slug: "contact-support",
+          title: "Contact Support",
+          content: `Need help with LaTeX Formulas & Diagrams for Confluence? Here's how to get assistance.
+
+## Before Contacting Support
+
+Check these resources first — most issues can be resolved quickly:
+
+1. **What is LaTeX Formulas & Diagrams?** — overview of all macros and their features
+2. **Diagrams Macro** — troubleshooting for Mermaid/UML diagrams
+3. **LaTeX Block Equations** — checklist for successful rendering
+4. **LaTeX Inline Equations** — rules for inline and block math syntax
+5. **Examples Library** — ready-to-use code you can test against
+
+## How to Submit a Support Request
+
+If you cannot resolve the issue using the documentation, submit a request via the Atlassian Marketplace support page for LaTeX Formulas & Diagrams.
+
+### Include in Your Request
+
+* Description of the issue — what are you trying to do, and what's happening instead?
+* Steps to reproduce — how can we replicate the issue?
+* The macro type — Diagrams, LaTeX Block, or LaTeX Inline
+* Screenshot or screen recording of the issue (including any error messages)
+* Confluence version and app version
+
+## Community & Resources
+
+* Atlassian Community — search for LaTeX Formulas & Diagrams discussions or post a question
+* Atlassian Marketplace listing — reviews, version history, and documentation links
+
+## Contact Us
+
+You can also reach our support team directly at [support@clovity.com](mailto:support@clovity.com)`,
+        },
+      ],
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 4. END USER LICENSE AGREEMENT (EULA)
+    // ═══════════════════════════════════════════════════════════════
     {
       id: "eula",
       title: "End User License Agreement",

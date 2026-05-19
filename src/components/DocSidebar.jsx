@@ -1,9 +1,11 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import { ChevronDown, ChevronRight } from "lucide-react";
 
 export default function DocSidebar({ docs, appSlug, activeArticleSlug }) {
+  const scrollRef = useRef(null);
+
   const [openCategories, setOpenCategories] = useState(() => {
     const initial = {};
     for (const cat of docs.categories) {
@@ -14,13 +16,17 @@ export default function DocSidebar({ docs, appSlug, activeArticleSlug }) {
   });
 
   function toggleCategory(catId) {
+    const savedScroll = scrollRef.current?.scrollTop ?? 0;
     setOpenCategories((prev) => ({ ...prev, [catId]: !prev[catId] }));
+    requestAnimationFrame(() => {
+      if (scrollRef.current) scrollRef.current.scrollTop = savedScroll;
+    });
   }
 
   return (
     <aside className="hidden lg:block w-56 xl:w-60 shrink-0">
-      <div className="sticky top-[138px] h-[calc(100vh-138px)] overflow-y-auto py-8 pr-5 pb-12 border-r border-gray-200/90">
-        
+      <div ref={scrollRef} className="sticky top-[138px] h-[calc(100vh-138px)] overflow-y-auto py-8 pr-5 pb-12 border-r border-gray-200/90">
+
           <nav className="flex flex-col gap-5">
             {docs.categories.map((cat) => {
               const isOpen = openCategories[cat.id];
@@ -32,6 +38,8 @@ export default function DocSidebar({ docs, appSlug, activeArticleSlug }) {
                 <div key={cat.id}>
                   {/* Category toggle */}
                   <button
+                    type="button"
+                    onMouseDown={(e) => e.preventDefault()}
                     onClick={() => toggleCategory(cat.id)}
                     className={`w-full text-left flex items-center justify-between mb-1.5 group transition-colors duration-150 cursor-pointer ${
                       hasActive

@@ -9,6 +9,7 @@ import { reportsChartsConfluenceDocs } from "@/data/reports-charts-confluence-do
 import { latexDiagramsConfluenceDocs } from "@/data/latex-diagrams-confluence-docs";
 import { contentFormattingConfluenceDocs } from "@/data/content-formatting-confluence-docs";
 import DocSidebar from "@/components/DocSidebar";
+import ScrollToTop from "@/components/ScrollToTop";
 import ArticleContent from "@/components/ArticleContent";
 import VideoGallery from "@/components/VideoGallery";
 import TableOfContents from "@/components/TableOfContents";
@@ -68,6 +69,7 @@ export default async function ArticlePage({ params }) {
 
   return (
     <div className="min-h-screen bg-white">
+      <ScrollToTop />
       {/* App header */}
       <div className="border-b border-gray-200 bg-white sticky top-[81px] z-30">
         <div className="max-w-[1920px] mx-auto px-4 sm:px-6 h-14 flex items-center gap-3">

@@ -5,6 +5,7 @@ import { reportsChartsConfluenceDocs } from "@/data/reports-charts-confluence-do
 import { latexDiagramsConfluenceDocs } from "@/data/latex-diagrams-confluence-docs";
 import { contentFormattingConfluenceDocs } from "@/data/content-formatting-confluence-docs";
 import Sidebar from "@/components/Sidebar";
+import ScrollToTop from "@/components/ScrollToTop";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -110,8 +111,9 @@ export default async function AppPage({ params }) {
 
   return (
     <div className="min-h-screen bg-white">
+      <ScrollToTop />
       {/* App sub-header breadcrumb */}
-      <div className=" top-[80.8px] border-b border-gray-200 bg-white sticky top-0 z-30">
+      <div className=" top-[80.8px] border-b border-gray-200 bg-white sticky z-30">
         <div className="max-w-[1920px] mx-auto px-4 sm:px-6 h-14 flex items-center gap-3">
           <div className="w-6 h-6 rounded overflow-hidden flex-shrink-0">
             <Image
@@ -197,7 +199,7 @@ export default async function AppPage({ params }) {
 
           {/* Documentation categories grid */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
-            <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">
+            <p className="text-sm font-semibold tracking-widest text-gray-600 mb-6">
               Documentation
             </p>
 

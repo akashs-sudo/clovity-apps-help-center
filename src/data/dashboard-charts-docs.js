@@ -150,6 +150,8 @@ To uninstall: Jira Settings → Apps → Manage apps → find the app → click 
 
 Get up and running with your first Jira dashboard chart in under 5 minutes.
 
+![Quick Start Guide](/images/global/dashboard-charts/quick-start-guide.png)
+
 ## Step 1 - Open or Create a Dashboard
 
 1. In Jira, click **Dashboards** in the top navigation bar

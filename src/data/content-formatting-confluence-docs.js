@@ -102,9 +102,9 @@ The app is actively updated. Check the Atlassian Marketplace listing for the lat
         {
           slug: "installation-setup",
           title: "Installation & Setup",
-          content: `# Installation & Setup
+          content: `
 
-<img src="/images/content-formatting-assets/installation-setup.png" alt="Installation & Setup screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+<img src="/images/content-formatting-assets/installation-setup.JPG" alt="Installation & Setup screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
 
 ## Prerequisites
 
@@ -265,7 +265,6 @@ The Attachment Management Center requires:
 | **Space Admin** | Install the app (site admin required), enable Attachment Center per-space, configure space-level settings |
 | **Page Author (edit permission)** | Insert, configure, and publish any macro on pages they can edit |
 | **Page Viewer (read permission)** | View rendered macros; conditional visibility is evaluated per viewer's groups |
-| **Anonymous (not logged in)** | Treated as a single anonymous audience for conditional visibility |
 
 ## Installing the App
 

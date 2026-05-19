@@ -102,6 +102,9 @@ The app is actively updated. Check the Atlassian Marketplace listing for the lat
           slug: "installation-setup",
           title: "Installation & Setup",
           content: `
+
+<img src="/images/content-formatting-assets/installation-setup.JPG" alt="Installation & Setup screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## Prerequisites
 
 Before installing, confirm:
@@ -258,7 +261,6 @@ The Attachment Management Center requires:
 | **Space Admin** | Install the app (site admin required), enable Attachment Center per-space, configure space-level settings |
 | **Page Author (edit permission)** | Insert, configure, and publish any macro on pages they can edit |
 | **Page Viewer (read permission)** | View rendered macros; conditional visibility is evaluated per viewer's groups |
-| **Anonymous (not logged in)** | Treated as a single anonymous audience for conditional visibility |
 
 ## Installing the App
 
@@ -302,7 +304,10 @@ Users with page-read permission can still access all content via the Confluence 
         {
           slug: "tab-navigation",
           title: "Tab Navigation Overview",
-          content: `
+          content: `# Advanced Content Navigation
+
+<img src="/images/content-formatting-assets/tab-navigation.png" alt="Tab Navigation screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What Are Tab Macros?
 
 Tab macros let you display multiple sections of content inside a single Confluence page using a familiar tabbed interface. Readers click a tab label to switch views - no page navigation required.
@@ -343,7 +348,10 @@ Insert **Tab Navigation** without a mapper, and add **Custom Tab** containers in
         {
           slug: "tab-parent-mapper",
           title: "Tab Parent Content Mapper",
-          content: `
+          content: `# Tab Parent Content Mapper Guide
+
+<img src="/images/content-formatting-assets/tab-parent-mapper.png" alt="Tab Parent Content Mapper screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 
 The Tab Parent Content Mapper automatically creates one tab for each **child page** of a specified Confluence parent page. When child pages are added, renamed, or removed, the tabs update automatically - no manual editing required.
@@ -381,7 +389,10 @@ The Tab Parent Content Mapper automatically creates one tab for each **child pag
         {
           slug: "tab-label-mapper",
           title: "Tab Label Content Mapper",
-          content: `
+          content: `# Tab Label Content Mapper Guide
+
+<img src="/images/content-formatting-assets/tab-label-mapper.png" alt="Tab Label Content Mapper screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 
 The Tab Label Content Mapper creates tabs based on **Confluence page labels**. Each unique label value (or a set of label values you configure) becomes a tab, and all pages with that label appear as the tab's content.
@@ -428,7 +439,10 @@ Example CQL: \`space = "TEAM" AND label in ("release") ORDER BY created DESC\`
         {
           slug: "tab-page-mapper",
           title: "Tab Confluence Page Mapper",
-          content: `
+          content: `# Tab Confluence Page Mapper Guide
+
+<img src="/images/content-formatting-assets/tab-page-mapper.png" alt="Tab Confluence Page Mapper screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 
 The Tab Page Mapper lets you **hand-pick specific pages** from anywhere in the Confluence space to appear as tabs. Unlike the Parent or Label mappers, this one does not auto-update - you control exactly which pages are included and in what order.
@@ -474,7 +488,10 @@ If a page in the list is deleted, the tab for that page disappears silently. Che
         {
           slug: "create-custom-tabs",
           title: "Create Custom Tabs",
-          content: `
+          content: `# Create Custom Tabs Guide
+
+<img src="/images/content-formatting-assets/create-custom-tabs.png" alt="Create Custom Tabs screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What Are Custom Tabs?
 
 Custom Tabs let you write content **directly inside each tab** instead of pulling from other pages. Use this when the content you want to tab doesn't exist as separate Confluence pages, or when you want full control over tab content without creating child pages.
@@ -566,7 +583,10 @@ Conditional visibility macros let you show or hide sections of content based on 
         {
           slug: "conditional-hide",
           title: "Conditional Hide Guide",
-          content: `
+          content: `# Conditional Hide Guide
+
+<img src="/images/content-formatting-assets/conditional-hide.png" alt="Conditional Hide screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 
 The Conditional Hide macro wraps content that should be **visible to most users but hidden from a specific group or condition**. Think of it as "hide this from X."
@@ -606,7 +626,10 @@ You can stack multiple Conditional Hide macros to hide content from multiple gro
         {
           slug: "conditional-show",
           title: "Conditional Show Guide",
-          content: `
+          content: `# Conditional Show Guide
+
+<img src="/images/content-formatting-assets/conditional-show.png" alt="Conditional Show screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 
 The Conditional Show macro wraps content that should be **hidden by default and shown only to a specific group or condition**. Think of it as "show this only to X."
@@ -691,7 +714,10 @@ Content Formatting Macros includes 18 macros for enhancing the visual quality, i
         {
           slug: "buttons-macro",
           title: "Buttons Macro",
-          content: `
+          content: `# Buttons Macro
+
+<img src="/images/content-formatting-assets/buttons-macro.png" alt="Buttons Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The Buttons macro creates styled call-to-action buttons on any Confluence page. Buttons can link to internal Confluence pages, external URLs, email addresses, or anchors on the same page.
 
@@ -727,7 +753,10 @@ Insert multiple Button macros side by side. They will flow inline with automatic
         {
           slug: "background-macro",
           title: "Background Macro",
-          content: `
+          content: `# Background Macro
+
+<img src="/images/content-formatting-assets/background-macro.png" alt="Background Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The Background macro applies a background color, gradient, or image to any section of a Confluence page. Use it to visually separate content zones, highlight important sections, or create a branded look.
 
@@ -761,7 +790,10 @@ The Background macro applies a background color, gradient, or image to any secti
         {
           slug: "alert-macro",
           title: "Alert Macro",
-          content: `
+          content: `# Alert Macro
+
+<img src="/images/content-formatting-assets/alert-macro.png" alt="Alert Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The Alert macro creates a styled banner for informational messages, warnings, errors, or success confirmations. Alerts have a colored left border and icon that immediately signals the message type to the reader.
 
@@ -799,7 +831,10 @@ The Alert macro creates a styled banner for informational messages, warnings, er
         {
           slug: "tooltip-macro",
           title: "Tooltip Macro",
-          content: `
+          content: `# Tooltip Macro
+
+<img src="/images/content-formatting-assets/tooltip-macro.png" alt="Tooltip Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The Tooltip macro wraps a word or phrase with a hover tooltip that reveals additional context - a definition, explanation, or note. The tooltip appears on mouse hover and disappears when the cursor moves away.
 
@@ -831,7 +866,10 @@ Use tooltips sparingly. If the definition is important enough that most readers 
         {
           slug: "progressbar-macro",
           title: "Progress Bar Macro",
-          content: `
+          content: `# Progress Bar Macro
+
+<img src="/images/content-formatting-assets/progressbar-macro.png" alt="Progress Bar Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The Progress Bar macro renders a visual, percentage-based progress indicator. Use it to show task completion, project health, survey results, or any value on a 0–100% scale.
 
@@ -862,7 +900,10 @@ Insert multiple Progress Bar macros in sequence (or inside a table) to create a 
         {
           slug: "footnotes-macro",
           title: "Footnotes Macro",
-          content: `
+          content: `# Footnotes Macro
+
+<img src="/images/content-formatting-assets/footnotes-macro.png" alt="Footnotes Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The Footnotes macro inserts superscript reference numbers inline with text, and collects the corresponding footnote definitions at the bottom of the section (or page). Think of it as academic citation style for Confluence pages.
 
@@ -895,7 +936,10 @@ Insert **Footnote List** macro at the bottom of the section or page. This render
         {
           slug: "popup-dialog-macro",
           title: "Pop-up Dialog Macro",
-          content: `
+          content: `# Pop-up Dialog Macro
+
+<img src="/images/content-formatting-assets/popup-dialog-macro.png" alt="Pop-up Dialog Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The Pop-up Dialog macro creates a modal overlay that opens when a reader clicks a trigger (a link, button, or image on the page). The dialog can contain any rich content - text, images, tables, other macros.
 
@@ -931,7 +975,10 @@ Pop-up dialogs do not work well as navigation - avoid using them for primary con
         {
           slug: "advanced-expand-macro",
           title: "Advanced Expand Macro",
-          content: `
+          content: `# Advanced Expand Macro
+
+<img src="/images/content-formatting-assets/advanced-expand-macro.png" alt="Advanced Expand Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The Advanced Expand macro creates a collapsible content section with a styled header. Unlike the standard Confluence Expand macro, Advanced Expand offers styling options for the header (color, icon, size) and supports rich content inside the body.
 
@@ -966,7 +1013,10 @@ The Advanced Expand macro creates a collapsible content section with a styled he
         {
           slug: "advanced-card-macro",
           title: "Advanced Cards Macro",
-          content: `
+          content: `# Advanced Cards Macro
+
+<img src="/images/content-formatting-assets/advanced-card-macro.png" alt="Advanced Cards Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The Advanced Cards macro creates structured content cards - rectangular panels with optional header, body text, image, and link. Cards can be arranged in grid layouts to create visual hub pages.
 
@@ -1004,7 +1054,10 @@ The Advanced Cards macro creates structured content cards - rectangular panels w
         {
           slug: "interactive-banner-macro",
           title: "Interactive Banner Macro",
-          content: `
+          content: `# Interactive Banner Macro
+
+<img src="/images/content-formatting-assets/interactive-banner-macro.png" alt="Interactive Banner Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The Interactive Banner macro creates a full-width announcement or hero banner at the top (or anywhere) of a Confluence page. Banners support background images or colors, a headline, subtitle, and call-to-action buttons.
 
@@ -1039,7 +1092,10 @@ On mobile, the banner height is automatically reduced and text size adjusts. Bac
         {
           slug: "numbered-headings-macro",
           title: "Numbered Headings Macro",
-          content: `
+          content: `# Numbered Headings Macro
+
+<img src="/images/content-formatting-assets/numbered-headings-macro.png" alt="Numbered Headings Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The Numbered Headings macro automatically adds hierarchical numbers to all headings on a page (1, 1.1, 1.1.1, etc.) without manually typing them. If you add or remove a heading, numbering updates automatically on next page view.
 
@@ -1074,7 +1130,10 @@ The Numbered Headings macro automatically adds hierarchical numbers to all headi
         {
           slug: "divider-macro",
           title: "Divider Macro",
-          content: `
+          content: `# Divider Macro
+
+<img src="/images/content-formatting-assets/divider-macro.png" alt="Divider Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The Divider macro inserts a styled horizontal separator between page sections. It goes beyond the standard Confluence horizontal rule with multiple visual styles and spacing options.
 
@@ -1110,7 +1169,10 @@ A line that fades from a color to transparent at both ends. Configurable color a
         {
           slug: "countdown-macro",
           title: "Countdown Timer Macro",
-          content: `
+          content: `# Countdown Timer Macro
+
+<img src="/images/content-formatting-assets/countdown-macro.png" alt="Countdown Timer Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The Countdown Timer macro displays a live countdown to a specific date and time. The timer updates in real time as the page is viewed.
 
@@ -1149,7 +1211,10 @@ The timer displays the countdown based on the **viewer's local timezone** relati
         {
           slug: "user-profile-macro",
           title: "User Profile Macro",
-          content: `
+          content: `# User Profile Macro
+
+<img src="/images/content-formatting-assets/user-profile-macro.png" alt="User Profile Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The User Profile macro displays a Confluence user's profile information - name, avatar, title, department, and contact links - as a styled card. Use it to display team members, point-of-contact information, or page owners.
 
@@ -1190,7 +1255,10 @@ The User Profile macro displays a Confluence user's profile information - name, 
         {
           slug: "status-macro",
           title: "Status Macro",
-          content: `
+          content: `# Status Macro
+
+<img src="/images/content-formatting-assets/status-macro.png" alt="Status Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The Status macro creates a color-coded badge that communicates a state, phase, or classification at a glance. Unlike the standard Confluence Status lozenge, this macro offers 13 preset status sets covering common workflows, plus a custom color mode.
 
@@ -1232,7 +1300,10 @@ The Status macro creates a color-coded badge that communicates a state, phase, o
         {
           slug: "json-viewer-macro",
           title: "JSON Viewer Macro",
-          content: `
+          content: `# JSON Viewer Macro
+
+<img src="/images/content-formatting-assets/json-viewer-macro.png" alt="JSON Viewer Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What It Does
 The JSON Viewer macro renders a block of JSON data in a formatted, syntax-highlighted, collapsible tree view. Use it to display API responses, configuration examples, or data samples without requiring readers to parse raw JSON.
 
@@ -1347,7 +1418,10 @@ Deletions via the Attachment Center are permanent. Confluence does not have a re
         {
           slug: "attachment-center-dashboard",
           title: "Attachment Center Dashboard",
-          content: `
+          content: `# Attachment Center Dashboard
+
+<img src="/images/content-formatting-assets/attachment-center-dashboard.png" alt="Attachment Center Dashboard screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What You See on the Dashboard
 
 The Attachment Center Dashboard is the main overview screen that gives Confluence space administrators an at-a-glance picture of their space's attachment health.
@@ -1398,7 +1472,10 @@ The activity chart plots attachment uploads over the selected time period (7 day
         {
           slug: "attachment-bulk-actions",
           title: "Bulk Actions",
-          content: `
+          content: `# Bulk Actions
+
+<img src="/images/content-formatting-assets/attachment-bulk-actions.png" alt="Bulk Actions screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What Are Bulk Actions?
 
 Bulk Actions let you select multiple attachments and apply an operation to all of them at once — saving time compared to performing the same action individually on each file.
@@ -1456,7 +1533,10 @@ To work with attachments across multiple pages of results:
         {
           slug: "attachment-filters-sorting",
           title: "Filters & Sorting",
-          content: `
+          content: `# Filters & Sorting
+
+<img src="/images/content-formatting-assets/attachment-filters-sorting.png" alt="Filters & Sorting screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## Overview
 
 The Filters & Sorting panel lets you narrow the attachment list to exactly the files you are looking for. You can filter by file type, upload date, uploader, file size, page, and link status — and combine any number of these filters together.
@@ -1517,7 +1597,10 @@ Saved presets appear in the **Presets** dropdown at the top of the filter panel.
         {
           slug: "attachment-audit-logs",
           title: "Audit Logs",
-          content: `
+          content: `# Audit Logs
+
+<img src="/images/content-formatting-assets/attachment-audit-logs.png" alt="Audit Logs screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What Are Audit Logs?
 
 The Audit Logs section records all attachment-related actions performed via the Attachment Management Center. Use it to track who deleted files, when labels were applied, and which bulk operations have been run — and by whom.
@@ -1593,7 +1676,10 @@ Audit log entries are retained for **90 days** by default. Entries older than 90
         {
           slug: "page-templates",
           title: "Page Templates",
-          content: `
+          content: `# Page Templates
+
+<img src="/images/content-formatting-assets/page-templates.png" alt="Page Templates screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What Templates Are Included?
 
 Content Formatting Macros includes two ready-to-use Confluence page templates that demonstrate the app's capabilities in realistic, production-ready page designs.

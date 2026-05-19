@@ -2068,129 +2068,129 @@ Step-by-step instructions for the most common tasks with Content Formatting Macr
     // ═══════════════════════════════════════════════════════════════
     // 9. RELEASE NOTES
     // ═══════════════════════════════════════════════════════════════
-    {
-      id: "release-notes",
-      title: "Release Notes",
-      articles: [
-        {
-          slug: "latest-release",
-          title: "Latest Release",
-          content: `
-## What's New in Content Formatting Macros
+//     {
+//       id: "release-notes",
+//       title: "Release Notes",
+//       articles: [
+//         {
+//           slug: "latest-release",
+//           title: "Latest Release",
+//           content: `
+// ## What's New in Content Formatting Macros
 
-Stay up to date with the latest improvements, new macros, and performance enhancements. For the full changelog and to install the latest version, visit the app on the [Atlassian Marketplace](https://marketplace.atlassian.com/apps/3890258352/content-formatting-macros-tabs-navigation-visibility-css).
+// Stay up to date with the latest improvements, new macros, and performance enhancements. For the full changelog and to install the latest version, visit the app on the [Atlassian Marketplace](https://marketplace.atlassian.com/apps/3890258352/content-formatting-macros-tabs-navigation-visibility-css).
 
----
+// ---
 
-## Recent Highlights
+// ## Recent Highlights
 
-### New Macros Added
+// ### New Macros Added
 
-#### Custom Tabs
-A new, more flexible tab authoring experience. Custom Tabs replaces the older manual tab workflow with:
-- Drag-and-drop tab reordering directly in the editor
-- Per-tab icon support (choose from the built-in icon set)
-- Per-tab badge labels (e.g., "New", "Updated", "Beta")
-- Individual tab color accents for visual differentiation
-- Smoother inline editing without needing to open a separate config panel
+// #### Custom Tabs
+// A new, more flexible tab authoring experience. Custom Tabs replaces the older manual tab workflow with:
+// - Drag-and-drop tab reordering directly in the editor
+// - Per-tab icon support (choose from the built-in icon set)
+// - Per-tab badge labels (e.g., "New", "Updated", "Beta")
+// - Individual tab color accents for visual differentiation
+// - Smoother inline editing without needing to open a separate config panel
 
-#### Advanced Cards (v2 Refresh)
-The Advanced Cards macro has been updated with:
-- **New layout modes**: Masonry grid layout in addition to standard column grids
-- **Video support**: Embed a YouTube or Confluence media link as a card's visual
-- **Hover effects**: Lift, glow, or border accent on hover (configurable)
-- **Card groups**: Group multiple cards under a shared heading without extra wrapper macros
+// #### Advanced Cards (v2 Refresh)
+// The Advanced Cards macro has been updated with:
+// - **New layout modes**: Masonry grid layout in addition to standard column grids
+// - **Video support**: Embed a YouTube or Confluence media link as a card's visual
+// - **Hover effects**: Lift, glow, or border accent on hover (configurable)
+// - **Card groups**: Group multiple cards under a shared heading without extra wrapper macros
 
----
+// ---
 
-### Tab Mapper Improvements
+// ### Tab Mapper Improvements
 
-| Improvement | Detail |
-|---|---|
-| Tab Parent Content Mapper | Now supports **multi-level depth** - show children and grandchildren as nested tab groups |
-| Tab Label Content Mapper | Added **CQL preview** in the config panel - see a live count of matching pages before saving |
-| Tab Page Mapper | New **drag-to-reorder** interface for the page list - no more manual position entry |
-| All Tab Mappers | Improved **empty state handling** - shows a friendly placeholder when no pages match instead of a blank tab area |
+// | Improvement | Detail |
+// |---|---|
+// | Tab Parent Content Mapper | Now supports **multi-level depth** - show children and grandchildren as nested tab groups |
+// | Tab Label Content Mapper | Added **CQL preview** in the config panel - see a live count of matching pages before saving |
+// | Tab Page Mapper | New **drag-to-reorder** interface for the page list - no more manual position entry |
+// | All Tab Mappers | Improved **empty state handling** - shows a friendly placeholder when no pages match instead of a blank tab area |
 
----
+// ---
 
-### Performance Improvements
+// ### Performance Improvements
 
-- **Faster tab rendering**: Tab content for mapper tabs is now pre-fetched on page load, reducing the tab-switch delay for large page sets
-- **Reduced layout shift**: Macro placeholders in the editor now reserve the correct height before content loads, eliminating page jump on initial render
-- **Attachment Center load time**: Spaces with more than 1,000 attachments now load the Attachment Center index up to 60% faster via paginated loading
-- **Conditional macro evaluation**: Group membership checks are now cached per page load, reducing repeated API calls on pages with multiple Conditional Show/Hide macros
+// - **Faster tab rendering**: Tab content for mapper tabs is now pre-fetched on page load, reducing the tab-switch delay for large page sets
+// - **Reduced layout shift**: Macro placeholders in the editor now reserve the correct height before content loads, eliminating page jump on initial render
+// - **Attachment Center load time**: Spaces with more than 1,000 attachments now load the Attachment Center index up to 60% faster via paginated loading
+// - **Conditional macro evaluation**: Group membership checks are now cached per page load, reducing repeated API calls on pages with multiple Conditional Show/Hide macros
 
----
+// ---
 
-### Bug Fixes
+// ### Bug Fixes
 
-- Fixed: Countdown Timer displayed incorrect time for timezones with half-hour offsets (e.g., IST, NST)
-- Fixed: Background macro image URL field was not saving correctly when the URL contained query parameters
-- Fixed: Conditional Hide macro was not correctly evaluating Space Role conditions on pages in personal spaces
-- Fixed: JSON Viewer copy button did not copy content on Safari 17+
-- Fixed: Advanced Expand default state (Expanded) was not being honored on first page load in some Confluence themes
+// - Fixed: Countdown Timer displayed incorrect time for timezones with half-hour offsets (e.g., IST, NST)
+// - Fixed: Background macro image URL field was not saving correctly when the URL contained query parameters
+// - Fixed: Conditional Hide macro was not correctly evaluating Space Role conditions on pages in personal spaces
+// - Fixed: JSON Viewer copy button did not copy content on Safari 17+
+// - Fixed: Advanced Expand default state (Expanded) was not being honored on first page load in some Confluence themes
 
----
+// ---
 
-### Marketplace Listing
+// ### Marketplace Listing
 
-For detailed release notes per version and to download the latest update:
+// For detailed release notes per version and to download the latest update:
 
-[View on Atlassian Marketplace](https://marketplace.atlassian.com/apps/3890258352/content-formatting-macros-tabs-navigation-visibility-css)
+// [View on Atlassian Marketplace](https://marketplace.atlassian.com/apps/3890258352/content-formatting-macros-tabs-navigation-visibility-css)
 
-App updates are delivered automatically to your Confluence Cloud instance - no manual update action is required.`,
-        },
-        {
-          slug: "version-history",
-          title: "Version History",
-          content: `
-A summary of major changes by version. For the complete per-build changelog, see the app's [Atlassian Marketplace listing](https://marketplace.atlassian.com/apps/3890258352/content-formatting-macros-tabs-navigation-visibility-css).
+// App updates are delivered automatically to your Confluence Cloud instance - no manual update action is required.`,
+//         },
+//         {
+//           slug: "version-history",
+//           title: "Version History",
+//           content: `
+// A summary of major changes by version. For the complete per-build changelog, see the app's [Atlassian Marketplace listing](https://marketplace.atlassian.com/apps/3890258352/content-formatting-macros-tabs-navigation-visibility-css).
 
----
+// ---
 
-## v2.x - Current Generation
+// ## v2.x - Current Generation
 
-| Version | Release Date | Key Changes |
-|---|---|---|
-| **v2.6** | 2025 Q4 | Custom Tabs overhaul (drag-reorder, per-tab icons/badges); Advanced Cards v2 (masonry layout, video support, hover effects) |
-| **v2.5** | 2025 Q3 | Tab mapper multi-depth support; CQL preview in Label Mapper; Attachment Center paginated loading; performance improvements |
-| **v2.4** | 2025 Q2 | Countdown Timer half-hour timezone fix; Background macro URL query param fix; Conditional Hide space role fix |
-| **v2.3** | 2025 Q1 | JSON Viewer Safari fix; Advanced Expand default state fix; editor layout shift reduction |
-| **v2.2** | 2024 Q4 | Tab Page Mapper drag-to-reorder; empty state handling for all mappers; pre-fetch tab content on load |
-| **v2.1** | 2024 Q3 | Advanced Cards grid layouts (2-col, 3-col, auto-flow); Interactive Banner overlay opacity control; Divider Gradient type |
-| **v2.0** | 2024 Q2 | Major release: new macros (Numbered Headings, Divider, Status Macro, JSON Viewer); editor config panel redesign; Attachment Center GA |
+// | Version | Release Date | Key Changes |
+// |---|---|---|
+// | **v2.6** | 2025 Q4 | Custom Tabs overhaul (drag-reorder, per-tab icons/badges); Advanced Cards v2 (masonry layout, video support, hover effects) |
+// | **v2.5** | 2025 Q3 | Tab mapper multi-depth support; CQL preview in Label Mapper; Attachment Center paginated loading; performance improvements |
+// | **v2.4** | 2025 Q2 | Countdown Timer half-hour timezone fix; Background macro URL query param fix; Conditional Hide space role fix |
+// | **v2.3** | 2025 Q1 | JSON Viewer Safari fix; Advanced Expand default state fix; editor layout shift reduction |
+// | **v2.2** | 2024 Q4 | Tab Page Mapper drag-to-reorder; empty state handling for all mappers; pre-fetch tab content on load |
+// | **v2.1** | 2024 Q3 | Advanced Cards grid layouts (2-col, 3-col, auto-flow); Interactive Banner overlay opacity control; Divider Gradient type |
+// | **v2.0** | 2024 Q2 | Major release: new macros (Numbered Headings, Divider, Status Macro, JSON Viewer); editor config panel redesign; Attachment Center GA |
 
----
+// ---
 
-## v1.x - Previous Generation
+// ## v1.x - Previous Generation
 
-| Version | Release Date | Key Changes |
-|---|---|---|
-| **v1.9** | 2024 Q1 | Countdown Timer timezone support; User Profile Detailed style; Footnotes List macro |
-| **v1.8** | 2023 Q4 | Pop-up Dialog full-screen size; Advanced Expand body background option; Alert Dismissible feature |
-| **v1.7** | 2023 Q3 | Interactive Banner CTA Button 2 support; Background gradient direction options; Progress Bar auto-threshold colors |
-| **v1.6** | 2023 Q2 | Tooltip Position and Style options; Buttons full-width option; Background border radius options |
-| **v1.5** | 2023 Q1 | Tab Label Content Mapper CQL filter mode; Tab Parent Content Mapper Exclude Pages option; Attachment Center beta |
-| **v1.4** | 2022 Q4 | Custom Tabs initial release; Tab Page Mapper custom tab labels; Conditional Show/Hide Login Status condition |
-| **v1.3** | 2022 Q3 | Tab Parent Content Mapper depth option; sort order controls for all mappers; Alert Note type added |
-| **v1.2** | 2022 Q2 | Advanced Cards initial release; User Profile macro initial release; Countdown Timer initial release |
-| **v1.1** | 2022 Q1 | Alert, Tooltip, Progress Bar, Footnotes, Pop-up Dialog, Advanced Expand, Interactive Banner added |
-| **v1.0** | 2021 Q4 | Initial release: Tab Navigation, Tab Parent/Label/Page Mappers, Conditional Show/Hide, Buttons, Background |
+// | Version | Release Date | Key Changes |
+// |---|---|---|
+// | **v1.9** | 2024 Q1 | Countdown Timer timezone support; User Profile Detailed style; Footnotes List macro |
+// | **v1.8** | 2023 Q4 | Pop-up Dialog full-screen size; Advanced Expand body background option; Alert Dismissible feature |
+// | **v1.7** | 2023 Q3 | Interactive Banner CTA Button 2 support; Background gradient direction options; Progress Bar auto-threshold colors |
+// | **v1.6** | 2023 Q2 | Tooltip Position and Style options; Buttons full-width option; Background border radius options |
+// | **v1.5** | 2023 Q1 | Tab Label Content Mapper CQL filter mode; Tab Parent Content Mapper Exclude Pages option; Attachment Center beta |
+// | **v1.4** | 2022 Q4 | Custom Tabs initial release; Tab Page Mapper custom tab labels; Conditional Show/Hide Login Status condition |
+// | **v1.3** | 2022 Q3 | Tab Parent Content Mapper depth option; sort order controls for all mappers; Alert Note type added |
+// | **v1.2** | 2022 Q2 | Advanced Cards initial release; User Profile macro initial release; Countdown Timer initial release |
+// | **v1.1** | 2022 Q1 | Alert, Tooltip, Progress Bar, Footnotes, Pop-up Dialog, Advanced Expand, Interactive Banner added |
+// | **v1.0** | 2021 Q4 | Initial release: Tab Navigation, Tab Parent/Label/Page Mappers, Conditional Show/Hide, Buttons, Background |
 
----
+// ---
 
-## Support Policy
+// ## Support Policy
 
-| Generation | Status |
-|---|---|
-| v2.x (current) | Actively developed - receives new features, bug fixes, and security patches |
-| v1.x (previous) | Security patches only - no new features; end-of-life planned for 2026 |
+// | Generation | Status |
+// |---|---|
+// | v2.x (current) | Actively developed - receives new features, bug fixes, and security patches |
+// | v1.x (previous) | Security patches only - no new features; end-of-life planned for 2026 |
 
-Confluence Cloud apps update automatically. If you are still on v1.x, no action is needed - you will be migrated to v2.x automatically during the next scheduled update window.`,
-        },
-      ],
-    },
+// Confluence Cloud apps update automatically. If you are still on v1.x, no action is needed - you will be migrated to v2.x automatically during the next scheduled update window.`,
+//         },
+//       ],
+//     },
     // ═══════════════════════════════════════════════════════════════
     // 10. INTEGRATIONS & MIGRATION
     // ═══════════════════════════════════════════════════════════════

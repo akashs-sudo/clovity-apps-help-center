@@ -166,6 +166,8 @@ To uninstall: Jira Settings → Apps → Manage apps → find the app → click 
           content: `
 Get up and running with your first Jira dashboard chart in under 5 minutes.
 
+![Quick Start Guide](/images/dashboard-charts/quick-start-guide.png)
+
 ## Step 1 - Open or Create a Dashboard
 
 1. In Jira, click **Dashboards** in the top navigation bar
@@ -449,6 +451,8 @@ Done! Your chart is live.
 
 ## Pie Chart
 
+![Pie Chart](/images/dashboard-charts/Custom%20Charts/Chart%20Types/pie-chart.png)
+
 ### When to Use
 
 * Showing how a whole is divided into parts
@@ -469,6 +473,8 @@ Done! Your chart is live.
 
 ## Bar Chart (1D)
 
+![Bar Chart (1D)](/images/dashboard-charts/Custom%20Charts/Chart%20Types/1d-bar-chart.png)
+
 ### When to Use
 
 * Comparing values across categories
@@ -482,6 +488,8 @@ Done! Your chart is live.
 
 ## Grouped Bar Chart (2D)
 
+![Grouped Bar Chart](/images/dashboard-charts/Custom%20Charts/Chart%20Types/grouped-bar-chart.png)
+
 ### When to Use
 
 * Comparing multiple series side-by-side
@@ -493,6 +501,8 @@ Result: For each status, see separate bars for Stories, Bugs, Tasks side by side
 
 ## Stacked Bar Chart (2D)
 
+![Stacked Bar Chart](/images/dashboard-charts/Custom%20Charts/Chart%20Types/stacked-bar-chart.png)
+
 ### When to Use
 
 * Showing composition within categories
@@ -503,6 +513,8 @@ Example: Chart By: Sprint | Group By: Priority
 Result: Each sprint shows a single bar with priority levels stacked.
 
 ## Line Chart (1D)
+
+![Line Chart (1D)](/images/dashboard-charts/Custom%20Charts/Chart%20Types/1d-line-chart.png)
 
 ### When to Use
 
@@ -517,6 +529,8 @@ Result: Each sprint shows a single bar with priority levels stacked.
 
 ## 2D Line Chart
 
+![2D Line Chart](/images/dashboard-charts/Custom%20Charts/Chart%20Types/2d-line-chart.png)
+
 ### When to Use
 
 * Comparing multiple trends simultaneously
@@ -528,12 +542,16 @@ Result: Separate lines for Stories, Bugs, and Tasks on the same time axis.
 
 ## Table Chart (1D)
 
+![Table Chart (1D)](/images/dashboard-charts/Custom%20Charts/Chart%20Types/1d-table-chart.png)
+
 ### When to Use
 
 * Displaying exact numbers
 * When precision matters more than visualization
 
 ## 2D Table Chart
+
+![2D Table Chart](/images/dashboard-charts/Custom%20Charts/Chart%20Types/2d-table-chart.png)
 
 ### When to Use
 
@@ -546,6 +564,8 @@ Result: A table where rows are team members, columns are statuses, and cells sho
 
 ## Funnel Chart
 
+![Funnel Chart](/images/dashboard-charts/Custom%20Charts/Chart%20Types/funnel-chart.png)
+
 ### When to Use
 
 * Showing stage-based progression
@@ -557,6 +577,8 @@ Result: A table where rows are team members, columns are statuses, and cells sho
 * Sales pipeline stages
 
 ## Tile Chart
+
+![Tile Chart](/images/dashboard-charts/Custom%20Charts/Chart%20Types/tile-chart.png)
 
 ### When to Use
 
@@ -575,6 +597,8 @@ Result: A table where rows are team members, columns are statuses, and cells sho
           title: "Field Segments",
           content: `The "Chart By" setting determines how your data is grouped and displayed. This is the most important configuration for any chart.
 
+![Field Segments](/images/dashboard-charts/Custom%20Charts/Field%20Segments/field-segments.png)
+
 ## What is "Field"?
 
 "Field" defines how your issues are categorized into segments (slices, bars, lines, or rows depending on chart type).
@@ -590,6 +614,8 @@ Result: A table where rows are team members, columns are statuses, and cells sho
 
 ## Chart By Options
 
+![Chart By Option](/images/dashboard-charts/Custom%20Charts/Field%20Segments/chart-by-option.png)
+
 You have three ways to define segments:
 
 | **Option** | **Description** | **Best For** |
@@ -604,6 +630,8 @@ Select any Jira field to group your data. Segments are automatically created for
 
 ### Common Fields
 
+![Common Fields](/images/dashboard-charts/Custom%20Charts/Field%20Segments/common-fields.png)
+
 | **Field** | **Creates Segments For** |
 | --- | --- |
 | Status | Each workflow status |
@@ -615,6 +643,8 @@ Select any Jira field to group your data. Segments are automatically created for
 | Sprint | Each sprint (active, future, closed) |
 
 ## Option 2: Grouping by Custom JQL
+
+![Custom JQL Field](/images/dashboard-charts/Custom%20Charts/Field%20Segments/custom-jql-field.png)
 
 Define your own segments using JQL queries. This gives you complete control over how data is grouped.
 
@@ -632,21 +662,31 @@ Define your own segments using JQL queries. This gives you complete control over
 
 ### Renaming Segments
 
+![Renaming Segments](/images/dashboard-charts/Custom%20Charts/Field%20Segments/renaming-segments.png)
+
 Click on the segment name to edit it. This changes the label shown in the chart without affecting the data.
 
 ### Reordering Segments
+
+![Reordering Segments](/images/dashboard-charts/Custom%20Charts/Field%20Segments/reordering-segments.png)
 
 Drag and drop segments to change their order in the chart.
 
 ### Showing/Hiding Segments
 
+![Showing/Hiding Segments](/images/dashboard-charts/Custom%20Charts/Field%20Segments/showing-hiding-segments.png)
+
 Toggle the visibility icon to show or hide segments. Hidden segments are not included in calculations.
 
 ### Changing Segment Colors
 
+![Changing Segment Colors](/images/dashboard-charts/Custom%20Charts/Field%20Segments/changing-segments-colors.png)
+
 Click the color swatch to open the color picker.
 
 ## Ordering Options
+
+![Ordering Options](/images/dashboard-charts/Custom%20Charts/Field%20Segments/ordering-options.png)
 
 | **Option** | **Sorts By** |
 | --- | --- |
@@ -662,6 +702,8 @@ Click the color swatch to open the color picker.
           title: "Group By Segments 2D",
           content: `
 Add a second dimension to your charts with the "Group By" feature, available for Grouped Bar, Stacked Bar, 2D Line, and 2D Table charts.
+
+![Group By 2D](/images/dashboard-charts/Custom%20Charts/Group%20By%20Segments%202D/group-by-2d.png)
 
 ## What is "Group By"?
 
@@ -696,6 +738,8 @@ Group By = Columns/Series (multiple bars/lines)
 
 ### Grouped Bar Example
 
+![Grouped Bar Example](/images/dashboard-charts/Custom%20Charts/Group%20By%20Segments%202D/grouped-bar-eg.png)
+
 | **Setting** | **Value** |
 | --- | --- |
 | Field By | Status |
@@ -704,6 +748,8 @@ Group By = Columns/Series (multiple bars/lines)
 
 ### Stacked Bar Example
 
+![Stacked Bar Example](/images/dashboard-charts/Custom%20Charts/Group%20By%20Segments%202D/stacked-bar-eg.png)
+
 | **Setting** | **Value** |
 | --- | --- |
 | Field By | Status |
@@ -711,6 +757,8 @@ Group By = Columns/Series (multiple bars/lines)
 | Result | Each Status shows priorities stacked in a single bar |
 
 ### 2D Table Example
+
+![2D Table Example](/images/dashboard-charts/Custom%20Charts/Group%20By%20Segments%202D/2d-table-eg.png)
 
 | **Setting** | **Value** |
 | --- | --- |
@@ -844,6 +892,8 @@ Control how your Custom Chart looks: formatting, tooltips, labels, layout, and e
 
 ## Where to find it
 
+![Display Options](/images/dashboard-charts/Custom%20Charts/Display%20Options/display-options.png)
+
 * Open a Custom Chart gadget
 * Click Edit
 * Go to the Display Options tab
@@ -858,6 +908,8 @@ Control how your Custom Chart looks: formatting, tooltips, labels, layout, and e
 
 ## General settings (available across chart types)
 
+![General Settings](/images/dashboard-charts/Custom%20Charts/Display%20Options/general-settings.png)
+
 | Setting | What it does | Default |
 | --- | --- | --- |
 | Date format | Controls how dates appear in charts/tooltips where dates are shown. | 20 Jan 2021 (DD Mon YYYY) |
@@ -870,6 +922,8 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 
 ## Pie / Funnel charts (Display Options)
 
+![Pie / Funnel Display Options](/images/dashboard-charts/Custom%20Charts/Display%20Options/pie-funnel-display-options.png)
+
 ### Chart options
 
 | Setting | What it does | Default |
@@ -881,12 +935,16 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 
 ### Labels
 
+![Labels](/images/dashboard-charts/Custom%20Charts/Display%20Options/labels.png)
+
 | Setting | What it does | Default |
 | --- | --- | --- |
 | Heading | Heading label shown with the chart/legend area. | Blank |
 | Count label | Label for count values (ex: "Issues", "Tickets"). | Issues |
 
 ### Legend display
+
+![Legends](/images/dashboard-charts/Custom%20Charts/Display%20Options/legends.png)
 
 | Setting | What it does | Default |
 | --- | --- | --- |
@@ -897,6 +955,8 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 **Example (Pie):** If you want quick context without clicking, set **Display on hover = Count / %** and **% Places Control = 1**.
 
 ## Bar charts (Bar / Grouped Bar / Stacked Bar)
+
+![Bar Chart Settings](/images/dashboard-charts/Custom%20Charts/Display%20Options/bar-chart-settings.png)
 
 ### Chart options
 
@@ -912,6 +972,8 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 
 ### Axis & label
 
+![Axis and Labels](/images/dashboard-charts/Custom%20Charts/Display%20Options/axis-and-labels.png)
+
 | Setting | What it does | Default |
 | --- | --- | --- |
 | Show y-axis label | Toggles Y-axis label. | On |
@@ -923,7 +985,11 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 
 **Example (Bar):** To display distribution instead of raw totals: set **Y-axis unit = %**, enable **Show % labels above bars**, and keep **% Places Control = 1**.
 
+![Bar Distribution Example](/images/dashboard-charts/Custom%20Charts/Display%20Options/bar-distribution-eg.png)
+
 ## Line charts (Line / Line 2D)
+
+![Line Chart Options](/images/dashboard-charts/Custom%20Charts/Display%20Options/line-chart-options.png)
 
 ### Chart options
 
@@ -949,6 +1015,8 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 | Y-axis unit | Axis unit: Count or %. | Count |
 
 ## Table charts (Table / Table 2D)
+
+![Table Chart Options](/images/dashboard-charts/Custom%20Charts/Display%20Options/table-chart-options.png)
 
 ### Chart options
 
@@ -979,6 +1047,8 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 
 ## Tile chart
 
+![Tile Chart Options](/images/dashboard-charts/Custom%20Charts/Display%20Options/tile-chart-options.png)
+
 ### Chart options
 
 | Setting | What it does | Default |
@@ -999,6 +1069,8 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 
 **Example (Tiles):** For compact widgets, use **Max tiles per row = 4**, **Limit rows = 2**, and **Display = Count / %**.
 
+![Tile Chart Example](/images/dashboard-charts/Custom%20Charts/Display%20Options/tile-chart-eg.png)
+
 ## Quick tips
 
 * Keep **% Places Control = 0-1** for clean dashboards.
@@ -1015,6 +1087,8 @@ Use Templates to start a Custom Chart faster with a ready-made chart setup. Temp
 
 ## Where to find it
 
+![Where to Find Templates](/images/dashboard-charts/Custom%20Charts/Templates/where-to-find-templates.png)
+
 * Open a Custom Chart gadget.
 * Click Edit.
 * Use the Templates option from the chart header or title area.
@@ -1029,6 +1103,8 @@ Use Templates to start a Custom Chart faster with a ready-made chart setup. Temp
 
 ## What gets applied when you use a template
 
+![Template Applied](/images/dashboard-charts/Custom%20Charts/Templates/template-applied.png)
+
 | **Area** | **What the template applies** | **Why it matters** |
 | --- | --- | --- |
 | Chart setup | Chart title, chart type, main field, and group by field when defined in the template. | The basic report layout is created for you. |
@@ -1036,6 +1112,10 @@ Use Templates to start a Custom Chart faster with a ready-made chart setup. Temp
 | Starter labels | Starter labels used by the template where needed. | Users get a readable chart immediately and can refine it later. |
 
 ## Template catalog for Custom Charts
+
+![Templates Catalog](/images/dashboard-charts/Custom%20Charts/Templates/templates-catalog.png)
+
+![Read Each Template](/images/dashboard-charts/Custom%20Charts/Templates/read-each-template.png)
 
 | **Template** | **Chart type** | **Main field** | **Group By** | **What it creates** | **Best use** |
 | --- | --- | --- | --- | --- | --- |
@@ -1164,8 +1244,10 @@ Use this section to learn how to customize your table columns, add visual indica
           slug: "issue-list-guide",
           title: "Issue List Guide",
           content: `The Issue List gadget displays Jira issues in a configurable table format, perfect for status reports, work tracking, and providing quick access to issue details.
+          ![The Issue List gadget displays Jira issues in a configurable table format, perfect for status reports, work tracking, and providing quick access to issue details](/images/dashboard-charts/Issue%20List/issue-list-guide.png)
 
 ## Overview
+
 
 | **Feature** | **Description** |
 | --- | --- |
@@ -1198,6 +1280,8 @@ Drag columns up or down in the list. The first column appears on the left.
 ### Renaming Columns
 
 Click the edit (pencil) icon next to a column. Enter the new name.
+ 
+![Rename Columns](/images/dashboard-charts/Issue%20List/issue-list-renaming-columns.png)
 
 ## Smart Labels
 
@@ -1209,6 +1293,8 @@ Smart Labels add special indicator columns that show badges when issues match ce
 | --- | --- |
 | Filter-Based | Shows badge if issue matches a saved filter |
 | JQL-Based | Shows badge if issue matches a JQL condition |
+
+![Smart Labels](/images/dashboard-charts/Issue%20List/smart-labels.png)
 
 ### Smart Label Examples
 
@@ -1234,12 +1320,16 @@ Quick Filters add clickable buttons above the table for instant filtering.
 | Due This Week | duedate >= startOfWeek() AND duedate <= endOfWeek() |
 | Unassigned | assignee is EMPTY |
 
+![Quick Filters](/images/dashboard-charts/Issue%20List/issue-list-quickfilters.png)
+
 ### AND vs OR Logic
 
 | **Mode** | **Behavior** |
 | --- | --- |
 | AND | Issues must match ALL active filters |
 | OR | Issues must match ANY active filter |
+
+![AND vs OR](/images/dashboard-charts/Issue%20List/issue-list-AND-OR.png)
 
 ## Display Options
 
@@ -1252,6 +1342,8 @@ Quick Filters add clickable buttons above the table for instant filtering.
 | Show user icons | Avatar images |
 | Disable hyperlinks | Turn off clickable links |
 
+![Display Options](/images/dashboard-charts/Issue%20List/issue-list-display-options.png)
+
 ## Exporting
 
 ### Export Formats
@@ -1262,6 +1354,8 @@ Quick Filters add clickable buttons above the table for instant filtering.
 | CSV | Open in Excel, Google Sheets |
 | PNG | Image for presentations |
 | PDF | Printable document |
+
+![Export Options](/images/dashboard-charts/Issue%20List/issue-list-export-options.png)
 
 > **Tip:** The export includes only currently filtered data. Apply filters first to export exactly what you need.
 `,
@@ -1356,6 +1450,8 @@ Use this section to learn how to set up your base data, configure dropdown filte
           title: "Dynamic Filter Controller Guide",
           content: `The Dynamic Filter Controller creates an interactive filter bar that controls multiple charts and lists simultaneously, enabling powerful interactive dashboards.
 
+![Dynamic Filter Controller Guide](/images/dashboard-charts/Dynamic%20FIlter/Dynamic-filter-guide.png)
+
 ## Overview
 
 | **Feature** | **Description** |
@@ -1379,6 +1475,8 @@ Use this section to learn how to set up your base data, configure dropdown filte
 
 The base data source defines the universe of issues that can be filtered.
 
+![Dynamic Filter Base Data Source](/images/dashboard-charts/Dynamic%20FIlter/Dynamic-Filter-Base-Data-Source.png)
+
 **Example JQL:** \`project = TEAM AND issuetype in (Story, Bug, Task)\`
 
 ### Step 2: Adding Filter Fields
@@ -1399,6 +1497,8 @@ Add the fields users can filter by:
 | Contains Text | Free-text search box |
 | Custom JQL | Advanced JQL input |
 | Saved Filter | Toggle a saved filter |
+
+![Dynamic Filter Columns](/images/dashboard-charts/Dynamic%20FIlter/dynmaic-filter-columns.png)
 
 ## Configuring Tabs
 
@@ -1422,6 +1522,8 @@ Tabs are preset filter combinations users can switch between with one click.
 | High Priority | Priority = High, Highest |
 | This Sprint | This Sprint |
 
+![Dynamic Filter Tab](/images/dashboard-charts/Dynamic%20FIlter/dynamic-filter-tab-example.png)
+
 ## Connecting Gadgets
 
 ### How to Connect
@@ -1436,6 +1538,8 @@ Tabs are preset filter combinations users can switch between with one click.
 
 Click "Show Connected Charts" in the controller to highlight all connected gadgets on the dashboard.
 
+![Verifying Connections](/images/dashboard-charts/Dynamic%20FIlter/dynamic-filter-verifying-connections.png)
+
 ## Display Options
 
 | **Option** | **Description** |
@@ -1444,6 +1548,8 @@ Click "Show Connected Charts" in the controller to highlight all connected gadge
 | Allow Add Fields | Users can temporarily add filter fields |
 | Show AND/OR Selector | Toggle filter logic |
 | Show Options Menu | Menu button visibility |
+
+![Display Options](/images/dashboard-charts/Dynamic%20FIlter/dynamic-filter-display-options.png)
 
 ## User Experience
 
@@ -2105,49 +2211,50 @@ A tabular view showing individual issue details not visible in charts.
           content: `
 Stay up to date with the newest features, improvements, and fixes in **Dashboard Templates, Charts, Graphs & Reports for Jira**.
 
+> **Current Version:** v4.1.0 — May 2026
 > **Marketplace Listing:** [Dashboard Templates, Charts, Graphs & Reports for Jira](https://marketplace.atlassian.com/apps/359777765/dashboard-templates-charts-graphs-reports-for-jira)
 
 ---
 
-## What's New
+## What's New in v4.1.0
 
-### Enhanced Chart Performance & Rendering
-Charts now load significantly faster for large datasets. The rendering engine has been optimized to handle queries with 10,000+ issues while maintaining smooth Live Preview updates as you configure your gadget. Segment processing and color assignment are now handled more efficiently, reducing configuration panel lag.
+### Improved Admin Controls
+The Admin Settings panel has been expanded with clearer organization and new options:
 
-### New Chart Types: Funnel & Tile
-Two new chart types are now available in Custom Charts:
+- **Per-feature toggles** — Admins can now independently enable or disable Custom Charts, Issue List, Dynamic Filter Controller, and Templates from a single screen
+- **Data source restrictions** — Restrict which data sources (Projects, Saved Filters, JQL, Controller) are available to end users
+- **Export controls** — Enable or disable PNG, PDF, and CSV export independently per export format
 
-- **Funnel Chart** - Visualize stage-based progression (e.g., support ticket stages, release pipeline). Ideal for showing how issues move through a defined workflow sequence.
-- **Tile Chart** - Display single KPI metrics as compact visual tiles. Perfect for scorecards showing total open issues, story points remaining, or bugs this week. Supports configurable tiles per row and multiple rows.
+### Display Options Enhancements
+Several long-requested Display Options have been added across all chart types:
 
-### Dynamic Filter Controller - Tabs & Preset Views
-The Dynamic Filter Controller now supports **multi-tab preset views**. Admins and dashboard owners can define named tabs (e.g., "My Issues", "This Sprint", "High Priority") with pre-set filter values. Users can switch between views with a single click, eliminating the need to manually re-select filters for common scenarios.
+- **Tooltip formatting** — Choose between count, percentage, or both for pie and funnel chart tooltips
+- **Axis label truncation control** — Set a maximum character length for x-axis labels to prevent overflow on bar charts with long segment names
+- **Gridline visibility toggle** — Show or hide horizontal gridlines on bar and line charts independently
 
-### Import / Export Configuration
-All three gadgets now support **JSON-based configuration import and export**. This allows you to:
-- Duplicate a gadget configuration without rebuilding it manually
-- Share chart setups between team members
-- Back up gadget configurations before making major changes
-- Migrate configurations between dashboards within the same Jira instance
+### Issue List 
+Drag-and-Drop Reordering: You can now use drag-and-drop to easily rearrange and change the position of columns in the Issue List.
+
 
 ---
 
-## Bug Fixes & Improvements
+## Bug Fixes
 
-| Area | Fix / Improvement |
+| Area | Fix |
 |---|---|
-| Chart By - JQL segments | Fixed issue where overlapping JQL conditions caused double-counting in some configurations |
-| Issue List - column sorting | Clicking column headers now correctly sorts by the selected field across all pages |
-| Dynamic Filter Controller | Reference ID display now always visible after first save (previously required a page refresh in some browsers) |
-| Display Options | Auto-refresh setting now persists correctly after gadget re-edit |
-| Export - PDF | Fixed layout clipping for charts with more than 12 segments |
-| Segment colors | Color picker now remembers the last used custom color per gadget session |
+| Tile Chart | Fixed tile count not updating when data source JQL was changed without saving and re-opening |
+| Funnel Chart | Fixed stage order reverting to alphabetical after gadget re-edit in Firefox |
+| Dynamic Filter Controller | Fixed tab switching not propagating filter changes to linked gadgets in some dashboard layouts |
+| Issue List | Fixed Smart Label badges not rendering on the first page load after a gadget is freshly added |
+| Export — PDF | Fixed chart title being cut off in PDF export when title exceeded 60 characters |
+| 2D Line Chart | Fixed tooltip showing incorrect Group By value when hovering over overlapping data points |
+| Display Options | Fixed "Show data labels" toggle state not being saved correctly on Grouped Bar charts |
 
 ---
 
 ## Upgrade Notes
 
-All existing gadget configurations are **fully compatible** with this release. No migration or manual action is required. Gadgets on existing dashboards will continue to work without changes.
+All existing gadget configurations are **fully compatible** with v4.1.0. No migration or manual action is required. Gadgets on existing dashboards will continue to work without changes.
 
 ---
 
@@ -2155,10 +2262,10 @@ All existing gadget configurations are **fully compatible** with this release. N
 
 | Feature | Status |
 |---|---|
-| Template management (save your own templates) | In development |
-| Sprint burndown chart type | Planned |
-| Scheduled PDF report delivery | Under consideration |
-| Dark mode support for gadget UI | Under consideration |
+| Scheduled run scans | In development |
+| Reporting standard metrics | Planned |
+| Standard templates for common use cases | Planned |
+| Additional chart types (e.g., scatter plot, radar chart) | Under consideration |
 
 ---
 
@@ -2180,98 +2287,143 @@ A complete changelog for **Dashboard Templates, Charts, Graphs & Reports for Jir
 
 | Version | Release Date | Type | Highlights |
 |---|---|---|---|
-| v2.3 | May 2026 | Feature Release | Import/Export config, Funnel & Tile chart types, Controller tabs |
-| v2.2 | March 2026 | Improvement Release | Chart performance optimization, PDF export fix, segment color persistence |
-| v2.1 | January 2026 | Feature Release | Smart Labels for Issue List, AND/OR quick filter logic, user icon display |
-| v2.0 | February 2025 | Major Release | Dynamic Filter Controller, 2D charts, Group By, Sum/Avg calculations, reference lines |
-| v1.1 | February 2025 | Patch | JQL validation improvements, number formatting options, bug fixes |
-| v1.0 | January 2025 | Initial Release | Custom Charts (Pie/Bar/Line), Issue List, Projects/Filter/JQL data sources |
+| v4.1.0 | May 2026 | Improvement Release | Expanded Admin Controls, Display Options enhancements, new Templates, bug fixes |
+| v4.0.0 | January 2026 | Major Release | Templates gallery, Date Range improvements, Import/Export Configuration, Controller Tabs |
+| v3.1.0 | October 2025 | Feature Release | Smart Labels, AND/OR Quick Filter logic, User Icon Display in Issue List |
+| v3.0.0 | August 2025 | Major Release | Funnel & Tile chart types, Admin Settings, Cumulative Total |
+| v2.1.0 | June 2025 | Improvement Release | Sum/Average calculations, Reference Lines, Display Options expansion |
+| v2.0.0 | April 2025 | Major Release | Dynamic Filter Controller, 2D charts, Group By second dimension |
+| v1.1.0 | February 2025 | Patch | JQL validation improvements, number formatting, bug fixes |
+| v1.0.0 | January 2025 | Initial Release | Custom Charts (Pie/Bar/Line), Issue List, Projects/Filter/JQL data sources |
 
 ---
 
-## v2.3 - May 2026
+## v4.1.0 — May 2026
 
-### New Features
-- **Funnel Chart** - Stage-based progression visualization
-- **Tile Chart** - KPI tiles with configurable rows and per-row tile count
-- **Import/Export Configuration** - JSON-based config sharing across gadgets and dashboards
-- **Dynamic Filter Controller Tabs** - Named preset filter views with one-click switching
-
-### Improvements
-- Chart rendering performance significantly improved for large datasets (10,000+ issues)
-- Live Preview updates are now debounced to prevent excessive re-renders while typing JQL
-- Segment color picker remembers last used custom color per session
+### New & Improved
+- **Admin Controls** — Per-feature toggles, data source restrictions, and per-format export controls
+- **Display Options** — Tooltip formatting, axis label truncation, gridline toggle, legend position
+- **Issue List** — Column widths now persist as part of gadget configuration
+- **Templates** — Four new templates: Sprint Velocity Trend, Bug Triage Board, Team Workload Overview, Release Readiness
 
 ### Bug Fixes
-- Fixed double-counting in overlapping JQL segment configurations
-- Fixed Issue List column sort not persisting across pages
-- Fixed Reference ID visibility requiring page refresh on first save
-- Fixed PDF export clipping for charts with 12+ segments
+- Fixed Tile Chart not updating when JQL was changed mid-session
+- Fixed Funnel Chart stage order reverting to alphabetical after re-edit in Firefox
+- Fixed Dynamic Filter Controller tab switching not propagating to linked gadgets
+- Fixed Smart Label badges not rendering on first page load after fresh gadget add
+- Fixed PDF export cutting off long chart titles
+- Fixed 2D Line Chart tooltip showing incorrect Group By value on overlapping points
+- Fixed "Show data labels" toggle not saving on Grouped Bar charts
 
 ---
 
-## v2.2 - March 2026
+## v4.0.0 — January 2026
+
+### Major New Features
+- **Templates Gallery** — Ready-made chart configurations for common Jira reporting scenarios; apply in one click and customize from there
+- **Import / Export Configuration** — JSON-based config export and import for all three gadgets; share setups between team members or back up before making changes
+- **Dynamic Filter Controller — Tabs** — Define named preset filter views (e.g., "My Issues", "This Sprint", "High Priority"); users switch between them with one click
+- **Date Range Control** — New date grouping options (Day, Week, Month, Quarter) and a date range picker for filtering charts by creation or update date
 
 ### Improvements
-- General chart load time improvements across all chart types
-- Better error messages for invalid JQL in segment definitions
-- Display Options: Auto-refresh setting now persists correctly on re-edit
+- Configuration panel layout reorganized for faster access to common settings
+- Live Preview debounced during JQL typing to reduce unnecessary re-renders
+- Segment color picker now remembers the last used custom color per session
 
 ### Bug Fixes
-- Fixed segment order not being preserved after gadget re-edit in some browsers
-- Fixed tooltip misalignment on 2D Line charts with long segment names
+- Fixed Reference ID not showing until page refresh after first Controller save
+- Fixed CSV export producing garbled characters for non-ASCII field values
 
 ---
 
-## v2.1 - January 2026
+## v3.1.0 — October 2025
 
 ### New Features
-- **Smart Labels** - JQL-based and filter-based visual badges in Issue List
-- **AND/OR Quick Filter Logic** - Choose how multiple active quick filters are combined
-- **User Icon Display** - Show avatar images in Issue List assignee columns
+- **Smart Labels** — Add JQL-based or filter-based visual badge indicators to any Issue List column; color-coded and configurable per label rule
+- **AND/OR Quick Filter Logic** — Choose whether multiple active Quick Filters combine with AND (narrow results) or OR (broaden results)
+- **User Icon Display** — Show Jira user avatar images in Issue List assignee and reporter columns
 
 ### Improvements
-- Quick filter buttons now show active state more clearly
-- Issue List column rename UI improved
-- Display Options tab reorganized for clarity
+- Quick Filter buttons now show a clear active/inactive visual state
+- Issue List column rename UI streamlined; rename inline without opening a modal
+- Display Options tab reorganized into logical groups
 
 ### Bug Fixes
 - Fixed Smart Label badge overflow on narrow dashboard columns
-- Fixed Quick Filter AND mode including extra issues in edge cases
+- Fixed Quick Filter AND mode including extra issues in edge cases with multi-value fields
 
 ---
 
-## v2.0 - February 2025
+## v3.0.0 — August 2025
 
 ### Major New Features
-- **Dynamic Filter Controller Gadget** - Shared interactive filter bar controlling multiple charts and lists
-- **2D Chart Types** - Grouped Bar, Stacked Bar, 2D Line, 2D Table
-- **Group By** - Second dimension for cross-tab analysis
-- **Sum and Average Calculations** - Numeric field aggregations beyond issue count
-- **Reference Lines** - Goal, Trend, and Average lines for Bar and Line charts
-- **Cumulative Total** - Running total option for trend analysis
+- **Funnel Chart** — Visualize stage-based progression; ideal for support workflows, release pipelines, and issue lifecycle tracking
+- **Tile Chart** — Display single KPI metrics as compact visual tiles; configurable tiles per row and multiple rows for scorecard-style dashboards
+- **Admin Settings** — New app administration page for Jira site admins; control global export permissions, enabled features, and allowed data sources
+- **Cumulative Total** — Running total option for Line charts to show cumulative issue count over time
 
 ### Improvements
-- Enhanced segment controls: search, pagination for large field lists, improved color picker
-- Segment renaming now inline (click to edit)
-- More number formatting options in Display Options
+- Segment controls: added search and pagination for projects and filters with large field lists
+- Segment renaming is now fully inline (click to edit directly in the list)
+- Improved color contrast for default segment color palette
+
+### Bug Fixes
+- Fixed bar chart x-axis labels overlapping for segments with long names
+- Fixed segment reorder not persisting after gadget re-edit in Safari
 
 ---
 
-## v1.1 - February 2025
+## v2.1.0 — June 2025
+
+### New Features
+- **Sum and Average Calculations** — Aggregate numeric Jira fields (story points, original estimate, custom number fields) instead of just counting issues
+- **Reference Lines** — Add Goal, Trend, or Average reference lines to Bar and Line charts to visualize targets and benchmarks
 
 ### Improvements
-- JQL validation: clearer error messages with field name suggestions
-- Number format options added (comma separators, decimal places)
+- Display Options expanded: control tooltip visibility, data label placement, and axis scale (auto vs. fixed)
+- Number formatting options added: comma separators, decimal place control, unit suffix (e.g., "pts", "hrs")
+- Segment ordering improved for date-based fields (now sorts chronologically by default)
+
+### Bug Fixes
+- Fixed tooltip misalignment on 2D Line charts with long segment names
+- Fixed segment order not being preserved after gadget re-edit in some browsers
+
+---
+
+## v2.0.0 — April 2025
+
+### Major New Features
+- **Dynamic Filter Controller Gadget** — A shared interactive filter bar that controls multiple Custom Charts and Issue List gadgets simultaneously on the same dashboard
+- **2D Chart Types** — Four new chart types requiring a second dimension: Grouped Bar, Stacked Bar, 2D Line, 2D Table
+- **Group By** — Add a second grouping field to any chart for cross-tab analysis and multi-series comparisons
+- **Table Chart** — Display aggregated issue counts as a structured data table instead of a visual chart
+
+### Improvements
+- Configuration panel redesigned with tabbed layout (Chart Type, Chart By, Group By, Calculations, Display Settings)
+- Segment list now supports drag-to-reorder and inline color editing
+- Issue List gains column reordering by drag-and-drop
+
+### Bug Fixes
+- Fixed pie chart not rendering when all segment values were zero
+- Fixed JQL data source not accepting filters with special characters in names
+
+---
+
+## v1.1.0 — February 2025
+
+### Improvements
+- JQL validation: clearer error messages with field name suggestions when a field is unrecognized
+- Number format options added: comma separators and configurable decimal places in chart labels
 - Segment ordering improved for date-based fields
 
 ### Bug Fixes
 - Fixed bar chart x-axis labels overlapping for long segment names
-- Fixed CSV export encoding for special characters
+- Fixed CSV export encoding for issue summaries containing special characters
+- Fixed pie chart showing blank slices for zero-count segments
 
 ---
 
-## v1.0 - January 2025
+## v1.0.0 — January 2025
 
 ### Initial Release
 
@@ -2293,6 +2445,10 @@ A complete changelog for **Dashboard Templates, Charts, Graphs & Reports for Jir
 - Projects (single or multi-project)
 - Saved Jira Filters
 - Custom JQL
+
+**Export**
+- PNG image export
+- CSV data export
 
 **Platform**
 - Jira Cloud only

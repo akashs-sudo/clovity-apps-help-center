@@ -12,7 +12,8 @@ export const timeTrackingDocs = {
           title: "What is Time Tracking & PPM?",
           sideVideo: {
             src: "https://www.youtube.com/embed/H0dyqJKeAG8",
-            title: "Time Tracking, Resource Planning & Project Management - Product Introduction",
+            title:
+              "Time Tracking, Resource Planning & Project Management - Product Introduction",
           },
           content: `
 Time Tracking, Resource Planning & Project Management is a Jira Cloud app that gives your team full visibility into workload, delivery health, and priorities - all inside Jira.
@@ -78,15 +79,37 @@ Jira Cloud only. Built on Atlassian Forge - no external servers, no data exports
             playlistUrl:
               "https://www.youtube.com/watch?v=7z8NjUmLtOs&list=PLACoCS_WiVwR45unjH2D5MwcBjMFFflCL",
             videos: [
-              { id: "7z8NjUmLtOs", title: "Welcome to the Suite - App Overview" },
+              {
+                id: "7z8NjUmLtOs",
+                title: "Welcome to the Suite - App Overview",
+              },
               { id: "5SYYnnFm1AM", title: "Creating Your First Capacity Plan" },
               { id: "Q1BAH-t9v8w", title: "Analytics - Team Allocation Tab" },
-              { id: "2-3ixqxDUSc", title: "Analytics - Assignee Capacity, Deadlines & Status Aging" },
-              { id: "uOhItP5bAyE", title: "Saved Plans, Reports & Team Management" },
-              { id: "kxVBTmIYXGk", title: "Calendar View, Accounts & Settings" },
-              { id: "7vW46pVpNYE", title: "Logging Time - Timesheet & Reports" },
-              { id: "GYRiEwDA-yI", title: "Scoring Your Backlog - RICE, ICE & WSJF" },
-              { id: "c-9IhCJMjxI", title: "Custom Templates, Priority Matrix & Saved Reports" },
+              {
+                id: "2-3ixqxDUSc",
+                title:
+                  "Analytics - Assignee Capacity, Deadlines & Status Aging",
+              },
+              {
+                id: "uOhItP5bAyE",
+                title: "Saved Plans, Reports & Team Management",
+              },
+              {
+                id: "kxVBTmIYXGk",
+                title: "Calendar View, Accounts & Settings",
+              },
+              {
+                id: "7vW46pVpNYE",
+                title: "Logging Time - Timesheet & Reports",
+              },
+              {
+                id: "GYRiEwDA-yI",
+                title: "Scoring Your Backlog - RICE, ICE & WSJF",
+              },
+              {
+                id: "c-9IhCJMjxI",
+                title: "Custom Templates, Priority Matrix & Saved Reports",
+              },
               { id: "PyFomw9i06g", title: "Building a Portfolio Roadmap" },
               { id: "2CpKGScxWpg", title: "Gantt Chart and Saved Portfolios" },
               { id: "nRDKQcaISgQ", title: "Permissions, Roles & App Settings" },
@@ -572,11 +595,16 @@ Available in all Time Tracking views. Click **Log Time** to open a quick-log for
 ### How to Create a Portfolio
 
 1. Go to **Portfolio (PPM)** in the module switcher
-2. Click **New Portfolio** and give it a name
-3. Click **Filter** → choose Manual Filter or JQL
-4. Set your scope (projects, issue types, date range)
-5. Click **Apply** to preview matching issues
-6. Click **Save**
+![Step 1](/time-tracking-imgs/portfolio/step1.png)
+
+2. Click **Filter** → choose Manual Filter or Saved Filter or JQL
+![Step 2](/time-tracking-imgs/portfolio/step2.png)
+3. Set your scope (projects, issue types, date range)
+![Step 3](/time-tracking-imgs/portfolio/step3.png)
+4. Click **Apply** to preview matching issues
+![Step 4](/time-tracking-imgs/portfolio/step4.png)
+
+5. Click **Save**
 
 ---
 
@@ -585,6 +613,7 @@ Available in all Time Tracking views. Click **Log Time** to open a quick-log for
 With a portfolio open, use the **view mode selector** (top-right) to switch between:
 Table → Gantt Chart → Graph View → Treemap → Pie Chart → Board View
 
+![Views](/time-tracking-imgs/portfolio/views.png)
 ---
 
 ### How to Edit Dates in the Gantt Chart
@@ -594,6 +623,7 @@ Table → Gantt Chart → Graph View → Treemap → Pie Chart → Board View
 3. Drag the **right edge** to change the due date
 4. Changes save directly to the Jira issue's Start Date and Due Date fields
 
+![Gantt1](/time-tracking-imgs/portfolio/gantt1.png)
 ---
 
 ### How to Create a Gantt Dependency
@@ -603,6 +633,7 @@ Table → Gantt Chart → Graph View → Treemap → Pie Chart → Board View
 3. Drag to the start of the dependent task
 4. Dependency types: Finish-to-Start (FS), Start-to-Start (SS), Finish-to-Finish (FF), Start-to-Finish (SF)
 
+![Gantt2](/time-tracking-imgs/portfolio/gantt2.png)
 ---
 
 ## Admin Tasks
@@ -615,6 +646,8 @@ Table → Gantt Chart → Graph View → Treemap → Pie Chart → Board View
 4. Check the **Member** checkbox
 5. Click **Save** - takes effect immediately
 
+![RBAC](/time-tracking-imgs/portfolio/rbac.png)
+
 ---
 
 ### How to Create a Team
@@ -623,7 +656,9 @@ Table → Gantt Chart → Graph View → Treemap → Pie Chart → Board View
 2. Click **Teams** in the sidebar
 3. Click **Create Team**
 4. Enter Team Name and select Source (Manual or Jira Group)
-5. Add members and click **Save**`,
+5. Add members and click **Save**
+
+![RBAC](/time-tracking-imgs/portfolio/teams.png)`,
         },
         {
           slug: "working-with-modules",
@@ -921,6 +956,8 @@ Adds portfolio metrics to any Jira dashboard.
 - No data: verify portfolio scope still returns issues and you have read access
 - Blank after setup: remove and re-add the gadget with fresh configuration
 
+![Gadget](/time-tracking-imgs/portfolio/gadget.png)
+
 ### Portfolio Settings
 
 Access: Portfolio → Settings gear icon → Portfolio Settings tab, or global Settings → Portfolio tab
@@ -933,6 +970,7 @@ Access: Portfolio → Settings gear icon → Portfolio Settings tab, or global S
 | Hours per day | Converts story points/day estimates to hours |
 | Working days | Days counted as working days in capacity calculations |
 
+![Setting](/time-tracking-imgs/portfolio/setting.png)
 ---
 
 ## Module 5 - Teams Management
@@ -1250,67 +1288,67 @@ User → Project → Issue Type
 - Saved views appear in the sidebar for quick access
 - Useful for recurring sprint reports, billing reviews, or standup prep`,
         },
-        {
-          slug: "billing-accounts",
-          title: "Billing Accounts",
-          content: `
-Billing Accounts let you categorise worklogs by client engagement, project contract, or internal cost centre.
+        //         {
+        //           slug: "billing-accounts",
+        //           title: "Billing Accounts",
+        //           content: `
+        // Billing Accounts let you categorise worklogs by client engagement, project contract, or internal cost centre.
 
-## What Is a Billing Account?
+        // ## What Is a Billing Account?
 
-A Billing Account is a named label you attach to a worklog when logging time. It allows the organisation to:
-- Separate billable from non-billable hours
-- Filter and group timesheets by client or contract
-- Export billing data per account for invoicing
+        // A Billing Account is a named label you attach to a worklog when logging time. It allows the organisation to:
+        // - Separate billable from non-billable hours
+        // - Filter and group timesheets by client or contract
+        // - Export billing data per account for invoicing
 
-## Creating a Billing Account
+        // ## Creating a Billing Account
 
-1. Time Tracking & Reporting → **Accounts** (sidebar)
-2. Click **Create Account**
-3. Enter:
-   - **Account Name** (e.g., "Client ABC - Phase 2")
-   - **Account Key** (short identifier, e.g., \`ABC-P2\`)
-   - **Status** - Active or Inactive
-4. Click **Save**
+        // 1. Time Tracking & Reporting → **Accounts** (sidebar)
+        // 2. Click **Create Account**
+        // 3. Enter:
+        //    - **Account Name** (e.g., "Client ABC - Phase 2")
+        //    - **Account Key** (short identifier, e.g., \`ABC-P2\`)
+        //    - **Status** - Active or Inactive
+        // 4. Click **Save**
 
-## Assigning an Account When Logging Time
+        // ## Assigning an Account When Logging Time
 
-1. Open the **Log Time** form (from any view)
-2. Search for the Jira issue
-3. Enter hours and date
-4. Click the **Account** dropdown → select the billing account
-5. Click **Save**
+        // 1. Open the **Log Time** form (from any view)
+        // 2. Search for the Jira issue
+        // 3. Enter hours and date
+        // 4. Click the **Account** dropdown → select the billing account
+        // 5. Click **Save**
 
-## Filtering Reports by Account
+        // ## Filtering Reports by Account
 
-In the Timesheet Report Builder or My Timesheet:
-- Click **Add Filter** → **Account** → select account(s) → **Apply**
+        // In the Timesheet Report Builder or My Timesheet:
+        // - Click **Add Filter** → **Account** → select account(s) → **Apply**
 
-## Grouping Reports by Account
+        // ## Grouping Reports by Account
 
-In Group By:
-- Select **Account** as the first group level
-- Add **Project** and **Issue** below for a full billing breakdown
+        // In Group By:
+        // - Select **Account** as the first group level
+        // - Add **Project** and **Issue** below for a full billing breakdown
 
-## Exporting Billing Data
+        // ## Exporting Billing Data
 
-- Filter by Account → Export → **CSV**
-- Use this to import into your billing / invoicing system
+        // - Filter by Account → Export → **CSV**
+        // - Use this to import into your billing / invoicing system
 
-## Managing Accounts
+        // ## Managing Accounts
 
-| Action | How |
-|---|---|
-| Edit name or key | Accounts list → click Edit icon |
-| Deactivate | Edit → set Status to Inactive |
-| View all worklogs | Filter by account in Report Builder |
+        // | Action | How |
+        // |---|---|
+        // | Edit name or key | Accounts list → click Edit icon |
+        // | Deactivate | Edit → set Status to Inactive |
+        // | View all worklogs | Filter by account in Report Builder |
 
-## Tips
+        // ## Tips
 
-- Use a consistent naming convention: \`ClientName - ProjectPhase\`
-- Create accounts before logging time to ensure all worklogs are categorised from day one
-- Inactive accounts no longer appear in the Log Time dropdown but historical data is preserved`,
-        },
+        // - Use a consistent naming convention: \`ClientName - ProjectPhase\`
+        // - Create accounts before logging time to ensure all worklogs are categorised from day one
+        // - Inactive accounts no longer appear in the Log Time dropdown but historical data is preserved`,
+        //         },
         {
           slug: "time-tracking-setting",
           title: "Time-Tracking Setting",
@@ -1373,6 +1411,7 @@ The Capacity Planner is a timesheet-style view that shows how team workload is d
 
 Capacity Planner & Insight → **Capacity Planner** → click **Create New Planner** or open a saved plan from the sidebar
 
+![Step 1](/time-tracking-imgs/capacity/planner/capacityResourceFilter.png)
 ## Creating a New Plan
 
 1. Click **Create New Planner**
@@ -1392,6 +1431,9 @@ Capacity Planner & Insight → **Capacity Planner** → click **Create New Plann
 | **Estimate columns** | Hours per date period (original estimate and remaining) |
 | **Date columns** | One column per day/week/month based on view mode |
 | **Total row** | Aggregates hours across all rows |
+
+![Step 2](/time-tracking-imgs/capacity/planner/capacityPlannerTable.png)
+
 
 ## Grouping Options
 
@@ -1431,6 +1473,8 @@ The Analytics Dashboard provides a four-tab view of team workload health, giving
 
 Capacity Planner & Insight → **Analytics Dashboard**
 
+![Step 3](/time-tracking-imgs/capacity/analytics/analyticsScope.png)
+
 ## Setting Scope
 
 Before data loads, you must configure the scope:
@@ -1438,6 +1482,9 @@ Before data loads, you must configure the scope:
 2. Select **Project(s)** and **Date Range**
 3. Optionally add **Users** or **Teams** filters
 4. Click **Apply**
+
+![Step 4](/time-tracking-imgs/capacity/analytics/analyticsTable.png)
+
 
 ## Tab 1 - Team Allocation
 
@@ -1557,6 +1604,8 @@ The Capacity Report provides a structured tabular breakdown of available hours, 
 
 Capacity Planner & Insight → **Capacity Report**
 
+![Step 5](/time-tracking-imgs/capacity/Report/ConfigureReport.png)
+
 ## Configuring the Report
 
 | Control | Options |
@@ -1571,6 +1620,8 @@ Capacity Planner & Insight → **Capacity Report**
 
 Click **Apply** after setting all controls.
 
+![Step 6](/time-tracking-imgs/capacity/Report/CustomFilter.png)
+
 ## Reading the Report
 
 | Column | Meaning |
@@ -1580,6 +1631,8 @@ Click **Apply** after setting all controls.
 | **Estimated** | Sum of remaining estimates on assigned open issues |
 | **Logged** | Actual hours logged via Jira worklogs |
 | **Allocation %** | Estimated ÷ Available × 100 - higher means more committed |
+
+![Step 7](/time-tracking-imgs/capacity/Report/DetailedReport.png)
 
 ### Allocation Interpretation
 
@@ -3080,136 +3133,209 @@ Links individual staff members to workload schemes.
         {
           slug: "latest-release",
           title: "Latest Release",
-          content: `
+          content: `# Version 6.4.0 — Latest Release
+
+
 ## What's New
 
-Check the Atlassian Marketplace listing for the most current release notes and version details:
 
-[View on Atlassian Marketplace](https://marketplace.atlassian.com/apps/877949909/time-tracking-resource-planning-project-management)
+### Time Tracking
+- **Timeline Week View** — New hour-by-hour weekly calendar with drag-and-drop, current time indicator, and worklog blocks with inline Edit / Delete actions
+- **Progress bars in week view headers** — Each day column now shows a color-coded capacity progress bar (red → yellow → green) based on your workload scheme
+- **My Calendar + My Timesheet tabs** — Unified view with tab switcher; both panels stay mounted for instant switching without re-fetching
+- **Period selector** — Quickly jump to a specific approval period directly from the calendar header
+- **Notification bell redesign** — Industry-standard dropdown with read/unread states, type icons, and click-to-navigate to the relevant page
+- **Welcome modal** — First-time users see a guided introduction to Time Tracking
 
----
 
-## Recent Highlights
+### Portfolio Management
+- **Share Portfolio** — Share a portfolio view with other team members via a shareable link
+- **View Report from Planner** — Open the associated report directly from the Capacity Planner
+- **Gantt export improvements** — Added zoom level control and progress indicator during PDF/PNG export
 
-### Portfolio Management Enhancements
-- Added **Board View** to Portfolio module - Kanban-style layout for workflow tracking
-- Improved **Gantt Chart** performance for large portfolios
-- Added support for **Start-to-Start (SS)** and **Finish-to-Finish (FF)** dependency types
 
-### Backlog Prioritization Updates
-- Added **Priority Matrix** view - scatter plot for visual prioritization across two dimensions
-- Added **Label** metric type to custom scoring templates
-- Improved inline editing performance in the Backlog Table
+### Approvals
+- **Timesheet approval workflow enhancements** — Improved submit, recall, approve, reject, and grace period flows
+- **Approval notifications** — Bell icon shows real-time approval status changes with navigation to the relevant approval record
 
-### Time Tracking Improvements
-- Added **My Calendar** view for personal daily time log review
-- Improved **report export** - PDF exports now include charts
-- Added **Time Categories** filter to the Report Builder
 
-### Capacity Planner Updates
-- Added **Status Aging Monitor** tab to the Analytics Dashboard
-- Improved capacity report grouping performance`,
+### Platform
+- **Sidebar redesign** — Industry-standard navigation with colored app icon bubbles, left-border active state, collapsible mode with centered icons, and app switcher dropdown
+- **License gating** — App checks Atlassian Marketplace license on load; shows a clear upgrade screen for inactive licenses
+- **Calendar integration** — Connect and disconnect Google Calendar / Outlook from the Settings → Apps tab
+- **Keyboard navigation** — Improved keyboard accessibility across tables and forms
+`,
         },
         {
           slug: "cloud-edition-updates",
           title: "Cloud Edition Updates",
-          content: `
-The app is a Jira Cloud-exclusive product built on Atlassian Forge. All updates and improvements apply to the Cloud edition only.
+          content: `# Cloud Edition Updates
 
-## Platform Updates
 
-### Forge Runtime Improvements
-- The app benefits automatically from Atlassian's Forge platform improvements, including faster runtime performance and improved API response handling.
-- No action is required from admins when Forge platform updates are deployed.
+This app is a Jira Cloud-exclusive product built on the Atlassian Forge platform. All releases apply to the Cloud edition only.
 
-### Atlassian UI Kit Updates
-- User interface components are periodically updated to align with Atlassian's latest design system (Atlassian Design System v2).
-- Updates are deployed automatically - no admin action required.
 
-## Cloud-Specific Features
+## Version 6.4.0
+- License status checked via Forge context on app load
+- Calendar OAuth integration (Google Calendar, Microsoft Outlook) added to Settings
+- Sidebar navigation updated to Atlassian Design System standards
+- Notification bell wired to approval workflow events
 
-The following features are only possible on Jira Cloud due to the Forge platform:
 
-| Feature | Why Cloud-Only |
+## Version 6.3.0
+- Portfolio sharing enabled via shareable links
+- Settings page refactored into module-specific tabs
+- Rough planning layer added to Portfolio (overlay on Gantt)
+- Aggregation formula engine added to Portfolio table columns
+- Gantt timeline supports week and month zoom levels
+
+
+## Version 6.2.0
+- Gantt chart: drag-to-create bars, baseline overlay, lag/lead on dependencies, critical path highlighting, dependency violation indicators
+- Workload scheme configuration added (define daily capacity per day of week)
+- Multiple holiday calendar support
+- Planned vs Actual time tracking in Capacity Planner
+- Milestones supported in Gantt
+
+
+## Version 6.1.0
+- Portfolio dashboard gadget (Jira dashboard widget, tab-based)
+- Color-coded capacity indicators in daily and weekly views
+- Jira-native issue linking used to power Gantt dependencies
+- Capacity Analytics skeleton loading states
+- Planned time per day added to team views
+
+
+## Version 6.0.0
+- Full Portfolio Gantt chart released (dependencies, drag-resize, export)
+- Permissions & RBAC tab redesigned
+- Virtualized table rendering for large datasets
+- Skeleton loading screens across all modules
+
+
+## Platform Notes
+
+
+| Capability | Detail |
 |---|---|
-| Real-time Jira data fetch | Forge allows direct Jira API access without data export |
-| Atlassian-managed security | Data stays within Atlassian's SOC 2 compliant infrastructure |
-| Automatic Global Admin detection | Reads Jira's native permission model directly |
-| Marketplace trial management | Handled by Atlassian Marketplace billing system |
-
-## Version History
-
-For a full changelog of all releases, check the **Version History / Changelog** page or visit the Marketplace listing's **Release notes** tab.`,
+| Data residency | All data stored within your Atlassian instance via Forge Storage |
+| Updates | Deployed automatically — no admin action required |
+| Forge runtime | Benefits automatically from Atlassian platform improvements |
+| Security | SOC 2 compliant via Atlassian infrastructure |
+`,
         },
         {
           slug: "version-history",
           title: "Version History / Changelog",
-          content: `
-For the complete version history and detailed changelog, visit the app's Atlassian Marketplace listing:
+          content: `# Version History / Changelog
 
-[View Full Changelog on Marketplace](https://marketplace.atlassian.com/apps/877949909/time-tracking-resource-planning-project-management)
+
+## v6.4.0 — Current
+Timeline week view, capacity progress bars, portfolio sharing, Gantt export improvements, notification bell, license gating, calendar integrations, sidebar redesign
+
+
+## v6.3.0
+Portfolio rough planning, aggregation formulas, sum-up columns, Gantt week/month zoom, drag-and-drop re-parenting, settings modularisation
+
+
+## v6.2.0
+Gantt drag-to-create, baseline, critical path, dependency violation detection, lag/lead times, workload schemes, multiple holiday calendars, milestones, planned vs actual time
+
+
+## v6.1.0
+Portfolio dashboard gadget, color-coded capacity views, planned time per day, Gantt dependency via Jira issue links, capacity analytics loading states
+
+
+## v6.0.0
+Full Gantt chart, RBAC permissions redesign, table virtualisation, skeleton loaders, backlog validation
+
+
+## v5.x
+Time Tracking My Calendar, timesheet approval workflows (submit / approve / reject / recall / grace period), team management, report builder with grouping and charts, XLSX export, accounts management
+
+
+## v4.x
+Backlog Prioritization with custom scoring templates, saved views, priority matrix, label metrics
+
+
+## v3.x
+Capacity Planner analytics, status aging monitor, saved plans, team assignments, programs
+
+
+## v2.x
+Portfolio foundation, Gantt chart (initial), roadmap view, treemap, board view
+
+
+## v1.x
+Initial release: Time Tracking, Capacity Analytics, Backlog Prioritization, Portfolio module
+
 
 ---
 
-## Recent Versions (Summary)
-
-| Version | Key Changes |
-|---|---|
-| Latest | Board View in Portfolio, Gantt dependency improvements, Priority Matrix |
-| Previous | Teams Management module, Programs, Staff Assignments |
-| Earlier | Backlog Prioritization custom templates, Saved Views |
-| Earlier | My Calendar for Time Tracking, PDF export improvements |
-| Earlier | Capacity Planner redesign, Saved Plans |
-| Earlier | Portfolio Gantt chart, baseline comparison, critical path |
-| Initial | Time Tracking, Capacity Analytics, Backlog Prioritization, Portfolio foundation |
-
----
 
 ## How Updates Are Delivered
 
-The app updates automatically on the Atlassian Marketplace. You do not need to manually install updates - when a new version is available, it is deployed to your Jira Cloud instance by Atlassian.
 
-To see which version you are currently running:
-1. Go to Jira **Settings → Apps → Manage apps**
+Updates deploy automatically to your Jira Cloud instance via the Atlassian Marketplace. No manual installation is needed.
+
+
+To check your current version:
+1. Go to **Jira Settings → Apps → Manage apps**
 2. Find **"Time Tracking, Resource Planning & Project Management"**
-3. The version number is displayed in the app details`,
+3. The version number is shown in the app details panel
+`,
         },
         {
           slug: "roadmap",
           title: "Upcoming Features / Roadmap",
-          content: `
-## Planned Enhancements
+          content: `# Upcoming Features / Roadmap
 
-The product team is actively working on new capabilities. The following are planned for upcoming releases:
+
+## In Progress
+
 
 | Feature | Module | Status |
 |---|---|---|
-| Time approval workflow with email notifications | Time Tracking | Planned |
+| Billable vs Non-billable hour classification | Time Tracking | In Progress |
+| Overtime tracking and alerts | Time Tracking | In Progress |
+| Future period timesheet submission | Approvals | In Progress |
+
+
+## Planned
+
+
+| Feature | Module | Status |
+|---|---|---|
+| Resource utilization % reports | Time Tracking | Planned |
+| Workload heatmap (team view) | Capacity Planner | Planned |
 | Sprint-based capacity planning | Capacity Planner | Planned |
-| Deep-linking to specific Gantt tasks | Portfolio (PPM) | Planned |
-| Bulk time entry (log time for multiple issues at once) | Time Tracking | Planned |
+| Bulk time entry (log time across multiple issues) | Time Tracking | Planned |
+| Deep-linking to specific Gantt tasks | Portfolio | Planned |
+| Cross-project dependency tracking | Portfolio | Planned |
 | Custom dashboard gadgets for Time Tracking metrics | Time Tracking | Planned |
-| AI-powered backlog scoring suggestions | Backlog Prioritization | Research |
-| Cross-project dependency tracking in Gantt | Portfolio (PPM) | Research |
 
-## How to Submit a Feature Request
 
-We actively consider feature requests from users. To submit:
+## Under Research
 
-**Email:** support@clovity.com
-**Subject:** Feature Request: [Brief Description]
 
-Include:
-- What you want to accomplish
-- Why it would be valuable to your team
-- Your current workaround (if any)
+| Feature | Module | Status |
+|---|---|---|
+| AI-powered timesheet suggestions | Time Tracking | Research |
+| AI-powered backlog scoring | Backlog Prioritization | Research |
 
-All feature requests are reviewed by the product team weekly. You will receive confirmation that your request was received and logged.
 
-## Stay Updated
+---
 
-- **Marketplace listing**: Check the Release Notes tab for the latest shipped features
-- **Email support@clovity.com** to be added to the product update newsletter`,
+
+## Submit a Feature Request
+
+
+**Email:** support@clovity.com  
+**Subject line:** Feature Request: [Brief Description]
+
+
+Include what you want to accomplish, why it's valuable to your team, and your current workaround. All requests are reviewed weekly and you'll receive a confirmation reply.
+`,
         },
       ],
     },
@@ -4060,7 +4186,11 @@ We read all community posts and emails. If you have built something interesting 
 
 export function getAllArticles(docs) {
   return docs.categories.flatMap((cat) =>
-    cat.articles.map((article) => ({ ...article, categoryId: cat.id, categoryTitle: cat.title }))
+    cat.articles.map((article) => ({
+      ...article,
+      categoryId: cat.id,
+      categoryTitle: cat.title,
+    })),
   );
 }
 

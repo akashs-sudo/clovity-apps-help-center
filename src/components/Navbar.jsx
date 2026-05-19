@@ -24,19 +24,6 @@ export default function Navbar() {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1 text-sm">
             <Link
-              href="/"
-              className="px-3 py-1.5 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors"
-            >
-              Home
-            </Link>
-            <Link
-              href="https://clovity.com"
-              target="_blank"
-              className="px-3 py-1.5 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors"
-            >
-              Clovity.com
-            </Link>
-            <Link
               href="https://clovity.com/contact"
               target="_blank"
               className="px-3 py-1.5 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors"
@@ -88,29 +75,16 @@ export default function Navbar() {
         {mobileOpen && (
           <div className="md:hidden border-t border-gray-100 py-3 space-y-1">
             <Link
-              href="/"
-              className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-md"
-            >
-              Home
-            </Link>
-            <Link
-              href="https://clovity.com"
-              target="_blank"
-              className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-md"
-            >
-              Clovity.com
-            </Link>
-            <Link
               href="https://clovity.com/contact"
               target="_blank"
-              className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-md"
+              className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-md"
             >
               Support
             </Link>
             <Link
               href="https://marketplace.atlassian.com/vendors/398573336/clovity"
               target="_blank"
-              className="block mx-3 mt-2 px-3 py-2 text-xs font-semibold text-white rounded-md text-center"
+              className="mx-3 mt-2 px-3 py-2 text-xs font-semibold text-white rounded-md text-center"
               style={{ backgroundColor: "#0052CC" }}
             >
               Atlassian Marketplace

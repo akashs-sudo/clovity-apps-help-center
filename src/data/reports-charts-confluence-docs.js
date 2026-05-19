@@ -162,6 +162,22 @@ Build your first report in under 5 minutes. Follow these four steps.
 2. Type \`/\` to open the macro insert menu.
 3. Search for **Reports, Charts, Templates, CQL & Export for Confluence** and click to insert.
 4. The macro editor opens automatically.
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/quick-start-guide/img.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
+
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/quick-start-guide/img_1.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
+
 
 ## Step 2 - Configure the Report
 
@@ -169,33 +185,108 @@ Build your first report in under 5 minutes. Follow these four steps.
 
 Select **Spaces** (recommended for beginners) or **Custom CQL** from the Source dropdown in the header. Specify your source value - select spaces or enter a CQL query.
 
+
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/quick-start-guide/img_2.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
+
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/quick-start-guide/img_3.png"
+    alt="Configure Report"
+    style=" border-radius:12px;"
+  />
+ 
+
 ### Select a View
 
 Choose **Table** from the Report Type dropdown. Table view is easiest to understand for first-time users. Other options: List, Paragraph, Grid, Charts.
 
+<img 
+  src="/images/global/reports-charts-confluence/quick-start-guide/img_4.png"
+  alt="Configure Report"
+  style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+/>
+
 ### Add Expansions
 
 In the left panel, select metadata groups. Load only the metadata you need. Common starting point: **metadata** and **version** - these cover most common fields.
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/quick-start-guide/img_5.png"
+    alt="Configure Report"
+    style=" border-radius:12px;"
+  />
+ 
 
 ### Define Columns
 
 Navigate to the **Columns** tab in the right panel. Click **+ Add New Column**, set a label, and pick a data field. Apply formatting as needed.
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/quick-start-guide/img_6.png"
+    alt="Configure Report"
+    style=" border-radius:12px;"
+  />
+ 
 
 ### Apply Filters
 
 In the center panel, use the Filter section to narrow results. Each filter row narrows results further (AND logic). Click **+ Add filter** to add a row. Use Delete (trash) to remove, or **Clear all** to reset.
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/quick-start-guide/img_7.png"
+    alt="Configure Report"
+    style=" border-radius:12px;"
+  />
+ 
 
 ### Set Result Limit
 
 Set an appropriate limit in the header or right panel (e.g., 50, 100, 500). Start with 50 for faster testing.
 
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/quick-start-guide/img_8.png"
+    alt="Configure Report"
+    style=" border-radius:12px;"
+  />
+ 
+
 ## Step 3 - Confirm Results in Live Preview
 
 The center panel shows your report results in real-time. Verify data looks correct before saving. Adjust configuration if needed.
 
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/quick-start-guide/img_9.png"
+    alt="Configure Report"
+    style=" border-radius:12px;"
+  />
+ 
+
 ## Step 4 - Save
 
 Click **Save** to publish the report to your Confluence page. The macro editor closes and your live report appears on the page.
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/quick-start-guide/img_10.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
+
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/quick-start-guide/img_11.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
 
 ## Quick Start Tips
 
@@ -351,6 +442,14 @@ The app has no separate admin panel or settings screen. All configuration is don
           title: "Tabular Overview",
           content: `Custom Tabular Report lets you display Confluence data in four flexible layouts - Table, List, Grid, and Paragraph. Each view is suited to a different audience and purpose, all powered by the same underlying data source and column configuration.
 
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/custom-tabular-report/img.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
+
 ## Available Views
 
 | **View** | **Layout Style** | **Best For** | **Supports Pagination** |
@@ -391,6 +490,14 @@ The app has no separate admin panel or settings screen. All configuration is don
           slug: "table-view",
           title: "Table View",
           content: `Table view displays Confluence data in rows and columns - a familiar spreadsheet-style layout. It is the primary and most versatile report type in Reports, Charts, Templates, CQL & Export for Confluence.
+
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/custom-tabular-report/img_1.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
 
 ## Key Features
 
@@ -441,6 +548,13 @@ The app has no separate admin panel or settings screen. All configuration is don
           slug: "list-view",
           title: "List View",
           content: `List view shows each Confluence content item as a single card in a clean vertical list. It is ideal for creating readable, human-friendly output - like a page index, task list, or simple directory.
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/custom-tabular-report/img_2.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
 
 ## Key Features
 
@@ -477,6 +591,13 @@ The app has no separate admin panel or settings screen. All configuration is don
           slug: "grid-view",
           title: "Grid View",
           content: `Grid view displays each Confluence content item as a visual card in a responsive multi-column grid. It is ideal for dashboards, team directories with profile photos, and any report where visual browsing is more important than data comparison.
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/custom-tabular-report/img_3.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
 
 ## Key Features
 
@@ -513,6 +634,13 @@ The app has no separate admin panel or settings screen. All configuration is don
           slug: "paragraph-view",
           title: "Paragraph View",
           content: `Paragraph view converts each Confluence content item into a readable text block - prose-style output instead of a table. It is ideal for narrative summaries, weekly digests, executive reports, and any context where readable text matters more than structured data.
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/custom-tabular-report/img_4.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
 
 ## Key Features
 
@@ -560,6 +688,13 @@ Use the Text block type with Prefix and Suffix settings to construct natural-lan
           slug: "tabular-templates",
           title: "Templates",
           content: `Pre-built templates provide ready-to-use report configurations for common use cases. Templates save time and ensure consistent reporting patterns. All 35 templates are listed below in order.
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/custom-tabular-report/img_5.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
 
 ## How to Apply a Template
 
@@ -610,6 +745,13 @@ Use the Text block type with Prefix and Suffix settings to construct natural-lan
 | 33 | Blog Posts – Updated This Year | Blog posts modified since start of year with last updated + space key | Track active blog/news activity this year | Communications KPI, yearly reporting, stakeholder updates |
 | 34 | Weekly Updated Pages | Pages updated in last 7 days with space + last updated + excerpt | Weekly activity snapshot | Weekly digest, team status reporting, 'what changed' |
 | 35 | Today Updated Pages | Pages updated in last 24 hours with space + last updated + excerpt | Daily change tracker | Daily standups, release/change monitoring, fast review queue |
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/custom-tabular-report/img_6.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
 
 ## Template Benefits
 
@@ -688,6 +830,13 @@ Charts use a separate configuration from tabular column settings. Key settings i
 ## Bar Chart
 
 Compares grouped values using horizontal or vertical bars. Best for comparing quantities across distinct categories.
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/custom-charts-report/img.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
 
 ### Best For
 
@@ -704,6 +853,13 @@ Compares grouped values using horizontal or vertical bars. Best for comparing qu
 ## Pie Chart
 
 Shows distribution as slices of a whole. Best for understanding composition or percentage split of content.
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/custom-charts-report/img_1.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
 
 ### Best For
 
@@ -715,6 +871,13 @@ Shows distribution as slices of a whole. Best for understanding composition or p
 ## Line Chart
 
 Shows change over time using a connected line. Best for tracking growth, trends, or activity spikes across a time axis.
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/custom-charts-report/img_2.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
 
 ### Best For
 
@@ -800,6 +963,13 @@ Shows change over time using a connected line. Best for tracking growth, trends,
           slug: "chart-templates",
           title: "Chart Templates",
           content: `Reports, Charts, Templates, CQL & Export for Confluence includes 17 pre-built chart templates. Each one is ready to use - just select, review in Live Preview, and save.
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/custom-charts-report/img_3.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
 
 | **#** | **Template Name** | **Chart Type** | **Groups By** | **Use Case** |
 | --- | --- | --- | --- | --- |
@@ -891,6 +1061,14 @@ Best for browse-based, simple reporting. No syntax required - ideal for non-tech
 * Selecting content from specific pages or documentation sections
 * Quick setup without writing queries
 * Content selection based on space organization
+
+ 
+  <img 
+    src="/images/global/reports-charts-confluence/features/img_3.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+ 
 
 ## Option B - Custom CQL
 

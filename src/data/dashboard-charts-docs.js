@@ -1157,8 +1157,10 @@ Use this section to learn how to customize your table columns, add visual indica
           slug: "issue-list-guide",
           title: "Issue List Guide",
           content: `The Issue List gadget displays Jira issues in a configurable table format, perfect for status reports, work tracking, and providing quick access to issue details.
+          ![The Issue List gadget displays Jira issues in a configurable table format, perfect for status reports, work tracking, and providing quick access to issue details](/images/dashboard-charts/Issue%20List/issue-list-guide.png)
 
 ## Overview
+
 
 | **Feature** | **Description** |
 | --- | --- |
@@ -1191,6 +1193,8 @@ Drag columns up or down in the list. The first column appears on the left.
 ### Renaming Columns
 
 Click the edit (pencil) icon next to a column. Enter the new name.
+ 
+![Rename Columns](/images/dashboard-charts/Issue%20List/issue-list-renaming-columns.png)
 
 ## Smart Labels
 
@@ -1202,6 +1206,8 @@ Smart Labels add special indicator columns that show badges when issues match ce
 | --- | --- |
 | Filter-Based | Shows badge if issue matches a saved filter |
 | JQL-Based | Shows badge if issue matches a JQL condition |
+
+![Smart Labels](/images/dashboard-charts/Issue%20List/smart-labels.png)
 
 ### Smart Label Examples
 
@@ -1227,12 +1233,16 @@ Quick Filters add clickable buttons above the table for instant filtering.
 | Due This Week | duedate >= startOfWeek() AND duedate <= endOfWeek() |
 | Unassigned | assignee is EMPTY |
 
+![Quick Filters](/images/dashboard-charts/Issue%20List/issue-list-quickfilters.png)
+
 ### AND vs OR Logic
 
 | **Mode** | **Behavior** |
 | --- | --- |
 | AND | Issues must match ALL active filters |
 | OR | Issues must match ANY active filter |
+
+![AND vs OR](/images/dashboard-charts/Issue%20List/issue-list-AND-OR.png)
 
 ## Display Options
 
@@ -1245,6 +1255,8 @@ Quick Filters add clickable buttons above the table for instant filtering.
 | Show user icons | Avatar images |
 | Disable hyperlinks | Turn off clickable links |
 
+![Display Options](/images/dashboard-charts/Issue%20List/issue-list-display-options.png)
+
 ## Exporting
 
 ### Export Formats
@@ -1255,6 +1267,8 @@ Quick Filters add clickable buttons above the table for instant filtering.
 | CSV | Open in Excel, Google Sheets |
 | PNG | Image for presentations |
 | PDF | Printable document |
+
+![Export Options](/images/dashboard-charts/Issue%20List/issue-list-export-options.png)
 
 > **Tip:** The export includes only currently filtered data. Apply filters first to export exactly what you need.
 `,
@@ -1350,6 +1364,8 @@ Use this section to learn how to set up your base data, configure dropdown filte
           title: "Dynamic Filter Controller Guide",
           content: `The Dynamic Filter Controller creates an interactive filter bar that controls multiple charts and lists simultaneously, enabling powerful interactive dashboards.
 
+![Dynamic Filter Controller Guide](/images/dashboard-charts/Dynamic%20FIlter/Dynamic-filter-guide.png)
+
 ## Overview
 
 | **Feature** | **Description** |
@@ -1373,6 +1389,8 @@ Use this section to learn how to set up your base data, configure dropdown filte
 
 The base data source defines the universe of issues that can be filtered.
 
+![Dynamic Filter Base Data Source](/images/dashboard-charts/Dynamic%20FIlter/Dynamic-Filter-Base-Data-Source.png)
+
 **Example JQL:** \`project = TEAM AND issuetype in (Story, Bug, Task)\`
 
 ### Step 2: Adding Filter Fields
@@ -1393,6 +1411,8 @@ Add the fields users can filter by:
 | Contains Text | Free-text search box |
 | Custom JQL | Advanced JQL input |
 | Saved Filter | Toggle a saved filter |
+
+![Dynamic Filter Columns](/images/dashboard-charts/Dynamic%20FIlter/dynmaic-filter-columns.png)
 
 ## Configuring Tabs
 
@@ -1416,6 +1436,8 @@ Tabs are preset filter combinations users can switch between with one click.
 | High Priority | Priority = High, Highest |
 | This Sprint | This Sprint |
 
+![Dynamic Filter Tab](/images/dashboard-charts/Dynamic%20FIlter/dynamic-filter-tab-example.png)
+
 ## Connecting Gadgets
 
 ### How to Connect
@@ -1430,6 +1452,8 @@ Tabs are preset filter combinations users can switch between with one click.
 
 Click "Show Connected Charts" in the controller to highlight all connected gadgets on the dashboard.
 
+![Verifying Connections](/images/dashboard-charts/Dynamic%20FIlter/dynamic-filter-verifying-connections.png)
+
 ## Display Options
 
 | **Option** | **Description** |
@@ -1438,6 +1462,8 @@ Click "Show Connected Charts" in the controller to highlight all connected gadge
 | Allow Add Fields | Users can temporarily add filter fields |
 | Show AND/OR Selector | Toggle filter logic |
 | Show Options Menu | Menu button visibility |
+
+![Display Options](/images/dashboard-charts/Dynamic%20FIlter/dynamic-filter-display-options.png)
 
 ## User Experience
 

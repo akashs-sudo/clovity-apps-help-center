@@ -2105,49 +2105,50 @@ A tabular view showing individual issue details not visible in charts.
 
 Stay up to date with the newest features, improvements, and fixes in **Dashboard Templates, Charts, Graphs & Reports for Jira**.
 
+> **Current Version:** v4.1.0 — May 2026
 > **Marketplace Listing:** [Dashboard Templates, Charts, Graphs & Reports for Jira](https://marketplace.atlassian.com/apps/359777765/dashboard-templates-charts-graphs-reports-for-jira)
 
 ---
 
-## What's New
+## What's New in v4.1.0
 
-### Enhanced Chart Performance & Rendering
-Charts now load significantly faster for large datasets. The rendering engine has been optimized to handle queries with 10,000+ issues while maintaining smooth Live Preview updates as you configure your gadget. Segment processing and color assignment are now handled more efficiently, reducing configuration panel lag.
+### Improved Admin Controls
+The Admin Settings panel has been expanded with clearer organization and new options:
 
-### New Chart Types: Funnel & Tile
-Two new chart types are now available in Custom Charts:
+- **Per-feature toggles** — Admins can now independently enable or disable Custom Charts, Issue List, Dynamic Filter Controller, and Templates from a single screen
+- **Data source restrictions** — Restrict which data sources (Projects, Saved Filters, JQL, Controller) are available to end users
+- **Export controls** — Enable or disable PNG, PDF, and CSV export independently per export format
 
-- **Funnel Chart** - Visualize stage-based progression (e.g., support ticket stages, release pipeline). Ideal for showing how issues move through a defined workflow sequence.
-- **Tile Chart** - Display single KPI metrics as compact visual tiles. Perfect for scorecards showing total open issues, story points remaining, or bugs this week. Supports configurable tiles per row and multiple rows.
+### Display Options Enhancements
+Several long-requested Display Options have been added across all chart types:
 
-### Dynamic Filter Controller - Tabs & Preset Views
-The Dynamic Filter Controller now supports **multi-tab preset views**. Admins and dashboard owners can define named tabs (e.g., "My Issues", "This Sprint", "High Priority") with pre-set filter values. Users can switch between views with a single click, eliminating the need to manually re-select filters for common scenarios.
+- **Tooltip formatting** — Choose between count, percentage, or both for pie and funnel chart tooltips
+- **Axis label truncation control** — Set a maximum character length for x-axis labels to prevent overflow on bar charts with long segment names
+- **Gridline visibility toggle** — Show or hide horizontal gridlines on bar and line charts independently
 
-### Import / Export Configuration
-All three gadgets now support **JSON-based configuration import and export**. This allows you to:
-- Duplicate a gadget configuration without rebuilding it manually
-- Share chart setups between team members
-- Back up gadget configurations before making major changes
-- Migrate configurations between dashboards within the same Jira instance
+### Issue List 
+Drag-and-Drop Reordering: You can now use drag-and-drop to easily rearrange and change the position of columns in the Issue List.
+
 
 ---
 
-## Bug Fixes & Improvements
+## Bug Fixes
 
-| Area | Fix / Improvement |
+| Area | Fix |
 |---|---|
-| Chart By - JQL segments | Fixed issue where overlapping JQL conditions caused double-counting in some configurations |
-| Issue List - column sorting | Clicking column headers now correctly sorts by the selected field across all pages |
-| Dynamic Filter Controller | Reference ID display now always visible after first save (previously required a page refresh in some browsers) |
-| Display Options | Auto-refresh setting now persists correctly after gadget re-edit |
-| Export - PDF | Fixed layout clipping for charts with more than 12 segments |
-| Segment colors | Color picker now remembers the last used custom color per gadget session |
+| Tile Chart | Fixed tile count not updating when data source JQL was changed without saving and re-opening |
+| Funnel Chart | Fixed stage order reverting to alphabetical after gadget re-edit in Firefox |
+| Dynamic Filter Controller | Fixed tab switching not propagating filter changes to linked gadgets in some dashboard layouts |
+| Issue List | Fixed Smart Label badges not rendering on the first page load after a gadget is freshly added |
+| Export — PDF | Fixed chart title being cut off in PDF export when title exceeded 60 characters |
+| 2D Line Chart | Fixed tooltip showing incorrect Group By value when hovering over overlapping data points |
+| Display Options | Fixed "Show data labels" toggle state not being saved correctly on Grouped Bar charts |
 
 ---
 
 ## Upgrade Notes
 
-All existing gadget configurations are **fully compatible** with this release. No migration or manual action is required. Gadgets on existing dashboards will continue to work without changes.
+All existing gadget configurations are **fully compatible** with v4.1.0. No migration or manual action is required. Gadgets on existing dashboards will continue to work without changes.
 
 ---
 
@@ -2155,10 +2156,10 @@ All existing gadget configurations are **fully compatible** with this release. N
 
 | Feature | Status |
 |---|---|
-| Template management (save your own templates) | In development |
-| Sprint burndown chart type | Planned |
-| Scheduled PDF report delivery | Under consideration |
-| Dark mode support for gadget UI | Under consideration |
+| Scheduled run scans | In development |
+| Reporting standard metrics | Planned |
+| Standard templates for common use cases | Planned |
+| Additional chart types (e.g., scatter plot, radar chart) | Under consideration |
 
 ---
 
@@ -2181,98 +2182,143 @@ A complete changelog for **Dashboard Templates, Charts, Graphs & Reports for Jir
 
 | Version | Release Date | Type | Highlights |
 |---|---|---|---|
-| v2.3 | May 2026 | Feature Release | Import/Export config, Funnel & Tile chart types, Controller tabs |
-| v2.2 | March 2026 | Improvement Release | Chart performance optimization, PDF export fix, segment color persistence |
-| v2.1 | January 2026 | Feature Release | Smart Labels for Issue List, AND/OR quick filter logic, user icon display |
-| v2.0 | February 2025 | Major Release | Dynamic Filter Controller, 2D charts, Group By, Sum/Avg calculations, reference lines |
-| v1.1 | February 2025 | Patch | JQL validation improvements, number formatting options, bug fixes |
-| v1.0 | January 2025 | Initial Release | Custom Charts (Pie/Bar/Line), Issue List, Projects/Filter/JQL data sources |
+| v4.1.0 | May 2026 | Improvement Release | Expanded Admin Controls, Display Options enhancements, new Templates, bug fixes |
+| v4.0.0 | January 2026 | Major Release | Templates gallery, Date Range improvements, Import/Export Configuration, Controller Tabs |
+| v3.1.0 | October 2025 | Feature Release | Smart Labels, AND/OR Quick Filter logic, User Icon Display in Issue List |
+| v3.0.0 | August 2025 | Major Release | Funnel & Tile chart types, Admin Settings, Cumulative Total |
+| v2.1.0 | June 2025 | Improvement Release | Sum/Average calculations, Reference Lines, Display Options expansion |
+| v2.0.0 | April 2025 | Major Release | Dynamic Filter Controller, 2D charts, Group By second dimension |
+| v1.1.0 | February 2025 | Patch | JQL validation improvements, number formatting, bug fixes |
+| v1.0.0 | January 2025 | Initial Release | Custom Charts (Pie/Bar/Line), Issue List, Projects/Filter/JQL data sources |
 
 ---
 
-## v2.3 - May 2026
+## v4.1.0 — May 2026
 
-### New Features
-- **Funnel Chart** - Stage-based progression visualization
-- **Tile Chart** - KPI tiles with configurable rows and per-row tile count
-- **Import/Export Configuration** - JSON-based config sharing across gadgets and dashboards
-- **Dynamic Filter Controller Tabs** - Named preset filter views with one-click switching
-
-### Improvements
-- Chart rendering performance significantly improved for large datasets (10,000+ issues)
-- Live Preview updates are now debounced to prevent excessive re-renders while typing JQL
-- Segment color picker remembers last used custom color per session
+### New & Improved
+- **Admin Controls** — Per-feature toggles, data source restrictions, and per-format export controls
+- **Display Options** — Tooltip formatting, axis label truncation, gridline toggle, legend position
+- **Issue List** — Column widths now persist as part of gadget configuration
+- **Templates** — Four new templates: Sprint Velocity Trend, Bug Triage Board, Team Workload Overview, Release Readiness
 
 ### Bug Fixes
-- Fixed double-counting in overlapping JQL segment configurations
-- Fixed Issue List column sort not persisting across pages
-- Fixed Reference ID visibility requiring page refresh on first save
-- Fixed PDF export clipping for charts with 12+ segments
+- Fixed Tile Chart not updating when JQL was changed mid-session
+- Fixed Funnel Chart stage order reverting to alphabetical after re-edit in Firefox
+- Fixed Dynamic Filter Controller tab switching not propagating to linked gadgets
+- Fixed Smart Label badges not rendering on first page load after fresh gadget add
+- Fixed PDF export cutting off long chart titles
+- Fixed 2D Line Chart tooltip showing incorrect Group By value on overlapping points
+- Fixed "Show data labels" toggle not saving on Grouped Bar charts
 
 ---
 
-## v2.2 - March 2026
+## v4.0.0 — January 2026
+
+### Major New Features
+- **Templates Gallery** — Ready-made chart configurations for common Jira reporting scenarios; apply in one click and customize from there
+- **Import / Export Configuration** — JSON-based config export and import for all three gadgets; share setups between team members or back up before making changes
+- **Dynamic Filter Controller — Tabs** — Define named preset filter views (e.g., "My Issues", "This Sprint", "High Priority"); users switch between them with one click
+- **Date Range Control** — New date grouping options (Day, Week, Month, Quarter) and a date range picker for filtering charts by creation or update date
 
 ### Improvements
-- General chart load time improvements across all chart types
-- Better error messages for invalid JQL in segment definitions
-- Display Options: Auto-refresh setting now persists correctly on re-edit
+- Configuration panel layout reorganized for faster access to common settings
+- Live Preview debounced during JQL typing to reduce unnecessary re-renders
+- Segment color picker now remembers the last used custom color per session
 
 ### Bug Fixes
-- Fixed segment order not being preserved after gadget re-edit in some browsers
-- Fixed tooltip misalignment on 2D Line charts with long segment names
+- Fixed Reference ID not showing until page refresh after first Controller save
+- Fixed CSV export producing garbled characters for non-ASCII field values
 
 ---
 
-## v2.1 - January 2026
+## v3.1.0 — October 2025
 
 ### New Features
-- **Smart Labels** - JQL-based and filter-based visual badges in Issue List
-- **AND/OR Quick Filter Logic** - Choose how multiple active quick filters are combined
-- **User Icon Display** - Show avatar images in Issue List assignee columns
+- **Smart Labels** — Add JQL-based or filter-based visual badge indicators to any Issue List column; color-coded and configurable per label rule
+- **AND/OR Quick Filter Logic** — Choose whether multiple active Quick Filters combine with AND (narrow results) or OR (broaden results)
+- **User Icon Display** — Show Jira user avatar images in Issue List assignee and reporter columns
 
 ### Improvements
-- Quick filter buttons now show active state more clearly
-- Issue List column rename UI improved
-- Display Options tab reorganized for clarity
+- Quick Filter buttons now show a clear active/inactive visual state
+- Issue List column rename UI streamlined; rename inline without opening a modal
+- Display Options tab reorganized into logical groups
 
 ### Bug Fixes
 - Fixed Smart Label badge overflow on narrow dashboard columns
-- Fixed Quick Filter AND mode including extra issues in edge cases
+- Fixed Quick Filter AND mode including extra issues in edge cases with multi-value fields
 
 ---
 
-## v2.0 - February 2025
+## v3.0.0 — August 2025
 
 ### Major New Features
-- **Dynamic Filter Controller Gadget** - Shared interactive filter bar controlling multiple charts and lists
-- **2D Chart Types** - Grouped Bar, Stacked Bar, 2D Line, 2D Table
-- **Group By** - Second dimension for cross-tab analysis
-- **Sum and Average Calculations** - Numeric field aggregations beyond issue count
-- **Reference Lines** - Goal, Trend, and Average lines for Bar and Line charts
-- **Cumulative Total** - Running total option for trend analysis
+- **Funnel Chart** — Visualize stage-based progression; ideal for support workflows, release pipelines, and issue lifecycle tracking
+- **Tile Chart** — Display single KPI metrics as compact visual tiles; configurable tiles per row and multiple rows for scorecard-style dashboards
+- **Admin Settings** — New app administration page for Jira site admins; control global export permissions, enabled features, and allowed data sources
+- **Cumulative Total** — Running total option for Line charts to show cumulative issue count over time
 
 ### Improvements
-- Enhanced segment controls: search, pagination for large field lists, improved color picker
-- Segment renaming now inline (click to edit)
-- More number formatting options in Display Options
+- Segment controls: added search and pagination for projects and filters with large field lists
+- Segment renaming is now fully inline (click to edit directly in the list)
+- Improved color contrast for default segment color palette
+
+### Bug Fixes
+- Fixed bar chart x-axis labels overlapping for segments with long names
+- Fixed segment reorder not persisting after gadget re-edit in Safari
 
 ---
 
-## v1.1 - February 2025
+## v2.1.0 — June 2025
+
+### New Features
+- **Sum and Average Calculations** — Aggregate numeric Jira fields (story points, original estimate, custom number fields) instead of just counting issues
+- **Reference Lines** — Add Goal, Trend, or Average reference lines to Bar and Line charts to visualize targets and benchmarks
 
 ### Improvements
-- JQL validation: clearer error messages with field name suggestions
-- Number format options added (comma separators, decimal places)
+- Display Options expanded: control tooltip visibility, data label placement, and axis scale (auto vs. fixed)
+- Number formatting options added: comma separators, decimal place control, unit suffix (e.g., "pts", "hrs")
+- Segment ordering improved for date-based fields (now sorts chronologically by default)
+
+### Bug Fixes
+- Fixed tooltip misalignment on 2D Line charts with long segment names
+- Fixed segment order not being preserved after gadget re-edit in some browsers
+
+---
+
+## v2.0.0 — April 2025
+
+### Major New Features
+- **Dynamic Filter Controller Gadget** — A shared interactive filter bar that controls multiple Custom Charts and Issue List gadgets simultaneously on the same dashboard
+- **2D Chart Types** — Four new chart types requiring a second dimension: Grouped Bar, Stacked Bar, 2D Line, 2D Table
+- **Group By** — Add a second grouping field to any chart for cross-tab analysis and multi-series comparisons
+- **Table Chart** — Display aggregated issue counts as a structured data table instead of a visual chart
+
+### Improvements
+- Configuration panel redesigned with tabbed layout (Chart Type, Chart By, Group By, Calculations, Display Settings)
+- Segment list now supports drag-to-reorder and inline color editing
+- Issue List gains column reordering by drag-and-drop
+
+### Bug Fixes
+- Fixed pie chart not rendering when all segment values were zero
+- Fixed JQL data source not accepting filters with special characters in names
+
+---
+
+## v1.1.0 — February 2025
+
+### Improvements
+- JQL validation: clearer error messages with field name suggestions when a field is unrecognized
+- Number format options added: comma separators and configurable decimal places in chart labels
 - Segment ordering improved for date-based fields
 
 ### Bug Fixes
 - Fixed bar chart x-axis labels overlapping for long segment names
-- Fixed CSV export encoding for special characters
+- Fixed CSV export encoding for issue summaries containing special characters
+- Fixed pie chart showing blank slices for zero-count segments
 
 ---
 
-## v1.0 - January 2025
+## v1.0.0 — January 2025
 
 ### Initial Release
 
@@ -2294,6 +2340,10 @@ A complete changelog for **Dashboard Templates, Charts, Graphs & Reports for Jir
 - Projects (single or multi-project)
 - Saved Jira Filters
 - Custom JQL
+
+**Export**
+- PNG image export
+- CSV data export
 
 **Platform**
 - Jira Cloud only

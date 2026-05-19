@@ -45,15 +45,6 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://clovity.com"
-                  target="_blank"
-                  className="text-blue-200/90 hover:text-blue-100 transition-colors"
-                >
-                  Main Website
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="https://marketplace.atlassian.com/vendors/398573336/clovity"
                   target="_blank"
                   className="text-blue-200/90 hover:text-blue-100 transition-colors"

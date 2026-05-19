@@ -147,7 +147,7 @@ To uninstall: Jira Settings → Apps → Manage apps → find the app → click 
           content: `
 Get up and running with your first Jira dashboard chart in under 5 minutes.
 
-![Quick Start Guide](/images/global/dashboard-charts/quick-start-guide.png)
+![Quick Start Guide](/images/dashboard-charts/quick-start-guide.png)
 
 ## Step 1 - Open or Create a Dashboard
 
@@ -432,6 +432,8 @@ Done! Your chart is live.
 
 ## Pie Chart
 
+![Pie Chart](/images/dashboard-charts/Custom%20Charts/Chart%20Types/pie-chart.png)
+
 ### When to Use
 
 * Showing how a whole is divided into parts
@@ -452,6 +454,8 @@ Done! Your chart is live.
 
 ## Bar Chart (1D)
 
+![Bar Chart (1D)](/images/dashboard-charts/Custom%20Charts/Chart%20Types/1d-bar-chart.png)
+
 ### When to Use
 
 * Comparing values across categories
@@ -465,6 +469,8 @@ Done! Your chart is live.
 
 ## Grouped Bar Chart (2D)
 
+![Grouped Bar Chart](/images/dashboard-charts/Custom%20Charts/Chart%20Types/grouped-bar-chart.png)
+
 ### When to Use
 
 * Comparing multiple series side-by-side
@@ -476,6 +482,8 @@ Result: For each status, see separate bars for Stories, Bugs, Tasks side by side
 
 ## Stacked Bar Chart (2D)
 
+![Stacked Bar Chart](/images/dashboard-charts/Custom%20Charts/Chart%20Types/stacked-bar-chart.png)
+
 ### When to Use
 
 * Showing composition within categories
@@ -486,6 +494,8 @@ Example: Chart By: Sprint | Group By: Priority
 Result: Each sprint shows a single bar with priority levels stacked.
 
 ## Line Chart (1D)
+
+![Line Chart (1D)](/images/dashboard-charts/Custom%20Charts/Chart%20Types/1d-line-chart.png)
 
 ### When to Use
 
@@ -500,6 +510,8 @@ Result: Each sprint shows a single bar with priority levels stacked.
 
 ## 2D Line Chart
 
+![2D Line Chart](/images/dashboard-charts/Custom%20Charts/Chart%20Types/2d-line-chart.png)
+
 ### When to Use
 
 * Comparing multiple trends simultaneously
@@ -511,12 +523,16 @@ Result: Separate lines for Stories, Bugs, and Tasks on the same time axis.
 
 ## Table Chart (1D)
 
+![Table Chart (1D)](/images/dashboard-charts/Custom%20Charts/Chart%20Types/1d-table-chart.png)
+
 ### When to Use
 
 * Displaying exact numbers
 * When precision matters more than visualization
 
 ## 2D Table Chart
+
+![2D Table Chart](/images/dashboard-charts/Custom%20Charts/Chart%20Types/2d-table-chart.png)
 
 ### When to Use
 
@@ -529,6 +545,8 @@ Result: A table where rows are team members, columns are statuses, and cells sho
 
 ## Funnel Chart
 
+![Funnel Chart](/images/dashboard-charts/Custom%20Charts/Chart%20Types/funnel-chart.png)
+
 ### When to Use
 
 * Showing stage-based progression
@@ -540,6 +558,8 @@ Result: A table where rows are team members, columns are statuses, and cells sho
 * Sales pipeline stages
 
 ## Tile Chart
+
+![Tile Chart](/images/dashboard-charts/Custom%20Charts/Chart%20Types/tile-chart.png)
 
 ### When to Use
 
@@ -558,6 +578,8 @@ Result: A table where rows are team members, columns are statuses, and cells sho
           title: "Field Segments",
           content: `The "Chart By" setting determines how your data is grouped and displayed. This is the most important configuration for any chart.
 
+![Field Segments](/images/dashboard-charts/Custom%20Charts/Field%20Segments/field-segments.png)
+
 ## What is "Field"?
 
 "Field" defines how your issues are categorized into segments (slices, bars, lines, or rows depending on chart type).
@@ -573,6 +595,8 @@ Result: A table where rows are team members, columns are statuses, and cells sho
 
 ## Chart By Options
 
+![Chart By Option](/images/dashboard-charts/Custom%20Charts/Field%20Segments/chart-by-option.png)
+
 You have three ways to define segments:
 
 | **Option** | **Description** | **Best For** |
@@ -587,6 +611,8 @@ Select any Jira field to group your data. Segments are automatically created for
 
 ### Common Fields
 
+![Common Fields](/images/dashboard-charts/Custom%20Charts/Field%20Segments/common-fields.png)
+
 | **Field** | **Creates Segments For** |
 | --- | --- |
 | Status | Each workflow status |
@@ -598,6 +624,8 @@ Select any Jira field to group your data. Segments are automatically created for
 | Sprint | Each sprint (active, future, closed) |
 
 ## Option 2: Grouping by Custom JQL
+
+![Custom JQL Field](/images/dashboard-charts/Custom%20Charts/Field%20Segments/custom-jql-field.png)
 
 Define your own segments using JQL queries. This gives you complete control over how data is grouped.
 
@@ -615,21 +643,31 @@ Define your own segments using JQL queries. This gives you complete control over
 
 ### Renaming Segments
 
+![Renaming Segments](/images/dashboard-charts/Custom%20Charts/Field%20Segments/renaming-segments.png)
+
 Click on the segment name to edit it. This changes the label shown in the chart without affecting the data.
 
 ### Reordering Segments
+
+![Reordering Segments](/images/dashboard-charts/Custom%20Charts/Field%20Segments/reordering-segments.png)
 
 Drag and drop segments to change their order in the chart.
 
 ### Showing/Hiding Segments
 
+![Showing/Hiding Segments](/images/dashboard-charts/Custom%20Charts/Field%20Segments/showing-hiding-segments.png)
+
 Toggle the visibility icon to show or hide segments. Hidden segments are not included in calculations.
 
 ### Changing Segment Colors
 
+![Changing Segment Colors](/images/dashboard-charts/Custom%20Charts/Field%20Segments/changing-segments-colors.png)
+
 Click the color swatch to open the color picker.
 
 ## Ordering Options
+
+![Ordering Options](/images/dashboard-charts/Custom%20Charts/Field%20Segments/ordering-options.png)
 
 | **Option** | **Sorts By** |
 | --- | --- |
@@ -645,6 +683,8 @@ Click the color swatch to open the color picker.
           title: "Group By Segments 2D",
           content: `
 Add a second dimension to your charts with the "Group By" feature, available for Grouped Bar, Stacked Bar, 2D Line, and 2D Table charts.
+
+![Group By 2D](/images/dashboard-charts/Custom%20Charts/Group%20By%20Segments%202D/group-by-2d.png)
 
 ## What is "Group By"?
 
@@ -679,6 +719,8 @@ Group By = Columns/Series (multiple bars/lines)
 
 ### Grouped Bar Example
 
+![Grouped Bar Example](/images/dashboard-charts/Custom%20Charts/Group%20By%20Segments%202D/grouped-bar-eg.png)
+
 | **Setting** | **Value** |
 | --- | --- |
 | Field By | Status |
@@ -687,6 +729,8 @@ Group By = Columns/Series (multiple bars/lines)
 
 ### Stacked Bar Example
 
+![Stacked Bar Example](/images/dashboard-charts/Custom%20Charts/Group%20By%20Segments%202D/stacked-bar-eg.png)
+
 | **Setting** | **Value** |
 | --- | --- |
 | Field By | Status |
@@ -694,6 +738,8 @@ Group By = Columns/Series (multiple bars/lines)
 | Result | Each Status shows priorities stacked in a single bar |
 
 ### 2D Table Example
+
+![2D Table Example](/images/dashboard-charts/Custom%20Charts/Group%20By%20Segments%202D/2d-table-eg.png)
 
 | **Setting** | **Value** |
 | --- | --- |
@@ -827,6 +873,8 @@ Control how your Custom Chart looks: formatting, tooltips, labels, layout, and e
 
 ## Where to find it
 
+![Display Options](/images/dashboard-charts/Custom%20Charts/Display%20Options/display-options.png)
+
 * Open a Custom Chart gadget
 * Click Edit
 * Go to the Display Options tab
@@ -841,6 +889,8 @@ Control how your Custom Chart looks: formatting, tooltips, labels, layout, and e
 
 ## General settings (available across chart types)
 
+![General Settings](/images/dashboard-charts/Custom%20Charts/Display%20Options/general-settings.png)
+
 | Setting | What it does | Default |
 | --- | --- | --- |
 | Date format | Controls how dates appear in charts/tooltips where dates are shown. | 20 Jan 2021 (DD Mon YYYY) |
@@ -853,6 +903,8 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 
 ## Pie / Funnel charts (Display Options)
 
+![Pie / Funnel Display Options](/images/dashboard-charts/Custom%20Charts/Display%20Options/pie-funnel-display-options.png)
+
 ### Chart options
 
 | Setting | What it does | Default |
@@ -864,12 +916,16 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 
 ### Labels
 
+![Labels](/images/dashboard-charts/Custom%20Charts/Display%20Options/labels.png)
+
 | Setting | What it does | Default |
 | --- | --- | --- |
 | Heading | Heading label shown with the chart/legend area. | Blank |
 | Count label | Label for count values (ex: "Issues", "Tickets"). | Issues |
 
 ### Legend display
+
+![Legends](/images/dashboard-charts/Custom%20Charts/Display%20Options/legends.png)
 
 | Setting | What it does | Default |
 | --- | --- | --- |
@@ -880,6 +936,8 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 **Example (Pie):** If you want quick context without clicking, set **Display on hover = Count / %** and **% Places Control = 1**.
 
 ## Bar charts (Bar / Grouped Bar / Stacked Bar)
+
+![Bar Chart Settings](/images/dashboard-charts/Custom%20Charts/Display%20Options/bar-chart-settings.png)
 
 ### Chart options
 
@@ -895,6 +953,8 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 
 ### Axis & label
 
+![Axis and Labels](/images/dashboard-charts/Custom%20Charts/Display%20Options/axis-and-labels.png)
+
 | Setting | What it does | Default |
 | --- | --- | --- |
 | Show y-axis label | Toggles Y-axis label. | On |
@@ -906,7 +966,11 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 
 **Example (Bar):** To display distribution instead of raw totals: set **Y-axis unit = %**, enable **Show % labels above bars**, and keep **% Places Control = 1**.
 
+![Bar Distribution Example](/images/dashboard-charts/Custom%20Charts/Display%20Options/bar-distribution-eg.png)
+
 ## Line charts (Line / Line 2D)
+
+![Line Chart Options](/images/dashboard-charts/Custom%20Charts/Display%20Options/line-chart-options.png)
 
 ### Chart options
 
@@ -932,6 +996,8 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 | Y-axis unit | Axis unit: Count or %. | Count |
 
 ## Table charts (Table / Table 2D)
+
+![Table Chart Options](/images/dashboard-charts/Custom%20Charts/Display%20Options/table-chart-options.png)
 
 ### Chart options
 
@@ -962,6 +1028,8 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 
 ## Tile chart
 
+![Tile Chart Options](/images/dashboard-charts/Custom%20Charts/Display%20Options/tile-chart-options.png)
+
 ### Chart options
 
 | Setting | What it does | Default |
@@ -982,6 +1050,8 @@ If export is disabled by admin, the toggle will show **"Disabled by admin"** and
 
 **Example (Tiles):** For compact widgets, use **Max tiles per row = 4**, **Limit rows = 2**, and **Display = Count / %**.
 
+![Tile Chart Example](/images/dashboard-charts/Custom%20Charts/Display%20Options/tile-chart-eg.png)
+
 ## Quick tips
 
 * Keep **% Places Control = 0-1** for clean dashboards.
@@ -998,6 +1068,8 @@ Use Templates to start a Custom Chart faster with a ready-made chart setup. Temp
 
 ## Where to find it
 
+![Where to Find Templates](/images/dashboard-charts/Custom%20Charts/Templates/where-to-find-templates.png)
+
 * Open a Custom Chart gadget.
 * Click Edit.
 * Use the Templates option from the chart header or title area.
@@ -1012,6 +1084,8 @@ Use Templates to start a Custom Chart faster with a ready-made chart setup. Temp
 
 ## What gets applied when you use a template
 
+![Template Applied](/images/dashboard-charts/Custom%20Charts/Templates/template-applied.png)
+
 | **Area** | **What the template applies** | **Why it matters** |
 | --- | --- | --- |
 | Chart setup | Chart title, chart type, main field, and group by field when defined in the template. | The basic report layout is created for you. |
@@ -1019,6 +1093,10 @@ Use Templates to start a Custom Chart faster with a ready-made chart setup. Temp
 | Starter labels | Starter labels used by the template where needed. | Users get a readable chart immediately and can refine it later. |
 
 ## Template catalog for Custom Charts
+
+![Templates Catalog](/images/dashboard-charts/Custom%20Charts/Templates/templates-catalog.png)
+
+![Read Each Template](/images/dashboard-charts/Custom%20Charts/Templates/read-each-template.png)
 
 | **Template** | **Chart type** | **Main field** | **Group By** | **What it creates** | **Best use** |
 | --- | --- | --- | --- | --- | --- |

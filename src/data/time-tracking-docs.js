@@ -1411,6 +1411,7 @@ The Capacity Planner is a timesheet-style view that shows how team workload is d
 
 Capacity Planner & Insight → **Capacity Planner** → click **Create New Planner** or open a saved plan from the sidebar
 
+![Step 1](/time-tracking-imgs/capacity/planner/capacityResourceFilter.png)
 ## Creating a New Plan
 
 1. Click **Create New Planner**
@@ -1430,6 +1431,9 @@ Capacity Planner & Insight → **Capacity Planner** → click **Create New Plann
 | **Estimate columns** | Hours per date period (original estimate and remaining) |
 | **Date columns** | One column per day/week/month based on view mode |
 | **Total row** | Aggregates hours across all rows |
+
+![Step 2](/time-tracking-imgs/capacity/planner/capacityPlannerTable.png)
+
 
 ## Grouping Options
 
@@ -1469,6 +1473,8 @@ The Analytics Dashboard provides a four-tab view of team workload health, giving
 
 Capacity Planner & Insight → **Analytics Dashboard**
 
+![Step 3](/time-tracking-imgs/capacity/analytics/analyticsScope.png)
+
 ## Setting Scope
 
 Before data loads, you must configure the scope:
@@ -1476,6 +1482,9 @@ Before data loads, you must configure the scope:
 2. Select **Project(s)** and **Date Range**
 3. Optionally add **Users** or **Teams** filters
 4. Click **Apply**
+
+![Step 4](/time-tracking-imgs/capacity/analytics/analyticsTable.png)
+
 
 ## Tab 1 - Team Allocation
 
@@ -1595,6 +1604,8 @@ The Capacity Report provides a structured tabular breakdown of available hours, 
 
 Capacity Planner & Insight → **Capacity Report**
 
+![Step 5](/time-tracking-imgs/capacity/Report/ConfigureReport.png)
+
 ## Configuring the Report
 
 | Control | Options |
@@ -1609,6 +1620,8 @@ Capacity Planner & Insight → **Capacity Report**
 
 Click **Apply** after setting all controls.
 
+![Step 6](/time-tracking-imgs/capacity/Report/CustomFilter.png)
+
 ## Reading the Report
 
 | Column | Meaning |
@@ -1618,6 +1631,8 @@ Click **Apply** after setting all controls.
 | **Estimated** | Sum of remaining estimates on assigned open issues |
 | **Logged** | Actual hours logged via Jira worklogs |
 | **Allocation %** | Estimated ÷ Available × 100 - higher means more committed |
+
+![Step 7](/time-tracking-imgs/capacity/Report/DetailedReport.png)
 
 ### Allocation Interpretation
 

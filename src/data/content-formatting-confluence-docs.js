@@ -1428,6 +1428,8 @@ Deletions via the Attachment Center are permanent. Confluence does not have a re
           title: "Attachment Center Dashboard",
           content: `# Attachment Center Dashboard
 
+<img src="/images/content-formatting-assets/attachment-center-dashboard.png" alt="Attachment Center Dashboard screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What You See on the Dashboard
 
 The Attachment Center Dashboard is the main overview screen that gives Confluence space administrators an at-a-glance picture of their space's attachment health.
@@ -1479,6 +1481,8 @@ The activity chart plots attachment uploads over the selected time period (7 day
           slug: "attachment-bulk-actions",
           title: "Bulk Actions",
           content: `# Bulk Actions
+
+<img src="/images/content-formatting-assets/attachment-bulk-actions.png" alt="Bulk Actions screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
 
 ## What Are Bulk Actions?
 
@@ -1538,6 +1542,8 @@ To work with attachments across multiple pages of results:
           slug: "attachment-filters-sorting",
           title: "Filters & Sorting",
           content: `# Filters & Sorting
+
+<img src="/images/content-formatting-assets/attachment-filters-sorting.png" alt="Filters & Sorting screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
 
 ## Overview
 
@@ -1600,6 +1606,8 @@ Saved presets appear in the **Presets** dropdown at the top of the filter panel.
           slug: "attachment-audit-logs",
           title: "Audit Logs",
           content: `# Audit Logs
+
+<img src="/images/content-formatting-assets/attachment-audit-logs.png" alt="Audit Logs screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
 
 ## What Are Audit Logs?
 

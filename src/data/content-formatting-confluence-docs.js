@@ -104,6 +104,8 @@ The app is actively updated. Check the Atlassian Marketplace listing for the lat
           title: "Installation & Setup",
           content: `# Installation & Setup
 
+<img src="/images/content-formatting-assets/installation-setup.png" alt="Installation & Setup screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## Prerequisites
 
 Before installing, confirm:
@@ -309,6 +311,8 @@ Users with page-read permission can still access all content via the Confluence 
           title: "Tab Navigation Overview",
           content: `# Advanced Content Navigation
 
+<img src="/images/content-formatting-assets/tab-navigation.png" alt="Tab Navigation screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
+
 ## What Are Tab Macros?
 
 Tab macros let you display multiple sections of content inside a single Confluence page using a familiar tabbed interface. Readers click a tab label to switch views - no page navigation required.
@@ -490,6 +494,8 @@ If a page in the list is deleted, the tab for that page disappears silently. Che
           slug: "create-custom-tabs",
           title: "Create Custom Tabs",
           content: `# Create Custom Tabs Guide
+
+<img src="/images/content-formatting-assets/create-custom-tabs.png" alt="Create Custom Tabs screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
 
 ## What Are Custom Tabs?
 
@@ -1671,6 +1677,8 @@ Audit log entries are retained for **90 days** by default. Entries older than 90
           slug: "page-templates",
           title: "Page Templates",
           content: `# Page Templates
+
+<img src="/images/content-formatting-assets/page-templates.png" alt="Page Templates screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
 
 ## What Templates Are Included?
 

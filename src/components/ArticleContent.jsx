@@ -1,5 +1,5 @@
 "use client";
-import { useMemo } from "react";
+import { useMemo, useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
@@ -20,7 +20,41 @@ function nodeText(node) {
   return "";
 }
 
+function ImageZoomModal({ src, alt, onClose }) {
+  useEffect(() => {
+    const handleKey = (e) => { if (e.key === "Escape") onClose(); };
+    document.addEventListener("keydown", handleKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", handleKey);
+      document.body.style.overflow = "";
+    };
+  }, [onClose]);
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
+      onClick={onClose}
+    >
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 text-white bg-black/50 hover:bg-black/70 rounded-full w-9 h-9 flex items-center justify-center text-xl font-bold transition-colors"
+        aria-label="Close"
+      >
+        ×
+      </button>
+      <img
+        src={src}
+        alt={alt || ""}
+        className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg shadow-2xl"
+        onClick={(e) => e.stopPropagation()}
+      />
+    </div>
+  );
+}
+
 export default function ArticleContent({ content }) {
+  const [zoomedImage, setZoomedImage] = useState(null);
   // Pre-compute unique IDs keyed by 1-indexed line number (matches hast node.position.start.line).
   // This avoids mutable state during render, which breaks SSR/hydration parity in Strict Mode.
   const headingIdsByLine = useMemo(() => {
@@ -149,10 +183,25 @@ export default function ArticleContent({ content }) {
               {children}
             </blockquote>
           ),
+          img: ({ src, alt }) => (
+            <img
+              src={src}
+              alt={alt || ""}
+              onClick={() => setZoomedImage({ src, alt })}
+              className="rounded-lg border border-gray-200 shadow-sm my-4 cursor-zoom-in hover:shadow-md transition-shadow max-w-full"
+            />
+          ),
         }}
       >
         {content}
       </ReactMarkdown>
+      {zoomedImage && (
+        <ImageZoomModal
+          src={zoomedImage.src}
+          alt={zoomedImage.alt}
+          onClose={() => setZoomedImage(null)}
+        />
+      )}
     </div>
   );
 }

@@ -12,7 +12,8 @@ export const timeTrackingDocs = {
           title: "What is Time Tracking & PPM?",
           sideVideo: {
             src: "https://www.youtube.com/embed/H0dyqJKeAG8",
-            title: "Time Tracking, Resource Planning & Project Management - Product Introduction",
+            title:
+              "Time Tracking, Resource Planning & Project Management - Product Introduction",
           },
           content: `
 Time Tracking, Resource Planning & Project Management is a Jira Cloud app that gives your team full visibility into workload, delivery health, and priorities - all inside Jira.
@@ -78,15 +79,37 @@ Jira Cloud only. Built on Atlassian Forge - no external servers, no data exports
             playlistUrl:
               "https://www.youtube.com/watch?v=7z8NjUmLtOs&list=PLACoCS_WiVwR45unjH2D5MwcBjMFFflCL",
             videos: [
-              { id: "7z8NjUmLtOs", title: "Welcome to the Suite - App Overview" },
+              {
+                id: "7z8NjUmLtOs",
+                title: "Welcome to the Suite - App Overview",
+              },
               { id: "5SYYnnFm1AM", title: "Creating Your First Capacity Plan" },
               { id: "Q1BAH-t9v8w", title: "Analytics - Team Allocation Tab" },
-              { id: "2-3ixqxDUSc", title: "Analytics - Assignee Capacity, Deadlines & Status Aging" },
-              { id: "uOhItP5bAyE", title: "Saved Plans, Reports & Team Management" },
-              { id: "kxVBTmIYXGk", title: "Calendar View, Accounts & Settings" },
-              { id: "7vW46pVpNYE", title: "Logging Time - Timesheet & Reports" },
-              { id: "GYRiEwDA-yI", title: "Scoring Your Backlog - RICE, ICE & WSJF" },
-              { id: "c-9IhCJMjxI", title: "Custom Templates, Priority Matrix & Saved Reports" },
+              {
+                id: "2-3ixqxDUSc",
+                title:
+                  "Analytics - Assignee Capacity, Deadlines & Status Aging",
+              },
+              {
+                id: "uOhItP5bAyE",
+                title: "Saved Plans, Reports & Team Management",
+              },
+              {
+                id: "kxVBTmIYXGk",
+                title: "Calendar View, Accounts & Settings",
+              },
+              {
+                id: "7vW46pVpNYE",
+                title: "Logging Time - Timesheet & Reports",
+              },
+              {
+                id: "GYRiEwDA-yI",
+                title: "Scoring Your Backlog - RICE, ICE & WSJF",
+              },
+              {
+                id: "c-9IhCJMjxI",
+                title: "Custom Templates, Priority Matrix & Saved Reports",
+              },
               { id: "PyFomw9i06g", title: "Building a Portfolio Roadmap" },
               { id: "2CpKGScxWpg", title: "Gantt Chart and Saved Portfolios" },
               { id: "nRDKQcaISgQ", title: "Permissions, Roles & App Settings" },
@@ -1373,6 +1396,7 @@ The Capacity Planner is a timesheet-style view that shows how team workload is d
 
 Capacity Planner & Insight → **Capacity Planner** → click **Create New Planner** or open a saved plan from the sidebar
 
+![Step 1](/time-tracking-imgs/capacity/planner/capacityResourceFilter.png)
 ## Creating a New Plan
 
 1. Click **Create New Planner**
@@ -1392,6 +1416,9 @@ Capacity Planner & Insight → **Capacity Planner** → click **Create New Plann
 | **Estimate columns** | Hours per date period (original estimate and remaining) |
 | **Date columns** | One column per day/week/month based on view mode |
 | **Total row** | Aggregates hours across all rows |
+
+![Step 2](/time-tracking-imgs/capacity/planner/capacityPlannerTable.png)
+
 
 ## Grouping Options
 
@@ -1431,6 +1458,8 @@ The Analytics Dashboard provides a four-tab view of team workload health, giving
 
 Capacity Planner & Insight → **Analytics Dashboard**
 
+![Step 3](/time-tracking-imgs/capacity/analytics/analyticsScope.png)
+
 ## Setting Scope
 
 Before data loads, you must configure the scope:
@@ -1438,6 +1467,9 @@ Before data loads, you must configure the scope:
 2. Select **Project(s)** and **Date Range**
 3. Optionally add **Users** or **Teams** filters
 4. Click **Apply**
+
+![Step 4](/time-tracking-imgs/capacity/analytics/analyticsTable.png)
+
 
 ## Tab 1 - Team Allocation
 
@@ -1557,6 +1589,8 @@ The Capacity Report provides a structured tabular breakdown of available hours, 
 
 Capacity Planner & Insight → **Capacity Report**
 
+![Step 5](/time-tracking-imgs/capacity/Report/ConfigureReport.png)
+
 ## Configuring the Report
 
 | Control | Options |
@@ -1571,6 +1605,8 @@ Capacity Planner & Insight → **Capacity Report**
 
 Click **Apply** after setting all controls.
 
+![Step 6](/time-tracking-imgs/capacity/Report/CustomFilter.png)
+
 ## Reading the Report
 
 | Column | Meaning |
@@ -1580,6 +1616,8 @@ Click **Apply** after setting all controls.
 | **Estimated** | Sum of remaining estimates on assigned open issues |
 | **Logged** | Actual hours logged via Jira worklogs |
 | **Allocation %** | Estimated ÷ Available × 100 - higher means more committed |
+
+![Step 7](/time-tracking-imgs/capacity/Report/DetailedReport.png)
 
 ### Allocation Interpretation
 
@@ -4060,7 +4098,11 @@ We read all community posts and emails. If you have built something interesting 
 
 export function getAllArticles(docs) {
   return docs.categories.flatMap((cat) =>
-    cat.articles.map((article) => ({ ...article, categoryId: cat.id, categoryTitle: cat.title }))
+    cat.articles.map((article) => ({
+      ...article,
+      categoryId: cat.id,
+      categoryTitle: cat.title,
+    })),
   );
 }
 

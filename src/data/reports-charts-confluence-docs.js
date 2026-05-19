@@ -1,58 +1,178 @@
 export const reportsChartsConfluenceDocs = {
   appSlug: "reports-charts-confluence",
   categories: [
+    // ═══════════════════════════════════════════════════════════════
+    // 1. GETTING STARTED
+    // ═══════════════════════════════════════════════════════════════
     {
       id: "getting-started",
       title: "Getting Started",
       articles: [
         {
-          slug: "get-started-intro",
-          title: "Get Started",
-          content: `Everything you need to build your first report in under 5 minutes
+          slug: "what-is-reports-charts",
+          title: "What is Reports & Charts for Confluence?",
+          sideVideo: {
+            src: "https://www.youtube.com/embed/oD5evunAQok",
+            title: "Reports, Charts, Templates, CQL & Export for Confluence — Product Overview",
+          },
+          content: `# What is Reports, Charts, Templates, CQL & Export for Confluence?
 
-| **Subpage** | **What you will find** |
+What Reports, Charts, Templates, CQL & Export for Confluence is and what it can do for you.
+
+Reports, Charts, Templates, CQL & Export for Confluence is a macro-based reporting app that lets you build live, dynamic reports inside Confluence pages — without scripts or external tools.
+
+<!--VIDEO_BREAK-->
+
+## Key Capabilities
+
+| **Capability** | **Description** |
 | --- | --- |
-| Quick Start Guide | Step-by-step guide to build and publish your first report |
-| Data Source | Spaces drill-down vs Custom CQL — when to use each |
-| Expansions | What expansions are, how to load them, and best practices |
-| Report Views | Overview of Table, List, Grid, Paragraph, and Chart views |
-| Columns & Filters | Block types, column setup, filter operators and logic |
-| Templates & Import/Export | Pre-built templates, JSON recipes, and export options |
-| Macro Editor UI Tour | Visual walkthrough of every panel and tab in the macro editor |`,
+| Data Source Selection | Spaces drill-down (visual) or Custom CQL (query-based) for flexible content targeting |
+| Metadata Loading | Load expansion groups to make fields available for columns, filters, and charts |
+| Display Options | Table, List, Paragraph, Grid, or Charts — choose the format that fits your audience |
+| Columns & Filters | Define what data fields appear and refine which records are shown |
+| Templates | 35 pre-built tabular + 17 chart templates for instant setup |
+| Import / Export | Share report setups as JSON recipes across teams and spaces |
+| Raw View | Inspect underlying JSON data and metadata structure for debugging |
+| Explore | Discover available metadata fields with types and sample values |
+| Live Preview | See changes instantly as you configure — no save needed |
+| Export | Download report data as CSV or JSON for offline analysis |
+| Result Limit + Pagination | Control dataset size and navigate large reports efficiently |
+
+## Who Is It For?
+
+- **Confluence page authors** who need live, up-to-date reporting without leaving Confluence
+- **Space administrators** who want governance dashboards and content audits
+- **Team leads and managers** who need activity summaries and contributor tracking
+- **Non-technical users** who prefer visual configuration over scripting or external tools
+
+## What Makes It Powerful
+
+* No coding required — visual, user-friendly configuration interface
+* Live & dynamic — reports update automatically as Confluence content changes
+* Flexible — multiple views and extensive customization options
+* Shareable — reuse and standardize configurations across teams and spaces
+* Permission-aware — respects Confluence access rights
+* Efficient — built-in pagination and result limits for performance
+
+## Platform
+
+Confluence Cloud only. Installed as a Confluence macro app via the Atlassian Marketplace — no external servers, no data exports, no infrastructure to maintain.`,
         },
         {
-          slug: "quick-start-guide",
+          slug: "demo-video",
+          title: "Demo Videos & Walkthroughs",
+          content: `5 step-by-step tutorials covering every feature — click any video to start watching, or use the arrows to go through them in order. New to the app? Start with the [Product Introduction](/apps/reports-charts-confluence/what-is-reports-charts) first.`,
+          videoGallery: {
+            playlistUrl: "https://www.youtube.com/watch?v=zTSl0fVYVVA&list=PLACoCS_WiVwT1Rkz4Z29xzo8jQbkx9OZX",
+            videos: [
+              { id: "zTSl0fVYVVA", title: "App Overview, Data Sources & CQL Editor" },
+              { id: "sDyyDFBX-hE", title: "Expression Panel, Columns & Block Types" },
+              { id: "z3z7i2VWwBI", title: "Report Layouts & Charts" },
+              { id: "46zsIYO6r5A", title: "Filtering, Explore Mode and Raw JSON" },
+              { id: "DXGIXkgv8uQ", title: "Templates, Import/Export and Save to Confluence" },
+            ],
+          },
+        },
+        {
+          slug: "installation-setup",
+          title: "Installation & Setup",
+          content: `# Installation & Setup
+
+Install Reports, Charts, Templates, CQL & Export for Confluence from the Atlassian Marketplace in a few steps — no servers, no configuration files, no infrastructure required.
+
+## Prerequisites
+
+Before installing, confirm you have:
+
+| **Requirement** | **Detail** |
+| --- | --- |
+| Confluence Cloud site | The app supports Confluence Cloud only (not Data Center or Server) |
+| Space Admin or Site Admin role | Required to install apps from the Marketplace |
+| Atlassian account | Required to accept app permissions during installation |
+
+## Step-by-Step Installation
+
+### Step 1 — Open Confluence Apps
+
+1. Log in to your Confluence Cloud site.
+2. Click the **Apps** menu in the top navigation bar.
+3. Select **Find new apps** from the dropdown.
+
+### Step 2 — Search for the App
+
+1. In the Atlassian Marketplace search bar, type: \`Reports, Charts, Templates, CQL & Export for Confluence\`
+2. Locate the app published by **Clovity** in the search results.
+3. Click the app listing to open the detail page.
+
+### Step 3 — Install the App
+
+1. Click the **Try it free** or **Buy now** button on the Marketplace listing.
+2. Review the app permissions — the app requires read access to Confluence content (spaces, pages, attachments, users) to build reports.
+3. Click **Accept & install** to confirm.
+4. Wait for the installation to complete — this typically takes under 30 seconds.
+
+### Step 4 — Verify Installation
+
+1. Open any Confluence page and click **Edit**.
+2. In the editor, type \`/\` to open the macro insert menu.
+3. Search for **Reports** — you should see the macro appear in the results.
+4. If the macro appears, installation was successful.
+
+## After Installation
+
+Once installed, the app is available to all users on your Confluence Cloud site. No additional configuration is required to start using the macro — simply insert it on any page.
+
+| **Next Step** | **Where to Go** |
+| --- | --- |
+| Build your first report | See [Quick Start Guide](/apps/reports-charts-confluence/quick-start) |
+| Understand permissions | See [Permissions & Access](/apps/reports-charts-confluence/permissions-access) |
+| Explore all features | See [Features](/apps/reports-charts-confluence/features-intro) |
+
+## Troubleshooting Installation
+
+| **Issue** | **Solution** |
+| --- | --- |
+| App not appearing in macro menu | Wait a few minutes and refresh — Confluence may cache the macro list |
+| Permission denied during install | Confirm you have Space Admin or Site Admin role on the site |
+| App not found in Marketplace | Try searching just "Reports Charts Clovity" or browse by category |
+| Installation fails | Check your Atlassian Cloud subscription level and try again |`,
+        },
+        {
+          slug: "quick-start",
           title: "Quick Start Guide",
-          content: `Build your first report in under 5 minutes. Follow these four steps.
+          content: `# Quick Start Guide
+
+Build your first report in under 5 minutes. Follow these four steps.
 
 ## Step 1 — Open the Macro Editor
 
-1. Open any Confluence page and click the Edit button.
-2. Type / to open the macro insert menu.
-3. Search for 'Reports, Charts, Templates, CQL & Export for Confluence' and click to insert.
+1. Open any Confluence page and click the **Edit** button.
+2. Type \`/\` to open the macro insert menu.
+3. Search for **Reports, Charts, Templates, CQL & Export for Confluence** and click to insert.
 4. The macro editor opens automatically.
 
 ## Step 2 — Configure the Report
 
 ### Choose Your Data Source
 
-Select Spaces (recommended for beginners) or Custom CQL from the Source dropdown in the header. Specify your source value — select spaces or enter a CQL query.
+Select **Spaces** (recommended for beginners) or **Custom CQL** from the Source dropdown in the header. Specify your source value — select spaces or enter a CQL query.
 
 ### Select a View
 
-Choose Table from the Report Type dropdown. Table view is easiest to understand for first-time users. Other options: List, Paragraph, Grid, Charts.
+Choose **Table** from the Report Type dropdown. Table view is easiest to understand for first-time users. Other options: List, Paragraph, Grid, Charts.
 
 ### Add Expansions
 
-In the left panel, select metadata groups. Load only the metadata you need. Common starting point: metadata and version — these cover most common fields.
+In the left panel, select metadata groups. Load only the metadata you need. Common starting point: **metadata** and **version** — these cover most common fields.
 
 ### Define Columns
 
-Navigate to the Columns tab in the right panel. Click + Add New Column, set a label, and pick a data field. Apply formatting as needed.
+Navigate to the **Columns** tab in the right panel. Click **+ Add New Column**, set a label, and pick a data field. Apply formatting as needed.
 
 ### Apply Filters
 
-In the center panel, use the Filter section to narrow results. Each filter row narrows results further (AND logic). Click + Add filter to add a row. Use Delete (trash) to remove, or Clear all to reset.
+In the center panel, use the Filter section to narrow results. Each filter row narrows results further (AND logic). Click **+ Add filter** to add a row. Use Delete (trash) to remove, or **Clear all** to reset.
 
 ### Set Result Limit
 
@@ -64,14 +184,671 @@ The center panel shows your report results in real-time. Verify data looks corre
 
 ## Step 4 — Save
 
-Click Save to publish the report to your Confluence page. The macro editor closes and your live report appears on the page.
+Click **Save** to publish the report to your Confluence page. The macro editor closes and your live report appears on the page.
 
 ## Quick Start Tips
 
-* Start with a pre-built template for faster setup — navigate to the Templates tab first
-* Use Table view for your first report — it's easiest to understand
+* Start with a pre-built template for faster setup — navigate to the **Templates** tab first
+* Use Table view for your first report — it is the easiest to understand
 * Load minimal expansions initially, add more as needed
-* Check Live Preview frequently to validate changes`,
+* Check Live Preview frequently to validate changes
+
+## What's Next?
+
+| **Topic** | **Where to Go** |
+| --- | --- |
+| Data source options | [Data Source](/apps/reports-charts-confluence/data-source) |
+| Understanding expansions | [Expansions](/apps/reports-charts-confluence/expansions) |
+| All view types | [Report Views](/apps/reports-charts-confluence/report-views) |
+| Columns and filters | [Columns & Filters](/apps/reports-charts-confluence/columns-filters) |
+| Pre-built templates | [Templates & Import/Export](/apps/reports-charts-confluence/templates-import-export) |`,
+        },
+        {
+          slug: "system-requirements",
+          title: "System Requirements",
+          content: `# System Requirements
+
+Reports, Charts, Templates, CQL & Export for Confluence is a Confluence Cloud macro app. Review the requirements below before installing.
+
+## Platform Requirements
+
+| **Requirement** | **Supported** | **Not Supported** |
+| --- | --- | --- |
+| Confluence Cloud | Yes — fully supported | — |
+| Confluence Data Center | No | Data Center is not supported |
+| Confluence Server | No | Server (on-premise) is not supported |
+| Jira Cloud | No — this is a Confluence app | Jira is a separate product |
+
+> **Important:** This app is Confluence Cloud exclusive. If you are on Confluence Data Center or Server, this app will not be available in your Marketplace.
+
+## Browser Requirements
+
+The app works in all modern, evergreen browsers. No browser extensions or plugins are required.
+
+| **Browser** | **Support** |
+| --- | --- |
+| Google Chrome (latest) | Fully supported |
+| Mozilla Firefox (latest) | Fully supported |
+| Microsoft Edge (latest, Chromium-based) | Fully supported |
+| Apple Safari (latest) | Fully supported |
+| Internet Explorer | Not supported |
+
+For best performance, use the latest stable version of your preferred browser.
+
+## Confluence Subscription
+
+| **Confluence Plan** | **App Available?** |
+| --- | --- |
+| Confluence Cloud Free | Available (subject to Marketplace free trial) |
+| Confluence Cloud Standard | Fully supported |
+| Confluence Cloud Premium | Fully supported |
+| Confluence Cloud Enterprise | Fully supported |
+
+## User Permissions Required
+
+| **Action** | **Minimum Permission Required** |
+| --- | --- |
+| Install the app | Space Admin or Site Admin |
+| Insert the macro on a page | Edit permission on the Confluence page |
+| View a report (published page) | Read permission on the Confluence page and its spaces |
+| Configure macro settings | Edit permission on the page containing the macro |
+
+## Data & Privacy
+
+* All report data is fetched live from your Confluence Cloud instance at render time
+* No report data is stored outside of Atlassian infrastructure
+* The app respects all Confluence content permissions — users only see content they are authorized to access
+* Compatible with Atlassian data residency settings`,
+        },
+        {
+          slug: "permissions-access",
+          title: "Permissions & Access",
+          content: `# Permissions & Access
+
+Reports, Charts, Templates, CQL & Export for Confluence uses Confluence's native permission model. No additional permission management is required — the app works within your existing Confluence access controls.
+
+## Installation Permissions
+
+| **Role** | **Can Install App?** |
+| --- | --- |
+| Confluence Site Admin | Yes |
+| Confluence Space Admin | Yes (via Manage Apps in Confluence settings) |
+| Regular Confluence user | No — must request install from an admin |
+
+## Macro Usage Permissions
+
+Once the app is installed, any Confluence user with page edit access can insert the macro.
+
+| **Action** | **Who Can Do It** |
+| --- | --- |
+| Insert the macro on a page | Any user with Edit permission on that page |
+| Configure the macro (open editor) | Any user with Edit permission on that page |
+| View a published report | Any user with Read permission on the page |
+| Export report data (CSV/JSON) | Any user who can view the published report |
+
+## How Report Data Visibility Works
+
+Reports, Charts, Templates, CQL & Export for Confluence fully respects Confluence content restrictions. The data returned in a report is always scoped to what the **viewing user** is permitted to access.
+
+| **Scenario** | **Result** |
+| --- | --- |
+| Viewer has access to all queried spaces | Full results displayed |
+| Viewer has access to only some spaces | Only permitted content appears |
+| Viewer has no access to a space | That space's content is excluded entirely |
+| Page has content restrictions | Restricted pages are excluded from results |
+
+> **Important:** Two users viewing the same report on the same page may see different results — each sees only the content they are authorized to access.
+
+## Confluence Groups & Conditional Visibility
+
+If you need to show different reports to different user groups (e.g., admins vs. contributors), use Confluence's native **Page Restrictions** or **Space Permissions** to control who can view which page. There is no app-level group configuration required.
+
+### Recommended Setup for Role-Based Reporting
+
+1. Create separate Confluence pages for different audiences (e.g., an admin dashboard page, a contributor overview page).
+2. Apply Confluence page restrictions to limit who can view each page.
+3. Insert the appropriate report macro on each page.
+4. Each user group sees only the report page they are permitted to access.
+
+## No Admin Panel Required
+
+The app has no separate admin panel or settings screen. All configuration is done directly in the macro editor on each Confluence page — no special admin access is needed to configure reports.`,
+        },
+      ],
+    },
+    // ═══════════════════════════════════════════════════════════════
+    // 2. CUSTOM TABULAR REPORT
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "custom-tabular-report",
+      title: "Custom Tabular Report",
+      articles: [
+        {
+          slug: "custom-tabular-report-intro",
+          title: "Custom Tabular Report",
+          content: `Four flexible layouts — Table, List, Grid, and Paragraph
+
+| **Subpage** | **What you will find** |
+| --- | --- |
+| Tabular Overview | When to use each view and how to choose the right one |
+| Table View | Spreadsheet-style rows and columns — the primary report type |
+| List View | One card per record — clean, human-readable output |
+| Grid View | Responsive card grid — visual dashboards and directories |
+| Paragraph View | Prose-style output — digests, summaries, newsletters |
+| Templates | All 35 pre-built tabular templates listed and described |`,
+        },
+        {
+          slug: "tabular-overview",
+          title: "Tabular Overview",
+          content: `Custom Tabular Report lets you display Confluence data in four flexible layouts — Table, List, Grid, and Paragraph. Each view is suited to a different audience and purpose, all powered by the same underlying data source and column configuration.
+
+## Available Views
+
+| **View** | **Layout Style** | **Best For** | **Supports Pagination** |
+| --- | --- | --- | --- |
+| Table | Rows and columns — spreadsheet-style | Audits, governance, structured data comparison | Yes |
+| List | One card per record — vertical list | Page indexes, team directories, readable inventories | Yes |
+| Grid | Card tiles in a responsive grid | Visual dashboards, profile directories, galleries | Yes |
+| Paragraph | Flowing prose — one block per record | Weekly digests, executive summaries, narrative reports | No |
+
+## What All Views Share
+
+* Same data source — Spaces drill-down or Custom CQL
+* Same expansions — load once, all views use the same metadata
+* Same column configuration — Columns tab applies across Table, List, Grid, and Paragraph
+* Same filters — filter rows apply to all tabular views
+* Live Preview — switch between views instantly in the macro editor
+* Result Limit + Pagination — control dataset size in all views
+
+## How to Choose the Right View
+
+| **If you want to...** | **Use This View** |
+| --- | --- |
+| Compare multiple fields side by side across many records | Table |
+| Show a clean, readable list where each item stands alone | List |
+| Present visual cards with images — like a team directory or gallery | Grid |
+| Create a narrative summary — readable prose, not a data table | Paragraph |
+
+## Switching Between Views
+
+1. Open the macro editor.
+2. Change the Report Type dropdown in the header.
+3. Live Preview updates instantly — no data reload needed.
+4. Save when satisfied with the selected view.
+
+**Note:** Charts (Bar, Pie, Line) are configured separately in the Custom Charts Report section and use a different axis/series configuration.`,
+        },
+        {
+          slug: "table-view",
+          title: "Table View",
+          content: `Table view displays Confluence data in rows and columns — a familiar spreadsheet-style layout. It is the primary and most versatile report type in Reports, Charts, Templates, CQL & Export for Confluence.
+
+## Key Features
+
+| **Feature** | **Description** |
+| --- | --- |
+| Column headers | Defined by your Columns tab — label, block type, and source field |
+| Sortable columns | Click any header to sort ascending or descending |
+| Inline search | Filter visible rows by keyword — no data reload |
+| CSV export | Download all visible columns and filtered data as a spreadsheet |
+| JSON export | Full data structure download for developers or integrations |
+| Pagination | Navigate large datasets with Previous/Next and page numbers |
+| Result Limit | Control how many rows appear per page |
+| All 6 block types | Basic, Image, Link, Collection, Regex, Text — all supported |
+
+## Column Block Types in Table View
+
+| **Block Type** | **What It Renders** | **Common Table Use Case** |
+| --- | --- | --- |
+| Basic | Plain text or number | Page ID, version number, space key, status |
+| Image | Inline image (size adjustable) | Profile picture of last editor, page thumbnail |
+| Link | Clickable hyperlink | Page title linking to the Confluence page |
+| Collection | Array/list joined by separator | Labels as comma-separated list, contributors |
+| Regex | Extracted or transformed text via pattern | Extracting version number from a title |
+| Text | Formatted text with prefix, suffix, truncation, fallback | Truncated excerpt, 'N/A' fallback for empty fields |
+
+## Configuring Table View
+
+1. Set Report Type to **Table** in the header dropdown.
+2. Load required expansions in the left panel.
+3. Open the **Columns** tab in the right panel.
+4. Click **+ Add New Column** — set Label, Block Type, and Source Field.
+5. Reorder columns by dragging the handle icon.
+6. Apply filters in the center panel to narrow results.
+7. Set Result Limit in the header.
+8. Review in Live Preview, then Save.
+
+## Export from Table View
+
+| **Format** | **How to Access** | **Best For** |
+| --- | --- | --- |
+| CSV | Export button → CSV | Excel, Google Sheets, stakeholder sharing |
+| JSON | Export button → JSON | Developer use, API integrations |
+| Config Recipe | Import tab → Copy JSON | Share report setup with team |
+
+**Best for:** Content audits, governance reports, compliance tracking, contributor tracking, stale content review, and any report that benefits from side-by-side field comparison.`,
+        },
+        {
+          slug: "list-view",
+          title: "List View",
+          content: `List view shows each Confluence content item as a single card in a clean vertical list. It is ideal for creating readable, human-friendly output — like a page index, task list, or simple directory.
+
+## Key Features
+
+| **Feature** | **Description** |
+| --- | --- |
+| Card-based layout | Each record occupies its own row as a standalone card |
+| Field labels inline | Column labels shown next to values for easy reading |
+| Image block support | Profile pictures or thumbnails render prominently in each card |
+| Link block support | Card titles or fields can be clickable links |
+| Pagination | Navigate large lists with Previous/Next controls |
+| Inline search | Filter visible items by keyword |
+
+## When to Use List View
+
+* Team or people directories — one card per person with name, role, profile picture
+* Task or action item lists — clean one-item-per-row layout
+* Content indexes — quick overview of pages with key metadata
+* Simple space inventories — lightweight listing without heavy table formatting
+* Anywhere a table feels too dense — List gives more breathing room per record
+
+## Configuring List View
+
+1. Set Report Type to **List** in the header dropdown.
+2. Load required expansions in the left panel.
+3. Open the **Columns** tab — configure columns the same way as Table view.
+4. Use Image block for profile pictures or thumbnails.
+5. Use Link block for clickable page titles or URLs.
+6. Apply filters and set Result Limit as needed.
+7. Review in Live Preview, then Save.
+
+**Best for:** Team directories, task lists, content indexes — anywhere each record should stand out as a single readable item rather than a row in a dense table.`,
+        },
+        {
+          slug: "grid-view",
+          title: "Grid View",
+          content: `Grid view displays each Confluence content item as a visual card in a responsive multi-column grid. It is ideal for dashboards, team directories with profile photos, and any report where visual browsing is more important than data comparison.
+
+## Key Features
+
+| **Feature** | **Description** |
+| --- | --- |
+| Responsive grid layout | Cards arrange in multiple columns and adapt to page width |
+| Image block — prominent | Images render as the card's visual focus (e.g. profile photo, thumbnail) |
+| Link block | Card title or image can be a clickable link to the Confluence page |
+| Pagination | Navigate large grids with Previous/Next controls |
+| Inline search | Filter visible cards by keyword |
+| All column types supported | Basic, Image, Link, Collection, Regex, Text |
+
+## When to Use Grid View
+
+* Team / people directories — profile photo + name + role in each card
+* Visual content galleries — page thumbnails or attachment images
+* Portfolio dashboards — visual showcase of projects or deliverables
+* Topic hubs — cards for each topic area with a preview image and link
+* Anywhere a visual, browsable layout is better than a row-based table
+
+## Configuring Grid View
+
+1. Set Report Type to **Grid** in the header dropdown.
+2. Load history expansion for profile picture fields.
+3. Open the **Columns** tab — add Image block as the first column for visual cards.
+4. Add Link block for the card title — set it to link to the Confluence page.
+5. Add Basic or Text block columns for supporting metadata (role, space, date).
+6. Apply filters and set Result Limit.
+7. Review in Live Preview, then Save.
+
+**Best for:** Team directories with profile photos, visual page catalogs, portfolio dashboards — any report where visual browsing matters more than side-by-side data comparison.`,
+        },
+        {
+          slug: "paragraph-view",
+          title: "Paragraph View",
+          content: `Paragraph view converts each Confluence content item into a readable text block — prose-style output instead of a table. It is ideal for narrative summaries, weekly digests, executive reports, and any context where readable text matters more than structured data.
+
+## Key Features
+
+| **Feature** | **Description** |
+| --- | --- |
+| Prose output | Each record becomes a readable paragraph, not a table row |
+| Column concatenation | Column values are joined together to form sentences |
+| Prefix & Suffix (Text block) | Add connecting words before/after field values to build natural sentences |
+| Fallback values | Show a default text when a field is empty |
+| No pagination | All records rendered sequentially as continuous text |
+| Inline search | Filter visible paragraphs by keyword |
+
+## When to Use Paragraph View
+
+* Weekly content digest — narrative summary of recent created/updated pages
+* Executive summaries — readable output for non-technical stakeholders
+* Newsletter-style reporting — blog posts or announcements in prose format
+* Change log summaries — each update described in a sentence
+* Anywhere a table feels too technical — Paragraph makes data human-readable
+
+## How to Build Readable Sentences
+
+Use the Text block type with Prefix and Suffix settings to construct natural-language sentences from field values.
+
+| **Column** | **Block Type** | **Prefix** | **Source Field** | **Suffix** | **Result** |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Link | — | title → _links.webui | — | Clickable page title |
+| 2 | Text | was last updated by | version.by.displayName | — | ...was last updated by John |
+| 3 | Text | on | version.when | . | ...on 12 Feb 2026. |
+
+## Configuring Paragraph View
+
+1. Set Report Type to **Paragraph** in the header dropdown.
+2. Load required expansions in the left panel.
+3. Open the **Columns** tab — add columns in the order they should appear in the sentence.
+4. Use Text block type — set Prefix and Suffix to add connective words.
+5. Set fallback values on Text blocks so empty fields show meaningful defaults.
+6. Apply filters and set Result Limit.
+7. Review in Live Preview — read the output as a human would.
+8. Save to your Confluence page.
+
+**Best for:** Weekly digests, executive summaries, newsletter-style reports, change logs — any audience that prefers reading over scanning a data table.`,
+        },
+        {
+          slug: "tabular-templates",
+          title: "Templates",
+          content: `Pre-built templates provide ready-to-use report configurations for common use cases. Templates save time and ensure consistent reporting patterns. All 35 templates are listed below in order.
+
+## How to Apply a Template
+
+1. Open the macro editor on any Confluence page.
+2. Navigate to the **Templates** tab in the right panel.
+3. Search by name or browse the list.
+4. Click a template — it auto-configures the entire report.
+5. Review results in Live Preview.
+6. Customize columns or filters if needed.
+7. Click **Save** to publish to your Confluence page.
+
+## Available Pre-built Templates
+
+| **#** | **Template Name** | **What It Shows** | **Objective** | **Best For** |
+| --- | --- | --- | --- | --- |
+| 1 | Pages grouped by selected labels | Pages filtered by chosen labels, showing page title + labels list | Quickly find and review all pages tagged with important labels | Governance for 'urgent/critical' pages, label cleanup, topic-based content tracking |
+| 2 | Page last update details | Each page with last editor and last edited date | Track ownership and most recent activity per page | Audit 'who changed what', stale content review, accountability reporting |
+| 3 | All comments with resolution status | Comments (inline + normal) with resolution status, author, modified date, excerpt | Track discussion items and unresolved feedback across Confluence | Review unresolved inline comments, discussion follow-ups, moderation/audit |
+| 4 | Blog posts overview | Table of blog posts with title + excerpt/summary | Quick overview of announcements/news posts | Company news digest, blog library, communications tracking |
+| 5 | Pages matching title keyword | Pages whose title contains a keyword (e.g., 'project') | Discover related pages without knowing exact names | Find 'Release Notes', 'Project', 'Design', 'Meeting Notes' pages fast |
+| 6 | Recently updated content across spaces | Latest modified pages/blogs across all spaces with space + last modified | Monitor recent activity globally | Weekly admin audit, adoption tracking, activity dashboards |
+| 7 | Content created by me | All pages/blogs/comments created by current user with type, contributors, excerpt | Personal contribution inventory | Performance reporting, personal dashboard, self-audit of work |
+| 8 | Pages updated this year | Pages modified after start of year + contributors | Measure this year's documentation activity | Annual reporting, review top active areas, contributor visibility |
+| 9 | Pages authored by me | Only pages created by current user, sorted by last modified + title | Personal page library and maintenance list | Clean up old pages you own, maintain your content set |
+| 10 | Page likes in current space | Pages in current space with like count | Identify popular/high-value pages | Highlight best docs, measure engagement, identify key references |
+| 11 | Attachments and images in current space | Attachments list with file name, parent page, file size, image preview | Audit attachments usage and storage | Storage cleanup, find large files, media inventory |
+| 12 | My recently updated pages | Pages last modified by current user with updated time | Track your latest edits | Daily/weekly work recap, 'what did I touch recently' |
+| 13 | Child pages with contributors and last editor | Child pages under current page with last editor, last modified, contributors | Manage a page tree with clear ownership/activity | Documentation hub maintenance, section owners, navigation governance |
+| 14 | Recently updated pages across all spaces | Pages sorted by last modified with space + friendly update time | Global page activity feed | Admin monitoring, knowledge base activity reporting |
+| 15 | Pages created in last 3 months | Pages created in last 12 weeks + last modified | Identify new content for review | Onboarding content review, new documentation QA, growth tracking |
+| 16 | Pages created this year | Pages created since start of year with created date | Measure content growth (new pages) | Annual documentation growth metrics, team output reporting |
+| 17 | Page creation vs last update timeline | Pages with both created date and latest update date | Understand lifecycle — fresh vs long-lived pages | Staleness analysis, maintenance planning, governance insights |
+| 18 | Pages by space and creator | Pages with space + original creator | Ownership tracking across spaces | Identify responsible teams/users, transfer ownership, audits |
+| 19 | Labels used in current space | Pages in current space + their labels | Label governance and taxonomy review | Standardize labels, remove duplicates, find untagged content |
+| 20 | Child pages of the current page | Child pages list with excerpt | Create quick index/summary of a section | Documentation landing pages, structured navigation, hub pages |
+| 21 | Recently created pages | Pages sorted by creation date (newest first) + created date | Spotlight newly created documentation | New content review queue, onboarding 'what's new' |
+| 22 | Pages Updated By a Specific User | Pages with last updated by + last updated date (version fields) | Track updates by a user (or team) for accountability | Reviewer workflow, contributor reports, audit trail |
+| 23 | Attachments Overview with Metadata | Table report of attachments with key metadata | Audit and manage files easily | Clean storage, find large/old files, track uploads |
+| 24 | Stale Pages – Detailed View | Pages not modified in 40+ days with space info, created/creator, last modified/modifier, page link | Full stale-content audit with enough fields to take action | Cleanup campaigns, compliance reviews, maintenance scheduling |
+| 25 | Content Created in Date Range | Content with type + created date + author | Report content created within a defined period | Monthly/quarterly reporting, content production tracking |
+| 26 | Attachments Coverage Summary | Pages with attachment counts and attachment paging metadata + link | Understand attachment coverage per page | Identify pages with heavy attachments, storage governance |
+| 27 | Owner vs Last Editor | Pages showing creator (owner) vs last updater + last updated time | Compare ownership vs active editors | Ownership reassignment, accountability checks, audit reporting |
+| 28 | Pages – IDs & ARIs | Pages with content ID, ARI, base64 ARI, type | Provide internal identifiers for integrations/debugging | API troubleshooting, migration scripts, support diagnostics |
+| 29 | Space & Page Status Audit | Pages with space type/status + page status + page link | Governance view for cleanup and standardization | Space lifecycle audits, ensure pages/spaces are 'current', compliance |
+| 30 | Pages – Link Formats Overview | Shows API link, standard web link, and short link for pages | Help users choose correct link format for sharing/integration | Documentation linking standards, automation/webhook references |
+| 31 | Blog Posts – Older than 30 Days | Blog posts created >30 days ago with space + last updated | Review older blogs for archival/cleanup | Content hygiene, outdated announcements review |
+| 32 | Content – Everything Except Pages | All content items where type != page (blogs, attachments, comments, etc.) | Audit non-page content across instance | Storage cleanup, attachment audits, content-type governance |
+| 33 | Blog Posts – Updated This Year | Blog posts modified since start of year with last updated + space key | Track active blog/news activity this year | Communications KPI, yearly reporting, stakeholder updates |
+| 34 | Weekly Updated Pages | Pages updated in last 7 days with space + last updated + excerpt | Weekly activity snapshot | Weekly digest, team status reporting, 'what changed' |
+| 35 | Today Updated Pages | Pages updated in last 24 hours with space + last updated + excerpt | Daily change tracker | Daily standups, release/change monitoring, fast review queue |
+
+## Template Benefits
+
+| **Benefit** | **What It Means** |
+| --- | --- |
+| Quick start | Ready-to-use configurations — zero manual setup needed |
+| Best practices | Proven report structures for the most common use cases |
+| Consistency | Standardized reporting patterns across teams and spaces |
+| Customizable | Use as a starting point — add, remove, or reorder columns freely after applying |
+| Unlockable | Templates are locked by default — click Edit in the center panel to modify |
+
+**Tip:** After applying a template, click the Edit button in the center panel to unlock it — then customize columns, filters, or data source to fit your exact needs.`,
+        },
+      ],
+    },
+    // ═══════════════════════════════════════════════════════════════
+    // 3. CUSTOM CHARTS REPORT
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "custom-charts-report",
+      title: "Custom Charts Report",
+      articles: [
+        {
+          slug: "custom-charts-report-intro",
+          title: "Custom Charts Report",
+          content: `Turn Confluence content into visual insights — Bar, Pie, and Line charts
+
+| **Subpage** | **What you will find** |
+| --- | --- |
+| Chart Overview | How charts work and how they are configured |
+| Chart Types | Bar, Pie, and Line — when to use each |
+| Chart Configuration | Step-by-step chart configuration and common patterns |
+| Chart Templates | All 17 pre-built chart templates listed and described |`,
+        },
+        {
+          slug: "chart-overview",
+          title: "Chart Overview",
+          content: `Reports, Charts, Templates, CQL & Export for Confluence Charts view turns Confluence content into visual insights by grouping results and applying a metric — so you can spot trends, activity, and distribution at a glance.
+
+## What Charts Do
+
+Charts group your Confluence data (by Space, Type, Author, Date, etc.) and apply a metric — usually Count — to produce a visual summary. Charts answer questions like 'How many pages per space?' or 'How has content grown month by month?'
+
+## Available Chart Types
+
+| **Chart Type** | **Best For** | **Example Use Case** |
+| --- | --- | --- |
+| Bar Chart | Comparing quantities across categories | Pages per space, top editors, label usage |
+| Pie Chart | Understanding composition or distribution | Content type mix, likes vs no likes |
+| Line Chart | Tracking change or trends over time | Pages created over time, daily updates |
+
+## How Charts Are Configured
+
+Charts use a separate configuration from tabular column settings. Key settings include:
+
+* Group By — the field used to bucket/categorize data (e.g., Space, Author, Type, Month)
+* Metric — what to measure per group (usually Count)
+* Chart Type — Bar, Pie, or Line
+* Series — optional secondary grouping for stacked charts
+
+## When to Use Charts
+
+* Activity dashboards — page creation trends, update frequency
+* Governance insights — content distribution by space or type
+* Contributor visibility — who creates or edits the most
+* Engagement reporting — comment and like trends
+* Storage audit — attachments by space or file type
+
+**Tip:** Use Chart Templates in the Templates tab for instant chart setup — 17 pre-built chart configurations are ready to use.`,
+        },
+        {
+          slug: "chart-types",
+          title: "Chart Types",
+          content: `Reports, Charts, Templates, CQL & Export for Confluence supports three chart types, each suited to different data and insights.
+
+## Bar Chart
+
+Compares grouped values using horizontal or vertical bars. Best for comparing quantities across distinct categories.
+
+### Best For
+
+* Pages per space — compare space sizes by page volume
+* Top editors — rank users by update count
+* Label usage — see which labels are most/least used
+* Active spaces ranking — most updated spaces in a period
+
+### Variants
+
+* Simple bar — one bar per group (single metric)
+* Stacked bar — bars broken into sub-segments by a secondary grouping (e.g., pages vs blogs per space)
+
+## Pie Chart
+
+Shows distribution as slices of a whole. Best for understanding composition or percentage split of content.
+
+### Best For
+
+* Content type mix — page vs blog vs comment share
+* Likes distribution — liked vs not liked
+* Status distribution — current vs archived
+* Attachment file type breakdown — PDF vs PNG vs DOCX
+
+## Line Chart
+
+Shows change over time using a connected line. Best for tracking growth, trends, or activity spikes across a time axis.
+
+### Best For
+
+* Pages created over time — track content growth by month
+* Pages updated over time — track maintenance activity
+* Daily page activity by space — spot adoption or project spikes
+* Comments trend — measure discussion engagement over time
+* Blog publishing cadence — communications activity trend
+
+## Choosing the Right Chart
+
+| **Question to Answer** | **Recommended Chart** |
+| --- | --- |
+| How many [X] per [category]? | Bar Chart |
+| What is the split/composition of [X]? | Pie Chart |
+| How has [X] changed over time? | Line Chart |
+| Who are the top [contributors/editors]? | Bar Chart |
+| Which spaces are most/least active? | Bar Chart |
+| What percentage is [type A] vs [type B]? | Pie Chart |`,
+        },
+        {
+          slug: "chart-configuration",
+          title: "Chart Configuration",
+          content: `Charts are configured separately from tabular columns via the Charts section in the macro editor.
+
+## Configuration Settings
+
+| **Setting** | **Description** | **Example Values** |
+| --- | --- | --- |
+| Chart Type | Bar, Pie, or Line | Bar Chart |
+| Group By | The field to bucket/categorize data | Space, Author, Type, Month, Day |
+| Metric | What to measure per group | Count (most common) |
+| Series | Optional secondary grouping for stacked charts | Type (page vs blog) |
+
+## How to Configure a Chart
+
+1. Set Report Type to **Charts** in the header dropdown.
+2. Select Chart Type — Bar, Pie, or Line.
+3. Set Group By — pick the field to categorize data (e.g., Space, Author, Month).
+4. Set Metric — typically Count.
+5. Optionally set a Series for stacked bar charts.
+6. Load required expansions so the Group By field is available.
+7. Review in Live Preview — chart renders in real-time.
+8. Adjust filters to narrow the dataset if needed.
+
+## Common Configuration Patterns
+
+### Pages per Space (Bar)
+
+* Group By: Space
+* Metric: Count
+* Chart Type: Bar
+
+### Content Type Distribution (Pie)
+
+* Group By: Type
+* Metric: Count
+* Chart Type: Pie
+
+### Monthly Content Growth (Line)
+
+* Group By: Month (createdDate)
+* Metric: Count
+* Chart Type: Line
+
+### Pages by Space and Type (Stacked Bar)
+
+* Group By: Space
+* Series: Type
+* Metric: Count
+* Chart Type: Bar
+
+## Troubleshooting Charts
+
+| **Problem** | **Check** |
+| --- | --- |
+| Chart shows no data | Dataset too small or over-filtered — remove a filter and try again |
+| Group By field is empty | Required expansion not loaded — add expansion for that field |
+| Unexpected chart results | Verify Group By field type is suitable for aggregation |
+| Date axis not working | Ensure date field is from a loaded expansion |`,
+        },
+        {
+          slug: "chart-templates",
+          title: "Chart Templates",
+          content: `Reports, Charts, Templates, CQL & Export for Confluence includes 17 pre-built chart templates. Each one is ready to use — just select, review in Live Preview, and save.
+
+| **#** | **Template Name** | **Chart Type** | **Groups By** | **Use Case** |
+| --- | --- | --- | --- | --- |
+| 1 | Pages by space and content type | Bar (Stacked) | Space + Type | Compare pages vs blogs per space |
+| 2 | Creator contributions by space | Bar (Stacked) | Creator + Space | Identify top content creators per space |
+| 3 | Blog posts by space and author | Bar (Stacked) | Space + Author | See who publishes blogs and where |
+| 4 | Overall content type distribution | Pie | Type | Understand content mix across instance |
+| 5 | Daily page activity by space | Line | Day + Space | Track daily update trends per space |
+| 6 | Total pages per space | Bar | Space | Compare space sizes by page volume |
+| 7 | Most active spaces (last 30 days) | Bar | Space | Rank spaces by recent activity |
+| 8 | Comments by space | Bar | Space | Measure discussion intensity per space |
+| 9 | Comments by author | Bar | Author | Identify top commenters |
+| 10 | Pages created over time | Line | Month (createdDate) | Track content growth trend |
+| 11 | Pages updated over time | Line | Month (lastUpdated) | Track update cadence (maintenance) |
+| 12 | Attachments by space | Bar | Space | Compare file usage across spaces |
+| 13 | Attachments by file type | Pie | mediaType | Understand file format distribution |
+| 14 | Blog posts over time | Line | Month (createdDate) | Track publishing frequency trend |
+| 15 | Top page editors | Bar | Last Editor | Identify most active editors |
+| 16 | Overall content growth summary | Line | Month + Type | Compare pages vs blogs growth trend |
+| 17 | Comments over time | Line | Month (createdDate) | Track discussion volume trend |
+
+## Quick-Start Guide
+
+1. Open macro editor → navigate to **Templates** tab.
+2. Search 'chart' or scroll to chart templates.
+3. Click a template — it auto-configures source, expansions, chart type, and group settings.
+4. Review in Live Preview.
+5. Adjust filters or result limit if needed.
+6. Save to your Confluence page.`,
+        },
+      ],
+    },
+    // ═══════════════════════════════════════════════════════════════
+    // 4. FEATURES
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "features",
+      title: "Features",
+      articles: [
+        {
+          slug: "features-intro",
+          title: "Features",
+          content: `Advanced tools built into the macro editor
+
+| **Subpage** | **What you will find** |
+| --- | --- |
+| Data Source | Spaces drill-down vs Custom CQL — when to use each |
+| Expansions | What expansions are, how to load them, and best practices |
+| Report Views | Overview of Table, List, Grid, Paragraph, and Chart views |
+| Columns & Filters | Block types, column setup, filter operators and logic |
+| Templates & Import/Export | Pre-built templates, JSON recipes, and export options |
+| Macro Editor UI Tour | Visual walkthrough of every panel and tab in the macro editor |
+| Live Preview | How and when the preview updates as you configure |
+| Raw View | Inspect the JSON returned by Confluence and find exact field paths |
+| Explore | Discover all available metadata fields with types and sample values |
+| Export | Download report data as CSV or JSON |
+| Edit Lock/Unlock | How template locking works and how to unlock for editing |
+| Result Limit | Control dataset size and optimize report performance |`,
         },
         {
           slug: "data-source",
@@ -181,220 +958,6 @@ Expansions are metadata groups that load additional field data for each content 
 * Use Explore (center panel) to discover what fields are available after loading expansions
 
 **Blank column values?** If a column shows empty values, the required expansion is probably not loaded. Use Raw View to confirm the field path, then load the matching expansion.`,
-        },
-        {
-          slug: "macro-editor-ui-tour",
-          title: "Macro Editor UI Tour",
-          content: `A complete visual walkthrough of the macro editor — where everything is and what it does.
-
-## Header Section
-
-The top bar contains the primary controls for your report configuration.
-
-| **Header Element** | **Description** | **Notes** |
-| --- | --- | --- |
-| Data Source | Toggle between Spaces and Custom CQL | Changes the Source Value field behavior below it |
-| Source Value | The actual query or space/page selection | CQL text for CQL mode; visual selector for Spaces mode |
-| Result Limit | Max records to return | Default 50. Can be set to any number (e.g. 100, 500) |
-| Report Type | Display format selector | Table, List, Paragraph, Grid, Charts |
-| Save | Publish the report to Confluence page | Closes editor after saving |
-| Close | Exit without saving | Prompts if unsaved changes exist |
-
-## Left Panel — Data Expansions
-
-Load metadata fields required for columns, filters, and charts.
-
-* Search box — real-time filtering of expansion fields by name
-* Checkbox selection — check any group to load its fields
-* Favorites / Pinned — click the star icon to pin frequently used fields to the top
-* Hierarchical groups — organized by Structure, Body & Metadata, History
-
-| **Expansion Category** | **Key Fields** |
-| --- | --- |
-| Structure | ancestors, children, descendants, container |
-| Body & Metadata | body, metadata, operations, restrictions, version |
-| History | contributors, lastUpdated, previousVersion, nextVersion, ownedBy |
-
-## Center Panel — Live Preview & Tools
-
-The center panel is your main workspace — it shows results and provides all preview and debug tools.
-
-| **Element** | **What It Does** |
-| --- | --- |
-| Live Preview | Displays report results in real-time. Updates automatically as configuration changes. |
-| Filter Panel | Apply filter rows (Operator + Property + Value). AND logic, top-to-bottom execution. |
-| Explore | Switch to Explore mode — lists all available fields with types and sample values. |
-| Export | Download data as CSV (Table view) or JSON (all views). Includes copy-to-clipboard. |
-| Edit (Lock/Unlock) | Templates are locked after applying. Click Edit to unlock and modify. |
-| Pagination | Previous/Next buttons, page numbers, results-per-page selector. |
-
-## Right Panel — Configuration Tabs
-
-Four tabs for configuring your report structure, applying templates, importing recipes, and inspecting raw data.
-
-| **Tab** | **Purpose** | **Key Actions** |
-| --- | --- | --- |
-| Columns | Define what data appears and how it is formatted | Add, Edit, Delete, Reorder, Duplicate, Hide columns |
-| Templates | Browse and apply 35 tabular + 17 chart templates | Search, select, apply — auto-configures everything |
-| Import | Import JSON recipes to recreate report configurations | Paste JSON, validate, search, copy config |
-| Raw | Inspect raw JSON returned from Confluence | View, search, expand/collapse, copy field paths |
-
-## Saved Report on Confluence Page
-
-After clicking Save, the macro editor closes and your live report appears directly on the Confluence page.
-
-| **Element** | **Where It Appears** | **What It Does** |
-| --- | --- | --- |
-| Report Title / Header | Top of the macro | Shows the report name or description (if configured) |
-| Table with Columns & Rows | Main body | Displays live Confluence data — updates automatically as content changes |
-| Search Box | Top of report | Filters visible rows by keyword — does not change the data source |
-| Export Button (CSV/JSON) | Top toolbar | Downloads current report data — CSV for spreadsheets, JSON for integrations |
-| Pagination Controls (Prev/Next) | Bottom of report | Navigate between pages of results — shows current page and total count |
-| Edit Button (pencil icon) | Top right of macro | Reopens the macro editor — only visible to users with edit permission on the page |
-
-## Complete Workflow Summary
-
-1. Set Data Source (Header) — choose Spaces or Custom CQL and enter source value
-2. Load Expansions (Left Panel) — select metadata groups needed for your columns
-3. Check Live Preview (Center) — confirm data is returning correctly
-4. Use Explore (Center) — discover available field paths and types
-5. Configure Columns (Right → Columns) — define what to display and how
-6. Apply Filters (Center) — refine which records appear
-7. Set Report Type + Result Limit (Header) — choose format and data size
-8. Inspect Raw View if needed (Right → Raw) — verify JSON paths
-9. Click Save (Header) — publish the live report to your Confluence page`,
-        },
-      ],
-    },
-    {
-      id: "user-guide",
-      title: "User Guide",
-      articles: [
-        {
-          slug: "overview-intro",
-          title: "Overview",
-          content: `What Reports, Charts, Templates, CQL & Export for Confluence is and what it can do for you.
-
-Reports, Charts, Templates, CQL & Export for Confluence is a macro-based reporting app that lets you build live, dynamic reports inside Confluence pages — without scripts or external tools.
-
-## This section covers
-
-| **Subpage** | **What you will find** |
-| --- | --- |
-| What's Included | Key capabilities, data sources, and what makes the app powerful |
-| Benefits & Outcomes | Outcomes, business value, and when to use Custom Reports |
-| Use Case Gallery | Real-world scenarios with recommended report views |
-| Limitations & Compatibility | Data-source limits, permission behaviour, and performance notes |`,
-        },
-        {
-          slug: "whats-included",
-          title: "What's Included",
-          content: `Reports, Charts, Templates, CQL & Export for Confluence is a macro-based reporting app that lets you build live, dynamic reports inside Confluence pages — without scripts or external tools.
-
-## Key Capabilities
-
-| **Capability** | **Description** |
-| --- | --- |
-| Data Source Selection | Spaces drill-down (visual) or Custom CQL (query-based) for flexible content targeting |
-| Metadata Loading | Load expansion groups to make fields available for columns, filters, and charts |
-| Display Options | Table, List, Paragraph, Grid, or Charts — choose the format that fits your audience |
-| Columns & Filters | Define what data fields appear and refine which records are shown |
-| Templates | 35 pre-built tabular + 17 chart templates for instant setup |
-| Import / Export | Share report setups as JSON recipes across teams and spaces |
-| Raw View | Inspect underlying JSON data and metadata structure for debugging |
-| Explore | Discover available metadata fields with types and sample values |
-| Live Preview | See changes instantly as you configure — no save needed |
-| Export | Download report data as CSV or JSON for offline analysis |
-| Result Limit + Pagination | Control dataset size and navigate large reports efficiently |
-
-## Data Sources
-
-### Option A — Custom CQL
-
-Best for precise, rules-based, and dynamic content selection.
-
-* Use Confluence Query Language for advanced filtering
-* Target content by space, type, labels, creators, dates, and more
-* Queries automatically update as content changes
-* Combine multiple criteria for complex reports
-
-### Option B — Spaces (Drill-down)
-
-Best for browse-based, intuitive content selection without writing queries.
-
-* Select one or more Spaces from a visual dropdown
-* Drill down to specific Pages within selected spaces
-* Multi-select spaces and pages simultaneously
-* Ideal for non-technical users
-
-## Display Views
-
-| **View** | **Best For** |
-| --- | --- |
-| Table | Structured data with sorting — audits, compliance, governance |
-| List | Simple listing format — page indexes, quick inventories |
-| Paragraph | Narrative summaries — digests, executive reports |
-| Grid | Card-style visual layout — team directories, dashboards |
-| Charts | Visual analytics — bar, pie, and line charts |
-
-### What Makes Reports, Charts, Templates, CQL & Export for Confluence Powerful
-
-* No coding required — visual, user-friendly configuration interface
-* Live & dynamic — reports update automatically as Confluence content changes
-* Flexible — multiple views and extensive customization options
-* Shareable — reuse and standardize configurations across teams and spaces
-* Permission-aware — respects Confluence access rights
-* Efficient — built-in pagination and result limits for performance`,
-        },
-        {
-          slug: "benefits-outcomes",
-          title: "Benefits & Outcomes",
-          content: `Use Reports, Charts, Templates, CQL & Export for Confluence when you need live, permission-aware reporting built directly into your Confluence pages.
-
-## When to Use Reports, Charts, Templates, CQL & Export for Confluence
-
-### Single Source of Truth
-
-* Centralized reporting in one location
-* Consistent reporting across teams and spaces
-* Standardized report formats organization-wide
-
-### Reusable Configurations
-
-* Save report definitions as templates
-* Share setups via JSON export/import recipes
-* Repeat the same reports across spaces with no re-configuration
-
-### Live, Dynamic Reports
-
-* Reports update automatically as Confluence content changes
-* Dynamic data reflects current Confluence state
-* No manual refresh or re-running required
-
-## Key Benefits
-
-| **Benefit** | **What It Means For You** |
-| --- | --- |
-| No coding required | Anyone can build reports — no developer needed |
-| Real-time data | Reports always show current Confluence content |
-| Permission-aware | Each viewer sees only content they have access to |
-| Flexible formats | Choose Table, List, Grid, Paragraph, or Charts per audience |
-| Reusable | One configuration, used across many pages and teams |
-| Shareable | Export as JSON recipe, paste anywhere to recreate instantly |
-| Debuggable | Raw View + Explore make field issues easy to diagnose |
-| Scalable | Pagination + result limits handle large datasets gracefully |
-
-## How Access & Results Work
-
-### Permissions & Data Visibility
-
-Reports only return content the viewer is allowed to see in Confluence. If a user cannot access a space or page, it will not appear in their report results. Reports fully respect restrictions and content permissions.
-
-### Where Reports Run
-
-Reports, Charts, Templates, CQL & Export for Confluence reports are created and viewed directly on Confluence pages using the macro. No external tools, dashboards, or separate applications are required.
-
-**Important:** Two users viewing the same report may see different results — each sees only content they have permission to access.`,
         },
         {
           slug: "report-views",
@@ -546,7 +1109,7 @@ Reports, Charts, Templates, CQL & Export for Confluence includes 35 tabular temp
 ### How to Use Templates
 
 1. Open the macro editor.
-2. Navigate to the Templates tab in the right panel.
+2. Navigate to the **Templates** tab in the right panel.
 3. Search or browse to find a template.
 4. Select a template — it auto-configures source, expansions, columns, filters, and view.
 5. Customize as needed.
@@ -566,7 +1129,7 @@ Use Import to recreate any report from a JSON configuration recipe — instantly
 
 ### How to Import
 
-1. Navigate to the Import tab in the right panel.
+1. Navigate to the **Import** tab in the right panel.
 2. Paste the JSON recipe into the text area.
 3. The app automatically rebuilds the entire report configuration.
 4. Review in Live Preview and save.
@@ -588,507 +1151,86 @@ Use Import to recreate any report from a JSON configuration recipe — instantly
 **Tip:** Store JSON recipes on a shared Confluence 'Report Library' page — document each recipe's purpose and use case so your team can find and reuse them.`,
         },
         {
-          slug: "custom-tabular-report-intro",
-          title: "Custom Tabular Report",
-          content: `Four flexible layouts — Table, List, Grid, and Paragraph
+          slug: "macro-editor-ui-tour",
+          title: "Macro Editor UI Tour",
+          content: `A complete visual walkthrough of the macro editor — where everything is and what it does.
 
-| **Subpage** | **What you will find** |
-| --- | --- |
-| Tabular Overview | When to use each view and how to choose the right one |
-| Table View | Spreadsheet-style rows and columns — the primary report type |
-| List View | One card per record — clean, human-readable output |
-| Grid View | Responsive card grid — visual dashboards and directories |
-| Paragraph View | Prose-style output — digests, summaries, newsletters |
-| Templates | All 35 pre-built tabular templates listed and described |`,
-        },
-        {
-          slug: "tabular-overview",
-          title: "Tabular Overview",
-          content: `Custom Tabular Report lets you display Confluence data in four flexible layouts — Table, List, Grid, and Paragraph. Each view is suited to a different audience and purpose, all powered by the same underlying data source and column configuration.
+## Header Section
 
-## Available Views
+The top bar contains the primary controls for your report configuration.
 
-| **View** | **Layout Style** | **Best For** | **Supports Pagination** |
-| --- | --- | --- | --- |
-| Table | Rows and columns — spreadsheet-style | Audits, governance, structured data comparison | Yes |
-| List | One card per record — vertical list | Page indexes, team directories, readable inventories | Yes |
-| Grid | Card tiles in a responsive grid | Visual dashboards, profile directories, galleries | Yes |
-| Paragraph | Flowing prose — one block per record | Weekly digests, executive summaries, narrative reports | No |
-
-## What All Views Share
-
-* Same data source — Spaces drill-down or Custom CQL
-* Same expansions — load once, all views use the same metadata
-* Same column configuration — Columns tab applies across Table, List, Grid, and Paragraph
-* Same filters — filter rows apply to all tabular views
-* Live Preview — switch between views instantly in the macro editor
-* Result Limit + Pagination — control dataset size in all views
-
-## How to Choose the Right View
-
-| **If you want to...** | **Use This View** |
-| --- | --- |
-| Compare multiple fields side by side across many records | Table |
-| Show a clean, readable list where each item stands alone | List |
-| Present visual cards with images — like a team directory or gallery | Grid |
-| Create a narrative summary — readable prose, not a data table | Paragraph |
-
-## Switching Between Views
-
-1. Open the macro editor.
-2. Change the Report Type dropdown in the header.
-3. Live Preview updates instantly — no data reload needed.
-4. Save when satisfied with the selected view.
-
-**Note:** Charts (Bar, Pie, Line) are configured separately in the Custom Charts Report section and use a different axis/series configuration.`,
-        },
-        {
-          slug: "table-view",
-          title: "Table View",
-          content: `Table view displays Confluence data in rows and columns — a familiar spreadsheet-style layout. It is the primary and most versatile report type in Reports, Charts, Templates, CQL & Export for Confluence.
-
-## Key Features
-
-| **Feature** | **Description** |
-| --- | --- |
-| Column headers | Defined by your Columns tab — label, block type, and source field |
-| Sortable columns | Click any header to sort ascending or descending |
-| Inline search | Filter visible rows by keyword — no data reload |
-| CSV export | Download all visible columns and filtered data as a spreadsheet |
-| JSON export | Full data structure download for developers or integrations |
-| Pagination | Navigate large datasets with Previous/Next and page numbers |
-| Result Limit | Control how many rows appear per page |
-| All 6 block types | Basic, Image, Link, Collection, Regex, Text — all supported |
-
-## Column Block Types in Table View
-
-| **Block Type** | **What It Renders** | **Common Table Use Case** |
+| **Header Element** | **Description** | **Notes** |
 | --- | --- | --- |
-| Basic | Plain text or number | Page ID, version number, space key, status |
-| Image | Inline image (size adjustable) | Profile picture of last editor, page thumbnail |
-| Link | Clickable hyperlink | Page title linking to the Confluence page |
-| Collection | Array/list joined by separator | Labels as comma-separated list, contributors |
-| Regex | Extracted or transformed text via pattern | Extracting version number from a title |
-| Text | Formatted text with prefix, suffix, truncation, fallback | Truncated excerpt, 'N/A' fallback for empty fields |
+| Data Source | Toggle between Spaces and Custom CQL | Changes the Source Value field behavior below it |
+| Source Value | The actual query or space/page selection | CQL text for CQL mode; visual selector for Spaces mode |
+| Result Limit | Max records to return | Default 50. Can be set to any number (e.g. 100, 500) |
+| Report Type | Display format selector | Table, List, Paragraph, Grid, Charts |
+| Save | Publish the report to Confluence page | Closes editor after saving |
+| Close | Exit without saving | Prompts if unsaved changes exist |
 
-## Configuring Table View
+## Left Panel — Data Expansions
 
-1. Set Report Type to Table in the header dropdown.
-2. Load required expansions in the left panel.
-3. Open the Columns tab in the right panel.
-4. Click + Add New Column — set Label, Block Type, and Source Field.
-5. Reorder columns by dragging the handle icon.
-6. Apply filters in the center panel to narrow results.
-7. Set Result Limit in the header.
-8. Review in Live Preview, then Save.
+Load metadata fields required for columns, filters, and charts.
 
-## Export from Table View
+* Search box — real-time filtering of expansion fields by name
+* Checkbox selection — check any group to load its fields
+* Favorites / Pinned — click the star icon to pin frequently used fields to the top
+* Hierarchical groups — organized by Structure, Body & Metadata, History
 
-| **Format** | **How to Access** | **Best For** |
+| **Expansion Category** | **Key Fields** |
+| --- | --- |
+| Structure | ancestors, children, descendants, container |
+| Body & Metadata | body, metadata, operations, restrictions, version |
+| History | contributors, lastUpdated, previousVersion, nextVersion, ownedBy |
+
+## Center Panel — Live Preview & Tools
+
+The center panel is your main workspace — it shows results and provides all preview and debug tools.
+
+| **Element** | **What It Does** |
+| --- | --- |
+| Live Preview | Displays report results in real-time. Updates automatically as configuration changes. |
+| Filter Panel | Apply filter rows (Operator + Property + Value). AND logic, top-to-bottom execution. |
+| Explore | Switch to Explore mode — lists all available fields with types and sample values. |
+| Export | Download data as CSV (Table view) or JSON (all views). Includes copy-to-clipboard. |
+| Edit (Lock/Unlock) | Templates are locked after applying. Click Edit to unlock and modify. |
+| Pagination | Previous/Next buttons, page numbers, results-per-page selector. |
+
+## Right Panel — Configuration Tabs
+
+Four tabs for configuring your report structure, applying templates, importing recipes, and inspecting raw data.
+
+| **Tab** | **Purpose** | **Key Actions** |
 | --- | --- | --- |
-| CSV | Export button → CSV | Excel, Google Sheets, stakeholder sharing |
-| JSON | Export button → JSON | Developer use, API integrations |
-| Config Recipe | Import tab → Copy JSON | Share report setup with team |
+| Columns | Define what data appears and how it is formatted | Add, Edit, Delete, Reorder, Duplicate, Hide columns |
+| Templates | Browse and apply 35 tabular + 17 chart templates | Search, select, apply — auto-configures everything |
+| Import | Import JSON recipes to recreate report configurations | Paste JSON, validate, search, copy config |
+| Raw | Inspect raw JSON returned from Confluence | View, search, expand/collapse, copy field paths |
 
-**Best for:** Content audits, governance reports, compliance tracking, contributor tracking, stale content review, and any report that benefits from side-by-side field comparison.`,
-        },
-        {
-          slug: "list-view",
-          title: "List View",
-          content: `List view shows each Confluence content item as a single card in a clean vertical list. It is ideal for creating readable, human-friendly output — like a page index, task list, or simple directory.
+## Saved Report on Confluence Page
 
-## Key Features
+After clicking Save, the macro editor closes and your live report appears directly on the Confluence page.
 
-| **Feature** | **Description** |
-| --- | --- |
-| Card-based layout | Each record occupies its own row as a standalone card |
-| Field labels inline | Column labels shown next to values for easy reading |
-| Image block support | Profile pictures or thumbnails render prominently in each card |
-| Link block support | Card titles or fields can be clickable links |
-| Pagination | Navigate large lists with Previous/Next controls |
-| Inline search | Filter visible items by keyword |
-
-## When to Use List View
-
-* Team or people directories — one card per person with name, role, profile picture
-* Task or action item lists — clean one-item-per-row layout
-* Content indexes — quick overview of pages with key metadata
-* Simple space inventories — lightweight listing without heavy table formatting
-* Anywhere a table feels too dense — List gives more breathing room per record
-
-## Configuring List View
-
-1. Set Report Type to List in the header dropdown.
-2. Load required expansions in the left panel.
-3. Open the Columns tab — configure columns the same way as Table view.
-4. Use Image block for profile pictures or thumbnails.
-5. Use Link block for clickable page titles or URLs.
-6. Apply filters and set Result Limit as needed.
-7. Review in Live Preview, then Save.
-
-**Best for:** Team directories, task lists, content indexes — anywhere each record should stand out as a single readable item rather than a row in a dense table.`,
-        },
-        {
-          slug: "grid-view",
-          title: "Grid View",
-          content: `Grid view displays each Confluence content item as a visual card in a responsive multi-column grid. It is ideal for dashboards, team directories with profile photos, and any report where visual browsing is more important than data comparison.
-
-## Key Features
-
-| **Feature** | **Description** |
-| --- | --- |
-| Responsive grid layout | Cards arrange in multiple columns and adapt to page width |
-| Image block — prominent | Images render as the card's visual focus (e.g. profile photo, thumbnail) |
-| Link block | Card title or image can be a clickable link to the Confluence page |
-| Pagination | Navigate large grids with Previous/Next controls |
-| Inline search | Filter visible cards by keyword |
-| All column types supported | Basic, Image, Link, Collection, Regex, Text |
-
-## When to Use Grid View
-
-* Team / people directories — profile photo + name + role in each card
-* Visual content galleries — page thumbnails or attachment images
-* Portfolio dashboards — visual showcase of projects or deliverables
-* Topic hubs — cards for each topic area with a preview image and link
-* Anywhere a visual, browsable layout is better than a row-based table
-
-## Configuring Grid View
-
-1. Set Report Type to Grid in the header dropdown.
-2. Load history expansion for profile picture fields.
-3. Open the Columns tab — add Image block as the first column for visual cards.
-4. Add Link block for the card title — set it to link to the Confluence page.
-5. Add Basic or Text block columns for supporting metadata (role, space, date).
-6. Apply filters and set Result Limit.
-7. Review in Live Preview, then Save.
-
-**Best for:** Team directories with profile photos, visual page catalogs, portfolio dashboards — any report where visual browsing matters more than side-by-side data comparison.`,
-        },
-        {
-          slug: "paragraph-view",
-          title: "Paragraph View",
-          content: `Paragraph view converts each Confluence content item into a readable text block — prose-style output instead of a table. It is ideal for narrative summaries, weekly digests, executive reports, and any context where readable text matters more than structured data.
-
-## Key Features
-
-| **Feature** | **Description** |
-| --- | --- |
-| Prose output | Each record becomes a readable paragraph, not a table row |
-| Column concatenation | Column values are joined together to form sentences |
-| Prefix & Suffix (Text block) | Add connecting words before/after field values to build natural sentences |
-| Fallback values | Show a default text when a field is empty |
-| No pagination | All records rendered sequentially as continuous text |
-| Inline search | Filter visible paragraphs by keyword |
-
-## When to Use Paragraph View
-
-* Weekly content digest — narrative summary of recent created/updated pages
-* Executive summaries — readable output for non-technical stakeholders
-* Newsletter-style reporting — blog posts or announcements in prose format
-* Change log summaries — each update described in a sentence
-* Anywhere a table feels too technical — Paragraph makes data human-readable
-
-## How to Build Readable Sentences
-
-Use the Text block type with Prefix and Suffix settings to construct natural-language sentences from field values.
-
-| **Column** | **Block Type** | **Prefix** | **Source Field** | **Suffix** | **Result** |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Link | — | title → _links.webui | — | Clickable page title |
-| 2 | Text | was last updated by | version.by.displayName | — | ...was last updated by John |
-| 3 | Text | on | version.when | . | ...on 12 Feb 2026. |
-
-## Configuring Paragraph View
-
-1. Set Report Type to Paragraph in the header dropdown.
-2. Load required expansions in the left panel.
-3. Open the Columns tab — add columns in the order they should appear in the sentence.
-4. Use Text block type — set Prefix and Suffix to add connective words.
-5. Set fallback values on Text blocks so empty fields show meaningful defaults.
-6. Apply filters and set Result Limit.
-7. Review in Live Preview — read the output as a human would.
-8. Save to your Confluence page.
-
-**Best for:** Weekly digests, executive summaries, newsletter-style reports, change logs — any audience that prefers reading over scanning a data table.`,
-        },
-        {
-          slug: "tabular-templates",
-          title: "Templates",
-          content: `Pre-built templates provide ready-to-use report configurations for common use cases. Templates save time and ensure consistent reporting patterns. All 35 templates are listed below in order.
-
-## How to Apply a Template
-
-1. Open the macro editor on any Confluence page.
-2. Navigate to the Templates tab in the right panel.
-3. Search by name or browse the list.
-4. Click a template — it auto-configures the entire report.
-5. Review results in Live Preview.
-6. Customize columns or filters if needed.
-7. Click Save to publish to your Confluence page.
-
-## Available Pre-built Templates
-
-| **#** | **Template Name** | **What It Shows** | **Objective** | **Best For** |
-| --- | --- | --- | --- | --- |
-| 1 | Pages grouped by selected labels | Pages filtered by chosen labels, showing page title + labels list | Quickly find and review all pages tagged with important labels | Governance for 'urgent/critical' pages, label cleanup, topic-based content tracking |
-| 2 | Page last update details | Each page with last editor and last edited date | Track ownership and most recent activity per page | Audit 'who changed what', stale content review, accountability reporting |
-| 3 | All comments with resolution status | Comments (inline + normal) with resolution status, author, modified date, excerpt | Track discussion items and unresolved feedback across Confluence | Review unresolved inline comments, discussion follow-ups, moderation/audit |
-| 4 | Blog posts overview | Table of blog posts with title + excerpt/summary | Quick overview of announcements/news posts | Company news digest, blog library, communications tracking |
-| 5 | Pages matching title keyword | Pages whose title contains a keyword (e.g., 'project') | Discover related pages without knowing exact names | Find 'Release Notes', 'Project', 'Design', 'Meeting Notes' pages fast |
-| 6 | Recently updated content across spaces | Latest modified pages/blogs across all spaces with space + last modified | Monitor recent activity globally | Weekly admin audit, adoption tracking, activity dashboards |
-| 7 | Content created by me | All pages/blogs/comments created by current user with type, contributors, excerpt | Personal contribution inventory | Performance reporting, personal dashboard, self-audit of work |
-| 8 | Pages updated this year | Pages modified after start of year + contributors | Measure this year's documentation activity | Annual reporting, review top active areas, contributor visibility |
-| 9 | Pages authored by me | Only pages created by current user, sorted by last modified + title | Personal page library and maintenance list | Clean up old pages you own, maintain your content set |
-| 10 | Page likes in current space | Pages in current space with like count | Identify popular/high-value pages | Highlight best docs, measure engagement, identify key references |
-| 11 | Attachments and images in current space | Attachments list with file name, parent page, file size, image preview | Audit attachments usage and storage | Storage cleanup, find large files, media inventory |
-| 12 | My recently updated pages | Pages last modified by current user with updated time | Track your latest edits | Daily/weekly work recap, 'what did I touch recently' |
-| 13 | Child pages with contributors and last editor | Child pages under current page with last editor, last modified, contributors | Manage a page tree with clear ownership/activity | Documentation hub maintenance, section owners, navigation governance |
-| 14 | Recently updated pages across all spaces | Pages sorted by last modified with space + friendly update time | Global page activity feed | Admin monitoring, knowledge base activity reporting |
-| 15 | Pages created in last 3 months | Pages created in last 12 weeks + last modified | Identify new content for review | Onboarding content review, new documentation QA, growth tracking |
-| 16 | Pages created this year | Pages created since start of year with created date | Measure content growth (new pages) | Annual documentation growth metrics, team output reporting |
-| 17 | Page creation vs last update timeline | Pages with both created date and latest update date | Understand lifecycle — fresh vs long-lived pages | Staleness analysis, maintenance planning, governance insights |
-| 18 | Pages by space and creator | Pages with space + original creator | Ownership tracking across spaces | Identify responsible teams/users, transfer ownership, audits |
-| 19 | Labels used in current space | Pages in current space + their labels | Label governance and taxonomy review | Standardize labels, remove duplicates, find untagged content |
-| 20 | Child pages of the current page | Child pages list with excerpt | Create quick index/summary of a section | Documentation landing pages, structured navigation, hub pages |
-| 21 | Recently created pages | Pages sorted by creation date (newest first) + created date | Spotlight newly created documentation | New content review queue, onboarding 'what's new' |
-| 22 | Pages Updated By a Specific User | Pages with last updated by + last updated date (version fields) | Track updates by a user (or team) for accountability | Reviewer workflow, contributor reports, audit trail |
-| 23 | Attachments Overview with Metadata | Table report of attachments with key metadata | Audit and manage files easily | Clean storage, find large/old files, track uploads |
-| 24 | Stale Pages – Detailed View | Pages not modified in 40+ days with space info, created/creator, last modified/modifier, page link | Full stale-content audit with enough fields to take action | Cleanup campaigns, compliance reviews, maintenance scheduling |
-| 25 | Content Created in Date Range | Content with type + created date + author | Report content created within a defined period | Monthly/quarterly reporting, content production tracking |
-| 26 | Attachments Coverage Summary | Pages with attachment counts and attachment paging metadata + link | Understand attachment coverage per page | Identify pages with heavy attachments, storage governance |
-| 27 | Owner vs Last Editor | Pages showing creator (owner) vs last updater + last updated time | Compare ownership vs active editors | Ownership reassignment, accountability checks, audit reporting |
-| 28 | Pages – IDs & ARIs | Pages with content ID, ARI, base64 ARI, type | Provide internal identifiers for integrations/debugging | API troubleshooting, migration scripts, support diagnostics |
-| 29 | Space & Page Status Audit | Pages with space type/status + page status + page link | Governance view for cleanup and standardization | Space lifecycle audits, ensure pages/spaces are 'current', compliance |
-| 30 | Pages – Link Formats Overview | Shows API link, standard web link, and short link for pages | Help users choose correct link format for sharing/integration | Documentation linking standards, automation/webhook references |
-| 31 | Blog Posts – Older than 30 Days | Blog posts created >30 days ago with space + last updated | Review older blogs for archival/cleanup | Content hygiene, outdated announcements review |
-| 32 | Content – Everything Except Pages | All content items where type != page (blogs, attachments, comments, etc.) | Audit non-page content across instance | Storage cleanup, attachment audits, content-type governance |
-| 33 | Blog Posts – Updated This Year | Blog posts modified since start of year with last updated + space key | Track active blog/news activity this year | Communications KPI, yearly reporting, stakeholder updates |
-| 34 | Weekly Updated Pages | Pages updated in last 7 days with space + last updated + excerpt | Weekly activity snapshot | Weekly digest, team status reporting, 'what changed' |
-| 35 | Today Updated Pages | Pages updated in last 24 hours with space + last updated + excerpt | Daily change tracker | Daily standups, release/change monitoring, fast review queue |
-
-## Template Benefits
-
-| **Benefit** | **What It Means** |
-| --- | --- |
-| Quick start | Ready-to-use configurations — zero manual setup needed |
-| Best practices | Proven report structures for the most common use cases |
-| Consistency | Standardized reporting patterns across teams and spaces |
-| Customizable | Use as a starting point — add, remove, or reorder columns freely after applying |
-| Unlockable | Templates are locked by default — click Edit in the center panel to modify |
-
-**Tip:** After applying a template, click the Edit button in the center panel to unlock it — then customize columns, filters, or data source to fit your exact needs.`,
-        },
-        {
-          slug: "custom-charts-report-intro",
-          title: "Custom Charts Report",
-          content: `Turn Confluence content into visual insights — Bar, Pie, and Line charts
-
-| **Subpage** | **What you will find** |
-| --- | --- |
-| Chart Overview | How charts work and how they are configured |
-| Chart Types | Bar, Pie, and Line — when to use each |
-| Chart Configuration | Step-by-step chart configuration and common patterns |
-| Chart Templates | All 17 pre-built chart templates listed and described |`,
-        },
-        {
-          slug: "chart-overview",
-          title: "Chart Overview",
-          content: `Reports, Charts, Templates, CQL & Export for Confluence Charts view turns Confluence content into visual insights by grouping results and applying a metric — so you can spot trends, activity, and distribution at a glance.
-
-## What Charts Do
-
-Charts group your Confluence data (by Space, Type, Author, Date, etc.) and apply a metric — usually Count — to produce a visual summary. Charts answer questions like 'How many pages per space?' or 'How has content grown month by month?'
-
-## Available Chart Types
-
-| **Chart Type** | **Best For** | **Example Use Case** |
+| **Element** | **Where It Appears** | **What It Does** |
 | --- | --- | --- |
-| Bar Chart | Comparing quantities across categories | Pages per space, top editors, label usage |
-| Pie Chart | Understanding composition or distribution | Content type mix, likes vs no likes |
-| Line Chart | Tracking change or trends over time | Pages created over time, daily updates |
+| Report Title / Header | Top of the macro | Shows the report name or description (if configured) |
+| Table with Columns & Rows | Main body | Displays live Confluence data — updates automatically as content changes |
+| Search Box | Top of report | Filters visible rows by keyword — does not change the data source |
+| Export Button (CSV/JSON) | Top toolbar | Downloads current report data — CSV for spreadsheets, JSON for integrations |
+| Pagination Controls (Prev/Next) | Bottom of report | Navigate between pages of results — shows current page and total count |
+| Edit Button (pencil icon) | Top right of macro | Reopens the macro editor — only visible to users with edit permission on the page |
 
-## How Charts Are Configured
+## Complete Workflow Summary
 
-Charts use a separate configuration from tabular column settings. Key settings include:
-
-* Group By — the field used to bucket/categorize data (e.g., Space, Author, Type, Month)
-* Metric — what to measure per group (usually Count)
-* Chart Type — Bar, Pie, or Line
-* Series — optional secondary grouping for stacked charts
-
-## When to Use Charts
-
-* Activity dashboards — page creation trends, update frequency
-* Governance insights — content distribution by space or type
-* Contributor visibility — who creates or edits the most
-* Engagement reporting — comment and like trends
-* Storage audit — attachments by space or file type
-
-**Tip:** Use Chart Templates in the Templates tab for instant chart setup — 17 pre-built chart configurations are ready to use.`,
-        },
-        {
-          slug: "chart-types",
-          title: "Chart Types",
-          content: `Reports, Charts, Templates, CQL & Export for Confluence supports three chart types, each suited to different data and insights.
-
-## Bar Chart
-
-Compares grouped values using horizontal or vertical bars. Best for comparing quantities across distinct categories.
-
-### Best For
-
-* Pages per space — compare space sizes by page volume
-* Top editors — rank users by update count
-* Label usage — see which labels are most/least used
-* Active spaces ranking — most updated spaces in a period
-
-### Variants
-
-* Simple bar — one bar per group (single metric)
-* Stacked bar — bars broken into sub-segments by a secondary grouping (e.g., pages vs blogs per space)
-
-## Pie Chart
-
-Shows distribution as slices of a whole. Best for understanding composition or percentage split of content.
-
-### Best For
-
-* Content type mix — page vs blog vs comment share
-* Likes distribution — liked vs not liked
-* Status distribution — current vs archived
-* Attachment file type breakdown — PDF vs PNG vs DOCX
-
-## Line Chart
-
-Shows change over time using a connected line. Best for tracking growth, trends, or activity spikes across a time axis.
-
-### Best For
-
-* Pages created over time — track content growth by month
-* Pages updated over time — track maintenance activity
-* Daily page activity by space — spot adoption or project spikes
-* Comments trend — measure discussion engagement over time
-* Blog publishing cadence — communications activity trend
-
-## Choosing the Right Chart
-
-| **Question to Answer** | **Recommended Chart** |
-| --- | --- |
-| How many [X] per [category]? | Bar Chart |
-| What is the split/composition of [X]? | Pie Chart |
-| How has [X] changed over time? | Line Chart |
-| Who are the top [contributors/editors]? | Bar Chart |
-| Which spaces are most/least active? | Bar Chart |
-| What percentage is [type A] vs [type B]? | Pie Chart |`,
-        },
-        {
-          slug: "chart-configuration",
-          title: "Chart Configuration",
-          content: `Charts are configured separately from tabular columns via the Charts section in the macro editor.
-
-## Configuration Settings
-
-| **Setting** | **Description** | **Example Values** |
-| --- | --- | --- |
-| Chart Type | Bar, Pie, or Line | Bar Chart |
-| Group By | The field to bucket/categorize data | Space, Author, Type, Month, Day |
-| Metric | What to measure per group | Count (most common) |
-| Series | Optional secondary grouping for stacked charts | Type (page vs blog) |
-
-## How to Configure a Chart
-
-1. Set Report Type to 'Charts' in the header dropdown.
-2. Select Chart Type — Bar, Pie, or Line.
-3. Set Group By — pick the field to categorize data (e.g., Space, Author, Month).
-4. Set Metric — typically Count.
-5. Optionally set a Series for stacked bar charts.
-6. Load required expansions so the Group By field is available.
-7. Review in Live Preview — chart renders in real-time.
-8. Adjust filters to narrow the dataset if needed.
-
-## Common Configuration Patterns
-
-### Pages per Space (Bar)
-
-* Group By: Space
-* Metric: Count
-* Chart Type: Bar
-
-### Content Type Distribution (Pie)
-
-* Group By: Type
-* Metric: Count
-* Chart Type: Pie
-
-### Monthly Content Growth (Line)
-
-* Group By: Month (createdDate)
-* Metric: Count
-* Chart Type: Line
-
-### Pages by Space and Type (Stacked Bar)
-
-* Group By: Space
-* Series: Type
-* Metric: Count
-* Chart Type: Bar
-
-## Troubleshooting Charts
-
-| **Problem** | **Check** |
-| --- | --- |
-| Chart shows no data | Dataset too small or over-filtered — remove a filter and try again |
-| Group By field is empty | Required expansion not loaded — add expansion for that field |
-| Unexpected chart results | Verify Group By field type is suitable for aggregation |
-| Date axis not working | Ensure date field is from a loaded expansion |`,
-        },
-        {
-          slug: "chart-templates",
-          title: "Chart Templates",
-          content: `Reports, Charts, Templates, CQL & Export for Confluence includes 17 pre-built chart templates. Each one is ready to use — just select, review in Live Preview, and save.
-
-| **#** | **Template Name** | **Chart Type** | **Groups By** | **Use Case** |
-| --- | --- | --- | --- | --- |
-| 1 | Pages by space and content type | Bar (Stacked) | Space + Type | Compare pages vs blogs per space |
-| 2 | Creator contributions by space | Bar (Stacked) | Creator + Space | Identify top content creators per space |
-| 3 | Blog posts by space and author | Bar (Stacked) | Space + Author | See who publishes blogs and where |
-| 4 | Overall content type distribution | Pie | Type | Understand content mix across instance |
-| 5 | Daily page activity by space | Line | Day + Space | Track daily update trends per space |
-| 6 | Total pages per space | Bar | Space | Compare space sizes by page volume |
-| 7 | Most active spaces (last 30 days) | Bar | Space | Rank spaces by recent activity |
-| 8 | Comments by space | Bar | Space | Measure discussion intensity per space |
-| 9 | Comments by author | Bar | Author | Identify top commenters |
-| 10 | Pages created over time | Line | Month (createdDate) | Track content growth trend |
-| 11 | Pages updated over time | Line | Month (lastUpdated) | Track update cadence (maintenance) |
-| 12 | Attachments by space | Bar | Space | Compare file usage across spaces |
-| 13 | Attachments by file type | Pie | mediaType | Understand file format distribution |
-| 14 | Blog posts over time | Line | Month (createdDate) | Track publishing frequency trend |
-| 15 | Top page editors | Bar | Last Editor | Identify most active editors |
-| 16 | Overall content growth summary | Line | Month + Type | Compare pages vs blogs growth trend |
-| 17 | Comments over time | Line | Month (createdDate) | Track discussion volume trend |
-
-## Quick-Start Guide
-
-1. Open macro editor → navigate to Templates tab.
-2. Search 'chart' or scroll to chart templates.
-3. Click a template — it auto-configures source, expansions, chart type, and group settings.
-4. Review in Live Preview.
-5. Adjust filters or result limit if needed.
-6. Save to your Confluence page.`,
-        },
-        {
-          slug: "features-intro",
-          title: "Features",
-          content: `Advanced tools built into the macro editor
-
-| **Subpage** | **What you will find** |
-| --- | --- |
-| Live Preview | How and when the preview updates as you configure |
-| Raw View | Inspect the JSON returned by Confluence and find exact field paths |
-| Explore | Discover all available metadata fields with types and sample values |
-| Export | Download report data as CSV or JSON |
-| Edit Lock/Unlock | How template locking works and how to unlock for editing |
-| Result Limit | Control dataset size and optimize report performance |`,
+1. Set Data Source (Header) — choose Spaces or Custom CQL and enter source value
+2. Load Expansions (Left Panel) — select metadata groups needed for your columns
+3. Check Live Preview (Center) — confirm data is returning correctly
+4. Use Explore (Center) — discover available field paths and types
+5. Configure Columns (Right → Columns) — define what to display and how
+6. Apply Filters (Center) — refine which records appear
+7. Set Report Type + Result Limit (Header) — choose format and data size
+8. Inspect Raw View if needed (Right → Raw) — verify JSON paths
+9. Click Save (Header) — publish the live report to your Confluence page`,
         },
         {
           slug: "live-preview",
@@ -1168,7 +1310,7 @@ Live Preview is the center panel of the macro editor. Every change you make — 
 ## How to Access Raw View
 
 1. Open the macro editor.
-2. Navigate to the Raw tab in the right panel configuration tabs.
+2. Navigate to the **Raw** tab in the right panel configuration tabs.
 3. Raw View displays the JSON data from your current Live Preview results.
 4. Use the search box to find a specific field name quickly.
 5. Copy exact field paths to use in columns or filters.
@@ -1201,7 +1343,7 @@ Live Preview is the center panel of the macro editor. Every change you make — 
 
 1. Open the macro editor and set your data source.
 2. Load the required expansions in the left panel.
-3. Click the Explore button in the center panel.
+3. Click the **Explore** button in the center panel.
 4. Browse through the list of available metadata fields.
 5. Check the field type and sample value to confirm it's the right field.
 6. Use the field path in your column Data Value or filter Property settings.
@@ -1241,7 +1383,7 @@ Live Preview is the center panel of the macro editor. Every change you make — 
 ## How to Export
 
 1. Open the macro editor (or view the published report on a Confluence page).
-2. Click the Export button in the center panel toolbar.
+2. Click the **Export** button in the center panel toolbar.
 3. Choose the desired format — CSV or JSON.
 4. The file downloads automatically to your local system.
 
@@ -1279,12 +1421,12 @@ Live Preview is the center panel of the macro editor. Every change you make — 
 
 ## How to Use
 
-1. Apply a pre-built template from the Templates tab — it loads in locked state.
+1. Apply a pre-built template from the **Templates** tab — it loads in locked state.
 2. Review the results in Live Preview.
-3. To customize, click the Edit button in the center panel toolbar.
+3. To customize, click the **Edit** button in the center panel toolbar.
 4. The configuration unlocks — columns, filters, and settings become editable.
 5. Make your changes to fields, columns, filters, or data source.
-6. Click Save to apply updates and publish to the Confluence page.
+6. Click **Save** to apply updates and publish to the Confluence page.
 
 **Note:** The Edit lock applies to templates applied from the Templates tab. Reports built from scratch in the Columns tab are always editable.`,
         },
@@ -1305,7 +1447,7 @@ Live Preview is the center panel of the macro editor. Every change you make — 
 ## How to Set Result Limit
 
 1. Open the macro editor.
-2. Locate the Result Limit field in the header bar or right panel.
+2. Locate the **Result Limit** field in the header bar or right panel.
 3. Enter the desired limit (e.g., 50, 100, 500).
 4. Live Preview updates immediately to show the limited result set.
 5. Save when satisfied — the limit applies to the published report.
@@ -1329,252 +1471,876 @@ Live Preview is the center panel of the macro editor. Every change you make — 
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════
+    // 5. USER GUIDE
+    // ═══════════════════════════════════════════════════════════════
     {
-      id: "admin-settings",
-      title: "Admin Settings",
+      id: "user-guide",
+      title: "User Guide",
       articles: [
         {
-          slug: "admin-settings",
-          title: "Admin Settings",
-          content: `# Admin Settings\n\nApp-level administration for Reports, Charts, Templates, CQL & Export for Confluence is managed through the Confluence admin panel.\n\n## Access\n\nGo to **Confluence Settings** → **Manage apps** → **Reports, Charts, Templates, CQL & Export for Confluence** to access admin configuration.\n\n## Permissions\n\nOnly Confluence site administrators can modify app-level settings.\n\n## Support\n\nFor admin configuration questions, contact [support@clovity.com](mailto:support@clovity.com).`,
+          slug: "overview-dashboard",
+          title: "Overview & Dashboard",
+          content: `# Overview & Dashboard
+
+A complete walkthrough of the macro editor layout and how to open, configure, save, and publish reports.
+
+## Macro Editor Layout
+
+The macro editor is divided into three main zones — each with a distinct purpose.
+
+### Header — Global Report Controls
+
+The header runs across the top of the editor and controls the report's data source, format, and size.
+
+| **Header Element** | **Purpose** | **Options / Notes** |
+| --- | --- | --- |
+| Data Source | Choose how content is selected | Spaces (visual drill-down) or Custom CQL (query-based) |
+| Source Value | The actual selection or query | Space/page picker (Spaces mode) or CQL text input (CQL mode) |
+| Report Type | The display format for results | Table, List, Paragraph, Grid, Charts |
+| Result Limit | Maximum number of records to return | Numeric input — start with 50 for testing, increase for final reports |
+| Save | Publish the report to the Confluence page | Closes the editor after saving |
+| Close | Exit the editor without saving | Prompts for confirmation if unsaved changes exist |
+
+### Left Panel — Expansions
+
+The left panel is where you load metadata groups (expansions) that make fields available for columns, filters, and charts.
+
+* **Search box** — filter expansion field names in real-time
+* **Checkbox groups** — check a group to load all its fields
+* **Star / Favorites** — pin frequently used fields to the top for faster access
+* **Expansion categories:**
+
+| **Category** | **Fields Included** |
+| --- | --- |
+| Structure | ancestors, children, descendants, container |
+| Body & Metadata | body, metadata, operations, restrictions, version |
+| History | contributors, lastUpdated, previousVersion, nextVersion, ownedBy |
+
+### Center Panel — Live Preview
+
+The center panel is your main workspace. It shows results in real-time and provides all the tools for filtering, exploring, and exporting data.
+
+| **Element** | **What It Does** |
+| --- | --- |
+| Live Preview | Shows report results updating instantly as you configure |
+| Filter Panel | Add filter rows (Operator + Property + Value) to narrow results |
+| Explore | Lists all available metadata fields with types and sample values |
+| Export | Download report data as CSV (Table view) or JSON (all views) |
+| Edit (Lock/Unlock) | Unlock templates for editing — templates are locked by default |
+| Pagination | Navigate large result sets with Previous/Next and page numbers |
+
+### Right Panel — Configuration Tabs
+
+The right panel contains four tabs for building and managing your report.
+
+| **Tab** | **Purpose** |
+| --- | --- |
+| Columns | Define which data fields appear and how they are formatted |
+| Templates | Browse and apply 35 tabular + 17 chart pre-built templates |
+| Import | Paste a JSON recipe to recreate a full report configuration |
+| Raw | Inspect the raw JSON returned by Confluence for debugging |
+
+## How to Open the Macro
+
+1. Open any Confluence page and click the **Edit** button to enter page edit mode.
+2. Place your cursor where you want the report to appear.
+3. Type \`/\` to open the macro insert menu.
+4. Search for **Reports** or **Reports, Charts, Templates, CQL & Export for Confluence**.
+5. Click the macro in the search results — the macro editor opens automatically.
+
+## How to Save and Publish
+
+1. Configure your report using the header, left panel, center panel, and right panel.
+2. Verify results in the Live Preview — confirm data looks correct.
+3. Click the **Save** button in the header.
+4. The macro editor closes and your live report appears on the Confluence page.
+5. Click **Publish** (or **Update**) on the Confluence page to make the report visible to others.
+
+> **Important:** Saving in the macro editor closes the editor and embeds the report in the page draft. You must also publish the Confluence page for other users to see the updated report.
+
+## Settings and Configuration Patterns
+
+### Recommended First-Time Setup Order
+
+1. Set Data Source (Header) — choose Spaces or Custom CQL
+2. Load Expansions (Left Panel) — add only what your columns need
+3. Check Live Preview (Center) — confirm data is returning
+4. Use Explore (Center) — discover available field paths
+5. Configure Columns (Right → Columns tab) — define what to display
+6. Apply Filters (Center Filter Panel) — refine which records appear
+7. Set Report Type + Result Limit (Header) — choose format and size
+8. Save (Header) — publish to Confluence page
+
+### Common Configuration Patterns
+
+| **Goal** | **Pattern** |
+| --- | --- |
+| Quick report from a template | Templates tab → select template → review → Save |
+| Custom report from scratch | Set source → load expansions → add columns → apply filters → Save |
+| Reuse a report on another page | Import tab → paste JSON recipe → review → Save |
+| Debug a blank column | Raw tab → find field path → update column Data Value |
+| Share report setup with team | Import tab → Copy JSON button → share the recipe |`,
+        },
+        {
+          slug: "how-to-guides",
+          title: "How-To Guides",
+          content: `# How-To Guides
+
+Step-by-step instructions for the most common tasks in Reports, Charts, Templates, CQL & Export for Confluence.
+
+## 1. Build Your First Tabular Report
+
+1. Open a Confluence page in edit mode.
+2. Type \`/\` and search for the macro — click to insert.
+3. In the header, set **Data Source** to **Spaces** and select a space.
+4. Set **Report Type** to **Table**.
+5. In the left panel, check the **metadata** and **version** expansion groups.
+6. In the right panel, open the **Columns** tab and click **+ Add New Column**.
+7. Set a Label (e.g., "Page Title"), choose **Link** as Block Type, set the source field to \`title\` / \`_links.webui\`.
+8. Add more columns as needed (e.g., Last Modified, Created By).
+9. Set **Result Limit** to 50 in the header.
+10. Review results in Live Preview — verify data is correct.
+11. Click **Save**.
+
+## 2. Write a CQL Query
+
+1. In the header, set **Data Source** to **Custom CQL**.
+2. The Source Value field becomes a CQL text input.
+3. Type your query. Examples:
+
+| **Goal** | **CQL Query** |
+| --- | --- |
+| All pages in a space | \`space = "ENG" AND type = page\` |
+| Recently updated content | \`type = page AND lastmodified >= now("-30d")\` |
+| Pages with a label | \`label = "decision" AND type = page\` |
+| Title contains keyword | \`type = page AND title ~ "Release Notes"\` |
+| Pages created this year | \`type = page AND created >= "2026-01-01"\` |
+
+4. Press Enter or click outside the field — Live Preview updates with results.
+5. Refine the query until results match your intent.
+
+## 3. Add Columns to a Report
+
+1. Open the macro editor and navigate to the **Columns** tab in the right panel.
+2. Click **+ Add New Column**.
+3. Set the **Column Label** (display name shown in the report header).
+4. Choose a **Block Type** — Basic, Image, Link, Collection, Regex, or Text.
+5. Set the **Data Value** (JSON path to the field, e.g., \`version.by.displayName\`).
+6. Configure any block-specific settings (size for Image, URL field for Link, etc.).
+7. Click outside or press Enter — the column appears in Live Preview immediately.
+8. Drag the handle icon to reorder columns.
+
+## 4. Apply Filters
+
+1. In the center panel, locate the **Filter** section.
+2. Click **+ Add filter** to add a filter row.
+3. For each filter row:
+   - Select an **Operator** (e.g., Contains, Equals, Greater Than)
+   - Choose a **Property** (e.g., Title, Space, Created By, Content Type)
+   - Enter a **Value** (e.g., "Project", "DEV", currentUser())
+4. Live Preview updates after each filter change.
+5. Add more rows to further narrow results — rows use AND logic (all must match).
+6. Use the trash icon to delete a filter row, or **Clear all** to remove all filters.
+
+## 5. Switch to Chart View
+
+1. In the header, change **Report Type** to **Charts**.
+2. In the right panel, the **Charts** configuration section appears.
+3. Select a **Chart Type** — Bar, Pie, or Line.
+4. Set **Group By** — the field to categorize/bucket data (e.g., Space, Author, Month).
+5. Set **Metric** — typically Count.
+6. Optionally set a **Series** for stacked bar charts (secondary grouping).
+7. Live Preview renders the chart in real-time.
+8. Adjust filters to refine the dataset, then click **Save**.
+
+## 6. Export to CSV
+
+1. Set **Report Type** to **Table** in the header (CSV export is available from Table view).
+2. Configure columns and filters as needed.
+3. In the center panel, click the **Export** button.
+4. Select **CSV** from the options.
+5. The file downloads automatically — open in Excel, Google Sheets, or any spreadsheet tool.
+
+> **Tip:** To export all data, set a high Result Limit (e.g., 1000) before exporting.
+
+## 7. Use a Template
+
+1. Open the macro editor.
+2. In the right panel, click the **Templates** tab.
+3. Search by name or browse the list of 35 tabular + 17 chart templates.
+4. Click a template — it auto-configures source, expansions, columns, filters, and view.
+5. Review in Live Preview — verify the data matches your expectations.
+6. To customize, click the **Edit** button in the center panel to unlock.
+7. Adjust columns or filters as needed, then click **Save**.
+
+## 8. Share a Report as a JSON Recipe
+
+1. Open the macro editor for the report you want to share.
+2. In the right panel, click the **Import** tab.
+3. Click the **Copy JSON** button — this copies the full report configuration to your clipboard.
+4. Paste the JSON recipe on a shared Confluence page (e.g., a "Report Library" page).
+5. Team members can recreate the report: open the macro editor → Import tab → paste the JSON → Save.
+
+## 9. Use Explore to Find Fields
+
+1. Open the macro editor and set your data source.
+2. Load the expansions you expect to need in the left panel.
+3. Click the **Explore** button in the center panel.
+4. Browse the field list — each entry shows the field name, type, and a sample value.
+5. Find the field you want to use in a column or filter.
+6. Note the exact field path (e.g., \`version.by.displayName\`) — use it in your column Data Value setting.
+
+> **Tip:** Use Explore to discover fields before building columns — it's faster than guessing paths.
+
+## 10. Use Raw View to Debug
+
+1. Open the macro editor.
+2. In the right panel, click the **Raw** tab.
+3. The raw JSON returned by Confluence for your current results appears.
+4. Use the search box in Raw View to find a specific field name.
+5. Click to expand nested objects and find the exact field path.
+6. Copy the path and use it in your column Data Value setting.
+7. If a column shows blank values — check Raw View to verify the field exists and has data.`,
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════
+    // 6. RELEASE NOTES
+    // ═══════════════════════════════════════════════════════════════
     {
       id: "release-notes",
       title: "Release Notes",
       articles: [
         {
-          slug: "release-notes",
-          title: "Release Notes",
-          content: `What's new and recently improved in Reports, Charts, Templates, CQL & Export for Confluence
+          slug: "latest-release",
+          title: "Latest Release",
+          content: `# Latest Release
 
-## Recent Features
+What's new and recently improved in Reports, Charts, Templates, CQL & Export for Confluence.
 
-| **Feature** | **Description** |
+## New Features
+
+### Additional Chart Types
+
+The Charts view has been expanded with additional chart type options, giving you more flexibility to visualize Confluence data in the format that best suits your audience and use case.
+
+| **Chart Type** | **Best For** |
 | --- | --- |
-| Regex Block Type | New column block type for pattern matching and data extraction |
-| Text Block Type | Enhanced text display with prefix/suffix, truncation, case transform, and fallback values |
-| Duplicate Column | Copy any existing column configuration with one click |
-| Hide Column | Temporarily remove a column from display while preserving its configuration |
-| Include Children | Spaces mode: automatically include all descendant pages under selected pages |
-| Hierarchical View | Visual page tree in Spaces selector for easier navigation |
-| Search in Expansions | Real-time search box in the left panel to find fields quickly |
-| Search in Templates | Search box in the Templates tab for faster template discovery |
-| Copy JSON to Clipboard | Copy report configuration JSON from the Import tab |
-| >= and <= Operators | New filter operators for numeric and date comparisons |
-| Query Help Panel | CQL reference panel for syntax guidance and error explanation |
-| Compatibility Count | Shows how many fields are compatible with each column block type |
+| Bar Chart | Comparing quantities across categories — pages per space, top editors |
+| Pie Chart | Understanding composition and distribution — content type mix |
+| Line Chart | Tracking change and trends over time — content growth by month |
 
-For a complete changelog and version history, please refer to the Atlassian Marketplace listing for Reports, Charts, Templates, CQL & Export for Confluence.`,
+### New Templates Added
+
+New pre-built templates have been added to the Templates tab, expanding the library for the most common reporting scenarios. Templates are ready to use — one click configures the full report setup.
+
+* Additional tabular templates for governance, audit, and activity reporting
+* New chart templates for visual dashboards and trend analysis
+* All templates are customizable after applying — click Edit to unlock
+
+### CQL Editor Improvements
+
+The Custom CQL input has been enhanced with better syntax guidance and error feedback:
+
+* **Query Help Panel** — in-editor CQL reference for operators, field names, and syntax patterns
+* **Improved error messages** — clearer feedback when a CQL query has syntax issues
+* **Real-time validation** — queries are validated as you type, with immediate Live Preview updates
+
+### Performance Improvements
+
+* Faster report rendering for large datasets with many expansions loaded
+* Reduced load time when switching between report types (Table, List, Grid, Paragraph, Charts)
+* Optimized expansion loading — fields become available more quickly after selection
+* Improved pagination performance for reports with 500+ records
+
+## Marketplace
+
+View the full app listing, reviews, and version history on the Atlassian Marketplace:
+
+[Reports, Charts, Templates, CQL & Export for Confluence on Atlassian Marketplace](https://marketplace.atlassian.com/apps/4125307933/reports-charts-templates-cql-export-for-confluence)`,
+        },
+        {
+          slug: "version-history",
+          title: "Version History",
+          content: `# Version History
+
+A complete record of releases and changes for Reports, Charts, Templates, CQL & Export for Confluence.
+
+## Release Timeline
+
+| **Version** | **Release Date** | **Highlights** |
+| --- | --- | --- |
+| Latest | 2026 | Additional chart types, new templates, CQL editor improvements, performance improvements |
+| Previous | 2025 | Regex Block Type, Text Block Type, Duplicate Column, Hide Column, Include Children, Hierarchical View |
+| Earlier | 2024 | Search in Expansions, Search in Templates, Copy JSON to Clipboard, \`>=\` and \`<=\` filter operators, Query Help Panel, Compatibility Count |
+
+## Detailed Change Log
+
+### 2026 — Latest Release
+
+**New Features:**
+* Additional chart types added to Charts view
+* New pre-built templates added to Templates tab (tabular and chart)
+* CQL editor improvements: Query Help Panel, improved error messages, real-time validation
+* Performance improvements: faster rendering, reduced load time, optimized expansion loading, improved pagination
+
+**Improvements:**
+* Smoother switching between report types in Live Preview
+* Faster field availability after expansion selection
+
+---
+
+### 2025 — Column Block Types & Spaces Mode Enhancements
+
+**New Features:**
+* **Regex Block Type** — new column block type for pattern matching and data extraction from field values
+* **Text Block Type** — enhanced text display with prefix, suffix, truncation, case transform, and fallback values
+* **Duplicate Column** — copy any existing column configuration with one click
+* **Hide Column** — temporarily remove a column from display while preserving its configuration
+* **Include Children** — Spaces mode: automatically include all descendant pages under selected pages
+* **Hierarchical View** — visual page tree in the Spaces selector for easier navigation
+
+**Improvements:**
+* Improved macro editor layout for better usability
+
+---
+
+### 2024 — Filter Operators, Search & Configuration UX
+
+**New Features:**
+* **Search in Expansions** — real-time search box in the left panel to find expansion fields quickly
+* **Search in Templates** — search box in the Templates tab for faster template discovery
+* **Copy JSON to Clipboard** — copy report configuration JSON directly from the Import tab
+* **\`>=\` and \`<=\` Operators** — new filter operators for numeric and date range comparisons
+* **Query Help Panel** — CQL reference panel for syntax guidance and error explanation
+* **Compatibility Count** — shows how many fields are compatible with each column block type
+
+**Improvements:**
+* Performance optimizations for large datasets
+* Improved filter row UX
+
+---
+
+## Where to Find the Full Changelog
+
+For the complete and up-to-date version history, visit the Atlassian Marketplace listing:
+
+[Reports, Charts, Templates, CQL & Export for Confluence — Marketplace](https://marketplace.atlassian.com/apps/4125307933/reports-charts-templates-cql-export-for-confluence)`,
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════
+    // 7. INTEGRATIONS & MIGRATION
+    // ═══════════════════════════════════════════════════════════════
     {
       id: "integrations-migration",
       title: "Integrations & Migration",
       articles: [
         {
-          slug: "limitations-compatibility",
-          title: "Limitations & Compatibility",
-          content: `Understanding the boundaries of Reports, Charts, Templates, CQL & Export for Confluence helps you plan effective reports and avoid common issues.
+          slug: "supported-integrations",
+          title: "Supported Integrations",
+          content: `# Supported Integrations
 
-## Data Source Limits
+Reports, Charts, Templates, CQL & Export for Confluence integrates natively with Confluence Cloud and supports Jira data where the two products are connected.
 
-| **Limit** | **Value** | **Reason** |
+## Native Confluence Integration
+
+The app is built as a Confluence Cloud macro and uses the Confluence REST API and CQL to access content. All report data is fetched live from your Confluence instance — no external connectors, no third-party services.
+
+### What CQL Can Target
+
+CQL (Confluence Query Language) gives you precise, rules-based access to all Confluence content types and metadata fields.
+
+| **Content Type** | **CQL \`type\` Value** | **Description** |
 | --- | --- | --- |
-| Space Selection (Spaces mode) | Up to 15 spaces | Ensures optimal system performance and efficient data processing |
-| Page Selection (Spaces mode) | Up to 25 pages | Maintains report performance and prevents system overload |
-| Result Limit | Configurable (e.g., 50, 100, 500) | Controlled by user via Result Limit setting |
+| Pages | \`type = page\` | Standard Confluence pages |
+| Blog Posts | \`type = blogpost\` | Blog entries in any space |
+| Attachments | \`type = attachment\` | Files attached to pages |
+| Comments | \`type = comment\` | Inline and page-level comments |
+| Space | Accessed via \`space\` field | Filter by one or more space keys |
 
-## Permissions & Visibility
+### Confluence Spaces & Pages
 
-* Reports only return content the viewer is allowed to see in Confluence
-* If a user cannot access a space or page, it will not appear in their report results
-* Reports respect restrictions and content-level permissions
-* Two users viewing the same report may see different results
+* **Spaces** — query content from any space you have access to; filter by space key (\`space = "ENG"\`)
+* **Pages** — filter by page ID, title, label, creator, last modifier, status, or date range
+* **Blogs** — access blog posts the same way as pages, using \`type = blogpost\`
+* **Attachments** — list and inspect file attachments, including file name, size, and parent page
+* **Labels** — filter content by one or more labels (\`label = "decision"\`)
+* **Ancestors / Descendants** — use the \`ancestor\` field in CQL or the Include Children toggle to scope reports to a page tree
 
-## Field Availability
+### Confluence Permissions Respected
 
-* Fields are only available after the required expansion is loaded
-* Some fields exist only for certain content types (pages vs blogs vs attachments)
-* Use Explore to verify field availability before configuring columns
-* Use Raw View to confirm exact JSON paths
+The app fully respects Confluence's native permission model. Reports show only content the **viewing user** is authorized to access.
 
-## Performance Considerations
+| **Scenario** | **Result** |
+| --- | --- |
+| Viewer has access to all queried spaces | Full results displayed |
+| Viewer has access to only some spaces | Only permitted content appears |
+| Viewer has no access to a space | That space's content is excluded entirely |
+| Page has content restrictions | Restricted pages are excluded from results |
 
-* Loading many expansions simultaneously may slow down Live Preview
-* Very high result limits with heavy expansions can affect performance
-* Best practice: load only needed expansions, start with lower result limits
+> **Note:** Two users viewing the same report on the same page may see different results — each viewer sees only the content they are permitted to access.
 
-## Charts Limitations
+## Jira Integration
 
-* Charts require suitable group-by fields for aggregation
-* Very small or over-filtered datasets may produce empty charts
-* Charts use a separate axis/series configuration from tabular column settings
+If your Confluence Cloud site is connected to Jira Cloud, some Jira-related metadata fields may be available through Confluence's linked content features.
 
-## Best Practices to Stay Within Limits
+| **Integration Scenario** | **What's Available** |
+| --- | --- |
+| Jira issues linked to Confluence pages | Linked Jira issue references may appear in page metadata |
+| Confluence pages in Jira-connected spaces | Standard Confluence fields (space, type, creator, labels, dates) are fully available |
+| Jira-specific fields (e.g., issue status, assignee) | Not directly available — these live in Jira, not Confluence |
 
-1. Start with smaller result limits (50–100) for faster testing
-2. Load minimal expansions — add more only as needed
-3. Use CQL to narrow scope before adding heavy expansions
-4. Use Pagination instead of removing result limits
-5. Test in Live Preview before saving to the page`,
+> **Important:** The app queries Confluence content, not Jira directly. Jira issue data (status, priority, assignee) is not available as report fields unless it has been explicitly surfaced in Confluence page metadata.
+
+## What Confluence Data CQL Can Target — Full Reference
+
+| **CQL Field** | **Description** | **Example** |
+| --- | --- | --- |
+| \`type\` | Content type | \`type = page\` |
+| \`space\` | Space key | \`space = "ENG"\` |
+| \`title\` | Page or blog title | \`title ~ "Release Notes"\` |
+| \`label\` | Assigned labels | \`label = "urgent"\` |
+| \`creator\` | Original author | \`creator = currentUser()\` |
+| \`contributor\` | Any contributor | \`contributor = "jsmith"\` |
+| \`lastModifier\` | Most recent editor | \`lastModifier = currentUser()\` |
+| \`created\` | Creation date | \`created >= "2026-01-01"\` |
+| \`lastModified\` | Last update date | \`lastModified >= now("-30d")\` |
+| \`ancestor\` | Parent page ID | \`ancestor = 12345\` |
+| \`status\` | Content status | \`status = "current"\` |`,
+        },
+        {
+          slug: "data-migration",
+          title: "Data Migration",
+          content: `# Data Migration
+
+How to import and export report configurations, migrate between Confluence spaces, and understand what happens when the app is uninstalled.
+
+## Importing Report Configurations via JSON Recipe
+
+A JSON recipe is a complete export of a report's configuration — data source, expansions, columns, filters, and view type. Use it to recreate any report on a new page or in a new space without manual re-configuration.
+
+### How to Import a JSON Recipe
+
+1. Open a Confluence page in edit mode and insert the macro.
+2. In the macro editor, navigate to the **Import** tab in the right panel.
+3. Paste the JSON recipe into the text area.
+4. The app automatically rebuilds the full report configuration — data source, expansions, columns, filters, and view.
+5. Review results in Live Preview to confirm the report is working correctly.
+6. Click **Save** to publish the report to the page.
+
+### What a JSON Recipe Contains
+
+| **Element** | **Included in Recipe?** |
+| --- | --- |
+| Data Source (Spaces or CQL) | Yes |
+| CQL query or space/page selection | Yes |
+| Loaded expansion groups | Yes |
+| Column definitions (label, block type, field path, formatting) | Yes |
+| Filter rows (operator, property, value) | Yes |
+| Report Type (Table, List, Grid, Paragraph, Charts) | Yes |
+| Result Limit | Yes |
+| Actual report data (Confluence content) | No — data is always fetched live |
+
+## Exporting Reports for Backup
+
+There are two types of exports — **data export** and **configuration export**. Use both for a complete backup strategy.
+
+### Export Report Data
+
+1. Open the published report on a Confluence page (or in the macro editor).
+2. Click the **Export** button in the center panel.
+3. Choose **CSV** (for spreadsheet tools) or **JSON** (for developer use).
+4. The file downloads automatically — store it locally or in a shared drive.
+
+### Export Report Configuration (JSON Recipe)
+
+1. Open the macro editor for the report.
+2. Navigate to the **Import** tab in the right panel.
+3. Click the **Copy JSON** button — copies the full configuration to your clipboard.
+4. Paste into a text file, a shared Confluence page, or a version-controlled document.
+
+> **Best Practice:** Store JSON recipes on a dedicated "Report Library" Confluence page. Document each recipe's name, purpose, target spaces, and use case so your team can find and reuse them.
+
+## Migrating Between Confluence Spaces
+
+When you need to move a report from one Confluence space or page to another, use the JSON recipe workflow.
+
+### Step-by-Step Migration
+
+1. Open the source report in the macro editor.
+2. Navigate to the **Import** tab → click **Copy JSON** to export the configuration.
+3. Open the destination Confluence page (in the target space) and insert a new macro.
+4. In the new macro editor, navigate to the **Import** tab and paste the JSON recipe.
+5. Update the Data Source if the target space is different:
+   - If using **Spaces mode**: re-select the target space(s) in the source picker.
+   - If using **Custom CQL**: update the \`space\` value in the CQL query (e.g., change \`space = "OLD"\` to \`space = "NEW"\`).
+6. Review in Live Preview — confirm results are correct for the new space.
+7. Click **Save**.
+
+### Cross-Space Migration Checklist
+
+| **Step** | **Action** |
+| --- | --- |
+| Export config | Copy JSON recipe from Import tab |
+| Create new macro | Insert macro on destination page |
+| Import config | Paste JSON recipe in Import tab |
+| Update data source | Change space selection or CQL space filter |
+| Verify permissions | Confirm viewer has access to target space |
+| Verify columns | Check that all fields are still available (same expansions needed) |
+| Save and publish | Save macro, then publish the Confluence page |
+
+## What Happens If the App Is Uninstalled
+
+If Reports, Charts, Templates, CQL & Export for Confluence is uninstalled from your Confluence Cloud site:
+
+| **Element** | **What Happens** |
+| --- | --- |
+| Report macros on pages | Remain on pages as **placeholder blocks** — they do not disappear |
+| Report data displayed | No longer rendered — placeholders show a "macro unavailable" message |
+| JSON recipes stored on pages | Remain intact — text content is unaffected by uninstall |
+| Confluence page content | Unchanged — uninstalling the app does not delete or modify page content |
+| Re-installing the app | Restores full macro functionality — reports become live again automatically |
+
+> **Important:** Your Confluence pages and their content (including any JSON recipes stored as text) are never deleted when the app is uninstalled. Re-installing the app restores all reports to their previously configured state.`,
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════
+    // 8. USE CASES
+    // ═══════════════════════════════════════════════════════════════
     {
       id: "use-cases",
       title: "Use Cases",
       articles: [
         {
-          slug: "use-case-gallery",
-          title: "Use Case Gallery",
-          content: `Common scenarios where Reports, Charts, Templates, CQL & Export for Confluence delivers immediate value.
+          slug: "common-use-cases",
+          title: "Common Use Cases",
+          content: `# Common Use Cases
 
-| **Use Case** | **What to Build** | **Recommended View** |
+Five practical scenarios showing how teams use Reports, Charts, Templates, CQL & Export for Confluence to solve real reporting challenges.
+
+---
+
+## 1. Content Audit — Track Stale Pages
+
+**Audience:** Space Admins, Documentation Leads, Governance Teams
+
+**Purpose:** Identify pages that have not been updated recently so they can be reviewed, refreshed, or archived. Keeps your Confluence knowledge base accurate and trustworthy.
+
+**Recommended View:** Table
+
+**CQL Example:**
+\`\`\`
+type = page AND lastmodified <= now("-60d") AND space = "DOCS"
+\`\`\`
+
+**Suggested Columns:**
+* Page Title (Link block → title / _links.webui)
+* Space (Basic block → space.name)
+* Last Modified (Basic block → version.when)
+* Last Modifier (Basic block → version.by.displayName)
+* Created (Basic block → history.createdDate)
+
+**How to Use:**
+1. Apply the CQL above (adjust space key and date window as needed).
+2. Load **version** and **history** expansions.
+3. Add columns as listed above.
+4. Sort by Last Modified (ascending) — oldest pages appear first.
+5. Export as CSV to share with the team for review and cleanup assignments.
+
+---
+
+## 2. Team Directory — Grid View with User Profiles
+
+**Audience:** HR, Team Leads, All Employees
+
+**Purpose:** Create a visual team directory that shows profile photos, names, roles, and links to each person's profile page — all from Confluence user metadata.
+
+**Recommended View:** Grid
+
+**CQL Example:**
+\`\`\`
+type = page AND label = "team-profile" AND space = "TEAM"
+\`\`\`
+
+**Suggested Columns:**
+* Profile Photo (Image block → history.createdBy.profilePicture.path)
+* Name (Link block → title / _links.webui)
+* Role (Basic block → metadata.labels.results[0].name)
+* Space (Basic block → space.name)
+
+**How to Use:**
+1. Tag each team member's profile page with the label \`team-profile\`.
+2. Apply the CQL above (adjust space key as needed).
+3. Load **history** and **metadata** expansions.
+4. Set Report Type to **Grid**.
+5. Add Image block as the first column for visual profile cards.
+6. Save and publish on the team's Confluence space homepage.
+
+---
+
+## 3. Activity Dashboard — Charts of Page Creation and Updates
+
+**Audience:** Managers, Admins, Team Leads
+
+**Purpose:** Visualize how documentation activity has changed over time — track content growth, update cadence, and identify spikes or gaps in team activity.
+
+**Recommended View:** Charts (Line + Bar)
+
+**CQL Example (for line chart — content created over time):**
+\`\`\`
+type = page AND space = "ENG" AND created >= "2026-01-01"
+\`\`\`
+
+**CQL Example (for bar chart — pages per space):**
+\`\`\`
+type = page AND lastmodified >= now("-30d")
+\`\`\`
+
+**Chart Configuration:**
+
+| **Chart Goal** | **Chart Type** | **Group By** | **Metric** |
+| --- | --- | --- | --- |
+| Pages created over time | Line | Month (created) | Count |
+| Pages updated per space | Bar | Space | Count |
+| Content type distribution | Pie | Type | Count |
+
+**How to Use:**
+1. Set Data Source to **Custom CQL** — use one of the queries above.
+2. Set Report Type to **Charts**.
+3. Select chart type and Group By field as shown in the table above.
+4. Set Metric to **Count**.
+5. Review in Live Preview and save.
+6. Embed multiple chart macros on a dashboard page for a full activity overview.
+
+---
+
+## 4. Governance & Compliance Report — Ownership Tracking
+
+**Audience:** Compliance Officers, Space Admins, Legal Teams
+
+**Purpose:** Identify who owns each page — original creator vs. last modifier — and flag pages that lack clear ownership or have not been reviewed recently.
+
+**Recommended View:** Table
+
+**CQL Example:**
+\`\`\`
+type = page AND space = "LEGAL" AND status = "current"
+\`\`\`
+
+**Suggested Columns:**
+* Page Title (Link block → title / _links.webui)
+* Original Creator (Basic block → history.createdBy.displayName)
+* Last Modifier (Basic block → version.by.displayName)
+* Last Modified Date (Basic block → version.when)
+* Created Date (Basic block → history.createdDate)
+* Space (Basic block → space.name)
+
+**How to Use:**
+1. Apply the CQL above (adjust space key as needed).
+2. Load **history** and **version** expansions.
+3. Add columns as listed above.
+4. Apply a filter: Last Modified Date \`<=\` (a date 90 days ago) to flag stale pages.
+5. Export as CSV for compliance review and ownership assignment.
+
+> **Tip:** Use the "Owner vs Last Editor" pre-built template in the Templates tab — it configures this report in one click.
+
+---
+
+## 5. Executive Summary — Paragraph View Digest
+
+**Audience:** Executives, Senior Leadership, Non-Technical Stakeholders
+
+**Purpose:** Generate a readable, narrative-style weekly digest of recent documentation activity — showing what changed, who changed it, and when — in plain English rather than a data table.
+
+**Recommended View:** Paragraph
+
+**CQL Example:**
+\`\`\`
+type = page AND lastmodified >= now("-7d") ORDER BY lastmodified DESC
+\`\`\`
+
+**Column Configuration (Paragraph view — sentences):**
+
+| **Column** | **Block Type** | **Prefix** | **Source Field** | **Suffix** |
+| --- | --- | --- | --- | --- |
+| 1 | Link | — | title → _links.webui | — |
+| 2 | Text | was last updated by | version.by.displayName | — |
+| 3 | Text | in the | space.name | space |
+| 4 | Text | on | version.when | . |
+
+**How to Use:**
+1. Apply the CQL above.
+2. Load **version** expansion.
+3. Set Report Type to **Paragraph**.
+4. Add columns as shown in the table above — use Text block with Prefix/Suffix for natural language.
+5. Set Result Limit to 25–50 for a focused digest.
+6. Save on a weekly digest or leadership update page.`,
+        },
+        {
+          slug: "use-case-templates",
+          title: "Use Case Templates",
+          content: `# Use Case Templates
+
+Three ready-to-use report templates for the most common Confluence reporting scenarios. Each template includes a CQL query, recommended expansions, and column configuration.
+
+---
+
+## Template 1: Content Health Dashboard
+
+**Purpose:** Identify stale, unowned, or high-risk pages across a Confluence space. Gives admins and documentation leads a full picture of content health in one report.
+
+**Recommended View:** Table
+
+### CQL Query
+
+\`\`\`
+type = page AND space = "YOUR_SPACE_KEY" AND lastmodified <= now("-60d") AND status = "current"
+\`\`\`
+
+> Replace \`YOUR_SPACE_KEY\` with your target space key (e.g., "DOCS", "ENG", "HR").
+
+### Expansions to Load
+
+* \`version\` — for last modifier and last modified date
+* \`history\` — for original creator and creation date
+* \`metadata\` — for labels
+
+### Column Configuration
+
+| **Column Label** | **Block Type** | **Source Field** |
 | --- | --- | --- |
-| Content Auditing | Track and summarize pages, blog posts, comments across spaces. Monitor updates by users. | Table |
-| Stale Content Review | Find pages not updated within a time period for cleanup campaigns. | Table + Charts |
-| Team Directory | Visual cards showing team members, profile pictures, and links. | Grid |
-| Activity Dashboard | Live charts showing page creation, updates, and comment trends. | Charts |
-| Weekly Digest | Narrative summary of recent created/updated content in the last 7 days. | Paragraph |
-| Governance & Compliance | Track ownership, updates, modifications for auditing and compliance reviews. | Table |
-| Label Taxonomy Review | Find untagged pages, review label usage, clean up duplicates. | Table |
-| Contributor Tracking | See who created or last modified which pages across spaces. | Table |
-| Personal Dashboard | All pages authored by the current user, sorted by last modified. | Table or Grid |
-| Attachment Audit | List attachments with file name, parent page, size, and preview. | Table |
-| Executive Summary | Narrative-style report aggregating key metrics in readable prose. | Paragraph |
-| Filtered Reporting | Apply labels, creator, date range filters to narrow results precisely. | Table |
+| Page Title | Link | title → _links.webui |
+| Space | Basic | space.name |
+| Original Creator | Basic | history.createdBy.displayName |
+| Last Modified By | Basic | version.by.displayName |
+| Last Modified | Basic | version.when |
+| Created Date | Basic | history.createdDate |
+| Labels | Collection | metadata.labels.results[].name |
 
-## Detailed Use Cases
+### How to Use
 
-### Content Auditing
+1. Open the macro editor and set Data Source to **Custom CQL**.
+2. Paste the CQL query above — update the space key.
+3. Load the three expansions listed.
+4. Add columns as shown in the table above.
+5. Set Result Limit to 200–500 for a comprehensive audit.
+6. Sort by Last Modified (ascending) — oldest pages appear first.
+7. Export as CSV to share with the team.
 
-Track and summarize pages, blog posts, and comments across Confluence spaces. Monitor updates and modifications by users.
+---
 
-### Metadata Discovery
+## Template 2: Space Activity Report
 
-Use Explore to find available metadata fields. Pick correct fields for columns, filters, and charts.
+**Purpose:** Track documentation activity across a Confluence space — which pages are being updated, who is updating them, and how often. Ideal for manager dashboards and team reporting.
 
-### Custom Report Creation
+**Recommended View:** Table (for data) + Charts (for trends)
 
-Build reports using Spaces drill-down or Custom CQL. Configure views: Table, List, Grid, Paragraph, Charts.
+### CQL Query
 
-### Filtered Reporting
+\`\`\`
+type = page AND space = "YOUR_SPACE_KEY" AND lastmodified >= now("-30d") ORDER BY lastmodified DESC
+\`\`\`
 
-Apply filters for labels, creator, last modifier, date ranges. Narrow preview results with AND behavior (top to bottom).
+> Adjust the date window (\`now("-30d")\`) to 7 days, 14 days, or 90 days as needed.
 
-### Dynamic Dashboards
+### Expansions to Load
 
-Create dashboards using Live Preview updates while configuring. Use Grid and Charts for quick visual insights.
+* \`version\` — for last modifier and last modified date
+* \`history\` — for creation date
 
-### Template-Based Reporting
+### Column Configuration (Table View)
 
-Use pre-built templates such as Pages updated by user, Pages with labels. Save reusable patterns for consistent reporting.
+| **Column Label** | **Block Type** | **Source Field** |
+| --- | --- | --- |
+| Page Title | Link | title → _links.webui |
+| Last Modified By | Basic | version.by.displayName |
+| Last Modified | Basic | version.when |
+| Version Number | Basic | version.number |
+| Created Date | Basic | history.createdDate |
 
-### Data Export & Sharing
+### Chart Configuration (Charts View)
 
-Export report results in CSV or JSON. Share reports using Import/Export JSON recipes.
+| **Chart Goal** | **Chart Type** | **Group By** | **Metric** |
+| --- | --- | --- | --- |
+| Updates over time | Line | Month (lastmodified) | Count |
+| Top editors in space | Bar | version.by.displayName | Count |
 
-### Pagination & Result Management
+### How to Use
 
-Use Result Limit and Pagination to manage large datasets. Improve report performance and readability.
+1. Build the Table view report first — use the CQL and columns above.
+2. Save and review the data.
+3. Insert a second macro on the same page — configure it as a Chart.
+4. Use the same CQL query, set Chart Type to Line, Group By Month.
+5. Add a second chart macro for Bar chart — Group By last modifier.
+6. Save both macros to create a combined data + visual activity dashboard.
 
-### Data Inspection & Debugging
+---
 
-Use Raw View to inspect JSON data. Validate expansions and field paths before finalizing reports.
+## Template 3: Contributor Tracking Report
 
-### Governance & Compliance
+**Purpose:** Track who is contributing to documentation — original creators and active editors — and measure contribution patterns across a space or the entire Confluence instance.
 
-Track ownership, updates, and modifications for auditing. Support governance review and compliance checks.`,
-        },
-        {
-          slug: "guidelines-intro",
-          title: "Guidelines",
-          content: `Best practices for building efficient, reliable, and shareable reports
+**Recommended View:** Table + Bar Chart
 
-| **Subpage** | **What you will find** |
+### CQL Query (All recent contributors)
+
+\`\`\`
+type = page AND (creator = currentUser() OR contributor = currentUser()) ORDER BY lastmodified DESC
+\`\`\`
+
+### CQL Query (Space-wide contributor view — for admins)
+
+\`\`\`
+type = page AND space = "YOUR_SPACE_KEY" AND lastmodified >= now("-90d")
+\`\`\`
+
+### Expansions to Load
+
+* \`version\` — for last modifier
+* \`history\` — for original creator and contributors
+
+### Column Configuration (Table View)
+
+| **Column Label** | **Block Type** | **Source Field** |
+| --- | --- | --- |
+| Page Title | Link | title → _links.webui |
+| Original Creator | Basic | history.createdBy.displayName |
+| Last Modified By | Basic | version.by.displayName |
+| Last Modified | Basic | version.when |
+| Space | Basic | space.name |
+| Version | Basic | version.number |
+
+### Chart Configuration (Bar Chart)
+
+| **Setting** | **Value** |
 | --- | --- |
-| Best Practices | Tips and guidelines for efficient, reliable, and shareable reports |`,
-        },
-        {
-          slug: "best-practices",
-          title: "Best Practices",
-          content: `Follow these guidelines to build efficient, reliable, and shareable reports in Reports, Charts, Templates, CQL & Export for Confluence.
+| Chart Type | Bar |
+| Group By | version.by.displayName (last modifier) |
+| Metric | Count |
+| Use Case | Ranks editors by number of page updates |
 
-## 1. Start with Templates
+### How to Use
 
-* Use a pre-built template first — it configures source, expansions, columns, filters, and view in one click
-* Customize to match your specific report goal after applying
-* Saves time and ensures you follow proven report structures
-* 35 tabular templates + 17 chart templates available
+1. Use the personal CQL query (\`creator = currentUser()\`) for a personal contribution dashboard.
+2. Use the space-wide CQL for admin-level contributor tracking across the team.
+3. Load **version** and **history** expansions.
+4. Build the Table view to see individual page contributions.
+5. Add a second macro with Bar chart to visualize top contributors at a glance.
+6. Export the Table view as CSV for performance reviews or team reporting.
 
-## 2. Optimize Performance
-
-* Start with minimal expansions — load only what you need for your current columns and filters
-* Add expansions one at a time and check Live Preview after each addition
-* Remove unused expansions before saving — unused expansions slow down the report
-* Use a lower Result Limit while testing (50–100), increase when finalizing
-* Narrow your data source scope first (specific spaces or focused CQL) before adding heavy expansions
-
-## 3. Validate in Live Preview
-
-* Check Live Preview after every significant change — don't wait until the end
-* Verify column values are not blank — blank means expansion is missing or field path is wrong
-* Confirm filter behavior by adding filters one at a time and watching result count change
-* Use Explore to find the right field path before configuring columns
-* Use Raw View to verify exact JSON paths when columns show unexpected values
-
-## 4. Share and Standardize
-
-* Export report setups as JSON recipes using the Copy JSON button in the Import tab
-* Store recipes on a shared Confluence 'Report Library' page for your team
-* Document each recipe — name, purpose, use case, and which spaces it targets
-* Use Import to recreate the same report on multiple Confluence pages without manual re-configuration
-
-## 5. Choose the Right View
-
-| **View** | **Best For** |
-| --- | --- |
-| Table | Audits, detailed lists, structured data comparison, CSV export |
-| List | Clean inventories, directories, readable one-item-per-row output |
-| Grid | Visual dashboards, team directories with photos, portfolio pages |
-| Paragraph | Summaries, digests, executive reports, narrative-style output |
-| Charts | Trends, comparisons, distribution insights, activity dashboards |
-
-## 6. Quick Checklist
-
-### Before You Build
-
-* Check if a pre-built template covers your use case
-* Decide between Spaces (browse) or Custom CQL (rules-based) as your data source
-* Choose the view that matches your audience — table for analysts, paragraph for executives
-
-### While Building
-
-* Load minimal expansions — add only what current columns need
-* Validate in Live Preview after each column and filter change
-* Use Explore to find field paths, Raw View to debug unexpected values
-
-### After Building
-
-* Export the JSON recipe from the Import tab and store it in a Report Library page
-* Document the recipe purpose and use case
-* Set an appropriate Result Limit — use Pagination for large datasets
-
-## 7. Permissions & Sharing
-
-* Remember that each viewer sees only the content they have permission to access
-* Test the report as a viewer (not an admin) to confirm the correct content is visible
-* For org-wide reports, ensure the target spaces are accessible to all intended viewers
-* Use Import/Export JSON to share the report configuration — not the data`,
+> **Tip:** The "Content Created by Me" and "Pages Updated By a Specific User" pre-built templates in the Templates tab cover similar scenarios and can be used as starting points.`,
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════
+    // 9. HELP & SUPPORT
+    // ═══════════════════════════════════════════════════════════════
     {
-      id: "help-center",
-      title: "Help Center",
+      id: "help-support",
+      title: "Help & Support",
       articles: [
         {
           slug: "help-support-intro",
@@ -1762,14 +2528,162 @@ You can also reach our support team directly at [support@clovity.com](mailto:sup
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════
+    // 6. GUIDELINES
+    // ═══════════════════════════════════════════════════════════════
     {
       id: "additional-resources",
       title: "Additional Resources",
       articles: [
         {
+          slug: "guidelines-intro",
+          title: "Guidelines",
+          content: `Best practices for building efficient, reliable, and shareable reports
+
+| **Subpage** | **What you will find** |
+| --- | --- |
+| Best Practices | Tips and guidelines for efficient, reliable, and shareable reports |`,
+        },
+        {
+          slug: "best-practices",
+          title: "Best Practices",
+          content: `Follow these guidelines to build efficient, reliable, and shareable reports in Reports, Charts, Templates, CQL & Export for Confluence.
+
+## 1. Start with Templates
+
+* Use a pre-built template first — it configures source, expansions, columns, filters, and view in one click
+* Customize to match your specific report goal after applying
+* Saves time and ensures you follow proven report structures
+* 35 tabular templates + 17 chart templates available
+
+## 2. Optimize Performance
+
+* Start with minimal expansions — load only what you need for your current columns and filters
+* Add expansions one at a time and check Live Preview after each addition
+* Remove unused expansions before saving — unused expansions slow down the report
+* Use a lower Result Limit while testing (50–100), increase when finalizing
+* Narrow your data source scope first (specific spaces or focused CQL) before adding heavy expansions
+
+## 3. Validate in Live Preview
+
+* Check Live Preview after every significant change — don't wait until the end
+* Verify column values are not blank — blank means expansion is missing or field path is wrong
+* Confirm filter behavior by adding filters one at a time and watching result count change
+* Use Explore to find the right field path before configuring columns
+* Use Raw View to verify exact JSON paths when columns show unexpected values
+
+## 4. Share and Standardize
+
+* Export report setups as JSON recipes using the Copy JSON button in the Import tab
+* Store recipes on a shared Confluence 'Report Library' page for your team
+* Document each recipe — name, purpose, use case, and which spaces it targets
+* Use Import to recreate the same report on multiple Confluence pages without manual re-configuration
+
+## 5. Choose the Right View
+
+| **View** | **Best For** |
+| --- | --- |
+| Table | Audits, detailed lists, structured data comparison, CSV export |
+| List | Clean inventories, directories, readable one-item-per-row output |
+| Grid | Visual dashboards, team directories with photos, portfolio pages |
+| Paragraph | Summaries, digests, executive reports, narrative-style output |
+| Charts | Trends, comparisons, distribution insights, activity dashboards |
+
+## 6. Quick Checklist
+
+### Before You Build
+
+* Check if a pre-built template covers your use case
+* Decide between Spaces (browse) or Custom CQL (rules-based) as your data source
+* Choose the view that matches your audience — table for analysts, paragraph for executives
+
+### While Building
+
+* Load minimal expansions — add only what current columns need
+* Validate in Live Preview after each column and filter change
+* Use Explore to find field paths, Raw View to debug unexpected values
+
+### After Building
+
+* Export the JSON recipe from the Import tab and store it in a Report Library page
+* Document the recipe purpose and use case
+* Set an appropriate Result Limit — use Pagination for large datasets
+
+## 7. Permissions & Sharing
+
+* Remember that each viewer sees only the content they have permission to access
+* Test the report as a viewer (not an admin) to confirm the correct content is visible
+* For org-wide reports, ensure the target spaces are accessible to all intended viewers
+* Use Import/Export JSON to share the report configuration — not the data`,
+        },
+      ],
+    },
+    // ═══════════════════════════════════════════════════════════════
+    // 7. END USER LICENSE AGREEMENT
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "eula",
+      title: "End User License Agreement (Eula)",
+      articles: [
+        {
           slug: "eula",
           title: "End User License Agreement",
-          content: `# End User License Agreement (EULA)\n\nThis End User License Agreement governs your use of **Reports, Charts, Templates, CQL & Export for Confluence** by Clovity, Inc.\n\nBy installing or using this application, you agree to be bound by the terms of this Agreement.\n\n## 1. License Grant\n\nClovity grants you a limited, non-exclusive, non-transferable license to use the Software within your Atlassian Confluence Cloud environment.\n\n## 2. Restrictions\n\nYou shall not copy, modify, distribute, reverse engineer, or create derivative works of the Software.\n\n## 3. Data Privacy\n\nThe Software processes Confluence content within your environment and does not transmit personal or confidential data to external servers.\n\n## 4. Disclaimer of Warranties\n\nThe Software is provided "AS IS" without warranties of any kind.\n\n## 5. Contact\n\nFor licensing questions: [support@clovity.com](mailto:support@clovity.com)`,
+          content: `# End User License Agreement
+
+**Reports, Charts, Templates, CQL & Export for Confluence**
+Published by Clovity
+
+By installing or using Reports, Charts, Templates, CQL & Export for Confluence ("the App"), you agree to the following terms.
+
+## 1. License Grant
+
+Clovity grants you a limited, non-exclusive, non-transferable license to use the App solely within your Atlassian Confluence Cloud instance, subject to the terms of this agreement and the Atlassian Marketplace Terms of Use.
+
+## 2. Permitted Use
+
+* Install and use the App on your licensed Confluence Cloud site
+* Insert the App's macros on Confluence pages for reporting and data visualization purposes
+* Configure reports, export data, and share configurations within your organization
+
+## 3. Restrictions
+
+You may not:
+
+* Reverse engineer, decompile, or disassemble the App
+* Redistribute, resell, sublicense, or transfer the App to any third party
+* Use the App in violation of Atlassian Marketplace Terms of Use
+* Remove or alter any proprietary notices, labels, or marks on the App
+
+## 4. Data & Privacy
+
+* The App accesses Confluence content solely to render reports in real-time
+* No report data is stored or transmitted outside of your Atlassian Cloud instance
+* The App complies with Atlassian's security and data residency requirements
+* User data is processed in accordance with Clovity's Privacy Policy
+
+## 5. Intellectual Property
+
+The App, including all code, templates, documentation, and associated materials, is the intellectual property of Clovity. Nothing in this agreement transfers ownership of the App or any of its components to you.
+
+## 6. Disclaimer of Warranties
+
+The App is provided "as is" without warranties of any kind, express or implied. Clovity does not warrant that the App will be error-free, uninterrupted, or that it will meet your specific requirements.
+
+## 7. Limitation of Liability
+
+To the maximum extent permitted by applicable law, Clovity shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the App.
+
+## 8. Termination
+
+This license is effective until terminated. Your license to use the App terminates automatically if you breach any terms of this agreement or cease your Atlassian Marketplace subscription.
+
+## 9. Governing Law
+
+This agreement is governed by the laws of the State of California, United States, without regard to its conflict of law provisions.
+
+## 10. Contact
+
+For questions regarding this agreement, contact Clovity at [support@clovity.com](mailto:support@clovity.com).`,
         },
       ],
     },

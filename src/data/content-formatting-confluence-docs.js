@@ -17,8 +17,7 @@ export const contentFormattingConfluenceDocs = {
             src: "https://www.youtube.com/embed/9kxsvSFa2-w",
             title: "Content Formatting Macros: Tabs, Navigation, Visibility & CSS - Product Overview",
           },
-          content: `# What is Content Formatting Macros?
-
+          content: `
 Content Formatting Macros is a Confluence Cloud app that gives teams four powerful capabilities in one install.
 
 <!--VIDEO_BREAK-->
@@ -168,8 +167,7 @@ To uninstall: **Confluence Settings** → **Manage apps** → find Content Forma
         {
           slug: "quick-start",
           title: "Quick Start Guide",
-          content: `# Get Started with Content Formatting Macros
-
+          content: `
 ## Who This App Is For
 
 - **Confluence Space Admins** who want to improve page structure and navigation across their space
@@ -207,8 +205,7 @@ Add Alert macros for warnings, Buttons for CTAs, Background for section separati
         {
           slug: "system-requirements",
           title: "System Requirements",
-          content: `# System Requirements
-
+          content: `
 ## Platform Requirements
 
 | Requirement | Details |
@@ -256,8 +253,7 @@ The Attachment Management Center requires:
         {
           slug: "permissions-access",
           title: "Permissions & Access",
-          content: `# Permissions & Access
-
+          content: `
 ## Who Can Do What
 
 | Role | Can Do |
@@ -546,8 +542,7 @@ Use the Confluence "Include Page" macro inside a tab to pull in another page's c
         {
           slug: "dynamic-visibility",
           title: "Dynamic Visibility Overview",
-          content: `# Dynamic Visibility
-
+          content: `
 ## What Is Conditional Visibility?
 
 Conditional visibility macros let you show or hide sections of content based on **who is viewing the page**. A single page can display different content to different audiences - admins see internal notes, guests see the public version, and managers see the compensation table.
@@ -683,8 +678,7 @@ Conditional Show can wrap any content, including other Content Formatting macros
         {
           slug: "rich-content-formatting",
           title: "Rich Content Formatting Overview",
-          content: `# Rich Content Formatting
-
+          content: `
 ## Overview
 
 Content Formatting Macros includes 18 macros for enhancing the visual quality, interactivity, and clarity of Confluence pages. These macros require no custom CSS or developer skills - everything is configured through the macro's settings panel in the Confluence editor.
@@ -1363,8 +1357,7 @@ The JSON Viewer macro renders a block of JSON data in a formatted, syntax-highli
         {
           slug: "attachment-management",
           title: "Attachment Management & Audit",
-          content: `# Attachment Management & Audit
-
+          content: `
 ## What Is the Attachment Management Center?
 
 The Attachment Management Center is a dedicated panel built into Content Formatting Macros that gives Confluence space admins a single place to:
@@ -1777,8 +1770,7 @@ A team home page with announcements, key links, member directory, and rotating s
         {
           slug: "privacy-access",
           title: "Privacy & Access Notes",
-          content: `# Privacy & Access Notes
-
+          content: `
 ## How Content Formatting Macros Handles Data
 
 ### Principle 1 - Content Stays in Confluence
@@ -1829,8 +1821,7 @@ For questions about how Clovity processes data as the app vendor, contact **supp
         {
           slug: "overview-dashboard",
           title: "Overview & Dashboard",
-          content: `# Overview & Dashboard
-
+          content: `
 ## App Layout in Confluence
 
 Content Formatting Macros integrates directly into the standard Confluence Cloud editor. There is no separate admin dashboard or standalone UI - everything is accessed from within the Confluence page editing experience.
@@ -1942,8 +1933,7 @@ Tab Navigation macros **cannot** be nested inside another Tab Navigation macro (
         {
           slug: "how-to-guides",
           title: "How-To Guides",
-          content: `# How-To Guides
-
+          content: `
 Step-by-step instructions for the most common tasks with Content Formatting Macros.
 
 ---
@@ -2085,8 +2075,7 @@ Step-by-step instructions for the most common tasks with Content Formatting Macr
         {
           slug: "latest-release",
           title: "Latest Release",
-          content: `# Latest Release
-
+          content: `
 ## What's New in Content Formatting Macros
 
 Stay up to date with the latest improvements, new macros, and performance enhancements. For the full changelog and to install the latest version, visit the app on the [Atlassian Marketplace](https://marketplace.atlassian.com/apps/3890258352/content-formatting-macros-tabs-navigation-visibility-css).
@@ -2155,8 +2144,7 @@ App updates are delivered automatically to your Confluence Cloud instance - no m
         {
           slug: "version-history",
           title: "Version History",
-          content: `# Version History
-
+          content: `
 A summary of major changes by version. For the complete per-build changelog, see the app's [Atlassian Marketplace listing](https://marketplace.atlassian.com/apps/3890258352/content-formatting-macros-tabs-navigation-visibility-css).
 
 ---
@@ -2213,8 +2201,7 @@ Confluence Cloud apps update automatically. If you are still on v1.x, no action 
         {
           slug: "supported-integrations",
           title: "Supported Integrations",
-          content: `# Supported Integrations
-
+          content: `
 ## Native Confluence Integration
 
 Content Formatting Macros is built as a native Confluence Cloud app and integrates deeply with Confluence's built-in data model. It does not require any external service connections, API keys, or third-party accounts.
@@ -2344,8 +2331,7 @@ Content Formatting Macros fully respects Confluence's permission model at every 
         {
           slug: "data-migration",
           title: "Data Migration",
-          content: `# Data Migration
-
+          content: `
 ## Migrating from Other Tab or Formatting Apps to Content Formatting Macros
 
 If your Confluence space currently uses another tab or formatting app (e.g., Comala, Scroll Viewport, Brikit Theme Press, or other tab macro apps), this guide covers what to expect when switching to Content Formatting Macros.
@@ -2474,8 +2460,7 @@ Include the number of pages involved, the app you are migrating from, and your t
         {
           slug: "common-use-cases",
           title: "Common Use Cases",
-          content: `# Common Use Cases
-
+          content: `
 Real-world scenarios where Content Formatting Macros transforms how teams use Confluence.
 
 ---
@@ -2607,8 +2592,7 @@ Interactive Banner, Buttons, Countdown Timer, Tab Navigation, Custom Tabs, Backg
         {
           slug: "use-case-templates",
           title: "Use Case Templates",
-          content: `# Use Case Templates
-
+          content: `
 Ready-to-use page templates demonstrating best-practice layouts with Content Formatting Macros. Each template includes a suggested macro layout, section structure, and guidance notes.
 
 ---
@@ -2806,8 +2790,7 @@ Interactive Banner, Buttons, Background, Status Macro, Progress Bar, Countdown T
         {
           slug: "help-support",
           title: "Help & Support",
-          content: `# Help & Support
-
+          content: `
 ## Before Contacting Support
 
 Work through this checklist first - most issues are resolved without opening a ticket:
@@ -2846,8 +2829,7 @@ Submit feature requests via the Atlassian Marketplace listing or email support@c
         {
           slug: "faq",
           title: "FAQ",
-          content: `# Frequently Asked Questions
-
+          content: `
 ## Tab Macros
 
 **Q: Can I link directly to a specific tab via URL?**
@@ -2907,8 +2889,7 @@ A: Yes. A 30-day free trial is available via the Atlassian Marketplace. No credi
         {
           slug: "contact-support",
           title: "Contact Support",
-          content: `# Contact Support
-
+          content: `
 ## Get Help from the Clovity Team
 
 Our Atlassian-certified support team is here to help with any questions about Content Formatting Macros.
@@ -2956,8 +2937,7 @@ All feature requests are reviewed by the product team. You'll receive confirmati
         {
           slug: "eula",
           title: "End User License Agreement",
-          content: `# End User License Agreement (EULA)
-
+          content: `
 **Content Formatting Macros: Tabs Navigation Visibility CSS**
 Developed and maintained by Clovity
 

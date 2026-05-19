@@ -15,8 +15,7 @@ export const reportsChartsConfluenceDocs = {
             src: "https://www.youtube.com/embed/oD5evunAQok",
             title: "Reports, Charts, Templates, CQL & Export for Confluence - Product Overview",
           },
-          content: `# What is Reports, Charts, Templates, CQL & Export for Confluence?
-
+          content: `
 What Reports, Charts, Templates, CQL & Export for Confluence is and what it can do for you.
 
 Reports, Charts, Templates, CQL & Export for Confluence is a macro-based reporting app that lets you build live, dynamic reports inside Confluence pages - without scripts or external tools.
@@ -77,8 +76,7 @@ Confluence Cloud only. Installed as a Confluence macro app via the Atlassian Mar
         {
           slug: "installation-setup",
           title: "Installation & Setup",
-          content: `# Installation & Setup
-
+          content: `
 Install Reports, Charts, Templates, CQL & Export for Confluence from the Atlassian Marketplace in a few steps - no servers, no configuration files, no infrastructure required.
 
 ## Prerequisites
@@ -141,8 +139,7 @@ Once installed, the app is available to all users on your Confluence Cloud site.
         {
           slug: "quick-start",
           title: "Quick Start Guide",
-          content: `# Quick Start Guide
-
+          content: `
 Build your first report in under 5 minutes. Follow these four steps.
 
 ## Step 1 - Open the Macro Editor
@@ -206,8 +203,7 @@ Click **Save** to publish the report to your Confluence page. The macro editor c
         {
           slug: "system-requirements",
           title: "System Requirements",
-          content: `# System Requirements
-
+          content: `
 Reports, Charts, Templates, CQL & Export for Confluence is a Confluence Cloud macro app. Review the requirements below before installing.
 
 ## Platform Requirements
@@ -263,8 +259,7 @@ For best performance, use the latest stable version of your preferred browser.
         {
           slug: "permissions-access",
           title: "Permissions & Access",
-          content: `# Permissions & Access
-
+          content: `
 Reports, Charts, Templates, CQL & Export for Confluence uses Confluence's native permission model. No additional permission management is required - the app works within your existing Confluence access controls.
 
 ## Installation Permissions
@@ -1481,8 +1476,7 @@ Live Preview is the center panel of the macro editor. Every change you make - da
         {
           slug: "overview-dashboard",
           title: "Overview & Dashboard",
-          content: `# Overview & Dashboard
-
+          content: `
 A complete walkthrough of the macro editor layout and how to open, configure, save, and publish reports.
 
 ## Macro Editor Layout
@@ -1585,8 +1579,7 @@ The right panel contains four tabs for building and managing your report.
         {
           slug: "how-to-guides",
           title: "How-To Guides",
-          content: `# How-To Guides
-
+          content: `
 Step-by-step instructions for the most common tasks in Reports, Charts, Templates, CQL & Export for Confluence.
 
 ## 1. Build Your First Tabular Report
@@ -1706,8 +1699,7 @@ Step-by-step instructions for the most common tasks in Reports, Charts, Template
         {
           slug: "pre-built-report-types",
           title: "Pre-Built Report Types",
-          content: `# Pre-Built Report Types
-
+          content: `
 ## What Are Pre-Built Reports?
 
 Pre-built reports are ready-to-use templates in the **Templates** tab of the Reports, Charts, Templates, CQL & Export macro editor. Each template pre-configures data source, expansions, columns, filters, and view — you can use them immediately or customize from the pre-configured baseline.
@@ -1813,8 +1805,7 @@ Templates are locked by default to prevent accidental modification.
         {
           slug: "export-formats-guide",
           title: "Export Formats Guide",
-          content: `# Export Formats Guide
-
+          content: `
 ## Overview
 
 Reports, Charts, Templates, CQL & Export for Confluence supports exporting report data in two formats: **CSV** (for tabular data) and **JSON** (for all report types). This guide covers how to export, what each format contains, and tips for working with exported data.
@@ -1919,8 +1910,7 @@ This is different from a data export — it exports the configuration (columns, 
         {
           slug: "latest-release",
           title: "Latest Release",
-          content: `# Latest Release
-
+          content: `
 What's new and recently improved in Reports, Charts, Templates, CQL & Export for Confluence.
 
 ## New Features
@@ -1967,8 +1957,7 @@ View the full app listing, reviews, and version history on the Atlassian Marketp
         {
           slug: "version-history",
           title: "Version History",
-          content: `# Version History
-
+          content: `
 A complete record of releases and changes for Reports, Charts, Templates, CQL & Export for Confluence.
 
 ## Release Timeline
@@ -2044,8 +2033,7 @@ For the complete and up-to-date version history, visit the Atlassian Marketplace
         {
           slug: "supported-integrations",
           title: "Supported Integrations",
-          content: `# Supported Integrations
-
+          content: `
 Reports, Charts, Templates, CQL & Export for Confluence integrates natively with Confluence Cloud and supports Jira data where the two products are connected.
 
 ## Native Confluence Integration
@@ -2117,8 +2105,7 @@ If your Confluence Cloud site is connected to Jira Cloud, some Jira-related meta
         {
           slug: "data-migration",
           title: "Data Migration",
-          content: `# Data Migration
-
+          content: `
 How to import and export report configurations, migrate between Confluence spaces, and understand what happens when the app is uninstalled.
 
 ## Importing Report Configurations via JSON Recipe
@@ -2221,8 +2208,7 @@ If Reports, Charts, Templates, CQL & Export for Confluence is uninstalled from y
         {
           slug: "common-use-cases",
           title: "Common Use Cases",
-          content: `# Common Use Cases
-
+          content: `
 Five practical scenarios showing how teams use Reports, Charts, Templates, CQL & Export for Confluence to solve real reporting challenges.
 
 ---
@@ -2386,8 +2372,7 @@ type = page AND lastmodified >= now("-7d") ORDER BY lastmodified DESC
         {
           slug: "use-case-templates",
           title: "Use Case Templates",
-          content: `# Use Case Templates
-
+          content: `
 Three ready-to-use report templates for the most common Confluence reporting scenarios. Each template includes a CQL query, recommended expansions, and column configuration.
 
 ---
@@ -2625,8 +2610,7 @@ type = page AND space = "YOUR_SPACE_KEY" AND lastmodified >= now("-90d")
         {
           slug: "faq",
           title: "FAQ",
-          content: `## Permissions & Access
-
+          content: `
 **Q: Do viewers see the same results as the author?**
 
 No. Reports respect Confluence permissions. Users only see content they are allowed to access. Two users viewing the same report may see different results.
@@ -2733,96 +2717,6 @@ You can also reach our support team directly at [support@clovity.com](mailto:sup
       ],
     },
     // ═══════════════════════════════════════════════════════════════
-    // 6. GUIDELINES
-    // ═══════════════════════════════════════════════════════════════
-    {
-      id: "additional-resources",
-      title: "Additional Resources",
-      articles: [
-        {
-          slug: "guidelines-intro",
-          title: "Guidelines",
-          content: `Best practices for building efficient, reliable, and shareable reports
-
-| **Subpage** | **What you will find** |
-| --- | --- |
-| Best Practices | Tips and guidelines for efficient, reliable, and shareable reports |`,
-        },
-        {
-          slug: "best-practices",
-          title: "Best Practices",
-          content: `Follow these guidelines to build efficient, reliable, and shareable reports in Reports, Charts, Templates, CQL & Export for Confluence.
-
-## 1. Start with Templates
-
-* Use a pre-built template first - it configures source, expansions, columns, filters, and view in one click
-* Customize to match your specific report goal after applying
-* Saves time and ensures you follow proven report structures
-* 35 tabular templates + 17 chart templates available
-
-## 2. Optimize Performance
-
-* Start with minimal expansions - load only what you need for your current columns and filters
-* Add expansions one at a time and check Live Preview after each addition
-* Remove unused expansions before saving - unused expansions slow down the report
-* Use a lower Result Limit while testing (50–100), increase when finalizing
-* Narrow your data source scope first (specific spaces or focused CQL) before adding heavy expansions
-
-## 3. Validate in Live Preview
-
-* Check Live Preview after every significant change - don't wait until the end
-* Verify column values are not blank - blank means expansion is missing or field path is wrong
-* Confirm filter behavior by adding filters one at a time and watching result count change
-* Use Explore to find the right field path before configuring columns
-* Use Raw View to verify exact JSON paths when columns show unexpected values
-
-## 4. Share and Standardize
-
-* Export report setups as JSON recipes using the Copy JSON button in the Import tab
-* Store recipes on a shared Confluence 'Report Library' page for your team
-* Document each recipe - name, purpose, use case, and which spaces it targets
-* Use Import to recreate the same report on multiple Confluence pages without manual re-configuration
-
-## 5. Choose the Right View
-
-| **View** | **Best For** |
-| --- | --- |
-| Table | Audits, detailed lists, structured data comparison, CSV export |
-| List | Clean inventories, directories, readable one-item-per-row output |
-| Grid | Visual dashboards, team directories with photos, portfolio pages |
-| Paragraph | Summaries, digests, executive reports, narrative-style output |
-| Charts | Trends, comparisons, distribution insights, activity dashboards |
-
-## 6. Quick Checklist
-
-### Before You Build
-
-* Check if a pre-built template covers your use case
-* Decide between Spaces (browse) or Custom CQL (rules-based) as your data source
-* Choose the view that matches your audience - table for analysts, paragraph for executives
-
-### While Building
-
-* Load minimal expansions - add only what current columns need
-* Validate in Live Preview after each column and filter change
-* Use Explore to find field paths, Raw View to debug unexpected values
-
-### After Building
-
-* Export the JSON recipe from the Import tab and store it in a Report Library page
-* Document the recipe purpose and use case
-* Set an appropriate Result Limit - use Pagination for large datasets
-
-## 7. Permissions & Sharing
-
-* Remember that each viewer sees only the content they have permission to access
-* Test the report as a viewer (not an admin) to confirm the correct content is visible
-* For org-wide reports, ensure the target spaces are accessible to all intended viewers
-* Use Import/Export JSON to share the report configuration - not the data`,
-        },
-      ],
-    },
-    // ═══════════════════════════════════════════════════════════════
     // 7. END USER LICENSE AGREEMENT
     // ═══════════════════════════════════════════════════════════════
     {
@@ -2832,8 +2726,7 @@ You can also reach our support team directly at [support@clovity.com](mailto:sup
         {
           slug: "eula",
           title: "End User License Agreement",
-          content: `# End User License Agreement
-
+          content: `
 **Reports, Charts, Templates, CQL & Export for Confluence**
 Published by Clovity
 

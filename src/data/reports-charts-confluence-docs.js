@@ -13,7 +13,8 @@ export const reportsChartsConfluenceDocs = {
           title: "What is Reports & Charts for Confluence?",
           sideVideo: {
             src: "https://www.youtube.com/embed/oD5evunAQok",
-            title: "Reports, Charts, Templates, CQL & Export for Confluence — Product Overview",
+            title:
+              "Reports, Charts, Templates, CQL & Export for Confluence — Product Overview",
           },
           content: `# What is Reports, Charts, Templates, CQL & Export for Confluence?
 
@@ -64,13 +65,26 @@ Confluence Cloud only. Installed as a Confluence macro app via the Atlassian Mar
           title: "Demo Videos & Walkthroughs",
           content: `5 step-by-step tutorials covering every feature — click any video to start watching, or use the arrows to go through them in order. New to the app? Start with the [Product Introduction](/apps/reports-charts-confluence/what-is-reports-charts) first.`,
           videoGallery: {
-            playlistUrl: "https://www.youtube.com/watch?v=zTSl0fVYVVA&list=PLACoCS_WiVwT1Rkz4Z29xzo8jQbkx9OZX",
+            playlistUrl:
+              "https://www.youtube.com/watch?v=zTSl0fVYVVA&list=PLACoCS_WiVwT1Rkz4Z29xzo8jQbkx9OZX",
             videos: [
-              { id: "zTSl0fVYVVA", title: "App Overview, Data Sources & CQL Editor" },
-              { id: "sDyyDFBX-hE", title: "Expression Panel, Columns & Block Types" },
+              {
+                id: "zTSl0fVYVVA",
+                title: "App Overview, Data Sources & CQL Editor",
+              },
+              {
+                id: "sDyyDFBX-hE",
+                title: "Expression Panel, Columns & Block Types",
+              },
               { id: "z3z7i2VWwBI", title: "Report Layouts & Charts" },
-              { id: "46zsIYO6r5A", title: "Filtering, Explore Mode and Raw JSON" },
-              { id: "DXGIXkgv8uQ", title: "Templates, Import/Export and Save to Confluence" },
+              {
+                id: "46zsIYO6r5A",
+                title: "Filtering, Explore Mode and Raw JSON",
+              },
+              {
+                id: "DXGIXkgv8uQ",
+                title: "Templates, Import/Export and Save to Confluence",
+              },
             ],
           },
         },
@@ -2419,30 +2433,6 @@ type = page AND space = "YOUR_SPACE_KEY" AND lastmodified >= now("-90d")
 | 8 | Check Result Limit | Ensure limit isn't set to 0 or very low |`,
         },
         {
-          slug: "release-notes",
-          title: "Release Notes",
-          content: `What's new and recently improved in Reports, Charts, Templates, CQL & Export for Confluence
-
-## Recent Features
-
-| **Feature** | **Description** |
-| --- | --- |
-| Regex Block Type | New column block type for pattern matching and data extraction |
-| Text Block Type | Enhanced text display with prefix/suffix, truncation, case transform, and fallback values |
-| Duplicate Column | Copy any existing column configuration with one click |
-| Hide Column | Temporarily remove a column from display while preserving its configuration |
-| Include Children | Spaces mode: automatically include all descendant pages under selected pages |
-| Hierarchical View | Visual page tree in Spaces selector for easier navigation |
-| Search in Expansions | Real-time search box in the left panel to find fields quickly |
-| Search in Templates | Search box in the Templates tab for faster template discovery |
-| Copy JSON to Clipboard | Copy report configuration JSON from the Import tab |
-| >= and <= Operators | New filter operators for numeric and date comparisons |
-| Query Help Panel | CQL reference panel for syntax guidance and error explanation |
-| Compatibility Count | Shows how many fields are compatible with each column block type |
-
-For a complete changelog and version history, please refer to the Atlassian Marketplace listing for Reports, Charts, Templates, CQL & Export for Confluence.`,
-        },
-        {
           slug: "faq",
           title: "FAQ",
           content: `## Permissions & Access
@@ -2556,8 +2546,8 @@ You can also reach our support team directly at [support@clovity.com](mailto:sup
     // 6. GUIDELINES
     // ═══════════════════════════════════════════════════════════════
     {
-      id: "guidelines",
-      title: "Guidelines",
+      id: "additional-resources",
+      title: "Additional Resources",
       articles: [
         {
           slug: "guidelines-intro",

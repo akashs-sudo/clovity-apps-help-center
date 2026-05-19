@@ -10,10 +10,12 @@ export const dashboardChartsDocs = {
       articles: [
         {
           slug: "what-is-dashboard-charts",
-          title: "What is Dashboard Templates, Charts, Graphs & Reports for Jira?",
+          title:
+            "What is Dashboard Templates, Charts, Graphs & Reports for Jira?",
           sideVideo: {
             src: "https://www.youtube.com/embed/cD2Kdxp59qA",
-            title: "Dashboard Templates, Charts, Graphs & Reports for Jira — Product Overview",
+            title:
+              "Dashboard Templates, Charts, Graphs & Reports for Jira — Product Overview",
           },
           content: `# Dashboard Templates, Charts, Graphs & Reports for Jira
 
@@ -72,12 +74,29 @@ Jira Cloud only. Built on Atlassian Forge — no external servers, no data expor
           title: "Demo Videos & Walkthroughs",
           content: `4 step-by-step tutorials covering every gadget — click any video to start watching, or use the arrows to go through them in order. New to the app? Start with the [Product Introduction](/apps/dashboard-charts-jira/what-is-dashboard-charts) first.`,
           videoGallery: {
-            playlistUrl: "https://www.youtube.com/watch?v=ld8eGIIAGzo&list=PLACoCS_WiVwT9chp45LEQYuxXOcRkDAeC",
+            playlistUrl:
+              "https://www.youtube.com/watch?v=ld8eGIIAGzo&list=PLACoCS_WiVwT9chp45LEQYuxXOcRkDAeC",
             videos: [
-              { id: "ld8eGIIAGzo", title: "Dashboard Templates, Charts, Graphs & Reports for Jira — App Overview" },
-              { id: "2QqeABXzzHI", title: "Custom Charts in Jira — Build the Right Chart for Better Insights" },
-              { id: "xco2CqE_64o", title: "Jira Issue List Tutorial — Tables, Filters, Labels & Export Explained" },
-              { id: "Q0NC8CoL5Do", title: "Jira Dynamic Filter Controller — Connect & Control Your Dashboard Like a Pro" },
+              {
+                id: "ld8eGIIAGzo",
+                title:
+                  "Dashboard Templates, Charts, Graphs & Reports for Jira — App Overview",
+              },
+              {
+                id: "2QqeABXzzHI",
+                title:
+                  "Custom Charts in Jira — Build the Right Chart for Better Insights",
+              },
+              {
+                id: "xco2CqE_64o",
+                title:
+                  "Jira Issue List Tutorial — Tables, Filters, Labels & Export Explained",
+              },
+              {
+                id: "Q0NC8CoL5Do",
+                title:
+                  "Jira Dynamic Filter Controller — Connect & Control Your Dashboard Like a Pro",
+              },
             ],
           },
         },
@@ -2821,20 +2840,126 @@ fixVersion = "v2.0" AND project = YOUR_PROJECT
       title: "Help & Support",
       articles: [
         {
-          slug: "help-support-intro",
-          title: "Help & Support",
-          content: `Welcome to the Help & Support center for **Dashboard Templates, Charts, Graphs & Reports for Jira**.
+          slug: "overview-dashboard",
+          title: "Overview & Dashboard",
+          content: `# Overview & Dashboard
 
-Whether you are running into an unexpected error, looking for answers to common questions, or checking out the latest features we've released, this section has you covered. If you can't find the answer you need in our guides, our support team is ready to assist you.
+Welcome to the **Dashboard Templates, Charts, Graphs & Reports for Jira** user guide. This page explains the app layout, gadget types, and the core UI patterns you will use every day.
 
-### In This Section
+## App Layout at a Glance
 
-| **Page Name** | **Description** |
-| --- | --- |
-| **Troubleshooting Guide** | *Step-by-step solutions for common issues, including empty charts, missing data, JQL errors, and performance slowdowns.* |
-| **Release Notes & Changelog** | *Track what's new, improved, and fixed in each version of the app, including our major Version 2.0 update.* |
-| **Frequently Asked Questions** | *Answers to the most common questions regarding app compatibility, data permissions, chart configuration, and the Dynamic Filter Controller.* |
-| **Contact Support** | *Information on how to reach the Clovity support team, including response times, best practices for reporting issues, and how to submit feature requests.* |
+The app adds three Jira dashboard gadgets. Each gadget opens a configuration panel split into three main zones:
+
+| Zone | Location | What It Contains |
+|---|---|---|
+| **Data Source Panel** | Left | Source type selector (Projects, Saved Filter, JQL, Controller), source search, issue count preview |
+| **Live Preview** | Center | Real-time chart or table preview — updates instantly as you change settings |
+| **Settings Panel** | Right | Tabbed configuration: Chart Type, Chart By, Group By, Calculations, Display Options, Description, Import/Export |
+
+## Three Integrated Gadgets
+
+### Custom Charts
+The primary visualization gadget. Supports **10 chart types** across 5 categories:
+
+| Category | Chart Types |
+|---|---|
+| Pie | Pie Chart |
+| Bar | Bar, Grouped Bar, Stacked Bar |
+| Line | Line, 2D Line |
+| Table | Table, 2D Table |
+| Other | Funnel, Tile |
+
+**Best for:** Status breakdowns, trend analysis, workload distribution, KPI scorecards.
+
+### Issue List
+A fully configurable issue table — choose columns, add visual label indicators, and set quick-filter buttons for one-click filtering.
+
+**Best for:** Live sprint boards, bug trackers, team work queues, and any report where exact issue details matter.
+
+### Dynamic Filter Controller
+A shared interactive filter bar that controls multiple Custom Charts and Issue Lists simultaneously. Set it up once, connect your gadgets, and let users filter the whole dashboard with a single interaction.
+
+**Best for:** Team dashboards where different people need to slice the same data by sprint, assignee, priority, or date.
+
+## Dashboard Edit Mode
+
+To add or configure gadgets you must be in **edit mode**:
+
+1. Open a Jira dashboard
+2. Click the **Edit** button (pencil icon, top right)
+3. Click **Add gadget** to open the gadget gallery
+4. Search for "Custom Charts", "Issue List", or "Dynamic Filter Controller"
+5. Click **Add** — the gadget appears in configuration mode immediately
+
+To exit edit mode, click **Done** or **Save layout**.
+
+## Configuration Panel Structure
+
+When you open a gadget in edit mode, the three-panel layout activates:
+
+### Left Panel — Data Source
+- **Source Type:** Projects | Saved Filter | Custom JQL | Dynamic Filter Controller
+- **Source Search:** Find and select the project or filter you want
+- **Issue Count:** Shows how many issues match the current source — updates live
+
+### Center Panel — Live Preview
+- Updates in real time as you change any setting
+- Reflects the exact chart or table that will display on the dashboard
+- For Dynamic Filter Controller: shows the filter bar and connected chart references
+
+### Right Panel — Settings Tabs
+
+| Tab | What It Controls |
+|---|---|
+| **Chart Type** | Visual format selection |
+| **Chart By** | Primary grouping field or segments |
+| **Group By** | Second dimension (2D charts only) |
+| **Calculations** | Count / Sum / Average + reference lines |
+| **Display Options** | Labels, tooltips, axes, layout, export |
+| **Description** | Rich text annotation for the gadget |
+| **Import / Export** | Copy or paste gadget configuration JSON |
+
+## Common UI Patterns
+
+### Save Gadget
+- Located at the bottom of the configuration panel
+- Saves all settings and closes the configuration view
+- The gadget becomes live on the dashboard immediately
+
+### Export Button
+- Available in **view mode** (not edit mode)
+- Click the **options menu (…)** on the gadget
+- Choose **PNG**, **PDF**, or **CSV**
+- If the button is missing, export may be disabled by your Jira admin — contact them to enable it
+
+### Refresh
+- Click the options menu (…) → **Refresh** to reload gadget data
+- Data is not streamed in real time — use manual refresh or enable auto-refresh in Display Options
+
+### Live Preview
+- Every change in the settings panel instantly updates the center preview
+- No need to save to see how the chart will look — just configure and check the preview
+
+## Module Navigation: Which Gadget to Use
+
+| Goal | Recommended Gadget |
+|---|---|
+| Visual chart from Jira data | Custom Charts |
+| Table of individual issues | Issue List |
+| Interactive filter bar for whole dashboard | Dynamic Filter Controller |
+| KPI tile / single number | Custom Charts → Tile type |
+| Cross-tab / matrix report | Custom Charts → 2D Table |
+| Exportable issue list for stakeholders | Issue List + CSV export |
+
+## Tips for New Users
+
+- **Start with Custom Charts (Pie)** — it is the fastest way to get a meaningful chart in under 2 minutes
+- **Use Projects as your first data source** — it is the simplest option; JQL gives more power but requires knowledge of your Jira fields
+- **Save often** — configuration is only persisted after clicking "Save gadget"
+- **Check the Live Preview** before saving — what you see in the preview is what you get on the dashboard
+- **Connect gadgets to a Dynamic Filter Controller** once you have more than two gadgets — it makes dashboards much more useful for teams
+- **Export a chart** to PNG or PDF when you need to include Jira data in a presentation or email
+- **Use Templates** to skip the setup steps for common chart types — find them in the right panel
 `,
         },
         {
@@ -3188,8 +3313,8 @@ We love hearing your ideas! To submit a feature request:
     // 7. EULA
     // ═══════════════════════════════════════════════════════════════
     {
-      id: "eula",
-      title: "End User License Agreement (Eula)",
+      id: "additional-resources",
+      title: "Additional Resources",
       articles: [
         {
           slug: "eula",

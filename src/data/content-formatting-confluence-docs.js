@@ -9,13 +9,16 @@ export const contentFormattingConfluenceDocs = {
     {
       id: "getting-started",
       title: "Getting Started",
+      id: "getting-started",
+      title: "Getting Started",
       articles: [
         {
           slug: "what-is-content-formatting",
           title: "What is Content Formatting Macros?",
           sideVideo: {
             src: "https://www.youtube.com/embed/9kxsvSFa2-w",
-            title: "Content Formatting Macros: Tabs, Navigation, Visibility & CSS — Product Overview",
+            title:
+              "Content Formatting Macros: Tabs, Navigation, Visibility & CSS — Product Overview",
           },
           content: `# What is Content Formatting Macros?
 
@@ -79,23 +82,83 @@ The app is actively updated. Check the Atlassian Marketplace listing for the lat
           title: "Demo Videos & Walkthroughs",
           content: `15 step-by-step tutorials covering every macro — click any video to start watching, or use the arrows to go through them in order. New to the app? Start with the [Product Introduction](/apps/content-formatting-confluence/what-is-content-formatting) first.`,
           videoGallery: {
-            playlistUrl: "https://www.youtube.com/watch?v=xAWexa-8kIw&list=PLACoCS_WiVwRpkORYCho-5uakGUo7sNYp",
+            playlistUrl:
+              "https://www.youtube.com/watch?v=xAWexa-8kIw&list=PLACoCS_WiVwRpkORYCho-5uakGUo7sNYp",
             videos: [
-              { id: "xAWexa-8kIw", title: "Content Formatting Macros — Complete App Overview" },
-              { id: "RJ3KxIhZOH0", title: "Tab Parent Content Mapper — Auto-Build Tabbed Hubs from Confluence Parent Pages" },
-              { id: "Ed8HAHZ4-XE", title: "Tab Label Content Mapper — Create Dynamic Tabs Using Confluence Labels & CQL" },
-              { id: "qWw33Oe8LsQ", title: "Tab Confluence Page Mapper — Hand-Pick & Curate Pages into a Custom Tab Hub" },
-              { id: "h6iHtIbzod0", title: "Background Macro — Add Color, Gradient & Image Backgrounds to Confluence Page Sections" },
-              { id: "9uxCaIocQIQ", title: "Progress Bar Macro — Guide Readers Through Multi-Step Flows Across Confluence Pages" },
-              { id: "L1SyYwTNBjI", title: "Advanced Expand Macro — Add Collapsible Sections with Icons & Rich Content in Confluence" },
-              { id: "C9v6bGNkvlU", title: "Interactive Banner Macro — Build Hero Banners & Rotating Slideshows in Confluence" },
-              { id: "-JXKdkpVhcs", title: "Advanced Cards Macro — Create Visual Card Grids with Images, Titles & Buttons in Confluence" },
-              { id: "QggCrNc3dug", title: "Conditional Show Macro — Show Content Only to Specific Users or Groups in Confluence" },
-              { id: "GCgM4xqOmrE", title: "Conditional Hide Macro — Hide Content from Specific Users or Groups in Confluence" },
-              { id: "6nx6L0elOS8", title: "Attachment Control Center — Search, Manage & Audit Every Attachment Across Confluence" },
-              { id: "sP4w94ZxONE", title: "Buttons Macro — Create Styled Call-to-Action Buttons & Navigation Panels in Confluence" },
-              { id: "IH1eZreounY", title: "Alert Macro — Add Color-Coded Warning, Info, Tip & Error Blocks to Confluence Pages" },
-              { id: "HRrhSA11AUo", title: "Tooltip Macro — Add Hover-Activated Inline Definitions to Any Confluence Page" },
+              {
+                id: "xAWexa-8kIw",
+                title: "Content Formatting Macros — Complete App Overview",
+              },
+              {
+                id: "RJ3KxIhZOH0",
+                title:
+                  "Tab Parent Content Mapper — Auto-Build Tabbed Hubs from Confluence Parent Pages",
+              },
+              {
+                id: "Ed8HAHZ4-XE",
+                title:
+                  "Tab Label Content Mapper — Create Dynamic Tabs Using Confluence Labels & CQL",
+              },
+              {
+                id: "qWw33Oe8LsQ",
+                title:
+                  "Tab Confluence Page Mapper — Hand-Pick & Curate Pages into a Custom Tab Hub",
+              },
+              {
+                id: "h6iHtIbzod0",
+                title:
+                  "Background Macro — Add Color, Gradient & Image Backgrounds to Confluence Page Sections",
+              },
+              {
+                id: "9uxCaIocQIQ",
+                title:
+                  "Progress Bar Macro — Guide Readers Through Multi-Step Flows Across Confluence Pages",
+              },
+              {
+                id: "L1SyYwTNBjI",
+                title:
+                  "Advanced Expand Macro — Add Collapsible Sections with Icons & Rich Content in Confluence",
+              },
+              {
+                id: "C9v6bGNkvlU",
+                title:
+                  "Interactive Banner Macro — Build Hero Banners & Rotating Slideshows in Confluence",
+              },
+              {
+                id: "-JXKdkpVhcs",
+                title:
+                  "Advanced Cards Macro — Create Visual Card Grids with Images, Titles & Buttons in Confluence",
+              },
+              {
+                id: "QggCrNc3dug",
+                title:
+                  "Conditional Show Macro — Show Content Only to Specific Users or Groups in Confluence",
+              },
+              {
+                id: "GCgM4xqOmrE",
+                title:
+                  "Conditional Hide Macro — Hide Content from Specific Users or Groups in Confluence",
+              },
+              {
+                id: "6nx6L0elOS8",
+                title:
+                  "Attachment Control Center — Search, Manage & Audit Every Attachment Across Confluence",
+              },
+              {
+                id: "sP4w94ZxONE",
+                title:
+                  "Buttons Macro — Create Styled Call-to-Action Buttons & Navigation Panels in Confluence",
+              },
+              {
+                id: "IH1eZreounY",
+                title:
+                  "Alert Macro — Add Color-Coded Warning, Info, Tip & Error Blocks to Confluence Pages",
+              },
+              {
+                id: "HRrhSA11AUo",
+                title:
+                  "Tooltip Macro — Add Hover-Activated Inline Definitions to Any Confluence Page",
+              },
             ],
           },
         },

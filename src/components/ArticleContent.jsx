@@ -188,7 +188,7 @@ export default function ArticleContent({ content }) {
               src={src}
               alt={alt || ""}
               onClick={() => setZoomedImage({ src, alt })}
-              className="rounded-lg border border-gray-200 shadow-sm my-4 cursor-zoom-in hover:shadow-md transition-shadow max-w-full"
+              className="rounded-lg border border-gray-200 shadow-sm my-4 cursor-zoom-in hover:shadow-md transition-shadow max-w-full mx-auto block"
             />
           ),
         }}

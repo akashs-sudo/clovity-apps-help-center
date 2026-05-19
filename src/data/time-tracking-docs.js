@@ -12,11 +12,11 @@ export const timeTrackingDocs = {
           title: "What is Time Tracking & PPM?",
           sideVideo: {
             src: "https://www.youtube.com/embed/H0dyqJKeAG8",
-            title: "Time Tracking, Resource Planning & Project Management — Product Introduction",
+            title: "Time Tracking, Resource Planning & Project Management - Product Introduction",
           },
           content: `# What is Time Tracking, Resource Planning & Project Management?
 
-Time Tracking, Resource Planning & Project Management is a Jira Cloud app that gives your team full visibility into workload, delivery health, and priorities — all inside Jira.
+Time Tracking, Resource Planning & Project Management is a Jira Cloud app that gives your team full visibility into workload, delivery health, and priorities - all inside Jira.
 
 ## Core Value Proposition
 
@@ -25,7 +25,7 @@ Time Tracking, Resource Planning & Project Management is a Jira Cloud app that g
 - **Score and rank your backlog** using a configurable prioritization model (ICE, RICE, WSJF, and custom)
 - **Monitor portfolio health** across all your active projects and initiatives with 6 visualization modes including Gantt
 
-All of this runs natively inside Jira Cloud, using your existing projects, issues, and Jira user management — no external tools, no data exports, no setup overhead.
+All of this runs natively inside Jira Cloud, using your existing projects, issues, and Jira user management - no external tools, no data exports, no setup overhead.
 
 <!--VIDEO_BREAK-->
 
@@ -48,45 +48,45 @@ All of this runs natively inside Jira Cloud, using your existing projects, issue
 ## Benefits & Outcomes
 
 ### For Team Members
-- Log time without context switching — time entry happens directly on the Jira issue
-- See your own logged time at a glance — the personal calendar highlights days with missing entries
-- Know exactly what you're allowed to do — My Permissions shows your role and accessible features
+- Log time without context switching - time entry happens directly on the Jira issue
+- See your own logged time at a glance - the personal calendar highlights days with missing entries
+- Know exactly what you're allowed to do - My Permissions shows your role and accessible features
 
 ### For Team Leads & Project Managers
-- Catch delivery risks before sprint reviews — the Deadlines & Risks tab surfaces overdue issues in a single view
-- Spot bottlenecks in minutes — Status Aging Monitor highlights issues stuck in a status too long
-- Make sprint planning data-driven — Assignee Capacity shows real commitments before adding more
+- Catch delivery risks before sprint reviews - the Deadlines & Risks tab surfaces overdue issues in a single view
+- Spot bottlenecks in minutes - Status Aging Monitor highlights issues stuck in a status too long
+- Make sprint planning data-driven - Assignee Capacity shows real commitments before adding more
 
 ### For Engineering Managers & Directors
-- One portfolio view across all projects — Treemap and Pie Chart views show delivery health at a glance
-- Honest capacity data — actual logged hours vs. estimates reveal where planning assumptions are wrong
-- Consistent backlog prioritization — scoring templates enforce a repeatable, defensible ranking process
+- One portfolio view across all projects - Treemap and Pie Chart views show delivery health at a glance
+- Honest capacity data - actual logged hours vs. estimates reveal where planning assumptions are wrong
+- Consistent backlog prioritization - scoring templates enforce a repeatable, defensible ranking process
 
 ### For Jira Admins
-- Zero infrastructure — runs on Atlassian Forge; nothing to host, provision, or maintain
-- No separate user directory — role management uses existing Jira users
-- Clean data residency — all app data stays within the Atlassian platform
+- Zero infrastructure - runs on Atlassian Forge; nothing to host, provision, or maintain
+- No separate user directory - role management uses existing Jira users
+- Clean data residency - all app data stays within the Atlassian platform
 
 ## Platform
 
-Jira Cloud only. Built on Atlassian Forge — no external servers, no data exports, no infrastructure to maintain.`,
+Jira Cloud only. Built on Atlassian Forge - no external servers, no data exports, no infrastructure to maintain.`,
         },
         {
           slug: "demo-video",
           title: "Demo Videos & Walkthroughs",
-          content: `12 step-by-step tutorials covering every module — click any video to start watching, or use the arrows to go through them in order. New to the app? Start with the [Product Introduction](/apps/time-tracking-jira/what-is-time-tracking) first.`,
+          content: `12 step-by-step tutorials covering every module - click any video to start watching, or use the arrows to go through them in order. New to the app? Start with the [Product Introduction](/apps/time-tracking-jira/what-is-time-tracking) first.`,
           videoGallery: {
             playlistUrl:
               "https://www.youtube.com/watch?v=7z8NjUmLtOs&list=PLACoCS_WiVwR45unjH2D5MwcBjMFFflCL",
             videos: [
-              { id: "7z8NjUmLtOs", title: "Welcome to the Suite — App Overview" },
+              { id: "7z8NjUmLtOs", title: "Welcome to the Suite - App Overview" },
               { id: "5SYYnnFm1AM", title: "Creating Your First Capacity Plan" },
-              { id: "Q1BAH-t9v8w", title: "Analytics — Team Allocation Tab" },
-              { id: "2-3ixqxDUSc", title: "Analytics — Assignee Capacity, Deadlines & Status Aging" },
+              { id: "Q1BAH-t9v8w", title: "Analytics - Team Allocation Tab" },
+              { id: "2-3ixqxDUSc", title: "Analytics - Assignee Capacity, Deadlines & Status Aging" },
               { id: "uOhItP5bAyE", title: "Saved Plans, Reports & Team Management" },
               { id: "kxVBTmIYXGk", title: "Calendar View, Accounts & Settings" },
-              { id: "7vW46pVpNYE", title: "Logging Time — Timesheet & Reports" },
-              { id: "GYRiEwDA-yI", title: "Scoring Your Backlog — RICE, ICE & WSJF" },
+              { id: "7vW46pVpNYE", title: "Logging Time - Timesheet & Reports" },
+              { id: "GYRiEwDA-yI", title: "Scoring Your Backlog - RICE, ICE & WSJF" },
               { id: "c-9IhCJMjxI", title: "Custom Templates, Priority Matrix & Saved Reports" },
               { id: "PyFomw9i06g", title: "Building a Portfolio Roadmap" },
               { id: "2CpKGScxWpg", title: "Gantt Chart and Saved Portfolios" },
@@ -104,7 +104,7 @@ Jira Cloud only. Built on Atlassian Forge — no external servers, no data expor
 Before installing, confirm:
 
 1. You are a **Jira Cloud site administrator** (required to install Marketplace apps)
-2. Your Jira instance is **Jira Cloud** — this app does not support Server or Data Center
+2. Your Jira instance is **Jira Cloud** - this app does not support Server or Data Center
 3. You have access to the **Atlassian Marketplace** from your Jira instance
 
 ## Installation Steps
@@ -116,7 +116,7 @@ Before installing, confirm:
 5. Click the app in the search results
 6. Click **Try it free** (30-day trial) or **Buy now**
 7. Review and accept the requested permissions
-8. Click **Accept** — the app installs immediately, no restart required
+8. Click **Accept** - the app installs immediately, no restart required
 
 ## Verify Installation
 
@@ -124,7 +124,7 @@ After installation:
 
 1. Click **Apps** in the Jira top navigation bar
 2. Look for **"Time Tracking, Resource Planning & Project Management"** in the dropdown
-3. Click it — the app opens to the Time Tracking module
+3. Click it - the app opens to the Time Tracking module
 
 ## First Admin Steps
 
@@ -160,21 +160,21 @@ To uninstall: Jira Settings → Apps → Manage apps → find the app → click 
 
 Get up and running in under 5 minutes.
 
-## Step 1 — Open the App
+## Step 1 - Open the App
 
 Click **Apps** in the Jira top navigation → select **Time Tracking, Resource Planning & Project Management**.
 
 You'll land on the **Time Tracking** module by default.
 
-## Step 2 — Check Your Access
+## Step 2 - Check Your Access
 
 Click **Settings → My Permissions** to confirm your role:
 
 - **Global Admin**: Full access to all features and settings
 - **Member**: Can log time, run capacity analysis, score backlogs, view portfolios
-- **No role**: Read-only — ask your admin to assign you the Member role
+- **No role**: Read-only - ask your admin to assign you the Member role
 
-## Step 3 — Log Your First Time Entry
+## Step 3 - Log Your First Time Entry
 
 1. In Time Tracking, open any report or click **Log Time**
 2. Search for the Jira issue you worked on
@@ -182,21 +182,21 @@ Click **Settings → My Permissions** to confirm your role:
 4. Optionally select a Time Category (e.g., Development)
 5. Click **Save**
 
-## Step 4 — Run a Capacity Check
+## Step 4 - Run a Capacity Check
 
 1. Click **Capacity Planner & Insight** in the module switcher
 2. Click **Analytics Dashboard** in the sidebar
 3. Select a project from the dropdown and set a date range
 4. Review the **Team Allocation** and **Assignee Capacity** tabs
 
-## Step 5 — Score Your Backlog
+## Step 5 - Score Your Backlog
 
 1. Click **Backlog Prioritization** in the module switcher
 2. Select your Jira project
 3. Choose a scoring template (ICE, RICE, WSJF, or Value vs Effort)
-4. Click any metric cell to enter values — the Score column updates automatically
+4. Click any metric cell to enter values - the Score column updates automatically
 
-## Step 6 — Create a Portfolio View
+## Step 6 - Create a Portfolio View
 
 1. Click **Portfolio (PPM)** in the module switcher
 2. Click **New Portfolio**
@@ -251,18 +251,18 @@ The app requests the following permissions during Marketplace install:
 
 | Constraint | Impact |
 |---|---|
-| Forge storage limits | App data (roles, time logs, templates) stored in Forge KVS — large datasets may approach limits |
+| Forge storage limits | App data (roles, time logs, templates) stored in Forge KVS - large datasets may approach limits |
 | Jira API rate limits | Jira REST API rate limits apply; large issue fetches use backoff/retry automatically |
 | No background scheduled jobs | Reporting data is pulled on-demand, not pre-aggregated overnight |
-| No real-time push updates | Data reflects the state at last page load — manual refresh required to see changes from others |
+| No real-time push updates | Data reflects the state at last page load - manual refresh required to see changes from others |
 
 ## Known Limitations
 
-- **No Jira Server / Data Center support** — Atlassian Forge is Cloud-only
-- **No real-time collaboration** — simultaneous edits to shared portfolios use last-write-wins storage
-- **On-demand data only** — no overnight aggregation; large reports may take longer to load
-- **No external integrations** — the app does not natively connect to Slack, Teams, Harvest, or Toggl
-- **No bulk time import** — time entries must be logged via the app UI or the Jira Worklog API
+- **No Jira Server / Data Center support** - Atlassian Forge is Cloud-only
+- **No real-time collaboration** - simultaneous edits to shared portfolios use last-write-wins storage
+- **On-demand data only** - no overnight aggregation; large reports may take longer to load
+- **No external integrations** - the app does not natively connect to Slack, Teams, Harvest, or Toggl
+- **No bulk time import** - time entries must be logged via the app UI or the Jira Worklog API
 
 ## Network Requirements
 
@@ -279,9 +279,9 @@ The app uses a two-role model that integrates directly with Jira's existing user
 
 | Role | How Assigned | What They Can Do |
 |---|---|---|
-| **Global Admin** | Automatic — inherited from Jira site administrator status | Full access to all modules, settings, RBAC management, approve/reject time entries |
+| **Global Admin** | Automatic - inherited from Jira site administrator status | Full access to all modules, settings, RBAC management, approve/reject time entries |
 | **Member** | Manually assigned by a Global Admin inside the app | Log time, run capacity analysis, score backlogs, view portfolio data |
-| **No Role (default)** | Automatic — all Jira users without an assigned role | Read-only access only; cannot log time, approve, or modify data |
+| **No Role (default)** | Automatic - all Jira users without an assigned role | Read-only access only; cannot log time, approve, or modify data |
 
 ## Access Levels by Feature
 
@@ -315,11 +315,11 @@ Go to **Settings → My Permissions**. This tab shows:
 
 ## How Global Admin Works
 
-Global Admin is **automatically detected** — not assigned inside the app. Anyone with the Jira site-level ADMINISTER permission is automatically a Global Admin.
+Global Admin is **automatically detected** - not assigned inside the app. Anyone with the Jira site-level ADMINISTER permission is automatically a Global Admin.
 
 - **To grant Global Admin**: Add the user to the Jira administrator group in Jira user management
 - **To revoke Global Admin**: Remove the user from the Jira administrator group
-- The app detects changes automatically on the user's next action — no manual sync needed
+- The app detects changes automatically on the user's next action - no manual sync needed
 
 ## How to Request Access
 
@@ -328,7 +328,7 @@ If features are greyed out or unavailable:
 2. If you have no role, contact your Jira Admin or app manager
 3. Ask them to assign you the **Member** role from **Settings → RBAC → User Roles**
 
-There is no self-service role request form — access is granted by a Global Admin.`,
+There is no self-service role request form - access is granted by a Global Admin.`,
         },
       ],
     },
@@ -379,9 +379,9 @@ Reports, plans, portfolios, and scoring views can all be saved. Look for a **Sav
 Time Tracking reports and Backlog tables have an **Export** button. Options: CSV (all views) and PDF (Time Tracking reports).
 
 ### Log Time
-Available in all Time Tracking views. Click **Log Time** to open a quick-log form — search for an issue, enter hours, select date, pick category.
+Available in all Time Tracking views. Click **Log Time** to open a quick-log form - search for an issue, enter hours, select date, pick category.
 
-## Settings — Interface Walk-through
+## Settings - Interface Walk-through
 
 | Tab | Purpose |
 |---|---|
@@ -397,10 +397,10 @@ Available in all Time Tracking views. Click **Log Time** to open a quick-log for
 
 ## Tips for New Users
 
-- **Check My Permissions first** if features seem unavailable — most restrictions are role-based
-- **Always set a date range** before loading capacity or time reports — the app requires scope to load data
-- **Refresh manually** to see changes made by other users — the app does not push live updates
-- **Narrow your filters** for large projects — loading 10,000+ issues takes time`,
+- **Check My Permissions first** if features seem unavailable - most restrictions are role-based
+- **Always set a date range** before loading capacity or time reports - the app requires scope to load data
+- **Refresh manually** to see changes made by other users - the app does not push live updates
+- **Narrow your filters** for large projects - loading 10,000+ issues takes time`,
         },
         {
           slug: "key-features",
@@ -524,10 +524,10 @@ Available in all Time Tracking views. Click **Log Time** to open a quick-log for
 1. Go to **Capacity Planner & Insight → Analytics Dashboard**
 2. Click **Scope** → select a Project and Date Range → click **Apply**
 3. Review:
-   - **Team Allocation** tab — who has what and how much
-   - **Assignee Capacity** tab — per-person load vs. estimates
-   - **Deadlines & Risks** tab — overdue and at-risk issues
-   - **Status Aging** tab — issues stuck in a status too long
+   - **Team Allocation** tab - who has what and how much
+   - **Assignee Capacity** tab - per-person load vs. estimates
+   - **Deadlines & Risks** tab - overdue and at-risk issues
+   - **Status Aging** tab - issues stuck in a status too long
 
 ---
 
@@ -571,7 +571,7 @@ Available in all Time Tracking views. Click **Log Time** to open a quick-log for
 2. Enter Template Name
 3. Add each metric (name, input type, range)
 4. Enter the formula referencing your metric names (e.g., \`Impact * Confidence * Ease\`)
-5. Click **Save** — the template appears in the template selector
+5. Click **Save** - the template appears in the template selector
 
 ---
 
@@ -621,7 +621,7 @@ Table → Gantt Chart → Graph View → Treemap → Pie Chart → Board View
 2. Search for the user by name or email
 3. Click the **Edit** (pencil) icon
 4. Check the **Member** checkbox
-5. Click **Save** — takes effect immediately
+5. Click **Save** - takes effect immediately
 
 ---
 
@@ -642,7 +642,7 @@ This guide is a complete reference for all five major functional areas of the ap
 
 ---
 
-## Module 1 — Time Tracking & Reporting
+## Module 1 - Time Tracking & Reporting
 
 ### My Calendar
 
@@ -731,7 +731,7 @@ Access from Settings → Time Tracking tab:
 
 ---
 
-## Module 2 — Capacity Planner & Insight
+## Module 2 - Capacity Planner & Insight
 
 ### Capacity Planner
 
@@ -747,7 +747,7 @@ The Capacity Planner is a timesheet-style view showing team workload distributio
 
 | Column | Description |
 |---|---|
-| User / Group / Team | Left column — people/groups in the plan |
+| User / Group / Team | Left column - people/groups in the plan |
 | Issue rows | Each row shows an issue with estimated and remaining hours |
 | Date columns | Hours for each specific date/week/month |
 | Total row | Aggregates hours across all rows |
@@ -762,22 +762,22 @@ The Analytics Dashboard provides a four-tab view of team workload health.
 
 **Setup:** Capacity Planner & Insight → Analytics Dashboard → click Scope → select Project + Date Range → Apply
 
-**Tab 1 — Team Allocation:**
+**Tab 1 - Team Allocation:**
 - Issue distribution by status, type, and priority across the team
 - Total issue count and estimated hours per group
 - Spot over-loaded statuses or issue types at a glance
 
-**Tab 2 — Assignee Capacity:**
+**Tab 2 - Assignee Capacity:**
 - Issue count, original estimates, and logged time per assignee
 - Compare estimated remaining work vs. available capacity
 - Identify over- or under-allocated team members before sprint commitments
 
-**Tab 3 — Upcoming Deadlines & Risks:**
+**Tab 3 - Upcoming Deadlines & Risks:**
 - Issues near or past their due date, sorted by risk level (overdue first)
 - Shows remaining estimate alongside the due date
 - Use for weekly stakeholder updates
 
-**Tab 4 — Status Aging Monitor:**
+**Tab 4 - Status Aging Monitor:**
 - Issues stuck in the same status for an unusually long time
 - Configurable threshold (e.g., flag "In Review" issues older than 5 days)
 - Reveals review bottlenecks and blocked handoffs
@@ -811,7 +811,7 @@ The Capacity Report provides a tabular breakdown of available hours, estimated w
 
 ---
 
-## Module 3 — Backlog Prioritization
+## Module 3 - Backlog Prioritization
 
 ### Backlog Table
 
@@ -822,7 +822,7 @@ The Backlog Table is a sortable, filterable table with inline-editable scoring m
 **Scoring Issues:**
 - Click any metric cell to edit inline
 - Input types: Number field, Dropdown, Star rating (1–5), Effort scale (XS/S/M/L/XL)
-- The Score column recalculates automatically — changes save instantly
+- The Score column recalculates automatically - changes save instantly
 
 **Sorting:** click any column header (Score ↓ = highest priority first)
 
@@ -873,20 +873,20 @@ Saves a snapshot of the backlog scoring at a specific point in time.
 
 ---
 
-## Module 4 — Project Portfolio Management
+## Module 4 - Project Portfolio Management
 
 ### Creating a Portfolio
 
 1. Portfolio (PPM) → New Portfolio → enter name
 2. Click Filter → choose Manual Filter (dropdowns) or JQL
 3. Click Apply to preview matching issues
-4. Click Save — appears in sidebar Portfolios section
+4. Click Save - appears in sidebar Portfolios section
 
 **Example JQL Scopes:**
 - All active epics: \`issuetype = Epic AND status != Done ORDER BY priority DESC\`
 - High-priority due this quarter: \`priority in (Highest, High) AND due >= startOfQuarter()\`
 
-**Important:** Save immediately after creating — unsaved portfolios are lost on navigation.
+**Important:** Save immediately after creating - unsaved portfolios are lost on navigation.
 
 ### View Types
 
@@ -901,7 +901,7 @@ Saves a snapshot of the backlog scoring at a specific point in time.
 
 **Switching Views:** use the view mode selector in the top-right of the portfolio.
 
-### Gantt Chart — Detailed Reference
+### Gantt Chart - Detailed Reference
 
 - **Render requirement:** Issues must have Start Date and Due Date fields mapped in Portfolio Settings
 - **Drag bar edges** to update Jira start/due dates directly
@@ -916,7 +916,7 @@ Saves a snapshot of the backlog scoring at a specific point in time.
 - **Rename:** click the portfolio name → type new name → press Enter
 - **Edit scope:** open portfolio → Settings → modify filter → Save
 - **Delete:** Settings → Delete (confirmation required)
-- **Tip:** coordinate edits to shared portfolios — last save wins
+- **Tip:** coordinate edits to shared portfolios - last save wins
 
 ### Dashboard Gadget
 
@@ -944,7 +944,7 @@ Access: Portfolio → Settings gear icon → Portfolio Settings tab, or global S
 
 ---
 
-## Module 5 — Teams Management
+## Module 5 - Teams Management
 
 ### Teams
 
@@ -962,7 +962,7 @@ Teams are named groups of Jira users reused across Capacity, Time Tracking, and 
 
 **Source Types:**
 - **Manual:** members stay fixed until you edit the team
-- **Jira Group:** members auto-sync from the Jira group — changes to the group reflect in the team
+- **Jira Group:** members auto-sync from the Jira group - changes to the group reflect in the team
 
 **Using Teams in Other Modules:**
 - Capacity Planner: Group By → Team
@@ -992,46 +992,46 @@ Programs group multiple Teams into higher-level organizational structures.
 ## Time Tracking
 
 - **Log daily, not weekly.** End-of-week logging is less accurate and harder to reconcile with actual Jira issue work.
-- **Use Time Categories** to split time between Development, Meetings, Code Review, and QA — this makes reports much more useful for analysis.
+- **Use Time Categories** to split time between Development, Meetings, Code Review, and QA - this makes reports much more useful for analysis.
 - **Use My Calendar** to identify days with no logged time before the weekly approval window closes.
-- **Create Billing Accounts** only if you have client billing needs — skip this feature if billing categorization isn't required.
-- **Set Date Range first** before loading any report — the app requires a project and date range to load data.
+- **Create Billing Accounts** only if you have client billing needs - skip this feature if billing categorization isn't required.
+- **Set Date Range first** before loading any report - the app requires a project and date range to load data.
 
 ## Capacity Planning
 
-- **Run a capacity check before every sprint planning session** — the Assignee Capacity tab shows carryover load in real time.
+- **Run a capacity check before every sprint planning session** - the Assignee Capacity tab shows carryover load in real time.
 - **Use the Assignee Capacity tab** before sprint planning to spot over-allocated team members before commitments are made.
-- **Save your plans** for recurring planning cycles — don't reconfigure from scratch each sprint.
-- **Monitor Status Aging** weekly — issues stuck in "In Review" for 5+ days are a reliable bottleneck indicator.
-- **Use Teams in the Capacity Planner** — team-level grouping gives leadership a rolled-up view without reviewing each individual.
+- **Save your plans** for recurring planning cycles - don't reconfigure from scratch each sprint.
+- **Monitor Status Aging** weekly - issues stuck in "In Review" for 5+ days are a reliable bottleneck indicator.
+- **Use Teams in the Capacity Planner** - team-level grouping gives leadership a rolled-up view without reviewing each individual.
 
 ## Backlog Prioritization
 
-- **Use one scoring template consistently** within a team or planning cycle — changing templates mid-cycle makes comparison impossible.
+- **Use one scoring template consistently** within a team or planning cycle - changing templates mid-cycle makes comparison impossible.
 - **Keep metric definitions clear** in the template description so all team members score with the same interpretation.
-- **Save commonly used views** for recurring backlog reviews — views preserve column layout, filters, and sorting.
-- **Use the Priority Matrix alongside the table** — the visual quadrant view often reveals patterns that aren't obvious in a sorted list.
+- **Save commonly used views** for recurring backlog reviews - views preserve column layout, filters, and sorting.
+- **Use the Priority Matrix alongside the table** - the visual quadrant view often reveals patterns that aren't obvious in a sorted list.
 - **Save a report before each sprint planning session** to create a historical record of how you prioritized.
 
 ## Portfolio Management
 
 - **Configure date field mappings first** (Portfolio Settings → Calendar & working days) before expecting Gantt to render correctly.
-- **Save portfolios immediately** after creating them — unsaved portfolios are lost on navigation.
-- **Use JQL for complex portfolios** — manual filters are easier to set up but JQL is more powerful for cross-project scenarios.
-- **Coordinate edits to shared portfolios** — the app uses last-write-wins; simultaneous edits can overwrite each other.
-- **Use the Treemap and Pie Chart views** for executive stakeholder reporting — they convey health at a glance without detail overload.
+- **Save portfolios immediately** after creating them - unsaved portfolios are lost on navigation.
+- **Use JQL for complex portfolios** - manual filters are easier to set up but JQL is more powerful for cross-project scenarios.
+- **Coordinate edits to shared portfolios** - the app uses last-write-wins; simultaneous edits can overwrite each other.
+- **Use the Treemap and Pie Chart views** for executive stakeholder reporting - they convey health at a glance without detail overload.
 
 ## Teams Management
 
-- **Use Jira Group as the team source** if team membership is already managed in Jira — this keeps the team in sync automatically.
-- **Create Programs** for leadership capacity reviews — rolling up Teams → Program gives directors aggregate data without per-person detail.
-- **A team can belong to only one program** — restructure programs if teams move between departments.
+- **Use Jira Group as the team source** if team membership is already managed in Jira - this keeps the team in sync automatically.
+- **Create Programs** for leadership capacity reviews - rolling up Teams → Program gives directors aggregate data without per-person detail.
+- **A team can belong to only one program** - restructure programs if teams move between departments.
 
 ## General
 
-- **Check My Permissions** before contacting support about missing features — most "missing" features are role-based.
-- **Narrow your date ranges** for large projects — loading 10,000+ issues takes time; use filters to keep datasets focused.
-- **Refresh manually** to see changes made by other users — the app does not push live updates.`,
+- **Check My Permissions** before contacting support about missing features - most "missing" features are role-based.
+- **Narrow your date ranges** for large projects - loading 10,000+ issues takes time; use filters to keep datasets focused.
+- **Refresh manually** to see changes made by other users - the app does not push live updates.`,
         },
 
         // ── Time Tracking & Reporting sub-pages ──
@@ -1083,7 +1083,7 @@ My Calendar shows a monthly grid where each day cell displays the total hours yo
 
 - Use the calendar at the end of each day to verify all work is logged before submitting your timesheet.
 - Days highlighted with a warning colour indicate missing or low-hour entries relative to your configured working hours.
-- The calendar only shows **your own** worklogs — use the Timesheet Report Builder to view team worklogs.`,
+- The calendar only shows **your own** worklogs - use the Timesheet Report Builder to view team worklogs.`,
         },
         {
           slug: "my-timesheet",
@@ -1107,7 +1107,7 @@ My Timesheet is your personal tabular view of logged time, with flexible filters
 1. Click **Add Filter** in the toolbar
 2. Select filter type: Project, Account, Time Category, Issue Type, Sprint
 3. Choose value(s) from the dropdown
-4. Click **Apply** — the timesheet reloads with filtered data
+4. Click **Apply** - the timesheet reloads with filtered data
 
 ## Grouping Time Entries
 
@@ -1157,7 +1157,7 @@ Time Tracking & Reporting → **Timesheet and Reporting** → Create New Report 
 | Add Filter | Set Project, Users, Accounts, Date Range, Time Category |
 | Group By | Stack multiple grouping levels for nested reports |
 | View Mode | Days, Weeks, or Months column display |
-| Log Time | Quick-log button — add worklogs without leaving the report |
+| Log Time | Quick-log button - add worklogs without leaving the report |
 | Chart Section | Bar or pie chart of logged time (included in PDF exports) |
 | Export | CSV (raw data) or PDF (formatted report with charts) |
 
@@ -1183,8 +1183,8 @@ Time Tracking & Reporting → **Timesheet and Reporting** → Create New Report 
 ## Chart Section
 
 - Toggle chart on/off with the chart icon in the toolbar
-- **Bar chart** — compares total hours per group side-by-side
-- **Pie chart** — shows percentage share of total hours per group
+- **Bar chart** - compares total hours per group side-by-side
+- **Pie chart** - shows percentage share of total hours per group
 - Charts are embedded in the PDF export
 
 ## Exporting
@@ -1197,7 +1197,7 @@ Time Tracking & Reporting → **Timesheet and Reporting** → Create New Report 
 ## Saving and Reusing Reports
 
 - Saved reports appear in the **Saved Reports** section of the sidebar
-- Reports save filters, grouping, and view mode — not the data snapshot
+- Reports save filters, grouping, and view mode - not the data snapshot
 - Opening a saved report re-runs the query against current Jira data`,
         },
         {
@@ -1205,7 +1205,7 @@ Time Tracking & Reporting → **Timesheet and Reporting** → Create New Report 
           title: "Filters and Grouping",
           content: `# Filters and Grouping
 
-Filters and Grouping controls are available across all Time Tracking & Reporting views — My Timesheet, Timesheet Report Builder, and Capacity Report.
+Filters and Grouping controls are available across all Time Tracking & Reporting views - My Timesheet, Timesheet Report Builder, and Capacity Report.
 
 ## Available Filters
 
@@ -1224,7 +1224,7 @@ Filters and Grouping controls are available across all Time Tracking & Reporting
 1. Click **Add Filter** in the toolbar
 2. Select a filter dimension
 3. Choose one or more values
-4. Click **Apply** — results reload immediately
+4. Click **Apply** - results reload immediately
 5. Active filters appear as chips in the filter bar
 6. Click **×** on any chip to remove that filter
 
@@ -1252,10 +1252,10 @@ Group By lets you nest rows into hierarchical breakdowns:
 
 You can stack up to 3 Group By dimensions to create nested views:
 
-**Example — Billing breakdown:**
+**Example - Billing breakdown:**
 Account → Project → Issue → (date columns show hours per row)
 
-**Example — Team productivity:**
+**Example - Team productivity:**
 User → Project → Issue Type
 
 ## Saving Filter and Grouping Configurations
@@ -1283,9 +1283,9 @@ A Billing Account is a named label you attach to a worklog when logging time. It
 1. Time Tracking & Reporting → **Accounts** (sidebar)
 2. Click **Create Account**
 3. Enter:
-   - **Account Name** (e.g., "Client ABC — Phase 2")
+   - **Account Name** (e.g., "Client ABC - Phase 2")
    - **Account Key** (short identifier, e.g., \`ABC-P2\`)
-   - **Status** — Active or Inactive
+   - **Status** - Active or Inactive
 4. Click **Save**
 
 ## Assigning an Account When Logging Time
@@ -1322,7 +1322,7 @@ In Group By:
 
 ## Tips
 
-- Use a consistent naming convention: \`ClientName — ProjectPhase\`
+- Use a consistent naming convention: \`ClientName - ProjectPhase\`
 - Create accounts before logging time to ensure all worklogs are categorised from day one
 - Inactive accounts no longer appear in the Log Time dropdown but historical data is preserved`,
         },
@@ -1374,7 +1374,7 @@ Global sidebar → **Settings** → **Time Tracking** tab
 ## Tips
 
 - Set **Hours Per Day** to match your organisation's contracted hours (e.g., 7.5 for a 37.5-hour week)
-- Set **Working Days** accurately — inaccurate working days skew capacity calculations in the Capacity Report
+- Set **Working Days** accurately - inaccurate working days skew capacity calculations in the Capacity Report
 - Use **Jira timezone** if your team is co-located; use **User's timezone** for distributed teams`,
         },
 
@@ -1394,17 +1394,17 @@ Capacity Planner & Insight → **Capacity Planner** → click **Create New Plann
 
 1. Click **Create New Planner**
 2. Select who to include:
-   - **Users** — individual Jira users
-   - **Groups** — Jira groups
-   - **Teams** — teams defined in the Teams Management module
+   - **Users** - individual Jira users
+   - **Groups** - Jira groups
+   - **Teams** - teams defined in the Teams Management module
 3. Set **Date Range** and **View Mode** (Days, Weeks, Months)
-4. Click **Apply** — the planner loads the capacity view
+4. Click **Apply** - the planner loads the capacity view
 
 ## Planner Layout
 
 | Column | Description |
 |---|---|
-| **User / Group / Team** | Left column — the people or groups in the plan |
+| **User / Group / Team** | Left column - the people or groups in the plan |
 | **Issue rows** | Each row under a user shows an assigned Jira issue |
 | **Estimate columns** | Hours per date period (original estimate and remaining) |
 | **Date columns** | One column per day/week/month based on view mode |
@@ -1420,8 +1420,8 @@ Capacity Planner & Insight → **Capacity Planner** → click **Create New Plann
 
 ## Reading the Planner
 
-- **Green cells** — within normal capacity range
-- **Red / amber cells** — over-allocated for that period
+- **Green cells** - within normal capacity range
+- **Red / amber cells** - over-allocated for that period
 - Hover on any cell to see issue details and hour breakdown
 
 ## Saving a Plan
@@ -1457,7 +1457,7 @@ Before data loads, you must configure the scope:
 3. Optionally add **Users** or **Teams** filters
 4. Click **Apply**
 
-## Tab 1 — Team Allocation
+## Tab 1 - Team Allocation
 
 Provides an overview of how issues are distributed across the team.
 
@@ -1465,7 +1465,7 @@ Provides an overview of how issues are distributed across the team.
 - Breakdown by issue status, issue type, and priority
 - Use to spot uneven distribution or overloaded issue types at a glance
 
-## Tab 2 — Assignee Capacity
+## Tab 2 - Assignee Capacity
 
 Shows per-person workload metrics to identify over- or under-allocation.
 
@@ -1480,7 +1480,7 @@ Shows per-person workload metrics to identify over- or under-allocation.
 
 **Use before sprint planning** to confirm no team member is already over-committed.
 
-## Tab 3 — Upcoming Deadlines & Risks
+## Tab 3 - Upcoming Deadlines & Risks
 
 Lists issues near or past their due date, sorted by risk level.
 
@@ -1494,7 +1494,7 @@ Lists issues near or past their due date, sorted by risk level.
 
 **Use for weekly stakeholder updates** to communicate delivery risks proactively.
 
-## Tab 4 — Status Aging Monitor
+## Tab 4 - Status Aging Monitor
 
 Identifies issues that have been stuck in the same status for too long.
 
@@ -1508,7 +1508,7 @@ Identifies issues that have been stuck in the same status for too long.
 
 - Check Tab 2 (Assignee Capacity) before every sprint commitment meeting
 - Use Tab 3 (Deadlines & Risks) for weekly stakeholder status reports
-- Set realistic aging thresholds in Tab 4 — too low creates noise, too high misses real blockers`,
+- Set realistic aging thresholds in Tab 4 - too low creates noise, too high misses real blockers`,
         },
         {
           slug: "saved-plans",
@@ -1528,13 +1528,13 @@ When you save a Capacity Planner configuration, the following is preserved:
 | View mode (Days/Weeks/Months) | Hours that have changed since last save |
 | Grouping configuration | New issues assigned after save |
 
-Opening a saved plan re-runs the query against current Jira data — it always shows live data within the saved scope.
+Opening a saved plan re-runs the query against current Jira data - it always shows live data within the saved scope.
 
 ## Saving a Plan
 
 1. Configure the Capacity Planner (users, date range, grouping, view mode)
 2. Click **Save** in the top-right toolbar
-3. Enter a descriptive plan name (e.g., "Q2 Sprint 5 — Platform Team")
+3. Enter a descriptive plan name (e.g., "Q2 Sprint 5 - Platform Team")
 4. Click **Confirm**
 
 The plan immediately appears in the **Saved Plans** section of the sidebar.
@@ -1557,21 +1557,21 @@ The plan immediately appears in the **Saved Plans** section of the sidebar.
 
 Use a consistent naming pattern to keep saved plans organised:
 
-- \`[Team] — [Sprint/Quarter]\` — e.g., "Backend Team — Sprint 10"
-- \`[Date] — [Purpose]\` — e.g., "2025-Q3 Capacity Review"
-- \`[Program] — [PI Number]\` — e.g., "Engineering — PI-2025-Q2"
+- \`[Team] - [Sprint/Quarter]\` - e.g., "Backend Team - Sprint 10"
+- \`[Date] - [Purpose]\` - e.g., "2025-Q3 Capacity Review"
+- \`[Program] - [PI Number]\` - e.g., "Engineering - PI-2025-Q2"
 
 ## Tips
 
 - Save a plan at the start of each sprint to capture the initial commitment baseline
-- Don't reconfigure from scratch each sprint — duplicate the previous plan and adjust the date range`,
+- Don't reconfigure from scratch each sprint - duplicate the previous plan and adjust the date range`,
         },
         {
           slug: "capacity-report",
           title: "Capacity Report",
           content: `# Capacity Report
 
-The Capacity Report provides a structured tabular breakdown of available hours, estimated work, and logged hours — giving managers a precise view of team utilisation.
+The Capacity Report provides a structured tabular breakdown of available hours, estimated work, and logged hours - giving managers a precise view of team utilisation.
 
 ## Opening the Capacity Report
 
@@ -1599,15 +1599,15 @@ Click **Apply** after setting all controls.
 | **Available** | Total working hours available (working days × hours/day from Settings) |
 | **Estimated** | Sum of remaining estimates on assigned open issues |
 | **Logged** | Actual hours logged via Jira worklogs |
-| **Allocation %** | Estimated ÷ Available × 100 — higher means more committed |
+| **Allocation %** | Estimated ÷ Available × 100 - higher means more committed |
 
 ### Allocation Interpretation
 
 | Allocation % | Status |
 |---|---|
-| < 70% | Under-utilised — capacity available |
+| < 70% | Under-utilised - capacity available |
 | 70–100% | Healthy utilisation |
-| > 100% | Over-allocated — risk of missed commitments |
+| > 100% | Over-allocated - risk of missed commitments |
 
 ## Exporting
 
@@ -1619,7 +1619,7 @@ The CSV includes all rows, columns, and grouping levels for import into Excel, G
 
 - Run the Capacity Report at the start of sprint planning to validate commitments before finalising
 - Group by **Team** for a leadership-level rollup; group by **Assignee** for individual workload detail
-- Set **Hours Per Day** and **Working Days** correctly in Settings — inaccurate settings skew the Available column`,
+- Set **Hours Per Day** and **Working Days** correctly in Settings - inaccurate settings skew the Available column`,
         },
 
         // ── Project Portfolio Management sub-pages ──
@@ -1635,10 +1635,10 @@ A Portfolio is a named collection of Jira issues grouped and visualised across m
 1. Portfolio (PPM) → click **New Portfolio**
 2. Enter a **Portfolio Name**
 3. Click **Filter** to define scope:
-   - **Manual Filter** — use dropdowns to select Projects, Issue Types, Statuses, Assignees
-   - **JQL Filter** — write a Jira Query Language expression for complex scope
+   - **Manual Filter** - use dropdowns to select Projects, Issue Types, Statuses, Assignees
+   - **JQL Filter** - write a Jira Query Language expression for complex scope
 4. Click **Apply** to preview matching issues
-5. Click **Save** — the portfolio appears in the sidebar under Portfolios
+5. Click **Save** - the portfolio appears in the sidebar under Portfolios
 
 > **Important:** Save immediately after creating. Unsaved portfolios are lost when you navigate away.
 
@@ -1671,7 +1671,7 @@ project in (PROJ-A, PROJ-B, PROJ-C) AND status = "In Progress"
 
 ## Sharing Portfolios
 
-All users with **Member or higher** role on the Jira project can see saved portfolios. Portfolios are shared — coordinate edits to avoid overwriting each other's changes (the app uses last-save-wins).
+All users with **Member or higher** role on the Jira project can see saved portfolios. Portfolios are shared - coordinate edits to avoid overwriting each other's changes (the app uses last-save-wins).
 
 ## Deleting a Portfolio
 
@@ -1781,7 +1781,7 @@ All saved portfolios appear in the **Portfolios** section of the left sidebar. C
 
 1. Open the portfolio
 2. Click **Settings** → **Delete Portfolio**
-3. Confirm — deletion is permanent
+3. Confirm - deletion is permanent
 
 ### Duplicate a Portfolio
 
@@ -1795,13 +1795,13 @@ There is no one-click duplicate. To copy a portfolio:
 ## Sharing and Collaboration
 
 - All users with access to the Jira project see the same saved portfolios
-- The app uses **last-save-wins** — simultaneous edits by two users can overwrite each other
+- The app uses **last-save-wins** - simultaneous edits by two users can overwrite each other
 - Communicate with your team before making structural changes to a shared portfolio
 
 ## Tips
 
-- Prefix portfolio names with a team or quarter: "Platform — Q3 2025 Roadmap"
-- Archive old portfolios by prefixing with "[Archive]" rather than deleting — historical portfolios may be referenced in past reports`,
+- Prefix portfolio names with a team or quarter: "Platform - Q3 2025 Roadmap"
+- Archive old portfolios by prefixing with "[Archive]" rather than deleting - historical portfolios may be referenced in past reports`,
         },
         {
           slug: "dashboard-gadget",
@@ -1838,7 +1838,7 @@ The Portfolio Dashboard Gadget lets you embed portfolio metrics directly onto an
 
 ## Resizing the Gadget
 
-Jira dashboards support gadget resizing — drag the bottom-right corner of the gadget to resize it on the dashboard.
+Jira dashboards support gadget resizing - drag the bottom-right corner of the gadget to resize it on the dashboard.
 
 ## Troubleshooting
 
@@ -1847,7 +1847,7 @@ Jira dashboards support gadget resizing — drag the bottom-right corner of the 
 | No data in gadget | Verify the portfolio scope still returns issues and you have read access to those projects |
 | Blank after setup | Remove and re-add the gadget with fresh configuration |
 | Gadget not found in search | Ensure the app is installed and activated in Jira (check Manage Apps) |
-| Old data showing | Jira dashboards cache gadget data — click Refresh or reload the page |
+| Old data showing | Jira dashboards cache gadget data - click Refresh or reload the page |
 
 ## Tips
 
@@ -1864,9 +1864,9 @@ Portfolio Settings control how the portfolio module displays time, maps Jira dat
 
 ## Accessing Portfolio Settings
 
-**Option 1 — Per Portfolio:** Open a portfolio → click the **Settings** (gear) icon → **Portfolio Settings** tab
+**Option 1 - Per Portfolio:** Open a portfolio → click the **Settings** (gear) icon → **Portfolio Settings** tab
 
-**Option 2 — Global:** Global sidebar → **Settings** → **Portfolio** tab
+**Option 2 - Global:** Global sidebar → **Settings** → **Portfolio** tab
 
 ## Settings Reference
 
@@ -1901,12 +1901,12 @@ If these are not set, the Gantt chart will not render bars for issues that lack 
 | Problem | Fix |
 |---|---|
 | Gantt bars not rendering | Verify Start and End date fields are mapped and issues have values in those fields |
-| Wrong timeline dates | Check field mapping — a mismatched field (e.g., Created vs Start date) produces wrong bars |
+| Wrong timeline dates | Check field mapping - a mismatched field (e.g., Created vs Start date) produces wrong bars |
 | Bars rendering in wrong position | Confirm Hours Per Day and Working Days match your team's schedule |
 
 ## Tips
 
-- Configure Portfolio Settings before creating your first Gantt-based portfolio — fixing date mappings after bars are created can cause visual shifts
+- Configure Portfolio Settings before creating your first Gantt-based portfolio - fixing date mappings after bars are created can cause visual shifts
 - Use the same date field mappings as your organisation's existing project management process`,
         },
 
@@ -1926,7 +1926,7 @@ Backlog Prioritization → **Backlog Table**
 
 1. Click **Select Project** → choose your Jira project
 2. Click **Choose Scoring Template** → select a template (ICE, RICE, WSJF, Value vs. Effort, or custom)
-3. Click **Apply** — the table loads with all open issues
+3. Click **Apply** - the table loads with all open issues
 
 ## Table Layout
 
@@ -1937,18 +1937,18 @@ Backlog Prioritization → **Backlog Table**
 | Status | Current Jira status |
 | Priority | Jira priority (Highest to Lowest) |
 | Scoring Metrics | One column per metric defined in the template (e.g., Impact, Confidence, Ease) |
-| Score | Calculated composite score — auto-updates when metrics change |
+| Score | Calculated composite score - auto-updates when metrics change |
 | Assignee | Assigned team member |
 
 ## Scoring Issues Inline
 
 1. Click any metric cell (e.g., the "Impact" cell for an issue)
-2. Edit inline — input type depends on the metric:
-   - **Number field** — type a value
-   - **Dropdown** — select from predefined options
-   - **Star rating** — click stars (1–5)
-   - **Effort scale** — select XS / S / M / L / XL
-3. Click away or press **Enter** — the Score column recalculates instantly and saves automatically
+2. Edit inline - input type depends on the metric:
+   - **Number field** - type a value
+   - **Dropdown** - select from predefined options
+   - **Star rating** - click stars (1–5)
+   - **Effort scale** - select XS / S / M / L / XL
+3. Click away or press **Enter** - the Score column recalculates instantly and saves automatically
 
 ## Sorting
 
@@ -1974,7 +1974,7 @@ Backlog Prioritization → **Backlog Table**
 
 ## Tips
 
-- Score all issues in one session for consistency — mixing fresh and stale scores skews the ranking
+- Score all issues in one session for consistency - mixing fresh and stale scores skews the ranking
 - Use the same scoring template across all sprints for a comparable historical record
 - Sort by Score descending just before sprint planning to identify your top candidates`,
         },
@@ -2014,7 +2014,7 @@ Scoring Templates define the metrics and formula used to calculate a composite p
 
 ---
 
-### WSJF — Weighted Shortest Job First
+### WSJF - Weighted Shortest Job First
 **Formula:** (Business Value + Time Criticality + Risk Reduction) / Job Size
 
 | Metric | Scale | Meaning |
@@ -2046,12 +2046,12 @@ Scoring Templates define the metrics and formula used to calculate a composite p
 2. Click **Create New Template**
 3. Enter:
    - **Template Name**
-   - **Description** (optional but recommended — explain how scorers should interpret metrics)
+   - **Description** (optional but recommended - explain how scorers should interpret metrics)
 4. Add Metrics:
    - **Metric Name** (e.g., "Customer Impact")
    - **Input Type:** Number, Dropdown, Star (1–5), Effort Scale (XS/S/M/L/XL)
    - **Range** (min/max for number inputs)
-5. Enter **Formula** — reference metric names using their exact labels (e.g., \`Impact * Confidence / Effort\`)
+5. Enter **Formula** - reference metric names using their exact labels (e.g., \`Impact * Confidence / Effort\`)
 6. Click **Save**
 
 ## Switching Templates
@@ -2062,8 +2062,8 @@ Scoring Templates define the metrics and formula used to calculate a composite p
 
 ## Tips
 
-- Document your metric definitions in the template description — ambiguous metrics lead to inconsistent scoring across team members
-- Use one template consistently within a planning cycle — changing mid-sprint makes scores incomparable
+- Document your metric definitions in the template description - ambiguous metrics lead to inconsistent scoring across team members
+- Use one template consistently within a planning cycle - changing mid-sprint makes scores incomparable
 - Save custom templates for your team's specific domain (e.g., a support-ticket template with Customer Impact × Frequency × Fix Complexity)`,
         },
         {
@@ -2099,7 +2099,7 @@ Toggle between views using the **view switcher** in the top-right of the Backlog
 
 1. Click **Add Filter** in the toolbar
 2. Select filter dimension and values
-3. Click **Apply** — the table reloads with filtered issues
+3. Click **Apply** - the table reloads with filtered issues
 4. Active filters appear as removable chips in the filter bar
 5. Click **×** on a chip to remove that filter
 6. Click **Clear Filters** to reset all filters at once
@@ -2128,7 +2128,7 @@ Saved Views preserve your current filter + sort + grouping configuration for reu
 
 1. Configure filters, sort, and grouping to your preference
 2. Click **Save View** in the toolbar
-3. Enter a view name (e.g., "Sprint 12 — Backend Bugs Only")
+3. Enter a view name (e.g., "Sprint 12 - Backend Bugs Only")
 4. Click **Confirm**
 
 ### Loading a Saved View
@@ -2147,7 +2147,7 @@ Saved Views preserve your current filter + sort + grouping configuration for reu
 ## Tips
 
 - Create a standard view for each team ceremony (sprint planning view, backlog grooming view, bug triage view)
-- Clear all filters before saving a "full backlog" view — ensures the view captures all issues`,
+- Clear all filters before saving a "full backlog" view - ensures the view captures all issues`,
         },
         {
           slug: "priority-matrix",
@@ -2181,8 +2181,8 @@ Each dot on the scatter plot represents one Jira issue. The position is determin
 ## Customising the Axes
 
 1. Click **Matrix Settings** (gear icon in the top-right of the matrix)
-2. Set **X Axis** — choose any numeric metric from the active scoring template
-3. Set **Y Axis** — choose a different metric
+2. Set **X Axis** - choose any numeric metric from the active scoring template
+3. Set **Y Axis** - choose a different metric
 4. Click **Apply**
 
 **Common Axis Combinations:**
@@ -2210,7 +2210,7 @@ Click the **Table view** button (top-right toolbar) to return to the tabular Bac
 
 ## Tips
 
-- Use the Priority Matrix alongside the table — patterns visible in the scatter plot (clusters, outliers) are often invisible in a sorted list
+- Use the Priority Matrix alongside the table - patterns visible in the scatter plot (clusters, outliers) are often invisible in a sorted list
 - Reposition quadrant lines to match your team's actual scoring distribution rather than the default 50/50 split
 - Save a matrix view configuration via **Save View** for reuse in recurring prioritisation sessions`,
         },
@@ -2237,7 +2237,7 @@ Saved Prioritized Reports capture a snapshot of the backlog scoring at a specifi
 2. Configure project, scoring template, and filters
 3. Score the issues (all or a subset)
 4. Click **Save Report** in the toolbar
-5. Enter a descriptive report name (e.g., "Sprint 12 Planning — 2025-07-01")
+5. Enter a descriptive report name (e.g., "Sprint 12 Planning - 2025-07-01")
 6. Click **Confirm**
 
 The report appears in the **Saved Reports** section of the sidebar.
@@ -2267,9 +2267,9 @@ The report appears in the **Saved Reports** section of the sidebar.
 
 ## Tips
 
-- Adopt a consistent naming convention: \`[Sprint/Quarter] — [Date]\` (e.g., "Q3 Sprint 5 — 2025-08-12")
+- Adopt a consistent naming convention: \`[Sprint/Quarter] - [Date]\` (e.g., "Q3 Sprint 5 - 2025-08-12")
 - Save a report before AND after sprint planning to record both the pre-planning ranking and the committed selection
-- Saved reports are shared — all team members with access to the project can view them`,
+- Saved reports are shared - all team members with access to the project can view them`,
         },
 
         // ── Teams Management sub-pages ──
@@ -2317,8 +2317,8 @@ Global sidebar → **Teams Management** → **Teams**
 
 | Module | How Teams Are Used |
 |---|---|
-| **Capacity Planner** | Group By → Team — shows rolled-up capacity per team |
-| **Capacity Report** | Filter by Team — restricts the report to selected team members |
+| **Capacity Planner** | Group By → Team - shows rolled-up capacity per team |
+| **Capacity Report** | Filter by Team - restricts the report to selected team members |
 | **Time Tracking Report** | Filter or Group By → Team |
 | **Portfolio (PPM)** | Assign portfolio scope filtered to team members |
 
@@ -2335,8 +2335,8 @@ Global sidebar → **Teams Management** → **Teams**
 
 ## Tips
 
-- Create teams to mirror your actual squad structure — this makes capacity and time tracking reports immediately meaningful to team leads
-- Use Jira Group as the source if you already manage team membership in Jira — avoid duplicating maintenance effort
+- Create teams to mirror your actual squad structure - this makes capacity and time tracking reports immediately meaningful to team leads
+- Use Jira Group as the source if you already manage team membership in Jira - avoid duplicating maintenance effort
 - A user can belong to multiple teams (e.g., a shared QA engineer on both the Platform and Frontend teams)`,
         },
         {
@@ -2361,14 +2361,14 @@ Global sidebar → **Teams Management** → **Programs** tab
 ## Creating a Program
 
 1. Click **Create Program**
-2. Enter **Program Name** (e.g., "Engineering — Q3 2025")
+2. Enter **Program Name** (e.g., "Engineering - Q3 2025")
 3. Optionally add a **Description**
 4. Click **Select Teams** → add the teams that belong to this program
 5. Click **Save**
 
 ## Program Hierarchy
 
-Programs do not have their own members — they aggregate the members of their constituent teams:
+Programs do not have their own members - they aggregate the members of their constituent teams:
 
 \`\`\`
 Program: Engineering
@@ -2385,7 +2385,7 @@ All 7 members are visible in capacity reports when filtered by the Engineering p
 |---|---|
 | A team can belong to only one program | Restructure programs if teams move between departments |
 | Programs must contain at least one team | Empty programs cannot be saved |
-| Programs cannot be nested | Programs are a flat grouping of teams — no program-of-programs |
+| Programs cannot be nested | Programs are a flat grouping of teams - no program-of-programs |
 
 ## Using Programs in Capacity Reports
 
@@ -2407,9 +2407,9 @@ All 7 members are visible in capacity reports when filtered by the Engineering p
 
 ## Tips
 
-- Model programs to mirror your organisational chart — "Engineering", "Product", "Operations"
+- Model programs to mirror your organisational chart - "Engineering", "Product", "Operations"
 - Use programs for PI (Program Increment) planning: create a program per PI, assign sprint teams as members
-- Programs are ideal for director-level reporting — one filter gives a full department view without listing every individual`,
+- Programs are ideal for director-level reporting - one filter gives a full department view without listing every individual`,
         },
 
         // ── Global Setting sub-pages ──
@@ -2418,7 +2418,7 @@ All 7 members are visible in capacity reports when filtered by the Engineering p
           title: "General Settings",
           content: `# General Settings
 
-General Settings control app-wide preferences that affect all modules — Time Tracking, Capacity Planner, Backlog Prioritization, and Portfolio.
+General Settings control app-wide preferences that affect all modules - Time Tracking, Capacity Planner, Backlog Prioritization, and Portfolio.
 
 ## Accessing General Settings
 
@@ -2431,7 +2431,7 @@ Global sidebar → **Settings** → **General** tab
 | **Time Display Unit** | Jira default · Hours/Minutes · Hours · Days | Jira default | How time values appear across all modules |
 | **First Day of Week** | Sunday – Saturday | Monday | Sets the start of the week in calendar and week-mode views |
 | **Working Days** | Checkboxes: Mon–Sun | Mon–Fri | Days counted as working days in capacity calculations |
-| **Hours Per Day** | Number (e.g., 8) | 8 | Working hours per day — used for available capacity calculations |
+| **Hours Per Day** | Number (e.g., 8) | 8 | Working hours per day - used for available capacity calculations |
 | **Timezone Mode** | Jira timezone · User's timezone · My timezone | Jira timezone | How timestamps are interpreted across all views |
 | **Date Format** | DD/MM/YYYY · MM/DD/YYYY · YYYY-MM-DD | Jira default | Display format for dates across the app |
 
@@ -2454,7 +2454,7 @@ Available hours per week = Working Days count × Hours Per Day
 
 **Example:** 5 working days × 7.5 hours/day = 37.5 available hours/week
 
-> Set these accurately — misconfigured values skew all capacity and allocation percentages.
+> Set these accurately - misconfigured values skew all capacity and allocation percentages.
 
 ## Timezone Mode
 
@@ -2466,7 +2466,7 @@ Available hours per week = Working Days count × Hours Per Day
 
 ## Applying Changes
 
-Changes apply globally and immediately — no restart or page reload required. All users on the Jira instance share the same settings.
+Changes apply globally and immediately - no restart or page reload required. All users on the Jira instance share the same settings.
 
 ## Tips
 
@@ -2491,7 +2491,7 @@ By default, when a user logs time they fill in:
 - Time Category (if configured)
 - Billing Account (if configured)
 
-Worklog Fields extend this form with **custom fields** your organisation defines — for example:
+Worklog Fields extend this form with **custom fields** your organisation defines - for example:
 - Client name
 - Work item type (billable / non-billable)
 - Cost centre code
@@ -2546,7 +2546,7 @@ Once configured, custom worklog fields appear as filter and group-by options in:
 
 ## Tips
 
-- Keep the number of required fields low — too many mandatory fields discourage accurate time logging
+- Keep the number of required fields low - too many mandatory fields discourage accurate time logging
 - Use Dropdown fields for fields with a controlled vocabulary to ensure clean, filterable data
 - Discuss field requirements with your finance and HR teams before creating billing- or HR-related fields`,
         },
@@ -2555,7 +2555,7 @@ Once configured, custom worklog fields appear as filter and group-by options in:
           title: "Time Categories",
           content: `# Time Categories
 
-Time Categories let users classify their worklogs by type of work — for example, Development, Code Review, Meetings, or QA — enabling richer analysis and reporting beyond issue-level tracking.
+Time Categories let users classify their worklogs by type of work - for example, Development, Code Review, Meetings, or QA - enabling richer analysis and reporting beyond issue-level tracking.
 
 ## Accessing Time Categories
 
@@ -2580,7 +2580,7 @@ The app ships with a set of default time categories:
 2. Enter:
    - **Category Name** (e.g., "Design Review")
    - **Description** (optional)
-   - **Color** (optional — used in charts and calendar views)
+   - **Color** (optional - used in charts and calendar views)
 3. Click **Save**
 
 The category is immediately available in the **Log Time** form's Category dropdown.
@@ -2619,9 +2619,9 @@ Once set up, Time Categories appear as:
 
 ## Tips
 
-- Keep categories broad and meaningful — 5–8 categories is the sweet spot; too many leads to inconsistent logging
+- Keep categories broad and meaningful - 5–8 categories is the sweet spot; too many leads to inconsistent logging
 - Align categories with what your reporting stakeholders care about (e.g., Billable vs. Non-billable, Customer vs. Internal)
-- Make "Meetings" a category — it typically consumes 10–30% of engineering time and is often invisible without tracking
+- Make "Meetings" a category - it typically consumes 10–30% of engineering time and is often invisible without tracking
 - Brief your team on category definitions so everyone logs consistently`,
         },
         {
@@ -2629,7 +2629,7 @@ Once set up, Time Categories appear as:
           title: "Manage Staff",
           content: `# Manage Staff
 
-Manage Staff lets administrators control which Jira users appear in the app's user-facing dropdowns, filters, and reports — ensuring only active, relevant team members are included in capacity and time data.
+Manage Staff lets administrators control which Jira users appear in the app's user-facing dropdowns, filters, and reports - ensuring only active, relevant team members are included in capacity and time data.
 
 ## Accessing Manage Staff
 
@@ -2637,7 +2637,7 @@ Global sidebar → **Settings** → **Manage Staff** tab
 
 ## What Manage Staff Controls
 
-Without custom staff configuration, the app lists all Jira users in the instance. For large organisations, this creates noise — inactive accounts, service accounts, and external contractors appear alongside active staff.
+Without custom staff configuration, the app lists all Jira users in the instance. For large organisations, this creates noise - inactive accounts, service accounts, and external contractors appear alongside active staff.
 
 Manage Staff lets you:
 - **Include** only specific users in app dropdowns and reports
@@ -2686,7 +2686,7 @@ This is useful for part-time staff, contractors, or users in different regions w
 
 ## Tips
 
-- Disable service accounts and bot users immediately after setup — they pollute the Users filter in every report
+- Disable service accounts and bot users immediately after setup - they pollute the Users filter in every report
 - Use the working hours override for part-time employees to ensure their Capacity Report data is accurate
 - Revisit Manage Staff when onboarding or offboarding team members to keep the user list current`,
         },
@@ -2751,10 +2751,10 @@ Custom fields that appear in the Log Time form for capturing additional context.
 **Creating a Worklog Field:**
 1. Settings → Worklog Fields → Add Field
 2. Configure:
-   - **Field Name** — label shown in the Log Time form
-   - **Field Type** — Text, Number, Select, or Checkbox
-   - **Required** — Yes/No (must-fill before saving a worklog)
-   - **Options** (for Select) — define dropdown values
+   - **Field Name** - label shown in the Log Time form
+   - **Field Type** - Text, Number, Select, or Checkbox
+   - **Required** - Yes/No (must-fill before saving a worklog)
+   - **Options** (for Select) - define dropdown values
 
 **Field Types:**
 
@@ -2766,7 +2766,7 @@ Custom fields that appear in the Log Time form for capturing additional context.
 | Checkbox | True/False toggle | Billable / Non-billable flag |
 
 **Tips:**
-- Limit to 3–5 fields — too many fields slow down the logging experience
+- Limit to 3–5 fields - too many fields slow down the logging experience
 - Use Select for structured data; use Text for free-form reference codes
 
 ---
@@ -2844,7 +2844,7 @@ Teams are named groups of Jira users that the app uses for capacity planning, ti
 | Source | Behavior |
 |---|---|
 | **Manual** | Members stay fixed until you edit the team manually |
-| **Jira Group** | Members auto-sync from the Jira group — changes to the group reflect automatically |
+| **Jira Group** | Members auto-sync from the Jira group - changes to the group reflect automatically |
 
 Use **Jira Group** if team membership is already managed in Jira user management.
 
@@ -2879,7 +2879,7 @@ Programs group multiple Teams into higher-level organizational structures.
 Programs create a three-level hierarchy:
 Program → Team → Members
 
-This hierarchy appears in the Capacity Planner group-by options — select **Program → Team → User** to see capacity aggregated from top down.
+This hierarchy appears in the Capacity Planner group-by options - select **Program → Team → User** to see capacity aggregated from top down.
 
 ### Tips
 
@@ -2889,7 +2889,7 @@ This hierarchy appears in the Capacity Planner group-by options — select **Pro
 
 ---
 
-## RBAC — Assigning the Member Role
+## RBAC - Assigning the Member Role
 
 ### How to Assign
 
@@ -2897,7 +2897,7 @@ This hierarchy appears in the Capacity Planner group-by options — select **Pro
 2. Find the user by name or email in the search bar
 3. Click the **Edit** (pencil) icon next to the user's name
 4. Check the **Member** checkbox
-5. Click **Save** — takes effect immediately, no logout required
+5. Click **Save** - takes effect immediately, no logout required
 
 ### How to Remove the Member Role
 
@@ -2941,11 +2941,11 @@ Cannot be done from within the app. Requires Jira site admin access:
 
 ## How Global Admin Works
 
-Global Admin is **automatically detected** — not assigned inside the app. Anyone with the Jira site-level ADMINISTER permission is automatically a Global Admin in this app.
+Global Admin is **automatically detected** - not assigned inside the app. Anyone with the Jira site-level ADMINISTER permission is automatically a Global Admin in this app.
 
 - **To grant Global Admin**: add the user to the Jira administrator group in Jira user management
 - **To revoke Global Admin**: remove the user from the Jira administrator group
-- The app detects changes automatically on the user's next action — no manual sync needed
+- The app detects changes automatically on the user's next action - no manual sync needed
 
 ## Common Permission Scenarios
 
@@ -2983,7 +2983,7 @@ The app stores all data using **Atlassian Forge Key-Value Storage (KVS)**:
 | Data Type | Used For | Where Stored |
 |---|---|---|
 | Jira issues and projects | Capacity analysis, backlog scoring, portfolio views | Read from Jira; not copied |
-| Jira worklogs | Time tracking — read and write | Written to Jira; time log metadata in Forge KVS |
+| Jira worklogs | Time tracking - read and write | Written to Jira; time log metadata in Forge KVS |
 | Jira users and groups | Assignee display, RBAC | Read from Jira; not copied |
 | Jira configuration | Issue types, statuses, priorities, custom fields | Read from Jira; not copied |
 | App configurations | Report setups, templates, portfolios, scoring | Stored in Forge KVS |
@@ -3006,7 +3006,7 @@ The app stores all data using **Atlassian Forge Key-Value Storage (KVS)**:
 
 | Control | Details |
 |---|---|
-| Data Isolation | Each Jira installation has its own isolated Forge KVS namespace — no data sharing between tenants |
+| Data Isolation | Each Jira installation has its own isolated Forge KVS namespace - no data sharing between tenants |
 | Encryption at Rest | All Forge KVS data is encrypted by Atlassian |
 | Encryption in Transit | All communication uses TLS 1.2+ |
 | No External Data Egress | The app does not make outbound calls to Clovity servers |
@@ -3041,7 +3041,7 @@ Response within 1 business day.`,
 
 ## Manage Staff
 
-Manage Staff provides tools for configuring individual working patterns — holiday calendars, workload schemes, and staff assignments — which feed into capacity calculations.
+Manage Staff provides tools for configuring individual working patterns - holiday calendars, workload schemes, and staff assignments - which feed into capacity calculations.
 
 Access from Settings → Manage Staff.
 
@@ -3105,8 +3105,8 @@ Links individual staff members to workload schemes.
 | Constraint | Impact |
 |---|---|
 | Forge KVS storage | Very large datasets may approach Forge storage limits |
-| Jira API rate limits | Automatic backoff/retry is built in — very large issue fetches may be slower |
-| No pre-aggregation | All reports are generated on-demand from Jira data — no overnight aggregation cache |`,
+| Jira API rate limits | Automatic backoff/retry is built in - very large issue fetches may be slower |
+| No pre-aggregation | All reports are generated on-demand from Jira data - no overnight aggregation cache |`,
         },
       ],
     },
@@ -3134,18 +3134,18 @@ Check the Atlassian Marketplace listing for the most current release notes and v
 ## Recent Highlights
 
 ### Portfolio Management Enhancements
-- Added **Board View** to Portfolio module — Kanban-style layout for workflow tracking
+- Added **Board View** to Portfolio module - Kanban-style layout for workflow tracking
 - Improved **Gantt Chart** performance for large portfolios
 - Added support for **Start-to-Start (SS)** and **Finish-to-Finish (FF)** dependency types
 
 ### Backlog Prioritization Updates
-- Added **Priority Matrix** view — scatter plot for visual prioritization across two dimensions
+- Added **Priority Matrix** view - scatter plot for visual prioritization across two dimensions
 - Added **Label** metric type to custom scoring templates
 - Improved inline editing performance in the Backlog Table
 
 ### Time Tracking Improvements
 - Added **My Calendar** view for personal daily time log review
-- Improved **report export** — PDF exports now include charts
+- Improved **report export** - PDF exports now include charts
 - Added **Time Categories** filter to the Report Builder
 
 ### Capacity Planner Updates
@@ -3167,7 +3167,7 @@ The app is a Jira Cloud-exclusive product built on Atlassian Forge. All updates 
 
 ### Atlassian UI Kit Updates
 - User interface components are periodically updated to align with Atlassian's latest design system (Atlassian Design System v2).
-- Updates are deployed automatically — no admin action required.
+- Updates are deployed automatically - no admin action required.
 
 ## Cloud-Specific Features
 
@@ -3211,7 +3211,7 @@ For the complete version history and detailed changelog, visit the app's Atlassi
 
 ## How Updates Are Delivered
 
-The app updates automatically on the Atlassian Marketplace. You do not need to manually install updates — when a new version is available, it is deployed to your Jira Cloud instance by Atlassian.
+The app updates automatically on the Atlassian Marketplace. You do not need to manually install updates - when a new version is available, it is deployed to your Jira Cloud instance by Atlassian.
 
 To see which version you are currently running:
 1. Go to Jira **Settings → Apps → Manage apps**
@@ -3273,7 +3273,7 @@ All feature requests are reviewed by the product team weekly. You will receive c
 
 ## Native Jira Integration
 
-Time Tracking, Resource Planning & Project Management is a **native Jira Cloud app** — it integrates directly with Jira through the Atlassian Forge platform. No separate connection or API key is needed.
+Time Tracking, Resource Planning & Project Management is a **native Jira Cloud app** - it integrates directly with Jira through the Atlassian Forge platform. No separate connection or API key is needed.
 
 ### What Jira Data It Uses
 
@@ -3301,7 +3301,7 @@ The **Portfolio Dashboard Gadget** adds a portfolio metrics widget to any Jira d
 
 | Integration | Status |
 |---|---|
-| Jira Server / Data Center | Not supported — Forge platform is Cloud-only |
+| Jira Server / Data Center | Not supported - Forge platform is Cloud-only |
 | Confluence | No direct integration |
 | Slack | Not supported |
 | Microsoft Teams | Not supported |
@@ -3321,7 +3321,7 @@ Third-party integrations (Slack notifications, calendar sync, external reporting
 
 ## Current State
 
-Time Tracking, Resource Planning & Project Management currently operates as a **self-contained Jira Cloud app**. It reads from and writes to Jira directly — there are no native connectors to third-party apps at this time.
+Time Tracking, Resource Planning & Project Management currently operates as a **self-contained Jira Cloud app**. It reads from and writes to Jira directly - there are no native connectors to third-party apps at this time.
 
 ## Data Export for Third-party Use
 
@@ -3378,14 +3378,14 @@ This app **only runs on Jira Cloud**. There is no Server or Data Center version.
 Once your Jira Cloud migration is done and your team is using Jira Cloud:
 
 1. **Install the app** from the Atlassian Marketplace on your new Jira Cloud instance
-2. **Reassign roles** — the RBAC configuration from any previous tool does not carry over; assign Member roles from scratch
-3. **Recreate saved reports** — report configurations are stored per Jira installation and don't transfer
-4. **Set up time categories and billing accounts** — these are configured fresh after install
-5. **Import historical time data** — if you have historical worklogs in Jira from your migration, the app will display them automatically once you set the correct date ranges
+2. **Reassign roles** - the RBAC configuration from any previous tool does not carry over; assign Member roles from scratch
+3. **Recreate saved reports** - report configurations are stored per Jira installation and don't transfer
+4. **Set up time categories and billing accounts** - these are configured fresh after install
+5. **Import historical time data** - if you have historical worklogs in Jira from your migration, the app will display them automatically once you set the correct date ranges
 
 ## Historical Data Availability
 
-If your Jira Cloud migration included worklog data, the Time Tracking module will display it as soon as you load a report covering that date range. No additional import is needed — the app reads directly from Jira worklogs.
+If your Jira Cloud migration included worklog data, the Time Tracking module will display it as soon as you load a report covering that date range. No additional import is needed - the app reads directly from Jira worklogs.
 
 ## Planning Your Migration
 
@@ -3402,7 +3402,7 @@ For questions about the app after migration, contact **support@clovity.com**.`,
 
 ## Exporting Data
 
-### Time Tracking Reports — CSV Export
+### Time Tracking Reports - CSV Export
 1. Open **Time Tracking → Timesheet**
 2. Open any report in the Report Builder
 3. Configure filters and grouping as needed
@@ -3410,11 +3410,11 @@ For questions about the app after migration, contact **support@clovity.com**.`,
 
 CSV export includes all visible columns in the current report configuration.
 
-### Time Tracking Reports — PDF Export
+### Time Tracking Reports - PDF Export
 1. Same as above but click **Export → PDF**
 2. PDF includes the report table and bar/pie charts
 
-### Backlog Prioritization — CSV Export
+### Backlog Prioritization - CSV Export
 1. Open **Backlog Prioritization → Backlog Table**
 2. Select your project and apply scoring
 3. Click **Export → CSV**
@@ -3431,7 +3431,7 @@ The app does **not** currently support bulk data import. Time entries must be lo
 
 For teams that want to programmatically create worklogs that appear in the app:
 
-- Use the Jira Cloud REST API — Add worklog endpoint:
+- Use the Jira Cloud REST API - Add worklog endpoint:
 
 \`POST /rest/api/3/issue/{issueIdOrKey}/worklog\`
 
@@ -3465,7 +3465,7 @@ App configuration data (report setups, templates, portfolios, scoring) is stored
 **Who:** Engineering Manager
 **When:** Sprint planning day
 
-Before committing to a sprint scope, the manager opens Capacity Analytics, sets the project and the upcoming two-week window, and reviews the Assignee Capacity tab. Three engineers have carryover issues with significant remaining estimates. The manager adjusts the sprint scope down by 20% before the planning meeting — avoiding the usual mid-sprint scramble.
+Before committing to a sprint scope, the manager opens Capacity Analytics, sets the project and the upcoming two-week window, and reviews the Assignee Capacity tab. Three engineers have carryover issues with significant remaining estimates. The manager adjusts the sprint scope down by 20% before the planning meeting - avoiding the usual mid-sprint scramble.
 
 **Modules used:** Capacity Analytics → Assignee Capacity tab
 
@@ -3476,7 +3476,7 @@ Before committing to a sprint scope, the manager opens Capacity Analytics, sets 
 **Who:** Team Lead
 **When:** Mid-sprint check-in
 
-The team's velocity feels off but no one can pinpoint why. The lead opens the Status Aging Monitor for the current sprint window. Six issues have been in "In Review" for more than five days — all assigned to the same reviewer. The lead reassigns two reviews and unblocks the queue in one conversation.
+The team's velocity feels off but no one can pinpoint why. The lead opens the Status Aging Monitor for the current sprint window. Six issues have been in "In Review" for more than five days - all assigned to the same reviewer. The lead reassigns two reviews and unblocks the queue in one conversation.
 
 **Modules used:** Capacity Analytics → Status Aging Monitor tab
 
@@ -3509,7 +3509,7 @@ The director opens Portfolio Management and exports a summary for three active p
 **Who:** Delivery Manager
 **When:** Project retrospective
 
-After a project closes, the delivery manager reviews time logs across all team members for the project duration. They compare estimated vs. actual hours per issue type to identify where estimation accuracy broke down — informing planning norms for the next project.
+After a project closes, the delivery manager reviews time logs across all team members for the project duration. They compare estimated vs. actual hours per issue type to identify where estimation accuracy broke down - informing planning norms for the next project.
 
 **Modules used:** Time Tracking
 
@@ -3621,7 +3621,7 @@ The lead filters the Time Tracking Report Builder by Billing Account (one per cl
 
 ## Backlog Scoring Templates
 
-### Template 1 — ICE Score
+### Template 1 - ICE Score
 Best for: Quick prioritization of feature requests and bugs
 
 | Metric | Type | Description |
@@ -3634,7 +3634,7 @@ Best for: Quick prioritization of feature requests and bugs
 
 ---
 
-### Template 2 — RICE Score
+### Template 2 - RICE Score
 Best for: Product feature prioritization with reach considerations
 
 | Metric | Type | Description |
@@ -3648,7 +3648,7 @@ Best for: Product feature prioritization with reach considerations
 
 ---
 
-### Template 3 — WSJF (SAFe)
+### Template 3 - WSJF (SAFe)
 Best for: Agile Release Train prioritization
 
 | Metric | Type | Description |
@@ -3662,7 +3662,7 @@ Best for: Agile Release Train prioritization
 
 ---
 
-### Template 4 — Value vs. Effort
+### Template 4 - Value vs. Effort
 Best for: Simple two-dimension prioritization
 
 | Metric | Type | Description |
@@ -3806,7 +3806,7 @@ A Jira site administrator installs the app from the Atlassian Marketplace. After
 Click the dropdown at the top of the sidebar and select: Capacity Planner, Time Tracking, Backlog Prioritization, or Portfolio.
 
 **Is there a mobile app?**
-No dedicated mobile app — the app runs inside Jira Cloud's web interface. Mobile browser access depends on Jira's mobile web support.
+No dedicated mobile app - the app runs inside Jira Cloud's web interface. Mobile browser access depends on Jira's mobile web support.
 
 ---
 
@@ -3816,7 +3816,7 @@ No dedicated mobile app — the app runs inside Jira Cloud's web interface. Mobi
 Jira issues, projects, worklogs, users, and fields that you have permission to view. It cannot access data you don't have access to in Jira.
 
 **Does the app store my data?**
-App configurations (report setups, templates, portfolio filters, scores) are stored using Atlassian Forge Key-Value Storage — encrypted, isolated per installation, managed by Atlassian. No data is exported to external systems.
+App configurations (report setups, templates, portfolio filters, scores) are stored using Atlassian Forge Key-Value Storage - encrypted, isolated per installation, managed by Atlassian. No data is exported to external systems.
 
 **What happens if I have no role assigned?**
 You get read-only access to all modules. An admin must assign the Member role for edit/create/delete access.
@@ -3889,10 +3889,10 @@ No hard limit. Backlog tables with 10,000+ issues or reports spanning years may 
 **Symptoms:** Report displays no rows; chart section is empty; zero totals for all time periods.
 
 **Solutions:**
-1. **Check your date range** — make sure From/To dates cover a period where worklogs exist
-2. **Remove all filters** and rebuild — if data appears, one filter was too narrow
-3. **Verify permissions** — confirm you can view worklogs for the selected project
-4. **Check for logged time** — open a Jira issue directly and verify worklogs exist in the Time tracking section
+1. **Check your date range** - make sure From/To dates cover a period where worklogs exist
+2. **Remove all filters** and rebuild - if data appears, one filter was too narrow
+3. **Verify permissions** - confirm you can view worklogs for the selected project
+4. **Check for logged time** - open a Jira issue directly and verify worklogs exist in the Time tracking section
 
 ---
 
@@ -3912,10 +3912,10 @@ No hard limit. Backlog tables with 10,000+ issues or reports spanning years may 
 **Symptoms:** Score column shows 0 or blank; metric cells are not editable.
 
 **Solutions:**
-1. **Check your template** — make sure a scoring template is selected (not "None")
-2. **Fill in metric values** — score requires all metrics to have values
-3. **Verify formula** — in Manage Templates, check the formula references the correct metric names
-4. **Check permissions** — you need Member or Global Admin role to edit metric cells
+1. **Check your template** - make sure a scoring template is selected (not "None")
+2. **Fill in metric values** - score requires all metrics to have values
+3. **Verify formula** - in Manage Templates, check the formula references the correct metric names
+4. **Check permissions** - you need Member or Global Admin role to edit metric cells
 
 ---
 
@@ -3924,27 +3924,27 @@ No hard limit. Backlog tables with 10,000+ issues or reports spanning years may 
 **Symptoms:** Error message "PERMISSION_DENIED" when trying to save/edit/delete; buttons are missing from the interface.
 
 **Solutions:**
-1. **Check your role** — go to Settings → My Permissions to see your current role
-2. **Contact your admin** — ask them to assign the Member role via RBAC → User Roles
-3. **Verify Jira admin status** — if you should be a Global Admin, confirm you have the Administer Jira permission in Jira settings
+1. **Check your role** - go to Settings → My Permissions to see your current role
+2. **Contact your admin** - ask them to assign the Member role via RBAC → User Roles
+3. **Verify Jira admin status** - if you should be a Global Admin, confirm you have the Administer Jira permission in Jira settings
 
 ---
 
 ## Gantt Chart Not Rendering
 
 1. **Refresh the page** (Ctrl+F5 hard refresh)
-2. **Check your filters** — if the portfolio filter returns zero issues, the chart has nothing to render
-3. **Verify date fields** — Gantt requires Start Date and Due Date configured in Portfolio Settings; issues without dates won't appear as bars
-4. **Try a different browser** — Chrome or Firefox recommended
+2. **Check your filters** - if the portfolio filter returns zero issues, the chart has nothing to render
+3. **Verify date fields** - Gantt requires Start Date and Due Date configured in Portfolio Settings; issues without dates won't appear as bars
+4. **Try a different browser** - Chrome or Firefox recommended
 
 ---
 
 ## Slow Loading / Performance Issues
 
-1. **Narrow your query** — use a smaller date range or fewer projects
-2. **Reduce group-by dimensions** — fewer grouping levels = faster report generation
-3. **Check Jira performance** — if Jira itself is slow, the app will be slow too
-4. **Browser troubleshooting** — close unnecessary tabs, clear cache, try a different browser
+1. **Narrow your query** - use a smaller date range or fewer projects
+2. **Reduce group-by dimensions** - fewer grouping levels = faster report generation
+3. **Check Jira performance** - if Jira itself is slow, the app will be slow too
+4. **Browser troubleshooting** - close unnecessary tabs, clear cache, try a different browser
 
 ---
 
@@ -3961,7 +3961,7 @@ No hard limit. Backlog tables with 10,000+ issues or reports spanning years may 
 
 1. Confirm that the selected project and date range overlap with actual Jira issue estimates or worklogs
 2. Check that the users included in the report have Jira issues assigned to them in the selected project
-3. Verify the Working Days setting in General Settings — if working hours are 0, capacity calculations will show 0
+3. Verify the Working Days setting in General Settings - if working hours are 0, capacity calculations will show 0
 
 ---
 
@@ -3986,9 +3986,9 @@ Gather: Jira site URL, module you were using, steps to reproduce, and browser co
 
 To help us resolve your issue faster, try these steps first:
 
-1. **Check Documentation** — review the FAQ and Troubleshooting Guide in this Help Center
-2. **Verify Your Setup** — confirm you can access the app from Apps in the Jira top nav; check your role under Settings → My Permissions
-3. **Try Basic Fixes** — refresh the page (Ctrl+F5), try a different browser, clear browser cache
+1. **Check Documentation** - review the FAQ and Troubleshooting Guide in this Help Center
+2. **Verify Your Setup** - confirm you can access the app from Apps in the Jira top nav; check your role under Settings → My Permissions
+3. **Try Basic Fixes** - refresh the page (Ctrl+F5), try a different browser, clear browser cache
 
 ---
 
@@ -4002,7 +4002,7 @@ To help us resolve your issue faster, try these steps first:
 | Issue Description | Report shows no data when filtering by Project X |
 | Your Role | Helps us check if it's a permissions issue |
 | Screenshots | Shows exactly what you're seeing |
-| Console Errors | F12 → Console tab — copy any red error messages |
+| Console Errors | F12 → Console tab - copy any red error messages |
 | Browser & Version | Chrome 120, Firefox 121, Safari 18, etc. |
 
 ---
@@ -4040,15 +4040,15 @@ Use a clear subject line so our team can route your request quickly:
 
 | Type | Subject Format |
 |---|---|
-| Bug report | \`Bug: [Module] — [Brief description]\` |
-| Configuration help | \`Help: [Module] — [What you're trying to do]\` |
+| Bug report | \`Bug: [Module] - [Brief description]\` |
+| Configuration help | \`Help: [Module] - [What you're trying to do]\` |
 | Feature request | \`Feature Request: [Brief description]\` |
 | Billing / license | \`Billing: [Your Jira site URL]\` |
 
 ### Example Subject Lines
 
-- \`Bug: Time Tracking — Report shows no data for current week\`
-- \`Help: Portfolio — Gantt chart date fields not mapping correctly\`
+- \`Bug: Time Tracking - Report shows no data for current week\`
+- \`Help: Portfolio - Gantt chart date fields not mapping correctly\`
 - \`Feature Request: Email notifications for time approval\`
 
 ---
@@ -4109,7 +4109,7 @@ For private, account-specific questions (billing, licensing, bugs with your spec
 
 ## Share Your Feedback
 
-We read all community posts and emails. If you have built something interesting with the app — a workflow, a report template, a backlog scoring approach — share it! We regularly feature community contributions in our release notes and documentation.`,
+We read all community posts and emails. If you have built something interesting with the app - a workflow, a report template, a backlog scoring approach - share it! We regularly feature community contributions in our release notes and documentation.`,
         },
       ],
     },
@@ -4133,7 +4133,7 @@ We read all community posts and emails. If you have built something interesting 
 | Data Type | How It's Used | Where It's Stored |
 |---|---|---|
 | Jira issue data | Capacity analysis, backlog scoring, portfolio views | Read from Jira; not copied to external storage |
-| Jira worklogs | Time tracking — read and write | Written to Jira; time log metadata stored in Forge KVS |
+| Jira worklogs | Time tracking - read and write | Written to Jira; time log metadata stored in Forge KVS |
 | User profiles | Assignee display, RBAC | Read from Jira; not copied |
 | App configurations | Report setups, templates, portfolios, scoring | Stored in Atlassian Forge KVS |
 
@@ -4150,7 +4150,7 @@ The app runs on **Atlassian Forge**, Atlassian's serverless platform. Forge prov
 
 - **Data isolation**: Each Jira installation has its own isolated Forge KVS namespace
 - **Encryption at rest**: All Forge KVS data is encrypted by Atlassian
-- **No egress by default**: Forge apps cannot make arbitrary outbound network calls — all external access requires explicit declaration in the app manifest
+- **No egress by default**: Forge apps cannot make arbitrary outbound network calls - all external access requires explicit declaration in the app manifest
 
 ## GDPR Compliance
 
@@ -4236,7 +4236,7 @@ Time Tracking, Resource Planning & Project Management is built on the **Atlassia
 
 | Control | Details |
 |---|---|
-| Data Isolation | Each Jira installation has its own isolated Forge KVS namespace — no data sharing between tenants |
+| Data Isolation | Each Jira installation has its own isolated Forge KVS namespace - no data sharing between tenants |
 | Encryption at Rest | All Forge KVS data is encrypted at rest by Atlassian |
 | Encryption in Transit | All communication uses TLS 1.2+ |
 | Access Control | App can only access Jira data permitted by the user's Jira permissions |
@@ -4302,7 +4302,7 @@ Endpoint: \`POST /rest/api/3/issue/{issueIdOrKey}/worklog\`
 }
 \`\`\`
 
-For full Jira Worklog API documentation: [Atlassian Developer Docs — Add Worklog](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-worklogs/#api-rest-api-3-issue-issueidorkey-worklog-post)
+For full Jira Worklog API documentation: [Atlassian Developer Docs - Add Worklog](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-worklogs/#api-rest-api-3-issue-issueidorkey-worklog-post)
 
 ## App-Specific Worklog Properties
 

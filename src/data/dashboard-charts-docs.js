@@ -15,7 +15,7 @@ export const dashboardChartsDocs = {
           sideVideo: {
             src: "https://www.youtube.com/embed/cD2Kdxp59qA",
             title:
-              "Dashboard Templates, Charts, Graphs & Reports for Jira — Product Overview",
+              "Dashboard Templates, Charts, Graphs & Reports for Jira - Product Overview",
           },
           content: `# Dashboard Templates, Charts, Graphs & Reports for Jira
 
@@ -67,12 +67,12 @@ All of this is done **inside Jira**, using your existing projects, filters, and 
 
 ## Platform
 
-Jira Cloud only. Built on Atlassian Forge — no external servers, no data exports, no infrastructure to maintain.`,
+Jira Cloud only. Built on Atlassian Forge - no external servers, no data exports, no infrastructure to maintain.`,
         },
         {
           slug: "demo-video",
           title: "Demo Videos & Walkthroughs",
-          content: `4 step-by-step tutorials covering every gadget — click any video to start watching, or use the arrows to go through them in order. New to the app? Start with the [Product Introduction](/apps/dashboard-charts-jira/what-is-dashboard-charts) first.`,
+          content: `4 step-by-step tutorials covering every gadget - click any video to start watching, or use the arrows to go through them in order. New to the app? Start with the [Product Introduction](/apps/dashboard-charts-jira/what-is-dashboard-charts) first.`,
           videoGallery: {
             playlistUrl:
               "https://www.youtube.com/watch?v=ld8eGIIAGzo&list=PLACoCS_WiVwT9chp45LEQYuxXOcRkDAeC",
@@ -80,22 +80,22 @@ Jira Cloud only. Built on Atlassian Forge — no external servers, no data expor
               {
                 id: "ld8eGIIAGzo",
                 title:
-                  "Dashboard Templates, Charts, Graphs & Reports for Jira — App Overview",
+                  "Dashboard Templates, Charts, Graphs & Reports for Jira - App Overview",
               },
               {
                 id: "2QqeABXzzHI",
                 title:
-                  "Custom Charts in Jira — Build the Right Chart for Better Insights",
+                  "Custom Charts in Jira - Build the Right Chart for Better Insights",
               },
               {
                 id: "xco2CqE_64o",
                 title:
-                  "Jira Issue List Tutorial — Tables, Filters, Labels & Export Explained",
+                  "Jira Issue List Tutorial - Tables, Filters, Labels & Export Explained",
               },
               {
                 id: "Q0NC8CoL5Do",
                 title:
-                  "Jira Dynamic Filter Controller — Connect & Control Your Dashboard Like a Pro",
+                  "Jira Dynamic Filter Controller - Connect & Control Your Dashboard Like a Pro",
               },
             ],
           },
@@ -110,7 +110,7 @@ Jira Cloud only. Built on Atlassian Forge — no external servers, no data expor
 Before installing, confirm:
 
 1. You are a **Jira Cloud site administrator** (required to install Marketplace apps)
-2. Your Jira instance is **Jira Cloud** — this app does not support Server or Data Center
+2. Your Jira instance is **Jira Cloud** - this app does not support Server or Data Center
 3. You have access to the **Atlassian Marketplace** from your Jira instance
 
 ## Installation Steps
@@ -122,7 +122,7 @@ Before installing, confirm:
 5. Click the app in the search results
 6. Click **Try it free** (30-day trial) or **Buy now**
 7. Review and accept the requested permissions
-8. Click **Accept** — the app installs immediately, no restart required
+8. Click **Accept** - the app installs immediately, no restart required
 
 ## Verify Installation
 
@@ -169,19 +169,19 @@ To uninstall: Jira Settings → Apps → Manage apps → find the app → click 
 
 Get up and running with your first Jira dashboard chart in under 5 minutes.
 
-## Step 1 — Open or Create a Dashboard
+## Step 1 - Open or Create a Dashboard
 
 1. In Jira, click **Dashboards** in the top navigation bar
 2. Select an existing dashboard, or click **Create dashboard** to make a new one
 3. Click the **Edit** button (pencil icon) to enter edit mode
 
-## Step 2 — Add Your First Chart
+## Step 2 - Add Your First Chart
 
 1. Click **Add gadget** (top-right area of the dashboard)
 2. In the gadget gallery search, type **"Custom Charts"**
-3. Click **Add** — the gadget appears on your dashboard in configuration mode
+3. Click **Add** - the gadget appears on your dashboard in configuration mode
 
-## Step 3 — Set a Data Source
+## Step 3 - Set a Data Source
 
 In the left panel of the configuration screen:
 
@@ -189,19 +189,19 @@ In the left panel of the configuration screen:
 2. Search for and select a Jira project you have access to
 3. The issue count updates to show how many issues are included
 
-## Step 4 — Choose a Chart Type
+## Step 4 - Choose a Chart Type
 
 1. Click the **Chart Type** tab in the right panel
 2. Select **Pie Chart** (a great starting point)
 3. In the **Chart By** tab, select **Status** from the field dropdown
 4. Watch the **Live Preview** in the center panel update instantly
 
-## Step 5 — Save the Gadget
+## Step 5 - Save the Gadget
 
 1. Click **Save gadget** at the bottom of the configuration screen
 2. Your pie chart showing issue status distribution is now live on the dashboard
 
-## Step 6 — Add an Issue List (Optional)
+## Step 6 - Add an Issue List (Optional)
 
 1. Click **Add gadget** again
 2. Search for **"Issue List"**
@@ -209,7 +209,7 @@ In the left panel of the configuration screen:
 4. Add columns: Key, Summary, Status, Assignee, Priority
 5. Click **Save gadget**
 
-## Step 7 — Add a Dynamic Filter Controller (Optional)
+## Step 7 - Add a Dynamic Filter Controller (Optional)
 
 To make your dashboard interactive:
 
@@ -272,16 +272,16 @@ The app requests the following permissions during Marketplace install:
 | Constraint | Impact |
 |---|---|
 | Large issue queries | Queries returning 50,000+ issues may be slow to render |
-| Real-time updates | Data refreshes on page load or manual refresh — not streaming |
+| Real-time updates | Data refreshes on page load or manual refresh - not streaming |
 | Segment count | 10–20 segments render faster than 100+; keep queries focused |
-| Forge KVS storage | Gadget configurations stored in Forge KVS — very large configurations may approach limits |
+| Forge KVS storage | Gadget configurations stored in Forge KVS - very large configurations may approach limits |
 
 ## Known Limitations
 
-- **No Jira Server / Data Center support** — Atlassian Forge is Cloud-only
-- **No real-time push updates** — dashboard data reflects the state at last page load; manual refresh required
-- **No historical snapshots** — charts show current Jira state; point-in-time snapshots are not built in
-- **No external integrations** — the app does not natively connect to Slack, Teams, or external BI tools
+- **No Jira Server / Data Center support** - Atlassian Forge is Cloud-only
+- **No real-time push updates** - dashboard data reflects the state at last page load; manual refresh required
+- **No historical snapshots** - charts show current Jira state; point-in-time snapshots are not built in
+- **No external integrations** - the app does not natively connect to Slack, Teams, or external BI tools
 
 ## Network Requirements
 
@@ -316,7 +316,7 @@ To share a dashboard: open the dashboard → click **Actions (•••)** → *
 
 ## Data Access (What Charts Can Show)
 
-Charts and tables only show **Jira data the current user can see**. If a user does not have "Browse Projects" permission for a project, issues from that project will not appear in their charts — even if the gadget is configured with that project as a source.
+Charts and tables only show **Jira data the current user can see**. If a user does not have "Browse Projects" permission for a project, issues from that project will not appear in their charts - even if the gadget is configured with that project as a source.
 
 This means:
 - Sensitive projects are automatically excluded for users without access
@@ -340,12 +340,12 @@ If a dashboard is not shared with you:
 2. Ask them to share the dashboard with your Jira user or group
 3. The owner can set view or edit permissions
 
-There is no self-service request form — access is granted by the dashboard owner.
+There is no self-service request form - access is granted by the dashboard owner.
 
 ## Gadget Export Permissions
 
 If export buttons (PNG, PDF, CSV) are missing or disabled:
-1. Check with your Jira admin — export may be disabled globally in Admin Settings
+1. Check with your Jira admin - export may be disabled globally in Admin Settings
 2. The admin can re-enable it under **Admin → Customization Options → Allow direct export**`,
         },
       ],
@@ -743,9 +743,9 @@ Group By = Columns/Series (multiple bars/lines)
 
 ### Choose Complementary Dimensions
 
-* Status x Type — Different aspects of same issues
-* Time x Category — Trend analysis with breakdown
-* Person x Status — Individual progress tracking
+* Status x Type - Different aspects of same issues
+* Time x Category - Trend analysis with breakdown
+* Person x Status - Individual progress tracking
 `,
         },
         {
@@ -821,12 +821,12 @@ Helpful for comparing individuals to team average.
 
 ### Example
 
-| **Week** | **Issues (Normal) — Issues (Cumulative)** |
+| **Week** | **Issues (Normal) - Issues (Cumulative)** |
 | --- | --- |
-| Week 1 | 10 — 10 |
-| Week 2 | 15 — 25 |
-| Week 3 | 12 — 37 |
-| Week 4 | 8 — 45 |
+| Week 1 | 10 - 10 |
+| Week 2 | 15 - 25 |
+| Week 3 | 12 - 37 |
+| Week 4 | 8 - 45 |
 
 ## Which Charts Support Reference Lines?
 
@@ -1048,14 +1048,14 @@ Use Templates to start a Custom Chart faster with a ready-made chart setup. Temp
 
 | **Template** | **Chart type** | **Main field** | **Group By** | **What it creates** | **Best use** |
 | --- | --- | --- | --- | --- | --- |
-| Issues by Status | Pie Chart | status | — | Shows how issues are distributed by status. | Good for a fast status breakdown and a simple shareable chart. |
-| Issues by Priority | Funnel Chart | priority | — | Shows issue volume by priority in a funnel-style view. | Useful when you want to compare how work is distributed across priority levels. |
-| Issues by Issue Type | Line Chart | issuetype | — | Plots issues by issue type in a line-style view. | Useful when you want a lightweight category comparison in a line chart presentation. |
-| Issues by Assignee | Bar Chart | assignee | — | Shows how work is distributed across assignees. | Useful for workload distribution or ownership checks. |
-| Unresolved Issues | Bar Chart | Custom JQL | — | Creates a JQL-segment chart using the segment "Unresolved" with JQL \`status != Done\`. | Useful when you want a quick unresolved-only starter chart without building a segment manually. |
-| Issues by Component | Table Chart | components | — | Builds a table-based summary by component. | Useful when users prefer a tabular view instead of a visual chart. |
-| Issues by Labels | Bar Chart | labels | — | Builds a bar chart grouped by issue labels. | Useful for tag-based reporting and theme analysis. |
-| Issues by Fix Version | Line Chart | fixVersions | — | Builds a line-style chart by fix version. | Useful for release-oriented reporting. |
+| Issues by Status | Pie Chart | status | - | Shows how issues are distributed by status. | Good for a fast status breakdown and a simple shareable chart. |
+| Issues by Priority | Funnel Chart | priority | - | Shows issue volume by priority in a funnel-style view. | Useful when you want to compare how work is distributed across priority levels. |
+| Issues by Issue Type | Line Chart | issuetype | - | Plots issues by issue type in a line-style view. | Useful when you want a lightweight category comparison in a line chart presentation. |
+| Issues by Assignee | Bar Chart | assignee | - | Shows how work is distributed across assignees. | Useful for workload distribution or ownership checks. |
+| Unresolved Issues | Bar Chart | Custom JQL | - | Creates a JQL-segment chart using the segment "Unresolved" with JQL \`status != Done\`. | Useful when you want a quick unresolved-only starter chart without building a segment manually. |
+| Issues by Component | Table Chart | components | - | Builds a table-based summary by component. | Useful when users prefer a tabular view instead of a visual chart. |
+| Issues by Labels | Bar Chart | labels | - | Builds a bar chart grouped by issue labels. | Useful for tag-based reporting and theme analysis. |
+| Issues by Fix Version | Line Chart | fixVersions | - | Builds a line-style chart by fix version. | Useful for release-oriented reporting. |
 | Bug Rate by Sprint | Grouped Bar Chart | sprint | Custom JQL (group by segments) | Uses Group By JQL segments and starts with a "Bugs" segment using \`issuetype = Bug\`. | Useful when you want sprint-level comparison with a bug-only grouped slice. |
 | Issues by Status per Project | Stacked Bar Chart | status | project | Compares statuses within each project using a stacked bar layout. | Useful for cross-project status comparison in one chart. |
 | Issues by Priority per Project | Grouped Bar Chart | priority | project | Compares project-level priority distribution side by side. | Useful for seeing whether one project carries more high-priority work than another. |
@@ -1654,7 +1654,7 @@ The app adds three Jira dashboard gadgets. Each gadget opens a configuration pan
 | Zone | Location | What It Contains |
 |---|---|---|
 | **Data Source Panel** | Left | Source type selector (Projects, Saved Filter, JQL, Controller), source search, issue count preview |
-| **Live Preview** | Center | Real-time chart or table preview — updates instantly as you change settings |
+| **Live Preview** | Center | Real-time chart or table preview - updates instantly as you change settings |
 | **Settings Panel** | Right | Tabbed configuration: Chart Type, Chart By, Group By, Calculations, Display Options, Description, Import/Export |
 
 ## Three Integrated Gadgets
@@ -1673,7 +1673,7 @@ The primary visualization gadget. Supports **10 chart types** across 5 categorie
 **Best for:** Status breakdowns, trend analysis, workload distribution, KPI scorecards.
 
 ### Issue List
-A fully configurable issue table — choose columns, add visual label indicators, and set quick-filter buttons for one-click filtering.
+A fully configurable issue table - choose columns, add visual label indicators, and set quick-filter buttons for one-click filtering.
 
 **Best for:** Live sprint boards, bug trackers, team work queues, and any report where exact issue details matter.
 
@@ -1690,7 +1690,7 @@ To add or configure gadgets you must be in **edit mode**:
 2. Click the **Edit** button (pencil icon, top right)
 3. Click **Add gadget** to open the gadget gallery
 4. Search for "Custom Charts", "Issue List", or "Dynamic Filter Controller"
-5. Click **Add** — the gadget appears in configuration mode immediately
+5. Click **Add** - the gadget appears in configuration mode immediately
 
 To exit edit mode, click **Done** or **Save layout**.
 
@@ -1698,17 +1698,17 @@ To exit edit mode, click **Done** or **Save layout**.
 
 When you open a gadget in edit mode, the three-panel layout activates:
 
-### Left Panel — Data Source
+### Left Panel - Data Source
 - **Source Type:** Projects | Saved Filter | Custom JQL | Dynamic Filter Controller
 - **Source Search:** Find and select the project or filter you want
-- **Issue Count:** Shows how many issues match the current source — updates live
+- **Issue Count:** Shows how many issues match the current source - updates live
 
-### Center Panel — Live Preview
+### Center Panel - Live Preview
 - Updates in real time as you change any setting
 - Reflects the exact chart or table that will display on the dashboard
 - For Dynamic Filter Controller: shows the filter bar and connected chart references
 
-### Right Panel — Settings Tabs
+### Right Panel - Settings Tabs
 
 | Tab | What It Controls |
 |---|---|
@@ -1731,15 +1731,15 @@ When you open a gadget in edit mode, the three-panel layout activates:
 - Available in **view mode** (not edit mode)
 - Click the **options menu (…)** on the gadget
 - Choose **PNG**, **PDF**, or **CSV**
-- If the button is missing, export may be disabled by your Jira admin — contact them to enable it
+- If the button is missing, export may be disabled by your Jira admin - contact them to enable it
 
 ### Refresh
 - Click the options menu (…) → **Refresh** to reload gadget data
-- Data is not streamed in real time — use manual refresh or enable auto-refresh in Display Options
+- Data is not streamed in real time - use manual refresh or enable auto-refresh in Display Options
 
 ### Live Preview
 - Every change in the settings panel instantly updates the center preview
-- No need to save to see how the chart will look — just configure and check the preview
+- No need to save to see how the chart will look - just configure and check the preview
 
 ## Module Navigation: Which Gadget to Use
 
@@ -1754,13 +1754,13 @@ When you open a gadget in edit mode, the three-panel layout activates:
 
 ## Tips for New Users
 
-- **Start with Custom Charts (Pie)** — it is the fastest way to get a meaningful chart in under 2 minutes
-- **Use Projects as your first data source** — it is the simplest option; JQL gives more power but requires knowledge of your Jira fields
-- **Save often** — configuration is only persisted after clicking "Save gadget"
-- **Check the Live Preview** before saving — what you see in the preview is what you get on the dashboard
-- **Connect gadgets to a Dynamic Filter Controller** once you have more than two gadgets — it makes dashboards much more useful for teams
+- **Start with Custom Charts (Pie)** - it is the fastest way to get a meaningful chart in under 2 minutes
+- **Use Projects as your first data source** - it is the simplest option; JQL gives more power but requires knowledge of your Jira fields
+- **Save often** - configuration is only persisted after clicking "Save gadget"
+- **Check the Live Preview** before saving - what you see in the preview is what you get on the dashboard
+- **Connect gadgets to a Dynamic Filter Controller** once you have more than two gadgets - it makes dashboards much more useful for teams
 - **Export a chart** to PNG or PDF when you need to include Jira data in a presentation or email
-- **Use Templates** to skip the setup steps for common chart types — find them in the right panel
+- **Use Templates** to skip the setup steps for common chart types - find them in the right panel
 `,
         },
         {
@@ -1777,13 +1777,13 @@ Step-by-step instructions for the most common tasks in **Dashboard Templates, Ch
 1. In Jira, go to **Dashboards** → open or create a dashboard
 2. Click the **Edit** button (pencil icon) to enter edit mode
 3. Click **Add gadget** and search for **"Custom Charts"**
-4. Click **Add** — the gadget opens in configuration mode
+4. Click **Add** - the gadget opens in configuration mode
 5. In the **left panel**, select **Projects** as the source type
 6. Search for and select a Jira project
 7. In the **right panel**, click the **Chart Type** tab and select **Pie Chart**
 8. Click the **Chart By** tab and select **Status** from the field dropdown
 9. Watch the **Live Preview** update instantly in the center
-10. Click **Save gadget** — your chart is now live on the dashboard
+10. Click **Save gadget** - your chart is now live on the dashboard
 
 **Result:** A pie chart showing your project's issue distribution by status.
 
@@ -1794,7 +1794,7 @@ Step-by-step instructions for the most common tasks in **Dashboard Templates, Ch
 1. Add a **Dynamic Filter Controller** gadget to your dashboard (Add gadget → search "Dynamic Filter Controller")
 2. In the left panel, set the **data source** (same project or JQL as your charts)
 3. In the **Fields** tab, click **+ Add Field** and add filters: Status, Assignee, Sprint
-4. Click **Save gadget** — note the **Reference ID** displayed on the saved gadget (e.g., "ABC123")
+4. Click **Save gadget** - note the **Reference ID** displayed on the saved gadget (e.g., "ABC123")
 5. Edit an existing **Custom Charts** gadget
 6. In the left panel, change **Data Source** to **Dynamic Filter Controller**
 7. Select your controller from the dropdown (it shows by Reference ID)
@@ -1831,12 +1831,12 @@ Step-by-step instructions for the most common tasks in **Dashboard Templates, Ch
 
 ## 4. How to Export a Chart as PNG / PDF / CSV
 
-1. Make sure you are in **view mode** (not edit mode) — click **Done** if you are in edit mode
+1. Make sure you are in **view mode** (not edit mode) - click **Done** if you are in edit mode
 2. On the gadget, click the **options menu (…)** (top-right corner of the gadget)
 3. Select your export format:
-   - **PNG** — image file, ideal for presentations and emails
-   - **PDF** — document format, ideal for printing and sharing
-   - **CSV** — spreadsheet format, ideal for further analysis in Excel or Google Sheets
+   - **PNG** - image file, ideal for presentations and emails
+   - **PDF** - document format, ideal for printing and sharing
+   - **CSV** - spreadsheet format, ideal for further analysis in Excel or Google Sheets
 4. The file downloads to your browser's default download folder
 
 > **Note:** If export options are missing, your Jira admin may have disabled exports globally. Contact your admin and ask them to enable it in Admin Settings → Customization Options → Allow direct export.
@@ -1849,7 +1849,7 @@ Jira does not have a built-in gadget duplicate button, but you can reuse a confi
 
 1. Open the original gadget in **edit mode**
 2. Click the **Import/Export** tab in the right panel
-3. Click **Export Configuration** — a JSON string is copied to your clipboard
+3. Click **Export Configuration** - a JSON string is copied to your clipboard
 4. Click **Done** (or Cancel) to close the edit panel
 5. Add a **new gadget** of the same type to your dashboard
 6. Open the new gadget in edit mode
@@ -1864,12 +1864,12 @@ Jira does not have a built-in gadget duplicate button, but you can reuse a confi
 
 1. Open a gadget in edit mode
 2. In the **left panel**, change **Source Type** to **Custom JQL**
-3. A JQL text input appears — enter your query, for example:
+3. A JQL text input appears - enter your query, for example:
    \`\`\`
    project = MYPROJECT AND issuetype = Bug AND status != Done
    \`\`\`
 4. The **issue count** below the input updates to show how many issues match
-5. If the JQL has an error, a red validation message appears — fix the query before saving
+5. If the JQL has an error, a red validation message appears - fix the query before saving
 6. Complete the rest of the configuration (chart type, chart by, etc.)
 7. Click **Save gadget**
 
@@ -1891,7 +1891,7 @@ Tabs let users switch between preset filter views with a single click:
 
 1. Open the **Dynamic Filter Controller** gadget in edit mode
 2. In the **Live Preview** area, click the **+** button next to the existing tab
-3. A new tab is created — click the tab name to rename it (e.g., "My Issues", "Bugs Only")
+3. A new tab is created - click the tab name to rename it (e.g., "My Issues", "Bugs Only")
 4. Set the default filter values for this tab (e.g., set Assignee = currentUser())
 5. Repeat to add more tabs
 6. Click **Save gadget**
@@ -1907,7 +1907,7 @@ Tabs let users switch between preset filter views with a single click:
 5. Enter the target value (e.g., 50 for "50 story points per sprint")
 6. Enter a label (e.g., "Sprint Target")
 7. Choose line style (solid or dashed)
-8. Check the **Live Preview** — the goal line appears on the chart
+8. Check the **Live Preview** - the goal line appears on the chart
 9. Click **Save gadget**
 
 ---
@@ -1930,7 +1930,7 @@ Tabs let users switch between preset filter views with a single click:
 2. In the right panel, click the **Templates** option (in the chart header area)
 3. Browse the template list or search by name
 4. Click **Use Template** on the one you want
-5. The chart configuration is applied instantly — check the **Live Preview**
+5. The chart configuration is applied instantly - check the **Live Preview**
 6. Adjust the data source or any settings as needed
 7. Click **Save gadget**
 
@@ -1947,6 +1947,165 @@ Tabs let users switch between preset filter views with a single click:
 7. Click the **trash icon** to remove a column
 8. Click **Save gadget**
 `,
+        },
+        {
+          slug: "demo-dashboard-guide",
+          title: "Demo Dashboard Guide: Executive Delivery Command Center",
+          content: `# Demo Dashboard Guide: Executive Delivery Command Center
+
+## Overview
+
+The **Executive Delivery Command Center** is a pre-built demo dashboard that showcases how the three gadgets — Custom Charts, Issue List, and Dynamic Filter Controller — work together to create a high-impact, fully interactive executive-level Jira dashboard.
+
+This guide explains how each component is configured so you can replicate or adapt it for your own team.
+
+## Dashboard Layout
+
+The dashboard contains 7 gadgets arranged in a structured two-row layout:
+
+| Gadget | Type | Position |
+|---|---|---|
+| Global Filter Controller | Dynamic Filter Controller | Full width, top row |
+| Total Issues (KPI Tile) | Custom Charts → Tile | Left column, row 2 |
+| Issue Distribution | Custom Charts → Pie | Center, row 2 |
+| Delivery Funnel | Custom Charts → Funnel | Right column, row 2 |
+| Sprint Progress | Custom Charts → Stacked Bar | Left-center, row 3 |
+| Trend Over Time | Custom Charts → 2D Line | Right-center, row 3 |
+| Active Issues | Issue List | Full width, bottom row |
+
+## 1. Global Filter Controller
+
+The Dynamic Filter Controller drives the entire dashboard. All other gadgets connect to it so that any selection in the filter bar instantly updates every chart and the issue list simultaneously.
+
+### Dropdown Filters (8 configured)
+
+| Filter | Field | What It Controls |
+|---|---|---|
+| Sprint | Sprint | Active, closed, or all sprints |
+| Team / Assignee | Assignee | Filter by individual team member |
+| Priority | Priority | Highest, High, Medium, Low, Lowest |
+| Issue Type | Issue Type | Story, Bug, Task, Sub-task, Epic |
+| Status | Status | To Do, In Progress, Done, Blocked |
+| Component | Component | Filter by software component or module |
+| Reporter | Reporter | Who created the issue |
+| Epic | Epic Link | Group by epic |
+
+### Quick Filter Tabs (6 preset views)
+
+| Tab Label | Pre-configured Filter |
+|---|---|
+| **All Issues** | No filters — full dataset |
+| **My Issues** | Assignee = currentUser() |
+| **Bugs Only** | Issue Type = Bug |
+| **Blockers** | Priority = Highest OR Status = Blocked |
+| **This Sprint** | Sprint = current open sprint |
+| **Done This Month** | Status = Done AND resolved >= startOfMonth() |
+
+## 2. KPI Tile — Total Issues
+
+A single-number display showing the count of issues matching the current filter state.
+
+**Configuration:**
+- Chart Type: **Tile**
+- Data Source: Dynamic Filter Controller reference
+- Calculation: Count of issues
+- Display: Large-font issue count with color-coded background (green/yellow/red based on configurable thresholds)
+
+**How to configure thresholds:**
+1. Open the tile gadget in edit mode
+2. Go to the **Calculations** tab
+3. Set **Warning threshold** and **Critical threshold** values
+4. The tile background color updates automatically when the live count crosses a threshold
+
+## 3. Pie Chart — Issue Distribution
+
+Breaks down the issue mix by type, status, or priority.
+
+**Configuration in this demo:**
+- Chart Type: **Pie**
+- Chart By: **Issue Type**
+- Data Source: Dynamic Filter Controller
+
+**Reading the chart:**
+- Each slice represents one value of the Chart By field
+- Hover a slice to see the exact count and percentage
+- Click a slice to highlight the corresponding rows in connected Issue List gadgets
+
+## 4. Funnel Chart — Delivery Funnel
+
+Shows how issues flow through workflow statuses — from backlog through to Done. Useful for identifying bottleneck stages.
+
+**Configuration:**
+- Chart Type: **Funnel**
+- Chart By: **Status**
+- Status sequence: To Do → In Progress → In Review → Done
+
+**Why this is useful:**
+- Visualize where issues pile up
+- See overall workflow health at a glance
+- Identify stages with disproportionately high issue counts compared to adjacent stages
+
+## 5. Stacked Bar — Sprint Progress
+
+Shows progress by sprint with issues grouped by status (stacked segments), so you can compare sprint completion rates across recent sprints.
+
+**Configuration:**
+- Chart Type: **Stacked Bar**
+- Chart By: **Sprint** (last 6 sprints)
+- Group By (stack): **Status**
+
+**Reading the chart:**
+- Each bar = one sprint
+- Bar segments = issue counts by status (colored by status)
+- Taller "Done" segments = higher sprint completion rate
+- Compare bar heights across sprints to check velocity consistency
+
+## 6. 2D Line Chart — Trend Over Time
+
+Tracks issue creation vs. resolution over time to show whether the team is clearing issues faster than they arrive.
+
+**Configuration:**
+- Chart Type: **2D Line**
+- Chart By: **Created date** (grouped by week)
+- Second dimension: **Resolved date** (grouped by week)
+- Date range: Last 90 days
+
+**Reading the chart:**
+- Line 1 (blue) = issues created per week
+- Line 2 (green) = issues resolved per week
+- Green line above blue line → team is clearing backlog
+- Blue line above green line → backlog is growing — investigate capacity or scope
+
+## 7. Issue List — Active Issues
+
+A tabular view showing individual issue details not visible in charts.
+
+**Columns configured:**
+
+| Column | Field |
+|---|---|
+| Key | Issue key (linked to Jira) |
+| Summary | Issue title |
+| Assignee | Assigned user |
+| Status | Current status (with color label) |
+| Priority | Priority (with icon) |
+| Sprint | Current sprint name |
+| Updated | Last updated date |
+
+**Quick Filters on this gadget:** My Issues | Unassigned | High Priority
+
+## Replicating This Dashboard
+
+1. Create a new Jira dashboard
+2. Add a **Dynamic Filter Controller** gadget first — configure the 8 filters and 6 tabs as documented above
+3. Note the **Reference ID** shown on the saved gadget (e.g., "ABC123")
+4. Add each **Custom Charts** gadget — set Source Type to "Dynamic Filter Controller" and enter the Reference ID
+5. Configure each chart type, Chart By, and Group By as documented in the sections above
+6. Add the **Issue List** gadget — connect it to the same Reference ID
+7. Arrange gadgets using the layout table as a guide
+8. Click **Done** to exit edit mode
+
+> **Tip:** Use the gadget **Import / Export** feature (in the right panel Settings tab) to copy a fully configured gadget as JSON — paste it into another gadget to clone the configuration without reconfiguring from scratch.`,
         },
       ],
     },
@@ -1975,10 +2134,10 @@ Charts now load significantly faster for large datasets. The rendering engine ha
 ### New Chart Types: Funnel & Tile
 Two new chart types are now available in Custom Charts:
 
-- **Funnel Chart** — Visualize stage-based progression (e.g., support ticket stages, release pipeline). Ideal for showing how issues move through a defined workflow sequence.
-- **Tile Chart** — Display single KPI metrics as compact visual tiles. Perfect for scorecards showing total open issues, story points remaining, or bugs this week. Supports configurable tiles per row and multiple rows.
+- **Funnel Chart** - Visualize stage-based progression (e.g., support ticket stages, release pipeline). Ideal for showing how issues move through a defined workflow sequence.
+- **Tile Chart** - Display single KPI metrics as compact visual tiles. Perfect for scorecards showing total open issues, story points remaining, or bugs this week. Supports configurable tiles per row and multiple rows.
 
-### Dynamic Filter Controller — Tabs & Preset Views
+### Dynamic Filter Controller - Tabs & Preset Views
 The Dynamic Filter Controller now supports **multi-tab preset views**. Admins and dashboard owners can define named tabs (e.g., "My Issues", "This Sprint", "High Priority") with pre-set filter values. Users can switch between views with a single click, eliminating the need to manually re-select filters for common scenarios.
 
 ### Import / Export Configuration
@@ -1994,11 +2153,11 @@ All three gadgets now support **JSON-based configuration import and export**. Th
 
 | Area | Fix / Improvement |
 |---|---|
-| Chart By — JQL segments | Fixed issue where overlapping JQL conditions caused double-counting in some configurations |
-| Issue List — column sorting | Clicking column headers now correctly sorts by the selected field across all pages |
+| Chart By - JQL segments | Fixed issue where overlapping JQL conditions caused double-counting in some configurations |
+| Issue List - column sorting | Clicking column headers now correctly sorts by the selected field across all pages |
 | Dynamic Filter Controller | Reference ID display now always visible after first save (previously required a page refresh in some browsers) |
 | Display Options | Auto-refresh setting now persists correctly after gadget re-edit |
-| Export — PDF | Fixed layout clipping for charts with more than 12 segments |
+| Export - PDF | Fixed layout clipping for charts with more than 12 segments |
 | Segment colors | Color picker now remembers the last used custom color per gadget session |
 
 ---
@@ -2048,13 +2207,13 @@ A complete changelog for **Dashboard Templates, Charts, Graphs & Reports for Jir
 
 ---
 
-## v2.3 — May 2026
+## v2.3 - May 2026
 
 ### New Features
-- **Funnel Chart** — Stage-based progression visualization
-- **Tile Chart** — KPI tiles with configurable rows and per-row tile count
-- **Import/Export Configuration** — JSON-based config sharing across gadgets and dashboards
-- **Dynamic Filter Controller Tabs** — Named preset filter views with one-click switching
+- **Funnel Chart** - Stage-based progression visualization
+- **Tile Chart** - KPI tiles with configurable rows and per-row tile count
+- **Import/Export Configuration** - JSON-based config sharing across gadgets and dashboards
+- **Dynamic Filter Controller Tabs** - Named preset filter views with one-click switching
 
 ### Improvements
 - Chart rendering performance significantly improved for large datasets (10,000+ issues)
@@ -2069,7 +2228,7 @@ A complete changelog for **Dashboard Templates, Charts, Graphs & Reports for Jir
 
 ---
 
-## v2.2 — March 2026
+## v2.2 - March 2026
 
 ### Improvements
 - General chart load time improvements across all chart types
@@ -2082,12 +2241,12 @@ A complete changelog for **Dashboard Templates, Charts, Graphs & Reports for Jir
 
 ---
 
-## v2.1 — January 2026
+## v2.1 - January 2026
 
 ### New Features
-- **Smart Labels** — JQL-based and filter-based visual badges in Issue List
-- **AND/OR Quick Filter Logic** — Choose how multiple active quick filters are combined
-- **User Icon Display** — Show avatar images in Issue List assignee columns
+- **Smart Labels** - JQL-based and filter-based visual badges in Issue List
+- **AND/OR Quick Filter Logic** - Choose how multiple active quick filters are combined
+- **User Icon Display** - Show avatar images in Issue List assignee columns
 
 ### Improvements
 - Quick filter buttons now show active state more clearly
@@ -2100,15 +2259,15 @@ A complete changelog for **Dashboard Templates, Charts, Graphs & Reports for Jir
 
 ---
 
-## v2.0 — February 2025
+## v2.0 - February 2025
 
 ### Major New Features
-- **Dynamic Filter Controller Gadget** — Shared interactive filter bar controlling multiple charts and lists
-- **2D Chart Types** — Grouped Bar, Stacked Bar, 2D Line, 2D Table
-- **Group By** — Second dimension for cross-tab analysis
-- **Sum and Average Calculations** — Numeric field aggregations beyond issue count
-- **Reference Lines** — Goal, Trend, and Average lines for Bar and Line charts
-- **Cumulative Total** — Running total option for trend analysis
+- **Dynamic Filter Controller Gadget** - Shared interactive filter bar controlling multiple charts and lists
+- **2D Chart Types** - Grouped Bar, Stacked Bar, 2D Line, 2D Table
+- **Group By** - Second dimension for cross-tab analysis
+- **Sum and Average Calculations** - Numeric field aggregations beyond issue count
+- **Reference Lines** - Goal, Trend, and Average lines for Bar and Line charts
+- **Cumulative Total** - Running total option for trend analysis
 
 ### Improvements
 - Enhanced segment controls: search, pagination for large field lists, improved color picker
@@ -2117,7 +2276,7 @@ A complete changelog for **Dashboard Templates, Charts, Graphs & Reports for Jir
 
 ---
 
-## v1.1 — February 2025
+## v1.1 - February 2025
 
 ### Improvements
 - JQL validation: clearer error messages with field name suggestions
@@ -2130,7 +2289,7 @@ A complete changelog for **Dashboard Templates, Charts, Graphs & Reports for Jir
 
 ---
 
-## v1.0 — January 2025
+## v1.0 - January 2025
 
 ### Initial Release
 
@@ -2171,45 +2330,45 @@ A complete changelog for **Dashboard Templates, Charts, Graphs & Reports for Jir
           title: "Supported Integrations",
           content: `# Supported Integrations
 
-**Dashboard Templates, Charts, Graphs & Reports for Jira** is a native Jira Cloud app built on Atlassian Forge. It integrates deeply with Jira's own data model and dashboard system — no external services, no third-party connectors, and no data leaving your Atlassian environment.
+**Dashboard Templates, Charts, Graphs & Reports for Jira** is a native Jira Cloud app built on Atlassian Forge. It integrates deeply with Jira's own data model and dashboard system - no external services, no third-party connectors, and no data leaving your Atlassian environment.
 
 ---
 
 ## Native Jira Integration
 
-The app reads and displays data directly from your Jira Cloud instance. All data access uses Jira's standard APIs within the Forge sandbox — the same data you would see in Jira's own issue navigator and board views.
+The app reads and displays data directly from your Jira Cloud instance. All data access uses Jira's standard APIs within the Forge sandbox - the same data you would see in Jira's own issue navigator and board views.
 
 ### Jira Data the App Uses
 
 | Jira Data Type | How the App Uses It |
 |---|---|
-| **Issues** | Primary source for all charts, tables, and filters — count, sum, group, and filter issues by any field |
+| **Issues** | Primary source for all charts, tables, and filters - count, sum, group, and filter issues by any field |
 | **Projects** | Select one or more projects as the data source for a gadget |
-| **Saved Filters** | Use any saved Jira filter as a gadget data source — picks up the filter's JQL automatically |
+| **Saved Filters** | Use any saved Jira filter as a gadget data source - picks up the filter's JQL automatically |
 | **Sprints** | Filter and group issues by sprint (Active, Future, Closed); supports \`openSprints()\` and \`closedSprints()\` in JQL |
 | **Custom Fields** | Any custom field on your Jira instance can be used as a Chart By, Group By, column, or filter field |
 | **Standard Fields** | Status, Priority, Assignee, Reporter, Issue Type, Component, Labels, Fix Version, Epic Link, Story Points, Due Date, Created, Updated, Resolved |
 | **User Data** | Assignee and Reporter fields display user names and avatars (Issue List); JQL supports \`currentUser()\` for personal views |
-| **Jira Statuses & Workflows** | Status values reflect your project's actual workflow statuses — no mapping needed |
+| **Jira Statuses & Workflows** | Status values reflect your project's actual workflow statuses - no mapping needed |
 | **Epics** | Group or filter by Epic Link or Epic Name using standard Jira fields or JQL |
 
 ### What the App Cannot Access
 
-- **Jira Service Management (JSM) specific fields** — some JSM-only fields may not be available depending on your Jira configuration
-- **External issue trackers** — the app only reads from Jira Cloud; no GitHub, Asana, or Linear integration
-- **Confluence pages** — the app does not read from Confluence
-- **Jira Server / Data Center** — Atlassian Forge is Cloud-only
+- **Jira Service Management (JSM) specific fields** - some JSM-only fields may not be available depending on your Jira configuration
+- **External issue trackers** - the app only reads from Jira Cloud; no GitHub, Asana, or Linear integration
+- **Confluence pages** - the app does not read from Confluence
+- **Jira Server / Data Center** - Atlassian Forge is Cloud-only
 
 ---
 
 ## Jira Dashboard Gadget Integration
 
-The app is delivered as **Jira dashboard gadgets** — the standard Atlassian mechanism for adding content to Jira dashboards.
+The app is delivered as **Jira dashboard gadgets** - the standard Atlassian mechanism for adding content to Jira dashboards.
 
 ### What This Means
 
 - Gadgets appear in the standard Jira **Add gadget** gallery
-- Gadgets follow Jira dashboard **share permissions** — view or edit access is controlled by whoever owns the dashboard
+- Gadgets follow Jira dashboard **share permissions** - view or edit access is controlled by whoever owns the dashboard
 - Gadgets can be placed on **any Jira dashboard**, including personal, team, and company dashboards
 - Gadgets respect Jira's **column layout system** (1, 2, or 3 column layouts)
 - Multiple gadgets of the same type can be added to the same dashboard
@@ -2233,7 +2392,7 @@ Gadgets adjust their display to the column width assigned in the dashboard layou
 1. Open a gadget in edit mode
 2. In the left panel, set **Source Type** to **Saved Filter**
 3. Search for the filter by name
-4. Select the filter — the gadget uses its JQL automatically
+4. Select the filter - the gadget uses its JQL automatically
 
 ### Benefits of Using Saved Filters
 
@@ -2249,7 +2408,7 @@ Gadgets adjust their display to the column width assigned in the dashboard layou
 | Shared filters (visible to you) | Yes |
 | Favorite filters | Yes |
 | Starred filters | Yes |
-| Filters you don't have access to | No — only filters you can view in Jira |
+| Filters you don't have access to | No - only filters you can view in Jira |
 
 ---
 
@@ -2275,9 +2434,9 @@ The current version does not natively integrate with:
 | Aspect | Detail |
 |---|---|
 | **Platform** | Atlassian Forge (Cloud-native, sandboxed) |
-| **Data storage** | Forge KVS — gadget configurations only; no issue data stored |
+| **Data storage** | Forge KVS - gadget configurations only; no issue data stored |
 | **Data transit** | All data accessed within Atlassian's infrastructure; no external API calls |
-| **Permissions** | Respects Jira's native project and issue permissions — users only see data they can access in Jira |
+| **Permissions** | Respects Jira's native project and issue permissions - users only see data they can access in Jira |
 | **Authentication** | Uses Atlassian's standard OAuth/session for all API calls |
 `,
         },
@@ -2292,7 +2451,7 @@ This guide explains how to export and import gadget configurations, move setups 
 
 ## Overview
 
-The app stores **gadget configurations** (chart settings, column choices, filter fields, display options) in Atlassian Forge KVS — not in Jira issues or project data. When you "migrate" a dashboard setup, you are moving these gadget configurations, not Jira data.
+The app stores **gadget configurations** (chart settings, column choices, filter fields, display options) in Atlassian Forge KVS - not in Jira issues or project data. When you "migrate" a dashboard setup, you are moving these gadget configurations, not Jira data.
 
 > **Important:** Uninstalling the app permanently deletes all stored gadget configurations. Back up important configurations before uninstalling.
 
@@ -2305,7 +2464,7 @@ Every gadget has a built-in JSON export that captures the complete configuration
 1. Open the gadget in **edit mode**
 2. Click the **Import/Export** tab in the right settings panel
 3. Click **Export Configuration**
-4. The configuration JSON is shown in the text area — **copy the entire JSON string**
+4. The configuration JSON is shown in the text area - **copy the entire JSON string**
 5. Save it to a file or document for safekeeping
 
 ### What the Export JSON Contains
@@ -2329,9 +2488,9 @@ Every gadget has a built-in JSON export that captures the complete configuration
 2. Open it in **edit mode**
 3. Click the **Import/Export** tab
 4. Paste the exported JSON into the import text area
-5. Click **Import** — all settings are applied immediately
+5. Click **Import** - all settings are applied immediately
 6. Check the **Live Preview** to confirm everything looks correct
-7. Adjust the **data source** if needed (the import does not transfer data source selections — you must re-select the project or filter)
+7. Adjust the **data source** if needed (the import does not transfer data source selections - you must re-select the project or filter)
 8. Click **Save gadget**
 
 > **Note:** You must re-select the data source after import. Project names and filter IDs are environment-specific and may differ between dashboards or Jira instances.
@@ -2349,7 +2508,7 @@ Use Import/Export to copy a gadget from one dashboard to another within the same
 5. **Re-select the data source** (project, filter, or JQL)
 6. **Save**
 
-### Dynamic Filter Controller — Special Consideration
+### Dynamic Filter Controller - Special Consideration
 
 When moving a Dynamic Filter Controller to a new dashboard:
 - The controller gets a **new Reference ID** on the new dashboard
@@ -2367,7 +2526,7 @@ Gadget configurations can be moved between different Jira Cloud sites using the 
 1. Export the gadget configuration JSON from the **source Jira instance**
 2. On the **target Jira instance**, add a new gadget of the same type
 3. Import the JSON
-4. **Re-select the data source** — project names and filter IDs do not transfer between instances
+4. **Re-select the data source** - project names and filter IDs do not transfer between instances
 5. Verify that **custom fields** used in Chart By, Group By, or columns exist on the target instance (field names must match)
 6. Verify that **JQL segment conditions** reference valid field names and values on the target instance
 7. Save
@@ -2377,8 +2536,8 @@ Gadget configurations can be moved between different Jira Cloud sites using the 
 | Config Element | Transfers? | Notes |
 |---|---|---|
 | Chart type | Yes | |
-| Chart By — Jira standard fields | Usually yes | Field must exist on target instance |
-| Chart By — Custom JQL segments | Usually yes | JQL field names must be valid on target |
+| Chart By - Jira standard fields | Usually yes | Field must exist on target instance |
+| Chart By - Custom JQL segments | Usually yes | JQL field names must be valid on target |
 | Display Options | Yes | |
 | Smart Labels | Usually yes | JQL conditions must be valid on target |
 | Quick Filters | Usually yes | JQL conditions must be valid on target |
@@ -2393,7 +2552,7 @@ Gadget configurations can be moved between different Jira Cloud sites using the 
 Best practices for backing up your gadget configurations:
 
 ### Before Major Changes
-Always export configuration before making significant changes to a working gadget — this gives you a restore point.
+Always export configuration before making significant changes to a working gadget - this gives you a restore point.
 
 ### Regular Backup Process
 
@@ -2459,17 +2618,17 @@ Real-world examples of how teams use **Dashboard Templates, Charts, Graphs & Rep
 **When:** Sprint planning, daily standups, sprint reviews
 
 ### What It Shows
-A complete view of the current sprint — what's done, what's in progress, what's blocked, and how much work remains.
+A complete view of the current sprint - what's done, what's in progress, what's blocked, and how much work remains.
 
 ### Recommended Gadget Setup
 
 | Gadget | Configuration | Purpose |
 |---|---|---|
-| Custom Charts (Pie) | Data: Current Sprint JQL \`sprint in openSprints()\` — Chart By: Status | Sprint status distribution at a glance |
-| Custom Charts (Bar) | Data: Same sprint — Chart By: Assignee — Calculation: Count | Work distribution across team members |
-| Custom Charts (Tile) | Data: Sprint JQL — Chart By: Custom JQL segments (Done vs Total) | Story point completion percentage |
-| Issue List | Data: Sprint JQL — Columns: Key, Summary, Status, Assignee, Story Points | Full sprint backlog with click-through to issues |
-| Dynamic Filter Controller | Data: Sprint JQL — Fields: Assignee, Status, Priority | Let team members filter by their own name |
+| Custom Charts (Pie) | Data: Current Sprint JQL \`sprint in openSprints()\` - Chart By: Status | Sprint status distribution at a glance |
+| Custom Charts (Bar) | Data: Same sprint - Chart By: Assignee - Calculation: Count | Work distribution across team members |
+| Custom Charts (Tile) | Data: Sprint JQL - Chart By: Custom JQL segments (Done vs Total) | Story point completion percentage |
+| Issue List | Data: Sprint JQL - Columns: Key, Summary, Status, Assignee, Story Points | Full sprint backlog with click-through to issues |
+| Dynamic Filter Controller | Data: Sprint JQL - Fields: Assignee, Status, Priority | Let team members filter by their own name |
 
 ### Configuration Tips
 - Use \`sprint in openSprints()\` as your base JQL to always show the current sprint
@@ -2485,17 +2644,17 @@ A complete view of the current sprint — what's done, what's in progress, what'
 **When:** Active development sprints, pre-release periods, production incident tracking
 
 ### What It Shows
-A focused view of all open bugs — by severity, age, assignment status, and component.
+A focused view of all open bugs - by severity, age, assignment status, and component.
 
 ### Recommended Gadget Setup
 
 | Gadget | Configuration | Purpose |
 |---|---|---|
-| Custom Charts (Pie) | Data: \`issuetype = Bug AND resolution is EMPTY\` — Chart By: Priority | Bug severity distribution |
-| Custom Charts (Bar) | Data: Open bugs — Chart By: Assignee | Bug ownership per developer |
-| Custom Charts (Stacked Bar) | Data: Open bugs — Chart By: Component — Group By: Priority | Priority mix per component |
-| Custom Charts (Line) | Data: \`issuetype = Bug AND created >= -90d\` — Chart By: Created (by Week) | Bug creation trend over 90 days |
-| Issue List | Data: Open bugs — Columns: Key, Summary, Priority, Status, Assignee, Created, Component | Full bug list sortable by priority |
+| Custom Charts (Pie) | Data: \`issuetype = Bug AND resolution is EMPTY\` - Chart By: Priority | Bug severity distribution |
+| Custom Charts (Bar) | Data: Open bugs - Chart By: Assignee | Bug ownership per developer |
+| Custom Charts (Stacked Bar) | Data: Open bugs - Chart By: Component - Group By: Priority | Priority mix per component |
+| Custom Charts (Line) | Data: \`issuetype = Bug AND created >= -90d\` - Chart By: Created (by Week) | Bug creation trend over 90 days |
+| Issue List | Data: Open bugs - Columns: Key, Summary, Priority, Status, Assignee, Created, Component | Full bug list sortable by priority |
 
 ### Configuration Tips
 - Set Chart By to **Priority** for the pie chart and map colors: Highest = red, High = orange, Medium = yellow
@@ -2511,23 +2670,23 @@ A focused view of all open bugs — by severity, age, assignment status, and com
 **When:** Weekly team reviews, capacity planning, identifying overloaded team members
 
 ### What It Shows
-Who has what — a clear picture of work distribution across the team to spot imbalances before they become problems.
+Who has what - a clear picture of work distribution across the team to spot imbalances before they become problems.
 
 ### Recommended Gadget Setup
 
 | Gadget | Configuration | Purpose |
 |---|---|---|
-| Custom Charts (Bar) | Data: \`project = X AND resolution is EMPTY\` — Chart By: Assignee | Issue count per team member |
-| Custom Charts (Grouped Bar) | Data: Same — Chart By: Assignee — Group By: Status | Work stage breakdown per person |
-| Custom Charts (Stacked Bar) | Data: Same — Chart By: Assignee — Group By: Priority | Priority distribution per person |
-| Custom Charts (Bar) | Data: Same — Chart By: Assignee — Calculation: Sum of Story Points | Story point load per person |
-| Issue List | Data: Same — Columns: Assignee, Key, Summary, Status, Priority, Due Date | Full team work queue |
+| Custom Charts (Bar) | Data: \`project = X AND resolution is EMPTY\` - Chart By: Assignee | Issue count per team member |
+| Custom Charts (Grouped Bar) | Data: Same - Chart By: Assignee - Group By: Status | Work stage breakdown per person |
+| Custom Charts (Stacked Bar) | Data: Same - Chart By: Assignee - Group By: Priority | Priority distribution per person |
+| Custom Charts (Bar) | Data: Same - Chart By: Assignee - Calculation: Sum of Story Points | Story point load per person |
+| Issue List | Data: Same - Columns: Assignee, Key, Summary, Status, Priority, Due Date | Full team work queue |
 
 ### Configuration Tips
-- Add an **Average Line** to the issue count bar chart — immediately shows who is above/below team average
+- Add an **Average Line** to the issue count bar chart - immediately shows who is above/below team average
 - Use **Sum of Story Points** calculation to compare actual work complexity, not just ticket count
 - Add a Quick Filter "Due This Week" (\`duedate >= startOfWeek() AND duedate <= endOfWeek()\`) to the Issue List
-- Connect all gadgets to a Dynamic Filter Controller with an Assignee field — managers can click a name to see that person's view
+- Connect all gadgets to a Dynamic Filter Controller with an Assignee field - managers can click a name to see that person's view
 
 ---
 
@@ -2537,23 +2696,23 @@ Who has what — a clear picture of work distribution across the team to spot im
 **When:** Pre-release week, release gate reviews, stakeholder sign-off meetings
 
 ### What It Shows
-Everything needed to decide if the release is ready — open blockers, remaining work by component, fix version status, and resolved vs unresolved ratio.
+Everything needed to decide if the release is ready - open blockers, remaining work by component, fix version status, and resolved vs unresolved ratio.
 
 ### Recommended Gadget Setup
 
 | Gadget | Configuration | Purpose |
 |---|---|---|
-| Custom Charts (Pie) | Data: \`fixVersion = "v2.0"\` — Chart By: Custom JQL (Done vs Not Done) | Overall release completion percentage |
-| Custom Charts (Stacked Bar) | Data: Fix version JQL — Chart By: Component — Group By: Status | Completion by component |
-| Custom Charts (Tile) | Data: \`fixVersion = "v2.0" AND priority = Highest AND resolution is EMPTY\` — Chart By: Status | Critical open blockers count |
-| Issue List | Data: \`fixVersion = "v2.0" AND resolution is EMPTY AND priority in (Highest, High)\` — Columns: Key, Summary, Priority, Status, Assignee | High-priority outstanding items |
-| Custom Charts (Line) | Data: Fix version JQL — Chart By: Resolved (by Day) | Resolution velocity trend |
+| Custom Charts (Pie) | Data: \`fixVersion = "v2.0"\` - Chart By: Custom JQL (Done vs Not Done) | Overall release completion percentage |
+| Custom Charts (Stacked Bar) | Data: Fix version JQL - Chart By: Component - Group By: Status | Completion by component |
+| Custom Charts (Tile) | Data: \`fixVersion = "v2.0" AND priority = Highest AND resolution is EMPTY\` - Chart By: Status | Critical open blockers count |
+| Issue List | Data: \`fixVersion = "v2.0" AND resolution is EMPTY AND priority in (Highest, High)\` - Columns: Key, Summary, Priority, Status, Assignee | High-priority outstanding items |
+| Custom Charts (Line) | Data: Fix version JQL - Chart By: Resolved (by Day) | Resolution velocity trend |
 
 ### Configuration Tips
 - Create JQL segments for the pie chart: "Done" (\`resolution is not EMPTY\`) and "Remaining" (\`resolution is EMPTY\`)
 - Set a **Goal Line** on the line chart at your target daily resolution rate
 - Use Smart Labels in the Issue List for "Blocker" (\`labels = blocker\`) and "Needs QA" (\`status = "Ready for QA"\`)
-- Share this dashboard with stakeholders using Jira's dashboard sharing — they can view without edit access
+- Share this dashboard with stakeholders using Jira's dashboard sharing - they can view without edit access
 
 ---
 
@@ -2563,7 +2722,7 @@ Everything needed to decide if the release is ready — open blockers, remaining
 **When:** Weekly/monthly reviews, board meetings, OKR check-ins
 
 ### What It Shows
-High-level metrics without noise — the numbers that matter to leadership, presented cleanly without Jira-specific terminology.
+High-level metrics without noise - the numbers that matter to leadership, presented cleanly without Jira-specific terminology.
 
 ### Recommended Gadget Setup
 
@@ -2572,14 +2731,14 @@ High-level metrics without noise — the numbers that matter to leadership, pres
 | Custom Charts (Tile) | Data: \`project in (X, Y, Z) AND resolution is EMPTY\` | Total open issues across all projects |
 | Custom Charts (Tile) | Data: \`issuetype = Bug AND priority = Highest AND resolution is EMPTY\` | Critical open bugs |
 | Custom Charts (Tile) | Data: \`sprint in openSprints() AND resolution is not EMPTY\` | Issues resolved this sprint |
-| Custom Charts (Bar) | Data: \`created >= -12w\` — Chart By: Created (by Month) | Issue creation trend (last 3 months) |
-| Custom Charts (Stacked Bar) | Data: Multi-project — Chart By: Project — Group By: Status | Cross-project health overview |
+| Custom Charts (Bar) | Data: \`created >= -12w\` - Chart By: Created (by Month) | Issue creation trend (last 3 months) |
+| Custom Charts (Stacked Bar) | Data: Multi-project - Chart By: Project - Group By: Status | Cross-project health overview |
 
 ### Configuration Tips
-- Use **Tile charts** for the top row — one number per tile, large and clear
+- Use **Tile charts** for the top row - one number per tile, large and clear
 - Rename segment labels to business-friendly terms (e.g., rename "In Progress" to "Active Work")
 - Set the title of each gadget clearly (e.g., "Open Critical Bugs" not "Priority = Highest, resolution is EMPTY")
-- Use the **Description** tab to add context below charts (e.g., "As of last refresh — click Refresh to update")
+- Use the **Description** tab to add context below charts (e.g., "As of last refresh - click Refresh to update")
 - Export the dashboard view as PDF for board packs and email updates
 
 ---
@@ -2593,9 +2752,9 @@ High-level metrics without noise — the numbers that matter to leadership, pres
 
 | Gadget | Configuration | Purpose |
 |---|---|---|
-| Custom Charts (Funnel) | Data: All open support tickets — Chart By: Status (ordered by workflow) | Ticket pipeline visualization |
-| Custom Charts (Bar) | Data: \`created >= -7d\` — Chart By: Assignee | New tickets per agent this week |
-| Issue List | Data: Open high-priority tickets — Smart Labels: Overdue, Escalated | Tickets needing immediate attention |
+| Custom Charts (Funnel) | Data: All open support tickets - Chart By: Status (ordered by workflow) | Ticket pipeline visualization |
+| Custom Charts (Bar) | Data: \`created >= -7d\` - Chart By: Assignee | New tickets per agent this week |
+| Issue List | Data: Open high-priority tickets - Smart Labels: Overdue, Escalated | Tickets needing immediate attention |
 
 ### Configuration Tips
 - Order funnel segments to match your support workflow (e.g., New → Triaged → In Progress → Pending Customer → Resolved)
@@ -2622,9 +2781,9 @@ Ready-to-use dashboard templates with recommended gadget combinations, JQL, and 
 
 | Position | Gadget Type | Title |
 |---|---|---|
-| Row 1, Col 1 | Custom Charts — Pie | Sprint Status Overview |
-| Row 1, Col 2 | Custom Charts — Tile | Sprint Completion % |
-| Row 1, Col 3 | Custom Charts — Bar | Work by Assignee |
+| Row 1, Col 1 | Custom Charts - Pie | Sprint Status Overview |
+| Row 1, Col 2 | Custom Charts - Tile | Sprint Completion % |
+| Row 1, Col 3 | Custom Charts - Bar | Work by Assignee |
 | Row 2, Full width | Dynamic Filter Controller | Sprint Filters |
 | Row 3, Full width | Issue List | Sprint Backlog |
 
@@ -2635,19 +2794,19 @@ sprint in openSprints() AND project = YOUR_PROJECT
 
 ### Configuration Details
 
-**Pie Chart — Sprint Status Overview**
+**Pie Chart - Sprint Status Overview**
 - Source: JQL above
 - Chart By: Status
 - Colors: To Do = grey, In Progress = blue, Done = green, Blocked = red
 
-**Tile Chart — Sprint Completion %**
+**Tile Chart - Sprint Completion %**
 - Source: JQL above
 - Chart By: Custom JQL segments
   - Segment 1 "Done": \`status = Done\`
   - Segment 2 "Remaining": \`status != Done\`
 - Display: % format
 
-**Bar Chart — Work by Assignee**
+**Bar Chart - Work by Assignee**
 - Source: JQL above
 - Chart By: Assignee
 - Calculation: Count
@@ -2658,7 +2817,7 @@ sprint in openSprints() AND project = YOUR_PROJECT
 - Filter Fields: Assignee, Status, Priority, Sprint
 - Add Tabs: "All Work" (no filter), "My Issues" (Assignee = currentUser()), "In Progress" (Status = In Progress)
 
-**Issue List — Sprint Backlog**
+**Issue List - Sprint Backlog**
 - Source: JQL above
 - Columns: Key, Summary, Status, Assignee, Story Points, Priority
 - Sort: Status ascending
@@ -2681,27 +2840,27 @@ issuetype = Bug AND resolution is EMPTY AND project = YOUR_PROJECT
 
 | Position | Gadget Type | Title |
 |---|---|---|
-| Row 1, Col 1 | Custom Charts — Pie | Bugs by Priority |
-| Row 1, Col 2 | Custom Charts — Bar | Bugs by Assignee |
-| Row 1, Col 3 | Custom Charts — Tile | Total Open Bugs |
+| Row 1, Col 1 | Custom Charts - Pie | Bugs by Priority |
+| Row 1, Col 2 | Custom Charts - Bar | Bugs by Assignee |
+| Row 1, Col 3 | Custom Charts - Tile | Total Open Bugs |
 | Row 2, Full width | Issue List | Open Bug List |
 
 ### Configuration Details
 
-**Pie — Bugs by Priority**
+**Pie - Bugs by Priority**
 - Chart By: Priority
 - Colors: Highest = dark red, High = orange, Medium = yellow, Low = light blue, Lowest = grey
 
-**Bar — Bugs by Assignee**
+**Bar - Bugs by Assignee**
 - Chart By: Assignee
 - Add Average Line
 
-**Tile — Total Open Bugs**
+**Tile - Total Open Bugs**
 - Source: JQL above
 - Chart By: Status (show all statuses)
 - Display: Count only, show total
 
-**Issue List — Open Bug List**
+**Issue List - Open Bug List**
 - Columns: Key, Summary, Priority, Status, Assignee, Created, Component
 - Sort: Priority descending
 - Smart Labels: "Critical" (\`priority = Highest\`), "Overdue" (\`duedate < now()\`)
@@ -2725,28 +2884,28 @@ project = YOUR_PROJECT AND resolution is EMPTY AND assignee is not EMPTY
 | Position | Gadget Type | Title |
 |---|---|---|
 | Row 1, Full width | Dynamic Filter Controller | Team Filters |
-| Row 2, Col 1 | Custom Charts — Bar | Issues per Person |
-| Row 2, Col 2 | Custom Charts — Bar | Story Points per Person |
-| Row 2, Col 3 | Custom Charts — Pie | Status Overview |
+| Row 2, Col 1 | Custom Charts - Bar | Issues per Person |
+| Row 2, Col 2 | Custom Charts - Bar | Story Points per Person |
+| Row 2, Col 3 | Custom Charts - Pie | Status Overview |
 | Row 3, Full width | Issue List | Team Work Queue |
 
 ### Configuration Details
 
-**Bar — Issues per Person**
+**Bar - Issues per Person**
 - Chart By: Assignee
 - Calculation: Count
 - Add Average Line
 - Add Goal Line at your team capacity limit (e.g., 10 issues per person)
 
-**Bar — Story Points per Person**
+**Bar - Story Points per Person**
 - Chart By: Assignee
 - Calculation: Sum of Story Points
 - Add Average Line
 
-**Pie — Status Overview**
+**Pie - Status Overview**
 - Chart By: Status
 
-**Issue List — Team Work Queue**
+**Issue List - Team Work Queue**
 - Columns: Assignee, Key, Summary, Status, Priority, Story Points, Due Date
 - Sort: Assignee, then Priority
 - Quick Filters: "Due This Week" (\`duedate <= endOfWeek()\`), "High Priority" (\`priority in (High, Highest)\`)
@@ -2768,31 +2927,31 @@ fixVersion = "v2.0" AND project = YOUR_PROJECT
 
 | Position | Gadget Type | Title |
 |---|---|---|
-| Row 1, Col 1 | Custom Charts — Pie | Release Completion |
-| Row 1, Col 2 | Custom Charts — Tile | Critical Blockers |
-| Row 1, Col 3 | Custom Charts — Line | Resolution Velocity |
+| Row 1, Col 1 | Custom Charts - Pie | Release Completion |
+| Row 1, Col 2 | Custom Charts - Tile | Critical Blockers |
+| Row 1, Col 3 | Custom Charts - Line | Resolution Velocity |
 | Row 2, Full width | Issue List | Outstanding Items |
 
 ### Configuration Details
 
-**Pie — Release Completion**
+**Pie - Release Completion**
 - Chart By: Custom JQL segments
   - "Done": \`fixVersion = "v2.0" AND resolution is not EMPTY\`
   - "Remaining": \`fixVersion = "v2.0" AND resolution is EMPTY\`
 - Colors: Done = green, Remaining = orange
 
-**Tile — Critical Blockers**
+**Tile - Critical Blockers**
 - Source: \`fixVersion = "v2.0" AND priority = Highest AND resolution is EMPTY\`
 - Display: Count only (large number format)
 - If count > 0, this number needs attention
 
-**Line — Resolution Velocity**
+**Line - Resolution Velocity**
 - Source: \`fixVersion = "v2.0" AND resolved >= -30d\`
 - Chart By: Resolved (by Day)
 - Date Grouping: Days
 - Add Trend Line to see if velocity is increasing
 
-**Issue List — Outstanding Items**
+**Issue List - Outstanding Items**
 - Source: \`fixVersion = "v2.0" AND resolution is EMPTY\`
 - Columns: Key, Summary, Priority, Status, Assignee, Component
 - Sort: Priority descending
@@ -2810,9 +2969,9 @@ fixVersion = "v2.0" AND project = YOUR_PROJECT
 
 | Position | Gadget Type | Title |
 |---|---|---|
-| Row 1, 4 tiles | Custom Charts — Tile | Open Issues, Critical Bugs, Resolved This Month, Active Team Members |
-| Row 2, Col 1 | Custom Charts — Bar | Monthly Issue Trend |
-| Row 2, Col 2 | Custom Charts — Stacked Bar | Project Health |
+| Row 1, 4 tiles | Custom Charts - Tile | Open Issues, Critical Bugs, Resolved This Month, Active Team Members |
+| Row 2, Col 1 | Custom Charts - Bar | Monthly Issue Trend |
+| Row 2, Col 2 | Custom Charts - Stacked Bar | Project Health |
 
 ### JQL for Each Tile
 
@@ -2840,127 +2999,119 @@ fixVersion = "v2.0" AND project = YOUR_PROJECT
       title: "Help & Support",
       articles: [
         {
-          slug: "overview-dashboard",
-          title: "Overview & Dashboard",
-          content: `# Overview & Dashboard
+          slug: "faq",
+          title: "FAQ",
+          content: `# Frequently Asked Questions
 
-Welcome to the **Dashboard Templates, Charts, Graphs & Reports for Jira** user guide. This page explains the app layout, gadget types, and the core UI patterns you will use every day.
+## General
 
-## App Layout at a Glance
+### What is Dashboard Templates, Charts, Graphs & Reports for Jira?
+It is a Jira Cloud app that adds three powerful gadgets to your Jira dashboards: **Custom Charts** (10 chart types), **Issue List** (configurable issue table), and **Dynamic Filter Controller** (shared interactive filter bar). All gadgets update in real time as Jira data changes.
 
-The app adds three Jira dashboard gadgets. Each gadget opens a configuration panel split into three main zones:
+### Which Jira products does the app support?
+The app works with all Jira Cloud products — Jira Software, Jira Service Management, and Jira Work Management. It requires Jira Cloud; Server and Data Center are not supported.
 
-| Zone | Location | What It Contains |
-|---|---|---|
-| **Data Source Panel** | Left | Source type selector (Projects, Saved Filter, JQL, Controller), source search, issue count preview |
-| **Live Preview** | Center | Real-time chart or table preview — updates instantly as you change settings |
-| **Settings Panel** | Right | Tabbed configuration: Chart Type, Chart By, Group By, Calculations, Display Options, Description, Import/Export |
+### Is there a free trial?
+Yes, a 30-day free trial is available on the Atlassian Marketplace. No credit card is required to start the trial.
 
-## Three Integrated Gadgets
+### How do I install the app?
+Go to **Jira Settings → Apps → Find new apps**, search for "Dashboard Templates Clovity", click **Install**, and accept the permissions. Gadgets are immediately available in the dashboard gadget gallery.
 
-### Custom Charts
-The primary visualization gadget. Supports **10 chart types** across 5 categories:
+---
 
-| Category | Chart Types |
-|---|---|
-| Pie | Pie Chart |
-| Bar | Bar, Grouped Bar, Stacked Bar |
-| Line | Line, 2D Line |
-| Table | Table, 2D Table |
-| Other | Funnel, Tile |
+## Charts & Configuration
 
-**Best for:** Status breakdowns, trend analysis, workload distribution, KPI scorecards.
+### How many chart types are available?
+The Custom Charts gadget supports **10 chart types**: Pie, Bar, Grouped Bar, Stacked Bar, Line, 2D Line, Table, 2D Table, Funnel, and Tile.
 
-### Issue List
-A fully configurable issue table — choose columns, add visual label indicators, and set quick-filter buttons for one-click filtering.
+### How do I change the chart type?
+Open the gadget in edit mode, click the **Chart Type** tab in the right panel, and select your desired type. The preview updates instantly.
 
-**Best for:** Live sprint boards, bug trackers, team work queues, and any report where exact issue details matter.
+### Can I use custom fields in charts?
+Yes. Any custom field in your Jira instance can be used for Chart By, Group By, or Calculations — including custom dropdowns, number fields, and user pickers.
 
-### Dynamic Filter Controller
-A shared interactive filter bar that controls multiple Custom Charts and Issue Lists simultaneously. Set it up once, connect your gadgets, and let users filter the whole dashboard with a single interaction.
+### Why does my chart show "None" for some segments?
+"None" appears when issues do not have a value for the selected Chart By field. You can rename the "None" label by clicking it, or hide it using the eye icon next to that segment.
 
-**Best for:** Team dashboards where different people need to slice the same data by sprint, assignee, priority, or date.
+### Why is my chart showing no data?
+Check three things: (1) your data source (project, filter, or JQL) returns issues in Jira's Issue Navigator; (2) you have Browse Issues permission on the project; (3) the Chart By field has values for those issues.
 
-## Dashboard Edit Mode
+### How do I export a chart?
+In **view mode** (not edit mode), click the **options menu (…)** on the gadget and choose **PNG**, **PDF**, or **CSV**. If the export option is missing, your Jira admin may have disabled it globally.
 
-To add or configure gadgets you must be in **edit mode**:
+### Can I add a goal or reference line to a chart?
+Yes. Open the gadget in edit mode, go to the **Calculations** tab, and click **+ Add Reference Line**. Set the type (Goal Line or Average Line), value, and label.
 
-1. Open a Jira dashboard
-2. Click the **Edit** button (pencil icon, top right)
-3. Click **Add gadget** to open the gadget gallery
-4. Search for "Custom Charts", "Issue List", or "Dynamic Filter Controller"
-5. Click **Add** — the gadget appears in configuration mode immediately
+---
 
-To exit edit mode, click **Done** or **Save layout**.
+## Data Sources & JQL
 
-## Configuration Panel Structure
+### What data sources can I use?
+Each gadget supports four source types: **Projects** (one or more Jira projects), **Saved Filter** (a pre-saved Jira filter), **Custom JQL** (a manual JQL query), and **Dynamic Filter Controller** (connected to another gadget for interactive filtering).
 
-When you open a gadget in edit mode, the three-panel layout activates:
+### What is a good starting JQL for a chart?
+Start with \`project = MYPROJECT\` to see all issues in a project. Then narrow it with conditions like \`AND issuetype = Bug\` or \`AND sprint in openSprints()\`. Test your JQL in Jira's Issue Navigator first to confirm it returns expected results.
 
-### Left Panel — Data Source
-- **Source Type:** Projects | Saved Filter | Custom JQL | Dynamic Filter Controller
-- **Source Search:** Find and select the project or filter you want
-- **Issue Count:** Shows how many issues match the current source — updates live
+### How do I filter by date in a chart?
+Set Chart By to a date field (Created, Resolved, or Updated), then set **Date Grouping** (Days, Weeks, Months, Years) and **Date Range** in the Chart By tab. Switch Chart Type to Line for a trend view.
 
-### Center Panel — Live Preview
-- Updates in real time as you change any setting
-- Reflects the exact chart or table that will display on the dashboard
-- For Dynamic Filter Controller: shows the filter bar and connected chart references
+---
 
-### Right Panel — Settings Tabs
+## Dynamic Filter Controller
 
-| Tab | What It Controls |
-|---|---|
-| **Chart Type** | Visual format selection |
-| **Chart By** | Primary grouping field or segments |
-| **Group By** | Second dimension (2D charts only) |
-| **Calculations** | Count / Sum / Average + reference lines |
-| **Display Options** | Labels, tooltips, axes, layout, export |
-| **Description** | Rich text annotation for the gadget |
-| **Import / Export** | Copy or paste gadget configuration JSON |
+### What is the Dynamic Filter Controller?
+It is a special gadget that acts as a shared filter bar for your dashboard. Configure it once with dropdown filters, then connect your Custom Charts and Issue List gadgets to it so a single filter selection updates all connected gadgets simultaneously.
 
-## Common UI Patterns
+### What is the Reference ID?
+The Reference ID (e.g., "ABC123") is a unique code shown on a saved Dynamic Filter Controller gadget. Enter it in other gadgets when setting their source type to "Dynamic Filter Controller" to link them together.
 
-### Save Gadget
-- Located at the bottom of the configuration panel
-- Saves all settings and closes the configuration view
-- The gadget becomes live on the dashboard immediately
+### Why aren't my connected charts updating when I use the filter controller?
+Verify that each chart's **Data Source** is set to "Dynamic Filter Controller" and the correct Reference ID is entered. If the ID is correct, try editing the controller, saving without changes, and refreshing the dashboard with Ctrl+F5.
 
-### Export Button
-- Available in **view mode** (not edit mode)
-- Click the **options menu (…)** on the gadget
-- Choose **PNG**, **PDF**, or **CSV**
-- If the button is missing, export may be disabled by your Jira admin — contact them to enable it
+### Can I add quick-filter tabs to the controller?
+Yes. In the controller's edit mode, click the **+** button next to the existing tab in the Live Preview area, give the new tab a name, and set its default filter values.
 
-### Refresh
-- Click the options menu (…) → **Refresh** to reload gadget data
-- Data is not streamed in real time — use manual refresh or enable auto-refresh in Display Options
+---
 
-### Live Preview
-- Every change in the settings panel instantly updates the center preview
-- No need to save to see how the chart will look — just configure and check the preview
+## Issue List Gadget
 
-## Module Navigation: Which Gadget to Use
+### How do I add or remove columns from the Issue List?
+Open the Issue List gadget in edit mode. In the **Columns** section, click **+ Add another field** to add a column, drag the handle icon to reorder, and click the trash icon to remove a column.
 
-| Goal | Recommended Gadget |
-|---|---|
-| Visual chart from Jira data | Custom Charts |
-| Table of individual issues | Issue List |
-| Interactive filter bar for whole dashboard | Dynamic Filter Controller |
-| KPI tile / single number | Custom Charts → Tile type |
-| Cross-tab / matrix report | Custom Charts → 2D Table |
-| Exportable issue list for stakeholders | Issue List + CSV export |
+### Can I add quick filters to the Issue List?
+Yes. In edit mode, scroll to the **Quick Filters** section and click **+ Add filter**. Set the label and JQL condition — the filter button appears on the gadget in view mode.
 
-## Tips for New Users
+---
 
-- **Start with Custom Charts (Pie)** — it is the fastest way to get a meaningful chart in under 2 minutes
-- **Use Projects as your first data source** — it is the simplest option; JQL gives more power but requires knowledge of your Jira fields
-- **Save often** — configuration is only persisted after clicking "Save gadget"
-- **Check the Live Preview** before saving — what you see in the preview is what you get on the dashboard
-- **Connect gadgets to a Dynamic Filter Controller** once you have more than two gadgets — it makes dashboards much more useful for teams
-- **Export a chart** to PNG or PDF when you need to include Jira data in a presentation or email
-- **Use Templates** to skip the setup steps for common chart types — find them in the right panel
-`,
+## Security & Data
+
+### Does the app send my Jira data to external servers?
+No. The app runs on Jira's native Forge platform and queries Jira's own APIs. Gadget configurations are stored in Jira's built-in Forge KVS storage. Issue data is not copied or exported to any external system.
+
+### Why can't I see certain issues in my chart?
+You can only see issues you have permission to view in Jira. If some issues are missing, check your Jira project permissions and verify you have "Browse Issues" access on the relevant project.
+
+### How many issues can the app handle?
+There is no hard limit, but queries returning 50,000+ issues may load slowly. For best performance, keep queries under 10,000 issues by narrowing your JQL with date filters, project scoping, or status conditions.
+
+### Who can install the app?
+Only a **Jira site administrator** can install apps from the Atlassian Marketplace. Once installed, all users with dashboard edit access can add and configure gadgets.
+
+---
+
+## Billing & Licensing
+
+### How is the app licensed?
+Licensing follows Atlassian's standard Marketplace model — priced per Jira user tier. The cost scales with the number of users in your Jira instance.
+
+### What happens when the trial ends?
+If you do not purchase a license, gadgets become read-only and configuration is locked. Existing data is not deleted — purchasing a license restores full functionality immediately.
+
+---
+
+## Still Have Questions?
+
+Check the **Troubleshooting Guide** or contact our support team at [support@clovity.com](mailto:support@clovity.com). Response time is within 1–2 business days.`,
         },
         {
           slug: "troubleshooting-guide",
@@ -3055,170 +3206,6 @@ If none of these solutions work:
 
 1. Gather information: Jira site URL, gadget type, JQL, screenshots
 2. Contact support: support@clovity.com
-`,
-        },
-        {
-          slug: "release-notes-changelog",
-          title: "Release Notes & Changelog",
-          content: `Track what's new, improved, and fixed in each version of Custom Charts & Dashboards.
-
-## Version 2.0 (Current)
-
-**Release Date:** February 2025
-
-### New Features
-
-**Dynamic Filter Controller Gadget**
-
-* New gadget type for interactive dashboard filtering
-* Shared filter bar controls multiple connected charts and lists
-* Configurable filter fields (Jira fields, text search, JQL, saved filters)
-* Tabs for preset filter combinations
-* Real-time updates to all connected gadgets
-
-**2D Chart Types**
-
-* Grouped Bar Chart - Compare multiple series side-by-side
-* Stacked Bar Chart - Show composition within categories
-* 2D Line Chart - Compare multiple trend lines
-* 2D Table Chart - Matrix view with two grouping dimensions
-
-**Additional Features**
-
-* Funnel Chart and Tile Chart
-* Group By feature for 2D charts
-* Sum and Average calculations
-* Goal, Trend, and Average reference lines
-* Cumulative total option
-* Smart Labels for Issue List
-* Import/Export configuration
-
-### Improvements
-
-* Enhanced segment controls (search, pagination, color picker)
-* Better JQL validation with clearer error messages
-* More number formatting options
-* AND/OR logic for quick filters
-* User icon display option in Issue List
-
-## Version 1.0
-
-**Release Date:** January 2025
-
-### Initial Release Features
-
-* Custom Charts Gadget (Pie, Bar, Line)
-* Issue List Gadget with custom columns
-* Projects, Saved Filters, Custom JQL data sources
-* Chart By with Jira fields, JQL segments, filter segments
-* Segment controls (rename, reorder, show/hide, colors)
-* Rich text descriptions
-* CSV export
-
-## Roadmap
-
-### Planned Features
-
-| **Feature** | **Status** |
-| --- | --- |
-| Template Management | Planned |
-| Admin Settings | Planned |
-| Date-based Chart By improvements | In Development |
-| Additional chart types | Under Consideration |
-
-## Upgrade Notes
-
-### Upgrading from V1 to V2
-
-**Compatibility:** V1 configurations are fully compatible with V2. Existing gadgets will continue to work. No action required for existing dashboards.
-
-## Getting Updates
-
-The app updates automatically through Atlassian Marketplace. No manual action is required.
-`,
-        },
-        {
-          slug: "frequently-asked-questions",
-          title: "Frequently Asked Questions",
-          content: `Answers to the most common questions about Custom Charts & Dashboards for Jira.
-
-## General Questions
-
-### What is Custom Charts & Dashboards?
-
-Custom Charts & Dashboards is a Jira app that adds three dashboard gadgets: Custom Charts (visual reports), Issue List (configurable issue tables), and Dynamic Filter Controller (interactive filter bar).
-
-### Which Jira versions are supported?
-
-The app is built on Atlassian Forge and supports Jira Cloud only. It is not compatible with Jira Server or Data Center.
-
-### How do I install the app?
-
-Contact your Jira administrator. They can install the app from the Atlassian Marketplace.
-
-## Data & Permissions
-
-### What data can the app access?
-
-The app can access Jira issues, projects, filters, and fields that you have permission to view. It cannot see data you don't have access to.
-
-### Why can't I see certain issues in my chart?
-
-You can only see issues you have permission to view in Jira. Check your Jira permissions and verify the project allows you to view issues.
-
-### Does the app store my data?
-
-The app stores your gadget configurations using Jira's built-in Forge KVS storage. It does not copy or export your Jira data to external systems.
-
-## Charts & Configuration
-
-### How do I change the chart type?
-
-Edit the Custom Charts gadget, click on the Chart Type selector, choose your desired chart type. The chart converts automatically.
-
-### Can I use custom fields in charts?
-
-Yes! You can use any custom field in your Jira instance for Chart By, Group By, or Calculations.
-
-### Why does my chart show "None" for some segments?
-
-"None" appears when issues don't have a value for the selected field. You can rename "None" to something clearer or hide it.
-
-### How do I export a chart?
-
-View the gadget (not edit mode), click the options menu (…), select PNG, PDF, or CSV.
-
-## Dynamic Filter Controller
-
-### What is the Reference ID?
-
-The Reference ID is a unique code (like "ABC123") that identifies your Dynamic Filter Controller. You use it to connect other gadgets to the controller.
-
-### How do I connect a chart to the controller?
-
-Edit your chart, set Data Source to "Dynamic Filter Controller", select your controller from the dropdown, save.
-
-### Why aren't my connected charts updating?
-
-Verify the chart's data source is set to "Dynamic Filter Controller", check you selected the correct controller, try refreshing the dashboard.
-
-## Performance
-
-### Why is my gadget loading slowly?
-
-Large datasets take longer to process. Narrow your JQL (add date limits, project filters), reduce segments, use saved filters.
-
-### How many issues can the app handle?
-
-There's no hard limit, but queries returning 50,000+ issues may be slow. Keep queries under 10,000 issues when possible.
-
-## Still Have Questions?
-
-If your question isn't answered here:
-
-1. Check the Troubleshooting guide
-2. Search this documentation
-3. Contact support@clovity.com
 `,
         },
         {

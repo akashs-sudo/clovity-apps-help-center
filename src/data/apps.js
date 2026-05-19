@@ -91,52 +91,6 @@ export const apps = [
       },
     ],
   },
-  {
-    slug: "pulse-ai-jira",
-    name: "Pulse AI – The AI that finds problems. Agents that fix them.",
-    shortName: "Pulse AI",
-    platform: "Jira Cloud",
-    badge: null,
-    rating: null,
-    installs: 10,
-    icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/Asset_26vhjv_c71944fea3.png",
-    description:
-      "AI copilot for Jira with chat, dashboards, org health, anomaly detection, and smart alerts.",
-    marketplaceUrl:
-      "https://marketplace.atlassian.com/apps/3640865514/pulse-ai-the-ai-that-finds-problems-agents-that-fix-them",
-    sections: [
-      {
-        id: "overview",
-        title: "Overview",
-        content:
-          "Pulse AI brings a powerful AI copilot directly into your Jira workflow. Chat with your Jira data, get automatic anomaly detection, view org health dashboards, and receive smart alerts — transforming Jira into an intelligent command center.",
-      },
-      {
-        id: "ai-chat",
-        title: "AI Chat",
-        content:
-          'Ask natural language questions about your Jira data. For example: "What issues are overdue in Project X?" or "Who has the most open blockers?". Pulse AI answers instantly using your real Jira data.',
-      },
-      {
-        id: "anomaly-detection",
-        title: "Anomaly Detection",
-        content:
-          "Pulse AI automatically monitors your projects for anomalies: sudden spikes in bug creation, sprint velocity drops, team workload imbalances, and SLA breaches. Get notified before problems escalate.",
-      },
-      {
-        id: "org-health",
-        title: "Org Health Dashboard",
-        content:
-          "Get a bird's-eye view of your entire organization's Jira health. See at-risk projects, overloaded teams, and stale issues across all your portfolios from one unified dashboard.",
-      },
-      {
-        id: "faq",
-        title: "FAQ",
-        content:
-          "Q: Is my Jira data sent to external servers? A: Data is processed with enterprise-grade security. Q: Which AI model powers it? A: The app uses state-of-the-art LLMs optimized for project data.",
-      },
-    ],
-  },
   // {
   //   slug: "backlog-auditor-jira",
   //   name: "Backlog Auditor & Export",
@@ -147,7 +101,7 @@ export const apps = [
   //   installs: 9,
   //   icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/Backlog_Auditor_and_Export_70f358fa4c.png",
   //   description:
-  //     "Keep your Jira backlog clean, consistent, and exportable — effortlessly.",
+  //     "Keep your Jira backlog clean, consistent, and exportable - effortlessly.",
   //   marketplaceUrl:
   //     "https://marketplace.atlassian.com/apps/2421185342/backlog-auditor-export",
   //   sections: [
@@ -194,7 +148,7 @@ export const apps = [
   //       id: "overview",
   //       title: "Overview",
   //       content:
-  //         "JQL AI converts plain English into Jira Query Language instantly. No more memorizing JQL syntax — just describe what you want to find, and the AI writes the perfect query for you.",
+  //         "JQL AI converts plain English into Jira Query Language instantly. No more memorizing JQL syntax - just describe what you want to find, and the AI writes the perfect query for you.",
   //     },
   //     {
   //       id: "usage",
@@ -272,7 +226,7 @@ export const apps = [
     installs: 88,
     icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/Custom_Reports_for_Confluence_3e8b2955ff.png",
     description:
-      "Create live Confluence reports from CQL — with exports to Excel, PDF and more.",
+      "Create live Confluence reports from CQL - with exports to Excel, PDF and more.",
     marketplaceUrl:
       "https://marketplace.atlassian.com/apps/4125307933/reports-charts-templates-cql-export-for-confluence",
     sections: [

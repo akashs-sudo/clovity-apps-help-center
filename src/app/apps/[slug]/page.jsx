@@ -95,7 +95,7 @@ export async function generateMetadata({ params }) {
   const app = apps.find((a) => a.slug === slug);
   if (!app) return {};
   return {
-    title: `${app.shortName} Documentation — Clovity Help Center`,
+    title: `${app.shortName} Documentation - Clovity Help Center`,
     description: app.description,
   };
 }
@@ -137,7 +137,7 @@ export default async function AppPage({ params }) {
 
       {docs ? (
         <div>
-          {/* Hero section — full width, no sidebar */}
+          {/* Hero section - full width, no sidebar */}
           <div
             className="border-b border-gray-100"
             style={{

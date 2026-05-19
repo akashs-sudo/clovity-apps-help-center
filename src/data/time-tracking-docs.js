@@ -14,8 +14,7 @@ export const timeTrackingDocs = {
             src: "https://www.youtube.com/embed/H0dyqJKeAG8",
             title: "Time Tracking, Resource Planning & Project Management - Product Introduction",
           },
-          content: `# What is Time Tracking, Resource Planning & Project Management?
-
+          content: `
 Time Tracking, Resource Planning & Project Management is a Jira Cloud app that gives your team full visibility into workload, delivery health, and priorities - all inside Jira.
 
 ## Core Value Proposition
@@ -97,8 +96,7 @@ Jira Cloud only. Built on Atlassian Forge - no external servers, no data exports
         {
           slug: "installation-setup",
           title: "Installation & Setup",
-          content: `# Installation & Setup
-
+          content: `
 ## Prerequisites
 
 Before installing, confirm:
@@ -156,8 +154,7 @@ To uninstall: Jira Settings → Apps → Manage apps → find the app → click 
         {
           slug: "quick-start",
           title: "Quick Start Guide",
-          content: `# Quick Start Guide
-
+          content: `
 Get up and running in under 5 minutes.
 
 ## Step 1 - Open the App
@@ -212,8 +209,7 @@ Click **Settings → My Permissions** to confirm your role:
         {
           slug: "system-requirements",
           title: "System Requirements",
-          content: `# System Requirements
-
+          content: `
 ## Platform Requirements
 
 | Requirement | Details |
@@ -271,8 +267,7 @@ No special network configuration is needed beyond standard access to \`*.atlassi
         {
           slug: "permissions-access",
           title: "Permissions & Access",
-          content: `# Permissions & Access
-
+          content: `
 ## Role Model Overview
 
 The app uses a two-role model that integrates directly with Jira's existing user management:
@@ -343,8 +338,7 @@ There is no self-service role request form - access is granted by a Global Admin
         {
           slug: "overview-dashboard",
           title: "Overview & Dashboard",
-          content: `# Overview & Dashboard
-
+          content: `
 ## App Layout
 
 The app uses a consistent layout across all modules:
@@ -405,8 +399,7 @@ Available in all Time Tracking views. Click **Log Time** to open a quick-log for
         {
           slug: "key-features",
           title: "Key Features",
-          content: `# Key Features
-
+          content: `
 ## Time Tracking & Reporting
 
 | Feature | Description |
@@ -468,8 +461,7 @@ Available in all Time Tracking views. Click **Log Time** to open a quick-log for
         {
           slug: "how-to-tutorials",
           title: "How-To Tutorials",
-          content: `# How-To Tutorials
-
+          content: `
 ## Time Tracking
 
 ### How to Log Time
@@ -636,8 +628,7 @@ Table → Gantt Chart → Graph View → Treemap → Pie Chart → Board View
         {
           slug: "working-with-modules",
           title: "Working with Core Modules",
-          content: `# Working with Core Modules
-
+          content: `
 This guide is a complete reference for all five major functional areas of the app.
 
 ---
@@ -987,8 +978,7 @@ Programs group multiple Teams into higher-level organizational structures.
         {
           slug: "tips-best-practices",
           title: "Tips & Best Practices",
-          content: `# Tips & Best Practices
-
+          content: `
 ## Time Tracking
 
 - **Log daily, not weekly.** End-of-week logging is less accurate and harder to reconcile with actual Jira issue work.
@@ -1038,8 +1028,7 @@ Programs group multiple Teams into higher-level organizational structures.
         {
           slug: "my-calendar",
           title: "My Calendar",
-          content: `# My Calendar
-
+          content: `
 My Calendar is a personal daily view of your logged time in Time Tracking & Reporting.
 
 ## Overview
@@ -1088,8 +1077,7 @@ My Calendar shows a monthly grid where each day cell displays the total hours yo
         {
           slug: "my-timesheet",
           title: "My Timesheet",
-          content: `# My Timesheet
-
+          content: `
 My Timesheet is your personal tabular view of logged time, with flexible filters and grouping to analyse your own work hours.
 
 ## Layout
@@ -1141,8 +1129,7 @@ Click **Export → CSV** to download a spreadsheet of your filtered, grouped tim
         {
           slug: "timesheet-and-reporting",
           title: "Timesheet and Reporting",
-          content: `# Timesheet and Reporting
-
+          content: `
 The Timesheet Report Builder shows time logged by the **entire team** with full filtering, grouping, charting, and export capabilities.
 
 ## Opening the Report Builder
@@ -1203,8 +1190,7 @@ Time Tracking & Reporting → **Timesheet and Reporting** → Create New Report 
         {
           slug: "filters-and-grouping",
           title: "Filters and Grouping",
-          content: `# Filters and Grouping
-
+          content: `
 Filters and Grouping controls are available across all Time Tracking & Reporting views - My Timesheet, Timesheet Report Builder, and Capacity Report.
 
 ## Available Filters
@@ -1267,8 +1253,7 @@ User → Project → Issue Type
         {
           slug: "billing-accounts",
           title: "Billing Accounts",
-          content: `# Billing Accounts
-
+          content: `
 Billing Accounts let you categorise worklogs by client engagement, project contract, or internal cost centre.
 
 ## What Is a Billing Account?
@@ -1329,8 +1314,7 @@ In Group By:
         {
           slug: "time-tracking-setting",
           title: "Time-Tracking Setting",
-          content: `# Time-Tracking Setting
-
+          content: `
 Time-Tracking Settings control how time is displayed, calculated, and defaulted across the entire Time Tracking & Reporting module.
 
 ## Accessing Settings
@@ -1382,8 +1366,7 @@ Global sidebar → **Settings** → **Time Tracking** tab
         {
           slug: "capacity-planner",
           title: "Capacity Planner",
-          content: `# Capacity Planner
-
+          content: `
 The Capacity Planner is a timesheet-style view that shows how team workload is distributed across users, groups, and teams over time.
 
 ## Opening the Capacity Planner
@@ -1441,8 +1424,7 @@ Capacity Planner & Insight → **Capacity Planner** → click **Create New Plann
         {
           slug: "analytics-dashboard",
           title: "Analytics Dashboard",
-          content: `# Analytics Dashboard
-
+          content: `
 The Analytics Dashboard provides a four-tab view of team workload health, giving project managers and team leads real-time insight into allocation, risks, and bottlenecks.
 
 ## Opening the Dashboard
@@ -1513,8 +1495,7 @@ Identifies issues that have been stuck in the same status for too long.
         {
           slug: "saved-plans",
           title: "Saved Plans",
-          content: `# Saved Plans
-
+          content: `
 Saved Plans let you preserve capacity planner configurations for reuse across sprints, quarters, or recurring planning cycles.
 
 ## What Gets Saved
@@ -1569,8 +1550,7 @@ Use a consistent naming pattern to keep saved plans organised:
         {
           slug: "capacity-report",
           title: "Capacity Report",
-          content: `# Capacity Report
-
+          content: `
 The Capacity Report provides a structured tabular breakdown of available hours, estimated work, and logged hours - giving managers a precise view of team utilisation.
 
 ## Opening the Capacity Report
@@ -1626,8 +1606,7 @@ The CSV includes all rows, columns, and grouping levels for import into Excel, G
         {
           slug: "creating-a-portfolio",
           title: "Creating a Portfolio",
-          content: `# Creating a Portfolio
-
+          content: `
 A Portfolio is a named collection of Jira issues grouped and visualised across multiple views (Table, Gantt, Board, etc.). You define the scope using manual filters or JQL.
 
 ## Creating a New Portfolio
@@ -1682,8 +1661,7 @@ Deletion is permanent and cannot be undone.`,
         {
           slug: "view-types",
           title: "View Types",
-          content: `# View Types
-
+          content: `
 The Portfolio module offers six view types, each suited to a different planning or reporting scenario. Switch between them using the view mode selector in the top-right of any portfolio.
 
 ## Available Views
@@ -1742,8 +1720,7 @@ The Portfolio module offers six view types, each suited to a different planning 
         {
           slug: "saved-portfolios",
           title: "Saved Portfolios",
-          content: `# Saved Portfolios
-
+          content: `
 Saved Portfolios are named portfolio configurations that are persisted and shared across your Jira instance.
 
 ## What Gets Saved
@@ -1806,8 +1783,7 @@ There is no one-click duplicate. To copy a portfolio:
         {
           slug: "dashboard-gadget",
           title: "Dashboard Gadget",
-          content: `# Dashboard Gadget
-
+          content: `
 The Portfolio Dashboard Gadget lets you embed portfolio metrics directly onto any Jira dashboard, giving stakeholders a live view without requiring them to open the app manually.
 
 ## Adding the Gadget to a Dashboard
@@ -1858,8 +1834,7 @@ Jira dashboards support gadget resizing - drag the bottom-right corner of the ga
         {
           slug: "portfolio-settings",
           title: "Portfolio Settings",
-          content: `# Portfolio Settings
-
+          content: `
 Portfolio Settings control how the portfolio module displays time, maps Jira date fields to the Gantt chart, and calculates working capacity.
 
 ## Accessing Portfolio Settings
@@ -1914,8 +1889,7 @@ If these are not set, the Gantt chart will not render bars for issues that lack 
         {
           slug: "backlog-table",
           title: "Backlog Table",
-          content: `# Backlog Table
-
+          content: `
 The Backlog Table is a sortable, filterable table with inline-editable scoring metrics, giving your team a structured way to quantitatively rank and prioritise Jira backlog items.
 
 ## Opening the Backlog Table
@@ -1981,8 +1955,7 @@ Backlog Prioritization → **Backlog Table**
         {
           slug: "scoring-template",
           title: "Scoring Template",
-          content: `# Scoring Template
-
+          content: `
 Scoring Templates define the metrics and formula used to calculate a composite priority score for each Jira issue in the Backlog Table.
 
 ## Built-in Templates
@@ -2069,8 +2042,7 @@ Scoring Templates define the metrics and formula used to calculate a composite p
         {
           slug: "views-filters-sorting",
           title: "Views, Filters & Sorting",
-          content: `# Views, Filters & Sorting
-
+          content: `
 The Backlog Prioritization module provides multiple view types, flexible filtering, multi-column sorting, and saved views to support recurring prioritisation sessions.
 
 ## View Types
@@ -2152,8 +2124,7 @@ Saved Views preserve your current filter + sort + grouping configuration for reu
         {
           slug: "priority-matrix",
           title: "Priority Matrix",
-          content: `# Priority Matrix
-
+          content: `
 The Priority Matrix is a scatter plot that positions each Jira issue on two scoring axes, providing a visual quadrant-based view for prioritisation decisions.
 
 ## Opening the Priority Matrix
@@ -2217,8 +2188,7 @@ Click the **Table view** button (top-right toolbar) to return to the tabular Bac
         {
           slug: "saved-prioritized-reports",
           title: "Saved Prioritized Reports",
-          content: `# Saved Prioritized Reports
-
+          content: `
 Saved Prioritized Reports capture a snapshot of the backlog scoring at a specific point in time, creating a historical record of how issues were ranked before each sprint or planning cycle.
 
 ## What a Saved Report Preserves
@@ -2276,8 +2246,7 @@ The report appears in the **Saved Reports** section of the sidebar.
         {
           slug: "teams",
           title: "Teams",
-          content: `# Teams
-
+          content: `
 Teams are named groups of Jira users that can be reused across the Capacity Planner, Time Tracking Reports, and Portfolio module for group-level filtering, grouping, and reporting.
 
 ## Opening Teams Management
@@ -2342,8 +2311,7 @@ Global sidebar → **Teams Management** → **Teams**
         {
           slug: "programs",
           title: "Programs",
-          content: `# Programs
-
+          content: `
 Programs group multiple Teams into higher-level organisational structures, enabling leadership-level capacity rollups and cross-team reporting.
 
 ## What Is a Program?
@@ -2416,8 +2384,7 @@ All 7 members are visible in capacity reports when filtered by the Engineering p
         {
           slug: "general-settings",
           title: "General Settings",
-          content: `# General Settings
-
+          content: `
 General Settings control app-wide preferences that affect all modules - Time Tracking, Capacity Planner, Backlog Prioritization, and Portfolio.
 
 ## Accessing General Settings
@@ -2477,8 +2444,7 @@ Changes apply globally and immediately - no restart or page reload required. All
         {
           slug: "worklog-fields",
           title: "Worklog Fields",
-          content: `# Worklog Fields
-
+          content: `
 Worklog Fields let you add custom metadata fields to the Log Time form, enabling teams to capture additional context alongside each time entry.
 
 ## What Are Worklog Fields?
@@ -2553,8 +2519,7 @@ Once configured, custom worklog fields appear as filter and group-by options in:
         {
           slug: "time-categories",
           title: "Time Categories",
-          content: `# Time Categories
-
+          content: `
 Time Categories let users classify their worklogs by type of work - for example, Development, Code Review, Meetings, or QA - enabling richer analysis and reporting beyond issue-level tracking.
 
 ## Accessing Time Categories
@@ -2627,8 +2592,7 @@ Once set up, Time Categories appear as:
         {
           slug: "manage-staff",
           title: "Manage Staff",
-          content: `# Manage Staff
-
+          content: `
 Manage Staff lets administrators control which Jira users appear in the app's user-facing dropdowns, filters, and reports - ensuring only active, relevant team members are included in capacity and time data.
 
 ## Accessing Manage Staff
@@ -2703,8 +2667,7 @@ This is useful for part-time staff, contractors, or users in different regions w
         {
           slug: "configuration-options",
           title: "Configuration Options",
-          content: `# Configuration Options
-
+          content: `
 Access all global settings from any module's sidebar → **Settings** (bottom of sidebar).
 
 ---
@@ -2816,8 +2779,7 @@ Access from global Settings → Portfolio tab or from inside a portfolio → Set
         {
           slug: "user-role-management",
           title: "User & Role Management",
-          content: `# User & Role Management
-
+          content: `
 ## Teams
 
 Teams are named groups of Jira users that the app uses for capacity planning, time tracking filters, and portfolio grouping.
@@ -2918,8 +2880,7 @@ Cannot be done from within the app. Requires Jira site admin access:
         {
           slug: "permissions-admin",
           title: "Permissions",
-          content: `# Permissions
-
+          content: `
 ## Role Comparison Table
 
 | Capability | Global Admin | Member | No Role |
@@ -2967,8 +2928,7 @@ Global Admin is **automatically detected** - not assigned inside the app. Anyone
         {
           slug: "data-security-settings",
           title: "Data & Security Settings",
-          content: `# Data & Security Settings
-
+          content: `
 ## Data Storage
 
 The app stores all data using **Atlassian Forge Key-Value Storage (KVS)**:
@@ -3037,8 +2997,7 @@ Response within 1 business day.`,
         {
           slug: "performance-options",
           title: "Performance Options",
-          content: `# Performance Options
-
+          content: `
 ## Manage Staff
 
 Manage Staff provides tools for configuring individual working patterns - holiday calendars, workload schemes, and staff assignments - which feed into capacity calculations.
@@ -3121,8 +3080,7 @@ Links individual staff members to workload schemes.
         {
           slug: "latest-release",
           title: "Latest Release",
-          content: `# Latest Release
-
+          content: `
 ## What's New
 
 Check the Atlassian Marketplace listing for the most current release notes and version details:
@@ -3155,8 +3113,7 @@ Check the Atlassian Marketplace listing for the most current release notes and v
         {
           slug: "cloud-edition-updates",
           title: "Cloud Edition Updates",
-          content: `# Cloud Edition Updates
-
+          content: `
 The app is a Jira Cloud-exclusive product built on Atlassian Forge. All updates and improvements apply to the Cloud edition only.
 
 ## Platform Updates
@@ -3187,8 +3144,7 @@ For a full changelog of all releases, check the **Version History / Changelog** 
         {
           slug: "version-history",
           title: "Version History / Changelog",
-          content: `# Version History / Changelog
-
+          content: `
 For the complete version history and detailed changelog, visit the app's Atlassian Marketplace listing:
 
 [View Full Changelog on Marketplace](https://marketplace.atlassian.com/apps/877949909/time-tracking-resource-planning-project-management)
@@ -3221,8 +3177,7 @@ To see which version you are currently running:
         {
           slug: "roadmap",
           title: "Upcoming Features / Roadmap",
-          content: `# Upcoming Features / Roadmap
-
+          content: `
 ## Planned Enhancements
 
 The product team is actively working on new capabilities. The following are planned for upcoming releases:
@@ -3269,8 +3224,7 @@ All feature requests are reviewed by the product team weekly. You will receive c
         {
           slug: "supported-integrations",
           title: "Supported Integrations",
-          content: `# Supported Integrations
-
+          content: `
 ## Native Jira Integration
 
 Time Tracking, Resource Planning & Project Management is a **native Jira Cloud app** - it integrates directly with Jira through the Atlassian Forge platform. No separate connection or API key is needed.
@@ -3317,8 +3271,7 @@ Third-party integrations (Slack notifications, calendar sync, external reporting
         {
           slug: "third-party-apps",
           title: "Connect with Third-party Apps",
-          content: `# Connect with Third-party Apps
-
+          content: `
 ## Current State
 
 Time Tracking, Resource Planning & Project Management currently operates as a **self-contained Jira Cloud app**. It reads from and writes to Jira directly - there are no native connectors to third-party apps at this time.
@@ -3363,8 +3316,7 @@ Integration requests are reviewed by the product team and prioritized based on d
         {
           slug: "cloud-migration",
           title: "Cloud Migration Guide",
-          content: `# Cloud Migration Guide
-
+          content: `
 ## Moving from Jira Server/Data Center to Jira Cloud
 
 If your organization is migrating from Jira Server or Data Center to Jira Cloud, this page explains how Time Tracking, Resource Planning & Project Management fits into that process.
@@ -3398,8 +3350,7 @@ For questions about the app after migration, contact **support@clovity.com**.`,
         {
           slug: "data-import-export",
           title: "Data Import / Export",
-          content: `# Data Import / Export
-
+          content: `
 ## Exporting Data
 
 ### Time Tracking Reports - CSV Export
@@ -3458,8 +3409,7 @@ App configuration data (report setups, templates, portfolios, scoring) is stored
         {
           slug: "common-use-cases",
           title: "Common Use Cases",
-          content: `# Common Use Cases
-
+          content: `
 ## 1. Sprint Capacity Check Before Planning
 
 **Who:** Engineering Manager
@@ -3549,8 +3499,7 @@ The lead filters the Time Tracking Report Builder by Billing Account (one per cl
         {
           slug: "industry-examples",
           title: "Industry Examples",
-          content: `# Industry Examples
-
+          content: `
 ## Software Development Teams
 
 **Challenge:** Sprint velocity is inconsistent; planning is based on gut feel rather than data.
@@ -3617,8 +3566,7 @@ The lead filters the Time Tracking Report Builder by Billing Account (one per cl
         {
           slug: "sample-templates",
           title: "Sample Templates",
-          content: `# Sample Templates
-
+          content: `
 ## Backlog Scoring Templates
 
 ### Template 1 - ICE Score
@@ -3703,8 +3651,7 @@ Best for: Simple two-dimension prioritization
         {
           slug: "configuration-codes",
           title: "Configuration Codes",
-          content: `# Configuration Codes
-
+          content: `
 ## JQL Examples for Portfolio Scope
 
 ### All Active Epics Across Projects
@@ -3789,8 +3736,7 @@ project in (PROJ1, PROJ2, PROJ3) AND issuetype in (Epic, Story) AND status != Do
         {
           slug: "faqs",
           title: "FAQs",
-          content: `# Frequently Asked Questions
-
+          content: `
 ## General
 
 **What is the Time, Capacity, Prioritization & PPM Suite?**
@@ -3882,8 +3828,7 @@ No hard limit. Backlog tables with 10,000+ issues or reports spanning years may 
         {
           slug: "troubleshooting",
           title: "Troubleshooting",
-          content: `# Troubleshooting Guide
-
+          content: `
 ## No Data or Empty Report
 
 **Symptoms:** Report displays no rows; chart section is empty; zero totals for all time periods.
@@ -3972,8 +3917,7 @@ Gather: Jira site URL, module you were using, steps to reproduce, and browser co
         {
           slug: "contact-support",
           title: "Contact Support",
-          content: `# Contact Support
-
+          content: `
 ## Support Email
 
 **Email:** support@clovity.com
@@ -4026,8 +3970,7 @@ Include what you want to accomplish, why it would be valuable, and current worka
         {
           slug: "submit-ticket",
           title: "Submit a Ticket",
-          content: `# Submit a Ticket
-
+          content: `
 ## How to Submit a Support Ticket
 
 The fastest way to get help is via email. Send your request to:
@@ -4076,8 +4019,7 @@ Marketplace support requests are routed to the same Clovity support team.`,
         {
           slug: "community-forum",
           title: "Community / Forum",
-          content: `# Community / Forum
-
+          content: `
 ## Atlassian Community
 
 Have a question, want to share a tip, or looking for how other teams use the app? The **Atlassian Community** is the best place to connect with other users.
@@ -4110,217 +4052,6 @@ For private, account-specific questions (billing, licensing, bugs with your spec
 ## Share Your Feedback
 
 We read all community posts and emails. If you have built something interesting with the app - a workflow, a report template, a backlog scoring approach - share it! We regularly feature community contributions in our release notes and documentation.`,
-        },
-      ],
-    },
-
-    // ═══════════════════════════════════════════════════════════════
-    // 8. ADDITIONAL RESOURCES
-    // ═══════════════════════════════════════════════════════════════
-    {
-      id: "additional-resources",
-      title: "Additional Resources",
-      articles: [
-        {
-          slug: "privacy-data-security",
-          title: "Privacy & Data Security",
-          content: `# Privacy & Data Security
-
-## Data Handling Policy
-
-### What Data the App Processes
-
-| Data Type | How It's Used | Where It's Stored |
-|---|---|---|
-| Jira issue data | Capacity analysis, backlog scoring, portfolio views | Read from Jira; not copied to external storage |
-| Jira worklogs | Time tracking - read and write | Written to Jira; time log metadata stored in Forge KVS |
-| User profiles | Assignee display, RBAC | Read from Jira; not copied |
-| App configurations | Report setups, templates, portfolios, scoring | Stored in Atlassian Forge KVS |
-
-### What the App Does NOT Do
-
-- Does not transmit Jira data to Clovity's servers
-- Does not store your data in any database outside the Atlassian platform
-- Does not access Confluence, email, or any system outside your Jira Cloud instance
-- Does not send data to third-party analytics or advertising platforms
-
-## Atlassian Forge Security
-
-The app runs on **Atlassian Forge**, Atlassian's serverless platform. Forge provides:
-
-- **Data isolation**: Each Jira installation has its own isolated Forge KVS namespace
-- **Encryption at rest**: All Forge KVS data is encrypted by Atlassian
-- **No egress by default**: Forge apps cannot make arbitrary outbound network calls - all external access requires explicit declaration in the app manifest
-
-## GDPR Compliance
-
-The app processes personal data (Jira usernames, display names, email addresses) only as necessary for the app's functionality. This data is:
-
-- Processed on the Atlassian platform within your chosen data residency region
-- Not shared with Clovity or any third party
-- Subject to Atlassian's GDPR Data Processing Agreement (DPA) as the data processor
-
-To exercise GDPR rights (access, deletion, portability) related to data stored in Jira, contact your Jira site administrator. For data stored in Forge KVS by this app, contact **support@clovity.com**.
-
-## Security Contact
-
-Report security vulnerabilities or concerns to: **support@clovity.com**
-Subject line: **Security: [Brief description]**
-
-We respond to security reports within 1 business day.`,
-        },
-        {
-          slug: "eula",
-          title: "Terms of Service / EULA",
-          content: `# End User License Agreement (EULA)
-
-**Time Tracking, Resource Planning & Project Management**
-Developed and maintained by Clovity, Inc.
-
----
-
-This End User License Agreement ("Agreement") is a legal agreement between you ("User" or "You") and Clovity, Inc. ("Company" or "We"), governing your use of the **Time Tracking, Resource Planning & Project Management** application ("Software") available on the Atlassian Marketplace.
-
-By installing, accessing, or using this Software, you agree to be bound by the terms of this Agreement. If you do not agree to these terms, do not install or use the Software.
-
-## 1. License Grant
-
-Clovity, Inc. grants you a non-exclusive, non-transferable, revocable, and limited license to use the Software within your Atlassian Jira environment in accordance with this Agreement.
-
-## 2. Restrictions
-
-You shall not:
-- Copy, modify, distribute, or create derivative works of the Software
-- Reverse engineer, decompile, or attempt to extract the source code
-- Use the Software for unlawful or unauthorized purposes
-- Rent, lease, sublicense, or transfer the Software to third parties
-
-## 3. Data Privacy & Security
-
-The Software may process Jira-related data but does not store, share, or transmit personal or confidential data outside of your Jira environment. Your use of the Software must comply with applicable data protection laws and Atlassian's policies.
-
-## 4. Support & Updates
-
-Clovity, Inc. may provide updates, patches, or improvements to the Software at its discretion. Support services are available as per the Atlassian Marketplace listing.
-
-## 5. Disclaimer of Warranties
-
-THE SOFTWARE IS PROVIDED "AS IS" WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. CLOVITY, INC. DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE OR OPERATE WITHOUT INTERRUPTIONS.
-
-## 6. Limitation of Liability
-
-TO THE FULLEST EXTENT PERMITTED BY LAW, CLOVITY, INC. SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING OUT OF OR RELATED TO THE USE OR INABILITY TO USE THE SOFTWARE, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, OR OTHER INTANGIBLE LOSSES, EVEN IF CLOVITY, INC. HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-
-## 7. Governing Law
-
-This Agreement is governed by the laws of the State of California, United States, without regard to its conflict of law principles.
-
-## 8. Contact
-
-For questions about this Agreement: **support@clovity.com**
-
----
-
-*Last updated: 2025*`,
-        },
-        {
-          slug: "trust-center",
-          title: "Trust Center",
-          content: `# Trust Center
-
-## Security & Compliance Overview
-
-Time Tracking, Resource Planning & Project Management is built on the **Atlassian Forge** platform and inherits Atlassian's enterprise-grade security posture.
-
-## Platform Security (Atlassian Forge)
-
-| Control | Details |
-|---|---|
-| Data Isolation | Each Jira installation has its own isolated Forge KVS namespace - no data sharing between tenants |
-| Encryption at Rest | All Forge KVS data is encrypted at rest by Atlassian |
-| Encryption in Transit | All communication uses TLS 1.2+ |
-| Access Control | App can only access Jira data permitted by the user's Jira permissions |
-| No External Data Egress | The app does not make outbound calls to Clovity servers |
-
-## Atlassian Compliance Certifications
-
-As a Forge-based app, the app benefits from Atlassian's compliance certifications for its infrastructure:
-
-- **SOC 2 Type II** (Atlassian platform)
-- **ISO 27001** (Atlassian platform)
-- **GDPR** compliance through Atlassian's data residency program
-
-For Atlassian's full trust and compliance documentation, visit: [Atlassian Trust Center](https://www.atlassian.com/trust)
-
-## Clovity Application Security
-
-- The app undergoes code review before each Marketplace release
-- Marketplace submissions are reviewed by Atlassian's security team as part of the listing process
-- Atlassian's Forge sandbox restricts the app from accessing systems outside the declared scope
-
-## Responsible Disclosure
-
-If you discover a security vulnerability in this app, please report it responsibly:
-
-**Email:** support@clovity.com
-**Subject:** Security Vulnerability Report
-
-We commit to:
-- Acknowledging your report within 1 business day
-- Providing an update on our assessment within 5 business days
-- Crediting researchers who report valid vulnerabilities (with permission)
-
-Please do not publicly disclose vulnerabilities until we have had a reasonable opportunity to address them.`,
-        },
-        {
-          slug: "api-documentation",
-          title: "API Documentation",
-          content: `# API Documentation
-
-## Jira Worklog API
-
-The app reads from and writes to Jira's standard worklog API. Worklogs created programmatically via the Jira API are automatically visible in the app's Time Tracking reports.
-
-### Create a Worklog via Jira API
-
-Endpoint: \`POST /rest/api/3/issue/{issueIdOrKey}/worklog\`
-
-**Required fields:**
-- \`timeSpentSeconds\`: Time logged in seconds (e.g., 3600 = 1 hour)
-- \`started\`: ISO 8601 datetime string
-
-**Example request body:**
-\`\`\`json
-{
-  "timeSpentSeconds": 3600,
-  "started": "2025-01-15T09:00:00.000+0000",
-  "comment": {
-    "type": "doc",
-    "version": 1,
-    "content": [{"type": "paragraph", "content": [{"type": "text", "text": "Development work"}]}]
-  }
-}
-\`\`\`
-
-For full Jira Worklog API documentation: [Atlassian Developer Docs - Add Worklog](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-worklogs/#api-rest-api-3-issue-issueidorkey-worklog-post)
-
-## App-Specific Worklog Properties
-
-The app stores Time Category and Billing Account as Jira worklog entity properties. Contact **support@clovity.com** for the current property keys if you need to set these programmatically.
-
-## No Public App API
-
-The app itself does not expose a public API. All data access is through:
-1. The app's user interface
-2. Jira's standard REST API (for worklog data)
-3. The CSV/PDF export functionality
-
-## Feature Request: API Access
-
-If you need programmatic access to app-specific data (scoring templates, portfolio configurations, capacity reports), submit a feature request to **support@clovity.com** with:
-- Subject: **Feature Request: API Access**
-- Describe the specific data you need to access
-- Describe your intended use case`,
         },
       ],
     },

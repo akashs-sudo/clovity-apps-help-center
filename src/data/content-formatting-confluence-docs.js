@@ -507,26 +507,7 @@ The Tab Page Mapper lets you **hand-pick specific pages** from anywhere in the C
 2. Inside it, insert **Tab Page Mapper**
 3. In the config panel, add pages one by one - search by title or paste page URLs
 4. Drag to reorder the page list
-5. Optionally set a custom tab label for each page (overrides the page title)
-6. Preview and publish
-
-## Comparison: When to Use Which Mapper
-
-| Criterion | Parent Mapper | Label Mapper | Page Mapper |
-|---|---|---|---|
-| Auto-updates when pages added | Yes | Yes | No |
-| Works across spaces | No | Yes (with space param) | Yes |
-| Requires specific page hierarchy | Yes | No | No |
-| Custom tab label per tab | No | No | Yes |
-| Good for curated collections | No | No | Yes |
-
-## Settings Reference
-
-| Setting | Description |
-|---|---|
-| Pages | Ordered list of pages to include as tabs |
-| Custom Tab Label | Optional override label for each tab (uses page title if blank) |
-| Open in New Page Link | Optionally show a "Open page" link in each tab footer |
+5. Preview and publish
 
 ## Known Behavior
 
@@ -548,27 +529,22 @@ Custom Tabs let you write content **directly inside each tab** instead of pullin
 - New content being written for the first time
 - Content that doesn't make sense as standalone pages
 - Small amounts of tabbed content where separate pages would be overkill
-- Tabs that mix content types (text, images, tables, macros) freely
 
 ## How to Create Custom Tabs
 
 1. Insert the **Tab Navigation** macro on your page
-2. Inside it, do NOT insert a mapper - instead, click **Add Tab** in the macro body
-3. Each click adds a new tab container
+2. Inside it, do NOT insert a mapper - instead, write a element name in the macro body
+3. Each element name adds a new tab container
 4. Click on a tab to select it, then type or insert content inside it
-5. Double-click the tab label to rename it
-6. Drag tabs left/right to reorder
-7. Publish the page
+5. Drag tabs up/down to reorder
+6. Publish the page
 
 ## Three Content Types Supported in Custom Tabs
 
 ### Type 1 - Rich Text
 Type directly inside the tab. Use all standard Confluence formatting: headings, tables, lists, code blocks, inline images.
 
-### Type 2 - Other Macros
-Insert any other Confluence macro inside a tab - including the Content Formatting macros themselves. Nest Alert, Background, Card, Button macros freely.
-
-### Type 3 - Included Pages
+### Type 2 - Included Pages
 Use the Confluence "Include Page" macro inside a tab to pull in another page's content. This is a middle ground between Custom Tabs and mapper tabs - you pick the pages but include their content inline.
 
 ## Tab Limits
@@ -607,17 +583,13 @@ Conditional visibility macros let you show or hide sections of content based on 
 |---|---|
 | Confluence Group | Show/hide based on Confluence group membership (e.g., \`confluence-admins\`) |
 | Space Role | Show/hide based on space role: Space Admin or Space User |
-| Login Status | Show to logged-in users only, or show to anonymous users only |
+| Login Status | Show to logged-in users only |
 
 ## Common Patterns
 
 **Pattern 1 - Admin-only notes**: Conditional Show, condition: Space Admin.
 
-**Pattern 2 - Guest-friendly version**: Conditional Hide, condition: Anonymous.
-
-**Pattern 3 - Manager-only HR content**: Conditional Show, condition: group = \`hr-managers\`.
-
-**Pattern 4 - Draft watermark**: Conditional Show, condition: Space Admin. Wraps a "DRAFT - DO NOT DISTRIBUTE" banner.
+**Pattern 2 - Manager-only HR content**: Conditional Show, condition: group = \`hr-managers\`.
 
 ## Important Warning
 
@@ -640,22 +612,13 @@ The Conditional Hide macro wraps content that should be **visible to most users 
 
 ## Step-by-Step Setup
 
-1. In Edit mode, select the content you want to conditionally hide
-2. Click **+** (Insert) → search for **Conditional Hide**
-3. The selected content is wrapped inside the macro body
-4. In the config panel on the right, configure the condition:
-   - **Type**: Group, Space Role, or Login Status
-   - **Value**: Group name, role name, or logged-in/anonymous
-5. Click outside the config panel to preview
+1. Click on edit button.
+2. Click **+** (Insert) → search for **Conditional Hide**.
+3. Write the content inside the macro body.
+4. In the config panel on the right, configure the condition.
+5. Click on Save button.
 6. In View mode, log in as a user who matches the condition - the content should be hidden for them
 
-## Configuration Options
-
-| Option | Values | Example |
-|---|---|---|
-| Condition Type | Group | \`confluence-guests\` |
-| Condition Type | Space Role | \`Space User\` or \`Space Admin\` |
-| Condition Type | Login Status | \`Anonymous\` or \`Authenticated\` |
 
 ## Multiple Conditions
 
@@ -683,27 +646,17 @@ The Conditional Show macro wraps content that should be **hidden by default and 
 
 ## Step-by-Step Setup
 
-1. In Edit mode, select the content you want to conditionally show
+1. Click on Edit button
 2. Click **+** (Insert) → search for **Conditional Show**
-3. The selected content is wrapped inside the macro body
-4. In the config panel, configure:
-   - **Type**: Group, Space Role, or Login Status
-   - **Value**: The specific group, role, or status that should see this content
+3. Write the content inside the macro body.
+4. In the config panel on the right, configure the condition.
+5. Click on Save button.
 5. Preview in View mode - sign in as a user in the target group to confirm visibility
 
-## Configuration Options
 
-| Option | Values | Example |
-|---|---|---|
-| Condition Type | Group | \`confluence-admins\` |
-| Condition Type | Space Role | \`Space Admin\` |
-| Condition Type | Login Status | \`Authenticated\` |
+## Multiple Conditions
 
-## Combining with Other Macros
-
-Conditional Show can wrap any content, including other Content Formatting macros (Alert, Background, Cards, Tabs) and standard Confluence macros.
-
-**Example**: Wrap an **Interactive Banner** macro inside a **Conditional Show** macro set to Space Admins. The banner is only visible to space admins - useful for admin notices on public-facing spaces.
+You can stack multiple Conditional Hide macros to hide content from multiple groups. Each macro is evaluated independently.
 
 ## Troubleshooting
 
@@ -778,11 +731,10 @@ The Buttons macro creates styled call-to-action buttons on any Confluence page. 
 | Size | Small, Medium, Large |
 | Icon | Optional icon from the built-in icon set (left or right of label) |
 | Open in new tab | Yes / No |
-| Full width | Stretch button to container width |
 
 ## Adding Multiple Buttons
 
-Insert multiple Button macros side by side. They will flow inline with automatic spacing. Use a Background or Card macro as a container to group a set of buttons with a section background.
+Insert multiple Button macros side by side. They will flow inline with automatic spacing.
 
 ## Common Use Cases
 
@@ -815,9 +767,8 @@ The Background macro applies a background color, gradient, or image to any secti
 | Color | Color picker or hex value | For Color type |
 | Gradient | Start color, end color, direction | For Gradient type |
 | Image URL | Publicly accessible URL | For Image type; Confluence attachment URLs may not work |
-| Padding | None, Small, Medium, Large | Inner spacing |
-| Border Radius | None, Small, Medium, Large, Pill | Rounded corners |
-| Text Color Override | Auto, Light, Dark | Ensures text readability on dark backgrounds |
+| Border Radius | in Pixel | Rounded corners |
+| Text Color | Color picker or hex value | Ensures text readability on dark backgrounds |
 | Min Height | Pixel value | Optional minimum height |
 
 ## Usage Notes
@@ -846,13 +797,13 @@ The Alert macro creates a styled banner for informational messages, warnings, er
 
 ## Alert Types
 
-| Type | Color | Use For |
-|---|---|---|
-| Info | Blue | General information, notes, tips |
-| Warning | Yellow/Amber | Caution, important considerations |
-| Error | Red | Errors, failures, destructive actions |
-| Success | Green | Confirmations, completed steps |
-| Note | Gray | Secondary notes, editorial commentary |
+| Type | Use For |
+|---|---|
+| Info | General information, notes, tips |
+| Warning | Caution, important considerations |
+| Error | Errors, failures, destructive actions |
+| Success | Confirmations, completed steps |
+| Note | Secondary notes, editorial commentary |
 
 ## Configuration Options
 

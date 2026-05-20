@@ -4,6 +4,7 @@ import { dashboardChartsDocs } from "@/data/dashboard-charts-docs";
 import { reportsChartsConfluenceDocs } from "@/data/reports-charts-confluence-docs";
 import { latexDiagramsConfluenceDocs } from "@/data/latex-diagrams-confluence-docs";
 import { contentFormattingConfluenceDocs } from "@/data/content-formatting-confluence-docs";
+import { backlogAuditorDocs } from "@/data/backlog-auditor-docs";
 import Sidebar from "@/components/Sidebar";
 import ScrollToTop from "@/components/ScrollToTop";
 import { notFound } from "next/navigation";
@@ -40,6 +41,7 @@ const docsMap = {
   "reports-charts-confluence": reportsChartsConfluenceDocs,
   "latex-diagrams-confluence": latexDiagramsConfluenceDocs,
   "content-formatting-confluence": contentFormattingConfluenceDocs,
+  "backlog-auditor-jira": backlogAuditorDocs,
 };
 
 const CATEGORY_META = {
@@ -74,6 +76,10 @@ const CATEGORY_META = {
   "Use Cases":                      { icon: Briefcase,       summary: "Real-world examples, industry scenarios, and ready-to-use templates." },
   "Help Center":                    { icon: LifeBuoy,        summary: "FAQs, troubleshooting guides, and support contact options." },
   "Additional Resources":           { icon: FileText,        summary: "Privacy policy, EULA, trust center, and API documentation." },
+  "Building Rulesets":              { icon: Settings2,       summary: "Create and manage rule-based audit checklists for your project." },
+  "Running Audits":                 { icon: BarChart2,       summary: "Execute audits and interpret visual reports and violation data." },
+  "Rule Conditions":                { icon: Filter,          summary: "Explore all supported conditions by field type with examples." },
+  "Safety Nets & Best Practices":   { icon: Shield,          summary: "Unsaved changes protection, safeguards, and tips for effective auditing." },
 };
 
 const ACCENT_COLORS = [
@@ -276,7 +282,7 @@ export default async function AppPage({ params }) {
               </div>
               <div className="flex gap-3 shrink-0">
                 <a
-                  href="mailto:support@clovity.com"
+                  href="mailto:developers@clovity.com"
                   className="px-4 py-2 text-xs font-semibold text-gray-700 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors shadow-sm"
                 >
                   Email Support

@@ -3128,7 +3128,7 @@ If you cannot resolve the issue using the documentation, submit a request via th
 
 ## Contact Us
 
-You can also reach our support team directly at [support@clovity.com](mailto:support@clovity.com)`,
+You can also reach our support team directly at [developers@clovity.com](mailto:developers@clovity.com)`,
         },
       ],
     },
@@ -3196,7 +3196,7 @@ This agreement is governed by the laws of the State of California, United States
 
 ## 10. Contact
 
-For questions regarding this agreement, contact Clovity at [support@clovity.com](mailto:support@clovity.com).`,
+For questions regarding this agreement, contact Clovity at [developers@clovity.com](mailto:developers@clovity.com).`,
         },
       ],
     },

@@ -3225,7 +3225,7 @@ If you do not purchase a license, gadgets become read-only and configuration is 
 
 ## Still Have Questions?
 
-Check the **Troubleshooting Guide** or contact our support team at [support@clovity.com](mailto:support@clovity.com). Response time is within 1–2 business days.`,
+Check the **Troubleshooting Guide** or contact our support team at [developers@clovity.com](mailto:developers@clovity.com). Response time is within 1–2 business days.`,
         },
         {
           slug: "troubleshooting-guide",
@@ -3319,7 +3319,7 @@ Check the **Troubleshooting Guide** or contact our support team at [support@clov
 If none of these solutions work:
 
 1. Gather information: Jira site URL, gadget type, JQL, screenshots
-2. Contact support: support@clovity.com
+2. Contact support: developers@clovity.com
 `,
         },
         {
@@ -3329,7 +3329,7 @@ If none of these solutions work:
 
 ## Support Email
 
-**Email:** support@clovity.com
+**Email:** developers@clovity.com
 
 **Response Time:** Within 1-2 business days
 
@@ -3396,7 +3396,7 @@ To help us resolve your issue faster, please try these steps first:
 
 We love hearing your ideas! To submit a feature request:
 
-1. Email support@clovity.com
+1. Email developers@clovity.com
 2. Subject: "Feature Request: [Brief Description]"
 3. Include: What you want to accomplish, why it would be valuable, current workarounds
 
@@ -3404,7 +3404,7 @@ We love hearing your ideas! To submit a feature request:
 
 **Company:** Clovity
 
-**Support Email:** [support@clovity.com](mailto:support@clovity.com)
+**Support Email:** [developers@clovity.com](mailto:developers@clovity.com)
 `,
         },
       ],

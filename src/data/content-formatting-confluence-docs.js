@@ -1807,7 +1807,7 @@ The User Profile macro reads user data from Confluence's user directory. Only da
 
 ## Questions About Data Processing
 
-For questions about how Clovity processes data as the app vendor, contact **support@clovity.com** or review the app's privacy policy on the Atlassian Marketplace listing.`,
+For questions about how Clovity processes data as the app vendor, contact **developers@clovity.com** or review the app's privacy policy on the Atlassian Marketplace listing.`,
         },
       ],
     },
@@ -2443,7 +2443,7 @@ If you need to roll back after starting a migration:
 
 If you are migrating a large Confluence space (100+ pages with tab macros) and need assistance, contact the Clovity support team:
 
-- **Email**: support@clovity.com
+- **Email**: developers@clovity.com
 - **Subject**: Migration Assistance: [your Confluence site URL]
 
 Include the number of pages involved, the app you are migrating from, and your timeline. The support team can provide migration guidance and tooling recommendations.`,
@@ -2791,31 +2791,43 @@ Interactive Banner, Buttons, Background, Status Macro, Progress Bar, Countdown T
           slug: "help-support",
           title: "Help & Support",
           content: `
+Our Atlassian-certified support team is here to help with any questions about Content Formatting Macros. Work through the checklist below before opening a ticket — most issues are resolved without one.
+
 ## Before Contacting Support
 
-Work through this checklist first - most issues are resolved without opening a ticket:
+- Confirm the app is installed and active: **Confluence Settings** → **Manage apps** → Content Formatting Macros shows **"Active"**
+- Verify you are on Confluence Cloud — Data Center and Server are not supported
+- Try the action in a different browser or incognito window to rule out cache issues
+- Check whether the issue affects all users or only specific users or groups
+- Review the relevant macro's documentation page in this help center for known limitations
 
-- [ ] Confirm the app is installed and active (**Confluence Settings** → **Manage apps** → Content Formatting Macros shows "Active")
-- [ ] Check that you are in a supported environment (Confluence Cloud - Data Center and Server are not supported)
-- [ ] Try the action in a different browser or incognito mode (rules out browser cache issues)
-- [ ] Check if the issue affects all users or only specific users
-- [ ] Review the specific macro's documentation page in this help center for known limitations
+## Contact Options
 
-## How to Reach Support
+| Channel | Details |
+|---|---|
+| **Email** | developers@clovity.com |
+| **Marketplace Support Portal** | Visit the app's Atlassian Marketplace listing → **Support** tab to open a ticket directly |
+| **Atlassian Community** | Browse community discussions where other customers share tips and experiences |
 
-**Email**: support@clovity.com
+## Business Hours
 
-**Atlassian Marketplace Support Portal**: Available via the app's Marketplace listing page → **Support** tab
+Monday – Friday, 24 hrs (PDT)
 
-**Response Times**:
-- Standard: 1–2 business days
-- Critical (app completely non-functional): same business day
+## Response Times
 
-## What to Include in Your Support Request
+| Priority | Response Time |
+|---|---|
+| **Critical** (app completely non-functional) | Same business day |
+| **Standard** questions & bug reports | 1–2 business days |
+| **Feature requests** | Reviewed weekly by the product team |
+
+## What to Include in Your Request
+
+For the fastest resolution, always include:
 
 1. **Confluence site URL** (e.g., \`yourcompany.atlassian.net\`)
-2. **App version** (visible in **Confluence Settings** → **Manage apps** → Content Formatting Macros → version number)
-3. **Affected macro name** (e.g., "Tab Parent Content Mapper")
+2. **App version** — visible in **Confluence Settings** → **Manage apps** → Content Formatting Macros
+3. **Affected macro name** (e.g., "Tab Parent Content Mapper", "Conditional Show")
 4. **Steps to reproduce** the issue
 5. **Expected behavior** vs. **what actually happened**
 6. **Screenshot or screen recording** if the issue is visual
@@ -2824,7 +2836,9 @@ Work through this checklist first - most issues are resolved without opening a t
 
 ## Feature Requests
 
-Submit feature requests via the Atlassian Marketplace listing or email support@clovity.com with "Feature Request:" in the subject line.`,
+Email **developers@clovity.com** with subject: **Feature Request: [short description]**
+
+All feature requests are reviewed by the product team. You will receive a confirmation that your request was received. You can also submit requests via the **Support** tab on the Atlassian Marketplace listing.`,
         },
         {
           slug: "faq",
@@ -2841,7 +2855,7 @@ A: The two most common reasons: (1) the viewer doesn't have read permission to t
 **Q: Can I nest Tab Navigation inside another Tab Navigation?**
 A: It is technically possible but not recommended. Nested tabs often cause layout issues. Consider using Advanced Expand macros inside tabs for secondary grouping instead.
 
-**Q: The tab content shows "Page not found" - why?**
+**Q: The tab content shows "Page not found" — why?**
 A: For Page Mapper or Parent Mapper tabs, the source page was deleted or the viewer lacks permission. Check the mapped page still exists and that the viewer has read access.
 
 ---
@@ -2861,14 +2875,14 @@ A: Just not displayed. Users with page-read permission can still access all cont
 
 ## Attachment Management Center
 
-**Q: The Attachment Center doesn't appear in Space Settings - why?**
+**Q: The Attachment Center doesn't appear in Space Settings — why?**
 A: It must be enabled per-space. Go to **Space Settings** → **Content Formatting Macros** → **Attachment Center** and toggle it On.
 
 **Q: Can I recover a deleted attachment?**
 A: No. Deletions through the Attachment Center are permanent. Confluence does not have a recycle bin for attachments.
 
 **Q: What does "Orphaned" mean in the Attachment Center?**
-A: An orphaned attachment is a file uploaded to a page but not referenced in any content on that page. These are safe deletion candidates, but verify they're not referenced from other pages first.
+A: An orphaned attachment is a file uploaded to a page but not referenced in any content on that page. These are safe deletion candidates, but verify they are not referenced from other pages first.
 
 ---
 
@@ -2881,49 +2895,10 @@ A: No. Content Formatting Macros is a Confluence Cloud-only app.
 A: Macros render in read-only mode on the Confluence mobile app. Interactive features (countdown timers, pop-up dialogs) may have limited functionality on mobile.
 
 **Q: Will macros break if I uninstall the app?**
-A: If the app is uninstalled, macros will no longer render - they'll show as unresolved macro placeholders. Your page content is not deleted. Re-installing the app restores all macros.
+A: If the app is uninstalled, macros will no longer render — they will show as unresolved macro placeholders. Your page content is not deleted. Re-installing the app restores all macros.
 
 **Q: Is there a free trial?**
-A: Yes. A 30-day free trial is available via the Atlassian Marketplace. No credit card required to start the trial.`,
-        },
-        {
-          slug: "contact-support",
-          title: "Contact Support",
-          content: `
-## Get Help from the Clovity Team
-
-Our Atlassian-certified support team is here to help with any questions about Content Formatting Macros.
-
-## Contact Options
-
-**Email Support**: support@clovity.com
-
-Include the following for fastest resolution:
-- Your Confluence site URL
-- App version number (Settings → Manage apps → Content Formatting Macros)
-- Macro name affected
-- Steps to reproduce
-- Screenshot or screen recording
-
-**Atlassian Marketplace Support Portal**: Visit the app's listing on the Atlassian Marketplace and click the **Support** tab to open a ticket directly.
-
-## Response Times
-
-| Priority | Response Time |
-|---|---|
-| Critical (app non-functional) | Same business day |
-| Standard questions | 1–2 business days |
-| Feature requests | Reviewed weekly |
-
-## Business Hours
-
-Monday – Friday, 9:00 AM – 6:00 PM IST (Indian Standard Time)
-
-## Feature Requests
-
-Email **support@clovity.com** with subject: **Feature Request: [short description]**
-
-All feature requests are reviewed by the product team. You'll receive confirmation that your request was received.`,
+A: Yes. A 30-day free trial is available via the Atlassian Marketplace. No credit card is required to start the trial.`,
         },
       ],
     },
@@ -2986,7 +2961,7 @@ This Agreement shall be governed by the laws of the State of California, United 
 
 ## 10. Contact
 
-For questions about this Agreement, contact **support@clovity.com**.
+For questions about this Agreement, contact **developers@clovity.com**.
 
 ---
 

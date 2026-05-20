@@ -2898,7 +2898,7 @@ If you cannot resolve the issue using the documentation, submit a request via th
 
 ## Contact Us
 
-You can also reach our support team directly at [support@clovity.com](mailto:support@clovity.com)`,
+You can also reach our support team directly at [developers@clovity.com](mailto:developers@clovity.com)`,
         },
       ],
     },

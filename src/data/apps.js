@@ -2,7 +2,7 @@ export const apps = [
   {
     slug: "dashboard-charts-jira",
     name: "Dashboard Templates, Charts, Graphs & Reports for Jira",
-    shortName: "Dashboard Charts & Reports",
+    shortName: "Dashboard Templates, Charts, Graphs & Reports for Jira",
     platform: "Jira Cloud",
     badge: "Rising Star",
     rating: 4,
@@ -48,7 +48,7 @@ export const apps = [
   {
     slug: "time-tracking-jira",
     name: "Time Tracking, Resource Planning & Project Management",
-    shortName: "Time Tracking & PPM",
+    shortName: "Time Tracking, Resource Planning & Project Management",
     platform: "Jira Cloud",
     badge: null,
     rating: 4,
@@ -94,7 +94,7 @@ export const apps = [
   {
     slug: "backlog-auditor-jira",
     name: "Backlog Auditor & Export",
-    shortName: "Backlog Auditor",
+    shortName: "Backlog Auditor & Export",
     platform: "Jira Cloud",
     badge: null,
     rating: null,
@@ -215,7 +215,7 @@ export const apps = [
   {
     slug: "content-formatting-confluence",
     name: "Content Formatting Macros: Tabs Navigation Visibility CSS",
-    shortName: "Content Formatting Macros",
+    shortName: "Content Formatting Macros: Tabs Navigation Visibility CSS",
     platform: "Confluence Cloud",
     badge: null,
     rating: 4,
@@ -261,7 +261,7 @@ export const apps = [
   {
     slug: "reports-charts-confluence",
     name: "Reports, Charts, Templates, CQL & Export for Confluence",
-    shortName: "Reports & Charts",
+    shortName: "Reports, Charts, Templates, CQL & Export for Confluence",
     platform: "Confluence Cloud",
     badge: null,
     rating: 4,
@@ -307,7 +307,7 @@ export const apps = [
   {
     slug: "latex-diagrams-confluence",
     name: "LaTeX Formulas & Diagrams (Gantt Charts, ERDs & Flowcharts)",
-    shortName: "LaTeX & Diagrams",
+    shortName: "LaTeX Formulas & Diagrams (Gantt Charts, ERDs & Flowcharts)",
     platform: "Confluence Cloud",
     badge: null,
     rating: 4,

@@ -153,6 +153,10 @@ After installation, open any Confluence page in edit mode:
 
 If all three macros appear, installation is complete and working.
 
+![LaTeX Block Equations and LaTeX Inline Equations macros in Confluence macro search](/images/latex-diagram-confluence/Screenshot%202026-03-10%20171523.png)
+
+![Easy UML Diagrams macro in Confluence macro search](/images/latex-diagram-confluence/Screenshot%202026-03-10%20171651.png)
+
 ## Permissions Requested During Install
 
 | Permission | Why It's Needed |
@@ -201,6 +205,9 @@ Get up and running with your first diagram or equation in under 5 minutes.
 
 1. Edit a Confluence page and type \`/Diagrams\`
 2. Click **Clovity Diagrams** in the macro list
+
+![Easy UML Diagrams macro selection in Confluence](/images/latex-diagram-confluence/Screenshot%202026-03-10%20171651.png)
+
 3. The split-view editor opens - the Source panel is on the left
 4. Paste a sample diagram or type your own Mermaid code, for example:
 
@@ -214,12 +221,18 @@ flowchart TD
 \`\`\`
 
 5. The Preview panel on the right renders the diagram live
+
+![Clovity UML Editor showing flowchart with Source panel on left and rendered Preview on right](/images/latex-diagram-confluence/Screenshot%202026-03-10%20173235.png)
+
 6. Click **Save** - the diagram appears on the page
 
 ## Inserting Your First Equation
 
 1. Edit a page and type \`/LaTeX Block\`
 2. Click **Clovity LaTeX Block Equations**
+
+![LaTeX Block Equations and LaTeX Inline Equations macro options in Confluence](/images/latex-diagram-confluence/Screenshot%202026-03-10%20171523.png)
+
 3. In the Source panel, type raw LaTeX - for example: \`\\frac{a}{b}\`
 4. Preview renders the equation on the right
 5. Click **Save** - the display equation appears on the page
@@ -487,6 +500,7 @@ Clovity UML renders **Mermaid** diagrams in Confluence.
 * **Source (left):** Mermaid code
 * **Preview (right):** rendered diagram
 
+
 ### Using Samples
 
 The editor includes a Samples menu. Use it to:
@@ -531,6 +545,8 @@ flowchart TD
     style Error fill:#FFEBE6
 \`\`\`
 
+![Clovity UML Editor — Source panel on left, rendered diagram Preview on right, Samples button at top](/images/latex-diagram-confluence/Screenshot%202026-03-10%20173235.png)
+
 ### Sequence Diagram
 
 \`\`\`
@@ -554,6 +570,8 @@ sequenceDiagram
     Note over User,Database: Authentication Flow
 \`\`\`
 
+![Sequence diagram rendered in Clovity UML Editor — authentication flow example](/images/latex-diagram-confluence/Screenshot%202026-03-10%20173425.png)
+
 ### Class Diagram
 
 \`\`\`
@@ -573,6 +591,8 @@ class OrderItem {
   +getSubtotal()
 }
 \`\`\`
+
+![Class diagram rendered in Clovity UML Editor — Customer, Order, OrderItem example](/images/latex-diagram-confluence/Screenshot%202026-03-10%20173621.png)
 
 ### Gantt
 
@@ -594,6 +614,8 @@ gantt
     Production Deployment    :prod, 2024-04-15, 2024-04-20
 \`\`\`
 
+![Gantt chart rendered in Clovity UML Editor — Project Development Timeline example](/images/latex-diagram-confluence/Screenshot%202026-03-10%20193917.png)
+
 ### Pie
 
 \`\`\`
@@ -604,6 +626,8 @@ pie title Technology Stack Distribution
     "Redis" : 10
     "Docker" : 10
 \`\`\`
+
+![Pie chart rendered in Clovity UML Editor — Technology Stack Distribution example](/images/latex-diagram-confluence/Screenshot%202026-03-10%20194009.png)
 
 ### Mindmap
 
@@ -631,6 +655,8 @@ mindmap
       Monitoring
 \`\`\`
 
+![Mindmap rendered in Clovity UML Editor — Web Application architecture example](/images/latex-diagram-confluence/Screenshot%202026-03-10%20194105.png)
+
 ---
 
 ## UML Viewer Controls
@@ -643,7 +669,31 @@ Opens the modal editor so you can update Mermaid source.
 
 ### Copy Source
 
-Copies the text to clipboard (useful for reuse across pages).
+Copies the Mermaid source text to clipboard (useful for reuse across pages).
+
+### Zoom In / Zoom Out / Reset
+
+* **Zoom In (+)** — enlarges the diagram for easier reading
+* **Zoom Out (−)** — reduces the diagram size
+* **Reset** — returns the diagram to its default zoom level
+
+### Pan
+
+Click and drag on the rendered diagram to pan around large or complex diagrams.
+
+### Fullscreen
+
+Click the Fullscreen button to open the diagram in a fullscreen overlay — useful for large Gantt charts, ERDs, or complex flowcharts.
+
+### Error Panel
+
+If the Mermaid source contains invalid syntax, a red error panel appears below the diagram with details about what failed. Fix the syntax and the diagram re-renders automatically.
+
+### Comments & Reactions
+
+* **View comments** — see any comments left on the diagram block
+* **Add a comment** — leave feedback or notes directly on the diagram
+* **Add a reaction** — add an emoji reaction to the diagram block
 
 ---
 
@@ -767,7 +817,13 @@ Open the modal editor to update LaTeX source.
 
 ### Copy Source
 
-Copies raw LaTeX to clipboard (useful for reuse across docs).`,
+Copies raw LaTeX to clipboard (useful for reuse across docs).
+
+### Comments & Reactions
+
+* **View comments** — see any comments left on the equation block
+* **Add a comment** — leave feedback or context directly on the block
+* **Add a reaction** — add an emoji reaction to the equation block`,
         },
         {
           slug: "latex-inline-equations",
@@ -790,6 +846,8 @@ Clovity LaTeX Inline renders math inside normal text.
 * **Source (left):** normal paragraph text
 * **Preview (right):** rendered text with math
 
+![Clovity LaTeX Inline Editor — Source and Preview panels with formula category tabs (Basic, Algebra, Calculus, etc.)](/images/latex-diagram-confluence/Screenshot%202026-03-10%20192137.png)
+
 ### Writing content
 
 Write like this:
@@ -797,6 +855,8 @@ Write like this:
 * Normal text: \`The area is ...\`
 * Inline math: \`$A=\\\\pi r^2$\`
 * Block math: \`$$L=\\\\sum (y-\\\\hat{y})^2$$\`
+
+![LaTeX Inline Editor showing Calculus tab with Derivative, Chain Rule, and Product Rule formula templates](/images/latex-diagram-confluence/Screenshot%202026-03-10%20192423.png)
 
 ### Saving
 

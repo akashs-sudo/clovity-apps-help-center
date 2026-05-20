@@ -13,7 +13,8 @@ export const reportsChartsConfluenceDocs = {
           title: "What is Reports & Charts for Confluence?",
           sideVideo: {
             src: "https://www.youtube.com/embed/oD5evunAQok",
-            title: "Reports, Charts, Templates, CQL & Export for Confluence - Product Overview",
+            title:
+              "Reports, Charts, Templates, CQL & Export for Confluence - Product Overview",
           },
           content: `
 What Reports, Charts, Templates, CQL & Export for Confluence is and what it can do for you.
@@ -63,13 +64,26 @@ Confluence Cloud only. Installed as a Confluence macro app via the Atlassian Mar
           title: "Demo Videos & Walkthroughs",
           content: `5 step-by-step tutorials covering every feature - click any video to start watching, or use the arrows to go through them in order. New to the app? Start with the [Product Introduction](/apps/reports-charts-confluence/what-is-reports-charts) first.`,
           videoGallery: {
-            playlistUrl: "https://www.youtube.com/watch?v=zTSl0fVYVVA&list=PLACoCS_WiVwT1Rkz4Z29xzo8jQbkx9OZX",
+            playlistUrl:
+              "https://www.youtube.com/watch?v=zTSl0fVYVVA&list=PLACoCS_WiVwT1Rkz4Z29xzo8jQbkx9OZX",
             videos: [
-              { id: "zTSl0fVYVVA", title: "App Overview, Data Sources & CQL Editor" },
-              { id: "sDyyDFBX-hE", title: "Expression Panel, Columns & Block Types" },
+              {
+                id: "zTSl0fVYVVA",
+                title: "App Overview, Data Sources & CQL Editor",
+              },
+              {
+                id: "sDyyDFBX-hE",
+                title: "Expression Panel, Columns & Block Types",
+              },
               { id: "z3z7i2VWwBI", title: "Report Layouts & Charts" },
-              { id: "46zsIYO6r5A", title: "Filtering, Explore Mode and Raw JSON" },
-              { id: "DXGIXkgv8uQ", title: "Templates, Import/Export and Save to Confluence" },
+              {
+                id: "46zsIYO6r5A",
+                title: "Filtering, Explore Mode and Raw JSON",
+              },
+              {
+                id: "DXGIXkgv8uQ",
+                title: "Templates, Import/Export and Save to Confluence",
+              },
             ],
           },
         },

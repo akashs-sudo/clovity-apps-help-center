@@ -7,6 +7,7 @@ import {
 import { dashboardChartsDocs } from "@/data/dashboard-charts-docs";
 import { reportsChartsConfluenceDocs } from "@/data/reports-charts-confluence-docs";
 import { latexDiagramsConfluenceDocs } from "@/data/latex-diagrams-confluence-docs";
+import { jqlaiDocs } from "@/data/jql-ai";
 import { contentFormattingConfluenceDocs } from "@/data/content-formatting-confluence-docs";
 import { backlogAuditorDocs } from "@/data/backlog-auditor-docs";
 import DocSidebar from "@/components/DocSidebar";
@@ -25,6 +26,7 @@ const docsMap = {
   "latex-diagrams-confluence": latexDiagramsConfluenceDocs,
   "content-formatting-confluence": contentFormattingConfluenceDocs,
   "backlog-auditor-jira": backlogAuditorDocs,
+  "jql-ai-jira": jqlaiDocs,
 };
 
 export async function generateStaticParams() {

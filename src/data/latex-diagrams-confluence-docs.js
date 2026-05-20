@@ -7,13 +7,16 @@ export const latexDiagramsConfluenceDocs = {
     {
       id: "getting-started",
       title: "Getting Started",
+      id: "getting-started",
+      title: "Getting Started",
       articles: [
         {
           slug: "what-is-latex-diagrams",
           title: "What is LaTeX Formulas & Diagrams?",
           sideVideo: {
             src: "https://www.youtube.com/embed/K7oRMlvbnJ0",
-            title: "LaTeX Formulas & Diagrams for Confluence - Product Overview",
+            title:
+              "LaTeX Formulas & Diagrams for Confluence - Product Overview",
           },
           content: `
 LaTeX Formulas & Diagrams (Gantt Charts, ERDs & Flowcharts) is a Confluence Cloud app that lets your team embed technical visuals and mathematical formulas directly on Confluence pages - no external tools, no image uploads, no copy-paste workarounds.
@@ -110,9 +113,13 @@ All of this runs natively inside Confluence Cloud using macros - no external ser
           title: "Demo Videos & Walkthroughs",
           content: `2 step-by-step tutorials covering LaTeX equations and UML diagrams - click any video to start watching. New to the app? Start with [What is LaTeX Formulas & Diagrams?](/apps/latex-diagrams-confluence/what-is-latex-diagrams) first.`,
           videoGallery: {
-            playlistUrl: "https://www.youtube.com/watch?v=B-GmmX_FqXc&list=PLACoCS_WiVwR83iIlxm8mX8XwxNjNCjUK",
+            playlistUrl:
+              "https://www.youtube.com/watch?v=B-GmmX_FqXc&list=PLACoCS_WiVwR83iIlxm8mX8XwxNjNCjUK",
             videos: [
-              { id: "B-GmmX_FqXc", title: "Write Perfect LaTeX Equations Easily" },
+              {
+                id: "B-GmmX_FqXc",
+                title: "Write Perfect LaTeX Equations Easily",
+              },
               { id: "55dSYhCHEBQ", title: "Create UML Diagrams Fast and Easy" },
             ],
           },

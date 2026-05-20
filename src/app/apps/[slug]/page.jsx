@@ -3,6 +3,7 @@ import { timeTrackingDocs } from "@/data/time-tracking-docs";
 import { dashboardChartsDocs } from "@/data/dashboard-charts-docs";
 import { reportsChartsConfluenceDocs } from "@/data/reports-charts-confluence-docs";
 import { latexDiagramsConfluenceDocs } from "@/data/latex-diagrams-confluence-docs";
+import { jqlaiDocs } from "@/data/jql-ai";
 import { contentFormattingConfluenceDocs } from "@/data/content-formatting-confluence-docs";
 import { backlogAuditorDocs } from "@/data/backlog-auditor-docs";
 import Sidebar from "@/components/Sidebar";
@@ -42,44 +43,154 @@ const docsMap = {
   "latex-diagrams-confluence": latexDiagramsConfluenceDocs,
   "content-formatting-confluence": contentFormattingConfluenceDocs,
   "backlog-auditor-jira": backlogAuditorDocs,
+  "jql-ai-jira": jqlaiDocs,
 };
 
 const CATEGORY_META = {
-  "Overview":                       { icon: LayoutDashboard, summary: "Bird's-eye view of all features and capabilities." },
-  "Getting Started":                { icon: Rocket,          summary: "Set up the app quickly with step-by-step guides." },
-  "Get Started":                    { icon: Rocket,          summary: "Install and configure the app in just a few steps." },
-  "Capacity Planner & Insight":     { icon: BarChart2,       summary: "Plan team capacity and gain actionable workload insights." },
-  "Time Tracking and Reporting":    { icon: Clock,           summary: "Log work hours and generate detailed time reports." },
-  "Project Portfolio Management":   { icon: Briefcase,       summary: "Manage multiple projects and track cross-portfolio progress." },
-  "Backlog Prioritization":         { icon: ListOrdered,     summary: "Prioritize backlog items to keep the team focused." },
-  "Teams management":               { icon: Users,           summary: "Organize team members, roles, and responsibilities." },
-  "Permissions & RBAC":             { icon: Shield,          summary: "Control access with fine-grained role-based permissions." },
-  "Global Setting":                 { icon: Settings,        summary: "Configure app-wide preferences and default settings." },
-  "Help & Support":                 { icon: LifeBuoy,        summary: "Raise tickets or browse resources to get quick help." },
-  "End User License Agreement (Eula)": { icon: FileText,     summary: "Review the terms and conditions for using this app." },
-  "End User License Agreement":     { icon: FileText,        summary: "Review the licensing terms before using this app." },
-  "Custom Charts Gadget":           { icon: PieChart,        summary: "Build custom chart gadgets to visualize Jira data your way." },
-  "Issue List Gadget":              { icon: List,            summary: "Display filtered Jira issue lists as interactive gadgets." },
-  "Dynamic Filter Controller":      { icon: Filter,          summary: "Control multiple gadgets dynamically with a single filter." },
-  "Admin Settings":                 { icon: Settings2,       summary: "Manage global configurations and admin-level preferences." },
-  "Custom Tabular Report":          { icon: Table,           summary: "Create structured tabular reports from Jira data in Confluence." },
-  "Custom Charts Report":           { icon: BarChart,        summary: "Visualize Jira metrics with customizable chart reports." },
-  "Features":                       { icon: Sparkles,        summary: "Explore all features available in this app." },
-  "Guidelines":                     { icon: BookOpen,        summary: "Best practices and usage guidelines for effective reporting." },
-  "What You Get":                   { icon: Gift,            summary: "Discover what this app brings to your Confluence pages." },
-  "Quick Start":                    { icon: Zap,             summary: "Start rendering LaTeX diagrams in Confluence within minutes." },
-  "Macro Reference":                { icon: Code,            summary: "Full reference for all macro options and syntax." },
-  "User Guide":                     { icon: BookOpen,        summary: "Navigate the app with feature breakdowns, tutorials, and best practices." },
-  "Admin Settings":                 { icon: Settings2,       summary: "Configure global settings, roles, permissions, and data security." },
-  "Release Notes":                  { icon: Sparkles,        summary: "Latest updates, changelog, and upcoming features on the roadmap." },
-  "Integrations & Migration":       { icon: Zap,             summary: "Connect third-party tools and migrate data to or from the app." },
-  "Use Cases":                      { icon: Briefcase,       summary: "Real-world examples, industry scenarios, and ready-to-use templates." },
-  "Help Center":                    { icon: LifeBuoy,        summary: "FAQs, troubleshooting guides, and support contact options." },
-  "Additional Resources":           { icon: FileText,        summary: "Privacy policy, EULA, trust center, and API documentation." },
-  "Building Rulesets":              { icon: Settings2,       summary: "Create and manage rule-based audit checklists for your project." },
-  "Running Audits":                 { icon: BarChart2,       summary: "Execute audits and interpret visual reports and violation data." },
-  "Rule Conditions":                { icon: Filter,          summary: "Explore all supported conditions by field type with examples." },
-  "Safety Nets & Best Practices":   { icon: Shield,          summary: "Unsaved changes protection, safeguards, and tips for effective auditing." },
+  Overview: {
+    icon: LayoutDashboard,
+    summary: "Bird's-eye view of all features and capabilities.",
+  },
+  "Getting Started": {
+    icon: Rocket,
+    summary: "Set up the app quickly with step-by-step guides.",
+  },
+  "Get Started": {
+    icon: Rocket,
+    summary: "Install and configure the app in just a few steps.",
+  },
+  "Capacity Planner & Insight": {
+    icon: BarChart2,
+    summary: "Plan team capacity and gain actionable workload insights.",
+  },
+  "Time Tracking and Reporting": {
+    icon: Clock,
+    summary: "Log work hours and generate detailed time reports.",
+  },
+  "Project Portfolio Management": {
+    icon: Briefcase,
+    summary: "Manage multiple projects and track cross-portfolio progress.",
+  },
+  "Backlog Prioritization": {
+    icon: ListOrdered,
+    summary: "Prioritize backlog items to keep the team focused.",
+  },
+  "Teams management": {
+    icon: Users,
+    summary: "Organize team members, roles, and responsibilities.",
+  },
+  "Permissions & RBAC": {
+    icon: Shield,
+    summary: "Control access with fine-grained role-based permissions.",
+  },
+  "Global Setting": {
+    icon: Settings,
+    summary: "Configure app-wide preferences and default settings.",
+  },
+  "Help & Support": {
+    icon: LifeBuoy,
+    summary: "Raise tickets or browse resources to get quick help.",
+  },
+  "End User License Agreement (Eula)": {
+    icon: FileText,
+    summary: "Review the terms and conditions for using this app.",
+  },
+  "End User License Agreement": {
+    icon: FileText,
+    summary: "Review the licensing terms before using this app.",
+  },
+  "Custom Charts Gadget": {
+    icon: PieChart,
+    summary: "Build custom chart gadgets to visualize Jira data your way.",
+  },
+  "Issue List Gadget": {
+    icon: List,
+    summary: "Display filtered Jira issue lists as interactive gadgets.",
+  },
+  "Dynamic Filter Controller": {
+    icon: Filter,
+    summary: "Control multiple gadgets dynamically with a single filter.",
+  },
+  "Admin Settings": {
+    icon: Settings2,
+    summary: "Manage global configurations and admin-level preferences.",
+  },
+  "Custom Tabular Report": {
+    icon: Table,
+    summary: "Create structured tabular reports from Jira data in Confluence.",
+  },
+  "Custom Charts Report": {
+    icon: BarChart,
+    summary: "Visualize Jira metrics with customizable chart reports.",
+  },
+  Features: {
+    icon: Sparkles,
+    summary: "Explore all features available in this app.",
+  },
+  Guidelines: {
+    icon: BookOpen,
+    summary: "Best practices and usage guidelines for effective reporting.",
+  },
+  "What You Get": {
+    icon: Gift,
+    summary: "Discover what this app brings to your Confluence pages.",
+  },
+  "Quick Start": {
+    icon: Zap,
+    summary: "Start rendering LaTeX diagrams in Confluence within minutes.",
+  },
+  "Macro Reference": {
+    icon: Code,
+    summary: "Full reference for all macro options and syntax.",
+  },
+  "User Guide": {
+    icon: BookOpen,
+    summary:
+      "Navigate the app with feature breakdowns, tutorials, and best practices.",
+  },
+  "Admin Settings": {
+    icon: Settings2,
+    summary:
+      "Configure global settings, roles, permissions, and data security.",
+  },
+  "Release Notes": {
+    icon: Sparkles,
+    summary: "Latest updates, changelog, and upcoming features on the roadmap.",
+  },
+  "Integrations & Migration": {
+    icon: Zap,
+    summary: "Connect third-party tools and migrate data to or from the app.",
+  },
+  "Use Cases": {
+    icon: Briefcase,
+    summary:
+      "Real-world examples, industry scenarios, and ready-to-use templates.",
+  },
+  "Help Center": {
+    icon: LifeBuoy,
+    summary: "FAQs, troubleshooting guides, and support contact options.",
+  },
+  "Additional Resources": {
+    icon: FileText,
+    summary: "Privacy policy, EULA, trust center, and API documentation.",
+  },
+  "Building Rulesets": {
+    icon: Settings2,
+    summary: "Create and manage rule-based audit checklists for your project.",
+  },
+  "Running Audits": {
+    icon: BarChart2,
+    summary: "Execute audits and interpret visual reports and violation data.",
+  },
+  "Rule Conditions": {
+    icon: Filter,
+    summary: "Explore all supported conditions by field type with examples.",
+  },
+  "Safety Nets & Best Practices": {
+    icon: Shield,
+    summary:
+      "Unsaved changes protection, safeguards, and tips for effective auditing.",
+  },
 };
 
 const ACCENT_COLORS = [
@@ -196,7 +307,6 @@ export default async function AppPage({ params }) {
                         />
                       </svg>
                     </a>
-                   
                   </div>
                 </div>
               </div>
@@ -214,7 +324,9 @@ export default async function AppPage({ params }) {
                 const color = ACCENT_COLORS[idx % ACCENT_COLORS.length];
                 const meta = CATEGORY_META[cat.title];
                 const IconComponent = meta?.icon ?? FileText;
-                const summary = meta?.summary ?? `${cat.articles.length} ${cat.articles.length === 1 ? "article" : "articles"}`;
+                const summary =
+                  meta?.summary ??
+                  `${cat.articles.length} ${cat.articles.length === 1 ? "article" : "articles"}`;
                 return (
                   <Link
                     key={cat.id}
@@ -240,9 +352,7 @@ export default async function AppPage({ params }) {
                       </h3>
 
                       {/* Short summary */}
-                      <p className="text-sm text-gray-400 flex-1">
-                        {summary}
-                      </p>
+                      <p className="text-sm text-gray-400 flex-1">{summary}</p>
 
                       {/* CTA */}
                       <div

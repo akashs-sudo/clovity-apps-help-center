@@ -10,10 +10,12 @@ export const dashboardChartsDocs = {
       articles: [
         {
           slug: "what-is-dashboard-charts",
-          title: "What is Dashboard Templates, Charts, Graphs & Reports for Jira?",
+          title:
+            "What is Dashboard Templates, Charts, Graphs & Reports for Jira?",
           sideVideo: {
             src: "https://www.youtube.com/embed/cD2Kdxp59qA",
-            title: "Dashboard Templates, Charts, Graphs & Reports for Jira - Product Overview",
+            title:
+              "Dashboard Templates, Charts, Graphs & Reports for Jira - Product Overview",
           },
           content: `
 Custom Charts for Jira is a reporting app that helps you **see your Jira data in a clear, visual way**.
@@ -71,12 +73,29 @@ Jira Cloud only. Built on Atlassian Forge - no external servers, no data exports
           title: "Demo Videos & Walkthroughs",
           content: `4 step-by-step tutorials covering every gadget - click any video to start watching, or use the arrows to go through them in order. New to the app? Start with the [Product Introduction](/apps/dashboard-charts-jira/what-is-dashboard-charts) first.`,
           videoGallery: {
-            playlistUrl: "https://www.youtube.com/watch?v=ld8eGIIAGzo&list=PLACoCS_WiVwT9chp45LEQYuxXOcRkDAeC",
+            playlistUrl:
+              "https://www.youtube.com/watch?v=ld8eGIIAGzo&list=PLACoCS_WiVwT9chp45LEQYuxXOcRkDAeC",
             videos: [
-              { id: "ld8eGIIAGzo", title: "Dashboard Templates, Charts, Graphs & Reports for Jira - App Overview" },
-              { id: "2QqeABXzzHI", title: "Custom Charts in Jira - Build the Right Chart for Better Insights" },
-              { id: "xco2CqE_64o", title: "Jira Issue List Tutorial - Tables, Filters, Labels & Export Explained" },
-              { id: "Q0NC8CoL5Do", title: "Jira Dynamic Filter Controller - Connect & Control Your Dashboard Like a Pro" },
+              {
+                id: "ld8eGIIAGzo",
+                title:
+                  "Dashboard Templates, Charts, Graphs & Reports for Jira - App Overview",
+              },
+              {
+                id: "2QqeABXzzHI",
+                title:
+                  "Custom Charts in Jira - Build the Right Chart for Better Insights",
+              },
+              {
+                id: "xco2CqE_64o",
+                title:
+                  "Jira Issue List Tutorial - Tables, Filters, Labels & Export Explained",
+              },
+              {
+                id: "Q0NC8CoL5Do",
+                title:
+                  "Jira Dynamic Filter Controller - Connect & Control Your Dashboard Like a Pro",
+              },
             ],
           },
         },

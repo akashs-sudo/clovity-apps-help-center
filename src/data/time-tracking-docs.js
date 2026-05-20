@@ -3033,7 +3033,7 @@ The app processes personal data (Jira usernames, display names, email addresses)
 - Not shared with Clovity or any third party
 - Subject to Atlassian's GDPR Data Processing Agreement (DPA) as the data processor
 
-To exercise GDPR rights (access, deletion, portability) for data in Jira, contact your Jira site administrator. For data stored in Forge KVS by this app, contact **support@clovity.com**.
+To exercise GDPR rights (access, deletion, portability) for data in Jira, contact your Jira site administrator. For data stored in Forge KVS by this app, contact **developers@clovity.com**.
 
 ## Compliance
 
@@ -3043,7 +3043,7 @@ To exercise GDPR rights (access, deletion, portability) for data in Jira, contac
 
 ## Security Contact
 
-Report security vulnerabilities: **support@clovity.com**
+Report security vulnerabilities: **developers@clovity.com**
 Subject line: **Security: [Brief description]**
 Response within 1 business day.`,
         },
@@ -3330,7 +3330,7 @@ To check your current version:
 ## Submit a Feature Request
 
 
-**Email:** support@clovity.com  
+**Email:** developers@clovity.com  
 **Subject line:** Feature Request: [Brief Description]
 
 
@@ -3392,7 +3392,7 @@ The **Portfolio Dashboard Gadget** adds a portfolio metrics widget to any Jira d
 
 ## Roadmap
 
-Third-party integrations (Slack notifications, calendar sync, external reporting tools) are on the product roadmap. Submit your integration request to **support@clovity.com**.`,
+Third-party integrations (Slack notifications, calendar sync, external reporting tools) are on the product roadmap. Submit your integration request to **developers@clovity.com**.`,
         },
         {
           slug: "third-party-apps",
@@ -3431,7 +3431,7 @@ Jira saved filters can be used to create a shared data boundary:
 
 ## Feature Request: Integrations
 
-If you need a specific integration, email **support@clovity.com** with:
+If you need a specific integration, email **developers@clovity.com** with:
 - Subject: **Feature Request: [Tool Name] Integration**
 - What data you need to transfer
 - Which direction (push/pull)
@@ -3471,7 +3471,7 @@ Jira provides official migration tools. For guidance on migrating Jira itself:
 - [Atlassian Cloud Migration Center](https://www.atlassian.com/migration/plan/cloud)
 - Contact Atlassian Support for migration assistance
 
-For questions about the app after migration, contact **support@clovity.com**.`,
+For questions about the app after migration, contact **developers@clovity.com**.`,
         },
         {
           slug: "data-import-export",
@@ -4038,7 +4038,7 @@ No hard limit. Backlog tables with 10,000+ issues or reports spanning years may 
 
 ## Still Having Issues?
 
-Gather: Jira site URL, module you were using, steps to reproduce, and browser console errors (F12 → Console tab). Then contact support at **support@clovity.com**.`,
+Gather: Jira site URL, module you were using, steps to reproduce, and browser console errors (F12 → Console tab). Then contact support at **developers@clovity.com**.`,
         },
         {
           slug: "contact-support",
@@ -4046,7 +4046,7 @@ Gather: Jira site URL, module you were using, steps to reproduce, and browser co
           content: `
 ## Support Email
 
-**Email:** support@clovity.com
+**Email:** developers@clovity.com
 
 **Response Time:** Within 1–2 business days for standard issues; same business day for critical (app completely non-functional) issues.
 
@@ -4089,7 +4089,7 @@ To help us resolve your issue faster, try these steps first:
 
 ## Feature Requests
 
-Email **support@clovity.com** with subject: **"Feature Request: [Brief Description]"**
+Email **developers@clovity.com** with subject: **"Feature Request: [Brief Description]"**
 
 Include what you want to accomplish, why it would be valuable, and current workarounds. All feature requests are reviewed by the product team weekly.`,
         },
@@ -4101,7 +4101,7 @@ Include what you want to accomplish, why it would be valuable, and current worka
 
 The fastest way to get help is via email. Send your request to:
 
-**support@clovity.com**
+**developers@clovity.com**
 
 ### Email Subject Format
 
@@ -4170,7 +4170,7 @@ Have a question, want to share a tip, or looking for how other teams use the app
 
 For private, account-specific questions (billing, licensing, bugs with your specific data), use direct support instead of the community forum:
 
-- **Email:** support@clovity.com
+- **Email:** developers@clovity.com
 - **Atlassian Marketplace:** Support tab on the app's listing page
 
 ---

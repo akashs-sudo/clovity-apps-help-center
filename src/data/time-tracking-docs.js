@@ -3133,37 +3133,37 @@ Links individual staff members to workload schemes.
         {
           slug: "latest-release",
           title: "Latest Release",
-          content: `# Version 6.4.0 — Latest Release
+          content: `# Version 6.4.0 - Latest Release
 
 
 ## What's New
 
 
 ### Time Tracking
-- **Timeline Week View** — New hour-by-hour weekly calendar with drag-and-drop, current time indicator, and worklog blocks with inline Edit / Delete actions
-- **Progress bars in week view headers** — Each day column now shows a color-coded capacity progress bar (red → yellow → green) based on your workload scheme
-- **My Calendar + My Timesheet tabs** — Unified view with tab switcher; both panels stay mounted for instant switching without re-fetching
-- **Period selector** — Quickly jump to a specific approval period directly from the calendar header
-- **Notification bell redesign** — Industry-standard dropdown with read/unread states, type icons, and click-to-navigate to the relevant page
-- **Welcome modal** — First-time users see a guided introduction to Time Tracking
+- **Timeline Week View** - New hour-by-hour weekly calendar with drag-and-drop, current time indicator, and worklog blocks with inline Edit / Delete actions
+- **Progress bars in week view headers** - Each day column now shows a color-coded capacity progress bar (red → yellow → green) based on your workload scheme
+- **My Calendar + My Timesheet tabs** - Unified view with tab switcher; both panels stay mounted for instant switching without re-fetching
+- **Period selector** - Quickly jump to a specific approval period directly from the calendar header
+- **Notification bell redesign** - Industry-standard dropdown with read/unread states, type icons, and click-to-navigate to the relevant page
+- **Welcome modal** - First-time users see a guided introduction to Time Tracking
 
 
 ### Portfolio Management
-- **Share Portfolio** — Share a portfolio view with other team members via a shareable link
-- **View Report from Planner** — Open the associated report directly from the Capacity Planner
-- **Gantt export improvements** — Added zoom level control and progress indicator during PDF/PNG export
+- **Share Portfolio** - Share a portfolio view with other team members via a shareable link
+- **View Report from Planner** - Open the associated report directly from the Capacity Planner
+- **Gantt export improvements** - Added zoom level control and progress indicator during PDF/PNG export
 
 
 ### Approvals
-- **Timesheet approval workflow enhancements** — Improved submit, recall, approve, reject, and grace period flows
-- **Approval notifications** — Bell icon shows real-time approval status changes with navigation to the relevant approval record
+- **Timesheet approval workflow enhancements** - Improved submit, recall, approve, reject, and grace period flows
+- **Approval notifications** - Bell icon shows real-time approval status changes with navigation to the relevant approval record
 
 
 ### Platform
-- **Sidebar redesign** — Industry-standard navigation with colored app icon bubbles, left-border active state, collapsible mode with centered icons, and app switcher dropdown
-- **License gating** — App checks Atlassian Marketplace license on load; shows a clear upgrade screen for inactive licenses
-- **Calendar integration** — Connect and disconnect Google Calendar / Outlook from the Settings → Apps tab
-- **Keyboard navigation** — Improved keyboard accessibility across tables and forms
+- **Sidebar redesign** - Industry-standard navigation with colored app icon bubbles, left-border active state, collapsible mode with centered icons, and app switcher dropdown
+- **License gating** - App checks Atlassian Marketplace license on load; shows a clear upgrade screen for inactive licenses
+- **Calendar integration** - Connect and disconnect Google Calendar / Outlook from the Settings → Apps tab
+- **Keyboard navigation** - Improved keyboard accessibility across tables and forms
 `,
         },
         {
@@ -3219,7 +3219,7 @@ This app is a Jira Cloud-exclusive product built on the Atlassian Forge platform
 | Capability | Detail |
 |---|---|
 | Data residency | All data stored within your Atlassian instance via Forge Storage |
-| Updates | Deployed automatically — no admin action required |
+| Updates | Deployed automatically - no admin action required |
 | Forge runtime | Benefits automatically from Atlassian platform improvements |
 | Security | SOC 2 compliant via Atlassian infrastructure |
 `,
@@ -3230,7 +3230,7 @@ This app is a Jira Cloud-exclusive product built on the Atlassian Forge platform
           content: `# Version History / Changelog
 
 
-## v6.4.0 — Current
+## v6.4.0 - Current
 Timeline week view, capacity progress bars, portfolio sharing, Gantt export improvements, notification bell, license gating, calendar integrations, sidebar redesign
 
 

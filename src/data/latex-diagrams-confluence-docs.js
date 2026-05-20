@@ -552,7 +552,7 @@ flowchart TD
     style Error fill:#FFEBE6
 \`\`\`
 
-![Clovity UML Editor — Source panel on left, rendered diagram Preview on right, Samples button at top](/images/latex-diagram-confluence/Screenshot%202026-03-10%20173235.png)
+![Clovity UML Editor - Source panel on left, rendered diagram Preview on right, Samples button at top](/images/latex-diagram-confluence/Screenshot%202026-03-10%20173235.png)
 
 ### Sequence Diagram
 
@@ -577,7 +577,7 @@ sequenceDiagram
     Note over User,Database: Authentication Flow
 \`\`\`
 
-![Sequence diagram rendered in Clovity UML Editor — authentication flow example](/images/latex-diagram-confluence/Screenshot%202026-03-10%20173425.png)
+![Sequence diagram rendered in Clovity UML Editor - authentication flow example](/images/latex-diagram-confluence/Screenshot%202026-03-10%20173425.png)
 
 ### Class Diagram
 
@@ -599,7 +599,7 @@ class OrderItem {
 }
 \`\`\`
 
-![Class diagram rendered in Clovity UML Editor — Customer, Order, OrderItem example](/images/latex-diagram-confluence/Screenshot%202026-03-10%20173621.png)
+![Class diagram rendered in Clovity UML Editor - Customer, Order, OrderItem example](/images/latex-diagram-confluence/Screenshot%202026-03-10%20173621.png)
 
 ### Gantt
 
@@ -621,7 +621,7 @@ gantt
     Production Deployment    :prod, 2024-04-15, 2024-04-20
 \`\`\`
 
-![Gantt chart rendered in Clovity UML Editor — Project Development Timeline example](/images/latex-diagram-confluence/Screenshot%202026-03-10%20193917.png)
+![Gantt chart rendered in Clovity UML Editor - Project Development Timeline example](/images/latex-diagram-confluence/Screenshot%202026-03-10%20193917.png)
 
 ### Pie
 
@@ -634,7 +634,7 @@ pie title Technology Stack Distribution
     "Docker" : 10
 \`\`\`
 
-![Pie chart rendered in Clovity UML Editor — Technology Stack Distribution example](/images/latex-diagram-confluence/Screenshot%202026-03-10%20194009.png)
+![Pie chart rendered in Clovity UML Editor - Technology Stack Distribution example](/images/latex-diagram-confluence/Screenshot%202026-03-10%20194009.png)
 
 ### Mindmap
 
@@ -662,7 +662,7 @@ mindmap
       Monitoring
 \`\`\`
 
-![Mindmap rendered in Clovity UML Editor — Web Application architecture example](/images/latex-diagram-confluence/Screenshot%202026-03-10%20194105.png)
+![Mindmap rendered in Clovity UML Editor - Web Application architecture example](/images/latex-diagram-confluence/Screenshot%202026-03-10%20194105.png)
 
 ---
 
@@ -680,9 +680,9 @@ Copies the Mermaid source text to clipboard (useful for reuse across pages).
 
 ### Zoom In / Zoom Out / Reset
 
-* **Zoom In (+)** — enlarges the diagram for easier reading
-* **Zoom Out (−)** — reduces the diagram size
-* **Reset** — returns the diagram to its default zoom level
+* **Zoom In (+)** - enlarges the diagram for easier reading
+* **Zoom Out (−)** - reduces the diagram size
+* **Reset** - returns the diagram to its default zoom level
 
 ### Pan
 
@@ -690,7 +690,7 @@ Click and drag on the rendered diagram to pan around large or complex diagrams.
 
 ### Fullscreen
 
-Click the Fullscreen button to open the diagram in a fullscreen overlay — useful for large Gantt charts, ERDs, or complex flowcharts.
+Click the Fullscreen button to open the diagram in a fullscreen overlay - useful for large Gantt charts, ERDs, or complex flowcharts.
 
 ### Error Panel
 
@@ -698,9 +698,9 @@ If the Mermaid source contains invalid syntax, a red error panel appears below t
 
 ### Comments & Reactions
 
-* **View comments** — see any comments left on the diagram block
-* **Add a comment** — leave feedback or notes directly on the diagram
-* **Add a reaction** — add an emoji reaction to the diagram block
+* **View comments** - see any comments left on the diagram block
+* **Add a comment** - leave feedback or notes directly on the diagram
+* **Add a reaction** - add an emoji reaction to the diagram block
 
 ---
 
@@ -828,9 +828,9 @@ Copies raw LaTeX to clipboard (useful for reuse across docs).
 
 ### Comments & Reactions
 
-* **View comments** — see any comments left on the equation block
-* **Add a comment** — leave feedback or context directly on the block
-* **Add a reaction** — add an emoji reaction to the equation block`,
+* **View comments** - see any comments left on the equation block
+* **Add a comment** - leave feedback or context directly on the block
+* **Add a reaction** - add an emoji reaction to the equation block`,
         },
         {
           slug: "latex-inline-equations",
@@ -853,7 +853,7 @@ Clovity LaTeX Inline renders math inside normal text.
 * **Source (left):** normal paragraph text
 * **Preview (right):** rendered text with math
 
-![Clovity LaTeX Inline Editor — Source and Preview panels with formula category tabs (Basic, Algebra, Calculus, etc.)](/images/latex-diagram-confluence/Screenshot%202026-03-10%20192137.png)
+![Clovity LaTeX Inline Editor - Source and Preview panels with formula category tabs (Basic, Algebra, Calculus, etc.)](/images/latex-diagram-confluence/Screenshot%202026-03-10%20192137.png)
 
 ### Writing content
 
@@ -1134,7 +1134,7 @@ gantt
           content: `
 ## Overview
 
-The Formula Library is a curated collection of ready-to-use LaTeX formulas organized into 11 subject categories. Use it as a quick reference when writing technical documentation — copy any formula into the LaTeX Block or LaTeX Inline macro and customize as needed.
+The Formula Library is a curated collection of ready-to-use LaTeX formulas organized into 11 subject categories. Use it as a quick reference when writing technical documentation - copy any formula into the LaTeX Block or LaTeX Inline macro and customize as needed.
 
 ## How to Use This Library
 
@@ -1142,7 +1142,7 @@ The Formula Library is a curated collection of ready-to-use LaTeX formulas organ
 2. Copy the LaTeX source code shown
 3. Open a **Clovity LaTeX Block** macro on your Confluence page
 4. Paste the formula into the Source panel
-5. The Preview panel renders it immediately — adjust as needed and Save
+5. The Preview panel renders it immediately - adjust as needed and Save
 
 ---
 
@@ -1397,7 +1397,7 @@ f(x) = \\begin{cases}
           content: `
 ## Overview
 
-The Clovity Diagrams macro supports **12 Mermaid diagram types**. This reference covers the syntax header, best use cases, and a minimal working example for each type — so you can choose the right diagram for your documentation and start writing immediately.
+The Clovity Diagrams macro supports **12 Mermaid diagram types**. This reference covers the syntax header, best use cases, and a minimal working example for each type - so you can choose the right diagram for your documentation and start writing immediately.
 
 ---
 
@@ -1696,7 +1696,7 @@ This page shows real-world documentation scenarios where LaTeX Formulas & Diagra
 
 **Macro:** Clovity LaTeX Block
 
-**Example — Three Nines SLA:**
+**Example - Three Nines SLA:**
 
 \`\`\`
 \\text{Availability} = \\frac{\\text{MTBF}}{\\text{MTBF} + \\text{MTTR}} = 99.9\\%
@@ -1719,7 +1719,7 @@ This page shows real-world documentation scenarios where LaTeX Formulas & Diagra
 
 **Macro:** Clovity Diagrams → erDiagram
 
-**Example — E-commerce Order Service:**
+**Example - E-commerce Order Service:**
 
 \`\`\`
 erDiagram
@@ -1754,7 +1754,7 @@ erDiagram
   PRODUCT ||--o{ ORDER_ITEM : "is in"
 \`\`\`
 
-**Why this beats a screenshot:** The Mermaid source is editable directly on the Confluence page — no need to update an image file when the schema changes.
+**Why this beats a screenshot:** The Mermaid source is editable directly on the Confluence page - no need to update an image file when the schema changes.
 
 ---
 
@@ -1847,7 +1847,7 @@ flowchart LR
 
 \`\`\`
 gantt
-  title Sprint 42 — Feature: Payments Module
+  title Sprint 42 - Feature: Payments Module
   dateFormat YYYY-MM-DD
   section Backend
   Payment API design     :done, 2024-03-01, 2024-03-04
@@ -1867,7 +1867,7 @@ gantt
 
 | Tip | Detail |
 |---|---|
-| **Embed diagrams in ADRs** | Sequence and ERD diagrams belong directly in the spec — no separate diagram files to maintain |
+| **Embed diagrams in ADRs** | Sequence and ERD diagrams belong directly in the spec - no separate diagram files to maintain |
 | **Use LaTeX for formal definitions** | When defining metrics or algorithms, use LaTeX Block to show the formula alongside the prose |
 | **Inline math for quick references** | Use LaTeX Inline to reference formula variables inside a sentence without breaking reading flow |
 | **Version diagrams with the page** | Since diagram source lives in the page, Confluence page history tracks diagram changes automatically |

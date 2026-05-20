@@ -2027,7 +2027,7 @@ Step-by-step instructions for the most common tasks in Reports, Charts, Template
           content: `
 ## What Are Pre-Built Reports?
 
-Pre-built reports are ready-to-use templates in the **Templates** tab of the Reports, Charts, Templates, CQL & Export macro editor. Each template pre-configures data source, expansions, columns, filters, and view — you can use them immediately or customize from the pre-configured baseline.
+Pre-built reports are ready-to-use templates in the **Templates** tab of the Reports, Charts, Templates, CQL & Export macro editor. Each template pre-configures data source, expansions, columns, filters, and view - you can use them immediately or customize from the pre-configured baseline.
 
 The template library includes **35 tabular templates** and **17 chart templates** covering the most common Confluence reporting scenarios.
 
@@ -2042,7 +2042,7 @@ Shows pages not updated in the last 90 days (configurable threshold).
 **Best for:** Identifying outdated documentation for review or archiving
 
 ### 3. Orphaned Pages Report
-Lists pages with no parent, no child pages, and no inbound links — disconnected from the rest of the space.
+Lists pages with no parent, no child pages, and no inbound links - disconnected from the rest of the space.
 **Best for:** Finding abandoned or stranded content
 
 ### 4. Top Contributors Report
@@ -2078,7 +2078,7 @@ Pages updated in the last 7 days (configurable), sorted by last modified date.
 **Best for:** Staying current on team documentation activity
 
 ### 12. Page Version History
-Shows version history metrics — number of versions, last version author, change frequency.
+Shows version history metrics - number of versions, last version author, change frequency.
 **Best for:** Understanding document evolution, finding frequently revised pages
 
 ### 13. Space Comparison Report
@@ -2112,7 +2112,7 @@ Shows which labels are most commonly applied across your Confluence content.
 3. Browse or search for the template you want
 4. Click a template card to preview its configuration
 5. Click **Use Template** to apply it
-6. The Live Preview loads data immediately — review to verify it matches your expectations
+6. The Live Preview loads data immediately - review to verify it matches your expectations
 7. Customize columns, filters, or chart settings if needed
 8. Click **Save** to publish the report to the Confluence page
 
@@ -2121,7 +2121,7 @@ Shows which labels are most commonly applied across your Confluence content.
 Templates are locked by default to prevent accidental modification.
 
 1. After applying a template, click the **Edit** (lock/unlock) icon in the center panel
-2. A confirmation prompt appears — click **Unlock**
+2. A confirmation prompt appears - click **Unlock**
 3. The template is now fully editable
 4. Make your adjustments and click **Save**
 
@@ -2139,7 +2139,7 @@ Reports, Charts, Templates, CQL & Export for Confluence supports exporting repor
 
 | Report Type | CSV Export | JSON Export |
 |---|---|---|
-| **Table** | Yes — all visible columns | Yes — full raw API response |
+| **Table** | Yes - all visible columns | Yes - full raw API response |
 | **List** | Yes | Yes |
 | **Paragraph** | No | Yes |
 | **Grid** | No | Yes |
@@ -2150,7 +2150,7 @@ Reports, Charts, Templates, CQL & Export for Confluence supports exporting repor
 CSV export is available for Table and List report types.
 
 1. In the macro editor, set **Report Type** to **Table** or **List**
-2. Configure your columns and filters — the CSV will contain exactly the columns visible in the preview
+2. Configure your columns and filters - the CSV will contain exactly the columns visible in the preview
 3. Set **Result Limit** to the maximum number of records you want (e.g., 1000 for a full export)
 4. In the center panel, click the **Export** button
 5. Select **CSV** from the options
@@ -2171,7 +2171,7 @@ CSV export is available for Table and List report types.
 |---|---|
 | **Microsoft Excel** | File → Open → select the CSV file. Set delimiter to comma if prompted. |
 | **Google Sheets** | File → Import → Upload → select the CSV file → Import data |
-| **Numbers (Mac)** | Double-click the CSV file — Numbers opens it automatically |
+| **Numbers (Mac)** | Double-click the CSV file - Numbers opens it automatically |
 
 > **Tip:** If date columns appear as numbers in Excel, format those cells as Date in Excel's cell format options.
 
@@ -2186,11 +2186,11 @@ JSON export is available from all report types.
 
 ### What the JSON Contains
 
-The JSON export is the complete Confluence REST API response for your query — it includes all fields available in the API, not just the columns you configured in the report. This is useful for:
+The JSON export is the complete Confluence REST API response for your query - it includes all fields available in the API, not just the columns you configured in the report. This is useful for:
 
 - Developers who need the full data payload for processing
 - Data analysts who want to explore fields not shown in the table view
-- Debugging — verifying that a field exists and contains the expected value
+- Debugging - verifying that a field exists and contains the expected value
 
 ### Working with JSON Data
 
@@ -2217,11 +2217,11 @@ In addition to data export, you can share the **report configuration** as a JSON
 
 1. Open the macro editor for the report you want to share
 2. In the right panel, click the **Import** tab
-3. Click **Copy JSON** — this copies the full report configuration to your clipboard
+3. Click **Copy JSON** - this copies the full report configuration to your clipboard
 4. Paste the JSON into a shared Confluence page or a team repository
 5. Team members can recreate the exact report: open the macro editor → Import tab → paste the JSON → Save
 
-This is different from a data export — it exports the configuration (columns, filters, data source settings), not the report results.`,
+This is different from a data export - it exports the configuration (columns, filters, data source settings), not the report results.`,
         },
       ],
     },

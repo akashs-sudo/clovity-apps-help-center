@@ -8,7 +8,7 @@ export default function DocSidebar({ docs, appSlug, activeArticleSlug }) {
   const SCROLL_KEY = `sidebar-scroll-${appSlug}`;
   const OPEN_KEY = `sidebar-open-${appSlug}`;
 
-  // Server-safe default — no sessionStorage here (avoids hydration mismatch)
+  // Server-safe default - no sessionStorage here (avoids hydration mismatch)
   const [openCategories, setOpenCategories] = useState(() => {
     const initial = {};
     for (const cat of docs.categories) {
@@ -17,7 +17,7 @@ export default function DocSidebar({ docs, appSlug, activeArticleSlug }) {
     return initial;
   });
 
-  // Restore open state + scroll before first paint — eliminates flicker
+  // Restore open state + scroll before first paint - eliminates flicker
   useLayoutEffect(() => {
     try {
       const saved = sessionStorage.getItem(OPEN_KEY);

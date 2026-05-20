@@ -15,17 +15,17 @@ export const jqlaiDocs = {
             title: "JQL AI for Jira - Product Overview",
           },
           content: `
-JQL AI is a Jira Cloud app that converts plain English questions into accurate Jira Query Language (JQL) queries — instantly. You describe what you want to find, and the AI writes the query for you.
+JQL AI is a Jira Cloud app that converts plain English questions into accurate Jira Query Language (JQL) queries - instantly. You describe what you want to find, and the AI writes the query for you.
 
 ## Core Value Proposition
 
-- **No JQL knowledge required** — type what you want in plain English and get a ready-to-use JQL query
-- **Works globally and per-project** — use it for system-wide searches or narrow it to a single project
-- **Quick Actions for common searches** — one-click queries for Open, Closed, and In-Progress issues
-- **Copy or search directly** — paste the JQL elsewhere or apply it in Jira Issue Navigator immediately
-- **Admin controls** — enable or disable the app at the global or individual project level
+- **No JQL knowledge required** - type what you want in plain English and get a ready-to-use JQL query
+- **Works globally and per-project** - use it for system-wide searches or narrow it to a single project
+- **Quick Actions for common searches** - one-click queries for Open, Closed, and In-Progress issues
+- **Copy or search directly** - paste the JQL elsewhere or apply it in Jira Issue Navigator immediately
+- **Admin controls** - enable or disable the app at the global or individual project level
 
-All of this runs natively inside Jira Cloud using your existing projects, issues, and permissions — no external accounts or data exports needed.
+All of this runs natively inside Jira Cloud using your existing projects, issues, and permissions - no external accounts or data exports needed.
 
 <!--VIDEO_BREAK-->
 
@@ -39,7 +39,7 @@ All of this runs natively inside Jira Cloud using your existing projects, issues
 
 ## How It Works
 
-JQL AI uses AI to interpret your natural language input and map it to the correct JQL fields, operators, and values for your Jira instance. It auto-discovers your project's custom fields and includes them in query generation — so the output is accurate for your specific configuration, not just generic JQL.
+JQL AI uses AI to interpret your natural language input and map it to the correct JQL fields, operators, and values for your Jira instance. It auto-discovers your project's custom fields and includes them in query generation - so the output is accurate for your specific configuration, not just generic JQL.
 
 ## Platform
 
@@ -54,7 +54,7 @@ Jira Cloud only. No external server setup required.`,
 Before installing, confirm:
 
 1. You are a **Jira Cloud site administrator** (required to install Marketplace apps)
-2. Your Jira instance is **Jira Cloud** — this app does not support Server or Data Center
+2. Your Jira instance is **Jira Cloud** - this app does not support Server or Data Center
 3. You have access to the **Atlassian Marketplace** from your Jira instance
 4. Your organization has a valid **OpenAI API key** (required for AI query generation)
 
@@ -67,7 +67,7 @@ Before installing, confirm:
 5. Click the app in the search results
 6. Click **Try it free** or **Buy now**
 7. Review and accept the requested permissions
-8. Click **Accept** — the app installs immediately, no restart required
+8. Click **Accept** - the app installs immediately, no restart required
 
 ## Verify Installation
 
@@ -75,7 +75,7 @@ After installation:
 
 1. Click **Apps** in the Jira top navigation bar
 2. Look for **"JQL AI"** in the dropdown
-3. Navigate to any Jira project — you should see the JQL AI option available in the Issue Navigator
+3. Navigate to any Jira project - you should see the JQL AI option available in the Issue Navigator
 
 ## First Admin Steps
 
@@ -110,13 +110,13 @@ Get your first AI-generated JQL query in under 2 minutes.
 
 ## Step 1 - Open JQL AI
 
-**Option A — From the Issue Navigator:**
+**Option A - From the Issue Navigator:**
 1. Click **Issues** in the Jira top navigation
 2. Select **Search for Issues**
 3. Look for the **AI** button added by JQL AI in the search bar area
 4. Click it to open the natural language input panel
 
-**Option B — From a Project:**
+**Option B - From a Project:**
 1. Open any Jira project
 2. Go to the project's Issue Navigator or Backlog
 3. Look for the **JQL AI** option in the toolbar
@@ -136,16 +136,16 @@ Press **Enter** or click **Convert**.
 
 JQL AI displays the generated query. You have two options:
 
-- **Copy** — copies the JQL to your clipboard to paste wherever you need it
-- **Search in Jira** — applies the JQL directly in the Issue Navigator and shows results immediately
+- **Copy** - copies the JQL to your clipboard to paste wherever you need it
+- **Search in Jira** - applies the JQL directly in the Issue Navigator and shows results immediately
 
 ## Step 4 - Try a Quick Action
 
 Below the input box you'll see pre-built Quick Actions:
 
-- **Open Issues** — instantly generates JQL for all open issues
-- **Closed Issues** — all resolved/closed issues
-- **In-Progress Issues** — issues currently in an active workflow status
+- **Open Issues** - instantly generates JQL for all open issues
+- **Closed Issues** - all resolved/closed issues
+- **In-Progress Issues** - issues currently in an active workflow status
 
 Click any Quick Action to generate and apply the query without typing anything.`,
         },
@@ -166,7 +166,7 @@ Click any Quick Action to generate and apply the query without typing anything.`
 
 | Browser | Supported |
 |---|---|
-| Google Chrome (latest) | Yes — recommended |
+| Google Chrome (latest) | Yes - recommended |
 | Mozilla Firefox (latest) | Yes |
 | Microsoft Edge (latest) | Yes |
 | Safari (latest) | Yes |
@@ -182,9 +182,9 @@ A valid **OpenAI API key** must be configured by a Jira admin in the app's admin
 
 ## Permissions
 
-- **Site Administrators** — required to install and configure the app, set the API key, and manage global/project-level access
-- **Project Administrators** — can enable or disable JQL AI for their specific project
-- **All Jira users** — can use JQL AI to generate and run queries (subject to admin-configured access settings)`,
+- **Site Administrators** - required to install and configure the app, set the API key, and manage global/project-level access
+- **Project Administrators** - can enable or disable JQL AI for their specific project
+- **All Jira users** - can use JQL AI to generate and run queries (subject to admin-configured access settings)`,
         },
         {
           slug: "permissions-access",
@@ -198,7 +198,7 @@ JQL AI uses two levels of access control:
 A Jira site administrator can enable or disable JQL AI across all projects in the instance. When disabled globally, no user in any project can access JQL AI features.
 
 ### 2. Project Level
-A project administrator can enable or disable JQL AI for their specific project, independent of other projects. This allows fine-grained control — for example, enabling JQL AI only for certain teams or projects.
+A project administrator can enable or disable JQL AI for their specific project, independent of other projects. This allows fine-grained control - for example, enabling JQL AI only for certain teams or projects.
 
 ## Who Can Do What
 
@@ -219,7 +219,7 @@ A project administrator can enable or disable JQL AI for their specific project,
 
 ## Data Access
 
-JQL AI reads your Jira project configuration (issue types, statuses, custom fields) to generate accurate queries. It does not read the content of your issues (summaries, descriptions, comments). Query input text is sent to OpenAI for processing — review your organization's data handling policies before enabling for sensitive projects.`,
+JQL AI reads your Jira project configuration (issue types, statuses, custom fields) to generate accurate queries. It does not read the content of your issues (summaries, descriptions, comments). Query input text is sent to OpenAI for processing - review your organization's data handling policies before enabling for sensitive projects.`,
         },
       ],
     },
@@ -270,12 +270,12 @@ Accessible only to Jira administrators. Used to configure API keys, enable/disab
 ## Interface Layout
 
 The JQL AI panel contains:
-- **Natural language input box** — where you type your query in plain English
-- **Convert / Enter button** — triggers AI query generation
-- **Generated JQL display** — shows the converted JQL query
-- **Copy button** — copies the JQL to clipboard
-- **Search in Jira button** — applies the query and opens issue results
-- **Quick Actions** — pre-built buttons for common searches`,
+- **Natural language input box** - where you type your query in plain English
+- **Convert / Enter button** - triggers AI query generation
+- **Generated JQL display** - shows the converted JQL query
+- **Copy button** - copies the JQL to clipboard
+- **Search in Jira button** - applies the query and opens issue results
+- **Quick Actions** - pre-built buttons for common searches`,
         },
         {
           slug: "key-features",
@@ -309,28 +309,28 @@ Three pre-configured one-click query generators:
 | Closed Issues | All resolved or closed issues |
 | In-Progress Issues | All issues in an active in-progress status |
 
-Quick Actions apply instantly — no typing required.
+Quick Actions apply instantly - no typing required.
 
 ## Copy and Search in Jira
 
 After generating a query, you have two options:
 
-- **Copy** — copies the raw JQL string to your clipboard. Use it in saved filters, automation rules, dashboards, or external tools.
-- **Search in Jira** — opens the Jira Issue Navigator with the query pre-applied and results loaded immediately.
+- **Copy** - copies the raw JQL string to your clipboard. Use it in saved filters, automation rules, dashboards, or external tools.
+- **Search in Jira** - opens the Jira Issue Navigator with the query pre-applied and results loaded immediately.
 
 ## Custom Field Discovery
 
-JQL AI automatically detects the custom fields configured in your Jira instance and project. When you mention a concept that maps to a custom field (e.g., "story points", "team", "sprint"), the app uses the correct field name and schema for your configuration — not a generic guess.
+JQL AI automatically detects the custom fields configured in your Jira instance and project. When you mention a concept that maps to a custom field (e.g., "story points", "team", "sprint"), the app uses the correct field name and schema for your configuration - not a generic guess.
 
 ## Dark Mode Support
 
-JQL AI's interface fully supports Jira's dark mode. The query input panel, generated JQL display, Quick Action buttons, and all UI elements automatically adapt to your Jira theme setting — no extra configuration needed.`,
+JQL AI's interface fully supports Jira's dark mode. The query input panel, generated JQL display, Quick Action buttons, and all UI elements automatically adapt to your Jira theme setting - no extra configuration needed.`,
         },
         {
           slug: "how-to-tutorials",
           title: "How-To Tutorials",
           content: `
-## Tutorial 1 — Find All Open Bugs in a Project
+## Tutorial 1 - Find All Open Bugs in a Project
 
 **Goal:** Get a list of all unresolved bugs in a specific project.
 
@@ -343,7 +343,7 @@ JQL AI's interface fully supports Jira's dark mode. The query input panel, gener
 
 ---
 
-## Tutorial 2 — Find Overdue Issues Assigned to You
+## Tutorial 2 - Find Overdue Issues Assigned to You
 
 **Goal:** Surface issues past their due date that you are responsible for.
 
@@ -355,7 +355,7 @@ JQL AI's interface fully supports Jira's dark mode. The query input panel, gener
 
 ---
 
-## Tutorial 3 — Use a Quick Action
+## Tutorial 3 - Use a Quick Action
 
 **Goal:** Instantly see all in-progress work without typing anything.
 
@@ -366,7 +366,7 @@ JQL AI's interface fully supports Jira's dark mode. The query input panel, gener
 
 ---
 
-## Tutorial 4 — Multi-Project Search via Global Search
+## Tutorial 4 - Multi-Project Search via Global Search
 
 **Goal:** Find high-priority bugs across all projects.
 
@@ -379,7 +379,7 @@ JQL AI's interface fully supports Jira's dark mode. The query input panel, gener
 
 ---
 
-## Tutorial 5 — Copy JQL for a Saved Filter
+## Tutorial 5 - Copy JQL for a Saved Filter
 
 **Goal:** Create a reusable filter you can share with your team.
 
@@ -397,7 +397,7 @@ JQL AI's interface fully supports Jira's dark mode. The query input panel, gener
           content: `
 ## How to Write Good Queries
 
-JQL AI works best when your query is specific and describes what you want to find. You don't need to use Jira terminology — plain English is fine.
+JQL AI works best when your query is specific and describes what you want to find. You don't need to use Jira terminology - plain English is fine.
 
 ## Good Query Examples
 
@@ -416,15 +416,15 @@ JQL AI works best when your query is specific and describes what you want to fin
 
 ## Tips for Best Results
 
-1. **Be specific about status** — say "open", "closed", "in progress", "done", "unresolved" rather than vague terms
-2. **Name the issue type** — say "bug", "story", "task", "epic", "sub-task"
-3. **Use relative time** — "last week", "this sprint", "last 30 days", "this quarter" all work
-4. **Name your project** — if doing a global search, you can say "in Project X"
-5. **Reference people by name** — "assigned to Jane" or "assigned to me"
+1. **Be specific about status** - say "open", "closed", "in progress", "done", "unresolved" rather than vague terms
+2. **Name the issue type** - say "bug", "story", "task", "epic", "sub-task"
+3. **Use relative time** - "last week", "this sprint", "last 30 days", "this quarter" all work
+4. **Name your project** - if doing a global search, you can say "in Project X"
+5. **Reference people by name** - "assigned to Jane" or "assigned to me"
 
 ## What JQL AI Does Not Support
 
-- Queries about issue content (e.g., "find issues mentioning API errors in comments") — JQL cannot search issue comment text natively
+- Queries about issue content (e.g., "find issues mentioning API errors in comments") - JQL cannot search issue comment text natively
 - Queries requiring real-time external data (e.g., "issues where the linked PR is failing CI")
 - Queries that reference Jira configurations not accessible via JQL (e.g., certain read-only field values)
 
@@ -438,14 +438,14 @@ If your query cannot be converted, JQL AI will indicate the limitation and sugge
 
 After clicking Convert, JQL AI displays the generated query in a read-only text area. Review it before applying:
 
-- **Field names** — check that the fields used (e.g., \`issuetype\`, \`assignee\`, \`status\`) match what you intended
-- **Operators** — \`=\`, \`!=\`, \`in\`, \`not in\`, \`is\`, \`is EMPTY\` should match your intent
-- **Values** — status values and issue type names are taken from your Jira configuration
-- **Functions** — \`currentUser()\`, \`now()\`, \`startOfWeek()\`, \`openSprints()\` are used where appropriate
+- **Field names** - check that the fields used (e.g., \`issuetype\`, \`assignee\`, \`status\`) match what you intended
+- **Operators** - \`=\`, \`!=\`, \`in\`, \`not in\`, \`is\`, \`is EMPTY\` should match your intent
+- **Values** - status values and issue type names are taken from your Jira configuration
+- **Functions** - \`currentUser()\`, \`now()\`, \`startOfWeek()\`, \`openSprints()\` are used where appropriate
 
 ## Two Ways to Use the Result
 
-### Option 1 — Search in Jira
+### Option 1 - Search in Jira
 
 Click **Search in Jira** to immediately apply the query and load results in the Jira Issue Navigator. This is the fastest way to see your results.
 
@@ -456,7 +456,7 @@ From the Issue Navigator you can:
 - Export to CSV
 - Save as a Jira filter
 
-### Option 2 — Copy
+### Option 2 - Copy
 
 Click **Copy** to copy the raw JQL string to your clipboard. Use it to:
 - Paste into Jira's JQL editor manually
@@ -473,7 +473,7 @@ If the generated JQL is close but not quite right:
 2. Make manual edits (e.g., add a project filter, change a date range, add an \`ORDER BY\`)
 3. Run the refined query
 
-JQL AI is a starting point — for complex queries, using the generated JQL as a base and editing it in Jira is the recommended workflow.`,
+JQL AI is a starting point - for complex queries, using the generated JQL as a base and editing it in Jira is the recommended workflow.`,
         },
         {
           slug: "quick-actions",
@@ -481,7 +481,7 @@ JQL AI is a starting point — for complex queries, using the generated JQL as a
           content: `
 ## What Are Quick Actions?
 
-Quick Actions are pre-configured query shortcuts built into JQL AI. Click them to generate and apply a JQL query instantly — no typing required.
+Quick Actions are pre-configured query shortcuts built into JQL AI. Click them to generate and apply a JQL query instantly - no typing required.
 
 ## Available Quick Actions
 
@@ -645,11 +645,11 @@ If you're inside a project and type a query that references multiple projects (e
           content: `
 ## Writing Better Queries
 
-1. **Be specific about what you want** — "open high-priority bugs" is better than "important issues"
-2. **Use Jira terminology when you know it** — terms like "story points", "epic", "sprint", "assignee" are understood directly
-3. **Mention time frames explicitly** — "last week", "this month", "past 30 days" produce accurate date filters
-4. **Specify the issue type** — Bug, Story, Task, Epic, Sub-task generate more precise queries
-5. **Use "assigned to me"** — JQL AI maps this to \`currentUser()\` so the filter works for every user who runs it
+1. **Be specific about what you want** - "open high-priority bugs" is better than "important issues"
+2. **Use Jira terminology when you know it** - terms like "story points", "epic", "sprint", "assignee" are understood directly
+3. **Mention time frames explicitly** - "last week", "this month", "past 30 days" produce accurate date filters
+4. **Specify the issue type** - Bug, Story, Task, Epic, Sub-task generate more precise queries
+5. **Use "assigned to me"** - JQL AI maps this to \`currentUser()\` so the filter works for every user who runs it
 
 ## Saving and Reusing Queries
 
@@ -670,7 +670,7 @@ For daily use, Quick Actions (Open Issues, Closed Issues, In-Progress Issues) ar
 
 ## When to Use Global vs. Project Search
 
-- Use **Project Search** for day-to-day work within your project — it's faster and auto-scopes results
+- Use **Project Search** for day-to-day work within your project - it's faster and auto-scopes results
 - Use **Global Search** for cross-team reporting, portfolio views, or when you're not sure which project an issue is in`,
         },
       ],
@@ -823,7 +823,7 @@ JQL AI uses OpenAI's language models to understand natural language and generate
 ## Usage and Billing
 
 - Each JQL AI query generation request consumes a small number of OpenAI API tokens
-- Token consumption varies with query complexity — simple queries use fewer tokens than complex multi-condition ones
+- Token consumption varies with query complexity - simple queries use fewer tokens than complex multi-condition ones
 - Monitor your OpenAI usage dashboard to track costs
 - Consider setting a **usage limit** on your OpenAI account to cap monthly spend
 
@@ -910,7 +910,7 @@ Project administrators can now enable or disable JQL AI independently for their 
 The built-in security filter has been updated to better handle edge cases and reduce false positives on legitimate Jira-related queries.
 
 ### Quick Action Workflow Mapping
-Quick Actions (Open Issues, Closed Issues, In-Progress Issues) now map to the actual status values in your project's workflow — not generic defaults — resulting in more accurate instant queries.
+Quick Actions (Open Issues, Closed Issues, In-Progress Issues) now map to the actual status values in your project's workflow - not generic defaults - resulting in more accurate instant queries.
 
 ---
 
@@ -935,11 +935,11 @@ Report issues to **developers@clovity.com**.`,
 
 ## Changelog
 
-### v2.4.0 — April 10, 2025
+### v2.4.0 - April 10, 2025
 
 **New Features**
-- Dark mode support — JQL AI UI now adapts to Jira's dark theme automatically
-- Query moderation improvements — enhanced security filter accuracy with fewer false positives
+- Dark mode support - JQL AI UI now adapts to Jira's dark theme automatically
+- Query moderation improvements - enhanced security filter accuracy with fewer false positives
 
 **Improvements**
 - Faster API response times via OpenAI integration optimizations
@@ -947,7 +947,7 @@ Report issues to **developers@clovity.com**.`,
 
 ---
 
-### v1.x — Initial Release
+### v1.x - Initial Release
 - AI-powered natural language to JQL conversion
 - Global Search and Project-Specific Search modes
 - Quick Actions: Open Issues, Closed Issues, In-Progress Issues
@@ -967,7 +967,7 @@ Report issues to **developers@clovity.com**.`,
 
 ## Versioning Policy
 
-JQL AI follows a continuous delivery model on Jira Cloud. Updates are deployed automatically — no manual upgrade steps are required. The version in Jira Manage Apps always reflects the latest deployed version.`,
+JQL AI follows a continuous delivery model on Jira Cloud. Updates are deployed automatically - no manual upgrade steps are required. The version in Jira Manage Apps always reflects the latest deployed version.`,
         },
         {
           slug: "roadmap",
@@ -977,19 +977,19 @@ JQL AI follows a continuous delivery model on Jira Cloud. Updates are deployed a
 
 | Feature | Status |
 |---|---|
-| Query history — recall your last 10 generated queries | In Progress |
-| Suggested refinements — AI proposes alternative queries if the first attempt is ambiguous | In Progress |
-| Saved query templates — save and name frequently used natural language prompts | In Progress |
+| Query history - recall your last 10 generated queries | In Progress |
+| Suggested refinements - AI proposes alternative queries if the first attempt is ambiguous | In Progress |
+| Saved query templates - save and name frequently used natural language prompts | In Progress |
 
 ## Planned
 
 | Feature | Status |
 |---|---|
 | Multi-language input support (Spanish, French, German) | Planned |
-| JQL explanation mode — paste JQL and get a plain-English explanation | Planned |
-| Team-level Quick Actions — admins can define custom Quick Action buttons | Planned |
-| Integration with Jira Automation — use JQL AI to generate trigger conditions | Planned |
-| Confluence integration — use natural language to search Jira from within Confluence | Planned |
+| JQL explanation mode - paste JQL and get a plain-English explanation | Planned |
+| Team-level Quick Actions - admins can define custom Quick Action buttons | Planned |
+| Integration with Jira Automation - use JQL AI to generate trigger conditions | Planned |
+| Confluence integration - use natural language to search Jira from within Confluence | Planned |
 
 ## Under Research
 
@@ -1026,7 +1026,7 @@ Include what you want to accomplish, why it's valuable to your team, and your cu
 **Who:** Team Lead or Scrum Master
 **When:** Before or during daily standup
 
-The lead opens JQL AI in the project and clicks the **In-Progress Issues** Quick Action. The query fires instantly and displays all issues the team is currently working on. No filter setup needed — it takes under 10 seconds.
+The lead opens JQL AI in the project and clicks the **In-Progress Issues** Quick Action. The query fires instantly and displays all issues the team is currently working on. No filter setup needed - it takes under 10 seconds.
 
 **JQL generated:** \`status = "In Progress" AND project = "CURRENT_PROJECT"\`
 
@@ -1048,7 +1048,7 @@ The PM types "Show all stories completed this sprint" into JQL AI. The app gener
 **Who:** New Jira user
 **When:** First week on the job
 
-The new hire doesn't know JQL at all. They type "Find all tasks assigned to me that are still open" and immediately get a working query. They save it as a personal filter for daily use — no JQL training required.
+The new hire doesn't know JQL at all. They type "Find all tasks assigned to me that are still open" and immediately get a working query. They save it as a personal filter for daily use - no JQL training required.
 
 **JQL generated:** \`assignee = currentUser() AND status not in (Done, Closed)\`
 
@@ -1197,12 +1197,12 @@ component = "Authentication" AND status not in (Done, Closed)
 
 ## IT Operations Teams
 
-**Challenge:** IT ops handles reactive tickets and proactive project tasks. Triage requires quickly filtering by priority, status, and assignee — but writing JQL each time is slow.
+**Challenge:** IT ops handles reactive tickets and proactive project tasks. Triage requires quickly filtering by priority, status, and assignee - but writing JQL each time is slow.
 
 **How teams use JQL AI:**
-- "High priority open incidents with no assignee" — instant triage view
-- "All tickets created today" — morning ticket intake report
-- "Issues updated by me in the last 24 hours" — personal activity summary
+- "High priority open incidents with no assignee" - instant triage view
+- "All tickets created today" - morning ticket intake report
+- "Issues updated by me in the last 24 hours" - personal activity summary
 
 **Result:** Faster triage and fewer escalations due to missed high-priority items.
 
@@ -1213,9 +1213,9 @@ component = "Authentication" AND status not in (Done, Closed)
 **Challenge:** PMO needs cross-project visibility for status updates but each query requires complex JQL knowledge to span multiple projects and filter correctly.
 
 **How teams use JQL AI:**
-- "All epics across projects not yet started" — portfolio gap analysis
-- "High priority issues due this quarter across all projects" — quarterly risk review
-- "Issues assigned to program managers not yet closed" — accountability report
+- "All epics across projects not yet started" - portfolio gap analysis
+- "High priority issues due this quarter across all projects" - quarterly risk review
+- "Issues assigned to program managers not yet closed" - accountability report
 
 **Result:** PMO staff produce accurate cross-project reports independently without relying on Jira admins.
 
@@ -1223,12 +1223,12 @@ component = "Authentication" AND status not in (Done, Closed)
 
 ## Customer Support Teams
 
-**Challenge:** Support agents need to find related past tickets, check for duplicate reports, and escalate correctly — but Jira search feels complex to non-technical users.
+**Challenge:** Support agents need to find related past tickets, check for duplicate reports, and escalate correctly - but Jira search feels complex to non-technical users.
 
 **How teams use JQL AI:**
-- "Open tickets about login issues" — find duplicates before logging a new one
-- "High priority tickets with no response in 48 hours" — SLA breach risk report
-- "Tickets closed this week by agent name" — individual performance snapshot
+- "Open tickets about login issues" - find duplicates before logging a new one
+- "High priority tickets with no response in 48 hours" - SLA breach risk report
+- "Tickets closed this week by agent name" - individual performance snapshot
 
 **Result:** Support agents use Jira confidently without JQL training, reducing ticket duplication and improving SLA adherence.`,
         },
@@ -1249,7 +1249,7 @@ component = "Authentication" AND status not in (Done, Closed)
 ## General
 
 **What is JQL AI?**
-A Jira Cloud app that converts plain English questions into Jira Query Language (JQL) queries. You describe what you want to find, and the AI generates the correct JQL for you — no JQL knowledge required.
+A Jira Cloud app that converts plain English questions into Jira Query Language (JQL) queries. You describe what you want to find, and the AI generates the correct JQL for you - no JQL knowledge required.
 
 **Which Jira products are supported?**
 Jira Software and Jira Service Management, Jira Cloud only. Not compatible with Jira Server or Data Center.
@@ -1287,14 +1287,14 @@ The JQL AI panel displays the query as read-only. Copy it and paste it into the 
 You are inside a project but typed a query referencing multiple projects. Switch to Global Search mode (Issues → Search for Issues) for multi-project queries.
 
 **Does it remember my previous queries?**
-Not yet — query history is on the roadmap. For now, save useful queries as Jira saved filters.
+Not yet - query history is on the roadmap. For now, save useful queries as Jira saved filters.
 
 ---
 
 ## Performance & Data
 
 **Is my query text sent to a third party?**
-Yes — the natural language input is sent to OpenAI for processing. Review your organization's data policies before using on sensitive projects. JQL AI does not send issue content (summaries, descriptions) — only the query text you type.
+Yes - the natural language input is sent to OpenAI for processing. Review your organization's data policies before using on sensitive projects. JQL AI does not send issue content (summaries, descriptions) - only the query text you type.
 
 **Is the OpenAI API key secure?**
 Yes. The key is stored securely within Atlassian Forge's encrypted storage and is never exposed to end users.
@@ -1322,11 +1322,11 @@ Query generation typically completes in 1–3 seconds. Slowness is usually relat
 **Symptoms:** Clicking Convert returns a generic error. No JQL is generated.
 
 **Solutions:**
-1. **Check the API key** — ask your Jira admin to verify that a valid OpenAI API key is configured in Admin Settings
-2. **Verify the key is active** — expired or revoked API keys cause this error
-3. **Check your internet connection** — the app requires outbound access to the OpenAI API
-4. **Try again** — occasional OpenAI API outages resolve within minutes; check status.openai.com
-5. **Try a simpler query** — if the error occurs only for specific queries, the input may be triggering a security filter; try rephrasing
+1. **Check the API key** - ask your Jira admin to verify that a valid OpenAI API key is configured in Admin Settings
+2. **Verify the key is active** - expired or revoked API keys cause this error
+3. **Check your internet connection** - the app requires outbound access to the OpenAI API
+4. **Try again** - occasional OpenAI API outages resolve within minutes; check status.openai.com
+5. **Try a simpler query** - if the error occurs only for specific queries, the input may be triggering a security filter; try rephrasing
 
 ---
 
@@ -1347,10 +1347,10 @@ Your query references multiple projects but you are in Project Search mode. Swit
 **Symptoms:** JQL runs without errors but returns 0 issues.
 
 **Solutions:**
-1. **Verify the conditions** — review the generated JQL and confirm the field values match your Jira configuration (e.g., status names may differ)
-2. **Check project scope** — if inside a project, the query is scoped to that project only
-3. **Verify data exists** — confirm issues matching your criteria actually exist in Jira
-4. **Test in JQL editor** — copy the query and run it in the Jira JQL editor to see if there are any errors or warnings
+1. **Verify the conditions** - review the generated JQL and confirm the field values match your Jira configuration (e.g., status names may differ)
+2. **Check project scope** - if inside a project, the query is scoped to that project only
+3. **Verify data exists** - confirm issues matching your criteria actually exist in Jira
+4. **Test in JQL editor** - copy the query and run it in the Jira JQL editor to see if there are any errors or warnings
 
 ---
 
@@ -1359,10 +1359,10 @@ Your query references multiple projects but you are in Project Search mode. Swit
 **Symptoms:** JQL AI generates a query that doesn't match what you asked.
 
 **Solutions:**
-1. **Rephrase using Jira terminology** — use terms like "bug", "story", "epic", "sprint", "story points" for more precise results
-2. **Be more specific** — instead of "old issues", try "issues not updated in 30 days"
-3. **Add context** — instead of "my work", try "issues assigned to me that are open and in the current sprint"
-4. **Edit the output** — copy the generated JQL and refine it manually in the Jira JQL editor
+1. **Rephrase using Jira terminology** - use terms like "bug", "story", "epic", "sprint", "story points" for more precise results
+2. **Be more specific** - instead of "old issues", try "issues not updated in 30 days"
+3. **Add context** - instead of "my work", try "issues assigned to me that are open and in the current sprint"
+4. **Edit the output** - copy the generated JQL and refine it manually in the Jira JQL editor
 
 ---
 
@@ -1386,10 +1386,10 @@ Gather: your Jira site URL, the query you typed, the error message or incorrect 
 
 Try these steps first to resolve common issues quickly:
 
-1. **Check the FAQ** — review the FAQ and Troubleshooting Guide in this Help Center
-2. **Verify the API key** — many issues are caused by a missing or expired OpenAI API key; ask your Jira admin to check it
-3. **Check app access** — confirm JQL AI is enabled for your project (Jira Settings → Apps → JQL AI)
-4. **Try basic fixes** — refresh the page (Ctrl+F5), try a different browser, clear browser cache
+1. **Check the FAQ** - review the FAQ and Troubleshooting Guide in this Help Center
+2. **Verify the API key** - many issues are caused by a missing or expired OpenAI API key; ask your Jira admin to check it
+3. **Check app access** - confirm JQL AI is enabled for your project (Jira Settings → Apps → JQL AI)
+4. **Try basic fixes** - refresh the page (Ctrl+F5), try a different browser, clear browser cache
 
 ---
 

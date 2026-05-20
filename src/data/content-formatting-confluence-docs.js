@@ -1489,7 +1489,7 @@ The storage health bar at the top of the dashboard provides a visual representat
 
 - **Green**: Storage usage is below 75% of the configured warning threshold
 - **Yellow**: Storage usage is between 75% and 100% of the warning threshold
-- **Red**: Storage usage has exceeded the warning threshold — action recommended
+- **Red**: Storage usage has exceeded the warning threshold - action recommended
 
 > To configure the warning threshold, go to **Space Settings → Content Formatting Macros → Attachment Center → Storage warning threshold**.
 
@@ -1497,9 +1497,9 @@ The storage health bar at the top of the dashboard provides a visual representat
 
 The dashboard surface displays three quick action cards:
 
-1. **Review Orphaned Files** — Opens the attachment list pre-filtered to show only orphaned attachments
-2. **Find Large Files** — Opens the attachment list sorted by file size (largest first)
-3. **Recent Uploads** — Shows attachments uploaded in the last 7 days
+1. **Review Orphaned Files** - Opens the attachment list pre-filtered to show only orphaned attachments
+2. **Find Large Files** - Opens the attachment list sorted by file size (largest first)
+3. **Recent Uploads** - Shows attachments uploaded in the last 7 days
 
 ## Attachment Activity Chart
 
@@ -1525,7 +1525,7 @@ The activity chart plots attachment uploads over the selected time period (7 day
 
 ## What Are Bulk Actions?
 
-Bulk Actions let you select multiple attachments and apply an operation to all of them at once — saving time compared to performing the same action individually on each file.
+Bulk Actions let you select multiple attachments and apply an operation to all of them at once - saving time compared to performing the same action individually on each file.
 
 ## Selecting Attachments
 
@@ -1539,15 +1539,15 @@ Click the checkbox in the table header row to select all attachments currently v
 To work with attachments across multiple pages of results:
 1. Apply filters to narrow results to the specific set you need
 2. Use **Select All** to select the current page
-3. An option to **Select all {N} results** appears — click it to extend the selection to all filtered results
+3. An option to **Select all {N} results** appears - click it to extend the selection to all filtered results
 
 ## Available Bulk Operations
 
 | Operation | What It Does | Reversible? |
 |---|---|---|
-| **Add Label** | Tags all selected attachments with one or more Confluence labels | Yes — remove label to undo |
-| **Remove Label** | Removes a specific label from all selected attachments | Yes — re-add the label |
-| **Delete** | Permanently deletes all selected attachments from Confluence | **No — permanent** |
+| **Add Label** | Tags all selected attachments with one or more Confluence labels | Yes - remove label to undo |
+| **Remove Label** | Removes a specific label from all selected attachments | Yes - re-add the label |
+| **Delete** | Permanently deletes all selected attachments from Confluence | **No - permanent** |
 
 ## How to Delete Attachments in Bulk
 
@@ -1572,10 +1572,10 @@ To work with attachments across multiple pages of results:
 
 ## Safety Recommendations
 
-- **Always filter first** before selecting all — avoid accidentally selecting attachments you want to keep
+- **Always filter first** before selecting all - avoid accidentally selecting attachments you want to keep
 - **Preview the selection** by expanding the confirmation dialog before deleting
-- **Use labels** to mark attachments for review before deleting — this gives others a chance to flag files that should not be deleted
-- **Work in batches** when deleting large numbers of files — 50–100 at a time is a manageable batch size for verifying results`,
+- **Use labels** to mark attachments for review before deleting - this gives others a chance to flag files that should not be deleted
+- **Work in batches** when deleting large numbers of files - 50–100 at a time is a manageable batch size for verifying results`,
         },
         {
           slug: "attachment-filters-sorting",
@@ -1586,7 +1586,7 @@ To work with attachments across multiple pages of results:
 
 ## Overview
 
-The Filters & Sorting panel lets you narrow the attachment list to exactly the files you are looking for. You can filter by file type, upload date, uploader, file size, page, and link status — and combine any number of these filters together.
+The Filters & Sorting panel lets you narrow the attachment list to exactly the files you are looking for. You can filter by file type, upload date, uploader, file size, page, and link status - and combine any number of these filters together.
 
 ## Available Filters
 
@@ -1604,13 +1604,13 @@ The Filters & Sorting panel lets you narrow the attachment list to exactly the f
 
 1. Click the **Filters** button above the attachment table
 2. The filter panel expands below the table header
-3. Select your desired filter values — the table updates live as you make each selection
+3. Select your desired filter values - the table updates live as you make each selection
 4. Active filters appear as chips above the table; click the **×** on a chip to remove that filter
 5. Click **Clear All** to remove all active filters at once
 
 ## Combining Filters
 
-Filters work with AND logic — all active filters must match for an attachment to appear in results. Examples:
+Filters work with AND logic - all active filters must match for an attachment to appear in results. Examples:
 
 - **File Type = PDF** AND **Upload Date = Jan–Mar 2024** → only PDFs uploaded in Q1 2024
 - **Link Status = Orphaned** AND **File Size > 5 MB** → large orphaned files (prime delete candidates)
@@ -1650,7 +1650,7 @@ Saved presets appear in the **Presets** dropdown at the top of the filter panel.
 
 ## What Are Audit Logs?
 
-The Audit Logs section records all attachment-related actions performed via the Attachment Management Center. Use it to track who deleted files, when labels were applied, and which bulk operations have been run — and by whom.
+The Audit Logs section records all attachment-related actions performed via the Attachment Management Center. Use it to track who deleted files, when labels were applied, and which bulk operations have been run - and by whom.
 
 ## What Gets Logged
 
@@ -2124,7 +2124,7 @@ Step-by-step instructions for the most common tasks with Content Formatting Macr
           title: "Latest Release",
           content: `
 
-# Version 6.2.0 — Latest Release
+# Version 6.2.0 - Latest Release
 
 ## What's New
 
@@ -2275,7 +2275,7 @@ This app is a Confluence Cloud-exclusive product built for Atlassian Marketplace
           content: `
 # Version History / Changelog
 
-## v6.2.0 — Current
+## v6.2.0 - Current
 
 Minor version update with stability, compatibility, and maintenance improvements for the Cloud edition.
 
@@ -2918,12 +2918,12 @@ Interactive Banner, Buttons, Background, Status Macro, Progress Bar, Countdown T
           slug: "help-support",
           title: "Help & Support",
           content: `
-Our Atlassian-certified support team is here to help with any questions about Content Formatting Macros. Work through the checklist below before opening a ticket — most issues are resolved without one.
+Our Atlassian-certified support team is here to help with any questions about Content Formatting Macros. Work through the checklist below before opening a ticket - most issues are resolved without one.
 
 ## Before Contacting Support
 
 - Confirm the app is installed and active: **Confluence Settings** → **Manage apps** → Content Formatting Macros shows **"Active"**
-- Verify you are on Confluence Cloud — Data Center and Server are not supported
+- Verify you are on Confluence Cloud - Data Center and Server are not supported
 - Try the action in a different browser or incognito window to rule out cache issues
 - Check whether the issue affects all users or only specific users or groups
 - Review the relevant macro's documentation page in this help center for known limitations
@@ -2953,7 +2953,7 @@ Monday – Friday, 24 hrs (PDT)
 For the fastest resolution, always include:
 
 1. **Confluence site URL** (e.g., \`yourcompany.atlassian.net\`)
-2. **App version** — visible in **Confluence Settings** → **Manage apps** → Content Formatting Macros
+2. **App version** - visible in **Confluence Settings** → **Manage apps** → Content Formatting Macros
 3. **Affected macro name** (e.g., "Tab Parent Content Mapper", "Conditional Show")
 4. **Steps to reproduce** the issue
 5. **Expected behavior** vs. **what actually happened**
@@ -2982,7 +2982,7 @@ A: The two most common reasons: (1) the viewer doesn't have read permission to t
 **Q: Can I nest Tab Navigation inside another Tab Navigation?**
 A: It is technically possible but not recommended. Nested tabs often cause layout issues. Consider using Advanced Expand macros inside tabs for secondary grouping instead.
 
-**Q: The tab content shows "Page not found" — why?**
+**Q: The tab content shows "Page not found" - why?**
 A: For Page Mapper or Parent Mapper tabs, the source page was deleted or the viewer lacks permission. Check the mapped page still exists and that the viewer has read access.
 
 ---
@@ -3002,7 +3002,7 @@ A: Just not displayed. Users with page-read permission can still access all cont
 
 ## Attachment Management Center
 
-**Q: The Attachment Center doesn't appear in Space Settings — why?**
+**Q: The Attachment Center doesn't appear in Space Settings - why?**
 A: It must be enabled per-space. Go to **Space Settings** → **Content Formatting Macros** → **Attachment Center** and toggle it On.
 
 **Q: Can I recover a deleted attachment?**
@@ -3022,7 +3022,7 @@ A: No. Content Formatting Macros is a Confluence Cloud-only app.
 A: Macros render in read-only mode on the Confluence mobile app. Interactive features (countdown timers, pop-up dialogs) may have limited functionality on mobile.
 
 **Q: Will macros break if I uninstall the app?**
-A: If the app is uninstalled, macros will no longer render — they will show as unresolved macro placeholders. Your page content is not deleted. Re-installing the app restores all macros.
+A: If the app is uninstalled, macros will no longer render - they will show as unresolved macro placeholders. Your page content is not deleted. Re-installing the app restores all macros.
 
 **Q: Is there a free trial?**
 A: Yes. A 30-day free trial is available via the Atlassian Marketplace. No credit card is required to start the trial.`,

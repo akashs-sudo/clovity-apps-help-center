@@ -21,7 +21,7 @@ Backlog Auditor & Export is a Forge-powered Jira Cloud application designed to h
 
 ## The Problem It Solves
 
-Backlogs often grow messy — with missing fields, outdated issues, or inconsistent data. Manually checking hundreds (or thousands) of issues is both time-consuming and error-prone.
+Backlogs often grow messy - with missing fields, outdated issues, or inconsistent data. Manually checking hundreds (or thousands) of issues is both time-consuming and error-prone.
 
 Backlog Auditor & Export solves this by:
 
@@ -42,7 +42,7 @@ Instead of asking "Why is our backlog full of unclear or outdated issues?", Back
 
 ## Platform
 
-Jira Cloud only. Built on Atlassian Forge — no external servers, no data exports, no infrastructure to maintain.
+Jira Cloud only. Built on Atlassian Forge - no external servers, no data exports, no infrastructure to maintain.
 `,
         },
         {
@@ -94,7 +94,7 @@ For meaningful audits, you must have visibility of **project fields** (system an
 5. Click the app in the search results
 6. Click **Try it free** or **Buy now**
 7. Review and accept the requested permissions
-8. Click **Accept** — the app installs immediately, no restart required
+8. Click **Accept** - the app installs immediately, no restart required
 
 ## Verify Installation
 
@@ -111,7 +111,7 @@ The app consists of two key areas:
 
 | Area | Purpose |
 |---|---|
-| **Admin Page** | Design and manage rulesets — think of it as setting the "audit checklist" for a project |
+| **Admin Page** | Design and manage rulesets - think of it as setting the "audit checklist" for a project |
 | **Project Page (Auditing)** | Execute audits and view results in an easy-to-read format |
 
 This separation ensures that **rule creation and audit execution are distinct**, reducing errors and keeping responsibilities clear.
@@ -163,26 +163,26 @@ When you select a project and issue type, the app loads only the fields that app
           content: `
 Follow these steps to build your first audit ruleset from scratch.
 
-## Step 1 — Select a Project
+## Step 1 - Select a Project
 
 On the Admin Page, use the **Project** dropdown to narrow scope to one project at a time.
 
-## Step 2 — Select Issue Types
+## Step 2 - Select Issue Types
 
 Use the **Issue Types** dropdown to decide whether audits apply to Stories, Bugs, Epics, Tasks, Subtasks, or all issue types at once.
 
-## Step 3 — Fetch Relevant Fields
+## Step 3 - Fetch Relevant Fields
 
 Click **Fetch Fields** (or wait for the app to auto-load them). A progress bar shows the scan is running. Once complete, the **Last scanned** timestamp confirms the fields are ready.
 
-## Step 4 — Choose or Create a Ruleset
+## Step 4 - Choose or Create a Ruleset
 
 In the **Select Or Create Rule Set** panel:
 
-- **Select Existing** — pick a previously saved ruleset from the dropdown to reuse or extend it
-- **Or Create New** — type a name in the **Enter Ruleset Name** field to start fresh
+- **Select Existing** - pick a previously saved ruleset from the dropdown to reuse or extend it
+- **Or Create New** - type a name in the **Enter Ruleset Name** field to start fresh
 
-## Step 5 — Add Rules
+## Step 5 - Add Rules
 
 In the **+ Add Rule** panel, configure each rule:
 
@@ -194,11 +194,11 @@ In the **+ Add Rule** panel, configure each rule:
 
 Click **Add Rule** to add it to the ruleset. Repeat for every rule you need.
 
-## Step 6 — Save the Ruleset
+## Step 6 - Save the Ruleset
 
 Once all rules are configured, click **Save Ruleset** to store it. Saved rulesets are immediately available for use on the Project (Audit) Page.
 
-> **Tip:** Start small — begin with 3–5 high-value rules before expanding.
+> **Tip:** Start small - begin with 3–5 high-value rules before expanding.
 `,
         },
         {
@@ -227,7 +227,7 @@ Click the **delete icon** (trash) next to any rule. A confirmation prompt appear
 
 ## Unsaved Changes Protection
 
-Whenever you edit, add, or delete a rule and then try to navigate away — switch projects/issue types, leave the Admin page, refresh, or close the tab — the app surfaces an **Unsaved Changes** dialog:
+Whenever you edit, add, or delete a rule and then try to navigate away - switch projects/issue types, leave the Admin page, refresh, or close the tab - the app surfaces an **Unsaved Changes** dialog:
 
 | Button | Result |
 |---|---|
@@ -241,8 +241,8 @@ Click **View All Rulesets** at the top of the Admin Page to see a summary of all
 
 - Ruleset name and associated issue types
 - Total number of rules and unique fields covered
-- **Rules by Field** — how many rules exist per field
-- **Top Conditions** — the most-used conditions in that ruleset
+- **Rules by Field** - how many rules exist per field
+- **Top Conditions** - the most-used conditions in that ruleset
 
 Use this view to review, compare, or decide which ruleset to apply in your next audit.
 `,
@@ -267,24 +267,24 @@ The **Project Page** is where audits are executed and results are displayed. Any
 
 Navigate to your Jira project → **Apps** → **Backlog Auditor & Export** (or via the project sidebar).
 
-## Step 1 — Select a Ruleset
+## Step 1 - Select a Ruleset
 
 Use the **Select Rule Set to Audit** dropdown to choose from the rulesets saved for this project. Click **Refresh List** if a recently created ruleset is not visible.
 
-## Step 2 — Run the Audit
+## Step 2 - Run the Audit
 
 Click **Run Audit**. The app automatically checks every issue in the backlog against each rule in the selected ruleset.
 
-A progress bar shows how many issues have been audited (e.g., "Audited 200 of 472 issues — 42%"). Large backlogs may take a moment.
+A progress bar shows how many issues have been audited (e.g., "Audited 200 of 472 issues - 42%"). Large backlogs may take a moment.
 
-## Step 3 — Review the Results
+## Step 3 - Review the Results
 
 Once complete, the page displays:
 
-- **Summary Cards** — at-a-glance violation statistics
-- **Charts** — visual breakdowns by assignee, field, issue type, and condition
-- **Defects Trend Chart** — violation count over the last 20 audit runs
-- **Defective Issues Table** — a row-by-row list of every failed rule with export capability
+- **Summary Cards** - at-a-glance violation statistics
+- **Charts** - visual breakdowns by assignee, field, issue type, and condition
+- **Defects Trend Chart** - violation count over the last 20 audit runs
+- **Defective Issues Table** - a row-by-row list of every failed rule with export capability
 
 > Run audits every sprint or month to ensure continuous improvement and catch regressions early.
 `,
@@ -540,7 +540,7 @@ Teams using this pattern typically see a significant reduction in planning meeti
           content: `
 ## The Challenge
 
-Engineering and project leads often need to demonstrate that their Jira data meets organizational or compliance standards — for audits, SOC 2 readiness, or internal governance reviews. Manually verifying hundreds of issues is impractical.
+Engineering and project leads often need to demonstrate that their Jira data meets organizational or compliance standards - for audits, SOC 2 readiness, or internal governance reviews. Manually verifying hundreds of issues is impractical.
 
 ## How Backlog Auditor & Export Helps
 
@@ -553,7 +553,7 @@ Define a compliance ruleset that reflects your organization's data standards and
 | **Description** | Is Empty | All issues require a description for audit purposes. |
 | **Reporter** | Is Empty | Reporter must be set on all logged issues. |
 | **Due Date** | Is Empty | Due date required for compliance tracking. |
-| **Assignee** | Is Inactive | Reassign — current assignee account is inactive. |
+| **Assignee** | Is Inactive | Reassign - current assignee account is inactive. |
 | **Created Date** | Older Than (days) → 180 | Issue is over 6 months old. Review or close. |
 
 ## Workflow
@@ -565,7 +565,7 @@ Define a compliance ruleset that reflects your organization's data standards and
 
 ## Outcome
 
-A repeatable, documented audit trail that proves Jira data meets your standards — without any manual checking.
+A repeatable, documented audit trail that proves Jira data meets your standards - without any manual checking.
 `,
         },
         {
@@ -578,7 +578,7 @@ Over time, backlogs accumulate issues that were created months or years ago and 
 
 ## How Backlog Auditor & Export Helps
 
-Use date-based conditions to automatically flag issues that haven't been touched or that were created too long ago. This gives teams a targeted list to review, update, or close — without manually scrolling through hundreds of tickets.
+Use date-based conditions to automatically flag issues that haven't been touched or that were created too long ago. This gives teams a targeted list to review, update, or close - without manually scrolling through hundreds of tickets.
 
 ## Recommended Ruleset for Stale Issue Detection
 
@@ -600,7 +600,7 @@ Use date-based conditions to automatically flag issues that haven't been touched
 
 ## Outcome
 
-A leaner, more honest backlog that reflects real work — not accumulated noise from years of unresolved issues.
+A leaner, more honest backlog that reflects real work - not accumulated noise from years of unresolved issues.
 `,
         },
         {
@@ -613,7 +613,7 @@ In larger teams, backlog hygiene often varies between team members. Some assigne
 
 ## How Backlog Auditor & Export Helps
 
-The **Top 5 Assignees with Defects** chart and the searchable Defects Table make it easy to see — objectively — which team members have the most violations. This turns a sensitive conversation into a data-driven coaching opportunity.
+The **Top 5 Assignees with Defects** chart and the searchable Defects Table make it easy to see - objectively - which team members have the most violations. This turns a sensitive conversation into a data-driven coaching opportunity.
 
 ## Recommended Approach
 
@@ -633,7 +633,7 @@ The **Top 5 Assignees with Defects** chart and the searchable Defects Table make
 
 ## Outcome
 
-Objective data replaces guesswork. Teams see their own patterns, managers have evidence for coaching conversations, and backlog quality improves across the board — not just for the most disciplined team members.
+Objective data replaces guesswork. Teams see their own patterns, managers have evidence for coaching conversations, and backlog quality improves across the board - not just for the most disciplined team members.
 `,
         },
         {
@@ -642,7 +642,7 @@ Objective data replaces guesswork. Teams see their own patterns, managers have e
           content: `
 ## The Challenge
 
-Engineering managers and Scrum Masters responsible for multiple projects need a way to maintain consistent standards across all their teams — without manually checking each project's backlog.
+Engineering managers and Scrum Masters responsible for multiple projects need a way to maintain consistent standards across all their teams - without manually checking each project's backlog.
 
 ## How Backlog Auditor & Export Helps
 
@@ -667,7 +667,7 @@ Create a standardized ruleset that matches your organization's definition of bac
 
 ## Outcome
 
-A consistent, repeatable standard applied across all teams — with data to show leadership which projects are healthy and which need intervention.
+A consistent, repeatable standard applied across all teams - with data to show leadership which projects are healthy and which need intervention.
 `,
         },
       ],
@@ -717,7 +717,7 @@ Removing a rule or an entire ruleset always asks for **explicit confirmation** t
 
 ## Helpful Empty States
 
-If a selection (e.g., fields for a chosen issue type) returns nothing, the UI **explains why** and provides guidance on how to proceed — no silent failures.
+If a selection (e.g., fields for a chosen issue type) returns nothing, the UI **explains why** and provides guidance on how to proceed - no silent failures.
 
 ## Permission-Aware Messaging
 
@@ -766,7 +766,7 @@ Share audit reports during **sprint reviews or backlog grooming sessions**. When
 
 ## Scope Rules to Issue Types
 
-Not all rules apply to all issue types. Use the **Applies to** filter when adding rules to avoid false positives — for example, Story Points rules typically only apply to Stories, not Epics or Bugs.
+Not all rules apply to all issue types. Use the **Applies to** filter when adding rules to avoid false positives - for example, Story Points rules typically only apply to Stories, not Epics or Bugs.
 
 ## Use Rescan When Fields Change
 
@@ -783,7 +783,7 @@ If your project gains new custom fields or screen scheme changes are made, click
 
 **Steps to resolve:**
 1. Confirm you have project access (at least Browse Projects permission)
-2. Confirm a ruleset exists for this project — go to the Admin Page and check
+2. Confirm a ruleset exists for this project - go to the Admin Page and check
 3. Try clicking **Refresh List** on the Project Page to reload available rulesets
 4. If the problem persists, contact your Jira administrator to check app permissions
 
@@ -793,7 +793,7 @@ If your project gains new custom fields or screen scheme changes are made, click
 
 **Steps to resolve:**
 1. Go to the Admin Page and confirm the ruleset was saved (not just built)
-2. Confirm it was saved under the **correct project** — rulesets are project-scoped
+2. Confirm it was saved under the **correct project** - rulesets are project-scoped
 3. Click **Refresh List** on the Project Page
 4. Try logging out and back in to clear any stale session state
 
@@ -823,7 +823,7 @@ If your project gains new custom fields or screen scheme changes are made, click
 **Steps to resolve:**
 1. Confirm the field is included in the **screen scheme** for the selected project and issue type
 2. Click **Rescan** to bypass the cache and perform a fresh field discovery
-3. Check that you selected the correct issue type — fields are scoped per issue type
+3. Check that you selected the correct issue type - fields are scoped per issue type
 
 ---
 
@@ -846,14 +846,14 @@ If your project gains new custom fields or screen scheme changes are made, click
           slug: "release-notes-overview",
           title: "Release Notes Overview",
           content: `
-Stay up to date with every improvement, new feature, and bug fix shipped in Backlog Auditor & Export. Releases are deployed to Jira Cloud automatically — no manual update or reinstall is required.
+Stay up to date with every improvement, new feature, and bug fix shipped in Backlog Auditor & Export. Releases are deployed to Jira Cloud automatically - no manual update or reinstall is required.
 
 For questions about a specific release or to report an issue, contact **developers@Clovity.com**.
 `,
         },
         {
           slug: "release-2-2-0",
-          title: "v2.2.0 — Sep 18, 2025",
+          title: "v2.2.0 - Sep 18, 2025",
           content: `
 ## Version 2.2.0
 **Release Date:** September 18, 2025
@@ -862,10 +862,10 @@ For questions about a specific release or to report an issue, contact **develope
 ### What's New
 
 #### Ruleset Management Experience
-- Faster field discovery with intelligent caching — the first scan populates a snapshot; all subsequent loads are instant
+- Faster field discovery with intelligent caching - the first scan populates a snapshot; all subsequent loads are instant
 - **Last scanned** timestamp is now displayed alongside the field list so you know how fresh your data is
 - New **Rescan** button lets you bypass the cache and fetch a live field list directly from Jira whenever project configuration changes
-- Improved project and issue type selectors — narrowing scope now loads only the fields relevant to your selection
+- Improved project and issue type selectors - narrowing scope now loads only the fields relevant to your selection
 
 #### CSV / Excel Export for Audit Results
 - The Defects Table now includes an **Export CSV** button
@@ -876,14 +876,14 @@ For questions about a specific release or to report an issue, contact **develope
 #### Smart Audit Reports
 - Redesigned **Summary Cards** with six at-a-glance metrics: Total Audited, Defects Found, Defect Rate, Top Violated Rule, Top Assignee, and Top Field
 - Four new **visual charts**: Violations Distribution (pie), Top 5 Assignees with Defects (bar), Defects by Issue Type (bar), and Top 5 Fields with Defects (bar)
-- **Defect Trend Chart** now tracks the last 20 audit runs in a time-series line chart — use it to demonstrate measurable backlog improvement over time
+- **Defect Trend Chart** now tracks the last 20 audit runs in a time-series line chart - use it to demonstrate measurable backlog improvement over time
 - Defects Table is fully searchable and filterable by rule, with clickable Issue Keys that link directly to the Jira issue
 
 ### Bug Fixes & Improvements
 
 - Unsaved Changes dialog now reliably triggers when switching projects or issue types mid-edit
 - Delete confirmation prompts added for both individual rules and entire rulesets
-- Empty state messaging improved — when no fields are found for a given issue type, the UI now explains why and how to resolve it
+- Empty state messaging improved - when no fields are found for a given issue type, the UI now explains why and how to resolve it
 - Permission-aware error messaging replaces silent failures when a user lacks access to a field or workflow element
 - Progress indicators added to all long-running data fetches (field discovery, backlog scans, audit execution)
 `,

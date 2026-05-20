@@ -11,6 +11,11 @@ export const backlogAuditorDocs = {
         {
           slug: "what-is-backlog-auditor",
           title: "What is Backlog Auditor & Export?",
+          sideVideo: {
+            src: "https://www.youtube.com/embed/ahot7joi_sE",
+            title:
+              "Time Tracking, Resource Planning & Project Management - Product Introduction",
+          },
           content: `
 Backlog Auditor & Export is a Forge-powered Jira Cloud application designed to help project administrators and teams **systematically monitor and improve backlog quality**.
 
@@ -25,6 +30,8 @@ Backlog Auditor & Export solves this by:
 - Presenting **actionable reports** that highlight trends, bottlenecks, and recurring issues
 
 Instead of asking "Why is our backlog full of unclear or outdated issues?", Backlog Auditor & Export provides a **clear, visual, and repeatable way to enforce standards** and drive backlog discipline.
+
+<!--VIDEO_BREAK-->
 
 ## Who Is It For?
 

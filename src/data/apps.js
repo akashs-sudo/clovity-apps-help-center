@@ -109,7 +109,7 @@ export const apps = [
         id: "overview",
         title: "Overview",
         content:
-          "Backlog Auditor & Export is a Forge-powered Jira Cloud application designed to help project administrators and teams systematically monitor and improve backlog quality. Backlogs often grow messy — with missing fields, outdated issues, or inconsistent data. Manually checking hundreds (or thousands) of issues is both time-consuming and error-prone. Backlog Auditor & Export solves this by allowing administrators to define rule-based checks for fields across issues, automatically detecting violations that deviate from agreed standards, and presenting actionable reports that highlight trends, bottlenecks, and recurring issues. Instead of asking \"Why is our backlog full of unclear or outdated issues?\", it provides a clear, visual, and repeatable way to enforce standards and drive backlog discipline.",
+          'Backlog Auditor & Export is a Forge-powered Jira Cloud application designed to help project administrators and teams systematically monitor and improve backlog quality. Backlogs often grow messy — with missing fields, outdated issues, or inconsistent data. Manually checking hundreds (or thousands) of issues is both time-consuming and error-prone. Backlog Auditor & Export solves this by allowing administrators to define rule-based checks for fields across issues, automatically detecting violations that deviate from agreed standards, and presenting actionable reports that highlight trends, bottlenecks, and recurring issues. Instead of asking "Why is our backlog full of unclear or outdated issues?", it provides a clear, visual, and repeatable way to enforce standards and drive backlog discipline.',
       },
       {
         id: "prerequisites",
@@ -121,7 +121,7 @@ export const apps = [
         id: "app-structure",
         title: "Application Structure",
         content:
-          "The app consists of two key areas, each serving a distinct purpose. 1. Admin Page — This is where administrators design and manage rulesets. Think of it as setting the \"audit checklist\" for a project. 2. Project Page (Auditing) — This is where the audits are executed and results are displayed in an easy-to-read format. This separation ensures that rule creation and audit execution are distinct, reducing errors and keeping responsibilities clear.",
+          'The app consists of two key areas, each serving a distinct purpose. 1. Admin Page — This is where administrators design and manage rulesets. Think of it as setting the "audit checklist" for a project. 2. Project Page (Auditing) — This is where the audits are executed and results are displayed in an easy-to-read format. This separation ensures that rule creation and audit execution are distinct, reducing errors and keeping responsibilities clear.',
       },
       {
         id: "building-rulesets",
@@ -139,7 +139,7 @@ export const apps = [
         id: "audit-report",
         title: "Understanding the Audit Report",
         content:
-          "Backlog Auditor & Export's reporting is designed to be both executive-friendly and action-oriented. Summary Cards provide at-a-glance insights: Total Audited (how many issues were checked), Total Violations (number of rule breaks), Top Violated Condition (the most common problem), and Defects by Assignee/Field/Issue Type (who or what is most affected). Charts break down violations by Condition (which rules fail most often), by Field (spot fields with recurring issues), by Assignee (detect team members needing more support), and by Issue Type (understand where problems cluster — Stories vs. Bugs). The Defects Trend Chart is one of the most powerful features — it shows how violations evolve over time. If violations decrease, backlog health is improving. If violations increase, standards are not being followed and corrective action is required. The Defects Table provides detailed evidence for every flagged issue: Issue Key (linked to Jira), Summary, Field Name & Type, Condition that failed, and the Violation Message. This table acts as the \"to-do list\" for teams — every row highlights what to fix. You can also Export the table to CSV directly from the report.",
+          'Backlog Auditor & Export\'s reporting is designed to be both executive-friendly and action-oriented. Summary Cards provide at-a-glance insights: Total Audited (how many issues were checked), Total Violations (number of rule breaks), Top Violated Condition (the most common problem), and Defects by Assignee/Field/Issue Type (who or what is most affected). Charts break down violations by Condition (which rules fail most often), by Field (spot fields with recurring issues), by Assignee (detect team members needing more support), and by Issue Type (understand where problems cluster — Stories vs. Bugs). The Defects Trend Chart is one of the most powerful features — it shows how violations evolve over time. If violations decrease, backlog health is improving. If violations increase, standards are not being followed and corrective action is required. The Defects Table provides detailed evidence for every flagged issue: Issue Key (linked to Jira), Summary, Field Name & Type, Condition that failed, and the Violation Message. This table acts as the "to-do list" for teams — every row highlights what to fix. You can also Export the table to CSV directly from the report.',
       },
       {
         id: "safety-nets",
@@ -157,13 +157,13 @@ export const apps = [
         id: "example-rules",
         title: "Example Rule Scenarios",
         content:
-          "Ensure Descriptions Exist — Field: Description | Condition: Is Empty | Message: \"Please add a description so the team has context.\" Catch Old Bugs — Field: Created Date | Condition: Older Than (days) → 90 | Message: \"This bug is over 90 days old. Reassess its relevance.\" Check Assignments — Field: Assignee | Condition: Is Empty | Message: \"This issue is unassigned. Assign it to a responsible person.\" Validate Estimates — Field: Story Points | Condition: Greater Than → 13 | Message: \"Story points exceed recommended range (max 13).\" These conditions make rules extremely flexible — for instance, you can enforce that \"Stories must always have story points\" or \"Bugs older than 60 days must be reviewed.\"",
+          'Ensure Descriptions Exist — Field: Description | Condition: Is Empty | Message: "Please add a description so the team has context." Catch Old Bugs — Field: Created Date | Condition: Older Than (days) → 90 | Message: "This bug is over 90 days old. Reassess its relevance." Check Assignments — Field: Assignee | Condition: Is Empty | Message: "This issue is unassigned. Assign it to a responsible person." Validate Estimates — Field: Story Points | Condition: Greater Than → 13 | Message: "Story points exceed recommended range (max 13)." These conditions make rules extremely flexible — for instance, you can enforce that "Stories must always have story points" or "Bugs older than 60 days must be reviewed."',
       },
       {
         id: "best-practices",
         title: "Best Practices",
         content:
-          "Start small — Begin with a handful of high-value rules before expanding. Write actionable violation messages — Instead of just \"Invalid\", guide users with specific instructions like \"Story points must be ≤ 13.\" Audit regularly — Run audits every sprint or month to ensure continuous improvement. Monitor trends — Use the Defect Trend Chart to demonstrate backlog improvements to stakeholders. Collaborate with teams — Share reports during sprint reviews or grooming sessions to drive accountability and awareness.",
+          'Start small — Begin with a handful of high-value rules before expanding. Write actionable violation messages — Instead of just "Invalid", guide users with specific instructions like "Story points must be ≤ 13." Audit regularly — Run audits every sprint or month to ensure continuous improvement. Monitor trends — Use the Defect Trend Chart to demonstrate backlog improvements to stakeholders. Collaborate with teams — Share reports during sprint reviews or grooming sessions to drive accountability and awareness.',
       },
       {
         id: "troubleshooting",
@@ -173,45 +173,69 @@ export const apps = [
       },
     ],
   },
-  // {
-  //   slug: "jql-ai-jira",
-  //   name: "JQL AI",
-  //   shortName: "JQL AI",
-  //   platform: "Jira Cloud",
-  //   badge: null,
-  //   rating: null,
-  //   installs: 27,
-  //   icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/JQL_AI_5c9387a3f4.png",
-  //   description:
-  //     "Effortlessly transform natural language into precise JQL queries with AI-powered query conversion.",
-  //   marketplaceUrl: "https://marketplace.atlassian.com/apps/1237395/jql-ai",
-  //   sections: [
-  //     {
-  //       id: "overview",
-  //       title: "Overview",
-  //       content:
-  //         "JQL AI converts plain English into Jira Query Language instantly. No more memorizing JQL syntax - just describe what you want to find, and the AI writes the perfect query for you.",
-  //     },
-  //     {
-  //       id: "usage",
-  //       title: "How to Use",
-  //       content:
-  //         'In Jira Issue Navigator, click the "AI" button added by JQL AI. Type your question in plain English and the app generates the correct JQL and applies it automatically.',
-  //     },
-  //     {
-  //       id: "examples",
-  //       title: "Query Examples",
-  //       content:
-  //         'Natural: "Bugs reported last sprint not yet fixed" → JQL: issuetype = Bug AND sprint in closedSprints() AND status != Done. Natural: "Stories with no story points" → JQL: issuetype = Story AND "Story Points" is EMPTY.',
-  //     },
-  //     {
-  //       id: "faq",
-  //       title: "FAQ",
-  //       content:
-  //         "Q: Do I need JQL knowledge? A: No, that is the whole point. Q: Does it learn my custom fields? A: Yes, it auto-discovers your project custom fields and includes them in suggestions.",
-  //     },
-  //   ],
-  // },
+  {
+    slug: "jql-ai-jira",
+    name: "JQL AI",
+    shortName: "JQL AI",
+    platform: "Jira Cloud",
+    badge: null,
+    rating: null,
+    installs: 27,
+    icon: "https://clovity-website.s3.ap-south-1.amazonaws.com/JQL_AI_5c9387a3f4.png",
+    description:
+      "Effortlessly transform natural language into precise JQL queries with AI-powered query conversion.",
+    marketplaceUrl: "https://marketplace.atlassian.com/apps/1237395/jql-ai",
+    sections: [
+      {
+        id: "overview",
+        title: "Overview",
+        content:
+          "JQL AI is a Jira app designed to simplify complex JQL searches by converting natural language queries into accurate JQL statements. Whether you're a beginner or an experienced Jira user, JQL AI helps you find issues faster without needing to memorize complex syntax. It supports both Global Search and Project-Specific Search, includes quick actions for frequently used queries, and gives admins control over enabling or disabling the app per project.",
+      },
+      {
+        id: "installation",
+        title: "Installation",
+        content:
+          "Go to the Atlassian Marketplace and search for JQL AI. Click Get it now and install the app in your Jira instance. Follow the on-screen instructions to complete the installation. Once installed, navigate to a Jira project or the global search page to start using JQL AI.",
+      },
+      {
+        id: "getting-started",
+        title: "Getting Started",
+        content:
+          "Once installed, JQL AI is accessible in three places: Global Search (available in the Jira navigation menu for system-wide searches), Project Page (available inside individual Jira projects for project-specific searches), and the Admin Page (manage settings and permissions from the Jira Admin panel).",
+      },
+      {
+        id: "entering-queries",
+        title: "Entering a Query",
+        content:
+          'Type a natural language query such as "Find all open issues", "Show all closed tasks from last week", or "Find issues assigned to John Doe in Project X". Press Enter or click Convert to generate the JQL query. The app displays the converted JQL and gives you two options: Copy (copy the query to use elsewhere) or Search in Jira (open the Jira issue search page with the query pre-applied).',
+      },
+      {
+        id: "quick-actions",
+        title: "Quick Actions",
+        content:
+          "Use pre-configured quick actions to generate common JQL queries instantly. Available quick actions include Open Issues, Closed Issues, and In-Progress Issues. Click any quick action to generate the respective JQL query without typing a prompt — ideal for repetitive searches.",
+      },
+      {
+        id: "admin-settings",
+        title: "Admin Settings",
+        content:
+          "Admins can enable or disable JQL AI at different levels. Global Level: apply JQL AI across all projects in the Jira instance. Project Level: enable or disable JQL AI for individual projects. Security Filters: the app automatically filters inappropriate content in queries to keep results relevant and safe.",
+      },
+      {
+        id: "troubleshooting",
+        title: "Troubleshooting",
+        content:
+          'App is disabled — Contact your Jira admin to check if JQL AI is enabled for your project or globally. "Something went wrong" error — Ensure you have a valid OpenAI API key configured and verify your internet connection, then try again. "Project-specific queries only" error — If using JQL AI inside a project, ensure your query does not reference multiple projects; use Global Search for multi-project queries. For further assistance, visit the Atlassian Marketplace support section or contact our support team.',
+      },
+      {
+        id: "faq",
+        title: "FAQ",
+        content:
+          "Q: Do I need JQL knowledge to use this app? A: No, that is the whole point — just describe what you want in plain English. Q: Does it learn my custom fields? A: Yes, it auto-discovers your project custom fields and includes them in suggestions. Q: Can I use it for multi-project searches? A: Yes, use Global Search mode for queries spanning multiple projects. Q: Who can manage app permissions? A: Jira admins can enable or disable JQL AI at the global or individual project level.",
+      },
+    ],
+  },
   {
     slug: "content-formatting-confluence",
     name: "Content Formatting Macros: Tabs Navigation Visibility CSS",

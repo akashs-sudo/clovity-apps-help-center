@@ -12,8 +12,7 @@ export const jqlaiDocs = {
           title: "What is JQL AI?",
           sideVideo: {
             src: "https://www.youtube.com/embed/dqBC4GuOFWg",
-            title:
-              "Time Tracking, Resource Planning & Project Management - Product Introduction",
+            title: "JQL AI for Jira - Product Overview",
           },
           content: `
 JQL AI is a Jira Cloud app that converts plain English questions into accurate Jira Query Language (JQL) queries — instantly. You describe what you want to find, and the AI writes the query for you.
@@ -321,7 +320,11 @@ After generating a query, you have two options:
 
 ## Custom Field Discovery
 
-JQL AI automatically detects the custom fields configured in your Jira instance and project. When you mention a concept that maps to a custom field (e.g., "story points", "team", "sprint"), the app uses the correct field name and schema for your configuration — not a generic guess.`,
+JQL AI automatically detects the custom fields configured in your Jira instance and project. When you mention a concept that maps to a custom field (e.g., "story points", "team", "sprint"), the app uses the correct field name and schema for your configuration — not a generic guess.
+
+## Dark Mode Support
+
+JQL AI's interface fully supports Jira's dark mode. The query input panel, generated JQL display, Quick Action buttons, and all UI elements automatically adapt to your Jira theme setting — no extra configuration needed.`,
         },
         {
           slug: "how-to-tutorials",
@@ -931,6 +934,18 @@ Report issues to **developers@clovity.com**.`,
 ---
 
 ## Changelog
+
+### v2.4.0 — April 10, 2025
+
+**New Features**
+- Dark mode support — JQL AI UI now adapts to Jira's dark theme automatically
+- Query moderation improvements — enhanced security filter accuracy with fewer false positives
+
+**Improvements**
+- Faster API response times via OpenAI integration optimizations
+- Custom field discovery now covers more edge-case field types
+
+---
 
 ### v1.x — Initial Release
 - AI-powered natural language to JQL conversion

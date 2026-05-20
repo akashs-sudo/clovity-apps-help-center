@@ -118,7 +118,7 @@ Before installing, confirm:
 | Step | Action |
 |---|---|
 | 1 | Go to **Confluence Settings** → **Find new apps** (requires Confluence Admin role) |
-| 2 | Search for **"Content Formatting Macros Clovity"** |
+| 2 | Search for **"Content Formatting Macros: Tabs Navigation Visibility CSS"** |
 | 3 | Click **Try it free** (30-day trial) or **Buy now** |
 | 4 | Accept the requested permissions |
 | 5 | The app activates immediately - no restart required |
@@ -141,24 +141,13 @@ After installation:
 1. Open any Confluence page in edit mode
 2. Click the **+** (Insert) button in the editor toolbar
 3. Search for "Tab Navigation" or "Alert" - the macros should appear in the results
-4. If macros don't appear, go to **Confluence Settings** → **Manage apps** → confirm Content Formatting Macros shows "Active"
-
-## Attachment Management Center Configuration
-
-After install, configure the Attachment Center from **Space Settings** → **Content Formatting Macros** → **Attachment Center**:
-
-1. **Enable Attachment Center**: Toggle on for each space where you want audit capability
-2. **Set Storage Thresholds**: Configure warning thresholds for total attachment storage
-3. **Configure Retention Rules**: Optionally set rules to flag attachments older than N days with no page links
+4. If macros don't appear, go to **Confluence Settings** → **Manage apps** → Confirm Content Formatting Macros: Tabs Navigation Visibility CSS shows "Active"
 
 ## Admin Checklist
 
 - [ ] App installed from Marketplace
 - [ ] All permissions accepted
 - [ ] Post-install verification passed (macros appear in editor)
-- [ ] Attachment Center enabled for target spaces
-- [ ] Space members notified of new macro availability
-- [ ] Optional: Page templates applied to key spaces (see Page Templates section)
 
 ## Uninstalling
 
@@ -181,7 +170,7 @@ To uninstall: **Confluence Settings** → **Manage apps** → find Content Forma
 2. Grant required permissions during install
 3. Open any Confluence page in edit mode
 4. Click the **+** (Insert) button in the editor toolbar
-5. Search for any macro name (e.g., "Tab Navigation", "Alert", "Buttons")
+5. Search for any macro name (e.g., "Alert", "Buttons")
 6. Configure the macro settings in the panel that appears
 7. Publish the page
 
@@ -197,7 +186,7 @@ Decide how many tabs you need and what content belongs in each. The most common 
 - **Custom Tabs**: Use when content lives directly on the page, not in separate child pages
 
 ### Step 3 - Insert and Configure
-Insert the Tab Navigation macro, then insert the appropriate mapper macro inside it. Configure the mapper settings (parent page ID, label name, or page list).
+Insert the Tab Navigation macro. Configure the mapper settings (parent page, label name, or page list).
 
 ### Step 4 - Enrich with Formatting Macros
 Add Alert macros for warnings, Buttons for CTAs, Background for section separation, and Status badges for current state. Publish when ready.`,
@@ -258,7 +247,7 @@ The Attachment Management Center requires:
 
 | Role | Can Do |
 |---|---|
-| **Space Admin** | Install the app (site admin required), enable Attachment Center per-space, configure space-level settings |
+| **Space Admin** | Install the app (site admin required) |
 | **Page Author (edit permission)** | Insert, configure, and publish any macro on pages they can edit |
 | **Page Viewer (read permission)** | View rendered macros; conditional visibility is evaluated per viewer's groups |
 
@@ -335,9 +324,8 @@ Insert **Tab Navigation** without a mapper, and add **Custom Tab** containers in
 | Setting | Options | Default |
 |---|---|---|
 | Tab style | Underline, Pill, Box | Underline |
-| Tab position | Top, Left, Right | Top |
-| Default open tab | First, Last, or specific tab number | First |
-| Tab label size | Small, Medium, Large | Medium |
+| Tab position | Top, Left | Top |
+| Default open tab | First | First |
 
 ## Behavior Notes
 
@@ -374,17 +362,14 @@ The Tab Parent Content Mapper automatically creates one tab for each **child pag
 
 | Setting | Description | Default |
 |---|---|---|
-| Parent Page | The page whose children become tabs. You can type a page name or paste a page URL. | Current page |
-| Sort Order | Alphabetical, Manual (page tree order), Created Date, Modified Date | Manual (page tree order) |
+| Parent Page | The page whose children become tabs. You can type a page name. | Current page |
+| Sort Order | Alphabetical, Created Date, Modified Date | Manual (page tree order) |
 | Max Tabs | Maximum number of child pages to show as tabs | All |
-| Exclude Pages | Comma-separated list of page titles or IDs to exclude | None |
-| Depth | How many levels of children to include (1 = direct children only) | 1 |
 
 ## Important Behaviors
 
 - **Access control respected**: If a viewer doesn't have read access to a child page, that tab does not appear for them
-- **Draft pages are excluded**: Only published child pages appear as tabs
-- **Tab label = page title**: The tab label automatically uses the child page's title. If you rename the child page, the tab label updates on next page view.`,
+- **Draft pages are excluded**: Only published child pages appear as tabs`,
         },
         {
           slug: "tab-label-mapper",
@@ -399,7 +384,7 @@ The Tab Label Content Mapper creates tabs based on **Confluence page labels**. E
 
 ## When to Use It
 
-- Pages are already organized by label (release version, product area, team name)
+- Pages are already organized by label
 - You want a cross-hierarchy tab view that spans multiple parent pages
 - You want to let page authors control which tab their page appears in by adding/removing a label
 
@@ -408,12 +393,12 @@ The Tab Label Content Mapper creates tabs based on **Confluence page labels**. E
 1. Apply consistent labels to the pages you want to group (e.g., \`v1\`, \`v2\`, \`v3\` for release notes)
 2. Insert **Tab Navigation** on your index page
 3. Inside it, insert **Tab Label Content Mapper**
-4. In the config panel, enter the label(s) - one label per tab, or a shared prefix
+4. In the config panel, enter the label(s) 
 
 ## Two Configuration Modes
 
 ### Mode 1 - One Label Per Tab
-Enter each label separately. Each label creates one tab. Pages tagged with that label appear in that tab.
+Enter each label separately. Pages tagged with that label appear in that tab.
 
 ### Mode 2 - CQL Filter
 Enter a CQL query to define which pages are eligible, then group by a specific label.
@@ -428,7 +413,6 @@ Example CQL: \`space = "TEAM" AND label in ("release") ORDER BY created DESC\`
 | Space | Restrict pages to a specific space (default: current space) |
 | Sort | How pages within each tab are sorted |
 | Max Pages Per Tab | Limit pages shown per tab |
-| Tab Label Display | Use label as tab name, or use first page title found |
 
 ## Behaviors
 
@@ -2068,129 +2052,209 @@ Step-by-step instructions for the most common tasks with Content Formatting Macr
     // ═══════════════════════════════════════════════════════════════
     // 9. RELEASE NOTES
     // ═══════════════════════════════════════════════════════════════
-//     {
-//       id: "release-notes",
-//       title: "Release Notes",
-//       articles: [
-//         {
-//           slug: "latest-release",
-//           title: "Latest Release",
-//           content: `
-// ## What's New in Content Formatting Macros
+    {
+      id: "release-notes",
+      title: "Release Notes",
+      articles: [
+        {
+          slug: "latest-release",
+          title: "Latest Release",
+          content: `
 
-// Stay up to date with the latest improvements, new macros, and performance enhancements. For the full changelog and to install the latest version, visit the app on the [Atlassian Marketplace](https://marketplace.atlassian.com/apps/3890258352/content-formatting-macros-tabs-navigation-visibility-css).
+# Version 6.2.0 — Latest Release
 
-// ---
+## What's New
 
-// ## Recent Highlights
+### Minor Version Update
 
-// ### New Macros Added
+Version 6.2.0 includes a minor release update for Content Formatting, Navigation, and Visibility for Confluence. This release focuses on improving app stability, compatibility, and overall user experience across existing macros and page formatting features.
 
-// #### Custom Tabs
-// A new, more flexible tab authoring experience. Custom Tabs replaces the older manual tab workflow with:
-// - Drag-and-drop tab reordering directly in the editor
-// - Per-tab icon support (choose from the built-in icon set)
-// - Per-tab badge labels (e.g., "New", "Updated", "Beta")
-// - Individual tab color accents for visual differentiation
-// - Smoother inline editing without needing to open a separate config panel
+### Platform Improvements
 
-// #### Advanced Cards (v2 Refresh)
-// The Advanced Cards macro has been updated with:
-// - **New layout modes**: Masonry grid layout in addition to standard column grids
-// - **Video support**: Embed a YouTube or Confluence media link as a card's visual
-// - **Hover effects**: Lift, glow, or border accent on hover (configurable)
-// - **Card groups**: Group multiple cards under a shared heading without extra wrapper macros
+* Improved performance for macro rendering across Confluence pages
+* Enhanced compatibility with Atlassian Cloud hosting
+* Minor fixes and refinements across existing content formatting macros
+* Improved reliability for published and edited Confluence pages
+* Continued support for Cloud-based app deployment
 
-// ---
+## Available Features
 
-// ### Tab Mapper Improvements
+### Content Formatting Macros
 
-// | Improvement | Detail |
-// |---|---|
-// | Tab Parent Content Mapper | Now supports **multi-level depth** - show children and grandchildren as nested tab groups |
-// | Tab Label Content Mapper | Added **CQL preview** in the config panel - see a live count of matching pages before saving |
-// | Tab Page Mapper | New **drag-to-reorder** interface for the page list - no more manual position entry |
-// | All Tab Mappers | Improved **empty state handling** - shows a friendly placeholder when no pages match instead of a blank tab area |
+The app provides a growing set of macros to help teams create structured, interactive, and visually enhanced Confluence pages.
 
-// ---
+Key supported macro categories include:
 
-// ### Performance Improvements
+* Tabs and content mapping
+* Conditional content visibility
+* Attachment management
+* Alerts and callouts
+* Footnotes and summaries
+* Tooltips and popups
+* Buttons and background styling
+* Advanced expand sections
+* Interactive banners
+* Advanced cards
+* Dividers and titles
+* Countdown and status displays
+* User profile and numbered heading layouts
+* JSON viewer
+* News sections
+* Page tree navigation
+* Activity stream
+* Numbered lists
+* Forms
+* Markdown rendering
+* HTML rendering
+* Templates
 
-// - **Faster tab rendering**: Tab content for mapper tabs is now pre-fetched on page load, reducing the tab-switch delay for large page sets
-// - **Reduced layout shift**: Macro placeholders in the editor now reserve the correct height before content loads, eliminating page jump on initial render
-// - **Attachment Center load time**: Spaces with more than 1,000 attachments now load the Attachment Center index up to 60% faster via paginated loading
-// - **Conditional macro evaluation**: Group membership checks are now cached per page load, reducing repeated API calls on pages with multiple Conditional Show/Hide macros
+## Release Information
 
-// ---
+* App Version: 6.2.0
+* Build Number: 2001080
+* Version Status: Public
+* Hosting: Cloud
+* Release Date: 2026-04-20
+* Release Summary: Minor version update`,
+        },
+        {
+          slug: "cloude-edition",
+          title: "Cloude Edition",
+          content: `
 
-// ### Bug Fixes
+# Cloud Edition Updates
 
-// - Fixed: Countdown Timer displayed incorrect time for timezones with half-hour offsets (e.g., IST, NST)
-// - Fixed: Background macro image URL field was not saving correctly when the URL contained query parameters
-// - Fixed: Conditional Hide macro was not correctly evaluating Space Role conditions on pages in personal spaces
-// - Fixed: JSON Viewer copy button did not copy content on Safari 17+
-// - Fixed: Advanced Expand default state (Expanded) was not being honored on first page load in some Confluence themes
+This app is a Confluence Cloud-exclusive product built for Atlassian Marketplace customers. All releases listed below apply to the Cloud edition only.
 
-// ---
+## Version 6.2.0
 
-// ### Marketplace Listing
+* Minor version update
+* Improved stability across existing macros
+* Enhanced compatibility with Confluence Cloud
+* General performance and maintenance improvements
 
-// For detailed release notes per version and to download the latest update:
+## Version 6.1.0
 
-// [View on Atlassian Marketplace](https://marketplace.atlassian.com/apps/3890258352/content-formatting-macros-tabs-navigation-visibility-css)
+* Minor version update
+* Continued improvements to app reliability
+* Small refinements across content formatting and navigation features
+* Published as a public Cloud release
 
-// App updates are delivered automatically to your Confluence Cloud instance - no manual update action is required.`,
-//         },
-//         {
-//           slug: "version-history",
-//           title: "Version History",
-//           content: `
-// A summary of major changes by version. For the complete per-build changelog, see the app's [Atlassian Marketplace listing](https://marketplace.atlassian.com/apps/3890258352/content-formatting-macros-tabs-navigation-visibility-css).
+## Version 6.0.0
 
-// ---
+* Payment model changed
+* Marketplace payment and licensing configuration updated
+* Continued support for existing Cloud features
+* Public Cloud release
 
-// ## v2.x - Current Generation
+## Version 4.0.0
 
-// | Version | Release Date | Key Changes |
-// |---|---|---|
-// | **v2.6** | 2025 Q4 | Custom Tabs overhaul (drag-reorder, per-tab icons/badges); Advanced Cards v2 (masonry layout, video support, hover effects) |
-// | **v2.5** | 2025 Q3 | Tab mapper multi-depth support; CQL preview in Label Mapper; Attachment Center paginated loading; performance improvements |
-// | **v2.4** | 2025 Q2 | Countdown Timer half-hour timezone fix; Background macro URL query param fix; Conditional Hide space role fix |
-// | **v2.3** | 2025 Q1 | JSON Viewer Safari fix; Advanced Expand default state fix; editor layout shift reduction |
-// | **v2.2** | 2024 Q4 | Tab Page Mapper drag-to-reorder; empty state handling for all mappers; pre-fetch tab content on load |
-// | **v2.1** | 2024 Q3 | Advanced Cards grid layouts (2-col, 3-col, auto-flow); Interactive Banner overlay opacity control; Divider Gradient type |
-// | **v2.0** | 2024 Q2 | Major release: new macros (Numbered Headings, Divider, Status Macro, JSON Viewer); editor config panel redesign; Attachment Center GA |
+* Required scopes changed
+* Added and refined advanced content and rendering macros
+* Introduced support for:
+  * JSON Viewer
+  * News
+  * Page Tree
+  * Activity Stream
+  * Numbered List
+  * Form Macro
+  * Markdown Render
+  * HTML Render
+  * Templates
 
-// ---
+## Version 3.0.0
 
-// ## v1.x - Previous Generation
+* Payment model and required scopes changed
+* Added advanced visual and interactive page components
+* Introduced support for:
+  * Advanced Expand
+  * Interactive Banner
+  * Advanced Card
+  * Divider
+  * Title
+  * Countdown
+  * Status
+  * User Profile
+  * Number Heading
 
-// | Version | Release Date | Key Changes |
-// |---|---|---|
-// | **v1.9** | 2024 Q1 | Countdown Timer timezone support; User Profile Detailed style; Footnotes List macro |
-// | **v1.8** | 2023 Q4 | Pop-up Dialog full-screen size; Advanced Expand body background option; Alert Dismissible feature |
-// | **v1.7** | 2023 Q3 | Interactive Banner CTA Button 2 support; Background gradient direction options; Progress Bar auto-threshold colors |
-// | **v1.6** | 2023 Q2 | Tooltip Position and Style options; Buttons full-width option; Background border radius options |
-// | **v1.5** | 2023 Q1 | Tab Label Content Mapper CQL filter mode; Tab Parent Content Mapper Exclude Pages option; Attachment Center beta |
-// | **v1.4** | 2022 Q4 | Custom Tabs initial release; Tab Page Mapper custom tab labels; Conditional Show/Hide Login Status condition |
-// | **v1.3** | 2022 Q3 | Tab Parent Content Mapper depth option; sort order controls for all mappers; Alert Note type added |
-// | **v1.2** | 2022 Q2 | Advanced Cards initial release; User Profile macro initial release; Countdown Timer initial release |
-// | **v1.1** | 2022 Q1 | Alert, Tooltip, Progress Bar, Footnotes, Pop-up Dialog, Advanced Expand, Interactive Banner added |
-// | **v1.0** | 2021 Q4 | Initial release: Tab Navigation, Tab Parent/Label/Page Mappers, Conditional Show/Hide, Buttons, Background |
+## Version 2.1.0
 
-// ---
+* Minor version update
+* Private Cloud release
+* Internal improvements and refinements before the next public release
 
-// ## Support Policy
+## Version 2.0.0
 
-// | Generation | Status |
-// |---|---|
-// | v2.x (current) | Actively developed - receives new features, bug fixes, and security patches |
-// | v1.x (previous) | Security patches only - no new features; end-of-life planned for 2026 |
+* Initial public Cloud release
+* Added foundational tab, visibility, and attachment control features
+* Introduced support for:
+  * Tab Label Content Mapper
+  * Tab Parent Content Mapper
+  * Tab Confluence Page Mapper
+  * Create Custom Tabs
+  * Conditional Hide
+  * Conditional Show
+  * Attachment Control Center
 
-// Confluence Cloud apps update automatically. If you are still on v1.x, no action is needed - you will be migrated to v2.x automatically during the next scheduled update window.`,
-//         },
-//       ],
-//     },
+## Platform Notes
+
+| Capability | Detail |
+|---|---|
+| Hosting | Cloud |
+| Deployment | Updates are delivered through Atlassian Marketplace |
+| Compatibility | Built for Confluence Cloud |
+| Version Status | Public and private versions are managed through Marketplace releases |
+| Admin Action | Updates are applied through Atlassian Marketplace app versioning |`,
+        },
+        {
+          slug: "version-history",
+          title: "Version History",
+          content: `
+# Version History / Changelog
+
+## v6.2.0 — Current
+
+Minor version update with stability, compatibility, and maintenance improvements for the Cloud edition.
+
+## v6.1.0
+
+Minor version update with continued refinements across the app experience and existing Confluence macros.
+
+## v6.0.0
+
+Payment model changed. Marketplace payment and licensing configuration updated for the Cloud app.
+
+## v4.0.0
+
+Added content rendering, navigation, and structured page macros, including JSON Viewer, News, Page Tree, Activity Stream, Numbered List, Form Macro, Markdown Render, HTML Render, and Templates.
+
+## v3.0.0
+
+Added advanced visual and interactive formatting macros, including Advanced Expand, Interactive Banner, Advanced Card, Divider, Title, Countdown, Status, User Profile, and Number Heading.
+
+## v2.1.0
+
+Private minor version update with internal improvements and refinements.
+
+## v2.0.0
+
+Initial public release with tabbed content, conditional visibility, and attachment management features. Included Tab Label Content Mapper, Tab Parent Content Mapper, Tab Confluence Page Mapper, Create Custom Tabs, Conditional Hide, Conditional Show, and Attachment Control Center.
+
+---
+
+## How Updates Are Delivered
+
+Updates are delivered through the Atlassian Marketplace for Confluence Cloud. No manual package installation is required.
+
+To check your current version:
+
+1. Go to Confluence Settings → Apps → Manage apps
+2. Find "Content Formatting, Navigation, and Visibility for Confluence"
+3. Open the app details panel
+4. Review the installed app version`,
+        },
+      ],
+    },
     // ═══════════════════════════════════════════════════════════════
     // 10. INTEGRATIONS & MIGRATION
     // ═══════════════════════════════════════════════════════════════

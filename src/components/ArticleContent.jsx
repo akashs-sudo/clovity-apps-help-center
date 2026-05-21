@@ -22,7 +22,9 @@ function nodeText(node) {
 
 function ImageZoomModal({ src, alt, onClose }) {
   useEffect(() => {
-    const handleKey = (e) => { if (e.key === "Escape") onClose(); };
+    const handleKey = (e) => {
+      if (e.key === "Escape") onClose();
+    };
     document.addEventListener("keydown", handleKey);
     document.body.style.overflow = "hidden";
     return () => {
@@ -81,7 +83,8 @@ export default function ArticleContent({ content }) {
   }
 
   return (
-    <div className="prose prose-sm max-w-none
+    <div
+      className="prose prose-sm max-w-none
       prose-headings:font-bold prose-headings:text-gray-900
       prose-h2:text-lg prose-h2:mt-8 prose-h2:mb-3
       prose-h3:text-base prose-h3:mt-6 prose-h3:mb-2
@@ -95,70 +98,122 @@ export default function ArticleContent({ content }) {
       prose-th:bg-gray-50 prose-th:font-semibold prose-th:text-gray-700 prose-th:text-xs prose-th:uppercase prose-th:tracking-wider
       prose-td:text-gray-600
       prose-hr:border-gray-200
-    ">
+    "
+    >
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeRaw]}
         components={{
           iframe: ({ src, title }) => {
-            const isPlaylist = src?.includes("videoseries") || src?.includes("list=");
+            const isPlaylist =
+              src?.includes("videoseries") || src?.includes("list=");
             return (
               <div
                 className="my-6 rounded-xl overflow-hidden shadow-lg border border-gray-200 bg-black"
-                style={{ position: "relative", paddingTop: isPlaylist ? "62%" : "56.25%" }}
+                style={{
+                  position: "relative",
+                  paddingTop: isPlaylist ? "62%" : "56.25%",
+                }}
               >
                 <iframe
                   src={src}
                   title={title || "Video"}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
-                  style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    border: 0,
+                  }}
                 />
               </div>
             );
           },
           table: ({ children }) => (
             <div className="overflow-x-auto my-4 rounded-lg border border-gray-200">
-              <table className="min-w-full divide-y divide-gray-200">{children}</table>
+              <table className="min-w-full divide-y divide-gray-200">
+                {children}
+              </table>
             </div>
           ),
-          thead: ({ children }) => <thead className="bg-gray-50">{children}</thead>,
-          tbody: ({ children }) => <tbody className="divide-y divide-gray-100 bg-white">{children}</tbody>,
+          thead: ({ children }) => (
+            <thead className="bg-gray-50">{children}</thead>
+          ),
+          tbody: ({ children }) => (
+            <tbody className="divide-y divide-gray-100 bg-white">
+              {children}
+            </tbody>
+          ),
           th: ({ children }) => (
-            <th className="px-4 py-2.5 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider whitespace-nowrap">
+            <th className="px-4 py-2.5 text-left text-sm font-semibold text-gray-600 tracking-wider whitespace-nowrap">
               {children}
             </th>
           ),
           td: ({ children }) => (
-            <td className="px-4 py-2.5 text-sm text-gray-600 align-top">{children}</td>
+            <td className="px-4 py-2.5 text-sm text-gray-600 align-top">
+              {children}
+            </td>
           ),
-          tr: ({ children }) => <tr className="hover:bg-gray-50 transition-colors">{children}</tr>,
+          tr: ({ children }) => (
+            <tr className="hover:bg-gray-50 transition-colors">{children}</tr>
+          ),
           h2: ({ children, node }) => (
-            <h2 id={headingId(children, node)} className="text-lg font-bold text-gray-900 mt-8 mb-3 pb-2 border-b border-gray-100">{children}</h2>
+            <h2
+              id={headingId(children, node)}
+              className="text-lg font-bold text-gray-900 mt-8 mb-3 pb-2 border-b border-gray-100"
+            >
+              {children}
+            </h2>
           ),
           h3: ({ children, node }) => (
-            <h3 id={headingId(children, node)} className="text-base font-bold text-gray-900 mt-6 mb-2">{children}</h3>
+            <h3
+              id={headingId(children, node)}
+              className="text-base font-bold text-gray-900 mt-6 mb-2"
+            >
+              {children}
+            </h3>
           ),
           h4: ({ children, node }) => (
-            <h4 id={headingId(children, node)} className="text-sm font-semibold text-gray-800 mt-4 mb-1">{children}</h4>
+            <h4
+              id={headingId(children, node)}
+              className="text-sm font-semibold text-gray-800 mt-4 mb-1"
+            >
+              {children}
+            </h4>
           ),
           ul: ({ children }) => (
-            <ul className="list-disc list-outside ml-5 space-y-1 my-3">{children}</ul>
+            <ul className="list-disc list-outside ml-5 space-y-1 my-3">
+              {children}
+            </ul>
           ),
           ol: ({ children }) => (
-            <ol className="list-decimal list-outside ml-5 space-y-1 my-3">{children}</ol>
+            <ol className="list-decimal list-outside ml-5 space-y-1 my-3">
+              {children}
+            </ol>
           ),
           li: ({ children }) => (
-            <li className="text-sm text-gray-600 leading-relaxed">{children}</li>
+            <li className="text-sm text-gray-600 leading-relaxed">
+              {children}
+            </li>
           ),
           p: ({ children }) => (
-            <p className="text-sm text-gray-600 leading-relaxed my-2">{children}</p>
+            <p className="text-sm text-gray-600 leading-relaxed my-2">
+              {children}
+            </p>
           ),
           strong: ({ children }) => (
             <strong className="font-semibold text-gray-800">{children}</strong>
           ),
           a: ({ href, children }) => (
-            <a href={href} className="text-blue-600 hover:underline" target={href?.startsWith("http") ? "_blank" : undefined} rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}>
+            <a
+              href={href}
+              className="text-blue-600 hover:underline"
+              target={href?.startsWith("http") ? "_blank" : undefined}
+              rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
+            >
               {children}
             </a>
           ),

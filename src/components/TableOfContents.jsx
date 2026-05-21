@@ -33,7 +33,8 @@ function extractHeadings(content) {
 function scrollToHeading(id) {
   const el = document.getElementById(id);
   if (!el) return;
-  const top = el.getBoundingClientRect().top + window.scrollY - STICKY_OFFSET - 16;
+  const top =
+    el.getBoundingClientRect().top + window.scrollY - STICKY_OFFSET - 16;
   window.scrollTo({ top, behavior: "smooth" });
 }
 
@@ -43,7 +44,9 @@ export default function TableOfContents({ content }) {
 
   useEffect(() => {
     if (headings.length === 0) return;
-    const elements = headings.map((h) => document.getElementById(h.id)).filter(Boolean);
+    const elements = headings
+      .map((h) => document.getElementById(h.id))
+      .filter(Boolean);
     if (elements.length === 0) return;
 
     const observer = new IntersectionObserver(
@@ -51,13 +54,15 @@ export default function TableOfContents({ content }) {
         const visible = entries.filter((e) => e.isIntersecting);
         if (visible.length > 0) {
           const topmost = visible.reduce((prev, curr) =>
-            prev.boundingClientRect.top < curr.boundingClientRect.top ? prev : curr
+            prev.boundingClientRect.top < curr.boundingClientRect.top
+              ? prev
+              : curr,
           );
           setActiveId(topmost.target.id);
         }
       },
       // top margin accounts for both sticky bars; bottom clips lower 60% of viewport
-      { rootMargin: `-${STICKY_OFFSET + 4}px 0% -60% 0%`, threshold: 0 }
+      { rootMargin: `-${STICKY_OFFSET + 4}px 0% -60% 0%`, threshold: 0 },
     );
 
     elements.forEach((el) => observer.observe(el));
@@ -68,7 +73,7 @@ export default function TableOfContents({ content }) {
 
   return (
     <aside className="hidden xl:block w-48 xl:w-56 shrink-0 self-start sticky top-34.5 max-h-[calc(100vh-138px)] overflow-y-auto py-8 pl-5 border-l border-gray-200/90">
-      <p className="text-[11px] font-semibold text-gray-600 uppercase tracking-wider mb-3">
+      <p className="text-[12px] font-semibold text-gray-600 tracking-wider mb-3">
         On this page
       </p>
       <nav className="flex flex-col gap-0.5">
@@ -82,7 +87,11 @@ export default function TableOfContents({ content }) {
               setActiveId(heading.id);
             }}
             className={`block text-[12px] leading-snug py-1 transition-colors duration-150 ${
-              heading.level === 2 ? "pl-0" : heading.level === 3 ? "pl-3" : "pl-5"
+              heading.level === 2
+                ? "pl-0"
+                : heading.level === 3
+                  ? "pl-3"
+                  : "pl-5"
             } ${
               activeId === heading.id
                 ? "text-blue-600 font-medium"

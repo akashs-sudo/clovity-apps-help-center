@@ -175,6 +175,12 @@ Use the **Issue Types** dropdown to decide whether audits apply to Stories, Bugs
 
 Click **Fetch Fields** (or wait for the app to auto-load them). A progress bar shows the scan is running. Once complete, the **Last scanned** timestamp confirms the fields are ready.
 
+  <img 
+    src="/images/backlog-auditor-expert/Asset1.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+
 ## Step 4 - Choose or Create a Ruleset
 
 In the **Select Or Create Rule Set** panel:
@@ -197,6 +203,18 @@ Click **Add Rule** to add it to the ruleset. Repeat for every rule you need.
 ## Step 6 - Save the Ruleset
 
 Once all rules are configured, click **Save Ruleset** to store it. Saved rulesets are immediately available for use on the Project (Audit) Page.
+
+<img 
+    src="/images/backlog-auditor-expert/Asset2.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+
+  <img 
+    src="/images/backlog-auditor-expert/Asset17.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
 
 > **Tip:** Start small - begin with 3–5 high-value rules before expanding.
 `,
@@ -228,6 +246,11 @@ Click the **delete icon** (trash) next to any rule. A confirmation prompt appear
 ## Unsaved Changes Protection
 
 Whenever you edit, add, or delete a rule and then try to navigate away - switch projects/issue types, leave the Admin page, refresh, or close the tab - the app surfaces an **Unsaved Changes** dialog:
+<img 
+    src="/images/backlog-auditor-expert/Asset14.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
 
 | Button | Result |
 |---|---|
@@ -277,6 +300,12 @@ Click **Run Audit**. The app automatically checks every issue in the backlog aga
 
 A progress bar shows how many issues have been audited (e.g., "Audited 200 of 472 issues - 42%"). Large backlogs may take a moment.
 
+<img 
+    src="/images/backlog-auditor-expert/Asset6.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+
 ## Step 3 - Review the Results
 
 Once complete, the page displays:
@@ -308,6 +337,12 @@ At-a-glance metrics shown at the top of every report:
 | **Top Assignee** | The user with the most defects |
 | **Top Field** | The field with the most violations |
 
+<img 
+    src="/images/backlog-auditor-expert/Asset7.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+
 ## Charts
 
 ### Violations Distribution (By Condition)
@@ -316,11 +351,39 @@ A pie chart showing how violations are spread across conditions (e.g., isEmtpy, 
 ### Top 5 Assignees with Defects
 A bar chart ranking team members by total defect count. Use this to detect who may need more guidance or support around backlog hygiene.
 
+<div class="grid grid-cols-2 gap-4">
+<img 
+    src="/images/backlog-auditor-expert/Asset16.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+
+  <img 
+    src="/images/backlog-auditor-expert/Asset15.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+  </div>
+
 ### Defects by Issue Type
 A bar chart comparing violation counts across Stories, Tasks, Bugs, Epics, and Subtasks. Understand where problems cluster most.
 
 ### Top 5 Fields with Defects
 A bar chart ranking Jira fields by total violations (e.g., Assignee, Reporter, Due date). Spot which fields are consistently incomplete or incorrect.
+
+<div class="grid grid-cols-2 gap-4">
+<img 
+    src="/images/backlog-auditor-expert/Asset10.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+
+  <img 
+    src="/images/backlog-auditor-expert/Asset11.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
+  </div>
 
 ## Defects Trend Chart
 
@@ -330,6 +393,12 @@ One of the most powerful features. Shows how total violations evolve over the **
 - **Violations increasing** → Standards are not being followed; corrective action is required
 
 Use this chart to demonstrate measurable progress to stakeholders during sprint reviews.
+
+<img 
+    src="/images/backlog-auditor-expert/Asset12.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
 
 ## Defects Table
 
@@ -344,6 +413,12 @@ The table provides detailed, row-level evidence of every violation:
 | **Message** | The violation message configured by the admin |
 
 Use the **Search issues** box to filter rows, or use the **All Rules** dropdown to filter by a specific rule. Click **Export CSV** to download the full table for offline analysis or sharing.
+
+<img 
+    src="/images/backlog-auditor-expert/Asset13.png"
+    alt="Configure Report"
+    style="border-radius:12px; width:100%; max-width:800px; height:auto; display:block; margin:0 auto;"
+  />
 
 > This table acts as the "to-do list" for teams. Every row highlights exactly what to fix to clean up the backlog.
 `,

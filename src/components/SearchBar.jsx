@@ -41,7 +41,7 @@ export default function SearchBar({ className = "" }) {
         <button
           type="submit"
           className="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-1.5 leading-[18px] text-xs
-                     font-medium text-white rounded-lg hover:opacity-90 transition-opacity"
+                    cursor-pointer font-medium text-white rounded-lg hover:opacity-90 transition-opacity"
           style={{ backgroundColor: "#0052CC" }}
         >
           Search

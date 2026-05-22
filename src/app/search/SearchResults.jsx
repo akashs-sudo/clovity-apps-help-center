@@ -154,7 +154,6 @@ export default function SearchResults({ searchIndex }) {
         </>
       ) : query ? (
         <div className="text-center py-16">
-          <p className="text-5xl mb-4">🔍</p>
           <h2 className="text-xl font-semibold text-gray-800 mb-2">
             No results found
           </h2>

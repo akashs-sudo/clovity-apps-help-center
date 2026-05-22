@@ -17,7 +17,7 @@ function SearchResults() {
           app.name.toLowerCase().includes(q) ||
           app.description.toLowerCase().includes(q) ||
           app.platform.toLowerCase().includes(q) ||
-          app.sections.some(
+          app?.sections?.some(
             (s) =>
               s.title.toLowerCase().includes(q) ||
               s.content.toLowerCase().includes(q),

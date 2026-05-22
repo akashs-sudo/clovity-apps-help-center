@@ -3,15 +3,22 @@ import AppTabs from "@/components/AppTabs";
 import { apps } from "@/data/apps";
 
 const jiraCount = apps.filter((a) => a.platform.includes("Jira")).length;
-const confluenceCount = apps.filter((a) => a.platform.includes("Confluence")).length;
+const confluenceCount = apps.filter((a) =>
+  a.platform.includes("Confluence"),
+).length;
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <div className="py-16 px-4" style={{ background: "linear-gradient(135deg, #0A1628 0%, #1E3A5F 100%)" }}>
+      <div
+        className="py-16 px-4"
+        style={{
+          background: "linear-gradient(135deg, #0A1628 0%, #1E3A5F 100%)",
+        }}
+      >
         <div className="max-w-2xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 text-blue-300 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5">
+          <div className="inline-flex items-center gap-2 bg-white/10 text-blue-300 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded mb-5">
             <span className="w-1.5 h-1.5 rounded-full bg-blue-400 inline-block" />
             Atlassian Platinum Partner
           </div>
@@ -19,7 +26,8 @@ export default function HomePage() {
             Clovity Help Center
           </h1>
           <p className="text-gray-300 text-lg mb-8">
-            Product documentation, user guides, and resources for all Clovity apps
+            Product documentation, user guides, and resources for all Clovity
+            apps
           </p>
           <SearchBar />
         </div>
@@ -37,8 +45,10 @@ export default function HomePage() {
         <AppTabs apps={apps} />
 
         {/* Support Banner */}
-        <div className="mt-14 rounded-2xl border border-gray-200 bg-gray-50 p-8 text-center">
-          <h3 className="text-lg font-bold text-gray-900 mb-1">Need more help?</h3>
+        <div className="mt-14 rounded-md border border-gray-200 bg-gray-50 p-8 text-center">
+          <h3 className="text-lg font-bold text-gray-900 mb-1">
+            Need more help?
+          </h3>
           <p className="text-gray-500 text-sm mb-6">
             Contact our Atlassian-certified support team or raise a ticket.
           </p>
@@ -47,7 +57,7 @@ export default function HomePage() {
               href="https://clovity.com/contact"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2.5 text-sm font-semibold text-white rounded-lg hover:opacity-90 transition-opacity"
+              className="px-5 py-2.5 text-sm font-semibold text-white rounded-md hover:opacity-90 transition-opacity"
               style={{ backgroundColor: "#0052CC" }}
             >
               Contact Support
@@ -56,7 +66,7 @@ export default function HomePage() {
               href="https://marketplace.atlassian.com/vendors/398573336/clovity"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2.5 text-sm font-semibold text-gray-700 rounded-lg border border-gray-200 bg-white hover:bg-gray-100 transition-colors"
+              className="px-5 py-2.5 text-sm font-semibold text-gray-700 rounded-md border border-gray-200 bg-white hover:bg-gray-100 transition-colors"
             >
               View All Apps on Marketplace
             </a>

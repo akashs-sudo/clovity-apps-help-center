@@ -361,7 +361,7 @@ export default async function AppPage({ params }) {
                   <Link
                     key={cat.id}
                     href={`/apps/${slug}/${cat.articles[0].slug}`}
-                    className="group relative flex flex-col rounded-xl border border-gray-200 bg-white overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+                    className="group relative flex flex-col rounded-md border border-gray-200 bg-white overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
                   >
                     <div className="flex flex-col flex-1 p-5">
                       {/* Icon */}
@@ -411,7 +411,7 @@ export default async function AppPage({ params }) {
             </div>
 
             {/* Support footer */}
-            <div className="mt-12 p-6 rounded-2xl border border-gray-200 bg-gradient-to-r from-slate-50 to-blue-50/40 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="mt-12 p-6 rounded-md border border-gray-200 bg-gradient-to-r from-slate-50 to-blue-50/40 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
                 <p className="font-semibold text-gray-900 text-sm">
                   Still need help?
@@ -423,13 +423,13 @@ export default async function AppPage({ params }) {
               <div className="flex gap-3 shrink-0">
                 <a
                   href="mailto:developers@clovity.com"
-                  className="px-4 py-2 text-xs font-semibold text-gray-700 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors shadow-sm"
+                  className="px-4 py-2 text-xs font-semibold text-gray-700 bg-white border border-gray-200 rounded-md hover:bg-gray-50 transition-colors shadow-sm"
                 >
                   Email Support
                 </a>
                 <Link
                   href={`/apps/${slug}/contact-support`}
-                  className="px-4 py-2 text-xs font-semibold text-white rounded-xl hover:opacity-90 transition-opacity shadow-sm"
+                  className="px-4 py-2 text-xs font-semibold text-white rounded-md hover:opacity-90 transition-opacity shadow-sm"
                   style={{ backgroundColor: "#0052CC" }}
                 >
                   Contact Us

@@ -34,14 +34,14 @@ export default function SearchBar({ className = "" }) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search documentation..."
-          className="w-full pl-10 pr-28 py-3 text-sm border border-gray-200 rounded-xl
+          className="w-full pl-10 pr-28 py-3 text-sm border border-gray-200 rounded-md
                      bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500
                      focus:border-transparent text-gray-800 placeholder-gray-400"
         />
         <button
           type="submit"
           className="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-1.5 leading-[18px] text-xs
-                    cursor-pointer font-medium text-white rounded-lg hover:opacity-90 transition-opacity"
+                    cursor-pointer font-medium text-white rounded-md hover:opacity-90 transition-opacity"
           style={{ backgroundColor: "#0052CC" }}
         >
           Search

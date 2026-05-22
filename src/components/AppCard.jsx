@@ -6,7 +6,7 @@ export default function AppCard({ app }) {
 
   return (
     <Link href={`/apps/${app.slug}`} className="group block h-full">
-      <div className="flex flex-col h-full bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-gray-300 transition-all duration-200">
+      <div className="flex flex-col h-full bg-white border border-gray-200 rounded-md overflow-hidden hover:shadow-lg hover:border-gray-300 transition-all duration-200">
         {/* Top color strip */}
 
         <div className="p-5 flex flex-col h-full">
@@ -50,7 +50,6 @@ export default function AppCard({ app }) {
             >
               {app.platform}
             </span>
-           
           </div>
         </div>
       </div>

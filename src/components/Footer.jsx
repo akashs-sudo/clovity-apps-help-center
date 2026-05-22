@@ -15,6 +15,7 @@ export default function Footer() {
                   height={35}
                   src="/images/global/png/Clovity_logo_white.webp"
                   alt="Clovity"
+                  style={{ height: "auto" }}
                 />
               </Link>
             </div>

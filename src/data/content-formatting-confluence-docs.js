@@ -869,31 +869,55 @@ Use tooltips sparingly. If the definition is important enough that most readers 
 <img src="/images/content-formatting-assets/progressbar-macro.png" alt="Progress Bar Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
 
 ## What It Does
-The Progress Bar macro renders a visual, percentage-based progress indicator. Use it to show task completion, project health, survey results, or any value on a 0–100% scale.
+The Progress Bar macro creates a **multi-step, cross-page progress bar** in Confluence. Each step macro is placed on a separate page. Together they render a unified visual bar that shows readers where they are in a multi-page process — like an onboarding flow, a tutorial series, or a multi-phase procedure.
+
+The bar is automatically scoped to a parent page: all step macros that share the same parent page belong to the same progress bar, with no manual ID configuration required.
+
+## How It Works
+
+1. Add a **Progress Bar** macro to each page that is part of the flow.
+2. Configure each macro with its step title, step number, and destination (the Confluence page this step links to).
+3. When a reader views any page in the flow, the macro with the **lowest step number** renders the full progress bar above the content.
+4. The active step (highlighted in the bar) is determined by matching the current page to a step's destination.
+5. Readers can click any step in the bar to navigate directly to that page.
 
 ## Configuration Options
 
-| Setting | Description | Default |
+| Setting | Description | Required |
 |---|---|---|
-| Value | Number from 0 to 100 | 0 |
-| Label | Text label for the bar | None |
-| Color | Fixed color (hex or named) or auto-threshold | Auto |
-| Auto-threshold colors | Green >80%, Yellow 50–80%, Red <50% | Enabled when no fixed color |
-| Size | Thin, Standard, Thick | Standard |
-| Show Percentage | Display the number next to the bar | Yes |
-| Animate | Animate the fill on page load | Yes |
+| Current step | Mark this step as the active position in the bar | No |
+| Step title | Label shown in the bar for this step (max 50 characters) | Yes |
+| Destination | The Confluence page this step navigates to on click | Yes |
+| Step number | Position of this step in the sequence (1–100) | Yes |
 
-## Multiple Bars (Stacked)
+## Visual Behavior
 
-Insert multiple Progress Bar macros in sequence (or inside a table) to create a comparison view. Example: show completion per team member, per project phase, or per feature area.
+- **Blue dot** — shown on the current (active) step and the first step when no step is active yet
+- **Gray dot** — shown on steps that come after the active step (not yet completed)
+- **No dot** — completed steps (before the active step) show no dot; the blue line covers them
+- **Blue line** — drawn from the first step to the active step to show progress
+- **Step color** — defaults to \`#0052cc\`; inherits from the color set when saving a step
+
+## Scope & Bar Identity
+
+The macro automatically groups steps by shared parent page. You do not need to assign a bar ID manually. Steps on pages that share the same parent are treated as one progress bar. This means you can run independent progress bars across different sections of your space without any naming conflicts.
+
+## Setup Example
+
+To build a 3-step onboarding flow:
+
+1. Create pages: **Step 1 – Welcome**, **Step 2 – Setup**, **Step 3 – Complete** — all as children of an **Onboarding** parent page.
+2. On **Step 1 – Welcome**: add a Progress Bar macro, set Step title = "Welcome", Step number = 1, Destination = the Welcome page.
+3. On **Step 2 – Setup**: add a Progress Bar macro, set Step title = "Setup", Step number = 2, Destination = the Setup page.
+4. On **Step 3 – Complete**: add a Progress Bar macro, set Step title = "Complete", Step number = 3, Destination = the Complete page.
+5. When any of these pages is viewed, the bar appears above the content showing all three steps with the current page highlighted.
 
 ## Common Use Cases
 
-- Sprint completion percentage at the top of a sprint page
-- OKR key result progress tracking
-- Test coverage per module
-- Feature rollout percentage
-- Budget consumed vs. allocated`,
+- Multi-page onboarding or employee orientation flows
+- Step-by-step tutorial series spread across Confluence pages
+- Multi-phase project procedures with one page per phase
+- Training paths where each module lives on its own page`,
         },
         {
           slug: "footnotes-macro",

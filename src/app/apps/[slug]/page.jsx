@@ -262,16 +262,6 @@ export default async function AppPage({ params }) {
       {/* App sub-header breadcrumb */}
       <div className=" top-[80.8px] border-b border-gray-200 bg-white sticky z-30">
         <div className="max-w-[1920px] mx-auto px-4 sm:px-6 h-14 flex items-center gap-3">
-          <div className="w-6 h-6 rounded overflow-hidden flex-shrink-0">
-            <Image
-              src={app.icon}
-              alt={app.shortName}
-              width={24}
-              height={24}
-              unoptimized
-              className="w-full h-full object-cover"
-            />
-          </div>
           <nav className="flex items-center gap-1.5 text-sm text-gray-500">
             <Link href="/" className="hover:text-gray-800 transition-colors">
               Home

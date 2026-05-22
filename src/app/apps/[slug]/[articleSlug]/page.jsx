@@ -79,18 +79,6 @@ export default async function ArticlePage({ params }) {
       {/* App header */}
       <div className="border-b border-gray-200 bg-white sticky top-[81px] z-30">
         <div className="max-w-[1920px] mx-auto px-4 sm:px-6 h-14 flex items-center gap-3">
-          {app && (
-            <div className="w-6 h-6 rounded overflow-hidden flex-shrink-0">
-              <Image
-                src={app.icon}
-                alt={app.shortName}
-                width={24}
-                height={24}
-                unoptimized
-                className="w-full h-full object-cover"
-              />
-            </div>
-          )}
           <nav className="flex items-center gap-1.5 text-sm text-gray-500 min-w-0">
             <Link
               href="/"

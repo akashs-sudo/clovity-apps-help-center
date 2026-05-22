@@ -1,4 +1,4 @@
-import SearchBar from "@/components/SearchBar";
+import SearchBarWrapper from "@/components/SearchBarWrapper";
 import AppTabs from "@/components/AppTabs";
 import { apps } from "@/data/apps";
 
@@ -29,7 +29,7 @@ export default function HomePage() {
             Product documentation, user guides, and resources for all Clovity
             apps
           </p>
-          <SearchBar />
+          <SearchBarWrapper />
         </div>
       </div>
 

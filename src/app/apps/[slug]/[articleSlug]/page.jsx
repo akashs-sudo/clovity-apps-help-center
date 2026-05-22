@@ -10,6 +10,7 @@ import { latexDiagramsConfluenceDocs } from "@/data/latex-diagrams-confluence-do
 import { jqlaiDocs } from "@/data/jql-ai";
 import { contentFormattingConfluenceDocs } from "@/data/content-formatting-confluence-docs";
 import { backlogAuditorDocs } from "@/data/backlog-auditor-docs";
+import { pulseAiJiraDocs } from "@/data/pulse-ai-jira-docs";
 import DocSidebar from "@/components/DocSidebar";
 import ScrollToTop from "@/components/ScrollToTop";
 import ArticleContent from "@/components/ArticleContent";
@@ -27,6 +28,7 @@ const docsMap = {
   "content-formatting-confluence": contentFormattingConfluenceDocs,
   "backlog-auditor-jira": backlogAuditorDocs,
   "jql-ai-jira": jqlaiDocs,
+  "pulse-ai-jira": pulseAiJiraDocs,
 };
 
 export async function generateStaticParams() {

@@ -6,6 +6,7 @@ import { latexDiagramsConfluenceDocs } from "@/data/latex-diagrams-confluence-do
 import { jqlaiDocs } from "@/data/jql-ai";
 import { contentFormattingConfluenceDocs } from "@/data/content-formatting-confluence-docs";
 import { backlogAuditorDocs } from "@/data/backlog-auditor-docs";
+import { pulseAiJiraDocs } from "@/data/pulse-ai-jira-docs";
 import Sidebar from "@/components/Sidebar";
 import ScrollToTop from "@/components/ScrollToTop";
 import { notFound } from "next/navigation";
@@ -44,6 +45,7 @@ const docsMap = {
   "content-formatting-confluence": contentFormattingConfluenceDocs,
   "backlog-auditor-jira": backlogAuditorDocs,
   "jql-ai-jira": jqlaiDocs,
+  "pulse-ai-jira": pulseAiJiraDocs,
 };
 
 const CATEGORY_META = {
@@ -173,6 +175,34 @@ const CATEGORY_META = {
   "Additional Resources": {
     icon: FileText,
     summary: "Privacy policy, EULA, trust center, and API documentation.",
+  },
+  Dashboard: {
+    icon: LayoutDashboard,
+    summary: "Pulse Score, findings table, and AI assistant overview.",
+  },
+  Governance: {
+    icon: Shield,
+    summary: "Audit projects, users, permissions, and group hygiene.",
+  },
+  "Workflows & Schemes": {
+    icon: Settings2,
+    summary: "Detect unused, duplicate, and dead-end workflows and schemes.",
+  },
+  Configuration: {
+    icon: Settings,
+    summary: "Audit custom fields, screens, work types, and global config.",
+  },
+  "Sprints & Delivery": {
+    icon: Zap,
+    summary: "Sprint health, risk thresholds, and AI delivery intelligence.",
+  },
+  "AI & Agents": {
+    icon: Sparkles,
+    summary: "Advance agents, active subscriptions, and reporting modules.",
+  },
+  Settings: {
+    icon: Settings,
+    summary: "Scan schedule, scoring weights, agent position, and action log.",
   },
   "Building Rulesets": {
     icon: Settings2,

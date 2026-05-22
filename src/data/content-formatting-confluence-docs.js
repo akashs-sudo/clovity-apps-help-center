@@ -2125,7 +2125,6 @@ Key supported macro categories include:
 ## Release Information
 
 * App Version: 6.2.0
-* Build Number: 2001080
 * Version Status: Public
 * Hosting: Cloud
 * Release Date: 2026-04-20

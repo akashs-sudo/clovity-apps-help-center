@@ -1663,22 +1663,17 @@ The log displays the last 10 confirmed actions per user and is never deleted.
 
 ### What's New
 
-- **Sprints & Delivery** - Added Active Blockers summary card showing unresolved blocker-priority issues across all active sprints
-- **Governance → Users & Permissions** - Ghost Account detection now cross-references audit log history for more accurate identification
-- **Configuration → Custom Fields** - Improved detection of global context bloat: fields used in < 2 projects are now flagged at Medium severity regardless of usage count
-- **Ask Pulse AI** - Improved intent detection for write-action requests; the agent now clarifies scope before presenting an Action Card when multiple items match
-- **Settings → Scan Schedule** - Added scan retention configuration (1 / 3 / 6 months) for Reporting add-on trend analysis
+- **Sprints & Delivery** - Added **Active Blockers** summary card to the Sprints & Delivery overview. Displays the count of all unresolved blocker-priority issues across every active Scrum sprint in the org, with a direct link to the filtered issue list. This is the highest-impact delivery risk indicator in the sprint view.
+- **Governance → Users & Permissions** - **Ghost Account** detection now identifies accounts that have never generated an audit log event — giving admins a concrete, audit-backed definition of dormant accounts rather than relying on login timestamps alone.
+- **Configuration → Custom Fields** - Global context bloat detection refined: custom fields with a global context that are used in fewer than 2 projects are now flagged to help admins identify fields that were intended for specific teams but were scoped too broadly.
+- **Ask Pulse AI** - Write-action intent detection improved. When a natural language request matches multiple candidate items (e.g., asking to clean a workflow that appears in multiple schemes), the agent now asks a clarifying scope question before surfacing an Action Card — reducing the risk of unintended bulk actions.
+- **Settings → Scan Schedule** - Scan retention is now configurable: 1 month, 3 months, or 6 months. Historical scan results within the retention window are used by the Reporting for Jira add-on for trend analysis and score delta charting.
 
 ### Bug Fixes
 
-- Fixed an issue where the Pulse Score delta indicator showed incorrect sign on first scan after OAuth reconnect
-- Resolved a display issue where the Mini Agent FAB overlapped table pagination controls on small viewports
-- Fixed Workflow Dead-Ends detection missing transitions that used global transition groups
-
-### Performance
-
-- Org sync time reduced by ~20% for instances with 200+ projects through parallel API batching
-- Dashboard load time improved for instances with 1,000+ custom fields
+- Fixed an issue where the Pulse Score delta indicator displayed the wrong sign (positive vs. negative) immediately after completing an OAuth reconnect and re-running the first scan
+- Resolved a layout issue where the Mini Agent floating action button overlapped table pagination controls on viewports narrower than 1280px
+- Fixed Workflow Dead-Ends detection missing transitions that route through a Jira global transition group (transitions shared across multiple workflows)
 
 ---
 
@@ -1686,18 +1681,18 @@ The log displays the last 10 confirmed actions per user and is never deleted.
 
 **Release type:** Major release
 
-### Highlights
+### What's New
 
-- **Governance → Groups** - New Groups Directory view with Empty and Unreferenced group detection
-- **Configuration → Global Config** - New Filters sub-view with Invalid JQL and Dead Owner detection
-- **Sprints & Delivery** - Sprint Intelligence AI agent launched with JQL generation and deferral recommendations
-- **AI & Agents** - Advance Agents panel introduced with WorkflowAI, OnboardAI, AutomateIQ, and Reporting for Jira (all Coming soon)
-- **Settings → Action Log** - Full audit trail of all confirmed write actions per user
-- **OAuth reconnect flow** - Improved re-authorisation UX with clear status indicators in Settings
+- **Governance → Groups** - New **Groups Directory** view audits all Jira groups in the org. Surfaces **Empty** groups (zero members) and **Unreferenced** groups (not referenced in any permission, notification, or work item security scheme) as cleanup candidates. Delete action available for eligible groups (system groups excluded).
+- **Configuration → Global Config → Filters** - New **Filters** sub-view audits all saved Jira filters. Detects **Invalid JQL** (filter JQL that silently returns empty or wrong results), **Dead Owner** (filter owned by a deactivated account), and **Unused** filters (not attached to any board). Each finding links to the affected filter for direct remediation.
+- **Sprints & Delivery** - **Ask Sprint Intelligence** AI agent launched. Scoped to active and recently closed sprint data. Supports natural language questions, JQL generation for overdue and at-risk items, deferral recommendation lists for overcommitted sprints, and carryover trend analysis across boards.
+- **AI & Agents** - **Advance Agents** panel introduced under the AI & Agents sidebar section. Lists four independently licensed agent modules: **WorkflowAI for Jira**, **OnboardAI for Jira**, **AutomateIQ for Jira**, and **Reporting for Jira**. All four are currently in early access (Coming soon status). Contact Clovity to request access.
+- **Settings → Action Log** - Full per-user audit trail of all write actions confirmed via Action Cards. Every action — succeeded or failed — is recorded with timestamp, action type, affected item, and outcome. Records are stored per user and never automatically deleted.
+- **Settings → OAuth** - Re-authorisation flow redesigned. **Settings → General** now shows live connection status, last token refresh time, and a **Re-connect with Atlassian** button. Status indicators update in real time during the OAuth flow.
 
 ### Breaking Changes
 
-- Minimum supported Forge runtime upgraded from Node.js 20.x to Node.js 24.x. If you have a custom Forge deployment, update before upgrading.
+- Forge runtime upgraded from Node.js 20.x to **Node.js 24.x**. Instances using a custom Forge deployment must update the runtime before upgrading to v5.0.0. Standard Atlassian Marketplace installations upgrade automatically.
 
 ---
 
@@ -1705,34 +1700,36 @@ The log displays the last 10 confirmed actions per user and is never deleted.
 
 ### v4.3.0
 
-- Introduced **per-project Pulse Score** in Governance → Projects
-- Added **Stale Backlog** flag (> 30% of issues with no update in 90+ days)
-- Custom field deletion changed to **soft-delete** (Jira trash, 60-day recovery window)
+- Introduced **per-project Pulse Score** in Governance → Projects. Each project is scored 0–100 and colour-coded (green ≥ 80, amber 50–79, red < 50) based on governance signals: lead assignment, issue activity, backlog freshness, and open issue volume.
+- Added **Stale Backlog** detection: projects where more than 30% of open issues have had no update in 90+ days are flagged in the Pulse Summary column and in a dedicated filter tab.
+- Custom field deletion changed to **soft-delete**: deleted fields are moved to the Jira configuration trash and remain recoverable for 60 days before permanent removal.
 
 ### v4.2.0
 
-- Added **Export PDF** to Top Findings Table
-- Introduced **Score Delta** indicator on Dashboard
-- Permission Schemes - added Duplicate detection using grant signature matching
+- Added **Export PDF** to the Top Findings Table. Exports the currently filtered findings view (All / Critical / High, filtered by report module) as a formatted PDF report.
+- Introduced **Score Delta** indicator on the Dashboard Pulse Score card. Shows the point change since the previous scan — positive delta means findings were resolved, negative delta means new findings were detected.
+- Permission Schemes — **Duplicate detection** added. Schemes with an identical grant signature (same combination of roles, groups, and permission types) are flagged as duplicates regardless of display name.
 
 ### v4.1.0
 
-- **Work Item Security Schemes** view added under Workflows & Schemes
-- Notification Schemes - Duplicate detection added (16-event rule set matching)
-- Settings → Agent Position: Right Panel / Bottom Drawer toggle introduced
+- **Work Item Security Schemes** view added under Workflows & Schemes. Audits all issue security schemes — surfaces orphaned schemes not assigned to any project and duplicate schemes with matching security level configurations.
+- Notification Schemes — **Duplicate detection** added. Schemes are compared against a 16-event rule set; schemes with identical notification mappings are flagged for consolidation.
+- **Settings → Agent Position** toggle introduced. Admins can choose between **Right Panel** (default — slides in alongside the table) and **Bottom Drawer** (opens at the bottom of the screen, suited for narrower displays).
 
 ### v4.0.0
 
-- Initial release of the five-dimension Pulse Score model
-- Dashboard, Governance, Workflows & Schemes, Configuration, Sprints & Delivery all launched
-- Mini Agent FAB introduced on all report views
-- OAuth 2.0 (3-legged) authorisation via Atlassian
+- Initial release of Pulse AI for Jira on the Atlassian Marketplace
+- **Five-dimension Pulse Score** model launched: Governance (25%), Delivery (25%), Quality (25%), Security (15%), Configuration (10%)
+- Core views launched: Dashboard, Governance (Projects, Users & Permissions), Workflows & Schemes, Configuration (Custom Fields, Fields & Types, Global Config), and Sprints & Delivery
+- **Mini Agent FAB** introduced on all report views — a floating action button (bottom-right) that opens a conversational AI assistant scoped to the current report's live data
+- **OAuth 2.0 (3-legged)** authorisation via Atlassian — all data access is scoped to your Atlassian tenancy and runs inside the Forge runtime
+- **Action Card** confirmation flow introduced — every AI-initiated write action requires explicit admin confirmation before execution, with a pre-flight check against the live Jira API
 
 ---
 
 ## Roadmap
 
-The following capabilities are planned for upcoming releases. Timelines are ESTIMATE only and subject to change.
+The following capabilities are planned for upcoming releases. Timelines are estimates and subject to change.
 
 | Feature | Target Release |
 |---|---|

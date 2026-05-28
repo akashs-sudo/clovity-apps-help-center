@@ -13,7 +13,7 @@ export default function Footer() {
                 <Image
                   width={120}
                   height={35}
-                  src="/images/global/png/Clovity_logo_white.webp"
+                  src="/images/global/png/clovity_logo_white.webp"
                   alt="Clovity"
                   style={{ height: "auto" }}
                 />

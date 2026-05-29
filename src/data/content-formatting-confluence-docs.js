@@ -1,4 +1,4 @@
-import { getAllArticles, findArticle } from "./time-tracking-docs";
+﻿import { getAllArticles, findArticle } from "./time-tracking-docs";
 export { getAllArticles, findArticle };
 
 export const contentFormattingConfluenceDocs = {
@@ -343,6 +343,320 @@ Conditional Show and Conditional Hide macros change what is **displayed** in the
 Users with page-read permission can still access all content via the Confluence REST API, page exports, or the Confluence mobile app - regardless of conditional macro settings.
 
 **For truly sensitive content, use Confluence Page Restrictions to limit read access at the page level.**`,
+        },
+      ],
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 8. USER GUIDE
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "user-guide",
+      title: "User Guide",
+      articles: [
+        {
+          slug: "start-here-by-role",
+          title: "Start Here - Guide by Role",
+          content: `
+Content Formatting Macros adds 20+ macros to the Confluence Cloud editor - no separate dashboard, no separate app to open. Everything happens inside a Confluence page in edit mode. Use this guide to find the fastest path for your role.
+
+## Content Author / Technical Writer
+
+You write pages and want richer formatting.
+
+**Start with:**
+1. [Quick Start Guide](/apps/content-formatting-confluence/quick-start) - insert your first macro in under 2 minutes
+2. [Tab Navigation Overview](/apps/content-formatting-confluence/tab-navigation) - create tabbed layouts from child pages or labels
+3. [Alert Macro](/apps/content-formatting-confluence/alert-macro) - highlight important notes, warnings, and tips
+4. [How to: Build a Tabbed Knowledge Base Page](/apps/content-formatting-confluence/how-to-tabbed-knowledge-base) - full page workflow
+
+**Best macros to learn first:** Alert · Background · Tab Navigation · Buttons · Advanced Expand
+
+---
+
+## Space Administrator
+
+You manage space structure and want consistent, well-organised content.
+
+**Start with:**
+1. [Tab Parent Content Mapper](/apps/content-formatting-confluence/tab-parent-mapper) - auto-generate tabs from child pages (updates automatically as pages are added)
+2. [Page Templates](/apps/content-formatting-confluence/page-templates) - apply consistent layouts across a space
+3. [Attachment Center Dashboard](/apps/content-formatting-confluence/attachment-center-dashboard) - audit attachments space-wide, find orphans, manage bulk actions
+4. [How to: Build a Tabbed Knowledge Base Page](/apps/content-formatting-confluence/how-to-tabbed-knowledge-base) - reference architecture for space-level hubs
+
+---
+
+## IT / Security Team
+
+You need to restrict what different audiences can see on the same page.
+
+**Start with:**
+1. [Conditional Show Guide](/apps/content-formatting-confluence/conditional-show) - show content only to a specific Confluence group
+2. [Conditional Hide Guide](/apps/content-formatting-confluence/conditional-hide) - hide content from specific groups or anonymous users
+3. [Privacy & Access Notes](/apps/content-formatting-confluence/privacy-access) - how macros interact with Confluence permissions
+4. [How to: Create Role-Based Content Visibility](/apps/content-formatting-confluence/how-to-role-based-content) - full workflow
+
+---
+
+## Confluence Administrator
+
+You install apps and need to understand what this app accesses.
+
+**Start with:**
+1. [Installation & Setup](/apps/content-formatting-confluence/installation-setup) - install from Atlassian Marketplace
+2. [Permissions & Access](/apps/content-formatting-confluence/permissions-access) - what the app can and cannot access
+3. [Privacy & Access Notes](/apps/content-formatting-confluence/privacy-access) - data residency and scope
+4. [Attachment Management & Audit](/apps/content-formatting-confluence/attachment-management) - storage and audit features
+`,
+        },
+        {
+          slug: "quick-reference",
+          title: "Quick Reference Card",
+          content: `
+A single-page reference for all macros, insertion methods, and key rules.
+
+## How to Insert Any Macro
+
+| Method | Steps |
+|---|---|
+| **Slash command** | Type \`/\` in the page body → type the macro name → click it |
+| **Toolbar insert (+)** | Click **+** in the editor toolbar → search or browse → click the macro |
+| **Macro browser** | Click **+** → **Other macros** → browse by category |
+
+## All Macros at a Glance
+
+### Navigation (Tabs)
+| Macro | What It Does | Full Reference |
+|---|---|---|
+| Tab Navigation | Container for tabbed page layouts | [Tab Navigation](/apps/content-formatting-confluence/tab-navigation) |
+| Tab Parent Content Mapper | Auto-tabs from child pages | [Parent Mapper](/apps/content-formatting-confluence/tab-parent-mapper) |
+| Tab Label Content Mapper | Auto-tabs from pages sharing a label | [Label Mapper](/apps/content-formatting-confluence/tab-label-mapper) |
+| Tab Confluence Page Mapper | Manual tab list from selected pages | [Page Mapper](/apps/content-formatting-confluence/tab-page-mapper) |
+| Create Custom Tabs | Manual custom tab content | [Custom Tabs](/apps/content-formatting-confluence/create-custom-tabs) |
+
+### Visibility
+| Macro | What It Does | Full Reference |
+|---|---|---|
+| Conditional Show | Show content only to a group / role | [Conditional Show](/apps/content-formatting-confluence/conditional-show) |
+| Conditional Hide | Hide content from a group / role | [Conditional Hide](/apps/content-formatting-confluence/conditional-hide) |
+
+### Rich Content
+| Macro | What It Does | Full Reference |
+|---|---|---|
+| Alert | Coloured info / warning / error / success callout | [Alert](/apps/content-formatting-confluence/alert-macro) |
+| Background | Coloured or image background section | [Background](/apps/content-formatting-confluence/background-macro) |
+| Buttons | Styled CTA link buttons | [Buttons](/apps/content-formatting-confluence/buttons-macro) |
+| Advanced Cards | Card-layout content blocks | [Advanced Cards](/apps/content-formatting-confluence/advanced-card-macro) |
+| Interactive Banner | Full-width announcement banner | [Interactive Banner](/apps/content-formatting-confluence/interactive-banner-macro) |
+| Advanced Expand | Collapsible content sections | [Advanced Expand](/apps/content-formatting-confluence/advanced-expand-macro) |
+| Pop-up Dialog | Modal overlay content | [Pop-up Dialog](/apps/content-formatting-confluence/popup-dialog-macro) |
+| Progress Bar | Visual completion indicator | [Progress Bar](/apps/content-formatting-confluence/progressbar-macro) |
+| Countdown Timer | Deadline or event countdown | [Countdown](/apps/content-formatting-confluence/countdown-macro) |
+| Status | Inline coloured status badge | [Status](/apps/content-formatting-confluence/status-macro) |
+| Tooltip | Hover-reveal tooltip text | [Tooltip](/apps/content-formatting-confluence/tooltip-macro) |
+| User Profile | Display a user's avatar and name | [User Profile](/apps/content-formatting-confluence/user-profile-macro) |
+| Numbered Headings | Auto-numbered heading hierarchy | [Numbered Headings](/apps/content-formatting-confluence/numbered-headings-macro) |
+| Divider | Styled horizontal divider line | [Divider](/apps/content-formatting-confluence/divider-macro) |
+| Footnotes | Numbered footnote references | [Footnotes](/apps/content-formatting-confluence/footnotes-macro) |
+| JSON Viewer | Formatted, collapsible JSON display | [JSON Viewer](/apps/content-formatting-confluence/json-viewer-macro) |
+
+### Attachment Management
+| Feature | What It Does | Full Reference |
+|---|---|---|
+| Attachment Center Dashboard | Space-wide attachment audit and inventory | [Dashboard](/apps/content-formatting-confluence/attachment-center-dashboard) |
+| Bulk Actions | Delete or move attachments in bulk | [Bulk Actions](/apps/content-formatting-confluence/attachment-bulk-actions) |
+| Audit Logs | History of attachment changes | [Audit Logs](/apps/content-formatting-confluence/attachment-audit-logs) |
+
+## Key Rules
+
+- **Tab Navigation cannot be nested inside another Tab Navigation** - use Advanced Expand for secondary grouping within a tab
+- **Conditional macros check group names at render time** - group names are case-sensitive and must match exactly as they appear in Confluence Admin → Groups
+- **Macro settings save when you click outside the panel** - you still need to Publish the page to make changes visible to others
+`,
+        },
+        {
+          slug: "how-to-tabbed-knowledge-base",
+          title: "How to: Build a Tabbed Knowledge Base Page",
+          content: `
+A step-by-step workflow for building a tabbed hub page that organises content across multiple sections - the most common pattern for IT runbooks, product docs, and team wikis.
+
+## Design: Three-Layer Structure
+
+A well-built tabbed page combines three macro layers:
+
+| Layer | Macro | Purpose |
+|---|---|---|
+| Navigation | Tab Navigation + mapper | Tabs across the top, each tab = one content section |
+| Visibility | Conditional Show / Hide | Different content per audience within the same tab |
+| Formatting | Alert, Background, Buttons, Cards | Visual richness and callouts within each section |
+
+## Step 1 - Prepare Your Child Pages (for Auto-Tab Approach)
+
+1. Create a parent page in Confluence (this will be your hub)
+2. Create child pages under it - one per tab section (e.g., Overview, Setup Guide, Troubleshooting, Reference)
+3. Name each child page clearly - the page title becomes the tab label
+
+→ [Tab Parent Content Mapper](/apps/content-formatting-confluence/tab-parent-mapper)
+
+## Step 2 - Insert Tab Navigation + Parent Mapper
+
+1. Open the hub page in edit mode
+2. Type \`/\` → search **Tab Navigation** → insert it
+3. Inside the Tab Navigation body, type \`/\` → search **Tab Parent Content Mapper** → insert it
+4. In the config panel, confirm the parent page (defaults to current page)
+5. Set Sort Order to **Manual** (page tree order) or **Alphabetical**
+6. Preview - each child page appears as a tab automatically
+
+> Tabs update automatically when child pages are added, renamed, or reordered in the page tree.
+
+→ [Tab Navigation Overview](/apps/content-formatting-confluence/tab-navigation)
+
+## Step 3 - Add Formatting Inside Tabs
+
+Edit each child page and add rich formatting macros:
+
+- Use **Alert** for warnings, notes, and important callouts
+- Use **Background** to visually distinguish different sections within a tab
+- Use **Buttons** to link to related Jira boards, external tools, or other pages
+- Use **Advanced Expand** to collapse long reference tables or optional details
+
+→ [Alert Macro](/apps/content-formatting-confluence/alert-macro) · [Background Macro](/apps/content-formatting-confluence/background-macro)
+
+## Step 4 - Add Audience Visibility (Optional)
+
+If different teams need to see different content within the same tab:
+
+1. On the child page (in edit mode), select the content meant for a specific group
+2. Type \`/\` → **Conditional Show** → insert it around the selected content
+3. In the config panel: Condition Type = **Group**, Group Name = exact group name from Confluence Admin
+4. Test in View mode with a group member and a non-member
+
+→ [How to: Create Role-Based Content Visibility](/apps/content-formatting-confluence/how-to-role-based-content)
+
+## Step 5 - Publish and Verify
+
+1. Publish each child page
+2. Publish the hub page
+3. Verify tabs appear correctly in view mode
+4. Test tab navigation - each tab should load the corresponding child page content inline
+
+## Maintaining the Hub
+
+- **Add a new tab:** Create a new child page under the parent - it appears automatically
+- **Remove a tab:** Delete or move the child page out of the parent
+- **Reorder tabs:** Drag child pages in the Confluence page tree to reorder them
+`,
+        },
+        {
+          slug: "how-to-role-based-content",
+          title: "How to: Create Role-Based Content Visibility",
+          content: `
+A workflow for showing or hiding specific content sections based on who is viewing the page - without creating separate pages for each audience.
+
+→ [Conditional Show Guide](/apps/content-formatting-confluence/conditional-show) · [Conditional Hide Guide](/apps/content-formatting-confluence/conditional-hide)
+
+## When to Use This
+
+| Scenario | Macro |
+|---|---|
+| Show admin-only notes inside a public runbook | Conditional Show (group = confluence-admins) |
+| Hide internal pricing from external users | Conditional Hide (group = external-users) |
+| Show different onboarding steps per team | Conditional Show (two blocks, different groups) |
+| Hide draft content from anonymous / logged-out users | Conditional Hide (Login Status = Anonymous) |
+
+## Step 1 - Identify Your Groups
+
+1. Go to **Confluence Admin → Groups** (or **Site Admin → Groups** for cloud)
+2. Note the **exact group name** - Conditional macros are case-sensitive
+3. If a group doesn't exist, create it in Confluence Admin and assign the right users
+
+## Step 2 - Wrap Content with Conditional Show
+
+To show content **only** to a specific group:
+
+1. Open the page in edit mode
+2. Select the content block you want to restrict
+3. Type \`/\` → **Conditional Show** → insert it (wraps the selected content)
+4. In the config panel:
+   - **Condition Type:** Group
+   - **Group Name:** Paste the exact group name
+5. Save the macro and Publish the page
+6. Test: log in as a group member (visible) and a non-member (hidden)
+
+## Step 3 - Wrap Content with Conditional Hide
+
+To hide content **from** a specific group:
+
+1. Select the content to hide
+2. Type \`/\` → **Conditional Hide** → insert it
+3. Config: Condition Type = **Group**, Group Name = the group to hide from
+4. Publish and test
+
+## Step 4 - Stack Multiple Conditions on the Same Page
+
+You can place multiple Conditional Show macros side by side to show different content to different audiences on the same page:
+
+\`\`\`
+[Conditional Show - Group: engineering-team]
+  → Engineering-specific setup steps
+[Conditional Show - Group: product-team]
+  → Product team workflow steps
+[Content with no conditional macro]
+  → Visible to everyone
+\`\`\`
+
+Each block is independent - users in multiple groups see all content that matches any of their groups.
+
+## Step 5 - Use Login Status for Public Pages
+
+For pages accessible to anonymous (logged-out) users:
+
+- **Condition Type: Login Status**
+  - **Authenticated:** Only logged-in users see this
+  - **Anonymous:** Only logged-out visitors see this (e.g., a "Please log in" message)
+
+## Verification Checklist
+
+- [ ] Group name matches exactly (copy-paste from Confluence Admin)
+- [ ] Tested with a user IN the target group (content shows correctly)
+- [ ] Tested with a user NOT in the target group (content is hidden)
+- [ ] Page published after saving macros
+`,
+        },
+        {
+          slug: "tips-best-practices",
+          title: "Tips & Best Practices",
+          content: `
+Non-obvious tips that save time and prevent common mistakes.
+
+## Tab Navigation
+
+- **Use the Parent Mapper for living hubs.** Tabs generated from child pages update automatically - add or rename a child page and the tab appears without editing the hub page. Custom Tabs require manual updates every time.
+- **Tab Navigation cannot be nested.** If you need collapsible subsections inside a tab, use Advanced Expand - it's designed for secondary grouping within a tab body.
+- **Reorder tabs by reordering child pages** in the Confluence page tree (drag and drop). The tab order follows the page tree order when using Manual sort.
+
+## Conditional Visibility
+
+- **Group names are case-sensitive.** Copy the group name directly from Confluence Admin → Groups. A single character difference causes the condition to silently fail - content becomes visible to everyone (Conditional Show fails open, not closed).
+- **Test with two browser sessions.** Open an incognito window logged in as a non-group member. Don't rely on memory of who can see what - verify every condition.
+- **Conditional macros enforce visibility, not access.** They hide content from the rendered view. The underlying page is still accessible to anyone with page view permission. For true access control, use Confluence page restrictions.
+
+## Rich Content Macros
+
+- **Alert types map to meaning, not just colour.** Use Info (blue) for context, Warning (yellow) for caution, Error (red) for blockers, Success (green) for completed steps. Consistent usage helps readers scan quickly.
+- **Background + Alert creates a highlighted section.** Wrap an Alert inside a Background macro to create a visually distinct callout area - useful for critical procedures or step-by-step guides.
+- **Use Buttons for all external links in runbooks.** Plain hyperlinks are easy to miss in dense documentation. Buttons with clear labels (e.g., "Open Jira Board", "View Monitoring Dashboard") reduce navigation friction.
+
+## Attachments
+
+- **Run the Attachment Center audit before space migrations.** Orphaned attachments that aren't referenced in any page content are the most common source of unexpected storage bloat during migration.
+- **Bulk delete only after reviewing the orphan list.** Orphan detection flags attachments not referenced in page body content - but some may be linked from external systems or emails. Review before bulk-deleting.
+
+## General
+
+- **Macro settings save when you click outside the panel, but only Publish makes them live.** Draft changes are visible in your edit session but not to other users until you Publish.
+- **Use the Page Templates feature to enforce consistency.** Create a template for each content type (runbook, decision record, meeting notes) with your standard macro layout pre-built - space members apply the template instead of recreating the structure.
+`,
         },
       ],
     },
@@ -869,7 +1183,7 @@ Use tooltips sparingly. If the definition is important enough that most readers 
 <img src="/images/content-formatting-assets/progressbar-macro.png" alt="Progress Bar Macro screenshot" style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; margin: 16px 0 24px;" />
 
 ## What It Does
-The Progress Bar macro creates a **multi-step, cross-page progress bar** in Confluence. Each step macro is placed on a separate page. Together they render a unified visual bar that shows readers where they are in a multi-page process — like an onboarding flow, a tutorial series, or a multi-phase procedure.
+The Progress Bar macro creates a **multi-step, cross-page progress bar** in Confluence. Each step macro is placed on a separate page. Together they render a unified visual bar that shows readers where they are in a multi-page process - like an onboarding flow, a tutorial series, or a multi-phase procedure.
 
 The bar is automatically scoped to a parent page: all step macros that share the same parent page belong to the same progress bar, with no manual ID configuration required.
 
@@ -892,11 +1206,11 @@ The bar is automatically scoped to a parent page: all step macros that share the
 
 ## Visual Behavior
 
-- **Blue dot** — shown on the current (active) step and the first step when no step is active yet
-- **Gray dot** — shown on steps that come after the active step (not yet completed)
-- **No dot** — completed steps (before the active step) show no dot; the blue line covers them
-- **Blue line** — drawn from the first step to the active step to show progress
-- **Step color** — defaults to \`#0052cc\`; inherits from the color set when saving a step
+- **Blue dot** - shown on the current (active) step and the first step when no step is active yet
+- **Gray dot** - shown on steps that come after the active step (not yet completed)
+- **No dot** - completed steps (before the active step) show no dot; the blue line covers them
+- **Blue line** - drawn from the first step to the active step to show progress
+- **Step color** - defaults to \`#0052cc\`; inherits from the color set when saving a step
 
 ## Scope & Bar Identity
 
@@ -906,7 +1220,7 @@ The macro automatically groups steps by shared parent page. You do not need to a
 
 To build a 3-step onboarding flow:
 
-1. Create pages: **Step 1 – Welcome**, **Step 2 – Setup**, **Step 3 – Complete** — all as children of an **Onboarding** parent page.
+1. Create pages: **Step 1 – Welcome**, **Step 2 – Setup**, **Step 3 – Complete** - all as children of an **Onboarding** parent page.
 2. On **Step 1 – Welcome**: add a Progress Bar macro, set Step title = "Welcome", Step number = 1, Destination = the Welcome page.
 3. On **Step 2 – Setup**: add a Progress Bar macro, set Step title = "Setup", Step number = 2, Destination = the Setup page.
 4. On **Step 3 – Complete**: add a Progress Bar macro, set Step title = "Complete", Step number = 3, Destination = the Complete page.
@@ -1830,260 +2144,6 @@ The User Profile macro reads user data from Confluence's user directory. Only da
 ## Questions About Data Processing
 
 For questions about how Clovity processes data as the app vendor, contact **developers@clovity.com** or review the app's privacy policy on the Atlassian Marketplace listing.`,
-        },
-      ],
-    },
-    // ═══════════════════════════════════════════════════════════════
-    // 8. USER GUIDE
-    // ═══════════════════════════════════════════════════════════════
-    {
-      id: "user-guide",
-      title: "User Guide",
-      articles: [
-        {
-          slug: "overview-dashboard",
-          title: "Overview & Dashboard",
-          content: `
-## App Layout in Confluence
-
-Content Formatting Macros integrates directly into the standard Confluence Cloud editor. There is no separate admin dashboard or standalone UI - everything is accessed from within the Confluence page editing experience.
-
-## How Macros Appear in Edit Mode
-
-When you open a Confluence page in edit mode, Content Formatting Macros adds its macros to the standard Confluence macro library. You can access them in three ways:
-
-| Method | How to Use |
-|---|---|
-| **Toolbar Insert (+)** | Click the **+** (Insert) button in the editor toolbar → search for the macro name |
-| **Inline Slash Command** | Type **/** in the page body → start typing the macro name (e.g., \`/tab\`, \`/alert\`, \`/background\`) |
-| **Macro Browser** | Click **+** → **Other macros** to open the full macro browser and browse by category |
-
-## The Macro Toolbar (+)
-
-The **+** (Insert) button in the Confluence editor toolbar is your primary entry point for inserting any Content Formatting macro:
-
-1. Click **+** while your cursor is positioned in the page body
-2. A quick-insert menu appears - recently used macros appear at the top
-3. Type the macro name (e.g., "Tab Navigation", "Alert", "Buttons") to filter the list
-4. Click the macro to insert it at the cursor position
-
-## The Configuration Panel
-
-Once a macro is inserted, a **configuration panel** opens on the right side of the editor. This panel shows all settings for the selected macro:
-
-- **Required fields** are marked and must be filled before saving
-- **Optional fields** expand or collapse for advanced configuration
-- Changes in the panel are reflected in the macro preview in real time
-- Click outside the panel or press **Escape** to close it and return to editing
-
-To reopen the configuration panel for an existing macro: click the macro in the editor, then click the **Edit** (pencil) icon that appears above it.
-
-## How the Core Macros Work Together on One Page
-
-A fully featured Confluence page built with Content Formatting Macros typically combines three layers:
-
-### Layer 1 - Navigation (Tab Macros)
-**Tab Navigation** provides the tabbed layout container. One of the mapper macros (Parent, Label, Page, or Custom) fills it with tab content. Readers navigate between tabs to see different content sections without loading a new page.
-
-### Layer 2 - Visibility (Conditional Macros)
-**Conditional Show** and **Conditional Hide** macros are placed inside tab content areas (or anywhere on the page) to control what different audiences see. A single tab can show an admin-only section to admins while rendering a clean version for general readers.
-
-### Layer 3 - Rich Formatting (Content Macros)
-**Alert**, **Background**, **Buttons**, **Cards**, **Status**, **Countdown**, and other macros provide visual richness and interactivity within each tab or page section. They make information clearer, highlight critical steps, and guide readers through complex content.
-
-**Example: A typical IT Runbook page**
-
-\`\`\`
-Tab Navigation
-├── Tab: Overview
-│   ├── Interactive Banner (announcement)
-│   ├── Alert (Warning: last updated date)
-│   └── Buttons (link to Jira board, link to monitoring)
-├── Tab: Procedures
-│   ├── Background macro (yellow, warning section)
-│   │   └── Alert (Error type: Critical steps)
-│   ├── Numbered steps (standard Confluence formatting)
-│   └── Progress Bar (procedure completion %)
-├── Tab: Escalation
-│   ├── User Profile macros (L1, L2, L3 contacts)
-│   └── Conditional Show (admin-only internal notes)
-└── Tab: Reference
-    ├── Advanced Expand (collapsible reference tables)
-    └── JSON Viewer (API response examples)
-\`\`\`
-
-## Common UI Patterns
-
-### Edit a Macro
-
-1. Click the macro in the editor - a toolbar appears above it
-2. Click the **pencil (Edit)** icon to open the configuration panel
-3. Make changes and click **Save** or click outside the panel
-
-### Copy Macro Source
-
-1. Click the macro in the editor
-2. Click the **three-dot (...)** menu in the macro toolbar
-3. Select **Copy macro** - this copies the macro and its configuration to the clipboard
-4. Paste it anywhere on the same page or a different page
-
-### Macro Placeholders in the Editor
-
-In edit mode, macros appear as **visual placeholders** - a labeled box showing the macro name and a preview of its rendered output. The placeholder size roughly reflects the rendered macro's size.
-
-- **Click once** on a placeholder to select it (shows the macro toolbar)
-- **Click the Edit icon** to open the configuration panel
-- **Double-click** on some macros (like Tab Navigation) to enter and edit the macro's inner content area
-
-### Moving a Macro
-
-Click and drag the macro placeholder to a new position on the page, just like moving any other Confluence block element.
-
-## Macro Nesting Rules
-
-| Outer Macro | Can Contain |
-|---|---|
-| Tab Navigation | Tab mapper macros, Custom Tab containers, rich content macros |
-| Background | Any Confluence content, including other Content Formatting macros |
-| Advanced Cards | Text, images, Button macros |
-| Conditional Show / Hide | Any Confluence content, including tabs, backgrounds, alerts |
-| Pop-up Dialog | Any Confluence content in the dialog body |
-| Advanced Expand | Any Confluence content in the body |
-
-Tab Navigation macros **cannot** be nested inside another Tab Navigation macro (technically possible, but not supported and may cause layout issues - use Advanced Expand for secondary grouping inside tabs).`,
-        },
-        {
-          slug: "how-to-guides",
-          title: "How-To Guides",
-          content: `
-Step-by-step instructions for the most common tasks with Content Formatting Macros.
-
----
-
-## Task 1 - Insert a Tab Navigation Macro
-
-1. Open a Confluence page in edit mode
-2. Position your cursor where you want the tabs to appear
-3. Click **+** (Insert) in the toolbar → search for **Tab Navigation**
-4. Click **Tab Navigation** to insert it - a placeholder appears on the page
-5. In the configuration panel on the right, set:
-   - **Tab Style**: Underline (default), Pill, or Box
-   - **Tab Position**: Top, Left, or Right
-   - **Default Open Tab**: First (default), Last, or a specific tab number
-6. Inside the Tab Navigation macro body, insert one of the mapper macros (see Tasks 2, 3, 4) or add Custom Tabs (see Task 5)
-7. Click **Publish** to save
-
----
-
-## Task 2 - Create a Tab Hub from Child Pages (Parent Content Mapper)
-
-1. Ensure you have a parent page with child pages already created in Confluence
-2. On the parent page (or a separate hub page), enter edit mode
-3. Insert a **Tab Navigation** macro
-4. Inside it, insert **Tab Parent Content Mapper**
-5. In the config panel:
-   - **Parent Page**: Select the parent page whose children will become tabs (defaults to current page)
-   - **Sort Order**: Choose Manual (page tree order), Alphabetical, or by date
-   - **Exclude Pages**: Optionally list any child pages you don't want as tabs
-6. Preview - each child page appears as a tab
-7. Publish
-
-> Tabs update automatically when child pages are added, renamed, or removed.
-
----
-
-## Task 3 - Create a Conditional Show/Hide Section
-
-1. In edit mode, select the content you want to conditionally show
-2. Click **+** → search for **Conditional Show** (to show only to a group) or **Conditional Hide** (to hide from a group)
-3. The selected content is wrapped in the macro
-4. In the configuration panel:
-   - **Condition Type**: Group, Space Role, or Login Status
-   - **Value**: Enter the exact Confluence group name (case-sensitive), select a space role, or choose Authenticated/Anonymous
-5. Switch to View mode and test with a user in the target group
-6. Publish
-
-> Group names must exactly match the group name in **Confluence Admin → Groups**.
-
----
-
-## Task 4 - Insert an Alert Macro
-
-1. Position your cursor where you want the alert to appear
-2. Click **+** → search for **Alert**
-3. In the configuration panel:
-   - **Type**: Info (blue), Warning (yellow), Error (red), Success (green), or Note (gray)
-   - **Title**: Optional bold heading
-   - **Body**: The alert message text (supports rich text)
-   - **Dismissible**: Toggle on if readers should be able to close the alert
-4. Publish
-
----
-
-## Task 5 - Add a Background Macro to a Section
-
-1. Select the content block you want to apply a background to (or position cursor in an empty area)
-2. Click **+** → search for **Background**
-3. The selected content is wrapped in the Background macro
-4. In the configuration panel:
-   - **Type**: Color, Gradient, or Image
-   - **Color / Gradient / Image URL**: Set the visual
-   - **Padding**: Small, Medium, or Large
-   - **Border Radius**: Set rounded corners if desired
-   - **Text Color Override**: Set to Light or Dark to ensure readability
-5. Publish
-
----
-
-## Task 6 - Set Up the Attachment Center
-
-1. Go to **Space Settings** → **Apps** → **Content Formatting Macros** → **Attachment Center**
-2. Toggle **Enable Attachment Center** to On
-3. Optionally configure:
-   - **Storage warning threshold**: Triggers a visual indicator at the set storage amount
-   - **Orphan detection**: Automatically flags attachments not referenced in page content
-4. Return to the space - the Attachment Center is now accessible from Space Settings → Attachment Center
-
----
-
-## Task 7 - Use Conditional Show for Confluence Groups
-
-1. Identify the Confluence group name: go to **Confluence Admin** → **Groups** and note the exact group name
-2. In edit mode on your page, select the content to show only to that group
-3. Insert **Conditional Show** macro around the selected content
-4. In the config panel:
-   - **Condition Type**: Group
-   - **Group Name**: Paste the exact group name
-5. Verify in View mode by signing in as a member of that group - content should be visible
-6. Verify with a user NOT in the group - content should be hidden
-
----
-
-## Task 8 - Update an Existing Tabbed Page
-
-1. Open the tabbed page in edit mode
-2. Click the Tab Navigation macro to select it
-3. Click the **Edit (pencil)** icon to open the Tab Navigation config panel - update style or position if needed
-4. To update which pages appear as tabs (for mapper tabs), click the mapper macro inside Tab Navigation → click Edit → update the page list, parent, or labels
-5. To add a new Custom Tab, click inside the Tab Navigation body → click **Add Tab** in the tab toolbar
-6. To reorder Custom Tabs, drag the tab labels left or right
-7. Publish when done
-
----
-
-## Task 9 - Use Buttons to Link to an External System
-
-1. Position your cursor where you want the button
-2. Click **+** → search for **Buttons**
-3. In the configuration panel:
-   - **Label**: The button text (e.g., "Open Jira Board", "View in ServiceNow")
-   - **URL**: The external system URL
-   - **Style**: Primary for main CTA, Secondary for secondary actions
-   - **Open in new tab**: Toggle On (recommended for external links)
-   - **Icon**: Optionally add an icon to the left or right of the label
-4. Add additional Button macros side by side for multiple links
-5. Optionally wrap the buttons in a **Background** macro to create a styled link panel
-6. Publish`,
         },
       ],
     },

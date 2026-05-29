@@ -198,7 +198,446 @@ A floating action button (bottom-right of most views) opens the view-specific Mi
     },
 
     // ═══════════════════════════════════════════════════════════════
-    // 2. DASHBOARD
+    // 2. USER GUIDE
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "user-guide",
+      title: "User Guide",
+      articles: [
+        {
+          slug: "start-here-by-role",
+          title: "Start Here - Guide by Role",
+          content: `
+Pulse AI surfaces different things depending on what you do. Use this guide to find the fastest path to what matters for your role.
+
+## Jira Administrator
+
+Your primary responsibility is approving AI write actions. You have access to the full app.
+
+**Start with:**
+1. [Installation & Setup](/apps/pulse-ai-jira/installation-setup) - install the app and complete OAuth
+2. [Dashboard Overview](/apps/pulse-ai-jira/dashboard-overview) - read the Pulse Score and top findings
+3. [How to: Improve Your Pulse Score](/apps/pulse-ai-jira/how-to-improve-pulse-score) - structured remediation run
+4. [Settings Overview](/apps/pulse-ai-jira/settings-overview) - configure scan schedule and scoring weights
+
+**Key sections for you:** All tabs. Focus on [Governance](/apps/pulse-ai-jira/governance-overview), [Configuration](/apps/pulse-ai-jira/configuration-overview), and [Workflows & Schemes](/apps/pulse-ai-jira/workflows).
+
+---
+
+## Jira Project Lead
+
+You can view all reports but cannot confirm write actions unless you have Administer Jira.
+
+**Start with:**
+1. [Dashboard Overview](/apps/pulse-ai-jira/dashboard-overview) - check the overall score and your project's findings
+2. [Projects](/apps/pulse-ai-jira/projects) - find your project's Pulse Score and stale backlog flag
+3. [Sprints & Delivery Overview](/apps/pulse-ai-jira/sprints-overview) - check sprint risk for your boards
+
+---
+
+## Engineering Manager / Scrum Master
+
+Your focus is sprint delivery health and team performance.
+
+**Start with:**
+1. [Sprints & Delivery Overview](/apps/pulse-ai-jira/sprints-overview) - active sprint risk across all boards
+2. [Sprint Risk Thresholds](/apps/pulse-ai-jira/sprint-risk-thresholds) - understand the On track / Tight / AT RISK / OVERCOMMITTED badges
+3. [Ask Sprint Intelligence](/apps/pulse-ai-jira/ask-sprint-intelligence) - get deferral plans and JQL for at-risk items
+4. [How to: Monitor Sprint Health](/apps/pulse-ai-jira/how-to-sprint-monitoring) - step-by-step monitoring workflow
+
+---
+
+## IT / Security Team
+
+Your focus is access hygiene, permissions risk, and configuration governance.
+
+**Start with:**
+1. [Users & Permissions](/apps/pulse-ai-jira/users-and-permissions) - inactive admins, ghost accounts, overpermissioned users
+2. [Groups](/apps/pulse-ai-jira/groups) - empty and unreferenced group cleanup
+3. [How to: Run a Governance Audit](/apps/pulse-ai-jira/how-to-governance-audit) - full governance audit walkthrough
+4. [Workflows](/apps/pulse-ai-jira/workflows) and [Workflow Schemes](/apps/pulse-ai-jira/workflow-schemes) - configuration debt
+
+---
+
+## Executive Stakeholder / PMO
+
+Your focus is high-level health reporting and delivery trends.
+
+**Start with:**
+1. [Dashboard Overview](/apps/pulse-ai-jira/dashboard-overview) - overall Pulse Score and dimension breakdown
+2. [Pulse Score](/apps/pulse-ai-jira/pulse-score) - understand the score bands and what they require
+3. [Reporting Agents](/apps/pulse-ai-jira/reporting-agents) - KPIs, velocity, sprint analytics (requires add-on)
+4. [AI Prompt Playbook](/apps/pulse-ai-jira/ai-prompt-playbook) - use Ask Pulse AI to generate executive summaries
+
+---
+
+## Clovity Consultant
+
+You are running a client instance health assessment. Use the full guide.
+
+**Start with:**
+1. [Installation & Setup](/apps/pulse-ai-jira/installation-setup) - work with client's site admin
+2. [How to: Improve Your Pulse Score](/apps/pulse-ai-jira/how-to-improve-pulse-score) - baseline and remediation plan
+3. [How to: Run a Governance Audit](/apps/pulse-ai-jira/how-to-governance-audit) - governance section walkthrough
+4. [Troubleshooting](/apps/pulse-ai-jira/troubleshooting) - reference and stale thresholds
+`,
+        },
+        {
+          slug: "quick-reference",
+          title: "Quick Reference Card",
+          content: `
+A single-page reference for the numbers, thresholds, and permissions you'll look up most often.
+
+## Pulse Score Bands
+
+| Label | Range | What It Requires |
+|---|---|---|
+| Excellent | 85 – 100 | Maintain. Monitor on your sync schedule. |
+| Good | 70 – 84 | Address High findings within 2 sprints. |
+| Fair | 40 – 69 | Prioritise Critical + High findings this sprint. |
+| Poor | 0 – 39 | Immediate remediation. Use Mini Agents on each report. |
+
+→ [Pulse Score](/apps/pulse-ai-jira/pulse-score)
+
+## Dimension Weights
+
+| Dimension | Weight | Highest-Impact Deduction Signals |
+|---|---|---|
+| Governance | 25% | No project lead · Orphaned workflows · Duplicate schemes |
+| Delivery | 25% | Sprint overcommitment > 115% · Carryover > 15% · Active blockers |
+| Quality | 25% | Stories with no linked test · Epics with no assignee |
+| Security | 15% | Inactive admins · Ghost accounts · Overpermissioned users |
+| Configuration | 10% | Unused custom fields · Global context bloat |
+
+## Stale / Inactivity Thresholds
+
+| Entity | Threshold |
+|---|---|
+| Project (stale backlog) | > 30% of open issues with no update in 90+ days |
+| Workflow (stale) | Zero projects + last edited ≥ 90 days ago |
+| User inactivity | No audit log activity ≥ 60 days |
+| Inactive Admin | Admin with no activity ≥ ~65 days |
+| Group (empty) | Zero members |
+| Custom field (unused) | Zero issues with a value in this field |
+| Custom field (global bloat) | Global context + used in < 2 projects |
+
+## Sprint Risk Thresholds
+
+| Badge | Capacity Utilisation | Colour |
+|---|---|---|
+| On track | < 100% | Teal |
+| Tight | 100 – 114% | Amber |
+| AT RISK | 115 – 149% | Amber |
+| OVERCOMMITTED | ≥ 150% | Red |
+
+→ [Sprint Risk Thresholds](/apps/pulse-ai-jira/sprint-risk-thresholds)
+
+## Permission Requirements
+
+| Action | Required Permission |
+|---|---|
+| View all reports | Any Jira user |
+| Run a scan | Any Jira user |
+| Confirm write actions | Administer Jira (org admin) |
+| Customise Scoring Weights | Site or org administrator |
+| Install the app | Jira site administrator |
+
+## Finding Severity Levels
+
+| Severity | Examples |
+|---|---|
+| Critical | Unused custom fields · Broken workflow resolutions |
+| High | Duplicate custom fields · Duplicate screens · Dead-end workflows |
+| Medium | Global context bloat · Orphaned screens · Orphaned schemes |
+
+→ [Top Findings Table](/apps/pulse-ai-jira/top-findings-table)
+`,
+        },
+        {
+          slug: "how-to-improve-pulse-score",
+          title: "How to: Improve Your Pulse Score",
+          content: `
+A structured remediation run - from first scan to a measurably higher Pulse Score. Each step links to the detailed documentation for that section.
+
+## Step 1 - Run a Scan
+
+Click **Run Scan** in the top bar. Wait 30–90 seconds for the scan to complete (longer for orgs with 500+ projects).
+
+## Step 2 - Read the Dashboard
+
+Open the [Dashboard](/apps/pulse-ai-jira/dashboard-overview):
+
+- Check the [Pulse Score](/apps/pulse-ai-jira/pulse-score) and its band label
+- The **lowest-scoring dimension bar** is your highest-leverage starting point
+- Check the **score delta** - negative means new findings are appearing faster than you're fixing them
+
+## Step 3 - Triage Critical Findings
+
+Open the [Top Findings Table](/apps/pulse-ai-jira/top-findings-table). Filter by **Critical**.
+
+Use Ask Pulse AI (FAB, bottom-right): *"Give me a prioritised cleanup plan ordered by impact on the Pulse Score."*
+
+## Step 4 - Fix Configuration (Quickest Wins)
+
+1. [Custom Fields](/apps/pulse-ai-jira/custom-fields) → **Unused** tab → soft-delete via Ask Config Auditor
+2. [Workflow Schemes](/apps/pulse-ai-jira/workflow-schemes) → delete orphaned schemes
+3. [Workflows](/apps/pulse-ai-jira/workflows) → delete unused and dead-end workflows
+4. [Global Config](/apps/pulse-ai-jira/global-config) → fix broken resolutions, transfer dead-owner filters
+
+## Step 5 - Fix Governance (Highest Weight at 25%)
+
+1. [Projects](/apps/pulse-ai-jira/projects) → assign leads; archive genuinely stale projects
+2. [Users & Permissions](/apps/pulse-ai-jira/users-and-permissions) → remove inactive admins; deactivate ghost accounts
+3. [Groups](/apps/pulse-ai-jira/groups) → delete empty and unreferenced groups
+
+## Step 6 - Review Delivery Risk
+
+[Sprints & Delivery](/apps/pulse-ai-jira/sprints-overview) → resolve OVERCOMMITTED sprints and active blockers.
+
+## Step 7 - Re-scan and Measure
+
+Click **Run Scan**. The score delta on the Dashboard shows your improvement. Target **Good (70–84)** first, then **Excellent (85+)**.
+`,
+        },
+        {
+          slug: "how-to-governance-audit",
+          title: "How to: Run a Governance Audit",
+          content: `
+A logical audit sequence for Jira admins and IT/security teams. Covers all sections that feed the Governance and Security dimensions.
+
+## 1. Check the Dashboard First
+
+Open [Dashboard](/apps/pulse-ai-jira/dashboard-overview). Note the **Governance** and **Security** dimension scores. A score below 70 on either means material debt exists.
+
+## 2. Audit Projects
+
+Go to [Projects](/apps/pulse-ai-jira/projects):
+
+- **Stale Backlog** tab - > 30% stale issues
+- **Lead column** - empty = Governance deduction
+- Prompt Ask Project Agent: *"Which stale projects have no lead and no activity in 6 months?"*
+- Archive dead projects via Action Card; assign leads to active but leadless projects directly in Jira
+
+## 3. Audit Users & Permissions
+
+Go to [Users & Permissions](/apps/pulse-ai-jira/users-and-permissions) and work each tab:
+
+| Tab | Risk | Action |
+|---|---|---|
+| Inactive Admins | Admin, no activity ≥ 60 days | Remove Group via Action Card |
+| Ghost Accounts | No audit log events ever | Link to Atlassian Admin Console |
+| Over-permissioned | Admin on 15+ projects | Review and reduce assignments |
+| No Group | No group membership | Check for direct project role grants |
+
+## 4. Audit Groups
+
+Go to [Groups](/apps/pulse-ai-jira/groups):
+
+- Delete **Empty Groups** (zero members) via Action Card
+- Review **Unreferenced Groups** (not in any scheme) - delete if confirmed unused
+
+## 5. Audit Workflows & Schemes
+
+Go to [Workflows](/apps/pulse-ai-jira/workflows) → delete Unused and fix Dead-ends.
+
+Go to [Workflow Schemes](/apps/pulse-ai-jira/workflow-schemes), [Permission Schemes](/apps/pulse-ai-jira/permission-schemes), [Notification Schemes](/apps/pulse-ai-jira/notification-schemes) → delete Orphaned and Duplicates.
+
+Use **Ask Scheme Simplifier** for an AI-generated consolidation plan before making changes.
+
+## 6. Export and Record
+
+Click **Run Scan**. On the Dashboard, filter by **Critical** → **Export PDF** for compliance reporting.
+
+Every confirmed action is recorded in [Settings → Action Log](/apps/pulse-ai-jira/settings-overview) - use it as your audit trail.
+`,
+        },
+        {
+          slug: "how-to-sprint-monitoring",
+          title: "How to: Monitor Sprint Health",
+          content: `
+A practical workflow for engineering managers and Scrum masters to catch at-risk sprints before they derail.
+
+## 1. Open Sprints & Delivery
+
+Navigate to **Delivery → Sprints & Delivery** → [Sprints & Delivery Overview](/apps/pulse-ai-jira/sprints-overview).
+
+## 2. Check the Summary Cards
+
+| Card | Green Zone | Red Zone |
+|---|---|---|
+| Overcommitted | 0 | Any number > 0 |
+| Avg Carryover Rate | < 15% | > 20% |
+| Active Blockers | 0 | Any number > 0 |
+
+## 3. Find At-Risk Sprints
+
+Filter by **Overcommitted** tab. Each sprint card shows a risk badge - see the full reference at [Sprint Risk Thresholds](/apps/pulse-ai-jira/sprint-risk-thresholds).
+
+## 4. Get a Deferral Plan
+
+Click **Ask Sprint Intelligence** (FAB) and prompt:
+
+- *"Top 5 stories to defer from [Sprint Name] to get capacity below 115%"*
+- *"Which stories have carried over more than twice in the last 4 sprints?"*
+- *"Generate a JQL filter for all overdue items in the current sprint"*
+
+Copy the generated JQL into Jira Issue Navigator to take action.
+
+→ [Ask Sprint Intelligence](/apps/pulse-ai-jira/ask-sprint-intelligence)
+
+## 5. Configure Daily Auto-Sync
+
+Sprint risk changes daily. Go to [Settings](/apps/pulse-ai-jira/settings-overview) → **Scan Schedule** → set to **Daily** so badges stay current automatically.
+
+## 6. Target Metrics Over Time
+
+| Metric | Target |
+|---|---|
+| Avg Carryover Rate | < 15% |
+| Overcommitted sprint count | 0 |
+| Active blockers at sprint midpoint | 0 |
+
+For velocity trend charts and sprint-over-sprint data, see [Reporting Agents](/apps/pulse-ai-jira/reporting-agents) (add-on).
+`,
+        },
+        {
+          slug: "ai-prompt-playbook",
+          title: "AI Prompt Playbook",
+          content: `
+Every report in Pulse AI has its own Mini Agent. This playbook gives you ready-to-use prompts for each one, organised by the job you're trying to get done.
+
+## Ask Pulse AI - Dashboard
+
+*The full-instance assistant. Knows all findings from the last scan.*
+
+| Job to be Done | Prompt |
+|---|---|
+| Executive summary | *"Give me a 5-bullet Jira health summary for a leadership update."* |
+| Triage starting point | *"Which 3 findings will have the highest impact on the Pulse Score if I fix them today?"* |
+| Full cleanup plan | *"Give me a prioritised remediation plan for all Critical findings, grouped by effort."* |
+| Score explanation | *"Why is our Governance score lower than our Configuration score?"* |
+| Score improvement estimate | *"If I delete all unused custom fields, how many points would the Pulse Score gain?"* |
+
+→ [AI Assistant](/apps/pulse-ai-jira/ai-assistant)
+
+## Ask Project Agent - Governance → Projects
+
+*Knows all project Pulse Scores, activity dates, and lead assignments.*
+
+| Job to be Done | Prompt |
+|---|---|
+| Archive candidates | *"Which stale projects have no lead and no activity in the last 6 months?"* |
+| Lead coverage gap | *"List all projects with no lead assigned, ordered by issue count."* |
+| Health summary | *"What is the average Pulse Score across our Software projects?"* |
+
+→ [Projects](/apps/pulse-ai-jira/projects)
+
+## Ask Permission Auditor - Governance → Users & Permissions
+
+*Knows all user access, activity dates, and group memberships.*
+
+| Job to be Done | Prompt |
+|---|---|
+| Inactive admin list | *"List all inactive admins and when they last had any activity."* |
+| Ghost account check | *"How many ghost accounts exist and what groups are they in?"* |
+| Overpermissioning risk | *"Which users are admin on more than 10 projects and haven't logged in for 30 days?"* |
+
+→ [Users & Permissions](/apps/pulse-ai-jira/users-and-permissions)
+
+## Ask Workflow Optimizer - Workflows & Schemes → Workflows
+
+*Knows workflow health, dead-ends, and duplicate signatures.*
+
+| Job to be Done | Prompt |
+|---|---|
+| Safe-to-delete list | *"List all unused workflows that have zero project assignments and were last edited over 90 days ago."* |
+| Dead-end fix guide | *"Which workflows have dead-end statuses, and what are the affected status names?"* |
+| Duplicate identification | *"Show me duplicate workflows and explain what makes them duplicates."* |
+
+→ [Workflows](/apps/pulse-ai-jira/workflows)
+
+## Ask Scheme Simplifier - Workflows & Schemes → Schemes
+
+*Knows all scheme types, orphan status, and consolidation opportunities.*
+
+| Job to be Done | Prompt |
+|---|---|
+| Consolidation plan | *"Generate a consolidation plan for our duplicate workflow schemes."* |
+| Safe orphan deletions | *"Which orphaned permission schemes are safe to delete?"* |
+| Duplicate analysis | *"Compare the two duplicate notification schemes and explain the differences."* |
+
+→ [Workflow Schemes](/apps/pulse-ai-jira/workflow-schemes)
+
+## Ask Config Auditor - Configuration
+
+*Knows custom field usage, context, and configuration debt.*
+
+| Job to be Done | Prompt |
+|---|---|
+| Deletion candidates | *"Which unused custom fields are safe to delete and what is their estimated score impact?"* |
+| Bloat identification | *"Show all global-context fields used in fewer than 2 projects."* |
+| Dependency check | *"Are any of the unused fields referenced in automation rules or board configurations?"* |
+| Filter risk | *"Which saved filters have a dead owner and which boards will break if deleted?"* |
+
+→ [Custom Fields](/apps/pulse-ai-jira/custom-fields) · [Global Config](/apps/pulse-ai-jira/global-config)
+
+## Ask Sprint Intelligence - Delivery → Sprints & Delivery
+
+*Knows all active and recently closed sprint data across every Scrum board.*
+
+| Job to be Done | Prompt |
+|---|---|
+| Deferral plan | *"Top 5 stories to defer from the overcommitted sprint to get capacity below 115%."* |
+| Carryover analysis | *"What is the carryover rate for each board over the last 3 sprints?"* |
+| Blocker summary | *"List all active blockers across all sprints and which sprint they are blocking."* |
+| Risk stories | *"Which stories in the current sprint are at risk of not completing, based on size and assignee?"* |
+| JQL generation | *"Generate a JQL filter for all overdue items in the current sprint."* |
+
+→ [Ask Sprint Intelligence](/apps/pulse-ai-jira/ask-sprint-intelligence)
+`,
+        },
+        {
+          slug: "tips-best-practices",
+          title: "Tips & Best Practices",
+          content: `
+Non-obvious tips that make a real difference - things that aren't in the feature documentation.
+
+## Score & Scanning
+
+- **Dimension bars beat the headline score.** A score of 75 with Governance at 45 needs different action than 75 with all five dimensions above 65. Always look at which dimension is dragging.
+- **Flat score despite active cleanup = new findings arriving.** Run a mid-session scan and compare. If the delta is negative, you're treading water - find what's generating new findings.
+- **Set Enterprise scoring weights before the first big cleanup.** If you change weights after cleanup, some already-resolved items may suddenly affect the score differently. Agree weights once and lock them.
+
+## Governance
+
+- **Archive before escalating to delete.** Archive makes a project read-only. If no one raises an objection within 30 days, the Jira admin can delete it directly in Jira. You cannot undo Archive from Pulse AI.
+- **Transfer filter ownership before deactivating accounts.** A dead-owner filter silently returns empty results - boards using it will show no issues with no error. Fix the filter first, then deactivate.
+- **Don't remove inactive admins in bulk.** Some may be service accounts. Check Atlassian Admin Console for API usage before removing their group. One at a time, with verification.
+
+## Configuration
+
+- **Custom field deletions go to Jira's trash for 60 days.** This is recoverable - use it. Delete unused fields confidently; if something breaks within 60 days, restore from trash.
+- **Ask Config Auditor before bulk-deleting custom fields.** Fields can appear unused in Pulse AI but still be referenced in Jira automation rules or gadgets. The agent can cross-check.
+- **Fix Unused (Critical) before Global Context Bloat (Medium).** Higher severity = higher score impact per item. Don't get distracted by a long list of Medium findings while Critical ones remain open.
+
+## Sprint Health
+
+- **OVERCOMMITTED at the start of sprint = planning problem. OVERCOMMITTED at midpoint = execution problem.** Different root causes, different solutions. Sprint Intelligence can help identify which it is.
+- **Carryover > 20% for two consecutive sprints is a structural signal.** One sprint is an anomaly. Two in a row means the team is consistently over-planning. Use Ask Sprint Intelligence to identify which stories keep carrying over.
+- **Active blockers at sprint midpoint should be zero.** If they're not, escalate immediately - they compound daily.
+
+## AI Agents
+
+- **Start with a question, not a command.** Ask *"Which workflows are safe to delete?"* before asking *"Delete the unused workflows."* The answer shapes the command and avoids surprises in the Action Card.
+- **Action Card shows the full impact before anything runs.** If it looks wrong - unexpected items, unexpected scope - click Cancel and rephrase. The agent will clarify.
+- **Use Ask Pulse AI for executive summaries across all findings.** Per-view agents are scoped to one section. For a full-org summary, go to the Dashboard and use Ask Pulse AI.
+`,
+        },
+      ],
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 3. DASHBOARD
     // ═══════════════════════════════════════════════════════════════
     {
       id: "dashboard",
@@ -378,7 +817,7 @@ Every write action follows this mandatory flow - nothing is automatic:
     },
 
     // ═══════════════════════════════════════════════════════════════
-    // 3. GOVERNANCE
+    // 4. GOVERNANCE
     // ═══════════════════════════════════════════════════════════════
     {
       id: "governance",
@@ -575,7 +1014,7 @@ The Mini Agent FAB opens a Groups-scoped agent. Example prompts:
     },
 
     // ═══════════════════════════════════════════════════════════════
-    // 4. WORKFLOWS & SCHEMES
+    // 5. WORKFLOWS & SCHEMES
     // ═══════════════════════════════════════════════════════════════
     {
       id: "workflows-and-schemes",
@@ -772,7 +1211,7 @@ Navigate to **Workflows & Schemes → Work Item Security Schemes**. Issue securi
     },
 
     // ═══════════════════════════════════════════════════════════════
-    // 5. CONFIGURATION
+    // 6. CONFIGURATION
     // ═══════════════════════════════════════════════════════════════
     {
       id: "configuration",
@@ -1071,7 +1510,7 @@ Navigate to **Configuration → Global Config**. This section covers Jira instan
     },
 
     // ═══════════════════════════════════════════════════════════════
-    // 6. SPRINTS & DELIVERY
+    // 7. SPRINTS & DELIVERY
     // ═══════════════════════════════════════════════════════════════
     {
       id: "sprints-and-delivery",
@@ -1182,7 +1621,7 @@ Sprint Intelligence can read and reason about sprint data and generate JQL queri
     },
 
     // ═══════════════════════════════════════════════════════════════
-    // 7. AI & AGENTS
+    // 8. AI & AGENTS
     // ═══════════════════════════════════════════════════════════════
     {
       id: "ai-and-agents",
@@ -1266,7 +1705,7 @@ Navigate to **AI & Agents → Reporting Agents** (only visible when the **Report
     },
 
     // ═══════════════════════════════════════════════════════════════
-    // 8. USE CASES
+    // 9. USE CASES
     // ═══════════════════════════════════════════════════════════════
     {
       id: "use-cases",
@@ -1565,7 +2004,7 @@ After the client team completes remediation items, run a new scan to show score 
     },
 
     // ═══════════════════════════════════════════════════════════════
-    // 9. SETTINGS
+    // 10. SETTINGS
     // ═══════════════════════════════════════════════════════════════
     {
       id: "settings",
@@ -1647,7 +2086,7 @@ The log displays the last 10 confirmed actions per user and is never deleted.
     },
 
     // ═══════════════════════════════════════════════════════════════
-    // 10. RELEASE NOTES
+    // 11. RELEASE NOTES
     // ═══════════════════════════════════════════════════════════════
     {
       id: "release-notes",
@@ -1664,9 +2103,9 @@ The log displays the last 10 confirmed actions per user and is never deleted.
 ### What's New
 
 - **Sprints & Delivery** - Added **Active Blockers** summary card to the Sprints & Delivery overview. Displays the count of all unresolved blocker-priority issues across every active Scrum sprint in the org, with a direct link to the filtered issue list. This is the highest-impact delivery risk indicator in the sprint view.
-- **Governance → Users & Permissions** - **Ghost Account** detection now identifies accounts that have never generated an audit log event — giving admins a concrete, audit-backed definition of dormant accounts rather than relying on login timestamps alone.
+- **Governance → Users & Permissions** - **Ghost Account** detection now identifies accounts that have never generated an audit log event - giving admins a concrete, audit-backed definition of dormant accounts rather than relying on login timestamps alone.
 - **Configuration → Custom Fields** - Global context bloat detection refined: custom fields with a global context that are used in fewer than 2 projects are now flagged to help admins identify fields that were intended for specific teams but were scoped too broadly.
-- **Ask Pulse AI** - Write-action intent detection improved. When a natural language request matches multiple candidate items (e.g., asking to clean a workflow that appears in multiple schemes), the agent now asks a clarifying scope question before surfacing an Action Card — reducing the risk of unintended bulk actions.
+- **Ask Pulse AI** - Write-action intent detection improved. When a natural language request matches multiple candidate items (e.g., asking to clean a workflow that appears in multiple schemes), the agent now asks a clarifying scope question before surfacing an Action Card - reducing the risk of unintended bulk actions.
 - **Settings → Scan Schedule** - Scan retention is now configurable: 1 month, 3 months, or 6 months. Historical scan results within the retention window are used by the Reporting for Jira add-on for trend analysis and score delta charting.
 
 ### Bug Fixes
@@ -1687,7 +2126,7 @@ The log displays the last 10 confirmed actions per user and is never deleted.
 - **Configuration → Global Config → Filters** - New **Filters** sub-view audits all saved Jira filters. Detects **Invalid JQL** (filter JQL that silently returns empty or wrong results), **Dead Owner** (filter owned by a deactivated account), and **Unused** filters (not attached to any board). Each finding links to the affected filter for direct remediation.
 - **Sprints & Delivery** - **Ask Sprint Intelligence** AI agent launched. Scoped to active and recently closed sprint data. Supports natural language questions, JQL generation for overdue and at-risk items, deferral recommendation lists for overcommitted sprints, and carryover trend analysis across boards.
 - **AI & Agents** - **Advance Agents** panel introduced under the AI & Agents sidebar section. Lists four independently licensed agent modules: **WorkflowAI for Jira**, **OnboardAI for Jira**, **AutomateIQ for Jira**, and **Reporting for Jira**. All four are currently in early access (Coming soon status). Contact Clovity to request access.
-- **Settings → Action Log** - Full per-user audit trail of all write actions confirmed via Action Cards. Every action — succeeded or failed — is recorded with timestamp, action type, affected item, and outcome. Records are stored per user and never automatically deleted.
+- **Settings → Action Log** - Full per-user audit trail of all write actions confirmed via Action Cards. Every action - succeeded or failed - is recorded with timestamp, action type, affected item, and outcome. Records are stored per user and never automatically deleted.
 - **Settings → OAuth** - Re-authorisation flow redesigned. **Settings → General** now shows live connection status, last token refresh time, and a **Re-connect with Atlassian** button. Status indicators update in real time during the OAuth flow.
 
 ### Breaking Changes
@@ -1707,23 +2146,23 @@ The log displays the last 10 confirmed actions per user and is never deleted.
 ### v4.2.0
 
 - Added **Export PDF** to the Top Findings Table. Exports the currently filtered findings view (All / Critical / High, filtered by report module) as a formatted PDF report.
-- Introduced **Score Delta** indicator on the Dashboard Pulse Score card. Shows the point change since the previous scan — positive delta means findings were resolved, negative delta means new findings were detected.
-- Permission Schemes — **Duplicate detection** added. Schemes with an identical grant signature (same combination of roles, groups, and permission types) are flagged as duplicates regardless of display name.
+- Introduced **Score Delta** indicator on the Dashboard Pulse Score card. Shows the point change since the previous scan - positive delta means findings were resolved, negative delta means new findings were detected.
+- Permission Schemes - **Duplicate detection** added. Schemes with an identical grant signature (same combination of roles, groups, and permission types) are flagged as duplicates regardless of display name.
 
 ### v4.1.0
 
-- **Work Item Security Schemes** view added under Workflows & Schemes. Audits all issue security schemes — surfaces orphaned schemes not assigned to any project and duplicate schemes with matching security level configurations.
-- Notification Schemes — **Duplicate detection** added. Schemes are compared against a 16-event rule set; schemes with identical notification mappings are flagged for consolidation.
-- **Settings → Agent Position** toggle introduced. Admins can choose between **Right Panel** (default — slides in alongside the table) and **Bottom Drawer** (opens at the bottom of the screen, suited for narrower displays).
+- **Work Item Security Schemes** view added under Workflows & Schemes. Audits all issue security schemes - surfaces orphaned schemes not assigned to any project and duplicate schemes with matching security level configurations.
+- Notification Schemes - **Duplicate detection** added. Schemes are compared against a 16-event rule set; schemes with identical notification mappings are flagged for consolidation.
+- **Settings → Agent Position** toggle introduced. Admins can choose between **Right Panel** (default - slides in alongside the table) and **Bottom Drawer** (opens at the bottom of the screen, suited for narrower displays).
 
 ### v4.0.0
 
 - Initial release of Pulse AI for Jira on the Atlassian Marketplace
 - **Five-dimension Pulse Score** model launched: Governance (25%), Delivery (25%), Quality (25%), Security (15%), Configuration (10%)
 - Core views launched: Dashboard, Governance (Projects, Users & Permissions), Workflows & Schemes, Configuration (Custom Fields, Fields & Types, Global Config), and Sprints & Delivery
-- **Mini Agent FAB** introduced on all report views — a floating action button (bottom-right) that opens a conversational AI assistant scoped to the current report's live data
-- **OAuth 2.0 (3-legged)** authorisation via Atlassian — all data access is scoped to your Atlassian tenancy and runs inside the Forge runtime
-- **Action Card** confirmation flow introduced — every AI-initiated write action requires explicit admin confirmation before execution, with a pre-flight check against the live Jira API
+- **Mini Agent FAB** introduced on all report views - a floating action button (bottom-right) that opens a conversational AI assistant scoped to the current report's live data
+- **OAuth 2.0 (3-legged)** authorisation via Atlassian - all data access is scoped to your Atlassian tenancy and runs inside the Forge runtime
+- **Action Card** confirmation flow introduced - every AI-initiated write action requires explicit admin confirmation before execution, with a pre-flight check against the live Jira API
 
 ---
 
@@ -1746,7 +2185,7 @@ The following capabilities are planned for upcoming releases. Timelines are esti
     },
 
     // ═══════════════════════════════════════════════════════════════
-    // 11. HELP CENTER
+    // 12. HELP CENTER
     // ═══════════════════════════════════════════════════════════════
     {
       id: "help-center",

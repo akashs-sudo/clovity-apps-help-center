@@ -1,4 +1,4 @@
-export const latexDiagramsConfluenceDocs = {
+﻿export const latexDiagramsConfluenceDocs = {
   appSlug: "latex-diagrams-confluence",
   categories: [
     // ═══════════════════════════════════════════════════════════════
@@ -432,6 +432,334 @@ To review what permissions the app has requested:
 ## Requesting Access to Edit Pages
 
 If you cannot insert macros, the issue is likely a Confluence page permission rather than an app setting. Contact your **Confluence Space Admin** to request Edit access to the relevant space or page.`,
+        },
+      ],
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 3. USER GUIDE
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "user-guide",
+      title: "User Guide",
+      articles: [
+        {
+          slug: "start-here-by-role",
+          title: "Start Here - Guide by Role",
+          content: `
+LaTeX Formulas & Diagrams adds three macros to the Confluence editor: **Clovity Diagrams** (Mermaid), **Clovity LaTeX Block Equations**, and **Clovity LaTeX Inline Equations**. All three open the same split-view editor. Use this guide to find the right starting point for your role.
+
+## Technical Writer / Documentation Lead
+
+You write technical documentation and need diagrams and formatted equations embedded in pages.
+
+**Start with:**
+1. [Quick Start Guide](/apps/latex-diagrams-confluence/quick-start) - insert your first diagram in under 3 minutes
+2. [Diagrams Macro](/apps/latex-diagrams-confluence/diagrams-macro) - full Mermaid diagram reference (flowcharts, sequence diagrams, ERDs, Gantt charts)
+3. [How to: Document a System Architecture](/apps/latex-diagrams-confluence/how-to-architecture-docs) - end-to-end workflow
+4. [Examples Library](/apps/latex-diagrams-confluence/examples-library) - copy-paste ready examples for every diagram type
+
+---
+
+## Developer / Software Engineer
+
+You need architecture diagrams, sequence diagrams, and ERDs directly in Confluence.
+
+**Start with:**
+1. [Diagrams Macro](/apps/latex-diagrams-confluence/diagrams-macro) - Mermaid syntax reference
+2. [Diagram Types Reference](/apps/latex-diagrams-confluence/diagram-types-reference) - all supported diagram types with examples
+3. [How to: Document a System Architecture](/apps/latex-diagrams-confluence/how-to-architecture-docs) - flowchart + sequence + ERD in one page
+
+---
+
+## Data Scientist / Researcher / Analyst
+
+You need mathematical formulas and equations in documentation or reports.
+
+**Start with:**
+1. [LaTeX Block Equations](/apps/latex-diagrams-confluence/latex-block-equations) - standalone centred equations
+2. [LaTeX Inline Equations](/apps/latex-diagrams-confluence/latex-inline-equations) - math embedded inside paragraph text
+3. [Formula Library Reference](/apps/latex-diagrams-confluence/formula-library-reference) - ready-to-use LaTeX for common formulas
+4. [How to: Create Technical Docs with Math](/apps/latex-diagrams-confluence/how-to-technical-math) - full workflow
+
+---
+
+## Documentation Manager / Confluence Admin
+
+You install apps and want to understand what this adds to your instance.
+
+**Start with:**
+1. [Installation & Setup](/apps/latex-diagrams-confluence/installation-setup) - install from Atlassian Marketplace
+2. [System Requirements](/apps/latex-diagrams-confluence/system-requirements) - Confluence Cloud only; browser rendering via KaTeX and Mermaid
+3. [Permissions & Access](/apps/latex-diagrams-confluence/permissions-access) - what the app accesses and how content is stored
+`,
+        },
+        {
+          slug: "quick-reference",
+          title: "Quick Reference Card",
+          content: `
+A single-page reference for all three macros, supported diagram types, and common LaTeX patterns.
+
+## Three Macros at a Glance
+
+| Macro | Language | Best For | Reference |
+|---|---|---|---|
+| **Clovity Diagrams** | Mermaid | Flowcharts, sequence diagrams, ERDs, Gantt charts, mindmaps | [Diagrams Macro](/apps/latex-diagrams-confluence/diagrams-macro) |
+| **Clovity LaTeX Block** | KaTeX (LaTeX) | Standalone centred equations, matrices, multi-line derivations | [LaTeX Block](/apps/latex-diagrams-confluence/latex-block-equations) |
+| **Clovity LaTeX Inline** | KaTeX (LaTeX) | Math embedded inline within paragraph text | [LaTeX Inline](/apps/latex-diagrams-confluence/latex-inline-equations) |
+
+## Supported Mermaid Diagram Types
+
+| Type | Opening Keyword | Best For |
+|---|---|---|
+| Flowchart | \`flowchart TD\` or \`flowchart LR\` | Process flows, decision trees |
+| Sequence Diagram | \`sequenceDiagram\` | API calls, system interactions |
+| Entity Relationship | \`erDiagram\` | Database schemas, data models |
+| Gantt Chart | \`gantt\` | Project timelines, sprint planning |
+| Mindmap | \`mindmap\` | Topic breakdown, brainstorming |
+| Class Diagram | \`classDiagram\` | OOP class structures |
+| State Diagram | \`stateDiagram-v2\` | State machine flows |
+| Pie Chart | \`pie\` | Simple proportional data |
+
+→ [Diagram Types Reference](/apps/latex-diagrams-confluence/diagram-types-reference)
+
+## Common LaTeX Patterns
+
+| Formula | LaTeX |
+|---|---|
+| Fraction | \`\\frac{a}{b}\` |
+| Square root | \`\\sqrt{x}\` |
+| Power / subscript | \`x^{2}\`, \`x_{i}\` |
+| Greek letters | \`\\alpha\`, \`\\beta\`, \`\\pi\` |
+| Summation | \`\\sum_{i=1}^{n} x_i\` |
+| Integral | \`\\int_{a}^{b} f(x)\\,dx\` |
+| Matrix (2×2) | \`\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}\` |
+| Aligned equations | \`\\begin{aligned} ... \\end{aligned}\` |
+
+> **Do not wrap LaTeX Block content with \`$$...$$\`** - the macro expects raw LaTeX only.
+
+→ [Formula Library Reference](/apps/latex-diagrams-confluence/formula-library-reference)
+
+## Editor Workflow (All Three Macros)
+
+1. Insert macro via \`/\` command
+2. Write or paste source in the **left (Source) panel**
+3. Preview renders live in the **right (Preview) panel**
+4. Use **Samples** dropdown for ready-to-use examples
+5. Click **Save** in the editor - then **Publish** the Confluence page
+
+## Hover Toolbar (Published Pages)
+
+When viewing a published page, hover over any rendered macro to access: **Edit · Copy Source · Zoom In/Out · Reset Zoom · Pan · Fullscreen**
+`,
+        },
+        {
+          slug: "how-to-architecture-docs",
+          title: "How to: Document a System Architecture",
+          content: `
+A workflow for documenting a software system using three diagram types on a single Confluence page - flowchart for the high-level overview, sequence diagram for interactions, and ERD for the data model.
+
+## Page Structure
+
+\`\`\`
+Architecture Page
+├── Section 1: System Overview (Flowchart)
+├── Section 2: Request Flow (Sequence Diagram)
+└── Section 3: Data Model (ERD)
+\`\`\`
+
+## Step 1 - System Overview Flowchart
+
+1. Edit the Confluence page, type \`/\` → **Clovity Diagrams** → insert
+2. In the Source panel, write a top-down flowchart:
+
+\`\`\`
+flowchart TD
+    Client([Web / Mobile Client])
+    API[API Gateway]
+    Auth[Auth Service]
+    DB[(Primary Database)]
+    Cache[(Redis Cache)]
+
+    Client --> API
+    API --> Auth
+    Auth -->|valid| API
+    API --> Cache
+    Cache -->|miss| DB
+    DB --> Cache
+    Cache --> API
+    API --> Client
+\`\`\`
+
+3. Verify preview, click **Save**, then add a heading above it: **"System Overview"**
+
+→ [Diagrams Macro](/apps/latex-diagrams-confluence/diagrams-macro)
+
+## Step 2 - Request Sequence Diagram
+
+1. Below the flowchart section, insert another **Clovity Diagrams** macro
+2. Write the sequence diagram:
+
+\`\`\`
+sequenceDiagram
+    participant Client
+    participant Gateway as API Gateway
+    participant Auth as Auth Service
+    participant DB as Database
+
+    Client->>Gateway: POST /api/resource
+    activate Gateway
+    Gateway->>Auth: Validate token
+    Auth-->>Gateway: 200 OK
+    Gateway->>DB: INSERT resource
+    DB-->>Gateway: resource_id
+    Gateway-->>Client: 201 Created {id}
+    deactivate Gateway
+\`\`\`
+
+3. Save, add heading: **"Request Flow"**
+
+## Step 3 - Data Model ERD
+
+1. Insert another **Clovity Diagrams** macro
+2. Write the ERD:
+
+\`\`\`
+erDiagram
+    USER {
+        int id PK
+        string email
+        string name
+        datetime created_at
+    }
+    PROJECT {
+        int id PK
+        string name
+        int owner_id FK
+    }
+    RESOURCE {
+        int id PK
+        string title
+        int project_id FK
+        int created_by FK
+    }
+
+    USER ||--o{ PROJECT : "owns"
+    PROJECT ||--o{ RESOURCE : "contains"
+    USER ||--o{ RESOURCE : "creates"
+\`\`\`
+
+3. Save, add heading: **"Data Model"**
+
+## Step 4 - Publish and Maintain
+
+1. Publish the page
+2. To update a diagram: hover over it in view mode → click **Edit** in the hover toolbar
+3. Source is preserved - edit and re-save
+
+→ [Diagram Types Reference](/apps/latex-diagrams-confluence/diagram-types-reference) · [Examples Library](/apps/latex-diagrams-confluence/examples-library)
+`,
+        },
+        {
+          slug: "how-to-technical-math",
+          title: "How to: Create Technical Docs with Math",
+          content: `
+A workflow for embedding mathematical notation in Confluence pages - both standalone display equations and inline math within paragraphs. Common for data science, engineering, and research documentation.
+
+→ [LaTeX Block Equations](/apps/latex-diagrams-confluence/latex-block-equations) · [LaTeX Inline Equations](/apps/latex-diagrams-confluence/latex-inline-equations)
+
+## When to Use Block vs Inline
+
+| Scenario | Use |
+|---|---|
+| A key formula that needs to stand alone and be read clearly | LaTeX Block |
+| A formula referenced inside a sentence | LaTeX Inline |
+| A derivation with multiple aligned steps | LaTeX Block (with \`aligned\`) |
+| A variable defined within a sentence like "where x is ..." | LaTeX Inline |
+
+## Step 1 - Insert a Display Equation (LaTeX Block)
+
+1. Edit the Confluence page, type \`/\` → **Clovity LaTeX Block Equations** → insert
+2. In the Source panel, write raw LaTeX (no \`$$\` wrappers):
+\`\`\`
+\\hat{y} = \\sigma\\left(\\sum_{i=1}^{n} w_i x_i + b\\right)
+\`\`\`
+3. Preview shows the rendered equation centred on the page
+4. Click **Save**
+
+> Do not wrap with \`$$...$$\` - the Block macro expects raw LaTeX only.
+
+## Step 2 - Embed Inline Math in a Paragraph
+
+1. Type \`/\` → **Clovity LaTeX Inline Equations** → insert
+2. In the Source panel, write normal paragraph text with math wrapped in \`$...$\`:
+\`\`\`
+The mean squared error is defined as $\\text{MSE} = \\frac{1}{n}\\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2$, where $n$ is the number of observations.
+\`\`\`
+3. Preview shows the paragraph with rendered inline formulas
+4. Click **Save**
+
+## Step 3 - Build a Multi-Step Derivation
+
+For aligned multi-line equations, use the LaTeX Block macro with the \`aligned\` environment:
+
+\`\`\`
+\\begin{aligned}
+L(\\theta) &= \\prod_{i=1}^{n} p(y_i | x_i; \\theta) \\\\
+\\log L(\\theta) &= \\sum_{i=1}^{n} \\log p(y_i | x_i; \\theta) \\\\
+\\hat{\\theta} &= \\arg\\max_{\\theta} \\log L(\\theta)
+\\end{aligned}
+\`\`\`
+
+## Step 4 - Combine with Standard Confluence Formatting
+
+Mix LaTeX macros with standard Confluence elements:
+- Use **headings** to label equation sections (Definition, Derivation, Result)
+- Use **tables** to summarise variable definitions alongside inline equations
+- Use **code blocks** for algorithmic pseudocode adjacent to math
+
+## Common Debugging Tips
+
+| Problem | Likely Cause | Fix |
+|---|---|---|
+| Red error panel | Syntax error in LaTeX | Check for unmatched \`{}\`, missing \`\\\\\` in aligned, typos in command names |
+| Blank preview | Empty source panel | Type or paste LaTeX into Source panel |
+| \`$$\` showing literally | Wrapped with \`$$...$$\` in Block macro | Remove the wrappers - Block expects raw LaTeX |
+| Inline formula not rendering | \`$...$\` not present | Wrap the math expression with \`$...$\` in the Inline macro |
+
+→ [Formula Library Reference](/apps/latex-diagrams-confluence/formula-library-reference)
+`,
+        },
+        {
+          slug: "tips-best-practices",
+          title: "Tips & Best Practices",
+          content: `
+Non-obvious tips that save time and prevent common rendering issues.
+
+## General Editor
+
+- **Save in the macro editor ≠ Publish the page.** Clicking Save in the split-view editor stores the macro content and closes the editor. You still need to click Publish on the Confluence page for other users to see the update.
+- **Use the Samples dropdown before writing from scratch.** Every macro has pre-built examples for common diagram types and formula patterns. Load a sample, customise it - much faster than writing Mermaid syntax cold.
+- **Copy Source from the hover toolbar to reuse diagrams.** Hover over a published diagram → click **Copy Source** → paste into a new macro on another page. No need to rewrite.
+
+## Mermaid Diagrams
+
+- **The opening keyword determines the diagram type.** \`flowchart TD\` creates a top-down flowchart; \`sequenceDiagram\` creates a sequence diagram. If the diagram renders incorrectly, check that the first line matches the intended type.
+- **Use quotes around node labels with special characters.** Node labels containing parentheses, commas, or colons should be wrapped in quotes: \`A["Result (final)"]\`.
+- **Pan and zoom on published diagrams.** Large architecture diagrams are hard to read at default size. Hover → use Zoom In / Pan controls, or click Fullscreen for a full-screen overlay.
+
+## LaTeX Equations
+
+- **Never wrap LaTeX Block content with \`$$...$$\`.** The Block macro adds the display math context automatically. Adding \`$$\` wrappers causes the literal characters to appear in the output.
+- **Inline macros require \`$...$\` around each formula.** Unlike Block, Inline mixes plain text and math - only the parts inside \`$...$\` are rendered as math; everything else renders as plain text.
+- **Use \`\\\\\` (double backslash) for line breaks in \`aligned\` environments.** A single \`\\\` is a LaTeX escape character. To break a line in a multi-step derivation, use \`\\\\\`.
+- **Use the Formula Library for standard formulas.** Before writing a complex formula from scratch, check [Formula Library Reference](/apps/latex-diagrams-confluence/formula-library-reference) - most standard statistical, calculus, and linear algebra formulas are already there.
+
+## Performance
+
+- **Very large Gantt charts render slowly.** If a Gantt chart has 50+ tasks, consider splitting it into multiple macros grouped by phase, or use a separate Confluence table for the full task list.
+- **ERDs with 20+ entities become hard to read.** Use separate ERD macros for logical groupings (e.g., one for user/auth entities, one for content entities) rather than one giant diagram.
+`,
         },
       ],
     },
@@ -1876,296 +2204,6 @@ gantt
       ],
     },
 
-    // ═══════════════════════════════════════════════════════════════
-    // 3. USER GUIDE
-    // ═══════════════════════════════════════════════════════════════
-    {
-      id: "user-guide",
-      title: "User Guide",
-      articles: [
-        {
-          slug: "overview-dashboard",
-          title: "Overview & Dashboard",
-          content: `
-## The Split-View Editor Layout
-
-Every macro in LaTeX Formulas & Diagrams opens the same split-view editor. The layout is consistent across all three macros:
-
-| Panel | Location | Purpose |
-|---|---|---|
-| **Source panel** | Left side | Write or paste your Mermaid code or LaTeX here |
-| **Preview panel** | Right side | Live-rendered output updates as you type |
-| **Samples dropdown** | Top of editor | Pre-built examples to load instantly |
-| **Save button** | Bottom of editor | Saves your content and closes the editor |
-
-## Samples Dropdown
-
-The Samples dropdown provides ready-to-use examples for each macro type:
-
-- **Diagrams macro:** flowchart, sequence diagram, ERD, Gantt chart, mindmap, and more
-- **LaTeX Block macro:** quadratic formula, integral, matrix, aligned derivation
-- **LaTeX Inline macro:** paragraph with inline and block math
-
-**How to use it:**
-1. Open the macro editor
-2. Click the **Samples** dropdown at the top of the editor
-3. Select an example - it loads into the Source panel immediately
-4. The Preview panel renders it live
-5. Customize the loaded example to fit your content
-
-## How to Save and Publish
-
-| Step | Action |
-|---|---|
-| 1 | Finish writing your content in the Source panel |
-| 2 | Confirm the Preview panel shows the expected output |
-| 3 | Click **Save** in the macro editor - this stores your content and closes the editor |
-| 4 | The macro renders on the Confluence page in edit mode |
-| 5 | Click **Publish** (or **Update**) in Confluence to make the page live |
-
-> **Important:** Clicking Save in the macro editor only saves the macro content - you still need to publish the Confluence page to make changes visible to other users.
-
-## Hover Toolbar on Rendered Macros
-
-When viewing a published Confluence page, hover over any rendered macro to reveal the hover toolbar. The toolbar appears at the top of the macro:
-
-| Control | Action |
-|---|---|
-| **Edit (pencil icon)** | Opens the macro editor with your saved source loaded |
-| **Copy Source** | Copies the raw Mermaid or LaTeX source to your clipboard |
-| **Zoom In / Zoom Out** | Increases or decreases the zoom level of the rendered output |
-| **Reset Zoom** | Returns to the default zoom level |
-| **Pan** | Click and drag to pan around large diagrams or equations |
-| **Fullscreen** | Opens the macro in a fullscreen overlay for easier reading |
-
-> **Note:** The hover toolbar is available for the Diagrams macro and LaTeX Block macro. The LaTeX Inline macro uses a simpler hover edit icon.
-
-## Macro Differences: Inline vs Block vs Diagram
-
-| Macro | Rendering | Best For | How Content Is Entered |
-|---|---|---|---|
-| **Clovity Diagrams** | Mermaid diagram | Flowcharts, sequences, ERDs, Gantt charts, mindmaps | Write Mermaid code in the Source panel |
-| **Clovity LaTeX Block** | KaTeX display math | Standalone centered equations, matrices, multi-line derivations | Write raw LaTeX (no \`$$\` wrappers) in the Source panel |
-| **Clovity LaTeX Inline** | KaTeX inline math | Math embedded inside paragraph text | Write normal text with \`$...$\` for inline math |
-
-## Common Workflow: Insert → Write → Preview → Save → Publish
-
-This is the standard workflow for all three macros:
-
-1. **Insert** - Edit a Confluence page, type \`/\`, search for the macro name, and click to insert it
-2. **Write** - Type or paste your Mermaid code or LaTeX source in the Source panel
-3. **Preview** - Watch the Preview panel on the right render your content live; fix any errors shown in the red error panel
-4. **Save** - Click the Save button in the macro editor to store the content
-5. **Publish** - Click Publish (or Update) in Confluence to make the page visible to your team
-
-## Editing Existing Macros
-
-To edit a macro you already saved:
-
-1. View the published page
-2. Hover over the rendered macro to reveal the hover toolbar
-3. Click the **Edit** icon
-4. The macro editor opens with your saved source loaded
-5. Make your changes, then click **Save**
-6. Publish the page to apply the changes
-
-## Error Handling
-
-If your Mermaid or LaTeX contains a syntax error, the Preview panel shows a red error panel with details about what failed. Common causes:
-
-- Missing diagram type header in Mermaid (e.g., forgot \`flowchart TD\`)
-- Unbalanced braces \`{}\` in LaTeX
-- Typos in Mermaid keywords or arrow syntax
-- Using \`$$...$$\` wrappers in the LaTeX Block macro (not needed - enter raw LaTeX only)`,
-        },
-        {
-          slug: "how-to-guides",
-          title: "How-To Guides",
-          content: `
-Step-by-step instructions for the most common tasks in LaTeX Formulas & Diagrams.
-
----
-
-## 1. Insert the Diagrams Macro
-
-1. Open a Confluence page in **edit mode**
-2. Click inside the page body where you want the diagram
-3. Type \`/\` to open the macro menu
-4. Type **Diagrams** in the search box
-5. Click **Clovity Diagrams** in the results
-6. The split-view editor opens automatically
-
----
-
-## 2. Write Your First Flowchart in Mermaid
-
-1. Insert the Diagrams macro (see task 1 above)
-2. In the Source panel, type or paste:
-
-\`\`\`
-flowchart TD
-    A[Start] --> B{Is data valid?}
-    B -->|Yes| C[Process data]
-    B -->|No| D[Show error]
-    C --> E[End]
-    D --> E
-\`\`\`
-
-3. The Preview panel renders the diagram live
-4. Click **Save** - the diagram appears on the page
-5. Click **Publish** to make it visible to your team
-
----
-
-## 3. Insert the LaTeX Block Equation Macro
-
-1. Open a Confluence page in **edit mode**
-2. Click inside the page body where you want the equation
-3. Type \`/\` to open the macro menu
-4. Type **LaTeX Block** in the search box
-5. Click **Clovity LaTeX Block Equations** in the results
-6. The split-view editor opens automatically
-
----
-
-## 4. Write the Quadratic Formula
-
-1. Insert the LaTeX Block macro (see task 3 above)
-2. In the Source panel, type:
-
-\`\`\`
-x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}
-\`\`\`
-
-3. The Preview panel renders the formula centered
-4. Click **Save** - the display equation appears on the page
-
-> **Reminder:** Do not wrap with \`$$...$$\` - the LaTeX Block macro expects raw LaTeX only.
-
----
-
-## 5. Insert the LaTeX Inline Macro
-
-1. Open a Confluence page in **edit mode**
-2. Click inside the page body
-3. Type \`/\` to open the macro menu
-4. Type **LaTeX Inline** in the search box
-5. Click **Clovity LaTeX Inline Equations** in the results
-6. The split-view editor opens
-
----
-
-## 6. Write Inline Math in a Paragraph
-
-1. Insert the LaTeX Inline macro (see task 5 above)
-2. In the Source panel, write normal text with math embedded using \`$...$\`:
-
-\`\`\`
-The area of a circle is $A = \\pi r^2$ where $r$ is the radius and $\\pi \\approx 3.14159$.
-\`\`\`
-
-3. The Preview panel renders the paragraph with inline formulas
-4. Click **Save changes** - the paragraph with embedded math appears on the page
-
----
-
-## 7. Use the Samples Dropdown
-
-1. Open any macro editor (Diagrams, LaTeX Block, or LaTeX Inline)
-2. Click the **Samples** dropdown at the top of the editor
-3. Browse the list of pre-built examples
-4. Click one to load it into the Source panel
-5. The Preview panel renders it immediately
-6. Customize the loaded example or click Save to use it as-is
-
----
-
-## 8. Zoom Into a Diagram
-
-After a diagram is published on a Confluence page:
-
-1. View the page (do not enter edit mode)
-2. Hover over the rendered diagram to reveal the hover toolbar
-3. Click the **Zoom In (+)** button to enlarge the diagram
-4. Click **Zoom Out (−)** to reduce
-5. Click **Reset** to return to the default zoom level
-6. Click and drag on the diagram to **pan** around large charts
-
----
-
-## 9. Copy Macro Source
-
-To reuse the source from an existing macro:
-
-1. View the published page
-2. Hover over the rendered macro to reveal the hover toolbar
-3. Click **Copy Source** - the raw Mermaid or LaTeX is copied to your clipboard
-4. Open another page in edit mode, insert the appropriate macro, and paste the source into the Source panel
-
----
-
-## 10. Edit an Existing Equation or Diagram
-
-1. View the published page
-2. Hover over the rendered macro
-3. Click the **Edit (pencil)** icon in the hover toolbar
-4. The macro editor opens with the saved source loaded
-5. Make your changes in the Source panel
-6. Confirm the Preview panel looks correct
-7. Click **Save**, then **Publish** the page
-
----
-
-## 11. Render a Gantt Chart
-
-1. Insert the Diagrams macro
-2. In the Source panel, paste:
-
-\`\`\`
-gantt
-    title Project Timeline
-    dateFormat YYYY-MM-DD
-    section Planning
-    Requirements    :done, req, 2024-01-01, 2024-01-15
-    Design          :done, design, 2024-01-16, 2024-02-01
-    section Development
-    Backend         :active, backend, 2024-02-01, 2024-03-15
-    Frontend        :frontend, 2024-02-15, 2024-03-30
-    section Launch
-    Deployment      :deploy, 2024-04-01, 2024-04-10
-\`\`\`
-
-3. Preview renders the Gantt chart with colored bars and timeline
-4. Click **Save**, then **Publish**
-
----
-
-## 12. Render a Sequence Diagram
-
-1. Insert the Diagrams macro
-2. In the Source panel, paste:
-
-\`\`\`
-sequenceDiagram
-    participant Client
-    participant API
-    participant Database
-
-    Client->>API: GET /users/123
-    activate API
-    API->>Database: SELECT * FROM users WHERE id=123
-    activate Database
-    Database-->>API: User record
-    deactivate Database
-    API-->>Client: 200 OK { user }
-    deactivate API
-\`\`\`
-
-3. Preview renders the sequence diagram with arrows and activation bars
-4. Click **Save**, then **Publish**`,
-        },
-      ],
-    },
 
     // ═══════════════════════════════════════════════════════════════
     // 4. RELEASE NOTES

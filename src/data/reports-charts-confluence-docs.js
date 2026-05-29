@@ -1,4 +1,4 @@
-export const reportsChartsConfluenceDocs = {
+﻿export const reportsChartsConfluenceDocs = {
   appSlug: "reports-charts-confluence",
   categories: [
     // ═══════════════════════════════════════════════════════════════
@@ -413,6 +413,325 @@ If you need to show different reports to different user groups (e.g., admins vs.
 ## No Admin Panel Required
 
 The app has no separate admin panel or settings screen. All configuration is done directly in the macro editor on each Confluence page - no special admin access is needed to configure reports.`,
+        },
+      ],
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 5. USER GUIDE
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "user-guide",
+      title: "User Guide",
+      articles: [
+        {
+          slug: "start-here-by-role",
+          title: "Start Here - Guide by Role",
+          content: `
+Reports, Charts, Templates, CQL & Export for Confluence is a macro that embeds live reports directly into Confluence pages - pulling data from your Confluence spaces using CQL (Confluence Query Language). Use this guide to find the fastest path for your role.
+
+## Space Administrator / Confluence Admin
+
+You manage spaces and want governance reports and content audits.
+
+**Start with:**
+1. [Installation & Setup](/apps/reports-charts-confluence/installation-setup) - install from Atlassian Marketplace
+2. [How to: Build a Space Governance Report](/apps/reports-charts-confluence/how-to-space-audit) - stale content, orphan pages, restrictions audit
+3. [Templates](/apps/reports-charts-confluence/templates-import-export) - apply a pre-built report in one click (35 tabular + 17 chart templates)
+4. [Export Formats Guide](/apps/reports-charts-confluence/export) - CSV and JSON export for compliance reporting
+
+---
+
+## Content Author / Technical Writer
+
+You want to embed structured content listings and summaries inside Confluence pages.
+
+**Start with:**
+1. [Quick Start Guide](/apps/reports-charts-confluence/quick-start) - embed your first report in under 5 minutes
+2. [Table View](/apps/reports-charts-confluence/table-view) - the default report format for content lists
+3. [Columns & Filters](/apps/reports-charts-confluence/columns-filters) - choose which fields to show and how to filter results
+4. [How to: Create a Stakeholder Content Dashboard](/apps/reports-charts-confluence/how-to-content-dashboard) - page inventory with charts
+
+---
+
+## IT Governance / Compliance Team
+
+You need audit reports for content restrictions, attachment storage, and contributor activity.
+
+**Start with:**
+1. [Custom Tabular Report](/apps/reports-charts-confluence/custom-tabular-report-intro) - build an audit report from CQL
+2. [Data Source](/apps/reports-charts-confluence/data-source) - use Custom CQL for targeted queries
+3. [Export](/apps/reports-charts-confluence/export) - export findings as CSV or JSON for compliance records
+4. [How to: Build a Space Governance Report](/apps/reports-charts-confluence/how-to-space-audit) - full governance workflow
+
+---
+
+## Executive / PMO
+
+You want visibility into documentation coverage, contributor activity, and content health.
+
+**Start with:**
+1. [Custom Charts Report](/apps/reports-charts-confluence/custom-charts-report-intro) - pie, bar, and line charts from Confluence metadata
+2. [Chart Types](/apps/reports-charts-confluence/chart-types) - pick the right chart for contributor rankings and content trends
+3. [How to: Create a Stakeholder Content Dashboard](/apps/reports-charts-confluence/how-to-content-dashboard) - live dashboard with charts and tables
+`,
+        },
+        {
+          slug: "quick-reference",
+          title: "Quick Reference Card",
+          content: `
+A single-page reference for report types, CQL patterns, column block types, and export formats.
+
+## Report Types at a Glance
+
+| Report Type | Best For | Full Reference |
+|---|---|---|
+| **Table** | Sortable page inventory with configurable columns | [Table View](/apps/reports-charts-confluence/table-view) |
+| **List** | Clean reading-order content list | [List View](/apps/reports-charts-confluence/list-view) |
+| **Grid** | Card-layout visual content browser | [Grid View](/apps/reports-charts-confluence/grid-view) |
+| **Paragraph** | Prose-style content summaries | [Paragraph View](/apps/reports-charts-confluence/paragraph-view) |
+| **Charts** | Pie, bar, line - visualise metadata distributions | [Chart Overview](/apps/reports-charts-confluence/chart-overview) |
+
+## Data Source Options
+
+| Source | How to Use |
+|---|---|
+| **Spaces** | Visual drill-down picker - select a space or page hierarchy |
+| **Custom CQL** | Type a CQL query for full control over what content is included |
+
+## Common CQL Patterns
+
+| Goal | CQL |
+|---|---|
+| All pages in a space | \`space = "SPACENAME" AND type = page\` |
+| Stale pages (not updated in 90 days) | \`type = page AND lastmodified < now("-90d")\` |
+| Pages with a specific label | \`label = "decision" AND type = page\` |
+| Recently created content | \`type = page AND created >= now("-30d")\` |
+| Title contains keyword | \`type = page AND title ~ "Release Notes"\` |
+| Pages with restrictions | \`type = page AND ancestor = "PAGE_ID"\` |
+| Blog posts in a space | \`space = "SPACENAME" AND type = blogpost\` |
+
+## Column Block Types
+
+| Block Type | Use Case |
+|---|---|
+| Basic | Plain text field value |
+| Link | Clickable link (field value + URL field) |
+| Image | Thumbnail from a URL field |
+| Collection | Array/list field (e.g., labels, contributors) |
+| Regex | Extract part of a field value using a pattern |
+| Text | Static text or combined field values |
+
+→ [Columns & Filters](/apps/reports-charts-confluence/columns-filters)
+
+## Export Formats
+
+| Format | Available On | Use Case |
+|---|---|---|
+| CSV | Table, List | Spreadsheet analysis (Excel, Google Sheets) |
+| JSON | All report types | Developer processing, full API payload |
+
+## Settings Panel Tabs
+
+| Tab | Purpose |
+|---|---|
+| Columns | Define which fields to show and how to format them |
+| Templates | Browse and apply 35 tabular + 17 chart pre-built templates |
+| Import | Paste a JSON recipe to recreate a full report configuration |
+| Raw | Inspect raw Confluence API JSON for debugging field paths |
+
+→ [Macro Editor UI Tour](/apps/reports-charts-confluence/macro-editor-ui-tour)
+`,
+        },
+        {
+          slug: "how-to-space-audit",
+          title: "How to: Build a Space Governance Report",
+          content: `
+A step-by-step workflow for building a governance-focused content audit report - covering stale pages, orphaned content, contributors, and restrictions. Each step links to the relevant reference documentation.
+
+## Step 1 - Open the Macro Editor
+
+1. Open or create a Confluence page in edit mode
+2. Type \`/\` → search **Reports** → click the macro to insert it
+3. The macro editor opens with Header, Left Panel, Center Panel, and Right Panel
+
+→ [Macro Editor UI Tour](/apps/reports-charts-confluence/macro-editor-ui-tour)
+
+## Step 2 - Set Data Source
+
+In the **Header**, set **Data Source** to **Custom CQL** and enter:
+
+\`\`\`
+space = "YOUR_SPACE_KEY" AND type = page
+\`\`\`
+
+Replace \`YOUR_SPACE_KEY\` with your actual space key (visible in the URL: \`/wiki/spaces/KEY/...\`).
+
+Set **Result Limit** to **200** initially.
+
+→ [Data Source](/apps/reports-charts-confluence/data-source)
+
+## Step 3 - Load Expansions
+
+In the **Left Panel**, check these expansion groups:
+- **version** - gets last modified date and author
+- **metadata** - gets labels and restrictions
+- **history** - gets contributor data
+
+→ [Expansions](/apps/reports-charts-confluence/expansions)
+
+## Step 4 - Configure Columns
+
+In the **Right Panel → Columns tab**, click **+ Add New Column** for each:
+
+| Column Label | Block Type | Data Value |
+|---|---|---|
+| Page Title | Link | title / _links.webui |
+| Last Modified | Basic | version.when |
+| Last Author | Basic | version.by.displayName |
+| Created | Basic | history.createdDate |
+| Created By | Basic | history.createdBy.displayName |
+| Labels | Collection | metadata.labels.results[].name |
+
+→ [Columns & Filters](/apps/reports-charts-confluence/columns-filters)
+
+## Step 5 - Apply Stale Content Filter
+
+In the **Center Panel → Filter** section, click **+ Add filter**:
+
+- Operator: **Less than**
+- Property: **Last Modified date**
+- Value: \`now("-90d")\`
+
+This filters to pages not updated in the last 90 days.
+
+## Step 6 - Switch to Chart View for Summary
+
+In the **Header**, change **Report Type** to **Charts**:
+
+- Chart Type: **Bar**
+- Group By: **Last Author** (shows who owns stale content)
+- Metric: **Count**
+
+This surfaces which owners have the most stale pages.
+
+→ [Chart Configuration](/apps/reports-charts-confluence/chart-configuration)
+
+## Step 7 - Export and Share
+
+1. Set **Report Type** back to **Table**
+2. Set **Result Limit** to **1000** for a full export
+3. Click **Export** → **CSV** in the Center Panel
+4. Open in Excel or Google Sheets - sort by Last Modified to identify oldest pages
+
+→ [Export](/apps/reports-charts-confluence/export)
+
+## Step 8 - Save the Report
+
+Click **Save** in the Header. Publish the Confluence page. The report updates live each time the page is viewed - no manual refresh needed.
+
+> **Tip:** Use the **Import** tab to copy the JSON recipe and recreate this report in other spaces by pasting it.
+`,
+        },
+        {
+          slug: "how-to-content-dashboard",
+          title: "How to: Create a Stakeholder Content Dashboard",
+          content: `
+A workflow for building a Confluence page that shows executives and PMO leaders a live overview of documentation health - page counts, contributor activity, content growth trends, and top contributors.
+
+## Dashboard Structure
+
+\`\`\`
+Content Dashboard Page
+├── Row 1: KPI tiles (Total Pages, New This Month, Stale Pages)
+├── Row 2: Pie chart (Content by type) + Bar chart (Top contributors)
+└── Row 3: Table (Recently updated pages)
+\`\`\`
+
+## Step 1 - Total Pages KPI
+
+1. Insert the Reports macro → Header: Data Source = Spaces, select your space, Report Type = **Table**
+2. Left Panel: load **version** expansion
+3. Right Panel → Columns: add **Page Title** (Link type)
+4. Set Result Limit to **1000**
+5. Save. This table is your base - you'll convert it to a chart next
+
+→ For a count-only tile, use the **Charts** report type with Chart Type = **Pie**, Group By = **Space** (shows total in one slice).
+
+## Step 2 - Content Type Breakdown Pie Chart
+
+1. Insert a second Reports macro
+2. Data Source: Custom CQL → \`space = "KEY" AND type in (page, blogpost)\`
+3. Report Type: **Charts** → Chart Type: **Pie** → Group By: **Content Type**
+4. Save - shows the mix of pages vs blog posts
+
+→ [Chart Types](/apps/reports-charts-confluence/chart-types)
+
+## Step 3 - Top Contributors Bar Chart
+
+1. Insert another Reports macro
+2. Data Source: Custom CQL → \`space = "KEY" AND type = page AND lastmodified >= now("-30d")\`
+3. Left Panel: load **version** expansion
+4. Report Type: **Charts** → Chart Type: **Bar** → Group By: **Last Author (version.by.displayName)**
+5. Save - shows who updated the most pages this month
+
+## Step 4 - Recently Updated Pages Table
+
+1. Insert a final Reports macro
+2. Data Source: Custom CQL → \`space = "KEY" AND type = page ORDER BY lastmodified DESC\`
+3. Left Panel: load **version** expansion
+4. Report Type: **Table**
+5. Columns: Page Title (Link), Last Modified, Last Author, Created By
+6. Result Limit: **20** (most recent 20 pages)
+7. Save
+
+→ [Table View](/apps/reports-charts-confluence/table-view)
+
+## Step 5 - Arrange and Publish
+
+1. Use Confluence **columns layout** (two- or three-column) to arrange the macros side by side
+2. Add headings above each report section: "Content Overview", "Top Contributors", "Recent Updates"
+3. Publish the page
+
+The page is now a live dashboard - all reports update automatically when the page is viewed.
+
+→ [Templates](/apps/reports-charts-confluence/templates-import-export) - use the **Top Contributors** and **Recently Updated Pages** pre-built templates instead of configuring from scratch
+`,
+        },
+        {
+          slug: "tips-best-practices",
+          title: "Tips & Best Practices",
+          content: `
+Non-obvious tips that save time and prevent common configuration mistakes.
+
+## CQL Queries
+
+- **Test CQL in the Confluence search bar first.** Go to Confluence → Search → switch to Advanced search → enter your CQL. If it returns the right results there, it will work in the macro.
+- **Use \`now("-Nd")\` for rolling time windows.** \`lastmodified < now("-90d")\` always means "90 days ago from now" - no hardcoded dates that become stale.
+- **Spaces mode is for quick setup; CQL is for precision.** Spaces mode pulls everything in a space. CQL lets you filter by content type, date, label, title, and more. Switch to CQL as soon as you need more than one filter condition.
+
+## Columns and Expansions
+
+- **Only load the expansions you actually use.** Each expansion group adds API call overhead. Loading all expansions when you only need \`version.when\` slows down the report.
+- **Use the Explore panel to find field paths.** Click **Explore** in the Center Panel to browse all available fields with sample values. Copy the exact path (e.g., \`version.by.displayName\`) into your column Data Value. This is faster than guessing.
+- **Use Raw View when a column shows blank.** Right Panel → Raw tab → search for the field name. If it's missing in the raw JSON, the expansion isn't loaded or the field doesn't exist for that content type.
+
+## Templates
+
+- **Apply a template first, then customise.** Templates pre-configure source, expansions, columns, and filters. Start from a template baseline and adjust - faster than starting blank.
+- **Unlock a template before editing.** Templates are locked by default. Click the **Edit (lock)** icon in the Center Panel to unlock. Unlocked templates become custom reports and won't receive future template updates.
+
+## Export
+
+- **Raise Result Limit before exporting.** The default is 50. Set it to 500 or 1000 before clicking Export → CSV to get a full data set.
+- **JSON export contains ALL fields, not just your configured columns.** This is useful for discovering new fields or passing the raw data to a developer for processing.
+- **Share report configurations as JSON recipes.** Right Panel → Import tab → Copy JSON. Share the recipe on a "Report Library" page - teammates paste it into the macro editor to recreate the exact same report in seconds.
+
+## Performance
+
+- **Set a sensible Result Limit.** Loading 10,000 pages on every page view creates unnecessary load. Use filters to narrow results, then set the limit to match the filtered count.
+- **Use Chart view for large datasets.** A bar chart summarising 5,000 pages by author loads faster and communicates more clearly than a 5,000-row table.
+`,
         },
       ],
     },
@@ -1788,440 +2107,6 @@ Live Preview is the center panel of the macro editor. Every change you make - da
 * Consider performance when setting very high limits with many expansions loaded
 
 **Tip:** For full data exports, set a high Result Limit, verify in Live Preview, then use the Export button to download as CSV or JSON rather than presenting all rows on the page.`,
-        },
-      ],
-    },
-    // ═══════════════════════════════════════════════════════════════
-    // 5. USER GUIDE
-    // ═══════════════════════════════════════════════════════════════
-    {
-      id: "user-guide",
-      title: "User Guide",
-      articles: [
-        {
-          slug: "overview-dashboard",
-          title: "Overview & Dashboard",
-          content: `
-A complete walkthrough of the macro editor layout and how to open, configure, save, and publish reports.
-
-## Macro Editor Layout
-
-The macro editor is divided into three main zones - each with a distinct purpose.
-
-### Header - Global Report Controls
-
-The header runs across the top of the editor and controls the report's data source, format, and size.
-
-| **Header Element** | **Purpose** | **Options / Notes** |
-| --- | --- | --- |
-| Data Source | Choose how content is selected | Spaces (visual drill-down) or Custom CQL (query-based) |
-| Source Value | The actual selection or query | Space/page picker (Spaces mode) or CQL text input (CQL mode) |
-| Report Type | The display format for results | Table, List, Paragraph, Grid, Charts |
-| Result Limit | Maximum number of records to return | Numeric input - start with 50 for testing, increase for final reports |
-| Save | Publish the report to the Confluence page | Closes the editor after saving |
-| Close | Exit the editor without saving | Prompts for confirmation if unsaved changes exist |
-
-### Left Panel - Expansions
-
-The left panel is where you load metadata groups (expansions) that make fields available for columns, filters, and charts.
-
-* **Search box** - filter expansion field names in real-time
-* **Checkbox groups** - check a group to load all its fields
-* **Star / Favorites** - pin frequently used fields to the top for faster access
-* **Expansion categories:**
-
-| **Category** | **Fields Included** |
-| --- | --- |
-| Structure | ancestors, children, descendants, container |
-| Body & Metadata | body, metadata, operations, restrictions, version |
-| History | contributors, lastUpdated, previousVersion, nextVersion, ownedBy |
-
-### Center Panel - Live Preview
-
-The center panel is your main workspace. It shows results in real-time and provides all the tools for filtering, exploring, and exporting data.
-
-| **Element** | **What It Does** |
-| --- | --- |
-| Live Preview | Shows report results updating instantly as you configure |
-| Filter Panel | Add filter rows (Operator + Property + Value) to narrow results |
-| Explore | Lists all available metadata fields with types and sample values |
-| Export | Download report data as CSV (Table view) or JSON (all views) |
-| Edit (Lock/Unlock) | Unlock templates for editing - templates are locked by default |
-| Pagination | Navigate large result sets with Previous/Next and page numbers |
-
-### Right Panel - Configuration Tabs
-
-The right panel contains four tabs for building and managing your report.
-
-| **Tab** | **Purpose** |
-| --- | --- |
-| Columns | Define which data fields appear and how they are formatted |
-| Templates | Browse and apply 35 tabular + 17 chart pre-built templates |
-| Import | Paste a JSON recipe to recreate a full report configuration |
-| Raw | Inspect the raw JSON returned by Confluence for debugging |
-
-## How to Open the Macro
-
-1. Open any Confluence page and click the **Edit** button to enter page edit mode.
-2. Place your cursor where you want the report to appear.
-3. Type \`/\` to open the macro insert menu.
-4. Search for **Reports** or **Reports, Charts, Templates, CQL & Export for Confluence**.
-5. Click the macro in the search results - the macro editor opens automatically.
-
-## How to Save and Publish
-
-1. Configure your report using the header, left panel, center panel, and right panel.
-2. Verify results in the Live Preview - confirm data looks correct.
-3. Click the **Save** button in the header.
-4. The macro editor closes and your live report appears on the Confluence page.
-5. Click **Publish** (or **Update**) on the Confluence page to make the report visible to others.
-
-> **Important:** Saving in the macro editor closes the editor and embeds the report in the page draft. You must also publish the Confluence page for other users to see the updated report.
-
-## Settings and Configuration Patterns
-
-### Recommended First-Time Setup Order
-
-1. Set Data Source (Header) - choose Spaces or Custom CQL
-2. Load Expansions (Left Panel) - add only what your columns need
-3. Check Live Preview (Center) - confirm data is returning
-4. Use Explore (Center) - discover available field paths
-5. Configure Columns (Right → Columns tab) - define what to display
-6. Apply Filters (Center Filter Panel) - refine which records appear
-7. Set Report Type + Result Limit (Header) - choose format and size
-8. Save (Header) - publish to Confluence page
-
-### Common Configuration Patterns
-
-| **Goal** | **Pattern** |
-| --- | --- |
-| Quick report from a template | Templates tab → select template → review → Save |
-| Custom report from scratch | Set source → load expansions → add columns → apply filters → Save |
-| Reuse a report on another page | Import tab → paste JSON recipe → review → Save |
-| Debug a blank column | Raw tab → find field path → update column Data Value |
-| Share report setup with team | Import tab → Copy JSON button → share the recipe |`,
-        },
-        {
-          slug: "how-to-guides",
-          title: "How-To Guides",
-          content: `
-Step-by-step instructions for the most common tasks in Reports, Charts, Templates, CQL & Export for Confluence.
-
-## 1. Build Your First Tabular Report
-
-1. Open a Confluence page in edit mode.
-2. Type \`/\` and search for the macro - click to insert.
-3. In the header, set **Data Source** to **Spaces** and select a space.
-4. Set **Report Type** to **Table**.
-5. In the left panel, check the **metadata** and **version** expansion groups.
-6. In the right panel, open the **Columns** tab and click **+ Add New Column**.
-7. Set a Label (e.g., "Page Title"), choose **Link** as Block Type, set the source field to \`title\` / \`_links.webui\`.
-8. Add more columns as needed (e.g., Last Modified, Created By).
-9. Set **Result Limit** to 50 in the header.
-10. Review results in Live Preview - verify data is correct.
-11. Click **Save**.
-
-## 2. Write a CQL Query
-
-1. In the header, set **Data Source** to **Custom CQL**.
-2. The Source Value field becomes a CQL text input.
-3. Type your query. Examples:
-
-| **Goal** | **CQL Query** |
-| --- | --- |
-| All pages in a space | \`space = "ENG" AND type = page\` |
-| Recently updated content | \`type = page AND lastmodified >= now("-30d")\` |
-| Pages with a label | \`label = "decision" AND type = page\` |
-| Title contains keyword | \`type = page AND title ~ "Release Notes"\` |
-| Pages created this year | \`type = page AND created >= "2026-01-01"\` |
-
-4. Press Enter or click outside the field - Live Preview updates with results.
-5. Refine the query until results match your intent.
-
-## 3. Add Columns to a Report
-
-1. Open the macro editor and navigate to the **Columns** tab in the right panel.
-2. Click **+ Add New Column**.
-3. Set the **Column Label** (display name shown in the report header).
-4. Choose a **Block Type** - Basic, Image, Link, Collection, Regex, or Text.
-5. Set the **Data Value** (JSON path to the field, e.g., \`version.by.displayName\`).
-6. Configure any block-specific settings (size for Image, URL field for Link, etc.).
-7. Click outside or press Enter - the column appears in Live Preview immediately.
-8. Drag the handle icon to reorder columns.
-
-## 4. Apply Filters
-
-1. In the center panel, locate the **Filter** section.
-2. Click **+ Add filter** to add a filter row.
-3. For each filter row:
-   - Select an **Operator** (e.g., Contains, Equals, Greater Than)
-   - Choose a **Property** (e.g., Title, Space, Created By, Content Type)
-   - Enter a **Value** (e.g., "Project", "DEV", currentUser())
-4. Live Preview updates after each filter change.
-5. Add more rows to further narrow results - rows use AND logic (all must match).
-6. Use the trash icon to delete a filter row, or **Clear all** to remove all filters.
-
-## 5. Switch to Chart View
-
-1. In the header, change **Report Type** to **Charts**.
-2. In the right panel, the **Charts** configuration section appears.
-3. Select a **Chart Type** - Bar, Pie, or Line.
-4. Set **Group By** - the field to categorize/bucket data (e.g., Space, Author, Month).
-5. Set **Metric** - typically Count.
-6. Optionally set a **Series** for stacked bar charts (secondary grouping).
-7. Live Preview renders the chart in real-time.
-8. Adjust filters to refine the dataset, then click **Save**.
-
-## 6. Export to CSV
-
-1. Set **Report Type** to **Table** in the header (CSV export is available from Table view).
-2. Configure columns and filters as needed.
-3. In the center panel, click the **Export** button.
-4. Select **CSV** from the options.
-5. The file downloads automatically - open in Excel, Google Sheets, or any spreadsheet tool.
-
-> **Tip:** To export all data, set a high Result Limit (e.g., 1000) before exporting.
-
-## 7. Use a Template
-
-1. Open the macro editor.
-2. In the right panel, click the **Templates** tab.
-3. Search by name or browse the list of 35 tabular + 17 chart templates.
-4. Click a template - it auto-configures source, expansions, columns, filters, and view.
-5. Review in Live Preview - verify the data matches your expectations.
-6. To customize, click the **Edit** button in the center panel to unlock.
-7. Adjust columns or filters as needed, then click **Save**.
-
-## 8. Share a Report as a JSON Recipe
-
-1. Open the macro editor for the report you want to share.
-2. In the right panel, click the **Import** tab.
-3. Click the **Copy JSON** button - this copies the full report configuration to your clipboard.
-4. Paste the JSON recipe on a shared Confluence page (e.g., a "Report Library" page).
-5. Team members can recreate the report: open the macro editor → Import tab → paste the JSON → Save.
-
-## 9. Use Explore to Find Fields
-
-1. Open the macro editor and set your data source.
-2. Load the expansions you expect to need in the left panel.
-3. Click the **Explore** button in the center panel.
-4. Browse the field list - each entry shows the field name, type, and a sample value.
-5. Find the field you want to use in a column or filter.
-6. Note the exact field path (e.g., \`version.by.displayName\`) - use it in your column Data Value setting.
-
-> **Tip:** Use Explore to discover fields before building columns - it's faster than guessing paths.
-
-## 10. Use Raw View to Debug
-
-1. Open the macro editor.
-2. In the right panel, click the **Raw** tab.
-3. The raw JSON returned by Confluence for your current results appears.
-4. Use the search box in Raw View to find a specific field name.
-5. Click to expand nested objects and find the exact field path.
-6. Copy the path and use it in your column Data Value setting.
-7. If a column shows blank values - check Raw View to verify the field exists and has data.`,
-        },
-        {
-          slug: "pre-built-report-types",
-          title: "Pre-Built Report Types",
-          content: `
-## What Are Pre-Built Reports?
-
-Pre-built reports are ready-to-use templates in the **Templates** tab of the Reports, Charts, Templates, CQL & Export macro editor. Each template pre-configures data source, expansions, columns, filters, and view - you can use them immediately or customize from the pre-configured baseline.
-
-The template library includes **35 tabular templates** and **17 chart templates** covering the most common Confluence reporting scenarios.
-
-## Tabular Report Templates
-
-### 1. Page Inventory Report
-Lists all pages in a space with title, author, creation date, and last modified date.
-**Best for:** Space audits, content governance reviews
-
-### 2. Stale Content Report
-Shows pages not updated in the last 90 days (configurable threshold).
-**Best for:** Identifying outdated documentation for review or archiving
-
-### 3. Orphaned Pages Report
-Lists pages with no parent, no child pages, and no inbound links - disconnected from the rest of the space.
-**Best for:** Finding abandoned or stranded content
-
-### 4. Top Contributors Report
-Ranks Confluence users by number of pages created or updated within the selected space.
-**Best for:** Recognizing active contributors, identifying inactive teams
-
-### 5. Large Pages Report
-Shows pages with the most attachments or the largest total attachment size.
-**Best for:** Storage management, identifying pages with heavy file usage
-
-### 6. Page Labels Report
-Lists all pages with their associated labels in a single view.
-**Best for:** Label auditing, ensuring consistent tagging across a space
-
-### 7. Restriction Report
-Shows pages with view or edit restrictions applied.
-**Best for:** Security audits, verifying who can access sensitive content
-
-### 8. Attachment Inventory
-Lists all attachments across a space with file name, type, uploader, and size.
-**Best for:** Asset inventory, storage planning, compliance documentation
-
-### 9. Pages Without Labels
-Shows pages that have no labels applied.
-**Best for:** Enforcing labeling policies, improving Confluence searchability
-
-### 10. Recently Created Pages
-Lists pages created in the last 30 days (configurable), sorted by creation date.
-**Best for:** Sprint retrospectives, tracking new documentation output
-
-### 11. Recently Updated Pages
-Pages updated in the last 7 days (configurable), sorted by last modified date.
-**Best for:** Staying current on team documentation activity
-
-### 12. Page Version History
-Shows version history metrics - number of versions, last version author, change frequency.
-**Best for:** Understanding document evolution, finding frequently revised pages
-
-### 13. Space Comparison Report
-Side-by-side metrics (page count, attachment count, contributor count) across two or more spaces.
-**Best for:** Multi-team governance, space health comparisons
-
-## Chart Report Templates
-
-### Content Growth Chart
-A line chart showing new pages created per week or month over the selected date range.
-
-### Space Distribution Chart
-A pie chart showing how pages are distributed across spaces.
-
-### Top Editors Bar Chart
-A bar chart ranking contributors by edit count.
-
-### Content Type Mix Chart
-A pie chart breaking down content by type (page, blog post, comment).
-
-### Monthly Activity Chart
-A bar chart showing content activity (creates + updates) by month.
-
-### Label Distribution Chart
-Shows which labels are most commonly applied across your Confluence content.
-
-## How to Apply a Template
-
-1. Open the macro editor (insert the Reports macro on a Confluence page)
-2. In the right panel, click the **Templates** tab
-3. Browse or search for the template you want
-4. Click a template card to preview its configuration
-5. Click **Use Template** to apply it
-6. The Live Preview loads data immediately - review to verify it matches your expectations
-7. Customize columns, filters, or chart settings if needed
-8. Click **Save** to publish the report to the Confluence page
-
-## Unlocking Templates for Editing
-
-Templates are locked by default to prevent accidental modification.
-
-1. After applying a template, click the **Edit** (lock/unlock) icon in the center panel
-2. A confirmation prompt appears - click **Unlock**
-3. The template is now fully editable
-4. Make your adjustments and click **Save**
-
-> **Note:** Unlocking a template converts it into a custom report. It will no longer receive automatic updates if the template definition is updated in a future app version.`,
-        },
-        {
-          slug: "export-formats-guide",
-          title: "Export Formats Guide",
-          content: `
-## Overview
-
-Reports, Charts, Templates, CQL & Export for Confluence supports exporting report data in two formats: **CSV** (for tabular data) and **JSON** (for all report types). This guide covers how to export, what each format contains, and tips for working with exported data.
-
-## Export Options by Report Type
-
-| Report Type | CSV Export | JSON Export |
-|---|---|---|
-| **Table** | Yes - all visible columns | Yes - full raw API response |
-| **List** | Yes | Yes |
-| **Paragraph** | No | Yes |
-| **Grid** | No | Yes |
-| **Charts** | No | Yes |
-
-## How to Export to CSV
-
-CSV export is available for Table and List report types.
-
-1. In the macro editor, set **Report Type** to **Table** or **List**
-2. Configure your columns and filters - the CSV will contain exactly the columns visible in the preview
-3. Set **Result Limit** to the maximum number of records you want (e.g., 1000 for a full export)
-4. In the center panel, click the **Export** button
-5. Select **CSV** from the options
-6. The file downloads automatically to your browser's default download location
-
-### What the CSV Contains
-
-- One row per Confluence page or content item
-- One column per configured column in the report
-- Column headers use your custom column labels (not internal field names)
-- Links appear as plain URLs
-- Images are not included (image columns export as file path text)
-- Dates export in ISO 8601 format (YYYY-MM-DD)
-
-### Opening CSV in Spreadsheet Tools
-
-| Tool | How to Open |
-|---|---|
-| **Microsoft Excel** | File → Open → select the CSV file. Set delimiter to comma if prompted. |
-| **Google Sheets** | File → Import → Upload → select the CSV file → Import data |
-| **Numbers (Mac)** | Double-click the CSV file - Numbers opens it automatically |
-
-> **Tip:** If date columns appear as numbers in Excel, format those cells as Date in Excel's cell format options.
-
-## How to Export to JSON
-
-JSON export is available from all report types.
-
-1. Configure your report (any type)
-2. In the center panel, click the **Export** button
-3. Select **JSON** from the options
-4. The full raw API response downloads as a \`.json\` file
-
-### What the JSON Contains
-
-The JSON export is the complete Confluence REST API response for your query - it includes all fields available in the API, not just the columns you configured in the report. This is useful for:
-
-- Developers who need the full data payload for processing
-- Data analysts who want to explore fields not shown in the table view
-- Debugging - verifying that a field exists and contains the expected value
-
-### Working with JSON Data
-
-| Tool | Use Case |
-|---|---|
-| **jq** (command line) | Filter, transform, and query JSON from the terminal |
-| **Python (json module)** | Parse and process JSON in scripts |
-| **Power BI** | Import JSON as a data source for dashboards |
-| **Postman** | Inspect the JSON structure interactively |
-| **VS Code** | View and format the JSON with syntax highlighting |
-
-## Exporting Large Datasets
-
-- Set **Result Limit** to the highest value you need before exporting (the default is 50)
-- For spaces with thousands of pages, export in date-range segments using CQL filters
-- Example CQL to export in segments:
-  \`\`\`
-  space = "ENG" AND type = page AND created >= "2024-01-01" AND created <= "2024-06-30"
-  \`\`\`
-
-## Sharing Reports as JSON Recipes
-
-In addition to data export, you can share the **report configuration** as a JSON recipe:
-
-1. Open the macro editor for the report you want to share
-2. In the right panel, click the **Import** tab
-3. Click **Copy JSON** - this copies the full report configuration to your clipboard
-4. Paste the JSON into a shared Confluence page or a team repository
-5. Team members can recreate the exact report: open the macro editor → Import tab → paste the JSON → Save
-
-This is different from a data export - it exports the configuration (columns, filters, data source settings), not the report results.`,
         },
       ],
     },

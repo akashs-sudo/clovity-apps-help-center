@@ -69,20 +69,20 @@ export const apps = [
     marketplaceUrl:
       "https://marketplace.atlassian.com/apps/138412229/latex-formulas-diagrams-gantt-charts-erds-flowcharts",
   },
-    {
-    slug: "backlog-auditor-jira",
-    name: "Backlog Auditor & Export",
-    shortName: "Backlog Auditor & Export",
-    platform: "Jira Cloud",
-    badge: null,
-    rating: null,
-    installs: 9,
-    icon: "/images/global/png/backlog-auditor-export.png",
-    description:
-      "Keep your Jira backlog clean, consistent, and exportable - effortlessly.",
-    marketplaceUrl:
-      "https://marketplace.atlassian.com/apps/2421185342/backlog-auditor-export",
-  },
+  //   {
+  //   slug: "backlog-auditor-jira",
+  //   name: "Backlog Auditor & Export",
+  //   shortName: "Backlog Auditor & Export",
+  //   platform: "Jira Cloud",
+  //   badge: null,
+  //   rating: null,
+  //   installs: 9,
+  //   icon: "/images/global/png/backlog-auditor-export.png",
+  //   description:
+  //     "Keep your Jira backlog clean, consistent, and exportable - effortlessly.",
+  //   marketplaceUrl:
+  //     "https://marketplace.atlassian.com/apps/2421185342/backlog-auditor-export",
+  // },
   {
     slug: "pulse-ai-jira",
     name: "Pulse AI for Jira",
@@ -97,17 +97,17 @@ export const apps = [
     marketplaceUrl:
       "https://marketplace.atlassian.com/apps/3640865514/pulse-ai-the-ai-that-finds-problems-agents-that-fix-them",
   },
-  {
-    slug: "jql-ai-jira",
-    name: "JQL AI",
-    shortName: "JQL AI",
-    platform: "Jira Cloud",
-    badge: null,
-    rating: null,
-    installs: 27,
-    icon: "/images/global/png/jql-ai.png",
-    description:
-      "Effortlessly transform natural language into precise JQL queries with AI-powered query conversion.",
-    marketplaceUrl: "https://marketplace.atlassian.com/apps/1237395/jql-ai",
-  },
+  // {
+  //   slug: "jql-ai-jira",
+  //   name: "JQL AI",
+  //   shortName: "JQL AI",
+  //   platform: "Jira Cloud",
+  //   badge: null,
+  //   rating: null,
+  //   installs: 27,
+  //   icon: "/images/global/png/jql-ai.png",
+  //   description:
+  //     "Effortlessly transform natural language into precise JQL queries with AI-powered query conversion.",
+  //   marketplaceUrl: "https://marketplace.atlassian.com/apps/1237395/jql-ai",
+  // },
 ];

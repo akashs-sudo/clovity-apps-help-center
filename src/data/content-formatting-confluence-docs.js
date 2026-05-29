@@ -2359,59 +2359,89 @@ Audit log entries are retained for **90 days** by default. Entries older than 90
 
 ## What Templates Are Included?
 
-Content Formatting Macros includes two ready-to-use Confluence page templates that demonstrate the app's capabilities in realistic, production-ready page designs.
+Content Formatting Macros includes three ready-to-use Confluence page templates that demonstrate the app's capabilities in realistic, production-ready page designs.
 
 ---
 
-## Template 1 - Employee Onboarding Hub
+## Template 1 - Team Hub
 
-A structured onboarding experience for new hires, built with tabs, cards, and conditional visibility.
-
-### Page Structure
-
-| Tab | Content |
-|---|---|
-| Week 1 | First-day checklist, system access steps, buddy program info |
-| Week 2 | Team introductions, process docs, first project overview |
-| Week 3 | Role-specific training, first check-in prep |
-| Resources | Buttons linking to HR systems, benefits portal, IT helpdesk |
-| Manager View (Conditional) | Manager-only tab with onboarding completion tracking |
-
-### Macros Used
-- Tab Navigation + Custom Tabs (for the weekly structure)
-- Conditional Show (for the Manager View tab)
-- Buttons (system links in Resources tab)
-- Alert (Info type - welcome message)
-- User Profile (buddy/manager contact cards)
-- Progress Bar (overall onboarding completion percentage)
-- Interactive Banner (welcome header)
-
----
-
-## Template 2 - Team Hub
-
-A team home page with announcements, key links, member directory, and rotating status indicators.
+A team space home page with a welcome header, vision and mission cards, a photo-based member directory, resource cards, and helpful links. Also creates two child pages: Meeting Notes and Ways of Working.
 
 ### Page Structure
 
 | Section | Content |
 |---|---|
-| Announcement Banner | Interactive Banner macro with latest team news |
-| Quick Links | Button macros linking to Jira board, Confluence space, Slack channel |
-| Team Members | Grid of User Profile macros (Card style) |
-| Current Sprint Status | Status Macro badges per active project |
-| Upcoming Events | Countdown Timer macros for key dates |
-| Resources | Advanced Cards linking to key documents |
+| Welcome Header | Styled title with team name and welcome message |
+| Team Culture | Vision and Mission background cards side by side |
+| Get in Touch | Button links to Slack channel, team email, support desk, and product wiki |
+| Meet the Team | Department label cards + person photo cards in a 4-column grid (Engineering, Marketing, Product) |
+| Team Activity | Placeholder section for Jira macros (issues, charts, or timeline) |
+| Recently Updated | Placeholder for Confluence Recently Updated macro |
+| Team Resources | 3 Advanced Cards linking to Onboarding Resources, Ways of Working, and Meeting Notes |
+| Helpful Links | Buttons in 3 columns linking to tools, repos, and dashboards |
+
+### Macros Used
+- Background (Vision and Mission cards)
+- Buttons (Get in Touch links, Helpful Links columns)
+- Advanced Cards (4-column member directory, 3-column resource cards)
+
+### Child Pages Created
+| Child Page | Contents |
+|---|---|
+| Meeting Notes | Sprint planning table, committed tickets table, decisions and action items table |
+| Ways of Working | Team ritual cards (Standup, Sprint Planning, Retro), team norms list, definition of done |
+
+---
+
+## Template 2 - Company Hub
+
+A company-wide intranet landing page with a rotating banner, essentials panel, department directory, HR resources, and other resource links.
+
+### Page Structure
+
+| Section | Content |
+|---|---|
+| Rotating Banner | Interactive Banner with 3 slides (Welcome, Connect & Grow, Knowledge Hub) |
+| Essentials | Quick-access buttons: Single Sign-On, Expenses, HR tool |
+| Who We Are | Company description paragraph |
+| Recent Blogs | Placeholder for a Confluence Blog Posts stream |
+| Team in Action | Image background section with company culture description |
+| Connect on Socials | Buttons for Twitter, LinkedIn, and YouTube |
+| Departments Grid | 10 Advanced Cards in a 5-column grid: Finance, Marketing, People, GTM, Legal, Education, Product, Engineering, Sales, UX/UI |
+| HR Help | Image background with HR team description and HR Hub button |
+| HR FAQ | 3 collapsible expand sections: New Employees, Referral Program, Career Development |
+| Other Resources | 3-column layout: IT Support, Together Resources, Tools & Apps |
+
+### Macros Used
+- Interactive Banner (3-slide rotating carousel)
+- Background (color and image variants for multiple sections)
+- Buttons (vertical and horizontal, for Essentials and social links)
+- Advanced Cards (10-card department grid, 5 columns)
+- Advanced Expand (HR FAQ collapsible items)
+
+---
+
+## Template 3 - Monthly Project Report
+
+A single-page monthly report covering project summary, KPI targets, key initiatives (tabbed), upcoming focus areas, and team kudos.
+
+### Page Structure
+
+| Section | Content |
+|---|---|
+| Report Banner | Interactive Banner with report title and monthly summary |
+| Project Summary | Table with project name, status date, PM, stakeholders, and links — alongside a Table of Contents |
+| Target Check | 3 Background cards, each showing a KPI's current value vs. target and insights |
+| Key Initiatives | Custom Tabs — one tab per initiative, each with a metrics table, insights, and project links |
+| Next Up | 3 Advanced Cards for upcoming focus areas |
+| Kudos | Table recognizing team members with appreciation notes |
 
 ### Macros Used
 - Interactive Banner
-- Buttons
-- User Profile (Card style, 3-column grid)
-- Status Macro
-- Countdown Timer
-- Advanced Cards
-- Background (alternating section backgrounds)
-- Divider (between sections)
+- Background (Target Check KPI cards)
+- Tooltip (inline metric definitions, e.g. MAU)
+- Custom Tabs (one tab per initiative in the Key Initiatives section)
+- Advanced Cards (Next Up section, 3 cards)
 
 ---
 
@@ -2420,7 +2450,7 @@ A team home page with announcements, key links, member directory, and rotating s
 1. In Confluence, navigate to the space where you want to create the page
 2. Click **Create** → **From Template**
 3. Search for **"Content Formatting"** or browse the template gallery
-4. Select **Employee Onboarding Hub** or **Team Hub**
+4. Select **Team Hub**, **Company Hub**, or **Monthly Project Report**
 5. Click **Use Template** - the page opens in edit mode with all macros pre-configured
 6. Replace placeholder text and configure macros with your actual content
 
@@ -2432,8 +2462,8 @@ A team home page with announcements, key links, member directory, and rotating s
 |---|---|
 | Templates not showing in the gallery | Confirm the app is installed and activated for the space |
 | Macros showing placeholder content | Edit each macro and configure it with real data |
-| Conditional Show section always hidden | Confirm the target Confluence group exists and the current user is in it |
-| User Profile cards showing blank | Ensure the referenced users have completed their Confluence profile fields |`,
+| Team Hub child pages missing | Child pages (Meeting Notes, Ways of Working) are created automatically when the template is applied |
+| Banner images not loading | Confirm the template assets are deployed alongside the app |`,
         },
       ],
     },

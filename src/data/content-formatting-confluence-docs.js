@@ -261,7 +261,7 @@ Decide how many tabs you need and what content belongs in each. The most common 
 - **Create Custom Tabs**: Use when content lives directly on the page, not in separate child pages
 
 ### Step 3 - Insert and Configure
-Insert the tab mapper macro directly on the page (type `/` → search the macro name). Configure the mapper settings (parent page, label name, or page list) in the config panel.
+Insert the tab mapper macro directly on the page (type "/" → search the macro name). Configure the mapper settings (parent page, label name, or page list) in the config panel.
 
 ### Step 4 - Enrich with Formatting Macros
 Add Alert macros for warnings, Buttons for CTAs, Background for section separation, and Status badges for current state. Publish when ready.`,
@@ -626,10 +626,10 @@ Each block is independent - users in multiple groups see all content that matche
 
 ## Verification Checklist
 
-- [ ] Group name matches exactly (copy-paste from Confluence Admin)
-- [ ] Tested with a user IN the target group (content shows correctly)
-- [ ] Tested with a user NOT in the target group (content is hidden)
-- [ ] Page published after saving macros
+- Group name matches exactly (copy-paste from Confluence Admin)
+- Tested with a user IN the target group (content shows correctly)
+- Tested with a user NOT in the target group (content is hidden)
+- Page published after saving macros
 `,
         },
         {
@@ -847,7 +847,7 @@ Custom Tabs let you write content **directly inside each tab** instead of pullin
 ## How to Create Custom Tabs
 
 1. Open your page in edit mode
-2. Type `/` → search **Create Custom Tabs** → insert it directly on the page
+2. Type "/" → search **Create Custom Tabs** → insert it directly on the page
 3. In the config panel, add a label for each tab you want
 4. Click on a tab to select it, then type or insert content inside it
 5. Drag tabs up/down to reorder
@@ -1515,7 +1515,7 @@ Numbered Headings is a **page-level byline button**, not an inline macro. It app
 
 - Numbering is applied to the live page HTML — heading text in the editor is not modified
 - Settings are stored per-page — each page has its own enable/format configuration
-- It is not inserted via `/` in the editor — it is a separate byline action button`,
+- It is not inserted via "/" in the editor — it is a separate byline action button`,
         },
         {
           slug: "divider-macro",
@@ -2995,7 +2995,7 @@ Install Content Formatting Macros **before** uninstalling your old app. This all
 
 1. Open the page in edit mode
 2. Note the content in each tab of the old macro
-3. Type `/` → search **Create Custom Tabs** → insert it directly on the page below the old tab macro
+3. Type "/" → search **Create Custom Tabs** → insert it directly on the page below the old tab macro
 4. Add a tab for each section and copy the content from each old tab into the corresponding new tab
 5. Once the new tabs are verified, delete the old tab macro
 6. Publish
@@ -3004,7 +3004,7 @@ Install Content Formatting Macros **before** uninstalling your old app. This all
 
 If your old app populated tabs from child pages, the **Tab Parent Content Mapper** is the direct equivalent:
 
-1. Type `/` → search **Tab Parent Content Mapper** → insert it directly on the page
+1. Type "/" → search **Tab Parent Content Mapper** → insert it directly on the page
 2. Configure the Parent Page in the mapper config panel
 3. Compare the tab output against the old macro's output
 4. If the output matches, delete the old tab macro

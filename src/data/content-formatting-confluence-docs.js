@@ -16,7 +16,7 @@ export const contentFormattingConfluenceDocs = {
           slug: "what-is-content-formatting",
           title: "What is Content Formatting Macros?",
           sideVideo: {
-            src: "https://www.youtube.com/embed/9kxsvSFa2-w",
+            src: "https://www.youtube.com/embed/qL1FyvaBG2w",
             title:
               "Content Formatting Macros: Tabs, Navigation, Visibility & CSS - Product Overview",
           },

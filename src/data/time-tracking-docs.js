@@ -11,7 +11,7 @@ export const timeTrackingDocs = {
           slug: "what-is-time-tracking",
           title: "What is Time Tracking & PPM?",
           sideVideo: {
-            src: "https://www.youtube.com/embed/H0dyqJKeAG8",
+            src: "https://www.youtube.com/embed/Gydd-4lBKY4",
             title:
               "Time Tracking, Resource Planning & Project Management - Product Introduction",
           },
@@ -33,10 +33,10 @@ All of this runs natively inside Jira Cloud, using your existing projects, issue
 
 | Module | What It Does |
 |---|---|
-| **Time Tracking & Reporting** | Log work, build timesheet reports, manage billing accounts and categories |
 | **Capacity Planner & Insight** | Analyze team workload, deadlines, and risks across projects |
-| **Backlog Prioritization** | Score and rank backlog items with structured frameworks |
+| **Time Tracking & Reporting** | Log work, build timesheet reports, manage billing accounts and categories |
 | **Portfolio Management (PPM)** | Cross-project roadmaps, Gantt charts, and portfolio health dashboards |
+| **Backlog Prioritization** | Score and rank backlog items with structured frameworks |
 
 ## Who Is It For?
 
@@ -380,10 +380,10 @@ Use the dropdown at the top of the sidebar to switch modules:
 
 | Module | What It Opens |
 |---|---|
-| **Time Tracking** | Log, review, and approve time entries; build timesheet reports |
 | **Capacity Planner & Insight** | Analyze team workload, capacity, and delivery risks |
-| **Backlog Prioritization** | Score and rank backlog items using scoring frameworks |
+| **Time Tracking** | Log, review, and approve time entries; build timesheet reports |
 | **Portfolio (PPM)** | Cross-project timeline, Gantt, and portfolio health views |
+| **Backlog Prioritization** | Score and rank backlog items using scoring frameworks |
 
 ## Common UI Patterns
 
@@ -424,19 +424,6 @@ Available in all Time Tracking views. Click **Log Time** to open a quick-log for
           slug: "key-features",
           title: "Key Features",
           content: `
-## Time Tracking & Reporting
-
-| Feature | Description |
-|---|---|
-| My Calendar | Personal daily calendar showing hours logged per day; highlights days with missing entries |
-| My Timesheet | Personal tabular view of logged time with filters, grouping, and export |
-| Report Builder | Full-team timesheet reports with advanced nested filtering, grouping, chart visualization, and CSV/PDF export |
-| Billing Accounts | Categorize worklogs by client or engagement for account-based billing reports |
-| Time Categories | Classify time entries by work type (Development, Code Review, Meetings, QA, etc.) |
-| Worklog Fields | Custom fields that capture extra context when logging time (text, number, select, checkbox) |
-| Log Time | Log time directly against any Jira issue from any Time Tracking view |
-| Approve / Reject | Global Admins can approve or reject time entries submitted by team members |
-
 ## Capacity Planner & Insight
 
 | Feature | Description |
@@ -450,15 +437,18 @@ Available in all Time Tracking views. Click **Log Time** to open a quick-log for
 | Deadlines & Risks Tab | Issues near or past their due date, sorted by risk level |
 | Status Aging Monitor Tab | Issues stuck in the same status for longer than a configured threshold |
 
-## Backlog Prioritization
+## Time Tracking & Reporting
 
 | Feature | Description |
 |---|---|
-| Backlog Table | Sortable, filterable table of Jira issues with inline-editable scoring metric columns |
-| Scoring Templates | Built-in frameworks: ICE, RICE, WSJF, Value vs Effort; fully custom templates also supported |
-| Priority Matrix | Scatter plot placing each issue on two axes (e.g., Value vs. Effort) with quadrant labels |
-| Views & Filters | Filter by issue type, status, assignee, label, sprint; sort by any column including Score |
-| Saved Views & Reports | Save scored backlog snapshots with all metric values and filter/sort configuration |
+| My Calendar | Personal daily calendar showing hours logged per day; highlights days with missing entries |
+| My Timesheet | Personal tabular view of logged time with filters, grouping, and export |
+| Report Builder | Full-team timesheet reports with advanced nested filtering, grouping, chart visualization, and CSV/PDF export |
+| Billing Accounts | Categorize worklogs by client or engagement for account-based billing reports |
+| Time Categories | Classify time entries by work type (Development, Code Review, Meetings, QA, etc.) |
+| Worklog Fields | Custom fields that capture extra context when logging time (text, number, select, checkbox) |
+| Log Time | Log time directly against any Jira issue from any Time Tracking view |
+| Approve / Reject | Global Admins can approve or reject time entries submitted by team members |
 
 ## Portfolio Management (PPM)
 
@@ -474,6 +464,16 @@ Available in all Time Tracking views. Click **Log Time** to open a quick-log for
 | JQL Filtering | Define portfolio scope dynamically using Jira Query Language |
 | Saved Portfolios | Persist portfolio name, filter scope, and settings for recurring reviews |
 
+## Backlog Prioritization
+
+| Feature | Description |
+|---|---|
+| Backlog Table | Sortable, filterable table of Jira issues with inline-editable scoring metric columns |
+| Scoring Templates | Built-in frameworks: ICE, RICE, WSJF, Value vs Effort; fully custom templates also supported |
+| Priority Matrix | Scatter plot placing each issue on two axes (e.g., Value vs. Effort) with quadrant labels |
+| Views & Filters | Filter by issue type, status, assignee, label, sprint; sort by any column including Score |
+| Saved Views & Reports | Save scored backlog snapshots with all metric values and filter/sort configuration |
+
 ## Teams Management
 
 | Feature | Description |
@@ -486,6 +486,31 @@ Available in all Time Tracking views. Click **Log Time** to open a quick-log for
           slug: "how-to-tutorials",
           title: "How-To Tutorials",
           content: `
+## Capacity Planning
+
+### How to Run a Capacity Check
+
+1. Go to **Capacity Planner & Insight → Analytics Dashboard**
+2. Click **Scope** → select a Project and Date Range → click **Apply**
+3. Review:
+   - **Team Allocation** tab - who has what and how much
+   - **Assignee Capacity** tab - per-person load vs. estimates
+   - **Deadlines & Risks** tab - overdue and at-risk issues
+   - **Status Aging** tab - issues stuck in a status too long
+
+---
+
+### How to Create and Save a Capacity Plan
+
+1. Go to **Capacity Planner & Insight → Capacity Planner**
+2. Click **Create New Planner**
+3. Select users or teams to include, set date range and view mode
+4. Review the capacity distribution
+5. Click **Save** and give the plan a name
+6. Reload it anytime from **Saved Plans** in the sidebar
+
+---
+
 ## Time Tracking
 
 ### How to Log Time
@@ -530,64 +555,6 @@ Available in all Time Tracking views. Click **Log Time** to open a quick-log for
 3. Enter Account Name and optional Account Key
 4. Click **Save**
 5. Select this account from the Log Time form when logging time for that client
-
----
-
-## Capacity Planning
-
-### How to Run a Capacity Check
-
-1. Go to **Capacity Planner & Insight → Analytics Dashboard**
-2. Click **Scope** → select a Project and Date Range → click **Apply**
-3. Review:
-   - **Team Allocation** tab - who has what and how much
-   - **Assignee Capacity** tab - per-person load vs. estimates
-   - **Deadlines & Risks** tab - overdue and at-risk issues
-   - **Status Aging** tab - issues stuck in a status too long
-
----
-
-### How to Create and Save a Capacity Plan
-
-1. Go to **Capacity Planner & Insight → Capacity Planner**
-2. Click **Create New Planner**
-3. Select users or teams to include, set date range and view mode
-4. Review the capacity distribution
-5. Click **Save** and give the plan a name
-6. Reload it anytime from **Saved Plans** in the sidebar
-
----
-
-## Backlog Prioritization
-
-### How to Score a Backlog
-
-1. Go to **Backlog Prioritization → Backlog Table**
-2. Select your Jira project
-3. Choose a scoring template (e.g., ICE, RICE, WSJF)
-4. Click any metric cell to enter values inline
-5. The Score column calculates automatically
-6. Click **Save Report** to preserve the scored snapshot
-
----
-
-### How to Use the Priority Matrix
-
-1. Score your backlog using the steps above
-2. Click the **Matrix** view button (top-right view switcher)
-3. Each dot represents one issue
-4. Hover on a dot to see issue details
-5. Click **Matrix Settings** to change the X and Y axes
-
----
-
-### How to Create a Custom Scoring Template
-
-1. Open the template selector → **Manage Templates** → **Create New Template**
-2. Enter Template Name
-3. Add each metric (name, input type, range)
-4. Enter the formula referencing your metric names (e.g., \`Impact * Confidence * Ease\`)
-5. Click **Save** - the template appears in the template selector
 
 ---
 
@@ -637,6 +604,39 @@ Table → Gantt Chart → Graph View → Treemap → Pie Chart → Board View
 ![Gantt2](/time-tracking-imgs/portfolio/gantt2.png)
 ---
 
+## Backlog Prioritization
+
+### How to Score a Backlog
+
+1. Go to **Backlog Prioritization → Backlog Table**
+2. Select your Jira project
+3. Choose a scoring template (e.g., ICE, RICE, WSJF)
+4. Click any metric cell to enter values inline
+5. The Score column calculates automatically
+6. Click **Save Report** to preserve the scored snapshot
+
+---
+
+### How to Use the Priority Matrix
+
+1. Score your backlog using the steps above
+2. Click the **Matrix** view button (top-right view switcher)
+3. Each dot represents one issue
+4. Hover on a dot to see issue details
+5. Click **Matrix Settings** to change the X and Y axes
+
+---
+
+### How to Create a Custom Scoring Template
+
+1. Open the template selector → **Manage Templates** → **Create New Template**
+2. Enter Template Name
+3. Add each metric (name, input type, range)
+4. Enter the formula referencing your metric names (e.g., \`Impact * Confidence * Ease\`)
+5. Click **Save** - the template appears in the template selector
+
+---
+
 ## Admin Tasks
 
 ### How to Assign a Member Role
@@ -669,7 +669,87 @@ This guide is a complete reference for all five major functional areas of the ap
 
 ---
 
-## Module 1 - Time Tracking & Reporting
+## Module 1 - Capacity Planner & Insight
+
+### Capacity Planner
+
+The Capacity Planner is a timesheet-style view showing team workload distribution.
+
+**Creating a Plan:**
+1. Capacity Planner & Insight → Capacity Planner → Create New Planner
+2. Select Users / Groups / Teams to include
+3. Choose date range and view mode (Days, Weeks, Months)
+4. The planner generates a capacity distribution view
+
+**Planner Layout:**
+
+| Column | Description |
+|---|---|
+| User / Group / Team | Left column - people/groups in the plan |
+| Issue rows | Each row shows an issue with estimated and remaining hours |
+| Date columns | Hours for each specific date/week/month |
+| Total row | Aggregates hours across all rows |
+
+**Grouping Options:** User → Issue | Team → User → Issue | Issue Type → User
+
+**Saving a Plan:** click Save → enter name → Confirm. Reload from Saved Plans in the sidebar.
+
+### Analytics Dashboard
+
+The Analytics Dashboard provides a four-tab view of team workload health.
+
+**Setup:** Capacity Planner & Insight → Analytics Dashboard → click Scope → select Project + Date Range → Apply
+
+**Tab 1 - Team Allocation:**
+- Issue distribution by status, type, and priority across the team
+- Total issue count and estimated hours per group
+- Spot over-loaded statuses or issue types at a glance
+
+**Tab 2 - Assignee Capacity:**
+- Issue count, original estimates, and logged time per assignee
+- Compare estimated remaining work vs. available capacity
+- Identify over- or under-allocated team members before sprint commitments
+
+**Tab 3 - Upcoming Deadlines & Risks:**
+- Issues near or past their due date, sorted by risk level (overdue first)
+- Shows remaining estimate alongside the due date
+- Use for weekly stakeholder updates
+
+**Tab 4 - Status Aging Monitor:**
+- Issues stuck in the same status for an unusually long time
+- Configurable threshold (e.g., flag "In Review" issues older than 5 days)
+- Reveals review bottlenecks and blocked handoffs
+
+### Saved Plans
+
+- After configuring the Capacity Planner, click **Save**
+- Saved plans appear in the **Saved Plans** sidebar section
+- Click any saved plan name to reload its configuration
+- **Manage:** rename (edit icon), delete (trash icon), or duplicate (open → modify → save new name)
+
+### Capacity Report
+
+The Capacity Report provides a tabular breakdown of available hours, estimated work, and logged hours.
+
+**Configuration:**
+- **Filters:** Project, Users, Teams, Date Range, Issue Type
+- **Group By:** Assignee, Team, Project
+- **View Modes:** Days, Weeks, Months
+
+**Reading the Report:**
+
+| Column | Meaning |
+|---|---|
+| Available | Total available working hours (based on working days and hours/day settings) |
+| Estimated | Sum of remaining estimates on assigned issues |
+| Logged | Actual hours logged in Jira worklogs |
+| Allocation % | Estimated hours as a percentage of available hours |
+
+**Export:** Export → CSV
+
+---
+
+## Module 2 - Time Tracking & Reporting
 
 ### My Calendar
 
@@ -758,149 +838,7 @@ Access from Settings → Time Tracking tab:
 
 ---
 
-## Module 2 - Capacity Planner & Insight
-
-### Capacity Planner
-
-The Capacity Planner is a timesheet-style view showing team workload distribution.
-
-**Creating a Plan:**
-1. Capacity Planner & Insight → Capacity Planner → Create New Planner
-2. Select Users / Groups / Teams to include
-3. Choose date range and view mode (Days, Weeks, Months)
-4. The planner generates a capacity distribution view
-
-**Planner Layout:**
-
-| Column | Description |
-|---|---|
-| User / Group / Team | Left column - people/groups in the plan |
-| Issue rows | Each row shows an issue with estimated and remaining hours |
-| Date columns | Hours for each specific date/week/month |
-| Total row | Aggregates hours across all rows |
-
-**Grouping Options:** User → Issue | Team → User → Issue | Issue Type → User
-
-**Saving a Plan:** click Save → enter name → Confirm. Reload from Saved Plans in the sidebar.
-
-### Analytics Dashboard
-
-The Analytics Dashboard provides a four-tab view of team workload health.
-
-**Setup:** Capacity Planner & Insight → Analytics Dashboard → click Scope → select Project + Date Range → Apply
-
-**Tab 1 - Team Allocation:**
-- Issue distribution by status, type, and priority across the team
-- Total issue count and estimated hours per group
-- Spot over-loaded statuses or issue types at a glance
-
-**Tab 2 - Assignee Capacity:**
-- Issue count, original estimates, and logged time per assignee
-- Compare estimated remaining work vs. available capacity
-- Identify over- or under-allocated team members before sprint commitments
-
-**Tab 3 - Upcoming Deadlines & Risks:**
-- Issues near or past their due date, sorted by risk level (overdue first)
-- Shows remaining estimate alongside the due date
-- Use for weekly stakeholder updates
-
-**Tab 4 - Status Aging Monitor:**
-- Issues stuck in the same status for an unusually long time
-- Configurable threshold (e.g., flag "In Review" issues older than 5 days)
-- Reveals review bottlenecks and blocked handoffs
-
-### Saved Plans
-
-- After configuring the Capacity Planner, click **Save**
-- Saved plans appear in the **Saved Plans** sidebar section
-- Click any saved plan name to reload its configuration
-- **Manage:** rename (edit icon), delete (trash icon), or duplicate (open → modify → save new name)
-
-### Capacity Report
-
-The Capacity Report provides a tabular breakdown of available hours, estimated work, and logged hours.
-
-**Configuration:**
-- **Filters:** Project, Users, Teams, Date Range, Issue Type
-- **Group By:** Assignee, Team, Project
-- **View Modes:** Days, Weeks, Months
-
-**Reading the Report:**
-
-| Column | Meaning |
-|---|---|
-| Available | Total available working hours (based on working days and hours/day settings) |
-| Estimated | Sum of remaining estimates on assigned issues |
-| Logged | Actual hours logged in Jira worklogs |
-| Allocation % | Estimated hours as a percentage of available hours |
-
-**Export:** Export → CSV
-
----
-
-## Module 3 - Backlog Prioritization
-
-### Backlog Table
-
-The Backlog Table is a sortable, filterable table with inline-editable scoring metrics.
-
-**Setup:** Backlog Prioritization → Backlog Table → select Project → choose Scoring Template
-
-**Scoring Issues:**
-- Click any metric cell to edit inline
-- Input types: Number field, Dropdown, Star rating (1–5), Effort scale (XS/S/M/L/XL)
-- The Score column recalculates automatically - changes save instantly
-
-**Sorting:** click any column header (Score ↓ = highest priority first)
-
-**Filtering:** Issue Type, Status, Assignee, Label, Sprint, Priority
-
-### Scoring Templates
-
-**Built-in Templates:**
-
-| Template | Formula | Best For |
-|---|---|---|
-| ICE | Impact × Confidence × Ease | Feature requests and bugs |
-| RICE | (Reach × Impact × Confidence) / Effort | Product features with reach |
-| WSJF | (Business Value + Time Criticality + Risk Reduction) / Job Size | SAFe/ART prioritization |
-| Value vs. Effort | Value / Effort | Simple two-dimension ranking |
-
-**Creating a Custom Template:**
-1. Template selector → Manage Templates → Create New Template
-2. Enter name, add metrics (name, input type, range)
-3. Enter formula referencing metric names
-4. Click Save
-
-### Priority Matrix
-
-The Priority Matrix is a scatter plot placing each issue on two axes.
-
-- **Open:** Backlog Table → Matrix view button (top-right)
-- Each dot = one issue; hover to see details
-- **Quadrants:** Quick Wins (high value, low effort), Big Bets, Fill-ins, Avoid
-- **Customize axes:** click Matrix Settings → choose any numeric metric for X and Y
-- **Drag** quadrant divider lines to reposition boundaries
-
-### Views, Filters & Sorting
-
-- **View toggle:** Table ↔ Matrix (top-right view switcher)
-- **Saved Views:** Save → enter name → reload from Saved Views in sidebar
-- **Clear Filters:** resets all active filters to full unfiltered list
-
-### Saved Prioritized Reports
-
-Saves a snapshot of the backlog scoring at a specific point in time.
-
-**Saving:** Backlog Table → score issues → Save Report → enter name → Confirm
-
-**What a Saved Report Preserves:** project selection, scoring template, metric values per issue, sort and filter configuration
-
-**What It Does Not Preserve:** current Jira issue statuses, new issues added after save, template changes
-
----
-
-## Module 4 - Project Portfolio Management
+## Module 3 - Portfolio Management (PPM)
 
 ### Creating a Portfolio
 
@@ -974,6 +912,68 @@ Access: Portfolio → Settings gear icon → Portfolio Settings tab, or global S
 ![Setting](/time-tracking-imgs/portfolio/setting.png)
 ---
 
+## Module 4 - Backlog Prioritization
+
+### Backlog Table
+
+The Backlog Table is a sortable, filterable table with inline-editable scoring metrics.
+
+**Setup:** Backlog Prioritization → Backlog Table → select Project → choose Scoring Template
+
+**Scoring Issues:**
+- Click any metric cell to edit inline
+- Input types: Number field, Dropdown, Star rating (1–5), Effort scale (XS/S/M/L/XL)
+- The Score column recalculates automatically - changes save instantly
+
+**Sorting:** click any column header (Score ↓ = highest priority first)
+
+**Filtering:** Issue Type, Status, Assignee, Label, Sprint, Priority
+
+### Scoring Templates
+
+**Built-in Templates:**
+
+| Template | Formula | Best For |
+|---|---|---|
+| ICE | Impact × Confidence × Ease | Feature requests and bugs |
+| RICE | (Reach × Impact × Confidence) / Effort | Product features with reach |
+| WSJF | (Business Value + Time Criticality + Risk Reduction) / Job Size | SAFe/ART prioritization |
+| Value vs. Effort | Value / Effort | Simple two-dimension ranking |
+
+**Creating a Custom Template:**
+1. Template selector → Manage Templates → Create New Template
+2. Enter name, add metrics (name, input type, range)
+3. Enter formula referencing metric names
+4. Click Save
+
+### Priority Matrix
+
+The Priority Matrix is a scatter plot placing each issue on two axes.
+
+- **Open:** Backlog Table → Matrix view button (top-right)
+- Each dot = one issue; hover to see details
+- **Quadrants:** Quick Wins (high value, low effort), Big Bets, Fill-ins, Avoid
+- **Customize axes:** click Matrix Settings → choose any numeric metric for X and Y
+- **Drag** quadrant divider lines to reposition boundaries
+
+### Views, Filters & Sorting
+
+- **View toggle:** Table ↔ Matrix (top-right view switcher)
+- **Saved Views:** Save → enter name → reload from Saved Views in sidebar
+- **Clear Filters:** resets all active filters to full unfiltered list
+
+### Saved Prioritized Reports
+
+Saves a snapshot of the backlog scoring at a specific point in time.
+
+**Saving:** Backlog Table → score issues → Save Report → enter name → Confirm
+
+**What a Saved Report Preserves:** project selection, scoring template, metric values per issue, sort and filter configuration
+
+**What It Does Not Preserve:** current Jira issue statuses, new issues added after save, template changes
+
+---
+
 ## Module 5 - Teams Management
 
 ### Teams
@@ -1018,14 +1018,6 @@ Programs group multiple Teams into higher-level organizational structures.
           slug: "tips-best-practices",
           title: "Tips & Best Practices",
           content: `
-## Time Tracking
-
-- **Log daily, not weekly.** End-of-week logging is less accurate and harder to reconcile with actual Jira issue work.
-- **Use Time Categories** to split time between Development, Meetings, Code Review, and QA - this makes reports much more useful for analysis.
-- **Use My Calendar** to identify days with no logged time before the weekly approval window closes.
-- **Create Billing Accounts** only if you have client billing needs - skip this feature if billing categorization isn't required.
-- **Set Date Range first** before loading any report - the app requires a project and date range to load data.
-
 ## Capacity Planning
 
 - **Run a capacity check before every sprint planning session** - the Assignee Capacity tab shows carryover load in real time.
@@ -1034,13 +1026,13 @@ Programs group multiple Teams into higher-level organizational structures.
 - **Monitor Status Aging** weekly - issues stuck in "In Review" for 5+ days are a reliable bottleneck indicator.
 - **Use Teams in the Capacity Planner** - team-level grouping gives leadership a rolled-up view without reviewing each individual.
 
-## Backlog Prioritization
+## Time Tracking
 
-- **Use one scoring template consistently** within a team or planning cycle - changing templates mid-cycle makes comparison impossible.
-- **Keep metric definitions clear** in the template description so all team members score with the same interpretation.
-- **Save commonly used views** for recurring backlog reviews - views preserve column layout, filters, and sorting.
-- **Use the Priority Matrix alongside the table** - the visual quadrant view often reveals patterns that aren't obvious in a sorted list.
-- **Save a report before each sprint planning session** to create a historical record of how you prioritized.
+- **Log daily, not weekly.** End-of-week logging is less accurate and harder to reconcile with actual Jira issue work.
+- **Use Time Categories** to split time between Development, Meetings, Code Review, and QA - this makes reports much more useful for analysis.
+- **Use My Calendar** to identify days with no logged time before the weekly approval window closes.
+- **Create Billing Accounts** only if you have client billing needs - skip this feature if billing categorization isn't required.
+- **Set Date Range first** before loading any report - the app requires a project and date range to load data.
 
 ## Portfolio Management
 
@@ -1049,6 +1041,14 @@ Programs group multiple Teams into higher-level organizational structures.
 - **Use JQL for complex portfolios** - manual filters are easier to set up but JQL is more powerful for cross-project scenarios.
 - **Coordinate edits to shared portfolios** - the app uses last-write-wins; simultaneous edits can overwrite each other.
 - **Use the Treemap and Pie Chart views** for executive stakeholder reporting - they convey health at a glance without detail overload.
+
+## Backlog Prioritization
+
+- **Use one scoring template consistently** within a team or planning cycle - changing templates mid-cycle makes comparison impossible.
+- **Keep metric definitions clear** in the template description so all team members score with the same interpretation.
+- **Save commonly used views** for recurring backlog reviews - views preserve column layout, filters, and sorting.
+- **Use the Priority Matrix alongside the table** - the visual quadrant view often reveals patterns that aren't obvious in a sorted list.
+- **Save a report before each sprint planning session** to create a historical record of how you prioritized.
 
 ## Teams Management
 
@@ -1061,6 +1061,261 @@ Programs group multiple Teams into higher-level organizational structures.
 - **Check My Permissions** before contacting support about missing features - most "missing" features are role-based.
 - **Narrow your date ranges** for large projects - loading 10,000+ issues takes time; use filters to keep datasets focused.
 - **Refresh manually** to see changes made by other users - the app does not push live updates.`,
+        },
+
+        // ── Capacity Planner & Insight sub-pages ──
+        {
+          slug: "capacity-planner",
+          title: "Capacity Planner",
+          content: `
+The Capacity Planner is a timesheet-style view that shows how team workload is distributed across users, groups, and teams over time.
+
+## Opening the Capacity Planner
+
+Capacity Planner & Insight → **Capacity Planner** → click **Create New Planner** or open a saved plan from the sidebar
+
+![Step 1](/time-tracking-imgs/capacity/planner/capacityResourceFilter.png)
+## Creating a New Plan
+
+1. Click **Create New Planner**
+2. Select who to include:
+   - **Users** - individual Jira users
+   - **Groups** - Jira groups
+   - **Teams** - teams defined in the Teams Management module
+3. Set **Date Range** and **View Mode** (Days, Weeks, Months)
+4. Click **Apply** - the planner loads the capacity view
+
+## Planner Layout
+
+| Column | Description |
+|---|---|
+| **User / Group / Team** | Left column - the people or groups in the plan |
+| **Issue rows** | Each row under a user shows an assigned Jira issue |
+| **Estimate columns** | Hours per date period (original estimate and remaining) |
+| **Date columns** | One column per day/week/month based on view mode |
+| **Total row** | Aggregates hours across all rows |
+
+![Step 2](/time-tracking-imgs/capacity/planner/capacityPlannerTable.png)
+
+
+## Grouping Options
+
+| Grouping | When to Use |
+|---|---|
+| User → Issue | Individual workload drill-down |
+| Team → User → Issue | Team-level rollup with individual breakdown |
+| Issue Type → User | Understand how issue types distribute across people |
+
+## Reading the Planner
+
+- **Green cells** - within normal capacity range
+- **Red / amber cells** - over-allocated for that period
+- Hover on any cell to see issue details and hour breakdown
+
+## Saving a Plan
+
+1. Configure the planner (users, date range, grouping)
+2. Click **Save**
+3. Enter a plan name (e.g., "Sprint 42 Capacity")
+4. Click **Confirm**
+5. The plan appears in **Saved Plans** in the sidebar
+
+## Tips
+
+- Run a capacity check before every sprint planning session
+- Use Team grouping to give leadership a rolled-up view
+- Save plans per sprint to build a historical capacity record`,
+        },
+        {
+          slug: "analytics-dashboard",
+          title: "Analytics Dashboard",
+          content: `
+The Analytics Dashboard provides a four-tab view of team workload health, giving project managers and team leads real-time insight into allocation, risks, and bottlenecks.
+
+## Opening the Dashboard
+
+Capacity Planner & Insight → **Analytics Dashboard**
+
+![Step 3](/time-tracking-imgs/capacity/analytics/analyticsScope.png)
+
+## Setting Scope
+
+Before data loads, you must configure the scope:
+1. Click **Scope** (top-right)
+2. Select **Project(s)** and **Date Range**
+3. Optionally add **Users** or **Teams** filters
+4. Click **Apply**
+
+![Step 4](/time-tracking-imgs/capacity/analytics/analyticsTable.png)
+
+
+## Tab 1 - Team Allocation
+
+Provides an overview of how issues are distributed across the team.
+
+- Total issue count and estimated hours per group
+- Breakdown by issue status, issue type, and priority
+- Use to spot uneven distribution or overloaded issue types at a glance
+
+## Tab 2 - Assignee Capacity
+
+Shows per-person workload metrics to identify over- or under-allocation.
+
+| Column | Meaning |
+|---|---|
+| Assignee | Team member name |
+| Issues | Number of assigned open issues |
+| Original Estimate | Total originally estimated hours |
+| Remaining Estimate | Hours of work remaining |
+| Logged | Hours already logged |
+| Allocation | Remaining estimate as % of available hours |
+
+**Use before sprint planning** to confirm no team member is already over-committed.
+
+## Tab 3 - Upcoming Deadlines & Risks
+
+Lists issues near or past their due date, sorted by risk level.
+
+| Column | Meaning |
+|---|---|
+| Issue | Jira issue key and summary |
+| Assignee | Who is responsible |
+| Due Date | Jira due date |
+| Remaining | Remaining estimate |
+| Risk Level | Overdue / At Risk / On Track |
+
+**Use for weekly stakeholder updates** to communicate delivery risks proactively.
+
+## Tab 4 - Status Aging Monitor
+
+Identifies issues that have been stuck in the same status for too long.
+
+- Configurable threshold (e.g., flag issues in "In Review" for 5+ days)
+- Ordered by days stuck (longest first)
+- Reveals review bottlenecks and blocked handoffs
+
+**Configuring the threshold:** click **Settings** icon → enter the number of days per status → **Save**
+
+## Tips
+
+- Check Tab 2 (Assignee Capacity) before every sprint commitment meeting
+- Use Tab 3 (Deadlines & Risks) for weekly stakeholder status reports
+- Set realistic aging thresholds in Tab 4 - too low creates noise, too high misses real blockers`,
+        },
+        {
+          slug: "saved-plans",
+          title: "Saved Plans",
+          content: `
+Saved Plans let you preserve capacity planner configurations for reuse across sprints, quarters, or recurring planning cycles.
+
+## What Gets Saved
+
+When you save a Capacity Planner configuration, the following is preserved:
+
+| Saved | Not Saved |
+|---|---|
+| Selected users / groups / teams | Live Jira worklog data |
+| Date range | Current issue statuses |
+| View mode (Days/Weeks/Months) | Hours that have changed since last save |
+| Grouping configuration | New issues assigned after save |
+
+Opening a saved plan re-runs the query against current Jira data - it always shows live data within the saved scope.
+
+## Saving a Plan
+
+1. Configure the Capacity Planner (users, date range, grouping, view mode)
+2. Click **Save** in the top-right toolbar
+3. Enter a descriptive plan name (e.g., "Q2 Sprint 5 - Platform Team")
+4. Click **Confirm**
+
+The plan immediately appears in the **Saved Plans** section of the sidebar.
+
+## Loading a Saved Plan
+
+- In the sidebar, click **Saved Plans**
+- Click any plan name to open it
+- The planner reloads with the saved configuration and current Jira data
+
+## Managing Saved Plans
+
+| Action | How |
+|---|---|
+| **Rename** | Hover the plan → click the Edit (pencil) icon → type new name → Enter |
+| **Delete** | Hover the plan → click the Delete (trash) icon → Confirm |
+| **Duplicate** | Open the plan → modify as needed → Save with a new name |
+
+## Naming Convention Tips
+
+Use a consistent naming pattern to keep saved plans organised:
+
+- \`[Team] - [Sprint/Quarter]\` - e.g., "Backend Team - Sprint 10"
+- \`[Date] - [Purpose]\` - e.g., "2025-Q3 Capacity Review"
+- \`[Program] - [PI Number]\` - e.g., "Engineering - PI-2025-Q2"
+
+## Tips
+
+- Save a plan at the start of each sprint to capture the initial commitment baseline
+- Don't reconfigure from scratch each sprint - duplicate the previous plan and adjust the date range`,
+        },
+        {
+          slug: "capacity-report",
+          title: "Capacity Report",
+          content: `
+The Capacity Report provides a structured tabular breakdown of available hours, estimated work, and logged hours - giving managers a precise view of team utilisation.
+
+## Opening the Capacity Report
+
+Capacity Planner & Insight → **Capacity Report**
+
+![Step 5](/time-tracking-imgs/capacity/Report/ConfigureReport.png)
+
+## Configuring the Report
+
+| Control | Options |
+|---|---|
+| **Project** | One or more Jira projects |
+| **Users** | Filter to specific individuals |
+| **Teams** | Filter by teams from Teams Management |
+| **Date Range** | From and To date picker |
+| **Issue Type** | Story, Bug, Task, Sub-task, Epic |
+| **Group By** | Assignee · Team · Project |
+| **View Mode** | Days · Weeks · Months |
+
+Click **Apply** after setting all controls.
+
+![Step 6](/time-tracking-imgs/capacity/Report/CustomFilter.png)
+
+## Reading the Report
+
+| Column | Meaning |
+|---|---|
+| **Name** | User / Team / Project (based on Group By) |
+| **Available** | Total working hours available (working days × hours/day from Settings) |
+| **Estimated** | Sum of remaining estimates on assigned open issues |
+| **Logged** | Actual hours logged via Jira worklogs |
+| **Allocation %** | Estimated ÷ Available × 100 - higher means more committed |
+
+![Step 7](/time-tracking-imgs/capacity/Report/DetailedReport.png)
+
+### Allocation Interpretation
+
+| Allocation % | Status |
+|---|---|
+| < 70% | Under-utilised - capacity available |
+| 70–100% | Healthy utilisation |
+| > 100% | Over-allocated - risk of missed commitments |
+
+## Exporting
+
+Click **Export → CSV** to download the full report as a spreadsheet.
+
+The CSV includes all rows, columns, and grouping levels for import into Excel, Google Sheets, or BI tools.
+
+## Tips
+
+- Run the Capacity Report at the start of sprint planning to validate commitments before finalising
+- Group by **Team** for a leadership-level rollup; group by **Assignee** for individual workload detail
+- Set **Hours Per Day** and **Working Days** correctly in Settings - inaccurate settings skew the Available column`,
         },
 
         // ── Time Tracking & Reporting sub-pages ──
@@ -1399,261 +1654,6 @@ Global sidebar → **Settings** → **Time Tracking** tab
 - Set **Hours Per Day** to match your organisation's contracted hours (e.g., 7.5 for a 37.5-hour week)
 - Set **Working Days** accurately - inaccurate working days skew capacity calculations in the Capacity Report
 - Use **Jira timezone** if your team is co-located; use **User's timezone** for distributed teams`,
-        },
-
-        // ── Capacity Planner & Insight sub-pages ──
-        {
-          slug: "capacity-planner",
-          title: "Capacity Planner",
-          content: `
-The Capacity Planner is a timesheet-style view that shows how team workload is distributed across users, groups, and teams over time.
-
-## Opening the Capacity Planner
-
-Capacity Planner & Insight → **Capacity Planner** → click **Create New Planner** or open a saved plan from the sidebar
-
-![Step 1](/time-tracking-imgs/capacity/planner/capacityResourceFilter.png)
-## Creating a New Plan
-
-1. Click **Create New Planner**
-2. Select who to include:
-   - **Users** - individual Jira users
-   - **Groups** - Jira groups
-   - **Teams** - teams defined in the Teams Management module
-3. Set **Date Range** and **View Mode** (Days, Weeks, Months)
-4. Click **Apply** - the planner loads the capacity view
-
-## Planner Layout
-
-| Column | Description |
-|---|---|
-| **User / Group / Team** | Left column - the people or groups in the plan |
-| **Issue rows** | Each row under a user shows an assigned Jira issue |
-| **Estimate columns** | Hours per date period (original estimate and remaining) |
-| **Date columns** | One column per day/week/month based on view mode |
-| **Total row** | Aggregates hours across all rows |
-
-![Step 2](/time-tracking-imgs/capacity/planner/capacityPlannerTable.png)
-
-
-## Grouping Options
-
-| Grouping | When to Use |
-|---|---|
-| User → Issue | Individual workload drill-down |
-| Team → User → Issue | Team-level rollup with individual breakdown |
-| Issue Type → User | Understand how issue types distribute across people |
-
-## Reading the Planner
-
-- **Green cells** - within normal capacity range
-- **Red / amber cells** - over-allocated for that period
-- Hover on any cell to see issue details and hour breakdown
-
-## Saving a Plan
-
-1. Configure the planner (users, date range, grouping)
-2. Click **Save**
-3. Enter a plan name (e.g., "Sprint 42 Capacity")
-4. Click **Confirm**
-5. The plan appears in **Saved Plans** in the sidebar
-
-## Tips
-
-- Run a capacity check before every sprint planning session
-- Use Team grouping to give leadership a rolled-up view
-- Save plans per sprint to build a historical capacity record`,
-        },
-        {
-          slug: "analytics-dashboard",
-          title: "Analytics Dashboard",
-          content: `
-The Analytics Dashboard provides a four-tab view of team workload health, giving project managers and team leads real-time insight into allocation, risks, and bottlenecks.
-
-## Opening the Dashboard
-
-Capacity Planner & Insight → **Analytics Dashboard**
-
-![Step 3](/time-tracking-imgs/capacity/analytics/analyticsScope.png)
-
-## Setting Scope
-
-Before data loads, you must configure the scope:
-1. Click **Scope** (top-right)
-2. Select **Project(s)** and **Date Range**
-3. Optionally add **Users** or **Teams** filters
-4. Click **Apply**
-
-![Step 4](/time-tracking-imgs/capacity/analytics/analyticsTable.png)
-
-
-## Tab 1 - Team Allocation
-
-Provides an overview of how issues are distributed across the team.
-
-- Total issue count and estimated hours per group
-- Breakdown by issue status, issue type, and priority
-- Use to spot uneven distribution or overloaded issue types at a glance
-
-## Tab 2 - Assignee Capacity
-
-Shows per-person workload metrics to identify over- or under-allocation.
-
-| Column | Meaning |
-|---|---|
-| Assignee | Team member name |
-| Issues | Number of assigned open issues |
-| Original Estimate | Total originally estimated hours |
-| Remaining Estimate | Hours of work remaining |
-| Logged | Hours already logged |
-| Allocation | Remaining estimate as % of available hours |
-
-**Use before sprint planning** to confirm no team member is already over-committed.
-
-## Tab 3 - Upcoming Deadlines & Risks
-
-Lists issues near or past their due date, sorted by risk level.
-
-| Column | Meaning |
-|---|---|
-| Issue | Jira issue key and summary |
-| Assignee | Who is responsible |
-| Due Date | Jira due date |
-| Remaining | Remaining estimate |
-| Risk Level | Overdue / At Risk / On Track |
-
-**Use for weekly stakeholder updates** to communicate delivery risks proactively.
-
-## Tab 4 - Status Aging Monitor
-
-Identifies issues that have been stuck in the same status for too long.
-
-- Configurable threshold (e.g., flag issues in "In Review" for 5+ days)
-- Ordered by days stuck (longest first)
-- Reveals review bottlenecks and blocked handoffs
-
-**Configuring the threshold:** click **Settings** icon → enter the number of days per status → **Save**
-
-## Tips
-
-- Check Tab 2 (Assignee Capacity) before every sprint commitment meeting
-- Use Tab 3 (Deadlines & Risks) for weekly stakeholder status reports
-- Set realistic aging thresholds in Tab 4 - too low creates noise, too high misses real blockers`,
-        },
-        {
-          slug: "saved-plans",
-          title: "Saved Plans",
-          content: `
-Saved Plans let you preserve capacity planner configurations for reuse across sprints, quarters, or recurring planning cycles.
-
-## What Gets Saved
-
-When you save a Capacity Planner configuration, the following is preserved:
-
-| Saved | Not Saved |
-|---|---|
-| Selected users / groups / teams | Live Jira worklog data |
-| Date range | Current issue statuses |
-| View mode (Days/Weeks/Months) | Hours that have changed since last save |
-| Grouping configuration | New issues assigned after save |
-
-Opening a saved plan re-runs the query against current Jira data - it always shows live data within the saved scope.
-
-## Saving a Plan
-
-1. Configure the Capacity Planner (users, date range, grouping, view mode)
-2. Click **Save** in the top-right toolbar
-3. Enter a descriptive plan name (e.g., "Q2 Sprint 5 - Platform Team")
-4. Click **Confirm**
-
-The plan immediately appears in the **Saved Plans** section of the sidebar.
-
-## Loading a Saved Plan
-
-- In the sidebar, click **Saved Plans**
-- Click any plan name to open it
-- The planner reloads with the saved configuration and current Jira data
-
-## Managing Saved Plans
-
-| Action | How |
-|---|---|
-| **Rename** | Hover the plan → click the Edit (pencil) icon → type new name → Enter |
-| **Delete** | Hover the plan → click the Delete (trash) icon → Confirm |
-| **Duplicate** | Open the plan → modify as needed → Save with a new name |
-
-## Naming Convention Tips
-
-Use a consistent naming pattern to keep saved plans organised:
-
-- \`[Team] - [Sprint/Quarter]\` - e.g., "Backend Team - Sprint 10"
-- \`[Date] - [Purpose]\` - e.g., "2025-Q3 Capacity Review"
-- \`[Program] - [PI Number]\` - e.g., "Engineering - PI-2025-Q2"
-
-## Tips
-
-- Save a plan at the start of each sprint to capture the initial commitment baseline
-- Don't reconfigure from scratch each sprint - duplicate the previous plan and adjust the date range`,
-        },
-        {
-          slug: "capacity-report",
-          title: "Capacity Report",
-          content: `
-The Capacity Report provides a structured tabular breakdown of available hours, estimated work, and logged hours - giving managers a precise view of team utilisation.
-
-## Opening the Capacity Report
-
-Capacity Planner & Insight → **Capacity Report**
-
-![Step 5](/time-tracking-imgs/capacity/Report/ConfigureReport.png)
-
-## Configuring the Report
-
-| Control | Options |
-|---|---|
-| **Project** | One or more Jira projects |
-| **Users** | Filter to specific individuals |
-| **Teams** | Filter by teams from Teams Management |
-| **Date Range** | From and To date picker |
-| **Issue Type** | Story, Bug, Task, Sub-task, Epic |
-| **Group By** | Assignee · Team · Project |
-| **View Mode** | Days · Weeks · Months |
-
-Click **Apply** after setting all controls.
-
-![Step 6](/time-tracking-imgs/capacity/Report/CustomFilter.png)
-
-## Reading the Report
-
-| Column | Meaning |
-|---|---|
-| **Name** | User / Team / Project (based on Group By) |
-| **Available** | Total working hours available (working days × hours/day from Settings) |
-| **Estimated** | Sum of remaining estimates on assigned open issues |
-| **Logged** | Actual hours logged via Jira worklogs |
-| **Allocation %** | Estimated ÷ Available × 100 - higher means more committed |
-
-![Step 7](/time-tracking-imgs/capacity/Report/DetailedReport.png)
-
-### Allocation Interpretation
-
-| Allocation % | Status |
-|---|---|
-| < 70% | Under-utilised - capacity available |
-| 70–100% | Healthy utilisation |
-| > 100% | Over-allocated - risk of missed commitments |
-
-## Exporting
-
-Click **Export → CSV** to download the full report as a spreadsheet.
-
-The CSV includes all rows, columns, and grouping levels for import into Excel, Google Sheets, or BI tools.
-
-## Tips
-
-- Run the Capacity Report at the start of sprint planning to validate commitments before finalising
-- Group by **Team** for a leadership-level rollup; group by **Assignee** for individual workload detail
-- Set **Hours Per Day** and **Working Days** correctly in Settings - inaccurate settings skew the Available column`,
         },
 
         // ── Project Portfolio Management sub-pages ──

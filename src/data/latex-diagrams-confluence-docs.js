@@ -14,7 +14,7 @@
           slug: "what-is-latex-diagrams",
           title: "What is LaTeX Formulas & Diagrams?",
           sideVideo: {
-            src: "https://www.youtube.com/embed/K7oRMlvbnJ0",
+            src: "https://www.youtube.com/embed/w0bm_sKp6mE",
             title:
               "LaTeX Formulas & Diagrams for Confluence - Product Overview",
           },

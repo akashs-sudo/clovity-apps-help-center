@@ -16,13 +16,13 @@
             title: "Dashboard Templates, Charts, Graphs & Reports for Jira - Product Overview",
           },
           content: `
-Custom Charts for Jira is a reporting app that helps you **see your Jira data in a clear, visual way**.
+Dashboard Templates, Charts, Graphs & Reports for Jira is a reporting app that helps you **see your Jira data in a clear, visual way**.
 
 ## Core Value Proposition
 
 - Make **charts and graphs** from your Jira issues with no coding required
 - Build **tables and issue lists** with configurable columns, smart labels, and quick filters
-- Create **interactive configurable dashboards** for your team using a shared Dynamic Filter Controller
+- Create **interactive, configurable dashboards** for your team using a shared Dynamic Filter Controller
 - Export everything as **PNG, PDF, or CSV** for stakeholders and reporting
 
 All of this is done **inside Jira**, using your existing projects, filters, and JQL.

@@ -29,7 +29,7 @@ All of this is done **inside Jira**, using your existing projects, filters, and 
 
 <!--VIDEO_BREAK-->
 
-## Seven Integrated Gadgets
+## Fourteen Integrated Gadgets
 
 | **Gadget** | What It Does |
 |---|---|
@@ -40,6 +40,25 @@ All of this is done **inside Jira**, using your existing projects, filters, and 
 | **Pivot Table** | Summarize issues in a cross-tabulation with flexible row/column grouping and 9 display types |
 | **Cumulative Flow Diagram** | Visualize work distribution across workflow stages over time as a stacked area chart |
 | **WIP Aging Charts** | Scatter plot showing how long work-in-progress items have been active - spot stalled work instantly |
+| **Control Chart** | Cycle time and lead time of completed work as a scatter chart, with average, rolling average, threshold, and percentile lines |
+| **Histogram Chart** | Frequency distribution of cycle and lead time - shows the shape of your delivery and the size of the slow tail |
+| **Cycle Time Trend** | One bar per interval showing average cycle time over weeks, months, or sprints, with an optional trendline |
+| **WIP Run Chart** | Work-in-progress over time as a line chart, with WIP limits and breach highlighting |
+| **Sprint Burndown & Burnup** | Sprint progress day by day - remaining, burned, scope, and ideal lines for both burndown and burnup |
+| **Team Wallboard** | Work items as cards grouped into board columns or status categories, with swimlanes and auto-refresh |
+| **Issue Filter Formula** | KPIs built from up to nine independently-scoped aggregations combined with math formulas; number, gauge, star, or card display |
+
+### Choosing between the flow metrics gadgets
+
+Five gadgets measure delivery speed. They answer different questions:
+
+| **Question** | **Gadget** |
+|---|---|
+| How long does each finished item take, and how consistent is that? | Control Chart |
+| What does the spread look like - is there a long slow tail? | Histogram Chart |
+| Are we getting faster or slower over time? | Cycle Time Trend |
+| How much work is open at once, and are we over our limits? | WIP Run Chart |
+| Which open items are old right now? | WIP Aging Charts |
 
 ## Who Is It For?
 
@@ -319,8 +338,12 @@ You need sprint health charts, velocity tracking, and process metrics.
 2. [Time in Status Gadget](/apps/dashboard-charts-jira/time-in-status-gadget-intro) - find where work slows down (Cycle Time, Lead Time)
 3. [WIP Aging Charts](/apps/dashboard-charts-jira/wip-aging-charts-gadget-intro) - identify stalled work in standups
 4. [Cumulative Flow Diagram](/apps/dashboard-charts-jira/cumulative-flow-gadget-intro) - monitor sprint and release flow health
+5. [Sprint Burndown & Burnup](/apps/dashboard-charts-jira/sprint-burndown-gadget-intro) - track sprint progress and spot scope changes
+6. [Control Chart](/apps/dashboard-charts-jira/control-chart-gadget-intro) - cycle time, predictability, and the percentile you can commit to
+7. [WIP Run Chart](/apps/dashboard-charts-jira/wip-run-chart-gadget-intro) - whether the team is taking on too much at once
+8. [Team Wallboard](/apps/dashboard-charts-jira/team-wallboard-gadget-intro) - a standup board that lives on the dashboard
 
-**Then explore:** [Tips & Best Practices](/apps/dashboard-charts-jira/tips-best-practices) for process analytics dashboards.
+**Then explore:** [Tips & Best Practices](/apps/dashboard-charts-jira/tips-best-practices) for process analytics dashboards, and [Cycle Time Trend](/apps/dashboard-charts-jira/cycle-time-trend-gadget-intro) when you need to show whether delivery is improving.
 
 ---
 
@@ -331,7 +354,9 @@ You need high-level KPI dashboards without Jira jargon.
 **Start with:**
 1. [Custom Charts Gadget](/apps/dashboard-charts-jira/custom-charts-gadget-intro) - Tile charts for KPI numbers
 2. [Pivot Table Gadget](/apps/dashboard-charts-jira/pivot-table-gadget-intro) - cross-project aggregation
-3. [How to: Build an Executive Delivery Dashboard](/apps/dashboard-charts-jira/how-to-executive-dashboard) - full walkthrough with all gadgets
+3. [Issue Filter Formula](/apps/dashboard-charts-jira/issue-filter-formula-gadget-intro) - KPI numbers, gauges, and ratios computed from several queries at once
+4. [Cycle Time Trend](/apps/dashboard-charts-jira/cycle-time-trend-gadget-intro) - one chart that answers "are we getting faster?"
+5. [How to: Build an Executive Delivery Dashboard](/apps/dashboard-charts-jira/how-to-executive-dashboard) - full walkthrough with all gadgets
 
 **Key tip:** Use the **Description** tab on each gadget to add plain-language context below charts - no Jira jargon required.
 
@@ -351,7 +376,7 @@ Never used this app before?
           title: "Quick Reference Card",
           content: `A one-page cheat sheet for everything in the app. Bookmark this page.
 
-## Seven Gadgets at a Glance
+## Fourteen Gadgets at a Glance
 
 | **Gadget** | What It Does | Best For | Full Docs |
 |---|---|---|---|
@@ -362,6 +387,13 @@ Never used this app before?
 | **Pivot Table** | Cross-tabulation with 7 aggregation methods | Workload matrices, story point summaries | [Pivot Table →](/apps/dashboard-charts-jira/pivot-table-gadget-intro) |
 | **Cumulative Flow Diagram** | Work accumulation over time | Sprint/release flow health, WIP trends | [CFD →](/apps/dashboard-charts-jira/cumulative-flow-gadget-intro) |
 | **WIP Aging Charts** | How long in-progress items have been active | Stalled work, SLA monitoring | [WIP Aging →](/apps/dashboard-charts-jira/wip-aging-charts-gadget-intro) |
+| **Control Chart** | Cycle and lead time per completed item | Predictability, percentile commitments | [Control Chart →](/apps/dashboard-charts-jira/control-chart-gadget-intro) |
+| **Histogram Chart** | Frequency distribution of cycle time | SLA setting, spotting the slow tail | [Histogram →](/apps/dashboard-charts-jira/histogram-chart-gadget-intro) |
+| **Cycle Time Trend** | Average cycle time per interval, with trendline | Quarterly reviews, proving improvement | [Cycle Time Trend →](/apps/dashboard-charts-jira/cycle-time-trend-gadget-intro) |
+| **WIP Run Chart** | WIP over time with limits and breaches | Introducing WIP limits, load balancing | [WIP Run Chart →](/apps/dashboard-charts-jira/wip-run-chart-gadget-intro) |
+| **Sprint Burndown & Burnup** | Sprint progress with scope tracking | Standups, sprint reviews, retrospectives | [Burndown →](/apps/dashboard-charts-jira/sprint-burndown-gadget-intro) |
+| **Team Wallboard** | Work items as cards in columns | Standups, wall displays, workload checks | [Wallboard →](/apps/dashboard-charts-jira/team-wallboard-gadget-intro) |
+| **Issue Filter Formula** | KPIs from up to 9 aggregations plus formulas | Rates, ratios, gauges, exec KPI panels | [Formula →](/apps/dashboard-charts-jira/issue-filter-formula-gadget-intro) |
 
 ---
 
@@ -390,8 +422,8 @@ Full guide: [Chart Types Guide](/apps/dashboard-charts-jira/chart-types-guide)
 |---|---|---|
 | **Projects** | Simple project-level reports | [Quick Start →](/apps/dashboard-charts-jira/quick-start) |
 | **Saved Filter** | Reusable criteria shared across gadgets | [Integrations →](/apps/dashboard-charts-jira/supported-integrations) |
-| **Custom JQL** | Advanced filtering or custom conditions | [How-To JQL →](/apps/dashboard-charts-jira/how-to-guides) |
-| **Board** | Time in Status, CFD, WIP Aging - board column definitions | [TIS Overview →](/apps/dashboard-charts-jira/time-in-status-overview) |
+| **Custom JQL** | Advanced filtering or custom conditions | [Quick Start →](/apps/dashboard-charts-jira/quick-start) |
+| **Board** | Board-scoped reporting and board column definitions - available in Time in Status, CFD, WIP Aging, Control Chart, Histogram, Cycle Time Trend, WIP Run Chart, Team Wallboard, and Issue Filter Formula; required by Sprint Burndown | [TIS Overview →](/apps/dashboard-charts-jira/time-in-status-overview) |
 | **Dynamic Filter Controller** | End users filter the dashboard interactively | [DFC Setup →](/apps/dashboard-charts-jira/dynamic-filter-controller-setup) |
 
 ---
@@ -420,6 +452,13 @@ Full guide: [Chart Types Guide](/apps/dashboard-charts-jira/chart-types-guide)
 | **Pivot Table** | ✓ | ✓ | - | ✓ | [Formatting & Export →](/apps/dashboard-charts-jira/pivot-table-formatting-export) |
 | **WIP Aging Charts** | ✓ | ✓ | - | ✓ | [Display & Export →](/apps/dashboard-charts-jira/wip-aging-display-export) |
 | **CFD** | - | - | - | ✓ | [Display Options →](/apps/dashboard-charts-jira/cumulative-flow-display) |
+| **Control Chart** | ✓ | ✓ | - | ✓ | [Display & Export →](/apps/dashboard-charts-jira/control-chart-display-export) |
+| **Histogram Chart** | ✓ | - | ✓ | ✓ | [Display →](/apps/dashboard-charts-jira/histogram-chart-display-export) |
+| **Cycle Time Trend** | ✓ | - | - | ✓ | [Series & Display →](/apps/dashboard-charts-jira/cycle-time-trend-series-display) |
+| **WIP Run Chart** | ✓ | ✓ | - | ✓ | [Limits & Display →](/apps/dashboard-charts-jira/wip-run-chart-limits-display) |
+| **Sprint Burndown & Burnup** | ✓ | ✓ | - | ✓ | [Display & Export →](/apps/dashboard-charts-jira/sprint-burndown-display-export) |
+| **Team Wallboard** | ✓ | - | ✓ | ✓ | [Display & Export →](/apps/dashboard-charts-jira/team-wallboard-display-export) |
+| **Issue Filter Formula** | ✓ | ✓ | - | ✓ | [Display Modes →](/apps/dashboard-charts-jira/issue-filter-formula-display) |
 
 ---
 
@@ -465,6 +504,27 @@ Full guide: [Chart Types Guide](/apps/dashboard-charts-jira/chart-types-guide)
 
 ### WIP Aging Charts
 - [Overview](/apps/dashboard-charts-jira/wip-aging-overview) · [Age Calculation Methods](/apps/dashboard-charts-jira/wip-aging-age-methods) · [Reference Lines & Scale](/apps/dashboard-charts-jira/wip-aging-reference-lines) · [Display & Export](/apps/dashboard-charts-jira/wip-aging-display-export)
+
+### Control Chart
+- [Overview](/apps/dashboard-charts-jira/control-chart-overview) · [Cycle Definition](/apps/dashboard-charts-jira/control-chart-cycle-definition) · [Reference Lines & Scale](/apps/dashboard-charts-jira/control-chart-reference-lines) · [Display & Export](/apps/dashboard-charts-jira/control-chart-display-export)
+
+### Histogram Chart
+- [Overview](/apps/dashboard-charts-jira/histogram-chart-overview) · [Buckets & Split Range](/apps/dashboard-charts-jira/histogram-chart-buckets) · [Reference Lines & Display](/apps/dashboard-charts-jira/histogram-chart-display-export)
+
+### Cycle Time Trend
+- [Overview](/apps/dashboard-charts-jira/cycle-time-trend-overview) · [Time Frame](/apps/dashboard-charts-jira/cycle-time-trend-time-frame) · [Series & Display](/apps/dashboard-charts-jira/cycle-time-trend-series-display)
+
+### WIP Run Chart
+- [Overview](/apps/dashboard-charts-jira/wip-run-chart-overview) · [WIP Rule & Calculation](/apps/dashboard-charts-jira/wip-run-chart-wip-rule) · [Limits & Display](/apps/dashboard-charts-jira/wip-run-chart-limits-display)
+
+### Sprint Burndown & Burnup
+- [Overview](/apps/dashboard-charts-jira/sprint-burndown-overview) · [Calculation Settings](/apps/dashboard-charts-jira/sprint-burndown-calculation) · [Display & Export](/apps/dashboard-charts-jira/sprint-burndown-display-export)
+
+### Team Wallboard
+- [Overview](/apps/dashboard-charts-jira/team-wallboard-overview) · [Settings](/apps/dashboard-charts-jira/team-wallboard-settings) · [Display & Export](/apps/dashboard-charts-jira/team-wallboard-display-export)
+
+### Issue Filter Formula
+- [Overview](/apps/dashboard-charts-jira/issue-filter-formula-overview) · [Variables](/apps/dashboard-charts-jira/issue-filter-formula-variables) · [Formulas](/apps/dashboard-charts-jira/issue-filter-formula-formulas) · [Display Modes](/apps/dashboard-charts-jira/issue-filter-formula-display)
 
 ### Admin & Other
 - [Admin Settings](/apps/dashboard-charts-jira/admin-settings) · [Release Notes](/apps/dashboard-charts-jira/latest-release) · [Integrations](/apps/dashboard-charts-jira/supported-integrations) · [Data Migration](/apps/dashboard-charts-jira/data-migration) · [FAQ](/apps/dashboard-charts-jira/faq) · [Troubleshooting](/apps/dashboard-charts-jira/troubleshooting-guide)
@@ -553,7 +613,7 @@ A three-gadget dashboard:
         {
           slug: "how-to-executive-dashboard",
           title: "How to: Build an Executive Delivery Dashboard",
-          content: `A complete guide to building a high-impact executive dashboard using all seven gadgets.
+          content: `A complete guide to building a high-impact executive dashboard using the app's core reporting gadgets.
 
 ## Who This Is For
 
@@ -574,6 +634,15 @@ Directors, VPs, and senior stakeholders who need a clear, data-driven view of de
 | **Row 5a** | Team × Status | Pivot Table | Cross-dimensional workload |
 | **Row 5b** | Cycle Time | Time in Status | Where work slows down |
 | **Row 6** | Active Issues | Issue List | Full issue details |
+
+### Optional additions for a delivery-metrics audience
+
+| **Row** | Gadget | Type | Purpose |
+|---|---|---|---|
+| **Row 2d** | Delivery KPIs | Issue Filter Formula → gauges | On-time delivery %, escaped defect rate, and other ratios in one tile |
+| **Row 3c** | Cycle Time Direction | Cycle Time Trend | One chart answering "are we getting faster?" |
+| **Row 4c** | Predictability | Control Chart | The percentile you can safely commit to |
+| **Row 7** | Sprint Health | Sprint Burndown & Burnup | Current sprint progress and scope changes |
 
 ---
 
@@ -661,7 +730,7 @@ Directors, VPs, and senior stakeholders who need a clear, data-driven view of de
 
 ## What You Need
 
-- At least two gadgets already on your dashboard (Custom Charts, Issue List, Time in Status, Pivot Table, CFD, or WIP Aging)
+- At least two gadgets already on your dashboard (Custom Charts, Issue List, Time in Status, Pivot Table, CFD, WIP Aging, Control Chart, Histogram Chart, Cycle Time Trend, WIP Run Chart, Team Wallboard, or Issue Filter Formula)
 - Edit access to the dashboard
 
 ---
@@ -732,7 +801,9 @@ For every chart or table you want the controller to drive:
 3. Select your controller from the dropdown (identified by Reference ID)
 4. Click **Save gadget**
 
-Supported gadgets: Custom Charts, Issue List, Time in Status, Pivot Table, CFD, WIP Aging Charts
+Supported gadgets: Custom Charts, Issue List, Time in Status, Pivot Table, CFD, WIP Aging Charts, Control Chart, Histogram Chart, Cycle Time Trend, WIP Run Chart, Team Wallboard, and Issue Filter Formula (per variable)
+
+Not supported: Sprint Burndown & Burnup, which is scoped to a board and sprint by design
 
 ---
 
@@ -3788,8 +3859,1362 @@ Set the threshold at your SLA boundary. Run the chart daily and escalate any dot
       ],
     },
 
+
     // ═══════════════════════════════════════════════════════════════
-    // 9. ADMIN SETTINGS
+    // 9. CONTROL CHART
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "control-chart-gadget",
+      title: "Control Chart",
+      articles: [
+        {
+          slug: "control-chart-gadget-intro",
+          title: "Control Chart",
+          content: `The **Control Chart** gadget plots the cycle time or lead time of completed work items as a scatter chart over time. Each dot is one completed item; reference lines show your average, rolling average, standard deviation band, SLA threshold, and percentiles - so you can see both how fast you deliver and how predictable that delivery is.
+
+Use this section to define what a "cycle" means for your workflow, choose the date interval, and configure the statistical overlays.
+
+### In This Section
+
+| **Page Name** | **Description** |
+| --- | --- |
+| **Overview** | *What the Control Chart shows, how to read it, data sources, and date intervals.* |
+| **Cycle Definition** | *Cycle time vs. lead time, start and end conditions, repeat entries, and repeated cycles.* |
+| **Reference Lines & Scale** | *Average, rolling average, standard deviation band, threshold, percentiles, and log scale.* |
+| **Display Settings & Export** | *Data table view, display toggles, colors, auto-refresh, and export options.* |
+`,
+        },
+        {
+          slug: "control-chart-overview",
+          title: "Overview",
+          content: `The Control Chart answers two questions at once: **how long does work take**, and **how consistent is that number**. The X-axis is the date each item finished its cycle; the Y-axis is how long that cycle took. A tight horizontal band means a predictable process. A widening spread means your delivery estimates are getting less reliable.
+
+## Overview
+
+| **Feature** | **Description** |
+| --- | --- |
+| **Scatter Plot** | One dot per completed work item - X-axis = completion date, Y-axis = cycle duration |
+| **Two Metrics** | Cycle Time (start status to end status) or Lead Time (creation to end status) |
+| **Configurable Cycle** | Define exactly which workflow transitions start and end the measurement |
+| **Five Overlay Types** | Average, rolling average, standard deviation band, threshold, and up to 5 percentile lines |
+| **Data Table View** | Switch to a table listing every item with its start date, end date, and duration |
+| **Log Scale** | Compress a wide duration range so short cycles stay readable next to outliers |
+
+## How to Read the Chart
+
+- **Each dot** = one work item that completed its cycle
+- **X position** = the date the cycle ended
+- **Y position** = how long the cycle took, in your chosen unit
+- **Dots above the threshold line** = items that breached your SLA
+- **A tight horizontal band** = predictable delivery
+- **A widening spread over time** = growing unpredictability - investigate before committing to dates
+- **Dots above the 85th percentile line** = the slow tail; these are what stakeholders remember
+
+> **Action pattern:** Quote the 85th percentile, not the average, when someone asks "how long will this take?" The average is met roughly half the time; the 85th percentile is met most of the time.
+
+## Data Sources
+
+| **Source Type** | **When to Use** |
+| --- | --- |
+| **Projects** | Measure delivery speed across one or more Jira projects |
+| **Board** | Scope to a board's own filter - the board's JQL is resolved automatically |
+| **Saved Filter** | Reuse a filter your team already maintains |
+| **Custom JQL** | Write a precise query (for example, one issue type or one component) |
+| **Dynamic Filter Controller** | Connect to a shared filter bar so the chart re-scopes with the rest of the dashboard |
+
+## Date Interval
+
+The interval controls **which completed items appear**, independent of the data source.
+
+| **Interval Type** | **What It Covers** |
+| --- | --- |
+| **Last N days** (default, 90) | A rolling window that moves forward on its own - no editing needed |
+| **Custom date range** | A fixed start and end date |
+| **Sprint dates** | Pick any board and sprint; its start and end dates become the window. Enable auto-latest to always follow the active sprint |
+| **Release dates** | Pick any project and release; its start and release dates become the window |
+
+> Sprint and Release intervals are available for **every** data source type - the board or project you pick there supplies dates only, not the issue scope.
+`,
+        },
+        {
+          slug: "control-chart-cycle-definition",
+          title: "Cycle Definition",
+          content: `The cycle definition is the most important configuration decision in this gadget. It decides which transitions in an item's history start and stop the clock - and two teams measuring "cycle time" with different definitions cannot compare numbers.
+
+## Metric
+
+| **Metric** | **Measures From** | **Use When** |
+| --- | --- | --- |
+| **Cycle Time** | The start condition you choose below | You want to measure your team's working time, excluding backlog wait |
+| **Lead Time** | The moment the item was created | You want the customer's view - total wait from request to delivery |
+
+> Choosing **Lead Time** hides the start-condition options, because creation is the start by definition.
+
+## Starts When
+
+| **Option** | **The Clock Starts** |
+| --- | --- |
+| **Issue was created** | At creation. Equivalent to Lead Time |
+| **Issue enters To Do** | The first time it moves into a status in the To Do category |
+| **Issue enters In Progress** | The first time it moves into a status in the In Progress category. Items that never reached In Progress are not plotted |
+| **Issue enters a custom status** | The first time it enters a specific workflow status you name |
+
+## Ends When
+
+| **Option** | **The Clock Stops** |
+| --- | --- |
+| **Issue enters Done** (default) | When it moves into a status in the Done category |
+| **Issue enters In Progress** | When it moves into the In Progress category - measures queue time, or time-to-start |
+| **Issue enters its current status** | At the moment it entered the status it sits in right now |
+| **Issue enters a custom status** | When it enters a specific workflow status you name |
+
+## Repeat Entries
+
+Items rarely move in a straight line. Two inline settings control which visit counts:
+
+- **If multiple entries in the start status, consider the first / last entry** - "first" measures from the earliest start; "last" measures the most recent attempt
+- **If multiple entries in the end status, consider the first / last entry** - "first" credits the earliest completion; "last" waits for the final one
+
+## Repeated Cycles
+
+When an item goes through the whole cycle more than once - reopened, or bounced back to In Progress - choose how it is plotted:
+
+| **Option** | **Result** |
+| --- | --- |
+| **Display all cycles** | One dot per cycle. Shows rework honestly |
+| **Only the first cycle** | The original pass only |
+| **Only the last cycle** (default) | The most recent pass only |
+| **One cycle (first start to last end)** | A single dot spanning the entire span, rework included |
+| **Sum of all cycles** | One dot totalling the active time only, excluding the gaps between cycles |
+
+## Calculation Settings
+
+| **Setting** | **Effect** | **Default** |
+| --- | --- | --- |
+| **Calculate in** | Unit on the Y-axis: Days, Hours, Minutes, or Weeks | Days |
+| **Exclude weekends** | Skips Saturdays and Sundays, so durations reflect working time | Off |
+| **Include sub-tasks** | Plots sub-tasks alongside their parents | Off |
+| **Ignore zero duration** | Drops items whose cycle came out as zero - usually bulk-imported or bulk-transitioned items that would drag the average down | Off |
+
+> **Reading the config once beats explaining the numbers twice.** Write your chosen definition into the gadget's Description tab so viewers know what the chart measures.
+`,
+        },
+        {
+          slug: "control-chart-reference-lines",
+          title: "Reference Lines & Scale",
+          content: `Reference lines turn a cloud of dots into a decision aid. Each overlay is a pure recalculation over the data already loaded - toggling one never re-queries Jira.
+
+## Available Overlays
+
+| **Overlay** | **What It Draws** | **Default** |
+| --- | --- | --- |
+| **Average line** | The mean cycle duration across all plotted items | On |
+| **Rolling average** | A moving average over a window of N items - shows whether you are trending faster or slower | Off (window 7) |
+| **Standard deviation band** | A shaded band around the average showing normal variation | On |
+| **Threshold line** | A fixed value you set - your SLA or target | Off (value 14) |
+| **Percentile lines** | Up to 5 lines at percentiles between 1 and 99 | On (50th and 85th) |
+
+## Configuring Percentiles
+
+Enter percentile values as a list. Up to five are allowed, each between 1 and 99.
+
+| **Percentile** | **Reads As** | **Typical Use** |
+| --- | --- | --- |
+| **50th (median)** | Half of all items finished this fast | The typical case |
+| **85th** | 85% of items finished this fast | The number to quote in commitments |
+| **95th** | 95% of items finished this fast | Worst-case planning, escalation triggers |
+
+## Threshold and the Average
+
+**Exclude breaches from the average** removes items above the threshold line before the average is calculated. Turn it on when a handful of abandoned or forgotten items distorts an otherwise healthy average. Leave it off when you want the average to reflect reality including outliers.
+
+## Rolling Average Window
+
+The window is a count of work items, not days. A window of 7 means each point averages that item and the six before it. Smaller windows react faster and look noisier; larger windows are smoother and slower to show a change.
+
+## Log Scale
+
+Turn on **logarithmic scale** when your durations span orders of magnitude - a few items at 200 days flatten everything below 10 days into a single line at the bottom. A log scale keeps both readable, at the cost of making the visual distances non-linear.
+`,
+        },
+        {
+          slug: "control-chart-display-export",
+          title: "Display Settings & Export",
+          content: `## Display Options
+
+| **Setting** | **What It Does** | **Default** |
+| --- | --- | --- |
+| **Show legend** | Legend for the dots and every enabled reference line | On |
+| **Tilt X-axis labels** | Angles date labels so long ranges do not overlap | Off |
+| **Open data tab first** | View mode opens on the table instead of the chart | Off |
+| **Show options menu** | The in-view menu for refresh and export | On |
+| **Show export options** | Whether viewers can export at all | On |
+| **Auto-refresh** | Re-fetches on an interval: 5, 10, 15, or 30 minutes | Off (15 min) |
+
+## Colors
+
+**Auto** uses the app palette. **Custom** exposes one color per element:
+
+| **Element** | **Default** |
+| --- | --- |
+| Work item dots | Blue |
+| Breach dots (above threshold) | Red |
+| Average line | Dark blue |
+| Rolling average line | Amber |
+| Threshold line | Red |
+| Percentile lines | Grey |
+
+## Data Table View
+
+The table lists every plotted cycle with its work item key, summary, cycle start, cycle end, and duration in your chosen unit. Use it to identify the specific items behind an outlier dot, and to hand a list to whoever needs to follow up.
+
+## Export
+
+| **Format** | **Contains** |
+| --- | --- |
+| **PNG** | The chart exactly as displayed, including reference lines |
+| **CSV** | Every plotted record with dates and durations, for spreadsheet analysis |
+
+## Common Use Cases
+
+**Forecasting with confidence.** Read the 85th percentile and use it as your commitment number. If it says 12 days, an item started today is very likely done inside 12 days.
+
+**Detecting process drift.** Enable the rolling average. A line drifting upward over a quarter means work is getting slower - usually growing item size, growing WIP, or growing review queues.
+
+**Retrospective evidence.** Set the threshold at your SLA and look at the breach dots for the sprint. Each one is a concrete conversation, not an opinion.
+
+**Comparing before and after.** Pin a custom date range around a process change and compare the average and spread against the same-length window before it.
+`,
+        },
+      ],
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 10. HISTOGRAM CHART
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "histogram-chart-gadget",
+      title: "Histogram Chart",
+      articles: [
+        {
+          slug: "histogram-chart-gadget-intro",
+          title: "Histogram Chart",
+          content: `The **Histogram Chart** gadget shows the frequency distribution of cycle time or lead time - how many work items finished in each duration bucket. Where the Control Chart shows delivery over time, the histogram shows the **shape** of your delivery: whether most items cluster tightly, or whether you have a long slow tail.
+
+### In This Section
+
+| **Page Name** | **Description** |
+| --- | --- |
+| **Overview** | *What the histogram shows, how to read the distribution, data sources, and intervals.* |
+| **Buckets & Split Range** | *Equal intervals vs. custom thresholds, and how to choose bucket boundaries.* |
+| **Reference Lines & Display** | *Average, threshold, percentiles, display toggles, colors, and export.* |
+`,
+        },
+        {
+          slug: "histogram-chart-overview",
+          title: "Overview",
+          content: `Each bar counts the work items whose cycle fell inside that duration bucket. The X-axis is duration; the Y-axis is the number of items. The cycle definition, calculation settings, and date intervals work exactly as they do in the [Control Chart](/apps/dashboard-charts-jira/control-chart-cycle-definition) - the difference is entirely in how the result is presented.
+
+## Overview
+
+| **Feature** | **Description** |
+| --- | --- |
+| **Frequency Distribution** | One bar per duration bucket, height = number of work items |
+| **Two Metrics** | Cycle Time or Lead Time, with the same configurable start and end conditions |
+| **Two Bucketing Modes** | Equal-width intervals, or your own comma-separated thresholds |
+| **Reference Lines** | Average, threshold, and up to 5 percentile lines |
+| **Data Table View** | The items behind every bucket, exportable |
+| **Data Zoom** | Scroll and zoom the X-axis when the range is wide |
+
+## How to Read the Distribution
+
+- **A tall bar near the left with a short tail** = healthy, predictable flow
+- **A long flat tail to the right** = a minority of items take far longer; these drive stakeholder perception
+- **Two separate peaks** = you are really measuring two different kinds of work. Split the data source by issue type and chart them separately
+- **A bar sitting at the far right on its own** = stalled or abandoned items; consider enabling ignore zero duration and checking whether they ever truly completed
+
+> **Action pattern:** Do not try to move the average. Try to cut the tail. Shortening the slow 15% improves predictability far more than shaving a day off the typical case.
+
+## Data Sources
+
+Projects, Board, Saved Filter, Custom JQL, and Dynamic Filter Controller - the same five sources as the Control Chart.
+
+## Date Interval
+
+| **Interval Type** | **What It Covers** |
+| --- | --- |
+| **Last N days** (default, 364) | A rolling window. The wide default gives the distribution enough items to have a shape |
+| **Custom date range** | A fixed start and end date |
+| **Sprint dates** | Any board and sprint supplies the window; auto-latest follows the active sprint |
+| **Release dates** | Any project and release supplies the window |
+
+> A histogram needs volume. With fewer than about 30 completed items the shape is noise - widen the window before drawing conclusions.
+`,
+        },
+        {
+          slug: "histogram-chart-buckets",
+          title: "Buckets & Split Range",
+          content: `How you cut the range decides what the chart says. Too few buckets hides the tail; too many turns the distribution into a comb of single-item bars.
+
+## Split Modes
+
+| **Mode** | **How Buckets Are Built** | **Best For** |
+| --- | --- | --- |
+| **Split into equal intervals** (default) | Divides 0 to the largest cycle time into N equal-width buckets. Default N = 10 | A first look, when you do not yet know the range |
+| **Split by custom thresholds** | You enter the boundaries, comma-separated (for example \`100, 200, 300, 400, 500\`) | Reporting against SLA tiers or planning brackets |
+
+## Choosing Equal Intervals
+
+| **Bucket Count** | **Result** |
+| --- | --- |
+| **5-8** | Broad shape, easy to read in a small dashboard tile |
+| **10** (default) | Balanced - enough resolution to see a tail |
+| **15-20** | Fine detail; needs a wide gadget and a decent item count |
+
+One long-running outlier stretches the whole range, because the last bucket is anchored to the largest cycle time. If nine of ten buckets come back empty, either switch to custom thresholds or narrow the data source.
+
+## Choosing Custom Thresholds
+
+Custom thresholds are the right choice when the buckets need to mean something to the reader. Match them to the language your team already uses:
+
+- **SLA tiers:** \`1, 3, 5, 10\` - same day, a few days, a week, over a week
+- **Sprint arithmetic:** \`5, 10, 15, 20\` - within a sprint, one sprint over, and so on
+- **Escalation brackets:** \`7, 14, 30\` - fine, watch, escalate
+
+Enter boundaries in ascending order, separated by commas. Everything above your last threshold falls into a final open-ended bucket.
+
+## Calculation Settings
+
+The same options as the Control Chart apply, and they change the numbers before bucketing happens:
+
+| **Setting** | **Effect** | **Default** |
+| --- | --- | --- |
+| **Calculate in** | Days, Hours, Minutes, or Weeks - also the unit of your thresholds | Days |
+| **Exclude weekends** | Durations reflect working time | Off |
+| **Include sub-tasks** | Counts sub-tasks as their own items | Off |
+| **Ignore zero duration** | Drops zero-length cycles from bulk transitions | Off |
+| **Repeated cycles** | Default here is all cycles, so rework is visible in the distribution | All |
+`,
+        },
+        {
+          slug: "histogram-chart-display-export",
+          title: "Reference Lines & Display",
+          content: `## Reference Lines
+
+| **Overlay** | **What It Draws** | **Default** |
+| --- | --- | --- |
+| **Average line** | A vertical line at the mean duration | On |
+| **Threshold line** | A vertical line at your SLA or target value | Off (value 14) |
+| **Percentile lines** | Up to 5 vertical lines between the 1st and 99th percentile | On (50th and 85th) |
+| **Exclude breaches from average** | Recomputes the average ignoring items past the threshold | Off |
+
+On a histogram these lines read as cut points: everything to the right of the 85th percentile line is your slow tail, and its width tells you how bad the tail is.
+
+## Display Options
+
+| **Setting** | **What It Does** | **Default** |
+| --- | --- | --- |
+| **Show legend** | Legend for bars and reference lines | On |
+| **Show data values** | Prints the item count above each bar | On |
+| **Show data zoom** | Adds a scroll and zoom control to the X-axis | Off |
+| **Tilt X-axis labels** | Angles bucket labels so long ranges stay readable | Off |
+| **Open data tab first** | View mode opens on the table | Off |
+| **Show options menu** | The in-view refresh and export menu | On |
+| **Show export options** | Whether viewers can export | On |
+| **Auto-refresh** | 5, 10, 15, or 30 minute interval | Off (15 min) |
+
+## Colors
+
+| **Element** | **Default** |
+| --- | --- |
+| Bars | Blue |
+| Average line | Orange |
+| Threshold line | Red |
+| Percentile lines | Purple |
+
+## Export
+
+| **Format** | **Contains** |
+| --- | --- |
+| **CSV** | Every work item with its bucket, dates, and duration |
+| **PDF** | A tabular PDF of the same records |
+
+## Common Use Cases
+
+**Setting a defensible SLA.** Read the 85th percentile off the chart and propose that as the SLA, rather than negotiating from a wish.
+
+**Proving an improvement.** Chart the same window length before and after a process change. A distribution that shifted left and got narrower is the clearest evidence you can hand a stakeholder.
+
+**Finding hidden work types.** A two-peaked distribution nearly always means two different work types share one board. Split them and manage them separately.
+`,
+        },
+      ],
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 11. CYCLE TIME TREND
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "cycle-time-trend-gadget",
+      title: "Cycle Time Trend",
+      articles: [
+        {
+          slug: "cycle-time-trend-gadget-intro",
+          title: "Cycle Time Trend",
+          content: `The **Cycle Time Trend** gadget answers one question: is our delivery getting faster or slower? It draws one bar per time interval showing the average cycle time for the items completed in that interval, with an optional trendline and an overall-average summary line.
+
+Where the Control Chart shows every individual item and the Histogram shows the distribution, Cycle Time Trend shows the **direction of travel** over weeks, months, or sprints.
+
+### In This Section
+
+| **Page Name** | **Description** |
+| --- | --- |
+| **Overview** | *What the trend chart shows, how to read it, and data sources.* |
+| **Time Frame** | *Anchor date, interval length, interval count, and the current-interval toggle.* |
+| **Series & Display** | *Average series, trendline types, overall average, display toggles, and export.* |
+`,
+        },
+        {
+          slug: "cycle-time-trend-overview",
+          title: "Overview",
+          content: `Each bar is one interval - a week, a month, or a sprint. Its height is the average cycle time of every item that completed inside that interval. Put six or twelve bars side by side and the trend is obvious in a way no single-snapshot chart can be.
+
+## Overview
+
+| **Feature** | **Description** |
+| --- | --- |
+| **One Bar per Interval** | Average cycle time for items completed in that interval |
+| **Eight Interval Lengths** | 1, 2, 3, 4, 6, or 8 weeks, 1 calendar month, or the board's own sprints |
+| **Trendline** | Linear or polynomial fit over the bars |
+| **Overall Average Line** | A horizontal reference computed over the last N intervals |
+| **Same Cycle Definition** | Cycle time or lead time, with the same start and end conditions as the Control Chart |
+| **Data Table View** | Every item behind every bar, with dates and durations |
+
+## How to Read the Chart
+
+- **Bars trending upward** = delivery is slowing. Usual causes: item size growing, WIP growing, review queues growing
+- **Bars trending downward** = delivery is speeding up; worth naming what changed so you keep doing it
+- **One tall bar among short ones** = one interval absorbed a few long-running items. Check the data table before treating it as a trend
+- **Bars flat but tall** = stable but slow. Predictable, which is useful; the improvement conversation is separate
+- **A missing or very short bar** = few or no items completed in that interval
+
+> **Action pattern:** Use the trendline for the story and the bars for the evidence. A trendline alone can hide the fact that one interval carried the whole change.
+
+## Data Sources
+
+Projects, Board, Saved Filter, Custom JQL, and Dynamic Filter Controller.
+
+> Selecting **Board Sprints** as the interval requires a Scrum board as the data source - Kanban boards have no sprints to draw intervals from.
+
+## Cycle Definition
+
+Identical to the [Control Chart](/apps/dashboard-charts-jira/control-chart-cycle-definition): choose Cycle Time or Lead Time, pick the start and end conditions, and decide how repeat entries and repeated cycles are handled. The default calculation unit here is **hours**, which suits shorter support-style cycles; switch to days or weeks for delivery work.
+`,
+        },
+        {
+          slug: "cycle-time-trend-time-frame",
+          title: "Time Frame",
+          content: `The time frame decides how many bars you get and how wide each one is. It is the difference between a chart that shows a trend and a chart that shows noise.
+
+## Display Data Until
+
+| **Option** | **Behavior** |
+| --- | --- |
+| **This date** | Anchors the chart to a fixed date. That date is the **start** of the final interval, so the last bar runs one full interval past it |
+| **Previous day (end-of-day)** (default) | Anchors to yesterday, so the chart rolls forward on its own with nobody editing the gadget |
+
+Use a fixed date when the chart backs a specific report or review. Use previous day for any dashboard that stays up.
+
+## Interval Length
+
+| **Option** | **Bars Cover** | **Good For** |
+| --- | --- | --- |
+| **1 week** (default) | Seven days each | Fast feedback, high-volume teams |
+| **2 / 3 / 4 weeks** | Multi-week buckets | Matching your sprint cadence without using sprint dates |
+| **6 / 8 weeks** | Long buckets | Low-volume teams, or a full-year view |
+| **1 calendar month** | Calendar months, labelled MMM YY | Reporting that has to line up with monthly business cycles |
+| **Board Sprints** | Each sprint's own real dates, labelled with the sprint name | Retrospectives - bars match what the team actually lived |
+
+> Board Sprints handles uneven sprint lengths correctly, because each bar uses that sprint's own start and end dates rather than a fixed width.
+
+## Interval Count
+
+Choose the **total** number of bars, between 1 and 20 - this is the total drawn, not a count added on top of the current interval. Past roughly 20 bars the X-axis labels stop being readable, which is why 20 is the cap.
+
+| **Count** | **With 1-week intervals** | **With 1-month intervals** |
+| --- | --- | --- |
+| **6** | Six weeks - a quarter's worth of recent signal | Half a year |
+| **12** | A quarter | A full year |
+| **20** | Roughly five months | Not recommended - labels crowd |
+
+## Include the Current Interval
+
+Off by default. The current interval is incomplete - only the items that happen to have finished so far are counted - so its bar is usually misleadingly low or high. Turn it on only when you want a live in-progress read and the audience understands the last bar is partial.
+`,
+        },
+        {
+          slug: "cycle-time-trend-series-display",
+          title: "Series & Display",
+          content: `## Series
+
+| **Series** | **What It Draws** | **Default** |
+| --- | --- | --- |
+| **Average series** | The bars themselves - average cycle time per interval | On |
+| **Trendline** | A fitted line across the bars | On |
+| **Overall average** | A horizontal line at the average across the last N intervals | On (3 intervals) |
+
+## Trendline Types
+
+| **Type** | **Shape** | **Use When** |
+| --- | --- | --- |
+| **Linear** (default) | A straight line | You want the plain direction - up, down, or flat. Easiest to defend in a review |
+| **Polynomial** | A curve | The trend genuinely reversed mid-period and a straight line would hide it |
+
+> A polynomial fit will follow noise if you give it few bars. With under about eight intervals, stay linear.
+
+## Overall Average Window
+
+The **overall average** line is computed over the most recent N intervals, not the whole chart. Set N to your planning horizon: 3 intervals for a rolling recent read, or the full interval count if you want a true chart-wide average.
+
+## Display Options
+
+| **Setting** | **What It Does** | **Default** |
+| --- | --- | --- |
+| **Show legend** | Legend for bars, trendline, and average line | On |
+| **Tilt X-axis labels** | Angles interval labels - useful with sprint names | On |
+| **Show gridlines** | Horizontal gridlines behind the bars | On |
+| **Show data values** | Prints each bar's value above it | Off |
+| **Show data zoom** | Scroll and zoom control on the X-axis | Off |
+| **Chart height** | Explicit pixel height, or auto | Auto |
+| **Show data tab** | Makes the table view available in view mode | Off |
+| **Open data tab first** | View mode opens on the table | Off |
+| **Show options menu** | The in-view refresh and export menu | On |
+| **Show export options** | Whether viewers can export | On |
+| **Auto-refresh** | 5, 10, 15, or 30 minute interval | Off (15 min) |
+
+## Colors
+
+| **Element** | **Default** |
+| --- | --- |
+| Average bars | Blue |
+| Trendline | Orange |
+
+## Export
+
+**CSV** exports every work item behind the chart with its interval, cycle start, cycle end, and duration - so you can verify any bar or hand the raw data to someone else.
+
+## Common Use Cases
+
+**Quarterly delivery review.** 12 weekly bars with a linear trendline gives a one-glance answer to "did we get faster this quarter?"
+
+**Proving the effect of a process change.** Set the interval to your sprint cadence and count enough bars to cover several sprints either side of the change.
+
+**Retrospective input.** Use Board Sprints intervals so each bar is a sprint the team remembers, then open the data table on the worst bar and discuss those specific items.
+`,
+        },
+      ],
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 12. WIP RUN CHART
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "wip-run-chart-gadget",
+      title: "WIP Run Chart",
+      articles: [
+        {
+          slug: "wip-run-chart-gadget-intro",
+          title: "WIP Run Chart",
+          content: `The **WIP Run Chart** gadget tracks how much work was in progress on every day of a period, as a line chart. Add WIP limits and the chart highlights the days you breached them.
+
+WIP Aging tells you which items are old **right now**. WIP Run Chart tells you whether your team is systematically taking on too much - the root cause behind most aging work.
+
+### In This Section
+
+| **Page Name** | **Description** |
+| --- | --- |
+| **Overview** | *What the run chart shows, how to read it, data sources, and date ranges.* |
+| **WIP Rule & Calculation** | *What counts as WIP, what gets measured, intervals, sub-tasks, and splitting.* |
+| **Limits & Display** | *WIP limits and breach highlighting, trendline, display toggles, and export.* |
+`,
+        },
+        {
+          slug: "wip-run-chart-overview",
+          title: "Overview",
+          content: `The X-axis is time; the Y-axis is how much work was in progress at each point. One line shows total WIP, and you can optionally split it into one line per field value.
+
+## Overview
+
+| **Feature** | **Description** |
+| --- | --- |
+| **WIP Over Time** | A line showing in-progress volume across the period |
+| **Three WIP Rules** | Status category, board middle columns, or an explicit status list |
+| **Five Measures** | Work item count, story points, story point estimate, original estimate hours, or any numeric custom field |
+| **WIP Limits** | Optional max and min limits, with breach highlighting |
+| **Trendline** | Linear or polynomial fit |
+| **Split by Field** | One line per value of a field - per assignee, per issue type, per component |
+| **Data Table View** | The underlying per-interval numbers, exportable |
+
+## How to Read the Chart
+
+- **A rising line** = you are starting work faster than you are finishing it. Cycle time will follow it upward
+- **A flat line** = start rate and finish rate are balanced. This is what a healthy team looks like
+- **A sawtooth pattern** = work is batched, usually to sprint boundaries; everything starts on day one and lands at the end
+- **A line above your max limit** = too many things open at once; expect context-switching and slow delivery
+- **A line below your min limit** = the team may be starved of ready work
+
+> **Action pattern:** Fix WIP before fixing cycle time. Cycle time is a symptom; WIP is usually the cause.
+
+## Data Sources
+
+Projects, Board, Saved Filter, Custom JQL, and Dynamic Filter Controller.
+
+## Date Range
+
+| **Mode** | **What It Covers** |
+| --- | --- |
+| **Last N days** (default, 30) | A rolling window that moves forward on its own |
+| **Custom date range** | A fixed start and end date |
+| **Sprint dates** | A specific sprint's dates, or auto-follow the latest sprint |
+| **Release dates** | A release's start and release dates |
+
+**Continue after end date** extends the line past the end of the range when items are still open - useful for showing that a sprint's leftovers did not disappear at the sprint boundary.
+`,
+        },
+        {
+          slug: "wip-run-chart-wip-rule",
+          title: "WIP Rule & Calculation",
+          content: `Two decisions define the chart: **what counts as work-in-progress**, and **what unit you count it in**.
+
+## WIP Rule
+
+| **Rule** | **An Item Counts as WIP While** | **Notes** |
+| --- | --- | --- |
+| **Work item status has category "In Progress"** (default) | Its status sits in Jira's built-in In Progress category | Works identically on every board with no extra setup. Start here |
+| **Work item is in the middle columns of the selected board** | It is in a column that is neither the board's first nor its last | Matches how the team reads their own board. Requires picking a board |
+| **Work item is in one of these statuses** | Its status is one you explicitly listed | Use when your definition of "active" does not match categories or columns - for example, excluding a Blocked status |
+
+> If your workflow parks items in a status like "Waiting on customer" that sits in the In Progress category, the default rule will count it as WIP. Switch to an explicit status list to exclude it.
+
+## Calculate By
+
+| **Option** | **Measures** |
+| --- | --- |
+| **Work Item Count** (default) | Number of items - the honest measure of context-switching load |
+| **Story Points** | Sum of story points in progress |
+| **Story Point Estimate** | Sum of the team-managed story point estimate field |
+| **Original Time Estimate (hours)** | Sum of original estimates |
+| **Custom numeric field** | Any numeric field you name |
+
+> Work item count is the better default for WIP. Point-weighted WIP can look flat while the number of open items doubles.
+
+## Interval
+
+**Intervals of** sets the number of days each point on the X-axis covers. One day gives the finest resolution; larger intervals smooth the line and suit longer periods.
+
+## Sub-tasks
+
+**Count also the sub-tasks and their estimate** is on by default. Turn it off if your team tracks work at the story level and sub-tasks would multiply the count.
+
+## Split by Field
+
+Choose a field to break total WIP into one line per value:
+
+| **Split By** | **Reveals** |
+| --- | --- |
+| **Assignee** | Who is carrying too many open items at once |
+| **Issue Type** | Whether bugs are crowding out feature work |
+| **Component or Team** | Which area is overloaded |
+| **Priority** | Whether high-priority work actually gets focus |
+
+Keep **Show total WIP** on alongside a split so you can see both the whole and the parts.
+`,
+        },
+        {
+          slug: "wip-run-chart-limits-display",
+          title: "Limits & Display",
+          content: `## WIP Limits
+
+| **Setting** | **What It Does** |
+| --- | --- |
+| **Max limit** | Draws a ceiling line; days above it are highlighted as breaches |
+| **Min limit** | Draws a floor line; days below it are highlighted |
+
+Both are off by default and each is enabled independently. A common starting point for a max limit is between one and two items per team member - then tighten it until flow improves.
+
+> A limit only helps if someone reacts to a breach. Agree what happens when the line goes over - typically "stop starting, start finishing" - before you set the number.
+
+## Trendline
+
+| **Type** | **Use When** |
+| --- | --- |
+| **Linear** (default) | You want the plain direction over the period |
+| **Polynomial** | WIP genuinely rose and then fell and a straight line would hide it |
+
+## Display Options
+
+| **Setting** | **What It Does** | **Default** |
+| --- | --- | --- |
+| **Show total WIP** | The combined line, shown alongside any split lines | On |
+| **Show trendline** | The fitted line | On |
+| **Show legend** | Legend for every series and limit | On |
+| **Show data values** | Prints each point's value | Off |
+| **Y-axis starts at zero** | Forces the Y-axis to zero rather than fitting the data | Off |
+| **Show gridlines** | Horizontal gridlines | Off |
+| **Enable scroll zoom** | Mouse-wheel zoom on the chart | Off |
+| **Continue after end date** | Extends the line past the range end for still-open items | Off |
+| **Chart height** | Explicit pixel height, or auto | Auto |
+| **Show options menu** | The in-view refresh and export menu | On |
+| **Auto-refresh** | 5, 10, 15, or 30 minute interval | Off (15 min) |
+
+## Colors
+
+| **Element** | **Default** |
+| --- | --- |
+| Total WIP line | Blue |
+| Trendline | Orange |
+| WIP limit lines | Red |
+
+Split series get palette colors automatically, and can be set individually in custom color mode.
+
+## Export
+
+| **Format** | **Contains** |
+| --- | --- |
+| **PNG** | The chart as displayed, limits included |
+| **CSV** | The per-interval numbers for every series |
+
+## Common Use Cases
+
+**Introducing WIP limits.** Chart the last 90 days with no limits first to see your actual baseline, then set a max limit slightly below the average and watch whether cycle time improves.
+
+**Diagnosing a slow sprint.** Overlay this on the Control Chart. If WIP climbed through the sprint, the slow cycle times were a consequence, not a mystery.
+
+**Balancing load across a team.** Split by assignee and look for one line consistently above the others - that is the person to unload, not the person to push.
+`,
+        },
+      ],
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 13. SPRINT BURNDOWN & BURNUP
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "sprint-burndown-gadget",
+      title: "Sprint Burndown & Burnup",
+      articles: [
+        {
+          slug: "sprint-burndown-gadget-intro",
+          title: "Sprint Burndown & Burnup",
+          content: `The **Sprint Burndown Burnup Chart** gadget tracks sprint progress day by day. It draws up to five series - remaining work, burned work, scope, and an ideal line for both burndown and burnup - so you can see not just whether you are on track, but whether scope moved under you.
+
+### In This Section
+
+| **Page Name** | **Description** |
+| --- | --- |
+| **Overview** | *What the chart shows, how to read each series, and board and sprint selection.* |
+| **Calculation Settings** | *What to measure, sub-task handling, the Done definition, ideal scope basis, and weekends.* |
+| **Display Settings & Export** | *Series toggles, display options, data table, colors, and export.* |
+`,
+        },
+        {
+          slug: "sprint-burndown-overview",
+          title: "Overview",
+          content: `This gadget is **board-scoped by design**: you pick a board, then a sprint on that board. Sprint dates, scope, and completion all come from the sprint itself, so the chart matches what the team committed to.
+
+## Overview
+
+| **Feature** | **Description** |
+| --- | --- |
+| **Five Series** | Remaining, Burned, Scope, Ideal Burndown, and Ideal Burnup - each toggled independently |
+| **Seven Measures** | Story points, story point estimate, original estimate, remaining estimate, time remaining and spent, work item count, or a numeric custom field |
+| **Scope Line** | Shows scope changes mid-sprint - the single most useful series for retrospectives |
+| **Configurable Done** | Define completion by the board's last column or by an explicit status list |
+| **Weekend Handling** | Treat weekends as working or non-working days, or hide them entirely |
+| **Data Table View** | The per-day numbers behind every series |
+
+## How to Read Each Series
+
+| **Series** | **Reads As** |
+| --- | --- |
+| **Remaining** | Work still open. Should fall towards zero |
+| **Burned** | Work completed so far. Should rise |
+| **Scope** | Total committed work. A flat line means a stable sprint |
+| **Ideal Burndown** | Straight line from full scope to zero - the pace needed to finish on time |
+| **Ideal Burnup** | Straight line from zero to full scope - the mirror image, for teams who prefer counting up |
+
+## Reading the Shape
+
+- **Remaining above ideal** = behind pace. The gap at any day is roughly the catch-up needed
+- **Remaining flat then dropping at the end** = work finished in a batch. Predictable-looking totals, unpredictable delivery
+- **Scope line stepping up mid-sprint** = work was added after commitment. This explains a "failed" sprint more often than slow delivery does
+- **Remaining rising** = new work is arriving faster than existing work closes
+- **Both remaining and ideal hitting zero together** = a well-paced sprint
+
+> **Action pattern:** In sprint review, read the scope line first. If it moved, the burndown was never going to land where it was drawn - and that is a planning conversation, not a delivery one.
+
+## Board and Sprint Selection
+
+1. Pick the **board** - only Scrum boards have sprints
+2. Pick the **sprint**, or choose **Latest sprint (auto)** so the gadget follows the active sprint and never needs re-editing
+
+> Auto-latest is the right choice for any dashboard that stays up across sprints. Pick a specific sprint only for a fixed retrospective report.
+`,
+        },
+        {
+          slug: "sprint-burndown-calculation",
+          title: "Calculation Settings",
+          content: `## Calculate By
+
+| **Option** | **Measures** | **Notes** |
+| --- | --- | --- |
+| **Story Points** (default) | The story points field | The standard for Scrum teams estimating in points |
+| **Story Point Estimate** | The team-managed story point estimate field | Use this on team-managed projects where points live in a different field |
+| **Original Time Estimate** | Original estimate | Teams estimating in hours |
+| **Remaining Time Estimate** | Remaining estimate | Reflects re-estimation during the sprint |
+| **Time Remaining & Time Spent** | Both, together | Fullest picture for time-tracked teams |
+| **Work Item Count** | Number of items | Simple, honest, and immune to estimate inflation |
+| **Custom Field (Numeric)** | Any numeric field you name | For custom sizing schemes |
+
+> If the chart does not load, check this first: **Custom Field** requires a numeric field to be selected before anything renders.
+
+## Sub-tasks
+
+| **Option** | **Behavior** |
+| --- | --- |
+| **Exclude the subtasks** (default) | Only parent items count |
+| **Include subtasks with parent items** | Both count - use only if sub-tasks carry their own estimates |
+| **Process only subtasks** | Sub-tasks alone, for teams who track all work at that level |
+
+## Ignore Time Logged Before Sprint Start
+
+Off by default. Turn it on when work started before the sprint began and you want the chart to show only the effort inside the sprint window.
+
+## Definition of Done
+
+| **Option** | **An Item Is Done When** |
+| --- | --- |
+| **Board's last column** (default) | It reaches the last column of the board |
+| **Specific statuses** | It reaches one of the statuses you list |
+
+Use specific statuses when your last board column holds more than one status, or when "done" for reporting purposes is earlier than the board's final column - for example, code merged rather than released.
+
+> With **Specific statuses** selected, the chart waits until you pick at least one status before it renders.
+
+## Ideal Line Basis
+
+The ideal line has to start from a scope number. Choose which:
+
+| **Option** | **Starts From** | **Use When** |
+| --- | --- | --- |
+| **The initial scope** | Scope at sprint start | You want to judge the team against what they committed to |
+| **The current scope** (default) | Scope as it stands now | You want a realistic target that accounts for added work |
+| **A fixed scope value** | A number you type | You are reporting against an externally agreed target |
+
+## Weekends
+
+| **Setting** | **Effect** |
+| --- | --- |
+| **Weekend mode: non-working** (default) | The ideal line is flat across weekends, so it does not expect progress nobody was making |
+| **Weekend mode: working** | The ideal line descends through weekends - for teams who genuinely work them |
+| **Hide weekends** | Removes weekend days from the X-axis entirely, compressing the chart |
+
+> Changing weekend handling or the fixed scope value recalculates from data already loaded - no re-query, no wait.
+`,
+        },
+        {
+          slug: "sprint-burndown-display-export",
+          title: "Display Settings & Export",
+          content: `## Series Toggles
+
+Each of the five series can be shown or hidden independently: **Ideal Burndown**, **Ideal Burnup**, **Remaining**, **Burned**, and **Scope**. All are on by default.
+
+| **Combination** | **Reads As** |
+| --- | --- |
+| Remaining + Ideal Burndown | The classic burndown. Cleanest for a daily standup |
+| Burned + Ideal Burnup | A burnup view. Better for stakeholders who prefer progress rising |
+| Remaining + Scope | Diagnoses scope creep. The best pairing for a retrospective |
+| All five | Complete but busy - use only on a wide gadget |
+
+## Display Options
+
+| **Setting** | **What It Does** | **Default** |
+| --- | --- | --- |
+| **Show legend** | Legend for the visible series | On |
+| **Show data values** | Prints each point's value | Off |
+| **Hide weekends** | Removes weekend days from the X-axis | Off |
+| **Show gridlines** | Horizontal gridlines | Off |
+| **Enable scroll zoom** | Mouse-wheel zoom | Off |
+| **Chart height** | Explicit pixel height, or auto | Auto |
+| **Open data tab first** | View mode opens on the table | Off |
+| **Show options menu** | The in-view refresh and export menu | On |
+| **Auto-refresh** | Periodic re-fetch during an active sprint | Off |
+
+## Colors
+
+| **Series** | **Default** |
+| --- | --- |
+| Ideal Burndown | Blue |
+| Ideal Burnup | Red |
+| Burned | Green |
+| Remaining | Orange |
+| Scope | Purple |
+
+Switch color mode to **Custom** to set each series individually - useful when your organization has a house palette for status reporting.
+
+## Data Table View
+
+The table gives the per-day numbers behind every series: date, remaining, burned, and scope. Use it when someone questions a specific day, and to copy figures into a sprint report.
+
+## Export
+
+| **Format** | **Contains** |
+| --- | --- |
+| **PNG** | The chart as displayed, named after the sprint |
+| **CSV** | The per-day series values, with the measure and custom field name included |
+
+Both exports can be disabled independently if you want the chart visible but not extractable.
+
+## Common Use Cases
+
+**Daily standup.** Remaining plus Ideal Burndown, auto-latest sprint, auto-refresh on. It stays correct across sprints with no editing.
+
+**Sprint review.** Turn on the Scope series. If scope stepped up mid-sprint, lead with that.
+
+**Retrospective.** Open the data table and find the day the remaining line stopped falling. That date usually pins the blocker.
+
+**Executive rollup.** Use Burned plus Ideal Burnup - a rising line reads as progress to an audience that does not live in Jira.
+`,
+        },
+      ],
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 14. TEAM WALLBOARD
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "team-wallboard-gadget",
+      title: "Team Wallboard",
+      articles: [
+        {
+          slug: "team-wallboard-gadget-intro",
+          title: "Team Wallboard",
+          content: `The **Team Wallboard** gadget puts your work items on a dashboard as cards, grouped into columns - a board view that lives next to your charts instead of on a separate screen. It is built for wall displays and standups: readable from a distance, refreshing on its own, with no clicking required.
+
+### In This Section
+
+| **Page Name** | **Description** |
+| --- | --- |
+| **Overview** | *What the wallboard shows, grouping, views, and data sources.* |
+| **Settings** | *Sprint selection, quick filters, swimlanes, sub-tasks, and the estimation field.* |
+| **Display Settings & Export** | *Card colors, compact cards, sprint info, auto-refresh, and export.* |
+`,
+        },
+        {
+          slug: "team-wallboard-overview",
+          title: "Overview",
+          content: `Each work item is a card showing its key, summary, assignee, priority, and estimate. Cards are grouped into columns, and the whole board can be split into horizontal swimlanes.
+
+## Overview
+
+| **Feature** | **Description** |
+| --- | --- |
+| **Card Wallboard** | One card per work item, grouped into columns |
+| **Two Grouping Modes** | The selected board's own columns, or Jira's status categories |
+| **Seven Swimlane Modes** | None, stories, assignees, reporter, epics, projects, or priorities |
+| **Two Quick Filters** | Recently Updated and Assigned to me, applied on top of any data source |
+| **Two Views** | Wallboard cards, or a paginated table of the same items |
+| **Auto-Refresh** | Keeps a wall display current without anyone touching it |
+| **PDF and CSV Export** | The board as a document, or the items as data |
+
+## Grouping
+
+| **Grouping** | **Columns Are** | **Use When** |
+| --- | --- | --- |
+| **Board columns** | The columns of the board you selected, in board order | You want the wallboard to mirror the team's real board exactly |
+| **Status category** | To Do, In Progress, Done | The data source is not a board, or you want a simple three-column rollup |
+
+> Board columns require a Board data source. Every other source groups by status category.
+
+## Views
+
+| **View** | **Shows** |
+| --- | --- |
+| **Wallboard** (default) | Cards in columns, with optional swimlanes |
+| **Table** | The same items as a paginated, sortable table with a configurable page size |
+
+The table view is the better choice when someone needs to scan or sort many items; the wallboard is for shared displays.
+
+## Data Sources
+
+| **Source Type** | **When to Use** |
+| --- | --- |
+| **Projects** | All work across one or more projects |
+| **Board** | Mirror a real board, including its column layout |
+| **Saved Filter** | Reuse an existing team filter |
+| **Custom JQL** | Precise scoping - one epic, one component, one label |
+| **Dynamic Filter Controller** | Let the shared filter bar re-scope the wallboard with the rest of the dashboard |
+
+## How to Use It
+
+- **Standup display.** Board grouping, sprint set to active, auto-refresh on. Walk the columns right to left
+- **Blocked-work board.** Custom JQL for your blocked flag or label, swimlanes by assignee
+- **Cross-team overview.** Projects source, swimlanes by project, status category grouping
+`,
+        },
+        {
+          slug: "team-wallboard-settings",
+          title: "Settings",
+          content: `## Sprint Selection
+
+When the data source is a Scrum board you can scope the wallboard to a sprint. The default is the **active** sprint, so the board follows the team automatically as sprints roll over.
+
+## Quick Filters
+
+Quick filters are applied on top of whatever your data source returns, and work with **every** source type - not just boards.
+
+| **Filter** | **Narrows To** | **Use For** |
+| --- | --- | --- |
+| **Recently Updated** | Items updated in the last day | Standups - shows what actually moved |
+| **Assigned to me** | Items assigned to the viewer | Personal dashboards |
+
+Both can be active at once; they combine to narrow the result further.
+
+> **Assigned to me** resolves per viewer, so the same gadget shows each person their own work.
+
+## Swimlanes
+
+Swimlanes split the board into horizontal rows on top of the column grouping. All modes work with any data source.
+
+| **Mode** | **One Row Per** | **Best For** |
+| --- | --- | --- |
+| **None** (default) | Single board | Small teams, wall displays |
+| **By stories (parent work items)** | Parent item | Seeing sub-task progress under each story |
+| **By assignees** | Assignee | Spotting who is overloaded, and who is idle |
+| **By reporter** | Reporter | Support and intake queues |
+| **By epics** | Epic | Tracking several epics in one sprint |
+| **By projects** | Project | Cross-project or cross-team boards |
+| **By priorities** | Priority | Checking that high-priority work is actually moving |
+
+Items with no value for the chosen field are grouped into a clear catch-all row - Unassigned, No epic, No parent, or No priority.
+
+## Sub-tasks
+
+**Include sub-tasks** is on by default. Turn it off when your team tracks work at the story level and sub-task cards would flood the board.
+
+## Estimation Field
+
+Pick the field shown on each card as the estimate - story points, a time estimate, or any numeric field your team uses. Leave it unset for cards with no estimate badge.
+`,
+        },
+        {
+          slug: "team-wallboard-display-export",
+          title: "Display Settings & Export",
+          content: `## Card Colors
+
+Cards are colored by the status category of the item, so progress is visible from across the room.
+
+| **Category** | **Default** |
+| --- | --- |
+| **To Do** | Light grey |
+| **In Progress** | Light yellow |
+| **Done** | Light green |
+
+Switch color mode to **Custom** to set each of the three individually - useful for matching a house palette or improving contrast on a large display.
+
+## Display Options
+
+| **Setting** | **What It Does** | **Default** |
+| --- | --- | --- |
+| **Show sprint info** | Sprint name and dates in the header | On |
+| **Compact cards** | Smaller cards, more items visible at once | Off |
+| **Show options menu** | The in-view refresh and export menu | On |
+| **Show export options** | Whether viewers can export | On |
+| **Auto-refresh** | Periodic re-fetch, in minutes | Off (10 min) |
+| **Table page size** | Rows per page in table view | 10 |
+
+> For a wall-mounted display: compact cards on, auto-refresh on, options menu off. The board then runs unattended and nobody can accidentally reconfigure it.
+
+## Export
+
+| **Format** | **Contains** |
+| --- | --- |
+| **PDF** | The wallboard as it appears, columns, cards, and swimlanes intact |
+| **CSV** | Every item with its column, status, assignee, priority, and estimate |
+
+PDF export renders issue-type and priority icons correctly, so the exported board is readable as a standalone document - suitable for attaching to a sprint report.
+
+## Common Use Cases
+
+**Standup wallboard.** Board source, active sprint, Recently Updated quick filter, auto-refresh on. Discussion follows the cards that moved.
+
+**Workload check.** Swimlanes by assignee, no quick filters. One glance shows who has too much in progress.
+
+**Epic tracking.** Swimlanes by epic with a JQL source scoped to the release. Shows which epics are stalled without opening a plan.
+
+**Cross-team status.** Projects source, status-category grouping, swimlanes by project. Fits a single dashboard row and needs no board access.
+`,
+        },
+      ],
+    },
+
+    // ═══════════════════════════════════════════════════════════════
+    // 15. ISSUE FILTER FORMULA
+    // ═══════════════════════════════════════════════════════════════
+    {
+      id: "issue-filter-formula-gadget",
+      title: "Issue Filter Formula",
+      articles: [
+        {
+          slug: "issue-filter-formula-gadget-intro",
+          title: "Issue Filter Formula",
+          content: `The **Issue Filter Formula** gadget computes KPIs. You define up to nine independently-scoped aggregations - each with its own data source, its own JQL, and its own aggregation - then combine them with math formulas and display the result as a number, a gauge, a star rating, or a card.
+
+This is the gadget for every metric that is a **ratio, rate, or difference** rather than a count: escaped defect rate, on-time delivery percentage, bug-to-story ratio, budget burn.
+
+### In This Section
+
+| **Page Name** | **Description** |
+| --- | --- |
+| **Overview** | *How variables, formulas, and displays fit together.* |
+| **Variables** | *Per-variable data sources, aggregations, and fields.* |
+| **Formulas** | *Expression syntax, the function library, and number formatting.* |
+| **Display Modes** | *Number, colored number, gauge, and star rating - with color rules.* |
+`,
+        },
+        {
+          slug: "issue-filter-formula-overview",
+          title: "Overview",
+          content: `The gadget works in three layers. Understand the layers and the rest of the configuration is straightforward.
+
+| **Layer** | **What It Is** | **How Many** |
+| --- | --- | --- |
+| **Variables** | Named aggregations over Jira issues, called \`a\` through \`i\`. Each has its own data source and JQL | Up to 9 |
+| **Formulas** | Math expressions over those variables | As many as you need |
+| **Displays** | How each formula's result is rendered | One mode per formula |
+
+## A Worked Example
+
+To show **escaped defect rate** - bugs found in production as a percentage of all bugs:
+
+1. Variable \`a\`: Count of work items, JQL \`type = Bug AND labels = production\`
+2. Variable \`b\`: Count of work items, JQL \`type = Bug\`
+3. Formula: \`a / b * 100\`, suffix \`%\`, 1 decimal
+4. Display: gauge, 0 to 100, green under 5, amber to 15, red above
+
+The result is a single number your leadership can read, computed from two completely independent queries.
+
+## Why Separate Data Sources Matter
+
+Each variable resolves its own scope. That means one formula can compare **different projects**, **different time windows**, or **different issue types** - something no single-query gadget can do.
+
+| **Comparison** | **How** |
+| --- | --- |
+| This sprint vs. last sprint | Two variables, two sprint-scoped JQL queries |
+| Team A vs. Team B | Two variables, two project or component scopes |
+| Bugs vs. stories | Two variables, two issue-type filters |
+| Actual vs. target | One variable plus a constant in the formula |
+
+## Overview
+
+| **Feature** | **Description** |
+| --- | --- |
+| **9 Variables** | Named \`a\` to \`i\`, each independently scoped |
+| **5 Aggregations** | Count, Sum, Average, Minimum, Maximum |
+| **Full Function Library** | Arithmetic plus rounding, logs, conditionals, and aggregate functions |
+| **4 Display Modes** | Number, number colored by value, gauge chart, and star rating |
+| **Color Rules** | Value ranges that drive the color of the result |
+| **Card Layout** | Multiple formulas laid out as cards in one gadget |
+
+## Data Sources
+
+Every variable supports Projects, Board, Saved Filter, Custom JQL, and Dynamic Filter Controller - chosen per variable, not once for the gadget.
+`,
+        },
+        {
+          slug: "issue-filter-formula-variables",
+          title: "Variables",
+          content: `A variable is one number. It is produced by running one query and aggregating one field - or just counting the results.
+
+## Configuring a Variable
+
+| **Setting** | **What It Does** |
+| --- | --- |
+| **Enabled** | Whether the variable is fetched at all. Only \`a\` is enabled by default |
+| **Label** | A human-readable name shown in the config UI, so \`a\` is not just a letter |
+| **Data source** | Projects, Board, Saved Filter, Custom JQL, or Dynamic Filter Controller |
+| **Aggregation** | How the matching issues are reduced to one number |
+| **Field** | Which field to aggregate - not needed for Count |
+
+## Aggregations
+
+| **Aggregation** | **Returns** | **Typical Use** |
+| --- | --- | --- |
+| **Count of work items** (default) | Number of matching issues | Counts, rates, ratios |
+| **Sum of a field** | Total of a numeric field | Total story points, total time spent |
+| **Average of a field** | Mean of a numeric field | Average estimate, average story size |
+| **Minimum of a field** | Smallest value | Earliest or lowest bound |
+| **Maximum of a field** | Largest value | Worst case, most recent |
+
+## Time Fields
+
+For time-tracking aggregations, three sub-values are available: **Time spent**, **Remaining estimate**, and **Original estimate**. Values are read in seconds, so divide in the formula to display hours or days - for example \`a / 3600\` for hours.
+
+## Naming Variables
+
+Give every enabled variable a label. Six months later, \`a / b * 100\` is unreadable but "Production bugs / All bugs x 100" is obvious - and the labels are what your successor will rely on.
+
+## Practical Notes
+
+- Enable only the variables you use. Each enabled variable is a separate query, so nine enabled variables means nine queries on every refresh
+- A variable whose query matches nothing returns 0 for Count, and no value for Sum, Average, Minimum, and Maximum - which will make a formula dividing by it return NaN
+- Variables scoped to the **Dynamic Filter Controller** re-resolve when the shared filter bar changes, so one formula can respond to dashboard-wide filtering
+`,
+        },
+        {
+          slug: "issue-filter-formula-formulas",
+          title: "Formulas",
+          content: `A formula is a math expression over your variables. It is evaluated as a numeric calculation only - it cannot modify data or build text.
+
+## Expression Basics
+
+| **Expression** | **Computes** |
+| --- | --- |
+| \`a\` | The value of variable a on its own |
+| \`a / b\` | A ratio |
+| \`a / b * 100\` | A percentage |
+| \`a - b\` | A difference - actual vs. target |
+| \`(a + b) / c\` | A weighted or combined rate |
+| \`a / 3600\` | Seconds converted to hours |
+
+Operators: \`+\` \`-\` \`*\` \`/\` \`%\` and \`^\` for powers, with parentheses for grouping. Comparison operators are available inside conditional functions.
+
+## Function Library
+
+**Rounding and sign**
+
+| **Function** | **Does** | **Example** |
+| --- | --- | --- |
+| \`ROUND(x, d)\` | Rounds to d decimal places | \`ROUND(3.14159, 2)\` gives 3.14 |
+| \`FLOOR(x)\` | Rounds down | \`FLOOR(4.9)\` gives 4 |
+| \`CEILING(x)\` | Rounds up | \`CEILING(4.1)\` gives 5 |
+| \`ABS(x)\` | Absolute value | \`ABS(-5)\` gives 5 |
+| \`SIGN(x)\` | 1, -1, or 0 | \`SIGN(-3)\` gives -1 |
+
+**Aggregate**
+
+| **Function** | **Does** |
+| --- | --- |
+| \`SUM(a, b, c)\` | Adds the values |
+| \`AVERAGE(a, b)\` or \`AVG(a, b)\` | Mean of the values |
+| \`MIN(a, b)\` | Smallest |
+| \`MAX(a, b)\` | Largest |
+
+**Conditional**
+
+| **Function** | **Does** | **Example** |
+| --- | --- | --- |
+| \`IF(test, x, y)\` | x if the test is true, else y | \`IF(a > b, a, b)\` |
+| \`SWITCH(v, k1, r1, k2, r2, default)\` | Matches a value against options | \`SWITCH(a, 1, 10, 2, 20, 0)\` |
+| \`COALESCE(a, b, 0)\` | First value that is a real number | Guards against NaN |
+| \`NOT(x)\` | Flips 1 and 0 | \`NOT(a)\` |
+
+**Math**
+
+\`SQRT\`, \`POW\`, \`EXP\`, \`LOG\` and \`LN\` (natural log), \`LOG10\`, \`FACT\`, plus trigonometric functions. The constants \`PI\` and \`E\` are available in every expression.
+
+> **Guard your divisions.** \`a / b\` returns NaN when b is 0. Wrap it: \`IF(b > 0, a / b * 100, 0)\`.
+
+## Number Formatting
+
+| **Setting** | **Effect** |
+| --- | --- |
+| **Decimals** | How many decimal places to show |
+| **Prefix** | Text before the number - a currency symbol, for example |
+| **Suffix** | Text after the number - \`%\`, \`h\`, \`pts\` |
+| **Thousands separator** | Groups large numbers so they stay readable |
+
+## Multiple Formulas
+
+Add as many formulas as you need and each gets its own label, meaning text, formatting, and display mode. With the **cards** layout they appear side by side, turning one gadget into a small KPI panel.
+
+**Show NaN** controls what happens when a formula cannot be computed. Leave it on while building so you can see the problem; turn it off on a display dashboard so an empty query does not put "NaN" on a wall screen.
+`,
+        },
+        {
+          slug: "issue-filter-formula-display",
+          title: "Display Modes",
+          content: `Each formula picks its own display mode. Pick by what the reader has to do with the number.
+
+## Modes
+
+| **Mode** | **Shows** | **Use When** |
+| --- | --- | --- |
+| **Number** | A plain number in the card | The value speaks for itself |
+| **Number colored by value** | The number, colored by fixed color or value range, with an optional border highlight | Good or bad matters at a glance |
+| **Gauge chart** | A radial gauge with min, max, and colored bands | The number is meaningful against a target range |
+| **5-star rating** | The value mapped onto a star scale | Satisfaction and quality scores, for non-technical audiences |
+
+## Color Rules
+
+Colored numbers and gauges are driven by value ranges. Define each band with its bounds and color:
+
+| **Range** | **Color** | **Reads As** |
+| --- | --- | --- |
+| 0 to 5 | Green | Healthy |
+| 5 to 15 | Amber | Watch |
+| 15 and above | Red | Act |
+
+> Make sure your bands cover the whole plausible range with no gaps. A value that falls in a gap gets no color, which reads as a rendering fault rather than a state.
+
+For metrics where lower is better - defect rate, cycle time - invert the order so green sits at the bottom. Do not rely on the reader working that out.
+
+## Gauge Settings
+
+| **Setting** | **What It Does** |
+| --- | --- |
+| **Min and Max** | The gauge's range. Set these to something meaningful, not just the current value |
+| **Gauge rules** | The colored bands drawn around the arc |
+
+A percentage gauge should nearly always run 0 to 100, even if today's value is 12 - a gauge scaled to its own value tells the reader nothing about how much room is left.
+
+## Star Rating Settings
+
+| **Setting** | **What It Does** |
+| --- | --- |
+| **Stars max** | How many stars are drawn |
+| **Scale max** | The formula value that equals a full set of stars |
+
+If your formula returns a percentage, set scale max to 100. If it returns a 1-5 score, set it to 5.
+
+## Layout
+
+The **cards** layout arranges every enabled formula as a card in one gadget - four or five KPIs in the space of one chart. Keep labels short; the card is the whole explanation the reader gets.
+
+## Export
+
+| **Format** | **Contains** |
+| --- | --- |
+| **PNG** | The KPI panel as displayed |
+| **CSV** | Each formula with its label and computed result |
+
+## Common Use Cases
+
+**Escaped defect rate.** Production bugs divided by all bugs, as a gauge with green under 5%.
+
+**On-time delivery.** Items completed by their due date divided by all completed items, as a percentage.
+
+**Bug-to-story ratio.** Bug count divided by story count for the sprint - a rising number is a quality warning.
+
+**Sprint completion.** Story points done divided by points committed, as a gauge running 0 to 100.
+
+**Support satisfaction.** Average of a CSAT custom field, displayed as a star rating for a leadership dashboard.
+`,
+        },
+      ],
+    },
+    // ═══════════════════════════════════════════════════════════════
+    // 16. ADMIN SETTINGS
     // ═══════════════════════════════════════════════════════════════
     {
       id: "admin-settings",
@@ -3799,7 +5224,7 @@ Set the threshold at your SLA boundary. Run the chart daily and escalate any dot
           slug: "admin-settings",
           title: "Admin Settings",
           content: `
-Control global app behavior for all gadgets - Custom Charts, Issue List, Dynamic Filter Controller, Time in Status, Pivot Table, Cumulative Flow Diagram, and WIP Aging Charts. Use Admin Settings to manage defaults, feature availability, allowed data sources, and support links for all users in your Jira site.
+Control global app behavior for all fourteen gadgets - Custom Charts, Issue List, Dynamic Filter Controller, Time in Status, Pivot Table, Cumulative Flow Diagram, WIP Aging Charts, Control Chart, Histogram Chart, Cycle Time Trend, WIP Run Chart, Sprint Burndown & Burnup, Team Wallboard, and Issue Filter Formula. Use Admin Settings to manage defaults, feature availability, allowed data sources, and support links for all users in your Jira site.
 
 ## Where to find it
 
@@ -3812,8 +5237,8 @@ Control global app behavior for all gadgets - Custom Charts, Issue List, Dynamic
 
 * Global export access for PNG, PDF, and CSV.
 * Default display values such as number format, decimal places, date format, and time unit.
-* Feature availability for Issue List, Custom Chart, Dynamic Filter Controller, and Templates.
-* Allowed data source types such as Projects, Saved Filters, Custom JQL, and Filter Controller.
+* Feature availability for every gadget individually, plus Templates.
+* Allowed data source types: Projects, Boards, Saved Filters, Custom JQL, and Filter Controller.
 * Support and documentation links for end users.
 
 ## Admin Settings tabs
@@ -3857,6 +5282,15 @@ Control global app behavior for all gadgets - Custom Charts, Issue List, Dynamic
 | **Pivot Table** | Users can create and use the Pivot Table gadget. | Pivot Table is hidden and unavailable. |
 | **WIP Aging Charts** | Users can create and use the WIP Aging Charts gadget. | WIP Aging Charts is hidden and unavailable. |
 | **Cumulative Flow Diagram** | Users can create and use the Cumulative Flow Diagram gadget. | CFD is hidden and unavailable. |
+| **Control Chart** | Users can create and use the Control Chart gadget. | Control Chart is hidden and unavailable. |
+| **Histogram Chart** | Users can create and use the Histogram Chart gadget. | Histogram Chart is hidden and unavailable. |
+| **Cycle Time Trend** | Users can create and use the Cycle Time Trend gadget. | Cycle Time Trend is hidden and unavailable. |
+| **WIP Run Chart** | Users can create and use the WIP Run Chart gadget. | WIP Run Chart is hidden and unavailable. |
+| **Sprint Burndown** | Users can create and use the Sprint Burndown Burnup gadget. | Sprint Burndown is hidden and unavailable. |
+| **Team Wallboard** | Users can create and use the Team Wallboard gadget. | Team Wallboard is hidden and unavailable. |
+| **Issue Filter Formula** | Users can create and use the Issue Filter Formula gadget. | Issue Filter Formula is hidden and unavailable. |
+
+> Each gadget has its own toggle. Disabling one leaves existing gadgets of that type in place on dashboards but shows a "feature unavailable" notice instead of the report.
 
 ## Data Sources
 
@@ -3866,7 +5300,8 @@ Control global app behavior for all gadgets - Custom Charts, Issue List, Dynamic
 
 | **Source type** | What it allows | Used in | If disabled |
 | --- | --- | --- | --- |
-| **Projects** | Users can build gadgets from selected Jira projects. | Custom Chart, Issue List | Project source option should not be available. |
+| **Projects** | Users can build gadgets from selected Jira projects. | All gadgets with a source selector | Project source option should not be available. |
+| **Boards** | Users can scope gadgets to a Jira Software board, using the board's own filter and column layout. | Control Chart, Histogram, Cycle Time Trend, WIP Run Chart, Team Wallboard, WIP Aging, CFD, Time in Status, Issue Filter Formula | Board source option should not be available. Sprint Burndown requires a board, so it cannot be configured while this is off. |
 | **Saved Filters** | Users can use saved Jira filters as the source. | Custom Chart, Issue List | Saved filter source option should not be available. |
 | **Custom JQL** | Users can enter their own JQL. | Custom Chart, Issue List, Filter workflows | Raw custom JQL should not be available as a source option. |
 | **Filter Controller** | Users can connect gadgets to a Dynamic Filter Controller. | Custom Chart, Issue List | Controller reference source should not be available. |
@@ -3902,7 +5337,7 @@ Control global app behavior for all gadgets - Custom Charts, Issue List, Dynamic
     },
 
 
-    // ═══ RELEASE NOTES ═══
+    // ═══ 17. RELEASE NOTES ═══
     {
       id: "release-notes",
       title: "Release Notes",
@@ -3913,12 +5348,54 @@ Control global app behavior for all gadgets - Custom Charts, Issue List, Dynamic
           content: `
 Stay up to date with the newest features, improvements, and fixes in **Dashboard Templates, Charts, Graphs & Reports for Jira**.
 
-> **Current Version:** v4.1.0 - May 2026
+> **Current Version:** v5.0.0 - August 2026
 > **Marketplace Listing:** [Dashboard Templates, Charts, Graphs & Reports for Jira](https://marketplace.atlassian.com/apps/359777765/dashboard-templates-charts-graphs-reports-for-jira)
 
 ---
 
-## What's New in v4.1.0
+## What's New in v5.0.0
+
+**Seven new gadgets.** The app now ships fourteen gadgets. The additions cover flow metrics, sprint tracking, board displays, and computed KPIs - areas that previously needed either a second app or a manual spreadsheet.
+
+### Flow Metrics
+
+Four new gadgets built on changelog analysis, each answering a different delivery question:
+
+- **[Control Chart](/apps/dashboard-charts-jira/control-chart-gadget-intro)** - cycle time and lead time of every completed item as a scatter chart, with average, rolling average, standard deviation band, threshold, and up to five percentile lines. Define exactly which workflow transitions start and end the cycle, and choose how repeat entries and repeated cycles are counted.
+- **[Histogram Chart](/apps/dashboard-charts-jira/histogram-chart-gadget-intro)** - the frequency distribution of those same durations. Split the range into equal intervals or your own comma-separated thresholds, then read the slow tail directly off the chart.
+- **[Cycle Time Trend](/apps/dashboard-charts-jira/cycle-time-trend-gadget-intro)** - one bar per interval showing average cycle time, with a linear or polynomial trendline and an overall-average line. Intervals run from one week to eight weeks, calendar months, or the board's own sprints.
+- **[WIP Run Chart](/apps/dashboard-charts-jira/wip-run-chart-gadget-intro)** - work-in-progress over time, with three WIP rules (status category, board middle columns, or an explicit status list), optional max and min limits with breach highlighting, and splitting by any field.
+
+### Sprint Burndown & Burnup
+
+**[Sprint Burndown & Burnup](/apps/dashboard-charts-jira/sprint-burndown-gadget-intro)** tracks sprint progress day by day across five independently-toggled series - remaining, burned, scope, ideal burndown, and ideal burnup. Seven measures are supported, from story points to work item count to any numeric custom field. The definition of done can follow the board's last column or an explicit status list, and weekends can be treated as working, non-working, or hidden. Selecting **Latest sprint (auto)** keeps the gadget correct across sprint boundaries with no re-editing.
+
+### Team Wallboard
+
+**[Team Wallboard](/apps/dashboard-charts-jira/team-wallboard-gadget-intro)** puts work items on the dashboard as cards, grouped into the board's own columns or into status categories. Seven swimlane modes, two quick filters that work with every data source, per-status-category card colors, compact cards for wall displays, and PDF or CSV export.
+
+### Issue Filter Formula
+
+**[Issue Filter Formula](/apps/dashboard-charts-jira/issue-filter-formula-gadget-intro)** computes KPIs that a single query cannot express. Define up to nine variables - each with its own data source, JQL, and aggregation - then combine them with math formulas and display the result as a number, a number colored by value, a gauge, or a star rating. Because every variable is scoped independently, one formula can compare two projects, two sprints, or two issue types.
+
+### Board as a Data Source
+
+**Board** is now a first-class data source alongside Projects, Saved Filters, Custom JQL, and the Dynamic Filter Controller. Selecting a board resolves the board's own filter automatically; Scrum boards are scoped to open sprints. Board source is available across the flow-metrics gadgets, Team Wallboard, and Issue Filter Formula, and is required by Sprint Burndown.
+
+### Admin Controls
+
+- **Per-gadget feature toggles** - every one of the fourteen gadgets now has its own toggle in Admin Settings, so gadgets can be rolled out to a site one at a time
+- **Board source restriction** - Boards can be allowed or blocked in the Data Sources tab like any other source type
+
+---
+
+## Upgrade Notes
+
+All existing gadget configurations are **fully compatible** with v5.0.0. No migration or manual action is required. The new gadgets appear in the Add Gadget dialog once the app updates, and every new gadget is enabled by default - disable any you do not want available from Admin Settings → Features.
+
+---
+
+## Previously in v4.1.0
 
 ### Improved Admin Controls
 The Admin Settings panel has been expanded with clearer organization and new options:
@@ -3940,7 +5417,7 @@ Drag-and-Drop Reordering: You can now use drag-and-drop to easily rearrange and 
 
 ---
 
-## Bug Fixes
+## Bug Fixes in v4.1.0
 
 | **Area** | Fix |
 |---|---|
@@ -3954,20 +5431,14 @@ Drag-and-Drop Reordering: You can now use drag-and-drop to easily rearrange and 
 
 ---
 
-## Upgrade Notes
-
-All existing gadget configurations are **fully compatible** with v4.1.0. No migration or manual action is required. Gadgets on existing dashboards will continue to work without changes.
-
----
-
 ## Coming Soon
 
 | **Feature** | Status |
 |---|---|
 | **Scheduled run scans** | In development |
-| **Reporting standard metrics** | Planned |
-| **Standard templates for common use cases** | Planned |
-| **Additional chart types (e.g., scatter plot, radar chart)** | Under consideration |
+| **Standard templates for the new flow-metrics gadgets** | Planned |
+| **Cross-gadget metric definitions (define a cycle once, reuse everywhere)** | Planned |
+| **Additional chart types (e.g., radar chart)** | Under consideration |
 
 ---
 
@@ -3989,6 +5460,7 @@ A complete changelog for **Dashboard Templates, Charts, Graphs & Reports for Jir
 
 | **Version** | Release Date | Type | Highlights |
 |---|---|---|---|
+| **v5.0.0** | August 2026 | Major Release | Seven new gadgets (Control Chart, Histogram, Cycle Time Trend, WIP Run Chart, Sprint Burndown & Burnup, Team Wallboard, Issue Filter Formula), Board as a data source, per-gadget admin toggles |
 | **v4.1.0** | May 2026 | Improvement Release | Expanded Admin Controls, Display Options enhancements, new Templates, bug fixes |
 | **v4.0.0** | January 2026 | Major Release | Templates gallery, Date Range improvements, Import/Export Configuration, Controller Tabs |
 | **v3.1.0** | October 2025 | Feature Release | Smart Labels, AND/OR Quick Filter logic, User Icon Display in Issue List |
@@ -3997,6 +5469,27 @@ A complete changelog for **Dashboard Templates, Charts, Graphs & Reports for Jir
 | **v2.0.0** | April 2025 | Major Release | Dynamic Filter Controller, 2D charts, Group By second dimension |
 | **v1.1.0** | February 2025 | Patch | JQL validation improvements, number formatting, bug fixes |
 | **v1.0.0** | January 2025 | Initial Release | Custom Charts (Pie/Bar/Line), Issue List, Projects/Filter/JQL data sources |
+
+---
+
+## v5.0.0 - August 2026
+
+### Major New Features
+- **Control Chart** - cycle and lead time per completed item as a scatter chart, with a fully configurable cycle definition and five overlay types (average, rolling average, standard deviation band, threshold, percentiles)
+- **Histogram Chart** - frequency distribution of cycle and lead time, bucketed by equal intervals or custom thresholds
+- **Cycle Time Trend** - average cycle time per interval with linear or polynomial trendline; intervals of 1-8 weeks, calendar months, or board sprints
+- **WIP Run Chart** - work-in-progress over time with three WIP rules, max and min limits, breach highlighting, and split-by-field series
+- **Sprint Burndown & Burnup** - five series (remaining, burned, scope, ideal burndown, ideal burnup), seven measures, configurable definition of done, and weekend handling
+- **Team Wallboard** - card wallboard grouped by board column or status category, with seven swimlane modes, quick filters, and PDF export
+- **Issue Filter Formula** - up to nine independently-scoped aggregations combined with math formulas; number, colored number, gauge, and star-rating displays
+
+### Improvements
+- **Board data source** - available across the flow-metrics gadgets, Team Wallboard, and Issue Filter Formula; the board's own filter is resolved automatically and Scrum boards are scoped to open sprints
+- **Per-gadget admin toggles** - all fourteen gadgets can be enabled or disabled individually from Admin Settings → Features
+- **Board source restriction** - Boards can be blocked in Admin Settings → Data Sources like any other source type
+
+### Upgrade Notes
+Existing configurations are unchanged and require no migration. New gadgets are enabled by default.
 
 ---
 
@@ -4190,9 +5683,13 @@ The app reads and displays data directly from your Jira Cloud instance. All data
 | **User Data** | Assignee and Reporter fields display user names and avatars (Issue List); JQL supports \`currentUser()\` for personal views |
 | **Jira Statuses & Workflows** | Status values reflect your project's actual workflow statuses - no mapping needed |
 | **Epics** | Group or filter by Epic Link or Epic Name using standard Jira fields or JQL |
+| **Boards** | Select a Jira Software board as a data source - the board's own filter is resolved automatically, and its column layout can define chart bands, wallboard columns, and WIP rules |
+| **Issue History (changelog)** | Read to calculate status durations, cycle and lead time, WIP over time, and burndown progress - powers Time in Status, CFD, WIP Aging, Control Chart, Histogram, Cycle Time Trend, WIP Run Chart, and Sprint Burndown |
+| **Releases / Versions** | A release's start and release dates can define a reporting window in the flow-metrics gadgets |
 
 ### What the App Cannot Access
 
+- **Sprints on Kanban boards** - sprint-based intervals and sprint scoping require a Scrum board
 - **Jira Service Management (JSM) specific fields** - some JSM-only fields may not be available depending on your Jira configuration
 - **External issue trackers** - the app only reads from Jira Cloud; no GitHub, Asana, or Linear integration
 - **Confluence pages** - the app does not read from Confluence
@@ -4221,6 +5718,10 @@ Gadgets adjust their display to the column width assigned in the dashboard layou
 | **Custom Charts (Pie, Bar, Line)** | 1 or 2 columns |
 | **Issue List** | 2 or 3 columns (wider is better for many columns) |
 | **Dynamic Filter Controller** | Full width (3 columns) or at least 2 columns |
+| **Issue Filter Formula** | 1 column for a single KPI; 2 or 3 for a multi-card panel |
+| **Control Chart, Histogram, Cycle Time Trend, WIP Run Chart** | 2 or 3 columns - reference lines and axis labels need horizontal room |
+| **Sprint Burndown & Burnup** | 2 or 3 columns |
+| **Team Wallboard** | Full width (3 columns); use compact cards in narrower layouts |
 
 ---
 
@@ -4828,7 +6329,7 @@ fixVersion = "v2.0" AND project = YOUR_PROJECT
     },
 
     // ═══════════════════════════════════════════════════════════════
-    // 6. HELP & SUPPORT
+    // 20. HELP & SUPPORT
     // ═══════════════════════════════════════════════════════════════
     {
       id: "help-support",
@@ -4841,7 +6342,7 @@ fixVersion = "v2.0" AND project = YOUR_PROJECT
 ## General
 
 ### What is Dashboard Templates, Charts, Graphs & Reports for Jira?
-It is a Jira Cloud app that adds seven powerful gadgets to your Jira dashboards: **Custom Charts** (10 chart types), **Issue List** (configurable issue table), **Dynamic Filter Controller** (shared interactive filter bar), **Time in Status** (changelog-based status duration analysis), **Pivot Table** (cross-tabulation with 9 display types), **Cumulative Flow Diagram** (stacked area flow chart), and **WIP Aging Charts** (scatter plot for in-progress age). All gadgets update in real time as Jira data changes.
+It is a Jira Cloud app that adds fourteen gadgets to your Jira dashboards: **Custom Charts** (10 chart types), **Issue List** (configurable issue table), **Dynamic Filter Controller** (shared interactive filter bar), **Time in Status** (changelog-based status duration analysis), **Pivot Table** (cross-tabulation with 9 display types), **Cumulative Flow Diagram** (stacked area flow chart), **WIP Aging Charts** (scatter plot for in-progress age), **Control Chart** (cycle and lead time per item), **Histogram Chart** (cycle time distribution), **Cycle Time Trend** (average cycle time per interval), **WIP Run Chart** (WIP over time with limits), **Sprint Burndown & Burnup** (sprint progress and scope), **Team Wallboard** (work items as cards in columns), and **Issue Filter Formula** (KPIs from up to nine aggregations combined with formulas). All gadgets read live Jira data.
 
 ### Which Jira products does the app support?
 The app works with all Jira Cloud products - Jira Software, Jira Service Management, and Jira Work Management. It requires Jira Cloud; Server and Data Center are not supported.
@@ -4976,6 +6477,73 @@ The threshold is a fixed day value you set manually - typically your SLA limit o
 
 ### What does Log Scale do?
 Log scale compresses the X-axis logarithmically. Useful when a few very old issues stretch the axis so wide that normal-age issues are all clustered in the leftmost 10% of the chart. Log scale makes the typical cluster readable without removing the outliers.
+
+---
+
+## Flow Metrics Gadgets
+
+### There are five gadgets about cycle time. Which one do I use?
+**Control Chart** for every completed item plotted over time - use it for predictability and percentile commitments. **Histogram Chart** for the distribution of those same durations - use it to size the slow tail and set an SLA. **Cycle Time Trend** for the direction of travel over weeks or sprints. **WIP Run Chart** for how much work is open at once. **WIP Aging Charts** for which open items are old right now.
+
+### What is the difference between cycle time and lead time?
+**Lead time** starts when the work item was created - the customer's view of the wait. **Cycle time** starts at a workflow point you choose, usually when work actually began. Lead time is always the larger of the two, and the gap between them is your queue time.
+
+### Why do two teams get different cycle time numbers for the same work?
+Almost always because their start and end conditions differ. Cycle time is only comparable when the definition is identical. Write your definition into the gadget's Description tab so it travels with the chart.
+
+### Why are some completed items missing from my Control Chart?
+Items that never met the start condition are not plotted. If the cycle starts at "Issue enters In Progress" and an item went straight from To Do to Done, there is no cycle to measure. Switch the start condition or use Lead Time.
+
+### What is a good number to quote for delivery estimates?
+The 85th percentile, not the average. The average is met roughly half the time; the 85th percentile is met most of the time.
+
+### How do I decide a WIP limit?
+Chart your actual WIP first with no limits, using the WIP Run Chart. Start with a max limit slightly below your observed average and tighten it while watching cycle time on the Control Chart.
+
+---
+
+## Sprint Burndown & Burnup
+
+### Why does the gadget only accept a board?
+Sprint scope, sprint dates, and the definition of done all come from the board and its sprint, so the chart matches what the team committed to. Choose **Latest sprint (auto)** so the gadget follows the active sprint without being re-edited each sprint.
+
+### My burndown looks fine but the sprint failed. Why?
+Turn on the **Scope** series. A scope line that steps up mid-sprint means work was added after commitment - which explains a missed sprint more often than slow delivery does.
+
+### Should weekends count?
+Set weekend mode to **non-working** for most teams, so the ideal line stays flat across weekends instead of expecting progress nobody was making. **Hide weekends** removes them from the axis entirely.
+
+### The chart will not load. What is missing?
+Two settings block rendering until they are complete: **Calculate By: Custom Field** with no field selected, and **Definition of Done: Specific statuses** with no statuses selected.
+
+---
+
+## Team Wallboard
+
+### Why are my columns To Do / In Progress / Done instead of my board's columns?
+Board columns require a Board data source. Every other source type groups by Jira's status categories instead.
+
+### Does "Assigned to me" show my work or the dashboard owner's?
+The viewer's. The quick filter resolves per user, so one gadget shows each person their own items.
+
+### Can I run it on a wall display?
+Yes. Turn on auto-refresh and compact cards, and turn off the options menu so the board cannot be reconfigured by accident.
+
+---
+
+## Issue Filter Formula
+
+### How is this different from a Tile chart?
+A Tile chart counts one query. Issue Filter Formula combines up to nine independently-scoped queries with math - so it can express ratios, rates, and comparisons across different projects or time windows that no single query can produce.
+
+### Why does my formula show NaN?
+Usually a division by zero, or an aggregation over a query that matched nothing. Guard the expression: \`IF(b > 0, a / b * 100, 0)\`. Turn off **Show NaN** on display dashboards once the formulas are settled.
+
+### Can each variable use a different project or filter?
+Yes - that is the point of the gadget. Every variable has its own data source, JQL, aggregation, and field.
+
+### The time values look enormous. Why?
+Time-tracking fields are read in seconds. Divide in the formula: \`a / 3600\` for hours, \`a / 28800\` for eight-hour days.
 
 ---
 
@@ -5150,7 +6718,7 @@ To help us resolve your issue faster, please try these steps first:
 
 | **Information** | **Why It Helps** |
 | --- | --- |
-| **Data Source Type** | Projects, Saved Filter, JQL, or Controller |
+| **Data Source Type** | Projects, Board, Saved Filter, JQL, or Dynamic Filter Controller |
 | **JQL Query** | Exact JQL you're using |
 | **Screenshots** | Shows exactly what you're seeing |
 | **Error Messages** | Exact text of any errors |
